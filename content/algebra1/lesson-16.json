@@ -1,0 +1,1296 @@
+{
+  "id": "alg1-l16",
+  "courseId": "algebra1",
+  "order": 16,
+  "title": {
+    "en": "Solve Quadratics by Factoring",
+    "es": "Resolver cuadráticas por factorización",
+    "pl": "Rozwiązywanie kwadratowych przez rozkład"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.quadratic.zero.product",
+    "kp.alg1.quadratic.solve.factoring",
+    "kp.alg1.quadratic.check.roots"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_16",
+    "unlockOnMastery": [
+      "lesson_board_17"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will use the zero product property to solve quadratic equations that factor over the integers.",
+        "es": "Usarás la propiedad del producto cero para resolver ecuaciones cuadráticas que se factorizan en enteros.",
+        "pl": "Będziesz używać własności iloczynu zerowego do rozwiązywania równań kwadratowych rozkładalnych w liczbach całkowitych."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: factor then zero",
+        "es": "Enseñar: factorizar luego cero",
+        "pl": "Nauczanie: rozkład, potem zero"
+      },
+      "body": {
+        "en": "Write = 0, factor, set each factor to zero, and solve the linear pieces. Check roots when unsure.",
+        "es": "Escribe = 0, factoriza, iguala cada factor a cero y resuelve las piezas lineales. Comprueba raíces si dudas.",
+        "pl": "Zapisz = 0, rozłóż, przyrównaj każdy czynnik do zera i rozwiąż części liniowe. Sprawdź pierwiastki w razie wątpliwości."
+      },
+      "bodyMath": [
+        "(x-3)(x+2)=0 \\Rightarrow x=3\\text{ or }x=-2",
+        "x^{2}-5x+6=(x-2)(x-3)=0",
+        "x^{2}-16=(x-4)(x+4)=0"
+      ],
+      "itemIds": [
+        "alg1-l16-t01",
+        "alg1-l16-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Practice GCF first, difference of squares, and reading roots from factored form.",
+        "es": "Practica primero el MCD, diferencia de cuadrados y leer raíces de la forma factorizada.",
+        "pl": "Ćwicz najpierw NWD, różnicę kwadratów i odczyt pierwiastków z postaci rozłożonej."
+      },
+      "itemIds": [
+        "alg1-l16-g01",
+        "alg1-l16-g02",
+        "alg1-l16-g03",
+        "alg1-l16-g04",
+        "alg1-l16-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l16-i01",
+        "alg1-l16-i02",
+        "alg1-l16-i03",
+        "alg1-l16-i04",
+        "alg1-l16-i05",
+        "alg1-l16-i06",
+        "alg1-l16-i07",
+        "alg1-l16-i08",
+        "alg1-l16-i09",
+        "alg1-l16-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l16-t01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.zero.product"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If (x − 3)(x + 2) = 0, what are the solutions?",
+        "es": "Si (x − 3)(x + 2) = 0, ¿cuáles son las soluciones?",
+        "pl": "Jeśli (x − 3)(x + 2) = 0, jakie są rozwiązania?"
+      },
+      "feedbackCorrect": {
+        "en": "Zero product: each factor can be zero, so x = 3 or x = −2.",
+        "es": "Producto cero: cada factor puede ser cero, así x = 3 o x = −2.",
+        "pl": "Iloczyn zerowy: każdy czynnik może być zerem, więc x = 3 lub x = −2."
+      },
+      "feedbackIncorrect": {
+        "en": "From (x − 3) = 0 get x = 3; from (x + 2) = 0 get x = −2.",
+        "es": "De (x − 3) = 0 obtienes x = 3; de (x + 2) = 0 obtienes x = −2.",
+        "pl": "Z (x − 3) = 0 masz x = 3; z (x + 2) = 0 masz x = −2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "(x - 3)(x + 2) = 0",
+      "choices": {
+        "en": [
+          "$x=3\\text{ or }x=-2$",
+          "$x=-3\\text{ or }x=2$",
+          "$x=3\\text{ or }x=2$",
+          "$x=-3\\text{ or }x=-2$"
+        ],
+        "es": [
+          "$x=3\\text{ or }x=-2$",
+          "$x=-3\\text{ or }x=2$",
+          "$x=3\\text{ or }x=2$",
+          "$x=-3\\text{ or }x=-2$"
+        ],
+        "pl": [
+          "$x=3\\text{ or }x=-2$",
+          "$x=-3\\text{ or }x=2$",
+          "$x=3\\text{ or }x=2$",
+          "$x=-3\\text{ or }x=-2$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_flip_root",
+        "swapped_roots"
+      ]
+    },
+    {
+      "id": "alg1-l16-t02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve by factoring: x^{2} − 5x + 6 = 0.",
+        "es": "Resuelve por factorización: x^{2} − 5x + 6 = 0.",
+        "pl": "Rozwiąż przez rozkład: x^{2} − 5x + 6 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Factors as (x − 2)(x − 3) = 0, so the roots are 2 and 3.",
+        "es": "Se factoriza como (x − 2)(x − 3) = 0, así las raíces son 2 y 3.",
+        "pl": "Rozkład to (x − 2)(x − 3) = 0, więc pierwiastki to 2 i 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Find integers that multiply to 6 and add to −5: −2 and −3, giving (x − 2)(x − 3).",
+        "es": "Busca enteros que multipliquen a 6 y sumen −5: −2 y −3, dando (x − 2)(x − 3).",
+        "pl": "Znajdź całkowite, które mnożą się do 6 i sumują do −5: −2 i −3, czyli (x − 2)(x − 3)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 5x + 6 = 0",
+      "choices": {
+        "en": [
+          "$x=-2\\text{ or }x=-3$",
+          "$x=2\\text{ or }x=3$",
+          "$x=1\\text{ or }x=6$",
+          "$x=2\\text{ or }x=-3$"
+        ],
+        "es": [
+          "$x=-2\\text{ or }x=-3$",
+          "$x=2\\text{ or }x=3$",
+          "$x=1\\text{ or }x=6$",
+          "$x=2\\text{ or }x=-3$"
+        ],
+        "pl": [
+          "$x=-2\\text{ or }x=-3$",
+          "$x=2\\text{ or }x=3$",
+          "$x=1\\text{ or }x=6$",
+          "$x=2\\text{ or }x=-3$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l16-g01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.zero.product"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x(x − 7) = 0.",
+        "es": "Resuelve: x(x − 7) = 0.",
+        "pl": "Rozwiąż: x(x − 7) = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Either factor is zero: x = 0 or x − 7 = 0 → x = 7.",
+        "es": "Cualquier factor es cero: x = 0 o x − 7 = 0 → x = 7.",
+        "pl": "Którykolwiek czynnik zerowy: x = 0 lub x − 7 = 0 → x = 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not drop the root x = 0 that comes from the lone factor x.",
+        "es": "No omitas la raíz x = 0 que viene del factor solo x.",
+        "pl": "Nie pomijaj pierwiastka x = 0 z samego czynnika x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x(x - 7) = 0",
+      "choices": {
+        "en": [
+          "$x=0\\text{ or }x=-7$",
+          "$x=7\\text{ only}$",
+          "$x=0\\text{ or }x=7$",
+          "$x=1\\text{ or }x=7$"
+        ],
+        "es": [
+          "$x=0\\text{ or }x=-7$",
+          "$x=7\\text{ only}$",
+          "$x=0\\text{ or }x=7$",
+          "$x=1\\text{ or }x=7$"
+        ],
+        "pl": [
+          "$x=0\\text{ or }x=-7$",
+          "$x=7\\text{ only}$",
+          "$x=0\\text{ or }x=7$",
+          "$x=1\\text{ or }x=7$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "missed_zero_root",
+        "sign_flip_root"
+      ]
+    },
+    {
+      "id": "alg1-l16-g02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} + 2x − 15 = 0.",
+        "es": "Resuelve: x^{2} + 2x − 15 = 0.",
+        "pl": "Rozwiąż: x^{2} + 2x − 15 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x + 5)(x − 3) = 0 yields x = −5 or x = 3.",
+        "es": "(x + 5)(x − 3) = 0 da x = −5 o x = 3.",
+        "pl": "(x + 5)(x − 3) = 0 daje x = −5 lub x = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Need factors of −15 that sum to +2: +5 and −3.",
+        "es": "Necesitas factores de −15 que sumen +2: +5 y −3.",
+        "pl": "Potrzebujesz czynników −15 sumujących się do +2: +5 i −3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 2x - 15 = 0",
+      "choices": {
+        "en": [
+          "$x=5\\text{ or }x=-3$",
+          "$x=-5\\text{ or }x=-3$",
+          "$x=5\\text{ or }x=3$",
+          "$x=-5\\text{ or }x=3$"
+        ],
+        "es": [
+          "$x=5\\text{ or }x=-3$",
+          "$x=-5\\text{ or }x=-3$",
+          "$x=5\\text{ or }x=3$",
+          "$x=-5\\text{ or }x=3$"
+        ],
+        "pl": [
+          "$x=5\\text{ or }x=-3$",
+          "$x=-5\\text{ or }x=-3$",
+          "$x=5\\text{ or }x=3$",
+          "$x=-5\\text{ or }x=3$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l16-g03",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} − 16 = 0.",
+        "es": "Resuelve: x^{2} − 16 = 0.",
+        "pl": "Rozwiąż: x^{2} − 16 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Difference of squares: (x − 4)(x + 4) = 0 → x = ±4.",
+        "es": "Diferencia de cuadrados: (x − 4)(x + 4) = 0 → x = ±4.",
+        "pl": "Różnica kwadratów: (x − 4)(x + 4) = 0 → x = ±4."
+      },
+      "feedbackIncorrect": {
+        "en": "Factor as (x − 4)(x + 4), not as a single positive root.",
+        "es": "Factoriza como (x − 4)(x + 4), no como una sola raíz positiva.",
+        "pl": "Rozłóż jako (x − 4)(x + 4), nie jako jeden dodatni pierwiastek."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 16 = 0",
+      "choices": {
+        "en": [
+          "$x=4\\text{ or }x=-4$",
+          "$x=4\\text{ only}$",
+          "$x=16\\text{ or }x=-16$",
+          "$x=8\\text{ or }x=-8$"
+        ],
+        "es": [
+          "$x=4\\text{ or }x=-4$",
+          "$x=4\\text{ only}$",
+          "$x=16\\text{ or }x=-16$",
+          "$x=8\\text{ or }x=-8$"
+        ],
+        "pl": [
+          "$x=4\\text{ or }x=-4$",
+          "$x=4\\text{ only}$",
+          "$x=16\\text{ or }x=-16$",
+          "$x=8\\text{ or }x=-8$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "missed_negative_root",
+        "wrong_roots"
+      ]
+    },
+    {
+      "id": "alg1-l16-g04",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.check.roots"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which pair are the roots of (x + 1)(x − 6) = 0?",
+        "es": "¿Cuál par son las raíces de (x + 1)(x − 6) = 0?",
+        "pl": "Która para to pierwiastki (x + 1)(x − 6) = 0?"
+      },
+      "feedbackCorrect": {
+        "en": "Set each factor to zero: x + 1 = 0 → −1; x − 6 = 0 → 6.",
+        "es": "Iguala cada factor a cero: x + 1 = 0 → −1; x − 6 = 0 → 6.",
+        "pl": "Przyrównaj każdy czynnik do zera: x + 1 = 0 → −1; x − 6 = 0 → 6."
+      },
+      "feedbackIncorrect": {
+        "en": "The root from (x − r) is +r; from (x + r) is −r.",
+        "es": "La raíz de (x − r) es +r; de (x + r) es −r.",
+        "pl": "Pierwiastek z (x − r) to +r; z (x + r) to −r."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "(x + 1)(x - 6) = 0",
+      "choices": {
+        "en": [
+          "$x=1\\text{ and }x=-6$",
+          "$x=-1\\text{ and }x=6$",
+          "$x=-1\\text{ and }x=-6$",
+          "$x=1\\text{ and }x=6$"
+        ],
+        "es": [
+          "$x=1\\text{ and }x=-6$",
+          "$x=-1\\text{ and }x=6$",
+          "$x=-1\\text{ and }x=-6$",
+          "$x=1\\text{ and }x=6$"
+        ],
+        "pl": [
+          "$x=1\\text{ and }x=-6$",
+          "$x=-1\\text{ and }x=6$",
+          "$x=-1\\text{ and }x=-6$",
+          "$x=1\\text{ and }x=6$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_flip_root",
+        "swapped_roots"
+      ]
+    },
+    {
+      "id": "alg1-l16-g05",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "First step for 2x^{2} − 8x = 0 before factoring further?",
+        "es": "¿Primer paso para 2x^{2} − 8x = 0 antes de seguir factorizando?",
+        "pl": "Pierwszy krok dla 2x^{2} − 8x = 0 przed dalszym rozkładem?"
+      },
+      "feedbackCorrect": {
+        "en": "Pull the GCF 2x to get 2x(x − 4) = 0, then apply zero product.",
+        "es": "Saca el MCD 2x para obtener 2x(x − 4) = 0 y aplica producto cero.",
+        "pl": "Wyłącz NWD 2x, otrzymasz 2x(x − 4) = 0, potem iloczyn zerowy."
+      },
+      "feedbackIncorrect": {
+        "en": "Common factor 2x unlocks roots x = 0 and x = 4 cleanly.",
+        "es": "El factor común 2x revela limpiamente las raíces x = 0 y x = 4.",
+        "pl": "Wspólny czynnik 2x jasno daje pierwiastki x = 0 i x = 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "2x^{2} - 8x = 0",
+      "choices": {
+        "en": [
+          "Divide only by 2",
+          "Add 8x to both sides",
+          "Factor out 2x",
+          "Use quadratic formula first"
+        ],
+        "es": [
+          "Dividir solo entre 2",
+          "Sumar 8x a ambos lados",
+          "Sacar factor 2x",
+          "Usar primero la fórmula cuadrática"
+        ],
+        "pl": [
+          "Podzielić tylko przez 2",
+          "Dodać 8x do obu stron",
+          "Wyłączyć 2x",
+          "Najpierw użyć wzoru kwadratowego"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "skipped_gcf",
+        "wrong_strategy"
+      ]
+    },
+    {
+      "id": "alg1-l16-i01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} − 9x + 20 = 0.",
+        "es": "Resuelve: x^{2} − 9x + 20 = 0.",
+        "pl": "Rozwiąż: x^{2} − 9x + 20 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x − 4)(x − 5) = 0, so x = 4 or x = 5.",
+        "es": "(x − 4)(x − 5) = 0, así x = 4 o x = 5.",
+        "pl": "(x − 4)(x − 5) = 0, więc x = 4 lub x = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "4 and 5 multiply to 20 and add to 9 (signs match both negative factors).",
+        "es": "4 y 5 multiplican a 20 y suman 9 (ambos factores negativos).",
+        "pl": "4 i 5 dają iloczyn 20 i sumę 9 (oba czynniki ujemne w nawiasach)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 9x + 20 = 0",
+      "choices": {
+        "en": [
+          "$x=-4\\text{ or }x=-5$",
+          "$x=2\\text{ or }x=10$",
+          "$x=4\\text{ or }x=-5$",
+          "$x=4\\text{ or }x=5$"
+        ],
+        "es": [
+          "$x=-4\\text{ or }x=-5$",
+          "$x=2\\text{ or }x=10$",
+          "$x=4\\text{ or }x=-5$",
+          "$x=4\\text{ or }x=5$"
+        ],
+        "pl": [
+          "$x=-4\\text{ or }x=-5$",
+          "$x=2\\text{ or }x=10$",
+          "$x=4\\text{ or }x=-5$",
+          "$x=4\\text{ or }x=5$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l16-i02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.zero.product"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If (2x − 1)(x + 4) = 0, which is a solution?",
+        "es": "Si (2x − 1)(x + 4) = 0, ¿cuál es una solución?",
+        "pl": "Jeśli (2x − 1)(x + 4) = 0, które jest rozwiązaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "2x − 1 = 0 gives x = 1/2 (and the other root is x = −4).",
+        "es": "2x − 1 = 0 da x = 1/2 (la otra raíz es x = −4).",
+        "pl": "2x − 1 = 0 daje x = 1/2 (drugi pierwiastek to x = −4)."
+      },
+      "feedbackIncorrect": {
+        "en": "Solve 2x − 1 = 0 carefully: add 1, then divide by 2.",
+        "es": "Resuelve 2x − 1 = 0 con cuidado: suma 1 y divide entre 2.",
+        "pl": "Rozwiąż 2x − 1 = 0 ostrożnie: dodaj 1, potem podziel przez 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "(2x - 1)(x + 4) = 0",
+      "choices": {
+        "en": [
+          "$x=\\frac{1}{2}$",
+          "$x=-\\frac{1}{2}$",
+          "$x=4$",
+          "$x=2$"
+        ],
+        "es": [
+          "$x=\\frac{1}{2}$",
+          "$x=-\\frac{1}{2}$",
+          "$x=4$",
+          "$x=2$"
+        ],
+        "pl": [
+          "$x=\\frac{1}{2}$",
+          "$x=-\\frac{1}{2}$",
+          "$x=4$",
+          "$x=2$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "coeff_half_error",
+        "sign_flip_root"
+      ]
+    },
+    {
+      "id": "alg1-l16-i03",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} + 7x + 12 = 0.",
+        "es": "Resuelve: x^{2} + 7x + 12 = 0.",
+        "pl": "Rozwiąż: x^{2} + 7x + 12 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x + 3)(x + 4) = 0 → x = −3 or x = −4.",
+        "es": "(x + 3)(x + 4) = 0 → x = −3 o x = −4.",
+        "pl": "(x + 3)(x + 4) = 0 → x = −3 lub x = −4."
+      },
+      "feedbackIncorrect": {
+        "en": "Both factors are positive when b and c are positive, so both roots are negative.",
+        "es": "Ambos factores son positivos cuando b y c son positivos, así ambas raíces son negativas.",
+        "pl": "Oba czynniki są dodatnie, gdy b i c są dodatnie, więc oba pierwiastki są ujemne."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 7x + 12 = 0",
+      "choices": {
+        "en": [
+          "$x=3\\text{ or }x=4$",
+          "$x=-3\\text{ or }x=-4$",
+          "$x=-2\\text{ or }x=-6$",
+          "$x=-3\\text{ or }x=4$"
+        ],
+        "es": [
+          "$x=3\\text{ or }x=4$",
+          "$x=-3\\text{ or }x=-4$",
+          "$x=-2\\text{ or }x=-6$",
+          "$x=-3\\text{ or }x=4$"
+        ],
+        "pl": [
+          "$x=3\\text{ or }x=4$",
+          "$x=-3\\text{ or }x=-4$",
+          "$x=-2\\text{ or }x=-6$",
+          "$x=-3\\text{ or }x=4$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l16-i04",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.check.roots"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does x = −2 satisfy (x + 2)(x − 5) = 0?",
+        "es": "¿Satisface x = −2 la ecuación (x + 2)(x − 5) = 0?",
+        "pl": "Czy x = −2 spełnia (x + 2)(x − 5) = 0?"
+      },
+      "feedbackCorrect": {
+        "en": "Yes — plugging in makes the first factor zero, so the product is zero.",
+        "es": "Sí — al sustituir, el primer factor se anula y el producto es cero.",
+        "pl": "Tak — podstawienie zeruje pierwszy czynnik, więc iloczyn jest zerem."
+      },
+      "feedbackIncorrect": {
+        "en": "Any root that zeros one factor automatically zeros the product.",
+        "es": "Cualquier raíz que anule un factor anula automáticamente el producto.",
+        "pl": "Każdy pierwiastek zerujący jeden czynnik automatycznie zeruje iloczyn."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "(x + 2)(x - 5) = 0",
+      "choices": {
+        "en": [
+          "No",
+          "Only if x = 5 also",
+          "Yes",
+          "Only for x = 2"
+        ],
+        "es": [
+          "No",
+          "Solo si también x = 5",
+          "Sí",
+          "Solo para x = 2"
+        ],
+        "pl": [
+          "Nie",
+          "Tylko gdy też x = 5",
+          "Tak",
+          "Tylko dla x = 2"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "verify_fail",
+        "confused_other_root"
+      ]
+    },
+    {
+      "id": "alg1-l16-i05",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 3x^{2} − 12x = 0.",
+        "es": "Resuelve: 3x^{2} − 12x = 0.",
+        "pl": "Rozwiąż: 3x^{2} − 12x = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Factor 3x(x − 4) = 0 → x = 0 or x = 4.",
+        "es": "Factoriza 3x(x − 4) = 0 → x = 0 o x = 4.",
+        "pl": "Rozkład 3x(x − 4) = 0 → x = 0 lub x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "After factoring out 3x, solve x − 4 = 0 for the nonzero root.",
+        "es": "Tras sacar 3x, resuelve x − 4 = 0 para la raíz distinta de cero.",
+        "pl": "Po wyłączeniu 3x rozwiąż x − 4 = 0 dla niezerowego pierwiastka."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "3x^{2} - 12x = 0",
+      "choices": {
+        "en": [
+          "$x=0\\text{ or }x=-4$",
+          "$x=4\\text{ only}$",
+          "$x=3\\text{ or }x=4$",
+          "$x=0\\text{ or }x=4$"
+        ],
+        "es": [
+          "$x=0\\text{ or }x=-4$",
+          "$x=4\\text{ only}$",
+          "$x=3\\text{ or }x=4$",
+          "$x=0\\text{ or }x=4$"
+        ],
+        "pl": [
+          "$x=0\\text{ or }x=-4$",
+          "$x=4\\text{ only}$",
+          "$x=3\\text{ or }x=4$",
+          "$x=0\\text{ or }x=4$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "missed_zero_root",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l16-i06",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} − x − 12 = 0.",
+        "es": "Resuelve: x^{2} − x − 12 = 0.",
+        "pl": "Rozwiąż: x^{2} − x − 12 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x − 4)(x + 3) = 0 → x = 4 or x = −3.",
+        "es": "(x − 4)(x + 3) = 0 → x = 4 o x = −3.",
+        "pl": "(x − 4)(x + 3) = 0 → x = 4 lub x = −3."
+      },
+      "feedbackIncorrect": {
+        "en": "Integers −4 and +3 multiply to −12 and add to −1.",
+        "es": "Enteros −4 y +3 multiplican a −12 y suman −1.",
+        "pl": "Całkowite −4 i +3 dają iloczyn −12 i sumę −1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - x - 12 = 0",
+      "choices": {
+        "en": [
+          "$x=4\\text{ or }x=-3$",
+          "$x=-4\\text{ or }x=3$",
+          "$x=6\\text{ or }x=-2$",
+          "$x=4\\text{ or }x=3$"
+        ],
+        "es": [
+          "$x=4\\text{ or }x=-3$",
+          "$x=-4\\text{ or }x=3$",
+          "$x=6\\text{ or }x=-2$",
+          "$x=4\\text{ or }x=3$"
+        ],
+        "pl": [
+          "$x=4\\text{ or }x=-3$",
+          "$x=-4\\text{ or }x=3$",
+          "$x=6\\text{ or }x=-2$",
+          "$x=4\\text{ or }x=3$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l16-i07",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.check.roots"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If the solutions are x = −1 and x = 8, which equation fits?",
+        "es": "Si las soluciones son x = −1 y x = 8, ¿qué ecuación encaja?",
+        "pl": "Jeśli rozwiązania to x = −1 i x = 8, które równanie pasuje?"
+      },
+      "feedbackCorrect": {
+        "en": "Roots −1 and 8 match factors (x + 1) and (x − 8).",
+        "es": "Las raíces −1 y 8 corresponden a (x + 1) y (x − 8).",
+        "pl": "Pierwiastki −1 i 8 odpowiadają czynnikom (x + 1) i (x − 8)."
+      },
+      "feedbackIncorrect": {
+        "en": "Build (x − root) for each root: (x − (−1))(x − 8) = (x + 1)(x − 8).",
+        "es": "Arma (x − raíz) por cada raíz: (x − (−1))(x − 8) = (x + 1)(x − 8).",
+        "pl": "Zbuduj (x − pierwiastek) dla każdego: (x − (−1))(x − 8) = (x + 1)(x − 8)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x=-1\\text{ and }x=8",
+      "choices": {
+        "en": [
+          "$(x-1)(x+8)=0$",
+          "$(x+1)(x-8)=0$",
+          "$(x+1)(x+8)=0$",
+          "$(x-1)(x-8)=0$"
+        ],
+        "es": [
+          "$(x-1)(x+8)=0$",
+          "$(x+1)(x-8)=0$",
+          "$(x+1)(x+8)=0$",
+          "$(x-1)(x-8)=0$"
+        ],
+        "pl": [
+          "$(x-1)(x+8)=0$",
+          "$(x+1)(x-8)=0$",
+          "$(x+1)(x+8)=0$",
+          "$(x-1)(x-8)=0$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "reversed_factors",
+        "sign_flip_root"
+      ]
+    },
+    {
+      "id": "alg1-l16-i08",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} − 25 = 0.",
+        "es": "Resuelve: x^{2} − 25 = 0.",
+        "pl": "Rozwiąż: x^{2} − 25 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x − 5)(x + 5) = 0 gives both 5 and −5.",
+        "es": "(x − 5)(x + 5) = 0 da tanto 5 como −5.",
+        "pl": "(x − 5)(x + 5) = 0 daje zarówno 5, jak i −5."
+      },
+      "feedbackIncorrect": {
+        "en": "Square-rooting alone still needs ±; factoring shows both roots clearly.",
+        "es": "Sacar raíz sola aún necesita ±; factorizar muestra ambas raíces con claridad.",
+        "pl": "Sam pierwiastek i tak wymaga ±; rozkład jasno pokazuje oba pierwiastki."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 25 = 0",
+      "choices": {
+        "en": [
+          "$x=5\\text{ only}$",
+          "$x=25\\text{ or }x=-25$",
+          "$x=5\\text{ or }x=-5$",
+          "$x=\\sqrt{25}\\text{ only}$"
+        ],
+        "es": [
+          "$x=5\\text{ only}$",
+          "$x=25\\text{ or }x=-25$",
+          "$x=5\\text{ or }x=-5$",
+          "$x=\\sqrt{25}\\text{ only}$"
+        ],
+        "pl": [
+          "$x=5\\text{ only}$",
+          "$x=25\\text{ or }x=-25$",
+          "$x=5\\text{ or }x=-5$",
+          "$x=\\sqrt{25}\\text{ only}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "missed_negative_root",
+        "wrong_roots"
+      ]
+    },
+    {
+      "id": "alg1-l16-i09",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.zero.product"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Why can we split (x − 2)(3x + 1) = 0 into two linear equations?",
+        "es": "¿Por qué podemos partir (x − 2)(3x + 1) = 0 en dos ecuaciones lineales?",
+        "pl": "Dlaczego możemy rozdzielić (x − 2)(3x + 1) = 0 na dwa równania liniowe?"
+      },
+      "feedbackCorrect": {
+        "en": "That is the zero product property — real numbers multiply to zero only via a zero factor.",
+        "es": "Esa es la propiedad del producto cero: reales dan producto cero solo con un factor cero.",
+        "pl": "To własność iloczynu zerowego — liczby rzeczywiste dają zero tylko przez zerowy czynnik."
+      },
+      "feedbackIncorrect": {
+        "en": "Dividing by a factor can lose a root; the property uses “or,” not division.",
+        "es": "Dividir por un factor puede perder una raíz; la propiedad usa “o”, no división.",
+        "pl": "Dzielenie przez czynnik może zgubić pierwiastek; własność mówi „lub”, nie dzielenie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "(x - 2)(3x + 1) = 0",
+      "choices": {
+        "en": [
+          "Because every quadratic has two positive roots",
+          "Because we can divide both sides by any factor freely",
+          "Because a and c must have opposite signs",
+          "A product is zero only if a factor is zero"
+        ],
+        "es": [
+          "Porque toda cuadrática tiene dos raíces positivas",
+          "Porque podemos dividir libremente entre cualquier factor",
+          "Porque a y c deben tener signos opuestos",
+          "Un producto es cero solo si un factor es cero"
+        ],
+        "pl": [
+          "Bo każde kwadratowe ma dwa dodatnie pierwiastki",
+          "Bo wolno dzielić obie strony przez dowolny czynnik",
+          "Bo a i c muszą mieć przeciwne znaki",
+          "Iloczyn jest zerem tylko gdy czynnik jest zerem"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "wrong_reason",
+        "divide_away_root"
+      ]
+    },
+    {
+      "id": "alg1-l16-i10",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x^{2} + 3x − 28 = 0.",
+        "es": "Resuelve: x^{2} + 3x − 28 = 0.",
+        "pl": "Rozwiąż: x^{2} + 3x − 28 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x + 7)(x − 4) = 0 → x = −7 or x = 4.",
+        "es": "(x + 7)(x − 4) = 0 → x = −7 o x = 4.",
+        "pl": "(x + 7)(x − 4) = 0 → x = −7 lub x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Pair +7 and −4: product −28, sum +3.",
+        "es": "Par +7 y −4: producto −28, suma +3.",
+        "pl": "Para +7 i −4: iloczyn −28, suma +3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 3x - 28 = 0",
+      "choices": {
+        "en": [
+          "$x=-7\\text{ or }x=4$",
+          "$x=7\\text{ or }x=-4$",
+          "$x=-7\\text{ or }x=-4$",
+          "$x=7\\text{ or }x=4$"
+        ],
+        "es": [
+          "$x=-7\\text{ or }x=4$",
+          "$x=7\\text{ or }x=-4$",
+          "$x=-7\\text{ or }x=-4$",
+          "$x=7\\text{ or }x=4$"
+        ],
+        "pl": [
+          "$x=-7\\text{ or }x=4$",
+          "$x=7\\text{ or }x=-4$",
+          "$x=-7\\text{ or }x=-4$",
+          "$x=7\\text{ or }x=4$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_error"
+      ]
+    }
+  ]
+}

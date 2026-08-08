@@ -2732,6 +2732,552 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.quadratic.zero.product",
+      "title": {
+        "en": "Zero product property for equations",
+        "es": "Propiedad del producto cero en ecuaciones",
+        "pl": "Własność iloczynu zerowego w równaniach"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.trinomial.a1",
+        "kp.alg1.factor.verify"
+      ],
+      "successCriteria": {
+        "en": "Student uses: if A·B = 0, then A = 0 or B = 0 (or both), to set each factor equal to zero.",
+        "es": "El estudiante usa: si A·B = 0, entonces A = 0 o B = 0 (o ambos), igualando cada factor a cero.",
+        "pl": "Uczeń stosuje: jeśli A·B = 0, to A = 0 lub B = 0 (albo oba), przyrównując każdy czynnik do zera."
+      },
+      "misconceptions": {
+        "en": [
+          "Setting the product equal to a nonzero number and still treating factors independently",
+          "Solving only one factor and ignoring the other root"
+        ],
+        "es": [
+          "Igualar el producto a un número distinto de cero y tratar los factores por separado",
+          "Resolver solo un factor e ignorar la otra raíz"
+        ],
+        "pl": [
+          "Przyrównywanie iloczynu do liczby niezerowej i traktowanie czynników osobno",
+          "Rozwiązywanie tylko jednego czynnika i pomijanie drugiego pierwiastka"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.solve.factoring",
+      "title": {
+        "en": "Solve quadratic equations by factoring",
+        "es": "Resolver ecuaciones cuadráticas por factorización",
+        "pl": "Rozwiązywać równania kwadratowe przez rozkład"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.zero.product",
+        "kp.alg1.factor.trinomial.a1",
+        "kp.alg1.factor.difference.squares"
+      ],
+      "encompassing": [
+        "kp.alg1.quadratic.zero.product"
+      ],
+      "successCriteria": {
+        "en": "Student rewrites a quadratic as a product of linear factors (when possible) and solves using the zero product property.",
+        "es": "El estudiante reescribe una cuadrática como producto de factores lineales (cuando es posible) y resuelve con el producto cero.",
+        "pl": "Uczeń przepisuje równanie kwadratowe na iloczyn czynników liniowych (gdy to możliwe) i rozwiązuje własnością iloczynu zerowego."
+      },
+      "misconceptions": {
+        "en": [
+          "Forgetting to set the equation equal to zero before factoring",
+          "Reporting factors as solutions instead of the zeros of each factor"
+        ],
+        "es": [
+          "Olvidar igualar a cero antes de factorizar",
+          "Reportar los factores como soluciones en lugar de los ceros de cada factor"
+        ],
+        "pl": [
+          "Zapominanie o sprowadzeniu do zera przed rozkładem",
+          "Podawanie czynników jako rozwiązań zamiast zer każdego czynnika"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.10(E)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.check.roots",
+      "title": {
+        "en": "Identify and check roots of factored quadratics",
+        "es": "Identificar y comprobar raíces de cuadráticas factorizadas",
+        "pl": "Identyfikować i sprawdzać pierwiastki rozłożonych kwadratowych"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "successCriteria": {
+        "en": "Student reads roots from a factored equation and verifies by substitution or by expanding.",
+        "es": "El estudiante lee las raíces de una ecuación factorizada y verifica por sustitución o expandiendo.",
+        "pl": "Uczeń odczytuje pierwiastki z postaci rozłożonej i sprawdza przez podstawienie lub rozwinięcie."
+      },
+      "misconceptions": {
+        "en": [
+          "Confusing the constants in (x − p)(x − q) with the signs of the roots",
+          "Accepting extraneous roots that do not satisfy the original equation"
+        ],
+        "es": [
+          "Confundir las constantes en (x − p)(x − q) con los signos de las raíces",
+          "Aceptar raíces extrañas que no satisfacen la ecuación original"
+        ],
+        "pl": [
+          "Mylenie stałych w (x − p)(x − q) ze znakami pierwiastków",
+          "Akceptowanie pierwiastków obcych, które nie spełniają równania"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-SSE.B.3a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.formula",
+      "title": {
+        "en": "Quadratic formula (structure)",
+        "es": "Fórmula cuadrática (estructura)",
+        "pl": "Wzór kwadratowy (struktura)"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "successCriteria": {
+        "en": "Student recalls x = (−b ± √(b² − 4ac)) / (2a) for ax² + bx + c = 0 with a ≠ 0.",
+        "es": "El estudiante recuerda x = (−b ± √(b² − 4ac)) / (2a) para ax² + bx + c = 0 con a ≠ 0.",
+        "pl": "Uczeń pamięta x = (−b ± √(b² − 4ac)) / (2a) dla ax² + bx + c = 0 przy a ≠ 0."
+      },
+      "misconceptions": {
+        "en": [
+          "Using −b without the ±, or dividing only one term by 2a",
+          "Swapping a, b, c when identifying coefficients"
+        ],
+        "es": [
+          "Usar −b sin el ±, o dividir solo un término entre 2a",
+          "Intercambiar a, b, c al identificar coeficientes"
+        ],
+        "pl": [
+          "Używanie −b bez ± albo dzielenie tylko jednego składnika przez 2a",
+          "Zamienianie a, b, c przy identyfikacji współczynników"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.discriminant",
+      "title": {
+        "en": "Discriminant and number of real roots",
+        "es": "Discriminante y número de raíces reales",
+        "pl": "Wyróżnik i liczba pierwiastków rzeczywistych"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.formula"
+      ],
+      "successCriteria": {
+        "en": "Student computes Δ = b² − 4ac and interprets: Δ > 0 two real, Δ = 0 one real (double), Δ < 0 no real roots.",
+        "es": "El estudiante calcula Δ = b² − 4ac e interpreta: Δ > 0 dos reales, Δ = 0 una real (doble), Δ < 0 ninguna real.",
+        "pl": "Uczeń oblicza Δ = b² − 4ac i interpretuje: Δ > 0 dwa rzeczywiste, Δ = 0 jeden (podwójny), Δ < 0 brak rzeczywistych."
+      },
+      "misconceptions": {
+        "en": [
+          "Thinking a negative discriminant always means complex work is required in Algebra I context without stating “no real roots”",
+          "Confusing the sign of Δ with the sign of the leading coefficient a"
+        ],
+        "es": [
+          "Creer que un discriminante negativo siempre exige complejos en Álgebra I sin decir “sin raíces reales”",
+          "Confundir el signo de Δ con el signo del coeficiente principal a"
+        ],
+        "pl": [
+          "Myślenie, że ujemny wyróżnik zawsze wymaga liczb zespolonych w Algebrze I zamiast „brak pierwiastków rzeczywistych”",
+          "Mylenie znaku Δ ze znakiem współczynnika wiodącego a"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.formula.apply",
+      "title": {
+        "en": "Apply the quadratic formula",
+        "es": "Aplicar la fórmula cuadrática",
+        "pl": "Stosować wzór kwadratowy"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.formula",
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "encompassing": [
+        "kp.alg1.quadratic.formula"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes a, b, c carefully, simplifies the radical when possible, and reports exact or simplified roots.",
+        "es": "El estudiante sustituye a, b, c con cuidado, simplifica el radical cuando es posible y reporta raíces exactas o simplificadas.",
+        "pl": "Uczeń podstawia a, b, c ostrożnie, upraszcza pierwiastek gdy można i podaje dokładne lub uproszczone pierwiastki."
+      },
+      "misconceptions": {
+        "en": [
+          "Arithmetic errors under the radical or forgetting ± produces two candidates",
+          "Leaving the answer as ±√Δ without dividing by 2a"
+        ],
+        "es": [
+          "Errores aritméticos bajo el radical u olvidar que ± da dos candidatos",
+          "Dejar la respuesta como ±√Δ sin dividir entre 2a"
+        ],
+        "pl": [
+          "Błędy arytmetyczne pod pierwiastkiem lub zapominanie, że ± daje dwa kandydaty",
+          "Zostawianie odpowiedzi jako ±√Δ bez dzielenia przez 2a"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.parabola.direction",
+      "title": {
+        "en": "Parabola opens up or down",
+        "es": "La parábola abre hacia arriba o abajo",
+        "pl": "Parabola otwiera się w górę lub w dół"
+      },
+      "prerequisites": [
+        "kp.alg1.graph.slope.intercept",
+        "kp.alg1.quadratic.solve.factoring"
+      ],
+      "successCriteria": {
+        "en": "Student uses the sign of a in y = ax² + bx + c: a > 0 opens up, a < 0 opens down.",
+        "es": "El estudiante usa el signo de a en y = ax² + bx + c: a > 0 abre hacia arriba, a < 0 hacia abajo.",
+        "pl": "Uczeń używa znaku a w y = ax² + bx + c: a > 0 otwiera w górę, a < 0 w dół."
+      },
+      "misconceptions": {
+        "en": [
+          "Using the sign of c (y-intercept) to decide opening direction",
+          "Thinking steeper |a| changes the opening direction instead of width"
+        ],
+        "es": [
+          "Usar el signo de c (intercepto y) para decidir la apertura",
+          "Creer que un |a| mayor cambia la dirección en lugar del ancho"
+        ],
+        "pl": [
+          "Używanie znaku c (przecięcie z osią y) do kierunku otwarcia",
+          "Myślenie, że większe |a| zmienia kierunek zamiast szerokości"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.A.1a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.7a"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.vertex.axis",
+      "title": {
+        "en": "Vertex and axis of symmetry",
+        "es": "Vértice y eje de simetría",
+        "pl": "Wierzchołek i oś symetrii"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.parabola.direction"
+      ],
+      "successCriteria": {
+        "en": "Student finds the axis x = −b/(2a) and the vertex (h, k) by evaluating y at that x (intro level).",
+        "es": "El estudiante halla el eje x = −b/(2a) y el vértice (h, k) evaluando y en esa x (nivel introductorio).",
+        "pl": "Uczeń znajduje oś x = −b/(2a) i wierzchołek (h, k) przez obliczenie y w tym x (poziom wstępny)."
+      },
+      "misconceptions": {
+        "en": [
+          "Using −b/a or b/(2a) instead of −b/(2a) for the axis",
+          "Reporting the axis as a y-value or confusing vertex with y-intercept"
+        ],
+        "es": [
+          "Usar −b/a o b/(2a) en lugar de −b/(2a) para el eje",
+          "Reportar el eje como un valor y o confundir vértice con intercepto y"
+        ],
+        "pl": [
+          "Używanie −b/a lub b/(2a) zamiast −b/(2a) dla osi",
+          "Podawanie osi jako wartości y lub mylenie wierzchołka z przecięciem y"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.7a"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.quadratic.graph.features",
+      "title": {
+        "en": "Key features of a parabola graph",
+        "es": "Características clave de la gráfica de una parábola",
+        "pl": "Kluczowe cechy wykresu paraboli"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.vertex.axis",
+        "kp.alg1.quadratic.check.roots"
+      ],
+      "encompassing": [
+        "kp.alg1.quadratic.parabola.direction"
+      ],
+      "successCriteria": {
+        "en": "Student connects roots (x-intercepts), y-intercept, vertex, and axis to sketch or describe a parabola.",
+        "es": "El estudiante conecta raíces (interceptos x), intercepto y, vértice y eje para bosquejar o describir una parábola.",
+        "pl": "Uczeń łączy pierwiastki (przecięcia x), przecięcie y, wierzchołek i oś, by naszkicować lub opisać parabolę."
+      },
+      "misconceptions": {
+        "en": [
+          "Assuming the vertex is always on the y-axis",
+          "Mixing up x-intercepts with the y-intercept c"
+        ],
+        "es": [
+          "Asumir que el vértice siempre está en el eje y",
+          "Confundir interceptos x con el intercepto y = c"
+        ],
+        "pl": [
+          "Zakładanie, że wierzchołek zawsze leży na osi y",
+          "Mylenie przecięć x z przecięciem y = c"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.7a"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
     }
   ]
 }

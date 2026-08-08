@@ -1,0 +1,1296 @@
+{
+  "id": "alg1-l17",
+  "courseId": "algebra1",
+  "order": 17,
+  "title": {
+    "en": "Quadratic Formula & Discriminant",
+    "es": "Fórmula cuadrática y discriminante",
+    "pl": "Wzór kwadratowy i wyróżnik"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.quadratic.formula",
+    "kp.alg1.quadratic.discriminant",
+    "kp.alg1.quadratic.formula.apply"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_17",
+    "unlockOnMastery": [
+      "lesson_board_18"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will identify a, b, c, use the quadratic formula, and interpret the discriminant.",
+        "es": "Identificarás a, b, c, usarás la fórmula cuadrática e interpretarás el discriminante.",
+        "pl": "Będziesz identyfikować a, b, c, stosować wzór kwadratowy i interpretować wyróżnik."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: formula & Δ",
+        "es": "Enseñar: fórmula y Δ",
+        "pl": "Nauczanie: wzór i Δ"
+      },
+      "body": {
+        "en": "Memorize x = (−b ± √(b² − 4ac))/(2a). The sign of Δ = b² − 4ac tells how many real roots.",
+        "es": "Memoriza x = (−b ± √(b² − 4ac))/(2a). El signo de Δ = b² − 4ac dice cuántas raíces reales hay.",
+        "pl": "Zapamiętaj x = (−b ± √(b² − 4ac))/(2a). Znak Δ = b² − 4ac mówi, ile jest pierwiastków rzeczywistych."
+      },
+      "bodyMath": [
+        "x=\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}",
+        "\\Delta=b^{2}-4ac",
+        "\\Delta>0:\\ 2\\text{ real};\\ \\Delta=0:\\ 1\\text{ real};\\ \\Delta<0:\\text{ none real}"
+      ],
+      "itemIds": [
+        "alg1-l17-t01",
+        "alg1-l17-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Classify by Δ, pick coefficients carefully, and run the formula on friendly integers.",
+        "es": "Clasifica por Δ, elige coeficientes con cuidado y aplica la fórmula con enteros amables.",
+        "pl": "Klasyfikuj według Δ, ostrożnie wybieraj współczynniki i stosuj wzór na wygodnych całkowitych."
+      },
+      "itemIds": [
+        "alg1-l17-g01",
+        "alg1-l17-g02",
+        "alg1-l17-g03",
+        "alg1-l17-g04",
+        "alg1-l17-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l17-i01",
+        "alg1-l17-i02",
+        "alg1-l17-i03",
+        "alg1-l17-i04",
+        "alg1-l17-i05",
+        "alg1-l17-i06",
+        "alg1-l17-i07",
+        "alg1-l17-i08",
+        "alg1-l17-i09",
+        "alg1-l17-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l17-t01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -0.95,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For ax^{2} + bx + c = 0, the quadratic formula begins with which numerator?",
+        "es": "Para ax^{2} + bx + c = 0, ¿con qué numerador empieza la fórmula cuadrática?",
+        "pl": "Dla ax^{2} + bx + c = 0 od jakiego licznika zaczyna się wzór kwadratowy?"
+      },
+      "feedbackCorrect": {
+        "en": "The classic form starts with −b ± the square root of the discriminant.",
+        "es": "La forma clásica empieza con −b ± la raíz del discriminante.",
+        "pl": "Klasyczna postać zaczyna się od −b ± pierwiastka z wyróżnika."
+      },
+      "feedbackIncorrect": {
+        "en": "Remember the leading minus on b and the minus inside b² − 4ac.",
+        "es": "Recuerda el menos delante de b y el menos dentro de b² − 4ac.",
+        "pl": "Pamiętaj minus przed b i minus wewnątrz b² − 4ac."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x=\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}",
+      "choices": {
+        "en": [
+          "$-b\\pm\\sqrt{b^{2}-4ac}$",
+          "$b\\pm\\sqrt{b^{2}-4ac}$",
+          "$-b\\pm\\sqrt{b^{2}+4ac}$",
+          "$b\\pm 4ac$"
+        ],
+        "es": [
+          "$-b\\pm\\sqrt{b^{2}-4ac}$",
+          "$b\\pm\\sqrt{b^{2}-4ac}$",
+          "$-b\\pm\\sqrt{b^{2}+4ac}$",
+          "$b\\pm 4ac$"
+        ],
+        "pl": [
+          "$-b\\pm\\sqrt{b^{2}-4ac}$",
+          "$b\\pm\\sqrt{b^{2}-4ac}$",
+          "$-b\\pm\\sqrt{b^{2}+4ac}$",
+          "$b\\pm 4ac$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_on_b",
+        "disc_sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l17-t02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.75,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "The discriminant of ax^{2} + bx + c is…",
+        "es": "El discriminante de ax^{2} + bx + c es…",
+        "pl": "Wyróżnik ax^{2} + bx + c to…"
+      },
+      "feedbackCorrect": {
+        "en": "Δ = b² − 4ac sits under the radical in the quadratic formula.",
+        "es": "Δ = b² − 4ac está bajo el radical en la fórmula cuadrática.",
+        "pl": "Δ = b² − 4ac stoi pod pierwiastkiem we wzorze kwadratowym."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not confuse Δ with the axis formula −b/(2a) or with 2a in the denominator.",
+        "es": "No confundas Δ con el eje −b/(2a) ni con 2a del denominador.",
+        "pl": "Nie myl Δ z osią −b/(2a) ani z 2a w mianowniku."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "\\Delta = b^{2} - 4ac",
+      "choices": {
+        "en": [
+          "$b^{2}+4ac$",
+          "$b^{2}-4ac$",
+          "$2a$",
+          "$-b/(2a)$"
+        ],
+        "es": [
+          "$b^{2}+4ac$",
+          "$b^{2}-4ac$",
+          "$2a$",
+          "$-b/(2a)$"
+        ],
+        "pl": [
+          "$b^{2}+4ac$",
+          "$b^{2}-4ac$",
+          "$2a$",
+          "$-b/(2a)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "confused_with_axis",
+        "disc_sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l17-g01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If Δ > 0 for a quadratic with real coefficients, how many distinct real roots?",
+        "es": "Si Δ > 0 para una cuadrática con coeficientes reales, ¿cuántas raíces reales distintas?",
+        "pl": "Jeśli Δ > 0 dla kwadratowego o współczynnikach rzeczywistych, ile różnych pierwiastków rzeczywistych?"
+      },
+      "feedbackCorrect": {
+        "en": "A positive discriminant means two distinct real solutions.",
+        "es": "Un discriminante positivo significa dos soluciones reales distintas.",
+        "pl": "Dodatni wyróżnik oznacza dwa różne rozwiązania rzeczywiste."
+      },
+      "feedbackIncorrect": {
+        "en": "Δ = 0 is the double-root case; Δ < 0 means no real roots.",
+        "es": "Δ = 0 es la raíz doble; Δ < 0 significa ninguna raíz real.",
+        "pl": "Δ = 0 to pierwiastek podwójny; Δ < 0 oznacza brak pierwiastków rzeczywistych."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "\\Delta > 0",
+      "choices": {
+        "en": [
+          "One",
+          "Zero",
+          "Two",
+          "Infinitely many"
+        ],
+        "es": [
+          "Una",
+          "Cero",
+          "Dos",
+          "Infinitas"
+        ],
+        "pl": [
+          "Jeden",
+          "Zero",
+          "Dwa",
+          "Nieskończenie wiele"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "disc_count_error",
+        "confused_zero_case"
+      ]
+    },
+    {
+      "id": "alg1-l17-g02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For 2x^{2} − 3x + 1 = 0, what is a?",
+        "es": "Para 2x^{2} − 3x + 1 = 0, ¿cuál es a?",
+        "pl": "Dla 2x^{2} − 3x + 1 = 0, ile wynosi a?"
+      },
+      "feedbackCorrect": {
+        "en": "a is the coefficient of x², here 2.",
+        "es": "a es el coeficiente de x², aquí 2.",
+        "pl": "a to współczynnik przy x², tutaj 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Write standard form ax² + bx + c; a multiplies x².",
+        "es": "Escribe la forma ax² + bx + c; a multiplica a x².",
+        "pl": "Zapisz postać ax² + bx + c; a mnoży x²."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "2x^{2} - 3x + 1 = 0",
+      "choices": {
+        "en": [
+          "$-3$",
+          "$1$",
+          "$-2$",
+          "$2$"
+        ],
+        "es": [
+          "$-3$",
+          "$1$",
+          "$-2$",
+          "$2$"
+        ],
+        "pl": [
+          "$-3$",
+          "$1$",
+          "$-2$",
+          "$2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "coeff_swap",
+        "sign_on_b"
+      ]
+    },
+    {
+      "id": "alg1-l17-g03",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Compute Δ for x^{2} − 4x + 4 = 0.",
+        "es": "Calcula Δ para x^{2} − 4x + 4 = 0.",
+        "pl": "Oblicz Δ dla x^{2} − 4x + 4 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "b² − 4ac = 16 − 16 = 0, a repeated real root.",
+        "es": "b² − 4ac = 16 − 16 = 0, una raíz real repetida.",
+        "pl": "b² − 4ac = 16 − 16 = 0, powtórzony pierwiastek rzeczywisty."
+      },
+      "feedbackIncorrect": {
+        "en": "Here a = 1, b = −4, c = 4 → (−4)² − 4·1·4 = 0.",
+        "es": "Aquí a = 1, b = −4, c = 4 → (−4)² − 4·1·4 = 0.",
+        "pl": "Tu a = 1, b = −4, c = 4 → (−4)² − 4·1·4 = 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 4x + 4 = 0",
+      "choices": {
+        "en": [
+          "$0$",
+          "$16$",
+          "$-16$",
+          "$4$"
+        ],
+        "es": [
+          "$0$",
+          "$16$",
+          "$-16$",
+          "$4$"
+        ],
+        "pl": [
+          "$0$",
+          "$16$",
+          "$-16$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "arith_under_radical",
+        "sign_on_b"
+      ]
+    },
+    {
+      "id": "alg1-l17-g04",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula.apply"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Apply the formula to x^{2} − 5x + 6 = 0. The roots are…",
+        "es": "Aplica la fórmula a x^{2} − 5x + 6 = 0. Las raíces son…",
+        "pl": "Zastosuj wzór do x^{2} − 5x + 6 = 0. Pierwiastki to…"
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 25 − 24 = 1, so x = (5 ± 1)/2 → 3 and 2.",
+        "es": "Δ = 25 − 24 = 1, así x = (5 ± 1)/2 → 3 y 2.",
+        "pl": "Δ = 25 − 24 = 1, więc x = (5 ± 1)/2 → 3 i 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute a = 1, b = −5, c = 6 into (−b ± √Δ)/(2a).",
+        "es": "Sustituye a = 1, b = −5, c = 6 en (−b ± √Δ)/(2a).",
+        "pl": "Podstaw a = 1, b = −5, c = 6 do (−b ± √Δ)/(2a)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 5x + 6 = 0",
+      "choices": {
+        "en": [
+          "$x=-2\\text{ or }x=-3$",
+          "$x=2\\text{ or }x=3$",
+          "$x=1\\text{ or }x=6$",
+          "$x=5\\pm\\sqrt{1}$"
+        ],
+        "es": [
+          "$x=-2\\text{ or }x=-3$",
+          "$x=2\\text{ or }x=3$",
+          "$x=1\\text{ or }x=6$",
+          "$x=5\\pm\\sqrt{1}$"
+        ],
+        "pl": [
+          "$x=-2\\text{ or }x=-3$",
+          "$x=2\\text{ or }x=3$",
+          "$x=1\\text{ or }x=6$",
+          "$x=5\\pm\\sqrt{1}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "arith_under_radical",
+        "forgot_divide_2a"
+      ]
+    },
+    {
+      "id": "alg1-l17-g05",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If Δ < 0, what is true in real Algebra I?",
+        "es": "Si Δ < 0, ¿qué es cierto en Álgebra I real?",
+        "pl": "Jeśli Δ < 0, co jest prawdą w rzeczywistej Algebrze I?"
+      },
+      "feedbackCorrect": {
+        "en": "Negative Δ means the square root is not real — no real solutions.",
+        "es": "Δ negativo significa que la raíz no es real — sin soluciones reales.",
+        "pl": "Ujemne Δ oznacza, że pierwiastek nie jest rzeczywisty — brak rozwiązań rzeczywistych."
+      },
+      "feedbackIncorrect": {
+        "en": "One real root is the Δ = 0 case, not Δ < 0.",
+        "es": "Una raíz real es el caso Δ = 0, no Δ < 0.",
+        "pl": "Jeden pierwiastek rzeczywisty to przypadek Δ = 0, nie Δ < 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "\\Delta < 0",
+      "choices": {
+        "en": [
+          "Exactly one real root",
+          "Two identical real roots",
+          "No real roots",
+          "Infinitely many real roots"
+        ],
+        "es": [
+          "Exactamente una raíz real",
+          "Dos raíces reales idénticas",
+          "Ninguna raíz real",
+          "Infinitas raíces reales"
+        ],
+        "pl": [
+          "Dokładnie jeden pierwiastek rzeczywisty",
+          "Dwa identyczne pierwiastki rzeczywiste",
+          "Brak pierwiastków rzeczywistych",
+          "Nieskończenie wiele pierwiastków rzeczywistych"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "disc_count_error",
+        "confused_zero_case"
+      ]
+    },
+    {
+      "id": "alg1-l17-i01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula.apply"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve with the formula: x^{2} + 2x − 3 = 0.",
+        "es": "Resuelve con la fórmula: x^{2} + 2x − 3 = 0.",
+        "pl": "Rozwiąż wzorem: x^{2} + 2x − 3 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 4 + 12 = 16; x = (−2 ± 4)/2 → 1 and −3.",
+        "es": "Δ = 4 + 12 = 16; x = (−2 ± 4)/2 → 1 y −3.",
+        "pl": "Δ = 4 + 12 = 16; x = (−2 ± 4)/2 → 1 i −3."
+      },
+      "feedbackIncorrect": {
+        "en": "Keep −b = −2, then apply both + and − before dividing by 2.",
+        "es": "Mantén −b = −2, luego aplica + y − antes de dividir entre 2.",
+        "pl": "Zachowaj −b = −2, potem zastosuj + i − przed dzieleniem przez 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 2x - 3 = 0",
+      "choices": {
+        "en": [
+          "$x=-1\\text{ or }x=3$",
+          "$x=1\\text{ or }x=3$",
+          "$x=-1\\text{ or }x=-3$",
+          "$x=1\\text{ or }x=-3$"
+        ],
+        "es": [
+          "$x=-1\\text{ or }x=3$",
+          "$x=1\\text{ or }x=3$",
+          "$x=-1\\text{ or }x=-3$",
+          "$x=1\\text{ or }x=-3$"
+        ],
+        "pl": [
+          "$x=-1\\text{ or }x=3$",
+          "$x=1\\text{ or }x=3$",
+          "$x=-1\\text{ or }x=-3$",
+          "$x=1\\text{ or }x=-3$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_on_b",
+        "forgot_pm"
+      ]
+    },
+    {
+      "id": "alg1-l17-i02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Compute Δ for 3x^{2} + 5x + 1 = 0.",
+        "es": "Calcula Δ para 3x^{2} + 5x + 1 = 0.",
+        "pl": "Oblicz Δ dla 3x^{2} + 5x + 1 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Plug in: 25 − 12 = 13, so Δ = 13.",
+        "es": "Sustituye: 25 − 12 = 13, así Δ = 13.",
+        "pl": "Podstaw: 25 − 12 = 13, więc Δ = 13."
+      },
+      "feedbackIncorrect": {
+        "en": "Use b² − 4ac with a = 3, b = 5, c = 1.",
+        "es": "Usa b² − 4ac con a = 3, b = 5, c = 1.",
+        "pl": "Użyj b² − 4ac przy a = 3, b = 5, c = 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "3x^{2} + 5x + 1 = 0",
+      "choices": {
+        "en": [
+          "$13$",
+          "$25$",
+          "$-7$",
+          "$37$"
+        ],
+        "es": [
+          "$13$",
+          "$25$",
+          "$-7$",
+          "$37$"
+        ],
+        "pl": [
+          "$13$",
+          "$25$",
+          "$-7$",
+          "$37$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "arith_under_radical",
+        "coeff_swap"
+      ]
+    },
+    {
+      "id": "alg1-l17-i03",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In the formula, what must be true about a?",
+        "es": "En la fórmula, ¿qué debe ser cierto sobre a?",
+        "pl": "We wzorze, co musi być prawdziwe o a?"
+      },
+      "feedbackCorrect": {
+        "en": "If a = 0 the equation is not quadratic and division by 2a fails.",
+        "es": "Si a = 0 la ecuación no es cuadrática y dividir entre 2a falla.",
+        "pl": "Gdy a = 0 równanie nie jest kwadratowe i dzielenie przez 2a zawodzi."
+      },
+      "feedbackIncorrect": {
+        "en": "a can be negative (opens down); it just cannot be zero.",
+        "es": "a puede ser negativo (abre hacia abajo); solo no puede ser cero.",
+        "pl": "a może być ujemne (otwiera w dół); po prostu nie może być zerem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x=\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}",
+      "choices": {
+        "en": [
+          "a > 0 only",
+          "a ≠ 0",
+          "a = 1 always",
+          "a = c"
+        ],
+        "es": [
+          "Solo a > 0",
+          "a ≠ 0",
+          "a = 1 siempre",
+          "a = c"
+        ],
+        "pl": [
+          "Tylko a > 0",
+          "a ≠ 0",
+          "a = 1 zawsze",
+          "a = c"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "a_zero_invalid",
+        "direction_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l17-i04",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula.apply"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For x^{2} − 2x − 1 = 0, the exact roots are…",
+        "es": "Para x^{2} − 2x − 1 = 0, las raíces exactas son…",
+        "pl": "Dla x^{2} − 2x − 1 = 0 dokładne pierwiastki to…"
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 8 simplifies under the radical, yielding exact roots 1 ± √2.",
+        "es": "Δ = 8 se simplifica bajo el radical y da las raíces exactas 1 ± √2.",
+        "pl": "Δ = 8 upraszcza się pod pierwiastkiem i daje dokładne pierwiastki 1 ± √2."
+      },
+      "feedbackIncorrect": {
+        "en": "Simplify √8 = 2√2, then cancel the common factor 2 with the denominator.",
+        "es": "Simplifica √8 = 2√2 y cancela el 2 común con el denominador.",
+        "pl": "Uprość √8 = 2√2, potem skróć wspólne 2 z mianownikiem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 2x - 1 = 0",
+      "choices": {
+        "en": [
+          "$1\\pm\\sqrt{3}$",
+          "$-1\\pm\\sqrt{2}$",
+          "$1\\pm\\sqrt{2}$",
+          "$2\\pm\\sqrt{2}$"
+        ],
+        "es": [
+          "$1\\pm\\sqrt{3}$",
+          "$-1\\pm\\sqrt{2}$",
+          "$1\\pm\\sqrt{2}$",
+          "$2\\pm\\sqrt{2}$"
+        ],
+        "pl": [
+          "$1\\pm\\sqrt{3}$",
+          "$-1\\pm\\sqrt{2}$",
+          "$1\\pm\\sqrt{2}$",
+          "$2\\pm\\sqrt{2}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "radical_simplify",
+        "forgot_divide_2a"
+      ]
+    },
+    {
+      "id": "alg1-l17-i05",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For x^{2} + x + 1 = 0, Δ equals…",
+        "es": "Para x^{2} + x + 1 = 0, Δ vale…",
+        "pl": "Dla x^{2} + x + 1 = 0 Δ wynosi…"
+      },
+      "feedbackCorrect": {
+        "en": "Computing 1 − 4 gives −3, so Δ is negative.",
+        "es": "Calcular 1 − 4 da −3, así Δ es negativo.",
+        "pl": "Obliczenie 1 − 4 daje −3, więc Δ jest ujemne."
+      },
+      "feedbackIncorrect": {
+        "en": "b² − 4ac = 1 − 4·1·1 = −3.",
+        "es": "b² − 4ac = 1 − 4·1·1 = −3.",
+        "pl": "b² − 4ac = 1 − 4·1·1 = −3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + x + 1 = 0",
+      "choices": {
+        "en": [
+          "$3$",
+          "$1$",
+          "$-1$",
+          "$-3$"
+        ],
+        "es": [
+          "$3$",
+          "$1$",
+          "$-1$",
+          "$-3$"
+        ],
+        "pl": [
+          "$3$",
+          "$1$",
+          "$-1$",
+          "$-3$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "arith_under_radical",
+        "disc_count_error"
+      ]
+    },
+    {
+      "id": "alg1-l17-i06",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula.apply"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2x^{2} − 3x − 2 = 0 using the formula.",
+        "es": "Resuelve: 2x^{2} − 3x − 2 = 0 con la fórmula.",
+        "pl": "Rozwiąż: 2x^{2} − 3x − 2 = 0 wzorem."
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 9 + 16 = 25; x = (3 ± 5)/4 → 2 and −1/2.",
+        "es": "Δ = 9 + 16 = 25; x = (3 ± 5)/4 → 2 y −1/2.",
+        "pl": "Δ = 9 + 16 = 25; x = (3 ± 5)/4 → 2 i −1/2."
+      },
+      "feedbackIncorrect": {
+        "en": "Denominator is 2a = 4; do not stop after computing ±√Δ alone.",
+        "es": "El denominador es 2a = 4; no te detengas solo en ±√Δ.",
+        "pl": "Mianownik to 2a = 4; nie zatrzymuj się na samym ±√Δ."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "2x^{2} - 3x - 2 = 0",
+      "choices": {
+        "en": [
+          "$x=2\\text{ or }x=-\\frac{1}{2}$",
+          "$x=-2\\text{ or }x=\\frac{1}{2}$",
+          "$x=3\\text{ or }x=-\\frac{1}{2}$",
+          "$x=2\\text{ or }x=\\frac{1}{2}$"
+        ],
+        "es": [
+          "$x=2\\text{ or }x=-\\frac{1}{2}$",
+          "$x=-2\\text{ or }x=\\frac{1}{2}$",
+          "$x=3\\text{ or }x=-\\frac{1}{2}$",
+          "$x=2\\text{ or }x=\\frac{1}{2}$"
+        ],
+        "pl": [
+          "$x=2\\text{ or }x=-\\frac{1}{2}$",
+          "$x=-2\\text{ or }x=\\frac{1}{2}$",
+          "$x=3\\text{ or }x=-\\frac{1}{2}$",
+          "$x=2\\text{ or }x=\\frac{1}{2}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "forgot_divide_2a",
+        "sign_on_b"
+      ]
+    },
+    {
+      "id": "alg1-l17-i07",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which statement matches Δ = 0?",
+        "es": "¿Qué enunciado corresponde a Δ = 0?",
+        "pl": "Które stwierdzenie pasuje do Δ = 0?"
+      },
+      "feedbackCorrect": {
+        "en": "The radical vanishes, so −b/(2a) is the single repeated root.",
+        "es": "El radical desaparece, así −b/(2a) es la única raíz repetida.",
+        "pl": "Pierwiastek znika, więc −b/(2a) to jedyny powtórzony pierwiastek."
+      },
+      "feedbackIncorrect": {
+        "en": "Δ = 0 is the borderline between two real roots and none.",
+        "es": "Δ = 0 es el límite entre dos raíces reales y ninguna.",
+        "pl": "Δ = 0 to granica między dwoma pierwiastkami rzeczywistymi a brakiem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "\\Delta = 0",
+      "choices": {
+        "en": [
+          "Two distinct real roots",
+          "Exactly one distinct real root (double root)",
+          "No real roots",
+          "The parabola has no vertex"
+        ],
+        "es": [
+          "Dos raíces reales distintas",
+          "Exactamente una raíz real distinta (raíz doble)",
+          "Ninguna raíz real",
+          "La parábola no tiene vértice"
+        ],
+        "pl": [
+          "Dwa różne pierwiastki rzeczywiste",
+          "Dokładnie jeden różny pierwiastek rzeczywisty (podwójny)",
+          "Brak pierwiastków rzeczywistych",
+          "Parabola nie ma wierzchołka"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "confused_zero_case",
+        "disc_count_error"
+      ]
+    },
+    {
+      "id": "alg1-l17-i08",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For −x^{2} + 4x − 1 = 0, which triple (a, b, c) is correct?",
+        "es": "Para −x^{2} + 4x − 1 = 0, ¿qué terna (a, b, c) es correcta?",
+        "pl": "Dla −x^{2} + 4x − 1 = 0, która trójka (a, b, c) jest poprawna?"
+      },
+      "feedbackCorrect": {
+        "en": "Read coefficients as written: a = −1, b = 4, c = −1.",
+        "es": "Lee los coeficientes tal cual: a = −1, b = 4, c = −1.",
+        "pl": "Odczytaj współczynniki jak zapisano: a = −1, b = 4, c = −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not multiply the whole equation by −1 unless you flip every coefficient.",
+        "es": "No multipliques toda la ecuación por −1 salvo que cambies cada coeficiente.",
+        "pl": "Nie mnoż całego równania przez −1, chyba że odwrócisz każdy współczynnik."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "-x^{2} + 4x - 1 = 0",
+      "choices": {
+        "en": [
+          "$(1,4,-1)$",
+          "$(-1,-4,-1)$",
+          "$(-1,4,-1)$",
+          "$(1,-4,1)$"
+        ],
+        "es": [
+          "$(1,4,-1)$",
+          "$(-1,-4,-1)$",
+          "$(-1,4,-1)$",
+          "$(1,-4,1)$"
+        ],
+        "pl": [
+          "$(1,4,-1)$",
+          "$(-1,-4,-1)$",
+          "$(-1,4,-1)$",
+          "$(1,-4,1)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "coeff_swap",
+        "sign_on_a"
+      ]
+    },
+    {
+      "id": "alg1-l17-i09",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.formula.apply"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.75,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "After finding √Δ = 5 for a = 1, b = −1, c = −6, the roots are…",
+        "es": "Tras hallar √Δ = 5 con a = 1, b = −1, c = −6, las raíces son…",
+        "pl": "Po znalezieniu √Δ = 5 przy a = 1, b = −1, c = −6 pierwiastki to…"
+      },
+      "feedbackCorrect": {
+        "en": "x = (1 ± 5)/2 → 3 and −2.",
+        "es": "x = (1 ± 5)/2 → 3 y −2.",
+        "pl": "x = (1 ± 5)/2 → 3 i −2."
+      },
+      "feedbackIncorrect": {
+        "en": "−b = −(−1) = +1; divide each ± case by 2a = 2.",
+        "es": "−b = −(−1) = +1; divide cada caso ± entre 2a = 2.",
+        "pl": "−b = −(−1) = +1; podziel każdy przypadek ± przez 2a = 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "a=1,\\; b=-1,\\; \\sqrt{\\Delta}=5",
+      "choices": {
+        "en": [
+          "$x=-3\\text{ or }x=2$",
+          "$x=1\\pm 5$",
+          "$x=\\pm 5$",
+          "$x=3\\text{ or }x=-2$"
+        ],
+        "es": [
+          "$x=-3\\text{ or }x=2$",
+          "$x=1\\pm 5$",
+          "$x=\\pm 5$",
+          "$x=3\\text{ or }x=-2$"
+        ],
+        "pl": [
+          "$x=-3\\text{ or }x=2$",
+          "$x=1\\pm 5$",
+          "$x=\\pm 5$",
+          "$x=3\\text{ or }x=-2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "forgot_divide_2a",
+        "sign_on_b"
+      ]
+    },
+    {
+      "id": "alg1-l17-i10",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.discriminant"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which equation has two distinct real roots?",
+        "es": "¿Qué ecuación tiene dos raíces reales distintas?",
+        "pl": "Które równanie ma dwa różne pierwiastki rzeczywiste?"
+      },
+      "feedbackCorrect": {
+        "en": "For x² − 5x + 4, Δ = 25 − 16 = 9 > 0.",
+        "es": "Para x² − 5x + 4, Δ = 25 − 16 = 9 > 0.",
+        "pl": "Dla x² − 5x + 4 Δ = 25 − 16 = 9 > 0."
+      },
+      "feedbackIncorrect": {
+        "en": "Check Δ: x² + 2x + 5 and x² + x + 1 are negative; x² − 6x + 9 is zero.",
+        "es": "Revisa Δ: x² + 2x + 5 y x² + x + 1 son negativos; x² − 6x + 9 es cero.",
+        "pl": "Sprawdź Δ: x² + 2x + 5 i x² + x + 1 są ujemne; x² − 6x + 9 to zero."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "A-REI.B.4a"
+          ]
+        }
+      ],
+      "promptMath": "\\Delta = b^{2}-4ac",
+      "choices": {
+        "en": [
+          "$x^{2}-5x+4=0$",
+          "$x^{2}+2x+5=0$",
+          "$x^{2}-6x+9=0$",
+          "$x^{2}+x+1=0$"
+        ],
+        "es": [
+          "$x^{2}-5x+4=0$",
+          "$x^{2}+2x+5=0$",
+          "$x^{2}-6x+9=0$",
+          "$x^{2}+x+1=0$"
+        ],
+        "pl": [
+          "$x^{2}-5x+4=0$",
+          "$x^{2}+2x+5=0$",
+          "$x^{2}-6x+9=0$",
+          "$x^{2}+x+1=0$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "disc_count_error",
+        "arith_under_radical"
+      ]
+    }
+  ]
+}

@@ -54,7 +54,11 @@
           "kp.alg1.polynomial.foil",
           "kp.alg1.polynomial.multiply",
           "kp.alg1.factor.gcf",
-          "kp.alg1.factor.verify"
+          "kp.alg1.factor.verify",
+          "kp.alg1.quadratic.zero.product",
+          "kp.alg1.quadratic.formula",
+          "kp.alg1.quadratic.formula.apply",
+          "kp.alg1.quadratic.vertex.axis"
         ]
       },
       "A.1(D)": {
@@ -84,7 +88,11 @@
           "kp.alg1.exponents.quotient",
           "kp.alg1.exponents.power",
           "kp.alg1.polynomial.classify",
-          "kp.alg1.factor.verify"
+          "kp.alg1.factor.verify",
+          "kp.alg1.quadratic.check.roots",
+          "kp.alg1.quadratic.discriminant",
+          "kp.alg1.quadratic.parabola.direction",
+          "kp.alg1.quadratic.graph.features"
         ]
       },
       "A.1(F)": {
@@ -116,7 +124,16 @@
           "kp.alg1.factor.verify",
           "kp.alg1.factor.difference.squares",
           "kp.alg1.factor.trinomial.more",
-          "kp.alg1.factor.perfect.square"
+          "kp.alg1.factor.perfect.square",
+          "kp.alg1.quadratic.zero.product",
+          "kp.alg1.quadratic.solve.factoring",
+          "kp.alg1.quadratic.check.roots",
+          "kp.alg1.quadratic.formula",
+          "kp.alg1.quadratic.discriminant",
+          "kp.alg1.quadratic.formula.apply",
+          "kp.alg1.quadratic.parabola.direction",
+          "kp.alg1.quadratic.vertex.axis",
+          "kp.alg1.quadratic.graph.features"
         ]
       },
       "A.5(A)": {
@@ -347,7 +364,8 @@
           "kp.alg1.factor.trinomial.a1",
           "kp.alg1.factor.verify",
           "kp.alg1.factor.trinomial.more",
-          "kp.alg1.factor.perfect.square"
+          "kp.alg1.factor.perfect.square",
+          "kp.alg1.quadratic.solve.factoring"
         ]
       },
       "A.10(F)": {
@@ -359,6 +377,33 @@
         "knowledgePointIds": [
           "kp.alg1.factor.difference.squares",
           "kp.alg1.factor.perfect.square"
+        ]
+      },
+      "A.8(A)": {
+        "description": {
+          "en": "Solve quadratic equations having real solutions by factoring, taking square roots, completing the square, and applying the quadratic formula",
+          "es": "Resolver ecuaciones cuadráticas con soluciones reales por factorización, raíces cuadradas, completar el cuadrado y la fórmula cuadrática",
+          "pl": "Rozwiązywać równania kwadratowe o rozwiązaniach rzeczywistych przez rozkład, pierwiastki, dopełnianie kwadratu i wzór kwadratowy"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.quadratic.zero.product",
+          "kp.alg1.quadratic.solve.factoring",
+          "kp.alg1.quadratic.check.roots",
+          "kp.alg1.quadratic.formula",
+          "kp.alg1.quadratic.discriminant",
+          "kp.alg1.quadratic.formula.apply"
+        ]
+      },
+      "A.7(A)": {
+        "description": {
+          "en": "Graph quadratic functions on the coordinate plane and use the graph to identify key attributes including x-intercept, y-intercept, zeros, maximum or minimum value, vertex, and the equation of the axis of symmetry",
+          "es": "Graficar funciones cuadráticas en el plano y usar la gráfica para identificar atributos clave: interceptos, ceros, máximo o mínimo, vértice y eje de simetría",
+          "pl": "Rysować funkcje kwadratowe na płaszczyźnie i z wykresu odczytywać kluczowe cechy: przecięcia, zera, max/min, wierzchołek i oś symetrii"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.quadratic.parabola.direction",
+          "kp.alg1.quadratic.vertex.axis",
+          "kp.alg1.quadratic.graph.features"
         ]
       }
     },
@@ -400,7 +445,8 @@
           "kp.alg1.polynomial.add",
           "kp.alg1.polynomial.subtract",
           "kp.alg1.polynomial.distribute",
-          "kp.alg1.polynomial.foil"
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.quadratic.parabola.direction"
         ]
       },
       "A-REI.A.1": {
@@ -629,7 +675,10 @@
         "knowledgePointIds": [
           "kp.alg1.slope.intercept.form",
           "kp.alg1.graph.slope.intercept",
-          "kp.alg1.intercept.identify"
+          "kp.alg1.intercept.identify",
+          "kp.alg1.quadratic.parabola.direction",
+          "kp.alg1.quadratic.vertex.axis",
+          "kp.alg1.quadratic.graph.features"
         ]
       },
       "A-REI.D.10": {
@@ -640,7 +689,8 @@
         },
         "knowledgePointIds": [
           "kp.alg1.graph.slope.intercept",
-          "kp.alg1.intercept.identify"
+          "kp.alg1.intercept.identify",
+          "kp.alg1.quadratic.graph.features"
         ]
       },
       "F-LE.A.2": {
@@ -822,7 +872,47 @@
           "kp.alg1.factor.verify",
           "kp.alg1.factor.difference.squares",
           "kp.alg1.factor.trinomial.more",
-          "kp.alg1.factor.perfect.square"
+          "kp.alg1.factor.perfect.square",
+          "kp.alg1.quadratic.zero.product",
+          "kp.alg1.quadratic.solve.factoring",
+          "kp.alg1.quadratic.check.roots"
+        ]
+      },
+      "A-REI.B.4b": {
+        "description": {
+          "en": "Solve quadratic equations by inspection, taking square roots, completing the square, the quadratic formula and factoring, as appropriate to the initial form of the equation",
+          "es": "Resolver ecuaciones cuadráticas por inspección, raíces cuadradas, completar el cuadrado, fórmula cuadrática y factorización, según la forma inicial",
+          "pl": "Rozwiązywać równania kwadratowe przez wgląd, pierwiastki, dopełnianie kwadratu, wzór kwadratowy i rozkład — zależnie od postaci początkowej"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.quadratic.zero.product",
+          "kp.alg1.quadratic.solve.factoring",
+          "kp.alg1.quadratic.check.roots",
+          "kp.alg1.quadratic.formula",
+          "kp.alg1.quadratic.discriminant",
+          "kp.alg1.quadratic.formula.apply"
+        ]
+      },
+      "A-REI.B.4a": {
+        "description": {
+          "en": "Use the method of completing the square to transform any quadratic equation in x into an equation of the form (x − p)² = q",
+          "es": "Usar completar el cuadrado para transformar cualquier ecuación cuadrática en x a la forma (x − p)² = q",
+          "pl": "Używać dopełniania kwadratu, by przekształcić równanie kwadratowe w x do postaci (x − p)² = q"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.quadratic.formula",
+          "kp.alg1.quadratic.discriminant",
+          "kp.alg1.quadratic.formula.apply"
+        ]
+      },
+      "A-SSE.B.3b": {
+        "description": {
+          "en": "Complete the square in a quadratic expression to reveal the maximum or minimum value of the function it defines",
+          "es": "Completar el cuadrado en una expresión cuadrática para revelar el máximo o mínimo de la función que define",
+          "pl": "Dopełniać kwadrat w wyrażeniu kwadratowym, by ujawnić maksimum lub minimum funkcji"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.quadratic.vertex.axis"
         ]
       }
     }
@@ -984,6 +1074,32 @@
       "A-SSE.A.2",
       "A-SSE.B.3a",
       "A-APR.A.1"
+    ],
+    "alg1-l16": [
+      "A.8(A)",
+      "A.10(E)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-REI.B.4b",
+      "A-SSE.B.3a"
+    ],
+    "alg1-l17": [
+      "A.8(A)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-REI.B.4a",
+      "A-REI.B.4b"
+    ],
+    "alg1-l18": [
+      "A.7(A)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "F-IF.C.7a",
+      "A-REI.D.10",
+      "A-SSE.B.3b"
     ]
   }
 }

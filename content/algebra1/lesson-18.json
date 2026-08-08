@@ -1,0 +1,1296 @@
+{
+  "id": "alg1-l18",
+  "courseId": "algebra1",
+  "order": 18,
+  "title": {
+    "en": "Parabolas — Vertex & Axis Intro",
+    "es": "Parábolas — vértice y eje (intro)",
+    "pl": "Parabole — wierzchołek i oś (wstęp)"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.quadratic.parabola.direction",
+    "kp.alg1.quadratic.vertex.axis",
+    "kp.alg1.quadratic.graph.features"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_18",
+    "unlockOnMastery": [
+      "lesson_board_19"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will describe opening direction, find the axis and vertex, and connect intercepts to the graph.",
+        "es": "Describirás la apertura, hallarás eje y vértice, y conectarás interceptos con la gráfica.",
+        "pl": "Będziesz opisywać kierunek otwarcia, znajdować oś i wierzchołek oraz łączyć przecięcia z wykresem."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: shape & symmetry",
+        "es": "Enseñar: forma y simetría",
+        "pl": "Nauczanie: kształt i symetria"
+      },
+      "body": {
+        "en": "Sign of a → up/down. Axis x = −b/(2a). Vertex sits on that axis; intercepts help sketch.",
+        "es": "Signo de a → arriba/abajo. Eje x = −b/(2a). El vértice está en ese eje; los interceptos ayudan a bosquejar.",
+        "pl": "Znak a → góra/dół. Oś x = −b/(2a). Wierzchołek leży na tej osi; przecięcia pomagają szkicować."
+      },
+      "bodyMath": [
+        "a>0:\\text{ opens up};\\ a<0:\\text{ opens down}",
+        "x=-\\frac{b}{2a}",
+        "y=x^{2}-6x+5:\\text{ axis }x=3"
+      ],
+      "itemIds": [
+        "alg1-l18-t01",
+        "alg1-l18-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Practice direction, axis arithmetic, y-intercept, and midpoint of roots.",
+        "es": "Practica dirección, aritmética del eje, intercepto y y punto medio de raíces.",
+        "pl": "Ćwicz kierunek, arytmetykę osi, przecięcie y oraz środek pierwiastków."
+      },
+      "itemIds": [
+        "alg1-l18-g01",
+        "alg1-l18-g02",
+        "alg1-l18-g03",
+        "alg1-l18-g04",
+        "alg1-l18-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l18-i01",
+        "alg1-l18-i02",
+        "alg1-l18-i03",
+        "alg1-l18-i04",
+        "alg1-l18-i05",
+        "alg1-l18-i06",
+        "alg1-l18-i07",
+        "alg1-l18-i08",
+        "alg1-l18-i09",
+        "alg1-l18-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l18-t01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.parabola.direction"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = 2x^{2} − x + 1, the parabola…",
+        "es": "Para y = 2x^{2} − x + 1, la parábola…",
+        "pl": "Dla y = 2x^{2} − x + 1 parabola…"
+      },
+      "feedbackCorrect": {
+        "en": "a = 2 > 0, so the parabola opens upward.",
+        "es": "a = 2 > 0, así la parábola abre hacia arriba.",
+        "pl": "a = 2 > 0, więc parabola otwiera się w górę."
+      },
+      "feedbackIncorrect": {
+        "en": "Only the sign of a (the x² coefficient) controls opening direction.",
+        "es": "Solo el signo de a (coeficiente de x²) controla la apertura.",
+        "pl": "Tylko znak a (współczynnik przy x²) steruje kierunkiem otwarcia."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x^{2} - x + 1",
+      "choices": {
+        "en": [
+          "Opens upward",
+          "Opens downward",
+          "Is a straight line",
+          "Has no vertex"
+        ],
+        "es": [
+          "Abre hacia arriba",
+          "Abre hacia abajo",
+          "Es una recta",
+          "No tiene vértice"
+        ],
+        "pl": [
+          "Otwiera się w górę",
+          "Otwiera się w dół",
+          "Jest prostą",
+          "Nie ma wierzchołka"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "used_c_for_direction",
+        "direction_error"
+      ]
+    },
+    {
+      "id": "alg1-l18-t02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Axis of symmetry for y = x^{2} − 6x + 5?",
+        "es": "¿Eje de simetría de y = x^{2} − 6x + 5?",
+        "pl": "Oś symetrii dla y = x^{2} − 6x + 5?"
+      },
+      "feedbackCorrect": {
+        "en": "Plug into −b/(2a): with b = −6 you get x = 3 as the axis.",
+        "es": "Sustituye en −b/(2a): con b = −6 obtienes x = 3 como eje.",
+        "pl": "Podstaw do −b/(2a): przy b = −6 dostajesz oś x = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Use −b/(2a), not b/(2a), and report a vertical line x = …",
+        "es": "Usa −b/(2a), no b/(2a), y reporta una recta vertical x = …",
+        "pl": "Użyj −b/(2a), nie b/(2a), i podaj pionową prostą x = …"
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y = x^{2} - 6x + 5",
+      "choices": {
+        "en": [
+          "$x=-3$",
+          "$x=3$",
+          "$x=6$",
+          "$y=3$"
+        ],
+        "es": [
+          "$x=-3$",
+          "$x=3$",
+          "$x=6$",
+          "$y=3$"
+        ],
+        "pl": [
+          "$x=-3$",
+          "$x=3$",
+          "$x=6$",
+          "$y=3$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "axis_sign_error",
+        "axis_as_y"
+      ]
+    },
+    {
+      "id": "alg1-l18-g01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.parabola.direction"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = −3x^{2} + 2x opens…",
+        "es": "y = −3x^{2} + 2x abre…",
+        "pl": "y = −3x^{2} + 2x otwiera się…"
+      },
+      "feedbackCorrect": {
+        "en": "Negative a means the parabola opens downward (a maximum).",
+        "es": "a negativo significa que abre hacia abajo (un máximo).",
+        "pl": "Ujemne a oznacza otwarcie w dół (maksimum)."
+      },
+      "feedbackIncorrect": {
+        "en": "Ignore the linear term for direction — only a matters.",
+        "es": "Ignora el término lineal para la dirección — solo importa a.",
+        "pl": "Zignoruj wyraz liniowy dla kierunku — liczy się tylko a."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "y = -3x^{2} + 2x",
+      "choices": {
+        "en": [
+          "Upward",
+          "Leftward",
+          "Downward",
+          "Horizontally"
+        ],
+        "es": [
+          "Hacia arriba",
+          "Hacia la izquierda",
+          "Hacia abajo",
+          "Horizontalmente"
+        ],
+        "pl": [
+          "W górę",
+          "W lewo",
+          "W dół",
+          "Poziomo"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "direction_error",
+        "used_b_for_direction"
+      ]
+    },
+    {
+      "id": "alg1-l18-g02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = 2x^{2} + 8x − 1, the axis is…",
+        "es": "Para y = 2x^{2} + 8x − 1, el eje es…",
+        "pl": "Dla y = 2x^{2} + 8x − 1 oś to…"
+      },
+      "feedbackCorrect": {
+        "en": "Compute −8 over 2·2 to land on the vertical line x = −2.",
+        "es": "Calcula −8 entre 2·2 y obtienes la recta vertical x = −2.",
+        "pl": "Policz −8 przez 2·2 i otrzymasz pionową prostą x = −2."
+      },
+      "feedbackIncorrect": {
+        "en": "Denominator is 2a = 4; numerator is −b = −8.",
+        "es": "El denominador es 2a = 4; el numerador es −b = −8.",
+        "pl": "Mianownik to 2a = 4; licznik to −b = −8."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x^{2} + 8x - 1",
+      "choices": {
+        "en": [
+          "$x=2$",
+          "$x=-4$",
+          "$x=4$",
+          "$x=-2$"
+        ],
+        "es": [
+          "$x=2$",
+          "$x=-4$",
+          "$x=4$",
+          "$x=-2$"
+        ],
+        "pl": [
+          "$x=2$",
+          "$x=-4$",
+          "$x=4$",
+          "$x=-2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "axis_sign_error",
+        "forgot_2a"
+      ]
+    },
+    {
+      "id": "alg1-l18-g03",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "The y-intercept of y = x^{2} − 4x + 7 is…",
+        "es": "El intercepto y de y = x^{2} − 4x + 7 es…",
+        "pl": "Przecięcie z osią y dla y = x^{2} − 4x + 7 to…"
+      },
+      "feedbackCorrect": {
+        "en": "Set x = 0; y = c = 7, so the point is (0, 7).",
+        "es": "Pon x = 0; y = c = 7, así el punto es (0, 7).",
+        "pl": "Podstaw x = 0; y = c = 7, więc punkt to (0, 7)."
+      },
+      "feedbackIncorrect": {
+        "en": "y-intercept is where the graph meets the y-axis: (0, c).",
+        "es": "El intercepto y es donde la gráfica toca el eje y: (0, c).",
+        "pl": "Przecięcie y to miejsce styku z osią y: (0, c)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y = x^{2} - 4x + 7",
+      "choices": {
+        "en": [
+          "$(0,7)$",
+          "$(7,0)$",
+          "$(0,-4)$",
+          "$(4,0)$"
+        ],
+        "es": [
+          "$(0,7)$",
+          "$(7,0)$",
+          "$(0,-4)$",
+          "$(4,0)$"
+        ],
+        "pl": [
+          "$(0,7)$",
+          "$(7,0)$",
+          "$(0,-4)$",
+          "$(4,0)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "confused_x_intercept",
+        "swapped_coords"
+      ]
+    },
+    {
+      "id": "alg1-l18-g04",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Vertex x-coordinate of y = x^{2} − 2x − 3?",
+        "es": "¿Coordenada x del vértice de y = x^{2} − 2x − 3?",
+        "pl": "Współrzędna x wierzchołka y = x^{2} − 2x − 3?"
+      },
+      "feedbackCorrect": {
+        "en": "The axis formula gives h = 1 for this parabola.",
+        "es": "La fórmula del eje da h = 1 para esta parábola.",
+        "pl": "Wzór na oś daje h = 1 dla tej paraboli."
+      },
+      "feedbackIncorrect": {
+        "en": "With a = 1 and b = −2, −b/(2a) = 2/2 = 1.",
+        "es": "Con a = 1 y b = −2, −b/(2a) = 2/2 = 1.",
+        "pl": "Przy a = 1 i b = −2, −b/(2a) = 2/2 = 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y = x^{2} - 2x - 3",
+      "choices": {
+        "en": [
+          "$-1$",
+          "$1$",
+          "$2$",
+          "$-2$"
+        ],
+        "es": [
+          "$-1$",
+          "$1$",
+          "$2$",
+          "$-2$"
+        ],
+        "pl": [
+          "$-1$",
+          "$1$",
+          "$2$",
+          "$-2$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "axis_sign_error",
+        "forgot_2a"
+      ]
+    },
+    {
+      "id": "alg1-l18-g05",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If roots are x = −1 and x = 5, the axis of symmetry is…",
+        "es": "Si las raíces son x = −1 y x = 5, el eje de simetría es…",
+        "pl": "Jeśli pierwiastki to x = −1 i x = 5, oś symetrii to…"
+      },
+      "feedbackCorrect": {
+        "en": "Midpoint of the roots: (−1 + 5)/2 = 2.",
+        "es": "Punto medio de las raíces: (−1 + 5)/2 = 2.",
+        "pl": "Środek pierwiastków: (−1 + 5)/2 = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "The axis sits halfway between the two x-intercepts.",
+        "es": "El eje queda a mitad de camino entre los dos interceptos x.",
+        "pl": "Oś leży w połowie drogi między dwoma przecięciami x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "x=-1\\text{ and }x=5",
+      "choices": {
+        "en": [
+          "$x=3$",
+          "$x=-2$",
+          "$x=2$",
+          "$x=4$"
+        ],
+        "es": [
+          "$x=3$",
+          "$x=-2$",
+          "$x=2$",
+          "$x=4$"
+        ],
+        "pl": [
+          "$x=3$",
+          "$x=-2$",
+          "$x=2$",
+          "$x=4$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "midpoint_error",
+        "axis_sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l18-i01",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.parabola.direction"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which function opens downward?",
+        "es": "¿Qué función abre hacia abajo?",
+        "pl": "Która funkcja otwiera się w dół?"
+      },
+      "feedbackCorrect": {
+        "en": "Only y = −x² + 3x has negative a.",
+        "es": "Solo y = −x² + 3x tiene a negativo.",
+        "pl": "Tylko y = −x² + 3x ma ujemne a."
+      },
+      "feedbackIncorrect": {
+        "en": "Scan the coefficient of x²; positive a always opens up.",
+        "es": "Mira el coeficiente de x²; a positivo siempre abre hacia arriba.",
+        "pl": "Spójrz na współczynnik przy x²; dodatnie a zawsze otwiera w górę."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "y=ax^{2}+bx+c",
+      "choices": {
+        "en": [
+          "$y=x^{2}-3x$",
+          "$y=2x^{2}+1$",
+          "$y=\\frac{1}{2}x^{2}$",
+          "$y=-x^{2}+3x$"
+        ],
+        "es": [
+          "$y=x^{2}-3x$",
+          "$y=2x^{2}+1$",
+          "$y=\\frac{1}{2}x^{2}$",
+          "$y=-x^{2}+3x$"
+        ],
+        "pl": [
+          "$y=x^{2}-3x$",
+          "$y=2x^{2}+1$",
+          "$y=\\frac{1}{2}x^{2}$",
+          "$y=-x^{2}+3x$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "direction_error",
+        "used_c_for_direction"
+      ]
+    },
+    {
+      "id": "alg1-l18-i02",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Axis for y = −x^{2} + 4x − 1?",
+        "es": "¿Eje de y = −x^{2} + 4x − 1?",
+        "pl": "Oś dla y = −x^{2} + 4x − 1?"
+      },
+      "feedbackCorrect": {
+        "en": "Negative a flips signs in −b/(2a), but here it still simplifies to x = 2.",
+        "es": "a negativo cambia signos en −b/(2a), pero aquí aún se simplifica a x = 2.",
+        "pl": "Ujemne a zmienia znaki w −b/(2a), ale tu i tak upraszcza się do x = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "a = −1 and b = 4 → −4 divided by −2 equals 2.",
+        "es": "a = −1 y b = 4 → −4 entre −2 es 2.",
+        "pl": "a = −1 i b = 4 → −4 podzielone przez −2 daje 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y = -x^{2} + 4x - 1",
+      "choices": {
+        "en": [
+          "$x=2$",
+          "$x=-2$",
+          "$x=4$",
+          "$x=-4$"
+        ],
+        "es": [
+          "$x=2$",
+          "$x=-2$",
+          "$x=4$",
+          "$x=-4$"
+        ],
+        "pl": [
+          "$x=2$",
+          "$x=-2$",
+          "$x=4$",
+          "$x=-4$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "axis_sign_error",
+        "forgot_2a"
+      ]
+    },
+    {
+      "id": "alg1-l18-i03",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = (x − 2)(x + 4), the x-intercepts are…",
+        "es": "Para y = (x − 2)(x + 4), los interceptos x son…",
+        "pl": "Dla y = (x − 2)(x + 4) przecięcia x to…"
+      },
+      "feedbackCorrect": {
+        "en": "Zeros come from each factor: x = 2 and x = −4.",
+        "es": "Los ceros vienen de cada factor: x = 2 y x = −4.",
+        "pl": "Zera pochodzą z każdego czynnika: x = 2 i x = −4."
+      },
+      "feedbackIncorrect": {
+        "en": "From (x − 2) get 2; from (x + 4) get −4.",
+        "es": "De (x − 2) obtienes 2; de (x + 4) obtienes −4.",
+        "pl": "Z (x − 2) masz 2; z (x + 4) masz −4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y = (x - 2)(x + 4)",
+      "choices": {
+        "en": [
+          "$x=-2\\text{ and }x=4$",
+          "$x=2\\text{ and }x=-4$",
+          "$x=2\\text{ and }x=4$",
+          "$x=-2\\text{ and }x=-4$"
+        ],
+        "es": [
+          "$x=-2\\text{ and }x=4$",
+          "$x=2\\text{ and }x=-4$",
+          "$x=2\\text{ and }x=4$",
+          "$x=-2\\text{ and }x=-4$"
+        ],
+        "pl": [
+          "$x=-2\\text{ and }x=4$",
+          "$x=2\\text{ and }x=-4$",
+          "$x=2\\text{ and }x=4$",
+          "$x=-2\\text{ and }x=-4$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_flip_root",
+        "confused_y_intercept"
+      ]
+    },
+    {
+      "id": "alg1-l18-i04",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = x^{2} − 4x + 1 has vertex at x = 2. What is k = y(2)?",
+        "es": "y = x^{2} − 4x + 1 tiene vértice en x = 2. ¿Cuánto es k = y(2)?",
+        "pl": "y = x^{2} − 4x + 1 ma wierzchołek przy x = 2. Ile wynosi k = y(2)?"
+      },
+      "feedbackCorrect": {
+        "en": "y(2) = 4 − 8 + 1 = −3, so the vertex is (2, −3).",
+        "es": "y(2) = 4 − 8 + 1 = −3, así el vértice es (2, −3).",
+        "pl": "y(2) = 4 − 8 + 1 = −3, więc wierzchołek to (2, −3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x = 2 into the quadratic to get the vertex y-value.",
+        "es": "Sustituye x = 2 en la cuadrática para obtener la y del vértice.",
+        "pl": "Podstaw x = 2 do kwadratowej, by dostać y wierzchołka."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y(2)=?",
+      "choices": {
+        "en": [
+          "$3$",
+          "$1$",
+          "$-3$",
+          "$-1$"
+        ],
+        "es": [
+          "$3$",
+          "$1$",
+          "$-3$",
+          "$-1$"
+        ],
+        "pl": [
+          "$3$",
+          "$1$",
+          "$-3$",
+          "$-1$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "vertex_y_arith",
+        "forgot_evaluate"
+      ]
+    },
+    {
+      "id": "alg1-l18-i05",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A parabola opens up and has vertex (3, −2). It has…",
+        "es": "Una parábola abre hacia arriba y tiene vértice (3, −2). Tiene…",
+        "pl": "Parabola otwiera się w górę i ma wierzchołek (3, −2). Ma…"
+      },
+      "feedbackCorrect": {
+        "en": "Opening upward makes the vertex a minimum point.",
+        "es": "Abrir hacia arriba hace del vértice un mínimo.",
+        "pl": "Otwarcie w górę czyni wierzchołek minimum."
+      },
+      "feedbackIncorrect": {
+        "en": "Up ⇒ minimum; down ⇒ maximum at the vertex.",
+        "es": "Arriba ⇒ mínimo; abajo ⇒ máximo en el vértice.",
+        "pl": "W górę ⇒ minimum; w dół ⇒ maksimum w wierzchołku."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "vertex\\ (3,-2),\\ a>0",
+      "choices": {
+        "en": [
+          "A maximum at y = −2",
+          "No extreme value",
+          "A maximum at x = −2",
+          "A minimum at y = −2"
+        ],
+        "es": [
+          "Un máximo en y = −2",
+          "Ningún extremo",
+          "Un máximo en x = −2",
+          "Un mínimo en y = −2"
+        ],
+        "pl": [
+          "Maksimum w y = −2",
+          "Brak ekstremum",
+          "Maksimum w x = −2",
+          "Minimum w y = −2"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "min_max_swap",
+        "direction_error"
+      ]
+    },
+    {
+      "id": "alg1-l18-i06",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.parabola.direction"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Compared with y = x^{2}, the graph of y = 4x^{2} is…",
+        "es": "Comparada con y = x^{2}, la gráfica de y = 4x^{2} es…",
+        "pl": "W porównaniu z y = x^{2} wykres y = 4x^{2} jest…"
+      },
+      "feedbackCorrect": {
+        "en": "Larger |a| pulls the arms inward — a narrower parabola.",
+        "es": "Un |a| mayor acerca los brazos — una parábola más estrecha.",
+        "pl": "Większe |a| ściąga ramiona — węższa parabola."
+      },
+      "feedbackIncorrect": {
+        "en": "Changing a scales width; it does not by itself translate horizontally.",
+        "es": "Cambiar a escala el ancho; por sí solo no traslada horizontalmente.",
+        "pl": "Zmiana a skaluje szerokość; sama nie przesuwa poziomo."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "y=4x^{2}\\text{ vs }y=x^{2}",
+      "choices": {
+        "en": [
+          "Narrower (steeper)",
+          "Wider (flatter)",
+          "Shifted right",
+          "Reflected over the x-axis"
+        ],
+        "es": [
+          "Más estrecha (más empinada)",
+          "Más ancha (más plana)",
+          "Desplazada a la derecha",
+          "Reflejada sobre el eje x"
+        ],
+        "pl": [
+          "Węższa (stromsza)",
+          "Szersza (płaska)",
+          "Przesunięta w prawo",
+          "Odbita względem osi x"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "width_confused",
+        "direction_error"
+      ]
+    },
+    {
+      "id": "alg1-l18-i07",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = 3x^{2} − 12x + 5, axis of symmetry?",
+        "es": "Para y = 3x^{2} − 12x + 5, ¿eje de simetría?",
+        "pl": "Dla y = 3x^{2} − 12x + 5 oś symetrii?"
+      },
+      "feedbackCorrect": {
+        "en": "Divide 12 by 6 after forming −b/(2a) to get the axis x = 2.",
+        "es": "Divide 12 entre 6 tras formar −b/(2a) para obtener el eje x = 2.",
+        "pl": "Podziel 12 przez 6 po utworzeniu −b/(2a), by dostać oś x = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "2a = 6 and −b = 12, so the axis is x = 2.",
+        "es": "2a = 6 y −b = 12, así el eje es x = 2.",
+        "pl": "2a = 6 i −b = 12, więc oś to x = 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y = 3x^{2} - 12x + 5",
+      "choices": {
+        "en": [
+          "$x=-2$",
+          "$x=2$",
+          "$x=4$",
+          "$x=-4$"
+        ],
+        "es": [
+          "$x=-2$",
+          "$x=2$",
+          "$x=4$",
+          "$x=-4$"
+        ],
+        "pl": [
+          "$x=-2$",
+          "$x=2$",
+          "$x=4$",
+          "$x=-4$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "forgot_2a",
+        "axis_sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l18-i08",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which point must lie on every parabola y = ax^{2} + bx + c?",
+        "es": "¿Qué punto debe estar en toda parábola y = ax^{2} + bx + c?",
+        "pl": "Który punkt musi leżeć na każdej paraboli y = ax^{2} + bx + c?"
+      },
+      "feedbackCorrect": {
+        "en": "The constant term is the y-intercept, so (0, c) is always on the graph.",
+        "es": "El término constante es el intercepto y, así (0, c) siempre está en la gráfica.",
+        "pl": "Stały wyraz to przecięcie y, więc (0, c) zawsze leży na wykresie."
+      },
+      "feedbackIncorrect": {
+        "en": "(0, 0) is on the graph only when c = 0.",
+        "es": "(0, 0) está en la gráfica solo cuando c = 0.",
+        "pl": "(0, 0) leży na wykresie tylko gdy c = 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y=ax^{2}+bx+c",
+      "choices": {
+        "en": [
+          "$(c,0)$",
+          "$(0,0)$",
+          "$(0,c)$",
+          "$(a,0)$"
+        ],
+        "es": [
+          "$(c,0)$",
+          "$(0,0)$",
+          "$(0,c)$",
+          "$(a,0)$"
+        ],
+        "pl": [
+          "$(c,0)$",
+          "$(0,0)$",
+          "$(0,c)$",
+          "$(a,0)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "confused_x_intercept",
+        "origin_assumption"
+      ]
+    },
+    {
+      "id": "alg1-l18-i09",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.75,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = x^{2} − 9 has x-intercepts…",
+        "es": "y = x^{2} − 9 tiene interceptos x…",
+        "pl": "y = x^{2} − 9 ma przecięcia x…"
+      },
+      "feedbackCorrect": {
+        "en": "Set y = 0: x² = 9 → x = ±3.",
+        "es": "Pon y = 0: x² = 9 → x = ±3.",
+        "pl": "Podstaw y = 0: x² = 9 → x = ±3."
+      },
+      "feedbackIncorrect": {
+        "en": "Difference of squares: (x − 3)(x + 3) = 0.",
+        "es": "Diferencia de cuadrados: (x − 3)(x + 3) = 0.",
+        "pl": "Różnica kwadratów: (x − 3)(x + 3) = 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y = x^{2} - 9",
+      "choices": {
+        "en": [
+          "$x=9\\text{ and }x=-9$",
+          "$x=0\\text{ only}$",
+          "$x=3\\text{ only}$",
+          "$x=3\\text{ and }x=-3$"
+        ],
+        "es": [
+          "$x=9\\text{ and }x=-9$",
+          "$x=0\\text{ only}$",
+          "$x=3\\text{ only}$",
+          "$x=3\\text{ and }x=-3$"
+        ],
+        "pl": [
+          "$x=9\\text{ and }x=-9$",
+          "$x=0\\text{ only}$",
+          "$x=3\\text{ only}$",
+          "$x=3\\text{ and }x=-3$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "missed_negative_root",
+        "confused_y_intercept"
+      ]
+    },
+    {
+      "id": "alg1-l18-i10",
+      "knowledgePointIds": [
+        "kp.alg1.quadratic.vertex.axis"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Vertex of y = x^{2} + 6x + 5 is…",
+        "es": "El vértice de y = x^{2} + 6x + 5 es…",
+        "pl": "Wierzchołek y = x^{2} + 6x + 5 to…"
+      },
+      "feedbackCorrect": {
+        "en": "Axis x = −3; y(−3) = 9 − 18 + 5 = −4 → (−3, −4).",
+        "es": "Eje x = −3; y(−3) = 9 − 18 + 5 = −4 → (−3, −4).",
+        "pl": "Oś x = −3; y(−3) = 9 − 18 + 5 = −4 → (−3, −4)."
+      },
+      "feedbackIncorrect": {
+        "en": "Find h = −b/(2a) = −3, then evaluate to get k.",
+        "es": "Halla h = −b/(2a) = −3 y evalúa para obtener k.",
+        "pl": "Znajdź h = −b/(2a) = −3, potem oblicz k."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.7(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-SSE.B.3b"
+          ]
+        }
+      ],
+      "promptMath": "y = x^{2} + 6x + 5",
+      "choices": {
+        "en": [
+          "$(-3,-4)$",
+          "$(3,-4)$",
+          "$(-3,5)$",
+          "$(0,5)$"
+        ],
+        "es": [
+          "$(-3,-4)$",
+          "$(3,-4)$",
+          "$(-3,5)$",
+          "$(0,5)$"
+        ],
+        "pl": [
+          "$(-3,-4)$",
+          "$(3,-4)$",
+          "$(-3,5)$",
+          "$(0,5)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "vertex_y_arith",
+        "axis_sign_error"
+      ]
+    }
+  ]
+}

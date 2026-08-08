@@ -1,10 +1,10 @@
 # Active Context
 
 ## Focus
-**Wave 5 exit PASS** (L1–15). Wave 6 (L16–18 quadratics) building. 15m loop armed.
+**Wave 6 exit PASS** (L1–18). Wave 7 (L19–21 exp/radicals/rationals) building. 15m loop armed.
 
 ## Course progress
-- Lessons in world: **15**
+- Lessons in world: **18**
 - Target: full Algebra I course gate (~30+)
 
 ## Play
