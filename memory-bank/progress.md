@@ -9,17 +9,22 @@
 - Gauntlet critics **PASS**: world 1b, HUD 1b, content 1b
 - Exit gate: `docs/gauntlet/exit-gate-wave1.md`
 
-## Wave 2 content (authored; critic FAIL)
-- Algebra I L4–L6 EN/ES/PL via `docs/pipeline.md`
-- +9 KPs; standards-index `lessonCoverage` for l04–l06
-- Unlock: L3→board_4 → L4→board_5 → L5→board_6 → L6→board_7 teaser
-- Notes: `docs/gauntlet/wave2-content-notes.md`
-- **Critic FAIL:** `docs/gauntlet/critic-content-wave2.md` — MC `correctIndex` always 0 on L5/L6 (gate gameable)
+## Wave 2 (PASS)
+- Algebra I L4–L6 EN/ES/PL; boards 4–6; SR in-session; MC shuffle + key diversification
+- Exit: `docs/gauntlet/exit-gate-wave2.md`
+
+## Wave 3 content (PASS on KaTeX re-critic)
+- Algebra I L7–L9 EN/ES/PL via `docs/pipeline.md` / `scripts/author-algebra1-l7-l9.mjs`
+- +9 KPs; standards-index `lessonCoverage` for l07–l09
+- Unlock: L6→board_7 → L7→board_8 → L8→board_9 → L9→board_10 teaser
+- World boards 7–9 in `WorldSites.ts`; build green; correctIndex hist `[5,4,4,4]`
+- Notes: `docs/gauntlet/wave3-content-notes.md`
+- KaTeX remediation: `docs/gauntlet/remediation-katex-wave3.md`
+- **Critic wave3b PASS:** `docs/gauntlet/critic-content-wave3b.md` — L8 `promptMath` 17/17; MC choice KaTeX; unlock/shuffle/build OK
 
 ## Next
-- Remediate content wave2 FAIL (reshuffle choice keys / runtime shuffle)
-- Remediate world/SR critic FAIL
-- GitHub Pages deploy
+- Wave 3 exit gate
+- GitHub Pages deploy (if needed)
 - Algebra I course gate / human playtest
 - Harden spaced-review UX and IRT with real attempt data
 

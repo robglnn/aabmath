@@ -263,6 +263,18 @@ body,
   outline: none;
 }
 
+.hud-choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.hud-choice-btn .katex {
+  font-size: 1.05em;
+  color: inherit;
+}
+
 /* ── Lesson — in-world chalkboard overlay ──────────────── */
 
 .hud-lesson {

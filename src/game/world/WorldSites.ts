@@ -199,6 +199,72 @@ export function buildWorldSites(scene: THREE.Scene): WorldSite[] {
     interactRadius: 4,
   })
 
+  const board7 = createLessonBoard()
+  placeOnGround(board7, 16, 20)
+  board7.rotation.y = 0.4
+  scene.add(board7)
+  sites.push({
+    siteId: 'lesson_board_7',
+    mesh: board7,
+    position: board7.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board8 = createLessonBoard()
+  placeOnGround(board8, -14, 22)
+  board8.rotation.y = -0.7
+  scene.add(board8)
+  sites.push({
+    siteId: 'lesson_board_8',
+    mesh: board8,
+    position: board8.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board9 = createLessonBoard()
+  placeOnGround(board9, 24, -12)
+  board9.rotation.y = 1.1
+  scene.add(board9)
+  sites.push({
+    siteId: 'lesson_board_9',
+    mesh: board9,
+    position: board9.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board10 = createLessonBoard()
+  placeOnGround(board10, -26, -8)
+  board10.rotation.y = 0.55
+  scene.add(board10)
+  sites.push({
+    siteId: 'lesson_board_10',
+    mesh: board10,
+    position: board10.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board11 = createLessonBoard()
+  placeOnGround(board11, 28, -4)
+  board11.rotation.y = -0.95
+  scene.add(board11)
+  sites.push({
+    siteId: 'lesson_board_11',
+    mesh: board11,
+    position: board11.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board12 = createLessonBoard()
+  placeOnGround(board12, -4, 32)
+  board12.rotation.y = 0.25
+  scene.add(board12)
+  sites.push({
+    siteId: 'lesson_board_12',
+    mesh: board12,
+    position: board12.position.clone(),
+    interactRadius: 4,
+  })
+
   const pedestal = createProgressPedestal()
   placeOnGround(pedestal, 14, -6)
   pedestal.rotation.y = -0.5

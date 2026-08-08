@@ -23,7 +23,8 @@
         "knowledgePointIds": [
           "kp.alg1.variable.identify",
           "kp.alg1.expression.translate",
-          "kp.alg1.rate.of.change"
+          "kp.alg1.rate.of.change",
+          "kp.alg1.write.equation.slope.yint"
         ]
       },
       "A.1(B)": {
@@ -41,7 +42,14 @@
           "kp.alg1.solve.both.sides",
           "kp.alg1.equation.verify",
           "kp.alg1.inequality.one.step",
-          "kp.alg1.inequality.two.step"
+          "kp.alg1.inequality.two.step",
+          "kp.alg1.write.equation.point.slope",
+          "kp.alg1.systems.substitution",
+          "kp.alg1.systems.elimination",
+          "kp.alg1.systems.elimination.scale",
+          "kp.alg1.systems.verify",
+          "kp.alg1.polynomial.add",
+          "kp.alg1.polynomial.subtract"
         ]
       },
       "A.1(D)": {
@@ -59,7 +67,18 @@
           "kp.alg1.equation.verify",
           "kp.alg1.inequality.meaning",
           "kp.alg1.function.linear.intro",
-          "kp.alg1.rate.of.change"
+          "kp.alg1.rate.of.change",
+          "kp.alg1.slope.intercept.form",
+          "kp.alg1.graph.slope.intercept",
+          "kp.alg1.intercept.identify",
+          "kp.alg1.write.equation.slope.yint",
+          "kp.alg1.parallel.slope",
+          "kp.alg1.systems.meaning",
+          "kp.alg1.systems.verify",
+          "kp.alg1.exponents.product",
+          "kp.alg1.exponents.quotient",
+          "kp.alg1.exponents.power",
+          "kp.alg1.polynomial.classify"
         ]
       },
       "A.1(F)": {
@@ -75,7 +94,14 @@
           "kp.alg1.solve.two.step",
           "kp.alg1.solve.multi.step",
           "kp.alg1.inequality.two.step",
-          "kp.alg1.slope.intuition"
+          "kp.alg1.slope.intuition",
+          "kp.alg1.systems.elimination.scale",
+          "kp.alg1.exponents.product",
+          "kp.alg1.exponents.quotient",
+          "kp.alg1.exponents.power",
+          "kp.alg1.polynomial.classify",
+          "kp.alg1.polynomial.add",
+          "kp.alg1.polynomial.subtract"
         ]
       },
       "A.5(A)": {
@@ -126,7 +152,8 @@
           "pl": "Określać dziedzinę i przeciwdziedzinę funkcji liniowych w sytuacjach matematycznych i rzeczywistych"
         },
         "knowledgePointIds": [
-          "kp.alg1.function.linear.intro"
+          "kp.alg1.function.linear.intro",
+          "kp.alg1.intercept.identify"
         ]
       },
       "A.3(A)": {
@@ -137,7 +164,8 @@
         },
         "knowledgePointIds": [
           "kp.alg1.rate.of.change",
-          "kp.alg1.slope.intuition"
+          "kp.alg1.slope.intuition",
+          "kp.alg1.write.equation.point.slope"
         ]
       },
       "A.3(B)": {
@@ -149,6 +177,124 @@
         "knowledgePointIds": [
           "kp.alg1.slope.intuition",
           "kp.alg1.rate.of.change"
+        ]
+      },
+      "A.2(B)": {
+        "description": {
+          "en": "Write linear equations in two variables in various forms, including y = mx + b, given slope and y-intercept",
+          "es": "Escribir ecuaciones lineales en dos variables en varias formas, incluida y = mx + b, dados pendiente e intersección con y",
+          "pl": "Zapisywać równania liniowe dwóch zmiennych w różnych postaciach, w tym y = mx + b, mając nachylenie i przecięcie z osią y"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.slope.intercept.form",
+          "kp.alg1.write.equation.slope.yint",
+          "kp.alg1.parallel.slope"
+        ]
+      },
+      "A.2(C)": {
+        "description": {
+          "en": "Write linear equations in two variables given a table of values, a graph, and a verbal description",
+          "es": "Escribir ecuaciones lineales en dos variables dadas una tabla, una gráfica y una descripción verbal",
+          "pl": "Zapisywać równania liniowe dwóch zmiennych z tabeli, wykresu i opisu słownego"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.write.equation.point.slope"
+        ]
+      },
+      "A.2(E)": {
+        "description": {
+          "en": "Write the equation of a line that contains a given point and is parallel to a given line",
+          "es": "Escribir la ecuación de una recta que contiene un punto dado y es paralela a una recta dada",
+          "pl": "Zapisywać równanie prostej przechodzącej przez dany punkt i równoległej do danej prostej"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.parallel.slope"
+        ]
+      },
+      "A.2(I)": {
+        "description": {
+          "en": "Write systems of two linear equations given a table of values, a graph, and a verbal description",
+          "es": "Escribir sistemas de dos ecuaciones lineales dados una tabla, una gráfica y una descripción verbal",
+          "pl": "Zapisywać układy dwóch równań liniowych z tabeli, wykresu i opisu słownego"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.meaning",
+          "kp.alg1.systems.graphical",
+          "kp.alg1.systems.substitution",
+          "kp.alg1.systems.elimination",
+          "kp.alg1.systems.verify"
+        ]
+      },
+      "A.3(C)": {
+        "description": {
+          "en": "Graph linear functions on the coordinate plane and identify key features including x-intercept, y-intercept, zeros, and slope",
+          "es": "Graficar funciones lineales en el plano y identificar características clave: intersecciones, ceros y pendiente",
+          "pl": "Rysować funkcje liniowe na płaszczyźnie i identyfikować cechy kluczowe: przecięcia, zera i nachylenie"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.slope.intercept.form",
+          "kp.alg1.graph.slope.intercept",
+          "kp.alg1.intercept.identify"
+        ]
+      },
+      "A.3(F)": {
+        "description": {
+          "en": "Graph systems of two linear equations in two variables on the coordinate plane and determine the solutions if they exist",
+          "es": "Graficar sistemas de dos ecuaciones lineales en dos variables y determinar las soluciones si existen",
+          "pl": "Rysować układy dwóch równań liniowych dwóch zmiennych i wyznaczać rozwiązania, jeśli istnieją"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.meaning",
+          "kp.alg1.systems.graphical"
+        ]
+      },
+      "A.5(C)": {
+        "description": {
+          "en": "Solve systems of two linear equations with two variables for mathematical and real-world problems",
+          "es": "Resolver sistemas de dos ecuaciones lineales con dos variables en problemas matemáticos y del mundo real",
+          "pl": "Rozwiązywać układy dwóch równań liniowych dwóch zmiennych w zadaniach matematycznych i rzeczywistych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.substitution",
+          "kp.alg1.systems.graphical",
+          "kp.alg1.systems.elimination",
+          "kp.alg1.systems.elimination.scale",
+          "kp.alg1.systems.verify"
+        ]
+      },
+      "A.1(C)": {
+        "description": {
+          "en": "Determine tools, including real objects, manipulatives, technology, and techniques, including mental math, estimation, and number sense as appropriate",
+          "es": "Determinar herramientas y técnicas apropiadas, incluyendo estimación y sentido numérico",
+          "pl": "Dobierać narzędzia i techniki, w tym szacowanie i wyczucie liczb"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.graph.slope.intercept",
+          "kp.alg1.systems.graphical"
+        ]
+      },
+      "A.11(B)": {
+        "description": {
+          "en": "Simplify numeric and algebraic expressions using the laws of exponents, including integral and rational exponents",
+          "es": "Simplificar expresiones numéricas y algebraicas usando las leyes de los exponentes, incluidos enteros y racionales",
+          "pl": "Upraszczać wyrażenia liczbowe i algebraiczne za pomocą praw potęg, w tym wykładników całkowitych i wymiernych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponents.product",
+          "kp.alg1.exponents.quotient",
+          "kp.alg1.exponents.power"
+        ]
+      },
+      "A.10(A)": {
+        "description": {
+          "en": "Add and subtract polynomials of degree one and degree two",
+          "es": "Sumar y restar polinomios de grado uno y grado dos",
+          "pl": "Dodawać i odejmować wielomiany stopnia pierwszego i drugiego"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.polynomial.classify",
+          "kp.alg1.polynomial.add",
+          "kp.alg1.polynomial.subtract"
         ]
       }
     },
@@ -165,7 +311,13 @@
           "kp.alg1.expression.translate",
           "kp.alg1.order.ops",
           "kp.alg1.eval.substitute",
-          "kp.alg1.eval.multi.var"
+          "kp.alg1.eval.multi.var",
+          "kp.alg1.exponents.product",
+          "kp.alg1.exponents.quotient",
+          "kp.alg1.exponents.power",
+          "kp.alg1.polynomial.classify",
+          "kp.alg1.polynomial.add",
+          "kp.alg1.polynomial.subtract"
         ]
       },
       "A-SSE.A.1a": {
@@ -176,7 +328,10 @@
         },
         "knowledgePointIds": [
           "kp.alg1.variable.identify",
-          "kp.alg1.expression.parts"
+          "kp.alg1.expression.parts",
+          "kp.alg1.polynomial.classify",
+          "kp.alg1.polynomial.add",
+          "kp.alg1.polynomial.subtract"
         ]
       },
       "A-REI.A.1": {
@@ -346,7 +501,9 @@
         },
         "knowledgePointIds": [
           "kp.alg1.rate.of.change",
-          "kp.alg1.slope.intuition"
+          "kp.alg1.slope.intuition",
+          "kp.alg1.write.equation.slope.yint",
+          "kp.alg1.write.equation.point.slope"
         ]
       },
       "F-IF.B.6": {
@@ -369,6 +526,193 @@
         "knowledgePointIds": [
           "kp.alg1.rate.of.change",
           "kp.alg1.slope.intuition"
+        ]
+      },
+      "8.F.B.3": {
+        "description": {
+          "en": "Interpret the equation y = mx + b as defining a linear function whose graph is a straight line",
+          "es": "Interpretar la ecuación y = mx + b como una función lineal cuyo gráfico es una recta",
+          "pl": "Interpretować równanie y = mx + b jako funkcję liniową o wykresie będącym prostą"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.slope.intercept.form",
+          "kp.alg1.graph.slope.intercept",
+          "kp.alg1.intercept.identify"
+        ]
+      },
+      "8.EE.B.6": {
+        "description": {
+          "en": "Use similar triangles to explain slope and derive y = mx + b",
+          "es": "Usar triángulos semejantes para explicar la pendiente y derivar y = mx + b",
+          "pl": "Używać trójkątów podobnych do wyjaśnienia nachylenia i wyprowadzenia y = mx + b"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.slope.intercept.form",
+          "kp.alg1.parallel.slope"
+        ]
+      },
+      "F-IF.C.7a": {
+        "description": {
+          "en": "Graph linear functions and show intercepts",
+          "es": "Graficar funciones lineales y mostrar intersecciones",
+          "pl": "Rysować funkcje liniowe i pokazywać przecięcia"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.slope.intercept.form",
+          "kp.alg1.graph.slope.intercept",
+          "kp.alg1.intercept.identify"
+        ]
+      },
+      "A-REI.D.10": {
+        "description": {
+          "en": "Understand that the graph of an equation in two variables is the set of all its solutions",
+          "es": "Comprender que la gráfica de una ecuación en dos variables es el conjunto de todas sus soluciones",
+          "pl": "Rozumieć, że wykres równania dwóch zmiennych to zbiór wszystkich jego rozwiązań"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.graph.slope.intercept",
+          "kp.alg1.intercept.identify"
+        ]
+      },
+      "F-LE.A.2": {
+        "description": {
+          "en": "Construct linear and exponential functions given a graph, description, or two input-output pairs",
+          "es": "Construir funciones lineales y exponenciales dadas una gráfica, descripción o dos pares entrada-salida",
+          "pl": "Konstruować funkcje liniowe i wykładnicze z wykresu, opisu lub dwóch par argument–wartość"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.write.equation.slope.yint",
+          "kp.alg1.write.equation.point.slope",
+          "kp.alg1.parallel.slope"
+        ]
+      },
+      "A-CED.A.2": {
+        "description": {
+          "en": "Create equations in two or more variables to represent relationships between quantities",
+          "es": "Crear ecuaciones en dos o más variables para representar relaciones entre cantidades",
+          "pl": "Tworzyć równania dwóch lub więcej zmiennych reprezentujące zależności między wielkościami"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.write.equation.slope.yint",
+          "kp.alg1.write.equation.point.slope"
+        ]
+      },
+      "G-GPE.B.5": {
+        "description": {
+          "en": "Prove the slope criteria for parallel and perpendicular lines and use them to solve problems",
+          "es": "Demostrar criterios de pendiente para paralelas y perpendiculares y usarlos para resolver problemas",
+          "pl": "Udowadniać kryteria nachylenia dla równoległych i prostopadłych oraz stosować je w zadaniach"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.parallel.slope"
+        ]
+      },
+      "8.EE.C.8a": {
+        "description": {
+          "en": "Understand that solutions to a system of two linear equations correspond to points of intersection",
+          "es": "Comprender que las soluciones de un sistema de dos ecuaciones lineales corresponden a puntos de intersección",
+          "pl": "Rozumieć, że rozwiązania układu dwóch równań liniowych odpowiadają punktom przecięcia"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.meaning",
+          "kp.alg1.systems.graphical",
+          "kp.alg1.systems.verify"
+        ]
+      },
+      "8.EE.C.8b": {
+        "description": {
+          "en": "Solve systems of two linear equations algebraically and estimate solutions by graphing",
+          "es": "Resolver sistemas de dos ecuaciones lineales algebraicamente y estimar soluciones graficando",
+          "pl": "Rozwiązywać układy dwóch równań liniowych algebraicznie i szacować rozwiązania z wykresu"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.graphical",
+          "kp.alg1.systems.substitution",
+          "kp.alg1.systems.elimination",
+          "kp.alg1.systems.elimination.scale"
+        ]
+      },
+      "8.EE.C.8c": {
+        "description": {
+          "en": "Solve real-world and mathematical problems leading to two linear equations in two variables",
+          "es": "Resolver problemas del mundo real y matemáticos que conduzcan a dos ecuaciones lineales en dos variables",
+          "pl": "Rozwiązywać problemy rzeczywiste i matematyczne prowadzące do dwóch równań liniowych dwóch zmiennych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.substitution"
+        ]
+      },
+      "A-REI.C.6": {
+        "description": {
+          "en": "Solve systems of linear equations exactly and approximately",
+          "es": "Resolver sistemas de ecuaciones lineales exacta y aproximadamente",
+          "pl": "Rozwiązywać układy równań liniowych dokładnie i przybliżeniem"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.meaning",
+          "kp.alg1.systems.substitution",
+          "kp.alg1.systems.elimination",
+          "kp.alg1.systems.elimination.scale",
+          "kp.alg1.systems.verify"
+        ]
+      },
+      "A-REI.D.11": {
+        "description": {
+          "en": "Explain why the x-coordinates of the intersection points are solutions to f(x) = g(x)",
+          "es": "Explicar por qué las coordenadas x de los puntos de intersección son soluciones de f(x) = g(x)",
+          "pl": "Wyjaśniać, dlaczego współrzędne x punktów przecięcia są rozwiązaniami f(x) = g(x)"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.meaning",
+          "kp.alg1.systems.graphical",
+          "kp.alg1.systems.verify"
+        ]
+      },
+      "A-REI.C.5": {
+        "description": {
+          "en": "Prove that, given a system of two equations in two variables, replacing one equation by the sum of that equation and a multiple of the other produces a system with the same solutions",
+          "es": "Demostrar que, dado un sistema de dos ecuaciones, reemplazar una por la suma de esa y un múltiplo de la otra produce un sistema con las mismas soluciones",
+          "pl": "Udowodnić, że zastąpienie jednego równania sumą tego równania i wielokrotności drugiego daje układ o tych samych rozwiązaniach"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.elimination",
+          "kp.alg1.systems.elimination.scale"
+        ]
+      },
+      "8.EE.A.1": {
+        "description": {
+          "en": "Know and apply the properties of integer exponents to generate equivalent numerical expressions",
+          "es": "Conocer y aplicar las propiedades de los exponentes enteros para generar expresiones numéricas equivalentes",
+          "pl": "Znać i stosować własności wykładników całkowitych do generowania równoważnych wyrażeń liczbowych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponents.product",
+          "kp.alg1.exponents.quotient",
+          "kp.alg1.exponents.power"
+        ]
+      },
+      "N-RN.A.1": {
+        "description": {
+          "en": "Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents",
+          "es": "Explicar cómo la definición de exponentes racionales sigue de extender las propiedades de los exponentes enteros",
+          "pl": "Wyjaśniać, jak definicja wykładników wymiernych wynika z rozszerzenia własności wykładników całkowitych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponents.product",
+          "kp.alg1.exponents.quotient",
+          "kp.alg1.exponents.power"
+        ]
+      },
+      "A-APR.A.1": {
+        "description": {
+          "en": "Understand that polynomials form a system analogous to the integers; add, subtract, and multiply polynomials",
+          "es": "Comprender que los polinomios forman un sistema análogo a los enteros; sumar, restar y multiplicar polinomios",
+          "pl": "Rozumieć, że wielomiany tworzą układ analogiczny do liczb całkowitych; dodawać, odejmować i mnożyć wielomiany"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.polynomial.classify",
+          "kp.alg1.polynomial.add",
+          "kp.alg1.polynomial.subtract"
         ]
       }
     }
@@ -434,6 +778,73 @@
       "8.F.B.4",
       "F-IF.B.6",
       "8.EE.B.5"
+    ],
+    "alg1-l07": [
+      "A.3(C)",
+      "A.2(B)",
+      "A.2(A)",
+      "A.1(C)",
+      "A.1(D)",
+      "8.F.B.3",
+      "8.EE.B.6",
+      "F-IF.C.7a",
+      "A-REI.D.10"
+    ],
+    "alg1-l08": [
+      "A.2(B)",
+      "A.2(C)",
+      "A.2(E)",
+      "A.3(A)",
+      "A.1(A)",
+      "A.1(B)",
+      "A.1(D)",
+      "8.F.B.4",
+      "F-LE.A.2",
+      "A-CED.A.2",
+      "8.EE.B.6",
+      "G-GPE.B.5"
+    ],
+    "alg1-l09": [
+      "A.2(I)",
+      "A.3(F)",
+      "A.5(C)",
+      "A.1(B)",
+      "A.1(C)",
+      "A.1(D)",
+      "8.EE.C.8a",
+      "8.EE.C.8b",
+      "8.EE.C.8c",
+      "A-REI.C.6",
+      "A-REI.D.11"
+    ],
+    "alg1-l10": [
+      "A.5(C)",
+      "A.2(I)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "8.EE.C.8a",
+      "8.EE.C.8b",
+      "A-REI.C.5",
+      "A-REI.C.6",
+      "A-REI.D.11"
+    ],
+    "alg1-l11": [
+      "A.11(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "8.EE.A.1",
+      "N-RN.A.1",
+      "A-SSE.A.1"
+    ],
+    "alg1-l12": [
+      "A.10(A)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-APR.A.1",
+      "A-SSE.A.1",
+      "A-SSE.A.1a"
     ]
   }
 }

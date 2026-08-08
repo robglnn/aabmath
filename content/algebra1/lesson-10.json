@@ -1,0 +1,1319 @@
+{
+  "id": "alg1-l10",
+  "courseId": "algebra1",
+  "order": 10,
+  "title": {
+    "en": "Systems — Elimination Method & Checking",
+    "es": "Sistemas — método de eliminación y comprobación",
+    "pl": "Układy — metoda eliminacji i sprawdzanie"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.systems.elimination",
+    "kp.alg1.systems.elimination.scale",
+    "kp.alg1.systems.verify"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_10",
+    "unlockOnMastery": [
+      "lesson_board_11"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will solve 2×2 linear systems by elimination (including scaling), then verify ordered pairs in both equations.",
+        "es": "Resolverás sistemas lineales 2×2 por eliminación (incluyendo escalado) y verificarás pares ordenados en ambas ecuaciones.",
+        "pl": "Będziesz rozwiązywać układy 2×2 metodą eliminacji (w tym skalowanie) i weryfikować pary w obu równaniach."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: eliminate & verify",
+        "es": "Enseñar: eliminar y verificar",
+        "pl": "Nauczanie: eliminacja i weryfikacja"
+      },
+      "body": {
+        "en": "Align variables, add or subtract to cancel one variable (scale first if needed), solve, back-substitute, then check both originals.",
+        "es": "Alinea variables, suma o resta para cancelar una (escala primero si hace falta), resuelve, sustituye de vuelta y comprueba ambas originales.",
+        "pl": "Wyrównaj zmienne, dodaj lub odejmij by skasować jedną (przeskaluj gdy trzeba), rozwiąż, podstaw z powrotem i sprawdź oba oryginały."
+      },
+      "bodyMath": [
+        "x + y = 5,\\; -x + 2y = 4",
+        "3y = 9 \\Rightarrow y = 3",
+        "(x, y) = (2, 3)"
+      ],
+      "itemIds": [
+        "alg1-l10-t01",
+        "alg1-l10-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Practice adding to cancel, scaling, solving for each variable, and rejecting false pairs.",
+        "es": "Practica sumar para cancelar, escalar, resolver cada variable y rechazar pares falsos.",
+        "pl": "Ćwicz dodawanie do kasowania, skalowanie, rozwiązywanie zmiennych i odrzucanie fałszywych par."
+      },
+      "itemIds": [
+        "alg1-l10-g01",
+        "alg1-l10-g02",
+        "alg1-l10-g03",
+        "alg1-l10-g04",
+        "alg1-l10-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l10-i01",
+        "alg1-l10-i02",
+        "alg1-l10-i03",
+        "alg1-l10-i04",
+        "alg1-l10-i05",
+        "alg1-l10-i06",
+        "alg1-l10-i07",
+        "alg1-l10-i08",
+        "alg1-l10-i09",
+        "alg1-l10-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l10-t01",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "To eliminate x in { x + y = 5 ; −x + 2y = 4 }, what do you do first?",
+        "es": "Para eliminar x en { x + y = 5 ; −x + 2y = 4 }, ¿qué haces primero?",
+        "pl": "Aby wyeliminować x w { x + y = 5 ; −x + 2y = 4 }, co robisz najpierw?"
+      },
+      "feedbackCorrect": {
+        "en": "Coefficients of x are 1 and −1 — add to eliminate x.",
+        "es": "Coeficientes de x son 1 y −1 — suma para eliminar x.",
+        "pl": "Współczynniki x to 1 i −1 — dodaj, by wyeliminować x."
+      },
+      "feedbackIncorrect": {
+        "en": "Look for opposite coefficients, then add (or equal coefficients, then subtract).",
+        "es": "Busca coeficientes opuestos y suma (o iguales y resta).",
+        "pl": "Szukaj przeciwnych współczynników i dodaj (lub równych i odejmij)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "x + y = 5,\\quad -x + 2y = 4",
+      "choices": {
+        "en": [
+          "Add the equations (x terms cancel)",
+          "Subtract them without aligning",
+          "Divide both by x",
+          "Graph only"
+        ],
+        "es": [
+          "Sumar las ecuaciones (se cancelan las x)",
+          "Restarlas sin alinear",
+          "Dividir ambas entre x",
+          "Solo graficar"
+        ],
+        "pl": [
+          "Dodać równania (wyrazy x się kasują)",
+          "Odjąć bez wyrównania",
+          "Podzielić obie przez x",
+          "Tylko rysować"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "no_cancel",
+        "graph_only"
+      ]
+    },
+    {
+      "id": "alg1-l10-t02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.verify"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (2, 3) solve { x + y = 5 ; 2x − y = 1 }?",
+        "es": "¿(2, 3) resuelve { x + y = 5 ; 2x − y = 1 }?",
+        "pl": "Czy (2, 3) rozwiązuje { x + y = 5 ; 2x − y = 1 }?"
+      },
+      "feedbackCorrect": {
+        "en": "2+3=5 and 4−3=1 — both hold.",
+        "es": "2+3=5 y 4−3=1 — ambas se cumplen.",
+        "pl": "2+3=5 i 4−3=1 — oba zachodzą."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute into BOTH equations before deciding.",
+        "es": "Sustituye en AMBAS ecuaciones antes de decidir.",
+        "pl": "Podstaw do OBU równań przed decyzją."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(D)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "x + y = 5,\\quad 2x - y = 1",
+      "choices": {
+        "en": [
+          "No — only the first is true",
+          "Yes — both equations true",
+          "No — only the second is true",
+          "No — neither is true"
+        ],
+        "es": [
+          "No — solo la primera",
+          "Sí — ambas verdaderas",
+          "No — solo la segunda",
+          "No — ninguna"
+        ],
+        "pl": [
+          "Nie — tylko pierwsze",
+          "Tak — oba prawdziwe",
+          "Nie — tylko drugie",
+          "Nie — żadne"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "one_equation_only"
+      ]
+    },
+    {
+      "id": "alg1-l10-g01",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Add { 3x + y = 7 ; −3x + 2y = 8 }. What equation remains?",
+        "es": "Suma { 3x + y = 7 ; −3x + 2y = 8 }. ¿Qué ecuación queda?",
+        "pl": "Dodaj { 3x + y = 7 ; −3x + 2y = 8 }. Jakie równanie zostaje?"
+      },
+      "feedbackCorrect": {
+        "en": "x terms cancel; y + 2y = 3y and 7 + 8 = 15.",
+        "es": "Se cancelan las x; y + 2y = 3y y 7 + 8 = 15.",
+        "pl": "Wyrazy x się kasują; y + 2y = 3y i 7 + 8 = 15."
+      },
+      "feedbackIncorrect": {
+        "en": "Add corresponding terms; the ±3x pair should cancel.",
+        "es": "Suma términos correspondientes; el par ±3x debe cancelarse.",
+        "pl": "Dodaj odpowiadające wyrazy; para ±3x powinna się skasować."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "3x + y = 7,\\quad -3x + 2y = 8",
+      "choices": {
+        "en": [
+          "y = 15",
+          "6x + 3y = 15",
+          "3y = 15",
+          "−6x + 3y = 15"
+        ],
+        "es": [
+          "y = 15",
+          "6x + 3y = 15",
+          "3y = 15",
+          "−6x + 3y = 15"
+        ],
+        "pl": [
+          "y = 15",
+          "6x + 3y = 15",
+          "3y = 15",
+          "−6x + 3y = 15"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "forgot_cancel",
+        "added_x"
+      ]
+    },
+    {
+      "id": "alg1-l10-g02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "From 3y = 15 after elimination, what is y?",
+        "es": "De 3y = 15 tras eliminar, ¿cuánto es y?",
+        "pl": "Z 3y = 15 po eliminacji, ile wynosi y?"
+      },
+      "feedbackCorrect": {
+        "en": "Divide both sides by 3: y = 5.",
+        "es": "Divide ambos lados entre 3: y = 5.",
+        "pl": "Podziel obie strony przez 3: y = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Solve the one-variable equation after elimination.",
+        "es": "Resuelve la ecuación de una variable tras eliminar.",
+        "pl": "Rozwiąż równanie jednej zmiennej po eliminacji."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "3y = 15",
+      "choices": {
+        "en": [
+          "15",
+          "3",
+          "12",
+          "5"
+        ],
+        "es": [
+          "15",
+          "3",
+          "12",
+          "5"
+        ],
+        "pl": [
+          "15",
+          "3",
+          "12",
+          "5"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "5",
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l10-g03",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination.scale"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For { 2x + y = 8 ; x + 3y = 9 }, multiply the second by 2. New second equation?",
+        "es": "Para { 2x + y = 8 ; x + 3y = 9 }, multiplica la segunda por 2. ¿Nueva segunda?",
+        "pl": "Dla { 2x + y = 8 ; x + 3y = 9 } pomnóż drugie przez 2. Nowe drugie?"
+      },
+      "feedbackCorrect": {
+        "en": "Multiply every term: 2(x) + 2(3y) = 2(9).",
+        "es": "Multiplica cada término: 2(x) + 2(3y) = 2(9).",
+        "pl": "Pomnóż każdy wyraz: 2(x) + 2(3y) = 2(9)."
+      },
+      "feedbackIncorrect": {
+        "en": "Scale both sides completely — every term.",
+        "es": "Escala ambos lados por completo — cada término.",
+        "pl": "Przeskaluj obie strony całkowicie — każdy wyraz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.C.5",
+            "A-REI.C.6",
+            "8.EE.C.8b"
+          ]
+        }
+      ],
+      "promptMath": "2x + y = 8,\\quad x + 3y = 9",
+      "choices": {
+        "en": [
+          "2x + 6y = 18",
+          "2x + 3y = 18",
+          "x + 6y = 18",
+          "2x + 6y = 9"
+        ],
+        "es": [
+          "2x + 6y = 18",
+          "2x + 3y = 18",
+          "x + 6y = 18",
+          "2x + 6y = 9"
+        ],
+        "pl": [
+          "2x + 6y = 18",
+          "2x + 3y = 18",
+          "x + 6y = 18",
+          "2x + 6y = 9"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "partial_scale",
+        "rhs_forgot"
+      ]
+    },
+    {
+      "id": "alg1-l10-g04",
+      "knowledgePointIds": [
+        "kp.alg1.systems.verify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (1, 4) solve { 2x + y = 6 ; x − y = −1 }?",
+        "es": "¿(1, 4) resuelve { 2x + y = 6 ; x − y = −1 }?",
+        "pl": "Czy (1, 4) rozwiązuje { 2x + y = 6 ; x − y = −1 }?"
+      },
+      "feedbackCorrect": {
+        "en": "2(1)+4=6 true, but 1−4=−3 ≠ −1.",
+        "es": "2(1)+4=6 verdad, pero 1−4=−3 ≠ −1.",
+        "pl": "2(1)+4=6 prawda, ale 1−4=−3 ≠ −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Both must hold; failing one means not a solution.",
+        "es": "Ambas deben cumplirse; fallar una = no es solución.",
+        "pl": "Oba muszą zachodzić; niespełnienie jednego = nie rozwiązanie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(D)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "2x + y = 6,\\quad x - y = -1",
+      "choices": {
+        "en": [
+          "Yes — both true",
+          "No — fails the second equation",
+          "No — fails the first only",
+          "Yes — one equation is enough"
+        ],
+        "es": [
+          "Sí — ambas verdaderas",
+          "No — falla la segunda",
+          "No — falla solo la primera",
+          "Sí — basta una ecuación"
+        ],
+        "pl": [
+          "Tak — oba prawdziwe",
+          "Nie — nie spełnia drugiego",
+          "Nie — nie spełnia tylko pierwszego",
+          "Tak — wystarczy jedno"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "one_equation_only"
+      ]
+    },
+    {
+      "id": "alg1-l10-g05",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "{ x + 2y = 10 ; x − 2y = 2 }. After eliminating y, what is x?",
+        "es": "{ x + 2y = 10 ; x − 2y = 2 }. Tras eliminar y, ¿cuánto es x?",
+        "pl": "{ x + 2y = 10 ; x − 2y = 2 }. Po wyeliminowaniu y, ile wynosi x?"
+      },
+      "feedbackCorrect": {
+        "en": "Add: 2x = 12 → x = 6.",
+        "es": "Suma: 2x = 12 → x = 6.",
+        "pl": "Dodaj: 2x = 12 → x = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Add to cancel ±2y, then divide by 2.",
+        "es": "Suma para cancelar ±2y, luego divide entre 2.",
+        "pl": "Dodaj, by skasować ±2y, potem podziel przez 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "x + 2y = 10,\\quad x - 2y = 2",
+      "choices": {
+        "en": [
+          "4",
+          "8",
+          "6",
+          "2"
+        ],
+        "es": [
+          "4",
+          "8",
+          "6",
+          "2"
+        ],
+        "pl": [
+          "4",
+          "8",
+          "6",
+          "2"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "6",
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "wrong_op",
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l10-i01",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "{ 4x − y = 10 ; 2x + y = 8 }. Find x after eliminating y.",
+        "es": "{ 4x − y = 10 ; 2x + y = 8 }. Halla x tras eliminar y.",
+        "pl": "{ 4x − y = 10 ; 2x + y = 8 }. Znajdź x po wyeliminowaniu y."
+      },
+      "feedbackCorrect": {
+        "en": "Add: 6x = 18 → x = 3.",
+        "es": "Suma: 6x = 18 → x = 3.",
+        "pl": "Dodaj: 6x = 18 → x = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "±y cancel when you add; then solve for x.",
+        "es": "±y se cancelan al sumar; luego resuelve x.",
+        "pl": "±y kasują się przy dodawaniu; potem rozwiąż x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "4x - y = 10,\\quad 2x + y = 8",
+      "choices": {
+        "en": [
+          "2",
+          "4",
+          "6",
+          "3"
+        ],
+        "es": [
+          "2",
+          "4",
+          "6",
+          "3"
+        ],
+        "pl": [
+          "2",
+          "4",
+          "6",
+          "3"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "wrong_op",
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l10-i02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same system: 4x − y = 10, 2x + y = 8. Find y.",
+        "es": "Mismo sistema: 4x − y = 10, 2x + y = 8. Halla y.",
+        "pl": "Ten sam układ: 4x − y = 10, 2x + y = 8. Znajdź y."
+      },
+      "feedbackCorrect": {
+        "en": "x = 3 → 2(3) + y = 8 → y = 2. Solution (3, 2).",
+        "es": "x = 3 → 2(3) + y = 8 → y = 2. Solución (3, 2).",
+        "pl": "x = 3 → 2(3) + y = 8 → y = 2. Rozwiązanie (3, 2)."
+      },
+      "feedbackIncorrect": {
+        "en": "Back-substitute x into either original equation.",
+        "es": "Sustituye x de vuelta en cualquiera de las originales.",
+        "pl": "Podstaw x z powrotem do któregokolwiek oryginalnego."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "4x - y = 10,\\quad 2x + y = 8",
+      "choices": {
+        "en": [
+          "2",
+          "3",
+          "−2",
+          "8"
+        ],
+        "es": [
+          "2",
+          "3",
+          "−2",
+          "8"
+        ],
+        "pl": [
+          "2",
+          "3",
+          "−2",
+          "8"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "2",
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "stop_after_one_var",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l10-i03",
+      "knowledgePointIds": [
+        "kp.alg1.systems.verify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (3, 2) solve { 4x − y = 10 ; 2x + y = 8 }?",
+        "es": "¿(3, 2) resuelve { 4x − y = 10 ; 2x + y = 8 }?",
+        "pl": "Czy (3, 2) rozwiązuje { 4x − y = 10 ; 2x + y = 8 }?"
+      },
+      "feedbackCorrect": {
+        "en": "12 − 2 = 10 and 6 + 2 = 8 — both true.",
+        "es": "12 − 2 = 10 y 6 + 2 = 8 — ambas verdaderas.",
+        "pl": "12 − 2 = 10 i 6 + 2 = 8 — oba prawdziwe."
+      },
+      "feedbackIncorrect": {
+        "en": "Checking both equations confirms the elimination result.",
+        "es": "Comprobar ambas confirma el resultado de eliminación.",
+        "pl": "Sprawdzenie obu potwierdza wynik eliminacji."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(D)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "4x - y = 10,\\quad 2x + y = 8",
+      "choices": {
+        "en": [
+          "No — only the first",
+          "Yes — both equations true",
+          "No — only the second",
+          "No — neither"
+        ],
+        "es": [
+          "No — solo la primera",
+          "Sí — ambas verdaderas",
+          "No — solo la segunda",
+          "No — ninguna"
+        ],
+        "pl": [
+          "Nie — tylko pierwsze",
+          "Tak — oba prawdziwe",
+          "Nie — tylko drugie",
+          "Nie — żadne"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "one_equation_only"
+      ]
+    },
+    {
+      "id": "alg1-l10-i04",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination.scale"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "{ 3x + 2y = 16 ; x + y = 7 }. Multiply second by 2, then subtract from first. What remains?",
+        "es": "{ 3x + 2y = 16 ; x + y = 7 }. Multiplica la segunda por 2 y réstala de la primera. ¿Qué queda?",
+        "pl": "{ 3x + 2y = 16 ; x + y = 7 }. Pomnóż drugie przez 2 i odejmij od pierwszego. Co zostaje?"
+      },
+      "feedbackCorrect": {
+        "en": "Second×2: 2x+2y=14. Subtract from first: x = 2.",
+        "es": "Segunda×2: 2x+2y=14. Resta de la primera: x = 2.",
+        "pl": "Drugie×2: 2x+2y=14. Odejmij od pierwszego: x = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "After scaling, subtract carefully term by term.",
+        "es": "Tras escalar, resta término a término con cuidado.",
+        "pl": "Po przeskalowaniu odejmuj wyraz po wyrazie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.C.5",
+            "A-REI.C.6",
+            "8.EE.C.8b"
+          ]
+        }
+      ],
+      "promptMath": "3x + 2y = 16,\\quad x + y = 7",
+      "choices": {
+        "en": [
+          "y = 2",
+          "5x = 30",
+          "x = 2",
+          "x + 2y = 2"
+        ],
+        "es": [
+          "y = 2",
+          "5x = 30",
+          "x = 2",
+          "x + 2y = 2"
+        ],
+        "pl": [
+          "y = 2",
+          "5x = 30",
+          "x = 2",
+          "x + 2y = 2"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "wrong_op",
+        "partial_scale"
+      ]
+    },
+    {
+      "id": "alg1-l10-i05",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination.scale"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same scaled system: x = 2. Find y from x + y = 7.",
+        "es": "Mismo sistema escalado: x = 2. Halla y desde x + y = 7.",
+        "pl": "Ten sam układ: x = 2. Znajdź y z x + y = 7."
+      },
+      "feedbackCorrect": {
+        "en": "2 + y = 7 → y = 5. Solution (2, 5).",
+        "es": "2 + y = 7 → y = 5. Solución (2, 5).",
+        "pl": "2 + y = 7 → y = 5. Rozwiązanie (2, 5)."
+      },
+      "feedbackIncorrect": {
+        "en": "Back-substitute the found x into the simpler equation.",
+        "es": "Sustituye x hallada en la ecuación más simple.",
+        "pl": "Podstaw znalezione x do prostszego równania."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.C.5",
+            "A-REI.C.6",
+            "8.EE.C.8b"
+          ]
+        }
+      ],
+      "promptMath": "x + y = 7",
+      "choices": {
+        "en": [
+          "2",
+          "7",
+          "9",
+          "5"
+        ],
+        "es": [
+          "2",
+          "7",
+          "9",
+          "5"
+        ],
+        "pl": [
+          "2",
+          "7",
+          "9",
+          "5"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "5",
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "stop_after_one_var"
+      ]
+    },
+    {
+      "id": "alg1-l10-i06",
+      "knowledgePointIds": [
+        "kp.alg1.systems.verify"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (0, 7) solve { x + y = 7 ; 3x + 2y = 16 }?",
+        "es": "¿(0, 7) resuelve { x + y = 7 ; 3x + 2y = 16 }?",
+        "pl": "Czy (0, 7) rozwiązuje { x + y = 7 ; 3x + 2y = 16 }?"
+      },
+      "feedbackCorrect": {
+        "en": "0+7=7 true, but 0+14=14 ≠ 16.",
+        "es": "0+7=7 verdad, pero 0+14=14 ≠ 16.",
+        "pl": "0+7=7 prawda, ale 0+14=14 ≠ 16."
+      },
+      "feedbackIncorrect": {
+        "en": "Satisfying one equation is not enough for a system.",
+        "es": "Cumplir una ecuación no basta para un sistema.",
+        "pl": "Spełnienie jednego równania nie wystarcza w układzie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(D)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "x + y = 7,\\quad 3x + 2y = 16",
+      "choices": {
+        "en": [
+          "No — fails the second equation",
+          "Yes — both true",
+          "No — fails the first only",
+          "Yes — y alone is enough"
+        ],
+        "es": [
+          "No — falla la segunda",
+          "Sí — ambas verdaderas",
+          "No — falla solo la primera",
+          "Sí — basta con y"
+        ],
+        "pl": [
+          "Nie — nie spełnia drugiego",
+          "Tak — oba prawdziwe",
+          "Nie — nie spełnia tylko pierwszego",
+          "Tak — samo y wystarczy"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "one_equation_only"
+      ]
+    },
+    {
+      "id": "alg1-l10-i07",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "{ 5x + 3y = 19 ; 5x − y = 7 }. Eliminate x. What is y?",
+        "es": "{ 5x + 3y = 19 ; 5x − y = 7 }. Elimina x. ¿Cuánto es y?",
+        "pl": "{ 5x + 3y = 19 ; 5x − y = 7 }. Wyeliminuj x. Ile wynosi y?"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract: 4y = 12 → y = 3.",
+        "es": "Resta: 4y = 12 → y = 3.",
+        "pl": "Odejmij: 4y = 12 → y = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Equal 5x coefficients → subtract the equations.",
+        "es": "Coeficientes 5x iguales → resta las ecuaciones.",
+        "pl": "Równe współczynniki 5x → odejmij równania."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "5x + 3y = 19,\\quad 5x - y = 7",
+      "choices": {
+        "en": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "es": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "pl": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "wrong_op",
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l10-i08",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same system: y = 3. Find the solution pair (x, y).",
+        "es": "Mismo sistema: y = 3. Halla el par (x, y).",
+        "pl": "Ten sam układ: y = 3. Znajdź parę (x, y)."
+      },
+      "feedbackCorrect": {
+        "en": "5x − 3 = 7 → 5x = 10 → x = 2 → (2, 3).",
+        "es": "5x − 3 = 7 → 5x = 10 → x = 2 → (2, 3).",
+        "pl": "5x − 3 = 7 → 5x = 10 → x = 2 → (2, 3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Back-substitute y into either equation for x.",
+        "es": "Sustituye y de vuelta para hallar x.",
+        "pl": "Podstaw y z powrotem, by znaleźć x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        }
+      ],
+      "promptMath": "5x - y = 7",
+      "choices": {
+        "en": [
+          "(3, 2)",
+          "(1, 3)",
+          "(2, 3)",
+          "(2, 2)"
+        ],
+        "es": [
+          "(3, 2)",
+          "(1, 3)",
+          "(2, 3)",
+          "(2, 2)"
+        ],
+        "pl": [
+          "(3, 2)",
+          "(1, 3)",
+          "(2, 3)",
+          "(2, 2)"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "swap_xy",
+        "stop_after_one_var"
+      ]
+    },
+    {
+      "id": "alg1-l10-i09",
+      "knowledgePointIds": [
+        "kp.alg1.systems.elimination.scale"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Why multiply an equation before eliminating?",
+        "es": "¿Por qué multiplicar una ecuación antes de eliminar?",
+        "pl": "Dlaczego mnożyć równanie przed eliminacją?"
+      },
+      "feedbackCorrect": {
+        "en": "Scaling creates matching coefficients so add/subtract cancels a variable (A-REI.C.5).",
+        "es": "Escalar crea coeficientes iguales para cancelar una variable (A-REI.C.5).",
+        "pl": "Skalowanie wyrównuje współczynniki, by skasować zmienną (A-REI.C.5)."
+      },
+      "feedbackIncorrect": {
+        "en": "The goal is cancellation of one variable, not changing the solution set.",
+        "es": "La meta es cancelar una variable, no cambiar el conjunto solución.",
+        "pl": "Celem jest skasowanie zmiennej, nie zmiana zbioru rozwiązań."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.C.5",
+            "A-REI.C.6",
+            "8.EE.C.8b"
+          ]
+        }
+      ],
+      "promptMath": "a x + b y = c",
+      "choices": {
+        "en": [
+          "To change the solution of the system",
+          "To remove the equals sign",
+          "Only to make numbers larger",
+          "To make one variable’s coefficients opposites or equal"
+        ],
+        "es": [
+          "Para cambiar la solución del sistema",
+          "Para quitar el signo igual",
+          "Solo para hacer números más grandes",
+          "Para hacer opuestos o iguales los coeficientes de una variable"
+        ],
+        "pl": [
+          "Aby zmienić rozwiązanie układu",
+          "Aby usunąć znak równości",
+          "Tylko by powiększyć liczby",
+          "Aby współczynniki jednej zmiennej stały się przeciwne lub równe"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "changes_solution",
+        "cosmetic_only"
+      ]
+    },
+    {
+      "id": "alg1-l10-i10",
+      "knowledgePointIds": [
+        "kp.alg1.systems.verify"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Best reason to check after elimination?",
+        "es": "¿Mejor razón para comprobar tras eliminar?",
+        "pl": "Najlepszy powód sprawdzania po eliminacji?"
+      },
+      "feedbackCorrect": {
+        "en": "A true solution must satisfy both originals — verification catches slips.",
+        "es": "Una solución verdadera cumple ambas originales — la verificación atrapa errores.",
+        "pl": "Prawdziwe rozwiązanie spełnia oba oryginały — weryfikacja łapie potknięcia."
+      },
+      "feedbackIncorrect": {
+        "en": "Always check both equations; near misses on a graph are not enough.",
+        "es": "Siempre comprueba ambas; acercarse en una gráfica no basta.",
+        "pl": "Zawsze sprawdzaj oba; blisko na wykresie nie wystarczy."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(D)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "(x, y)",
+      "choices": {
+        "en": [
+          "Catch arithmetic errors by testing both original equations",
+          "Checking is optional if graphs look close",
+          "Only the first equation matters",
+          "Verification replaces solving"
+        ],
+        "es": [
+          "Detectar errores aritméticos probando ambas ecuaciones originales",
+          "Comprobar es opcional si las gráficas se ven cerca",
+          "Solo importa la primera ecuación",
+          "Verificar reemplaza resolver"
+        ],
+        "pl": [
+          "Wykryć błędy rachunkowe testując oba oryginalne równania",
+          "Sprawdzanie opcjonalne, gdy wykresy wyglądają blisko",
+          "Liczy się tylko pierwsze równanie",
+          "Weryfikacja zastępuje rozwiązywanie"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "skip_check",
+        "one_equation_only"
+      ]
+    }
+  ]
+}

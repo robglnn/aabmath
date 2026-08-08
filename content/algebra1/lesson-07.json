@@ -1,0 +1,1321 @@
+{
+  "id": "alg1-l07",
+  "courseId": "algebra1",
+  "order": 7,
+  "title": {
+    "en": "Slope-Intercept Form & Graphing Linear Equations",
+    "es": "Forma pendiente-intersección y graficar ecuaciones lineales",
+    "pl": "Postać kierunkowa i rysowanie równań liniowych"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.slope.intercept.form",
+    "kp.alg1.graph.slope.intercept",
+    "kp.alg1.intercept.identify"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_7",
+    "unlockOnMastery": [
+      "lesson_board_8"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will read m and b from y = mx + b, identify intercepts, and graph lines by plotting the y-intercept then using rise over run.",
+        "es": "Leerás m y b de y = mx + b, identificarás intersecciones y graficarás rectas marcando la intersección con y y usando subida sobre avance.",
+        "pl": "Będziesz odczytywać m i b z y = mx + b, identyfikować przecięcia i rysować proste zaznaczając przecięcie z osią y, potem wzrost przez przebieg."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: y = mx + b and graphing",
+        "es": "Enseñar: y = mx + b y graficar",
+        "pl": "Nauczanie: y = mx + b i rysowanie"
+      },
+      "body": {
+        "en": "Slope-intercept form is y = mx + b. Plot (0, b), then from there use slope as rise/run to find more points and draw the line.",
+        "es": "La forma pendiente-intersección es y = mx + b. Marca (0, b), luego usa la pendiente como subida/avance para más puntos y traza la recta.",
+        "pl": "Postać kierunkowa to y = mx + b. Zaznacz (0, b), potem użyj nachylenia jako wzrost/przebieg, by znaleźć kolejne punkty i narysować prostą."
+      },
+      "bodyMath": [
+        "y = mx + b",
+        "y = 2x - 1",
+        "m = \\frac{\\text{rise}}{\\text{run}}"
+      ],
+      "itemIds": [
+        "alg1-l07-t01",
+        "alg1-l07-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Extract m and b, rewrite into slope-intercept form, step along the slope, and find intercepts.",
+        "es": "Extrae m y b, reescribe a forma pendiente-intersección, avanza con la pendiente y halla intersecciones.",
+        "pl": "Wyodrębnij m i b, przekształć do postaci kierunkowej, idź po nachyleniu i znajdź przecięcia."
+      },
+      "itemIds": [
+        "alg1-l07-g01",
+        "alg1-l07-g02",
+        "alg1-l07-g03",
+        "alg1-l07-g04",
+        "alg1-l07-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l07-i01",
+        "alg1-l07-i02",
+        "alg1-l07-i03",
+        "alg1-l07-i04",
+        "alg1-l07-i05",
+        "alg1-l07-i06",
+        "alg1-l07-i07",
+        "alg1-l07-i08",
+        "alg1-l07-i09",
+        "alg1-l07-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l07-t01",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In slope-intercept form, which letter is the slope?",
+        "es": "En la forma pendiente-intersección, ¿qué letra es la pendiente?",
+        "pl": "W postaci kierunkowej, która litera to nachylenie?"
+      },
+      "feedbackCorrect": {
+        "en": "m is the slope (rate of change).",
+        "es": "m es la pendiente (tasa de cambio).",
+        "pl": "m to nachylenie (stopa zmian)."
+      },
+      "feedbackIncorrect": {
+        "en": "Remember y = mx + b: m = slope, b = y-intercept.",
+        "es": "Recuerda y = mx + b: m = pendiente, b = intersección con y.",
+        "pl": "Pamiętaj y = mx + b: m = nachylenie, b = przecięcie z osią y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "y = mx + b",
+      "choices": {
+        "en": [
+          "m",
+          "b",
+          "y",
+          "x"
+        ],
+        "es": [
+          "m",
+          "b",
+          "y",
+          "x"
+        ],
+        "pl": [
+          "m",
+          "b",
+          "y",
+          "x"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "swap_m_b"
+      ]
+    },
+    {
+      "id": "alg1-l07-t02",
+      "knowledgePointIds": [
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "To graph y = 2x − 1, where do you start?",
+        "es": "Para graficar y = 2x − 1, ¿dónde empiezas?",
+        "pl": "Aby narysować y = 2x − 1, od czego zaczynasz?"
+      },
+      "feedbackCorrect": {
+        "en": "b = −1 is the y-intercept; m = 2 means rise 2, run 1.",
+        "es": "b = −1 es la intersección con y; m = 2 significa subir 2, avanzar 1.",
+        "pl": "b = −1 to przecięcie z osią y; m = 2 oznacza wzrost 2, przebieg 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Start at the y-intercept (0, b), then apply rise/run from m.",
+        "es": "Empieza en la intersección con y (0, b), luego aplica subida/avance de m.",
+        "pl": "Zacznij od przecięcia z osią y (0, b), potem zastosuj wzrost/przebieg z m."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x - 1",
+      "choices": {
+        "en": [
+          "Plot (0, 2), then rise −1 / run 1",
+          "Plot (0, −1), then rise 2 / run 1",
+          "Plot (−1, 0), then rise 2 / run 1",
+          "Plot (2, −1) only"
+        ],
+        "es": [
+          "Marca (0, 2), luego sube −1 / avanza 1",
+          "Marca (0, −1), luego sube 2 / avanza 1",
+          "Marca (−1, 0), luego sube 2 / avanza 1",
+          "Solo marca (2, −1)"
+        ],
+        "pl": [
+          "Zaznacz (0, 2), potem wzrost −1 / przebieg 1",
+          "Zaznacz (0, −1), potem wzrost 2 / przebieg 1",
+          "Zaznacz (−1, 0), potem wzrost 2 / przebieg 1",
+          "Tylko zaznacz (2, −1)"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_intercept",
+        "run_rise_swap"
+      ]
+    },
+    {
+      "id": "alg1-l07-g01",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the slope of y = −3x + 4?",
+        "es": "¿Cuál es la pendiente de y = −3x + 4?",
+        "pl": "Jakie jest nachylenie y = −3x + 4?"
+      },
+      "feedbackCorrect": {
+        "en": "m = −3 (coefficient of x).",
+        "es": "m = −3 (coeficiente de x).",
+        "pl": "m = −3 (współczynnik przy x)."
+      },
+      "feedbackIncorrect": {
+        "en": "In y = mx + b, slope is m = −3, not the constant 4.",
+        "es": "En y = mx + b, la pendiente es m = −3, no la constante 4.",
+        "pl": "W y = mx + b nachylenie to m = −3, nie stała 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "y = -3x + 4",
+      "choices": {
+        "en": [
+          "4",
+          "3",
+          "−3",
+          "−4"
+        ],
+        "es": [
+          "4",
+          "3",
+          "−3",
+          "−4"
+        ],
+        "pl": [
+          "4",
+          "3",
+          "−3",
+          "−4"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "-3",
+      "acceptNumeric": -3,
+      "diagnosticTags": [
+        "swap_m_b",
+        "drop_sign"
+      ]
+    },
+    {
+      "id": "alg1-l07-g02",
+      "knowledgePointIds": [
+        "kp.alg1.intercept.identify"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the y-intercept of y = (1/2)x − 5?",
+        "es": "¿Cuál es la intersección con y de y = (1/2)x − 5?",
+        "pl": "Jakie jest przecięcie z osią y dla y = (1/2)x − 5?"
+      },
+      "feedbackCorrect": {
+        "en": "b = −5, so the graph crosses the y-axis at (0, −5).",
+        "es": "b = −5, así que la gráfica corta el eje y en (0, −5).",
+        "pl": "b = −5, więc wykres przecina oś y w (0, −5)."
+      },
+      "feedbackIncorrect": {
+        "en": "The y-intercept is b in y = mx + b — here b = −5.",
+        "es": "La intersección con y es b en y = mx + b — aquí b = −5.",
+        "pl": "Przecięcie z osią y to b w y = mx + b — tu b = −5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10",
+            "8.F.B.3"
+          ]
+        }
+      ],
+      "promptMath": "y = \\frac{1}{2}x - 5",
+      "choices": {
+        "en": [
+          "1/2",
+          "5",
+          "0",
+          "−5"
+        ],
+        "es": [
+          "1/2",
+          "5",
+          "0",
+          "−5"
+        ],
+        "pl": [
+          "1/2",
+          "5",
+          "0",
+          "−5"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "-5",
+      "acceptNumeric": -5,
+      "diagnosticTags": [
+        "swap_m_b",
+        "drop_sign"
+      ]
+    },
+    {
+      "id": "alg1-l07-g03",
+      "knowledgePointIds": [
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "From (0, 3) with slope −1, which next point is on the line?",
+        "es": "Desde (0, 3) con pendiente −1, ¿qué siguiente punto está en la recta?",
+        "pl": "Z (0, 3) przy nachyleniu −1, który następny punkt leży na prostej?"
+      },
+      "feedbackCorrect": {
+        "en": "Slope −1 = rise −1 / run 1 → from (0, 3) to (1, 2).",
+        "es": "Pendiente −1 = subir −1 / avanzar 1 → de (0, 3) a (1, 2).",
+        "pl": "Nachylenie −1 = wzrost −1 / przebieg 1 → z (0, 3) do (1, 2)."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative slope: as x increases by 1, y decreases by 1.",
+        "es": "Pendiente negativa: si x aumenta 1, y disminuye 1.",
+        "pl": "Ujemne nachylenie: gdy x rośnie o 1, y maleje o 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "(1, 2)",
+          "(1, 4)",
+          "(−1, 2)",
+          "(1, 3)"
+        ],
+        "es": [
+          "(1, 2)",
+          "(1, 4)",
+          "(−1, 2)",
+          "(1, 3)"
+        ],
+        "pl": [
+          "(1, 2)",
+          "(1, 4)",
+          "(−1, 2)",
+          "(1, 3)"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_direction",
+        "run_rise_swap"
+      ]
+    },
+    {
+      "id": "alg1-l07-g04",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Rewrite 2x + y = 7 in slope-intercept form.",
+        "es": "Reescribe 2x + y = 7 en forma pendiente-intersección.",
+        "pl": "Zapisz 2x + y = 7 w postaci kierunkowej."
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 2x: y = −2x + 7.",
+        "es": "Resta 2x: y = −2x + 7.",
+        "pl": "Odejmij 2x: y = −2x + 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Isolate y: y = 7 − 2x = −2x + 7.",
+        "es": "Aísla y: y = 7 − 2x = −2x + 7.",
+        "pl": "Wyizoluj y: y = 7 − 2x = −2x + 7."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "2x + y = 7",
+      "choices": {
+        "en": [
+          "y = 2x + 7",
+          "y = −2x + 7",
+          "y = −2x − 7",
+          "x = −2y + 7"
+        ],
+        "es": [
+          "y = 2x + 7",
+          "y = −2x + 7",
+          "y = −2x − 7",
+          "x = −2y + 7"
+        ],
+        "pl": [
+          "y = 2x + 7",
+          "y = −2x + 7",
+          "y = −2x − 7",
+          "x = −2y + 7"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "y = -2x + 7",
+      "diagnosticTags": [
+        "sign_error",
+        "not_solved_for_y"
+      ]
+    },
+    {
+      "id": "alg1-l07-g05",
+      "knowledgePointIds": [
+        "kp.alg1.intercept.identify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = 3x − 6, what is the x-intercept?",
+        "es": "Para y = 3x − 6, ¿cuál es la intersección con x?",
+        "pl": "Dla y = 3x − 6, jakie jest przecięcie z osią x?"
+      },
+      "feedbackCorrect": {
+        "en": "Set y = 0: 0 = 3x − 6 → x = 2.",
+        "es": "Pon y = 0: 0 = 3x − 6 → x = 2.",
+        "pl": "Ustaw y = 0: 0 = 3x − 6 → x = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "x-intercept: set y = 0 and solve for x. Do not report b.",
+        "es": "Intersección con x: pon y = 0 y resuelve x. No reportes b.",
+        "pl": "Przecięcie z osią x: y = 0 i rozwiąż x. Nie podawaj b."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10",
+            "8.F.B.3"
+          ]
+        }
+      ],
+      "promptMath": "y = 3x - 6",
+      "choices": {
+        "en": [
+          "−6",
+          "−2",
+          "2",
+          "6"
+        ],
+        "es": [
+          "−6",
+          "−2",
+          "2",
+          "6"
+        ],
+        "pl": [
+          "−6",
+          "−2",
+          "2",
+          "6"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "2",
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "report_b",
+        "wrong_zero"
+      ]
+    },
+    {
+      "id": "alg1-l07-i01",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Slope and y-intercept of y = 5x?",
+        "es": "¿Pendiente e intersección con y de y = 5x?",
+        "pl": "Nachylenie i przecięcie z osią y dla y = 5x?"
+      },
+      "feedbackCorrect": {
+        "en": "y = 5x + 0 → m = 5, b = 0 (through the origin).",
+        "es": "y = 5x + 0 → m = 5, b = 0 (pasa por el origen).",
+        "pl": "y = 5x + 0 → m = 5, b = 0 (przez początek układu)."
+      },
+      "feedbackIncorrect": {
+        "en": "Missing + b means b = 0.",
+        "es": "Si falta + b, entonces b = 0.",
+        "pl": "Brak + b oznacza b = 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "y = 5x",
+      "choices": {
+        "en": [
+          "m = 0, b = 5",
+          "m = 5, b = 5",
+          "m = −5, b = 0",
+          "m = 5, b = 0"
+        ],
+        "es": [
+          "m = 0, b = 5",
+          "m = 5, b = 5",
+          "m = −5, b = 0",
+          "m = 5, b = 0"
+        ],
+        "pl": [
+          "m = 0, b = 5",
+          "m = 5, b = 5",
+          "m = −5, b = 0",
+          "m = 5, b = 0"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "swap_m_b",
+        "assume_b_equals_m"
+      ]
+    },
+    {
+      "id": "alg1-l07-i02",
+      "knowledgePointIds": [
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which point is on y = −x + 4?",
+        "es": "¿Qué punto está en y = −x + 4?",
+        "pl": "Który punkt leży na y = −x + 4?"
+      },
+      "feedbackCorrect": {
+        "en": "When x = 1, y = −1 + 4 = 3.",
+        "es": "Cuando x = 1, y = −1 + 4 = 3.",
+        "pl": "Gdy x = 1, y = −1 + 4 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x into the rule and check y.",
+        "es": "Sustituye x en la regla y comprueba y.",
+        "pl": "Podstaw x do reguły i sprawdź y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y = -x + 4",
+      "choices": {
+        "en": [
+          "(1, 3)",
+          "(1, 5)",
+          "(0, −4)",
+          "(2, 1)"
+        ],
+        "es": [
+          "(1, 3)",
+          "(1, 5)",
+          "(0, −4)",
+          "(2, 1)"
+        ],
+        "pl": [
+          "(1, 3)",
+          "(1, 5)",
+          "(0, −4)",
+          "(2, 1)"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "arithmetic_error",
+        "wrong_intercept"
+      ]
+    },
+    {
+      "id": "alg1-l07-i03",
+      "knowledgePointIds": [
+        "kp.alg1.intercept.identify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y-intercept of y = −(2/3)x + 1?",
+        "es": "¿Intersección con y de y = −(2/3)x + 1?",
+        "pl": "Przecięcie z osią y dla y = −(2/3)x + 1?"
+      },
+      "feedbackCorrect": {
+        "en": "b = 1 → (0, 1).",
+        "es": "b = 1 → (0, 1).",
+        "pl": "b = 1 → (0, 1)."
+      },
+      "feedbackIncorrect": {
+        "en": "Read the constant term b, not the slope −2/3.",
+        "es": "Lee el término constante b, no la pendiente −2/3.",
+        "pl": "Odczytaj stałą b, nie nachylenie −2/3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10",
+            "8.F.B.3"
+          ]
+        }
+      ],
+      "promptMath": "y = -\\frac{2}{3}x + 1",
+      "choices": {
+        "en": [
+          "−2/3",
+          "1",
+          "−1",
+          "2/3"
+        ],
+        "es": [
+          "−2/3",
+          "1",
+          "−1",
+          "2/3"
+        ],
+        "pl": [
+          "−2/3",
+          "1",
+          "−1",
+          "2/3"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "1",
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "swap_m_b"
+      ]
+    },
+    {
+      "id": "alg1-l07-i04",
+      "knowledgePointIds": [
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Line through (0, −2) with slope 3: which equation?",
+        "es": "Recta por (0, −2) con pendiente 3: ¿qué ecuación?",
+        "pl": "Prosta przez (0, −2) o nachyleniu 3: które równanie?"
+      },
+      "feedbackCorrect": {
+        "en": "m = 3 and b = −2 → y = 3x − 2.",
+        "es": "m = 3 y b = −2 → y = 3x − 2.",
+        "pl": "m = 3 i b = −2 → y = 3x − 2."
+      },
+      "feedbackIncorrect": {
+        "en": "(0, −2) is the y-intercept, so b = −2 with slope 3.",
+        "es": "(0, −2) es la intersección con y, así b = −2 con pendiente 3.",
+        "pl": "(0, −2) to przecięcie z osią y, więc b = −2 przy nachyleniu 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "y = −2x + 3",
+          "y = 3x + 2",
+          "y = 3x − 2",
+          "y = 2x − 3"
+        ],
+        "es": [
+          "y = −2x + 3",
+          "y = 3x + 2",
+          "y = 3x − 2",
+          "y = 2x − 3"
+        ],
+        "pl": [
+          "y = −2x + 3",
+          "y = 3x + 2",
+          "y = 3x − 2",
+          "y = 2x − 3"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "y = 3x - 2",
+      "diagnosticTags": [
+        "swap_m_b",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l07-i05",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Convert x − 4y = 8 to slope-intercept form.",
+        "es": "Convierte x − 4y = 8 a forma pendiente-intersección.",
+        "pl": "Przekształć x − 4y = 8 do postaci kierunkowej."
+      },
+      "feedbackCorrect": {
+        "en": "−4y = −x + 8 → y = (1/4)x − 2.",
+        "es": "−4y = −x + 8 → y = (1/4)x − 2.",
+        "pl": "−4y = −x + 8 → y = (1/4)x − 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Solve carefully for y; divide every term by −4.",
+        "es": "Resuelve con cuidado para y; divide cada término por −4.",
+        "pl": "Ostrożnie rozwiąż względem y; podziel każdy wyraz przez −4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "x - 4y = 8",
+      "choices": {
+        "en": [
+          "y = 4x - 8",
+          "y = -\\frac{1}{4}x - 2",
+          "y = \\frac{1}{4}x + 2",
+          "y = \\frac{1}{4}x - 2"
+        ],
+        "es": [
+          "y = 4x - 8",
+          "y = -\\frac{1}{4}x - 2",
+          "y = \\frac{1}{4}x + 2",
+          "y = \\frac{1}{4}x - 2"
+        ],
+        "pl": [
+          "y = 4x - 8",
+          "y = -\\frac{1}{4}x - 2",
+          "y = \\frac{1}{4}x + 2",
+          "y = \\frac{1}{4}x - 2"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "y = \\frac{1}{4}x - 2",
+      "diagnosticTags": [
+        "sign_error",
+        "divide_error"
+      ]
+    },
+    {
+      "id": "alg1-l07-i06",
+      "knowledgePointIds": [
+        "kp.alg1.intercept.identify"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "x-intercept of y = −2x + 8?",
+        "es": "¿Intersección con x de y = −2x + 8?",
+        "pl": "Przecięcie z osią x dla y = −2x + 8?"
+      },
+      "feedbackCorrect": {
+        "en": "0 = −2x + 8 → 2x = 8 → x = 4.",
+        "es": "0 = −2x + 8 → 2x = 8 → x = 4.",
+        "pl": "0 = −2x + 8 → 2x = 8 → x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Set y = 0; do not confuse with y-intercept 8.",
+        "es": "Pon y = 0; no confundas con la intersección con y = 8.",
+        "pl": "Ustaw y = 0; nie myl z przecięciem z osią y = 8."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10",
+            "8.F.B.3"
+          ]
+        }
+      ],
+      "promptMath": "y = -2x + 8",
+      "choices": {
+        "en": [
+          "4",
+          "8",
+          "−4",
+          "−2"
+        ],
+        "es": [
+          "4",
+          "8",
+          "−4",
+          "−2"
+        ],
+        "pl": [
+          "4",
+          "8",
+          "−4",
+          "−2"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "4",
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "report_b",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l07-i07",
+      "knowledgePointIds": [
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "From (0, 1) with slope 1/2, a second point is…",
+        "es": "Desde (0, 1) con pendiente 1/2, un segundo punto es…",
+        "pl": "Z (0, 1) przy nachyleniu 1/2 drugi punkt to…"
+      },
+      "feedbackCorrect": {
+        "en": "Rise 1 / run 2 → (0, 1) to (2, 2).",
+        "es": "Subir 1 / avanzar 2 → de (0, 1) a (2, 2).",
+        "pl": "Wzrost 1 / przebieg 2 → z (0, 1) do (2, 2)."
+      },
+      "feedbackIncorrect": {
+        "en": "m = 1/2 means rise 1 when run is 2.",
+        "es": "m = 1/2 significa subir 1 cuando el avance es 2.",
+        "pl": "m = 1/2 oznacza wzrost 1 przy przebiegu 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "(1, 2)",
+          "(2, 2)",
+          "(2, 0)",
+          "(1/2, 1)"
+        ],
+        "es": [
+          "(1, 2)",
+          "(2, 2)",
+          "(2, 0)",
+          "(1/2, 1)"
+        ],
+        "pl": [
+          "(1, 2)",
+          "(2, 2)",
+          "(2, 0)",
+          "(1/2, 1)"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "run_rise_swap",
+        "fraction_error"
+      ]
+    },
+    {
+      "id": "alg1-l07-i08",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which equation has slope 0 and y-intercept 5?",
+        "es": "¿Qué ecuación tiene pendiente 0 e intersección con y = 5?",
+        "pl": "Które równanie ma nachylenie 0 i przecięcie z osią y = 5?"
+      },
+      "feedbackCorrect": {
+        "en": "Horizontal line: m = 0, y = 5.",
+        "es": "Recta horizontal: m = 0, y = 5.",
+        "pl": "Prosta pozioma: m = 0, y = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Slope 0 → horizontal line y = b.",
+        "es": "Pendiente 0 → recta horizontal y = b.",
+        "pl": "Nachylenie 0 → prosta pozioma y = b."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "y = 5x",
+          "x = 5",
+          "y = 5",
+          "y = x + 5"
+        ],
+        "es": [
+          "y = 5x",
+          "x = 5",
+          "y = 5",
+          "y = x + 5"
+        ],
+        "pl": [
+          "y = 5x",
+          "x = 5",
+          "y = 5",
+          "y = x + 5"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "y = 5",
+      "diagnosticTags": [
+        "vertical_vs_horizontal",
+        "nonzero_slope"
+      ]
+    },
+    {
+      "id": "alg1-l07-i09",
+      "knowledgePointIds": [
+        "kp.alg1.intercept.identify"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A line crosses the y-axis at −3 and has slope 2. Equation?",
+        "es": "Una recta corta el eje y en −3 y tiene pendiente 2. ¿Ecuación?",
+        "pl": "Prosta przecina oś y w −3 i ma nachylenie 2. Równanie?"
+      },
+      "feedbackCorrect": {
+        "en": "m = 2, b = −3 → y = 2x − 3.",
+        "es": "m = 2, b = −3 → y = 2x − 3.",
+        "pl": "m = 2, b = −3 → y = 2x − 3."
+      },
+      "feedbackIncorrect": {
+        "en": "y-intercept −3 means b = −3, not the slope.",
+        "es": "Intersección −3 significa b = −3, no la pendiente.",
+        "pl": "Przecięcie −3 oznacza b = −3, nie nachylenie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10",
+            "8.F.B.3"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "y = −3x + 2",
+          "y = 2x + 3",
+          "y = −2x − 3",
+          "y = 2x − 3"
+        ],
+        "es": [
+          "y = −3x + 2",
+          "y = 2x + 3",
+          "y = −2x − 3",
+          "y = 2x − 3"
+        ],
+        "pl": [
+          "y = −3x + 2",
+          "y = 2x + 3",
+          "y = −2x − 3",
+          "y = 2x − 3"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "y = 2x - 3",
+      "diagnosticTags": [
+        "swap_m_b",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l07-i10",
+      "knowledgePointIds": [
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which describes the graph of y = −4x + 1?",
+        "es": "¿Qué describe la gráfica de y = −4x + 1?",
+        "pl": "Co opisuje wykres y = −4x + 1?"
+      },
+      "feedbackCorrect": {
+        "en": "|m| = 4 is steep and negative; b = 1.",
+        "es": "|m| = 4 es empinada y negativa; b = 1.",
+        "pl": "|m| = 4 jest strome i ujemne; b = 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative m falls left-to-right; b is the y-intercept.",
+        "es": "m negativa baja de izquierda a derecha; b es la intersección con y.",
+        "pl": "Ujemne m spada od lewej do prawej; b to przecięcie z osią y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        }
+      ],
+      "promptMath": "y = -4x + 1",
+      "choices": {
+        "en": [
+          "Steep negative slope; crosses y-axis at 1",
+          "Gentle positive slope; crosses at −4",
+          "Horizontal at y = 1",
+          "Steep positive slope; crosses at 1"
+        ],
+        "es": [
+          "Pendiente negativa empinada; corta y en 1",
+          "Pendiente positiva suave; corta en −4",
+          "Horizontal en y = 1",
+          "Pendiente positiva empinada; corta en 1"
+        ],
+        "pl": [
+          "Strome ujemne nachylenie; przecina oś y w 1",
+          "Łagodne dodatnie; przecina w −4",
+          "Pozioma y = 1",
+          "Strome dodatnie; przecina w 1"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_of_slope",
+        "swap_m_b"
+      ]
+    }
+  ]
+}

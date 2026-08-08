@@ -1,0 +1,1312 @@
+{
+  "id": "alg1-l09",
+  "courseId": "algebra1",
+  "order": 9,
+  "title": {
+    "en": "Systems of Two Linear Equations — Graph & Substitution",
+    "es": "Sistemas de dos ecuaciones lineales — gráfica y sustitución",
+    "pl": "Układy dwóch równań liniowych — wykres i podstawianie"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.systems.meaning",
+    "kp.alg1.systems.graphical",
+    "kp.alg1.systems.substitution"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_9",
+    "unlockOnMastery": [
+      "lesson_board_10"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will interpret system solutions as intersection points, estimate solutions from graphs, and solve simple systems by substitution.",
+        "es": "Interpretarás soluciones de sistemas como puntos de intersección, estimarás desde gráficas y resolverás sistemas simples por sustitución.",
+        "pl": "Będziesz interpretować rozwiązania układów jako punkty przecięcia, szacować z wykresów i rozwiązywać proste układy przez podstawianie."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: intersection & substitution",
+        "es": "Enseñar: intersección y sustitución",
+        "pl": "Nauczanie: przecięcie i podstawianie"
+      },
+      "body": {
+        "en": "A solution satisfies both equations. Graphically it is where the lines meet. Algebraically, substitute an isolated expression into the other equation, then back-substitute.",
+        "es": "Una solución satisface ambas ecuaciones. Gráficamente es donde se encuentran las rectas. Algebraicamente, sustituye una expresión aislada en la otra ecuación y luego sustituye de vuelta.",
+        "pl": "Rozwiązanie spełnia oba równania. Graficznie to miejsce spotkania prostych. Algebraicznie podstaw wyizolowane wyrażenie do drugiego równania, potem podstaw z powrotem."
+      },
+      "bodyMath": [
+        "y = mx + b",
+        "y = 2x,\\; x + y = 9",
+        "(x, y) = (3, 6)"
+      ],
+      "itemIds": [
+        "alg1-l09-t01",
+        "alg1-l09-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Classify solution counts from graphs, read intersections, and practice substitution steps.",
+        "es": "Clasifica el número de soluciones desde gráficas, lee intersecciones y practica pasos de sustitución.",
+        "pl": "Klasyfikuj liczbę rozwiązań z wykresów, odczytuj przecięcia i ćwicz kroki podstawiania."
+      },
+      "itemIds": [
+        "alg1-l09-g01",
+        "alg1-l09-g02",
+        "alg1-l09-g03",
+        "alg1-l09-g04",
+        "alg1-l09-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l09-i01",
+        "alg1-l09-i02",
+        "alg1-l09-i03",
+        "alg1-l09-i04",
+        "alg1-l09-i05",
+        "alg1-l09-i06",
+        "alg1-l09-i07",
+        "alg1-l09-i08",
+        "alg1-l09-i09",
+        "alg1-l09-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l09-t01",
+      "knowledgePointIds": [
+        "kp.alg1.systems.meaning"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A solution of a system of two linear equations is…",
+        "es": "Una solución de un sistema de dos ecuaciones lineales es…",
+        "pl": "Rozwiązanie układu dwóch równań liniowych to…"
+      },
+      "feedbackCorrect": {
+        "en": "Both equations must be true — graphically the intersection.",
+        "es": "Ambas ecuaciones deben ser verdaderas — gráficamente la intersección.",
+        "pl": "Oba równania muszą być prawdziwe — graficznie punkt przecięcia."
+      },
+      "feedbackIncorrect": {
+        "en": "One line alone is not enough; the pair must satisfy both.",
+        "es": "Una sola recta no basta; el par debe satisfacer ambas.",
+        "pl": "Jedna prosta nie wystarczy; para musi spełniać oba."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(I)",
+            "A.3(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "An ordered pair that makes both equations true",
+          "Any point on the first line only",
+          "The y-intercept of either line",
+          "The slope of both lines"
+        ],
+        "es": [
+          "Un par ordenado que hace verdaderas ambas ecuaciones",
+          "Cualquier punto solo de la primera recta",
+          "La intersección con y de cualquiera",
+          "La pendiente de ambas rectas"
+        ],
+        "pl": [
+          "Para uporządkowana spełniająca oba równania",
+          "Dowolny punkt tylko pierwszej prostej",
+          "Przecięcie z osią y którejkolwiek",
+          "Nachylenie obu prostych"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "one_equation_only"
+      ]
+    },
+    {
+      "id": "alg1-l09-t02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If y = 2x and x + y = 9, substitute to find x.",
+        "es": "Si y = 2x y x + y = 9, sustituye para hallar x.",
+        "pl": "Jeśli y = 2x i x + y = 9, podstaw by znaleźć x."
+      },
+      "feedbackCorrect": {
+        "en": "x + 2x = 9 → 3x = 9 → x = 3 (then y = 6).",
+        "es": "x + 2x = 9 → 3x = 9 → x = 3 (luego y = 6).",
+        "pl": "x + 2x = 9 → 3x = 9 → x = 3 (potem y = 6)."
+      },
+      "feedbackIncorrect": {
+        "en": "Replace y with 2x in the second equation.",
+        "es": "Reemplaza y por 2x en la segunda ecuación.",
+        "pl": "Zastąp y przez 2x w drugim równaniu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x,\\quad x + y = 9",
+      "choices": {
+        "en": [
+          "9",
+          "3",
+          "6",
+          "2"
+        ],
+        "es": [
+          "9",
+          "3",
+          "6",
+          "2"
+        ],
+        "pl": [
+          "9",
+          "3",
+          "6",
+          "2"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "sub_same_equation",
+        "stop_after_one_var"
+      ]
+    },
+    {
+      "id": "alg1-l09-g01",
+      "knowledgePointIds": [
+        "kp.alg1.systems.graphical"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Two lines intersect at (2, −1). System solution?",
+        "es": "Dos rectas se cortan en (2, −1). ¿Solución del sistema?",
+        "pl": "Dwie proste przecinają się w (2, −1). Rozwiązanie układu?"
+      },
+      "feedbackCorrect": {
+        "en": "Intersection point is the unique solution when lines cross once.",
+        "es": "El punto de intersección es la solución única cuando se cruzan una vez.",
+        "pl": "Punkt przecięcia to jedyne rozwiązanie przy jednym przecięciu."
+      },
+      "feedbackIncorrect": {
+        "en": "Keep (x, y) order — do not swap coordinates.",
+        "es": "Mantén el orden (x, y) — no intercambies coordenadas.",
+        "pl": "Zachowaj kolejność (x, y) — nie zamieniaj współrzędnych."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(F)",
+            "A.2(I)",
+            "A.1(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "8.EE.C.8b",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "(2, -1)",
+      "choices": {
+        "en": [
+          "(−1, 2)",
+          "(2, 1)",
+          "(2, −1)",
+          "No solution"
+        ],
+        "es": [
+          "(−1, 2)",
+          "(2, 1)",
+          "(2, −1)",
+          "Sin solución"
+        ],
+        "pl": [
+          "(−1, 2)",
+          "(2, 1)",
+          "(2, −1)",
+          "Brak rozwiązań"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "swap_xy",
+        "partial_read"
+      ]
+    },
+    {
+      "id": "alg1-l09-g02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.meaning"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Parallel distinct lines as a system mean…",
+        "es": "Rectas paralelas distintas como sistema significan…",
+        "pl": "Różne proste równoległe jako układ oznaczają…"
+      },
+      "feedbackCorrect": {
+        "en": "Never meet → no ordered pair satisfies both.",
+        "es": "Nunca se encuentran → ningún par satisface ambas.",
+        "pl": "Nigdy się nie spotykają → żadna para nie spełnia obu."
+      },
+      "feedbackIncorrect": {
+        "en": "Same line → infinitely many; one intersection → one solution.",
+        "es": "Misma recta → infinitas; una intersección → una solución.",
+        "pl": "Ta sama prosta → nieskończenie wiele; jedno przecięcie → jedno rozwiązanie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(I)",
+            "A.3(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "Infinitely many solutions",
+          "Exactly one solution",
+          "Solution at the origin only",
+          "No solution"
+        ],
+        "es": [
+          "Infinitas soluciones",
+          "Exactamente una solución",
+          "Solo solución en el origen",
+          "Sin solución"
+        ],
+        "pl": [
+          "Nieskończenie wiele rozwiązań",
+          "Dokładnie jedno rozwiązanie",
+          "Rozwiązanie tylko w początku układu",
+          "Brak rozwiązań"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "inf_vs_none"
+      ]
+    },
+    {
+      "id": "alg1-l09-g03",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = x − 1 and 2x + y = 5. Find y after solving.",
+        "es": "y = x − 1 y 2x + y = 5. Halla y tras resolver.",
+        "pl": "y = x − 1 i 2x + y = 5. Znajdź y po rozwiązaniu."
+      },
+      "feedbackCorrect": {
+        "en": "2x + (x − 1) = 5 → 3x = 6 → x = 2 → y = 1.",
+        "es": "2x + (x − 1) = 5 → 3x = 6 → x = 2 → y = 1.",
+        "pl": "2x + (x − 1) = 5 → 3x = 6 → x = 2 → y = 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute, solve for x, then back-substitute for y.",
+        "es": "Sustituye, resuelve x, luego sustituye de vuelta para y.",
+        "pl": "Podstaw, rozwiąż x, potem podstaw z powrotem po y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "y = x - 1,\\quad 2x + y = 5",
+      "choices": {
+        "en": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "es": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "pl": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "1",
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "stop_after_one_var",
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l09-g04",
+      "knowledgePointIds": [
+        "kp.alg1.systems.graphical"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same line graphed twice (coinciding). Solutions?",
+        "es": "La misma recta graficada dos veces (coinciden). ¿Soluciones?",
+        "pl": "Ta sama prosta narysowana dwa razy (zbieżne). Rozwiązania?"
+      },
+      "feedbackCorrect": {
+        "en": "Every point on the line satisfies both equations.",
+        "es": "Todo punto de la recta satisface ambas ecuaciones.",
+        "pl": "Każdy punkt prostej spełnia oba równania."
+      },
+      "feedbackIncorrect": {
+        "en": "Coinciding lines → infinitely many; parallel distinct → none.",
+        "es": "Rectas coincidentes → infinitas; paralelas distintas → ninguna.",
+        "pl": "Zbieżne → nieskończenie wiele; różne równoległe → brak."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(F)",
+            "A.2(I)",
+            "A.1(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "8.EE.C.8b",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "None",
+          "Infinitely many",
+          "Exactly one",
+          "Only (0, 0)"
+        ],
+        "es": [
+          "Ninguna",
+          "Infinitas",
+          "Exactamente una",
+          "Solo (0, 0)"
+        ],
+        "pl": [
+          "Żadnych",
+          "Nieskończenie wiele",
+          "Dokładnie jedno",
+          "Tylko (0, 0)"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "inf_vs_none"
+      ]
+    },
+    {
+      "id": "alg1-l09-g05",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "x = 4 − y and 3x − y = 8. First step after substitute?",
+        "es": "x = 4 − y y 3x − y = 8. ¿Primer paso tras sustituir?",
+        "pl": "x = 4 − y i 3x − y = 8. Pierwszy krok po podstawieniu?"
+      },
+      "feedbackCorrect": {
+        "en": "Replace x in the second equation: 3(4 − y) − y = 8.",
+        "es": "Reemplaza x en la segunda: 3(4 − y) − y = 8.",
+        "pl": "Zastąp x w drugim: 3(4 − y) − y = 8."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute into the other equation, not back into the same one.",
+        "es": "Sustituye en la otra ecuación, no en la misma.",
+        "pl": "Podstaw do drugiego równania, nie do tego samego."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "x = 4 - y,\\quad 3x - y = 8",
+      "choices": {
+        "en": [
+          "3x − (4 − y) = 8",
+          "3(4 − y) − x = 8",
+          "3(4 − y) − y = 8",
+          "x − y = 8"
+        ],
+        "es": [
+          "3x − (4 − y) = 8",
+          "3(4 − y) − x = 8",
+          "3(4 − y) − y = 8",
+          "x − y = 8"
+        ],
+        "pl": [
+          "3x − (4 − y) = 8",
+          "3(4 − y) − x = 8",
+          "3(4 − y) − y = 8",
+          "x − y = 8"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sub_same_equation"
+      ]
+    },
+    {
+      "id": "alg1-l09-i01",
+      "knowledgePointIds": [
+        "kp.alg1.systems.meaning"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (1, 2) solve { y = x + 1 ; y = 3x − 1 }?",
+        "es": "¿(1, 2) resuelve { y = x + 1 ; y = 3x − 1 }?",
+        "pl": "Czy (1, 2) rozwiązuje { y = x + 1 ; y = 3x − 1 }?"
+      },
+      "feedbackCorrect": {
+        "en": "2 = 1+1 and 2 = 3−1 — both hold.",
+        "es": "2 = 1+1 y 2 = 3−1 — ambas se cumplen.",
+        "pl": "2 = 1+1 i 2 = 3−1 — oba zachodzą."
+      },
+      "feedbackIncorrect": {
+        "en": "Check the candidate in both equations.",
+        "es": "Comprueba el candidato en ambas ecuaciones.",
+        "pl": "Sprawdź kandydata w obu równaniach."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(I)",
+            "A.3(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "y = x + 1,\\quad y = 3x - 1",
+      "choices": {
+        "en": [
+          "No — only the first is true",
+          "No — only the second is true",
+          "No — neither is true",
+          "Yes — both equations true"
+        ],
+        "es": [
+          "No — solo la primera",
+          "No — solo la segunda",
+          "No — ninguna",
+          "Sí — ambas verdaderas"
+        ],
+        "pl": [
+          "Nie — tylko pierwsze",
+          "Nie — tylko drugie",
+          "Nie — żadne",
+          "Tak — oba prawdziwe"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "one_equation_only"
+      ]
+    },
+    {
+      "id": "alg1-l09-i02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.graphical"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Graphs cross at (−3, 4). Report the solution.",
+        "es": "Las gráficas se cruzan en (−3, 4). Reporta la solución.",
+        "pl": "Wykresy przecinają się w (−3, 4). Podaj rozwiązanie."
+      },
+      "feedbackCorrect": {
+        "en": "Solution is the intersection (−3, 4).",
+        "es": "La solución es la intersección (−3, 4).",
+        "pl": "Rozwiązanie to przecięcie (−3, 4)."
+      },
+      "feedbackIncorrect": {
+        "en": "Write (x, y) = (−3, 4), not swapped.",
+        "es": "Escribe (x, y) = (−3, 4), sin intercambiar.",
+        "pl": "Zapisz (x, y) = (−3, 4), bez zamiany."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(F)",
+            "A.2(I)",
+            "A.1(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "8.EE.C.8b",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "(-3, 4)",
+      "choices": {
+        "en": [
+          "(−3, 4)",
+          "(4, −3)",
+          "(3, −4)",
+          "No solution"
+        ],
+        "es": [
+          "(−3, 4)",
+          "(4, −3)",
+          "(3, −4)",
+          "Sin solución"
+        ],
+        "pl": [
+          "(−3, 4)",
+          "(4, −3)",
+          "(3, −4)",
+          "Brak rozwiązań"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "swap_xy"
+      ]
+    },
+    {
+      "id": "alg1-l09-i03",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = 5 − x and x + 2y = 8. Find x.",
+        "es": "y = 5 − x y x + 2y = 8. Halla x.",
+        "pl": "y = 5 − x i x + 2y = 8. Znajdź x."
+      },
+      "feedbackCorrect": {
+        "en": "x + 2(5 − x) = 8 → x + 10 − 2x = 8 → −x = −2 → x = 2.",
+        "es": "x + 2(5 − x) = 8 → x + 10 − 2x = 8 → −x = −2 → x = 2.",
+        "pl": "x + 2(5 − x) = 8 → x + 10 − 2x = 8 → −x = −2 → x = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute carefully after substituting 5 − x for y.",
+        "es": "Distribuye con cuidado tras sustituir 5 − x por y.",
+        "pl": "Ostrożnie rozdziel po podstawieniu 5 − x za y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "y = 5 - x,\\quad x + 2y = 8",
+      "choices": {
+        "en": [
+          "5",
+          "2",
+          "3",
+          "4"
+        ],
+        "es": [
+          "5",
+          "2",
+          "3",
+          "4"
+        ],
+        "pl": [
+          "5",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "2",
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "distribute_error",
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l09-i04",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same system: y = 5 − x, x + 2y = 8. Find y.",
+        "es": "Mismo sistema: y = 5 − x, x + 2y = 8. Halla y.",
+        "pl": "Ten sam układ: y = 5 − x, x + 2y = 8. Znajdź y."
+      },
+      "feedbackCorrect": {
+        "en": "x = 2 → y = 5 − 2 = 3. Solution (2, 3).",
+        "es": "x = 2 → y = 5 − 2 = 3. Solución (2, 3).",
+        "pl": "x = 2 → y = 5 − 2 = 3. Rozwiązanie (2, 3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Back-substitute x into y = 5 − x.",
+        "es": "Sustituye x de vuelta en y = 5 − x.",
+        "pl": "Podstaw x z powrotem do y = 5 − x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "y = 5 - x,\\quad x + 2y = 8",
+      "choices": {
+        "en": [
+          "2",
+          "5",
+          "3",
+          "1"
+        ],
+        "es": [
+          "2",
+          "5",
+          "3",
+          "1"
+        ],
+        "pl": [
+          "2",
+          "5",
+          "3",
+          "1"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "stop_after_one_var"
+      ]
+    },
+    {
+      "id": "alg1-l09-i05",
+      "knowledgePointIds": [
+        "kp.alg1.systems.meaning"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (0, 0) solve { y = 2x ; y = x + 1 }?",
+        "es": "¿(0, 0) resuelve { y = 2x ; y = x + 1 }?",
+        "pl": "Czy (0, 0) rozwiązuje { y = 2x ; y = x + 1 }?"
+      },
+      "feedbackCorrect": {
+        "en": "0 = 2·0 true, but 0 = 0 + 1 false.",
+        "es": "0 = 2·0 verdad, pero 0 = 0 + 1 falso.",
+        "pl": "0 = 2·0 prawda, ale 0 = 0 + 1 fałsz."
+      },
+      "feedbackIncorrect": {
+        "en": "Both must hold; failing one means not a solution.",
+        "es": "Ambas deben cumplirse; fallar una significa que no es solución.",
+        "pl": "Oba muszą zachodzić; niespełnienie jednego = nie rozwiązanie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(I)",
+            "A.3(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x,\\quad y = x + 1",
+      "choices": {
+        "en": [
+          "Yes — both true",
+          "No — fails the first only",
+          "Yes — origin always works",
+          "No — fails the second equation"
+        ],
+        "es": [
+          "Sí — ambas verdaderas",
+          "No — falla solo la primera",
+          "Sí — el origen siempre sirve",
+          "No — falla la segunda"
+        ],
+        "pl": [
+          "Tak — oba prawdziwe",
+          "Nie — nie spełnia tylko pierwszego",
+          "Tak — początek zawsze działa",
+          "Nie — nie spełnia drugiego"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "one_equation_only",
+        "origin_always"
+      ]
+    },
+    {
+      "id": "alg1-l09-i06",
+      "knowledgePointIds": [
+        "kp.alg1.systems.graphical"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = 2x + 1 and y = 2x − 4. How many solutions?",
+        "es": "y = 2x + 1 y y = 2x − 4. ¿Cuántas soluciones?",
+        "pl": "y = 2x + 1 i y = 2x − 4. Ile rozwiązań?"
+      },
+      "feedbackCorrect": {
+        "en": "Same slope, different intercepts → parallel → no solution.",
+        "es": "Misma pendiente, distintas intersecciones → paralelas → sin solución.",
+        "pl": "To samo nachylenie, inne przecięcia → równoległe → brak rozwiązań."
+      },
+      "feedbackIncorrect": {
+        "en": "Equal slopes with different b never intersect.",
+        "es": "Pendientes iguales con distinto b nunca se cortan.",
+        "pl": "Równe nachylenia przy różnym b nigdy się nie przecinają."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(F)",
+            "A.2(I)",
+            "A.1(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "8.EE.C.8b",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x + 1,\\quad y = 2x - 4",
+      "choices": {
+        "en": [
+          "0",
+          "1",
+          "2",
+          "Infinitely many"
+        ],
+        "es": [
+          "0",
+          "1",
+          "2",
+          "Infinitas"
+        ],
+        "pl": [
+          "0",
+          "1",
+          "2",
+          "Nieskończenie wiele"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "0",
+      "acceptNumeric": 0,
+      "diagnosticTags": [
+        "inf_vs_none",
+        "count_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l09-i07",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "x = y + 3 and 2x − y = 9. Find y.",
+        "es": "x = y + 3 y 2x − y = 9. Halla y.",
+        "pl": "x = y + 3 i 2x − y = 9. Znajdź y."
+      },
+      "feedbackCorrect": {
+        "en": "2(y+3) − y = 9 → 2y + 6 − y = 9 → y = 3.",
+        "es": "2(y+3) − y = 9 → 2y + 6 − y = 9 → y = 3.",
+        "pl": "2(y+3) − y = 9 → 2y + 6 − y = 9 → y = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x = y + 3 into 2x − y = 9.",
+        "es": "Sustituye x = y + 3 en 2x − y = 9.",
+        "pl": "Podstaw x = y + 3 do 2x − y = 9."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "x = y + 3,\\quad 2x - y = 9",
+      "choices": {
+        "en": [
+          "6",
+          "3",
+          "0",
+          "9"
+        ],
+        "es": [
+          "6",
+          "3",
+          "0",
+          "9"
+        ],
+        "pl": [
+          "6",
+          "3",
+          "0",
+          "9"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "distribute_error",
+        "sub_same_equation"
+      ]
+    },
+    {
+      "id": "alg1-l09-i08",
+      "knowledgePointIds": [
+        "kp.alg1.systems.substitution"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same system: find the solution pair (x, y).",
+        "es": "Mismo sistema: halla el par solución (x, y).",
+        "pl": "Ten sam układ: znajdź parę (x, y)."
+      },
+      "feedbackCorrect": {
+        "en": "y = 3 → x = 3 + 3 = 6 → (6, 3).",
+        "es": "y = 3 → x = 3 + 3 = 6 → (6, 3).",
+        "pl": "y = 3 → x = 3 + 3 = 6 → (6, 3)."
+      },
+      "feedbackIncorrect": {
+        "en": "After y = 3, use x = y + 3 to get the ordered pair.",
+        "es": "Tras y = 3, usa x = y + 3 para el par ordenado.",
+        "pl": "Po y = 3 użyj x = y + 3, by dostać parę."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "x = y + 3,\\quad 2x - y = 9",
+      "choices": {
+        "en": [
+          "(3, 6)",
+          "(9, 3)",
+          "(6, 3)",
+          "(3, 3)"
+        ],
+        "es": [
+          "(3, 6)",
+          "(9, 3)",
+          "(6, 3)",
+          "(3, 3)"
+        ],
+        "pl": [
+          "(3, 6)",
+          "(9, 3)",
+          "(6, 3)",
+          "(3, 3)"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "swap_xy",
+        "stop_after_one_var"
+      ]
+    },
+    {
+      "id": "alg1-l09-i09",
+      "knowledgePointIds": [
+        "kp.alg1.systems.graphical"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Best graphical estimate when lines cross between grid points near (1.5, 2)?",
+        "es": "¿Mejor estimación gráfica si se cruzan cerca de (1.5, 2)?",
+        "pl": "Najlepsze szacowanie graficzne, gdy przecięcie blisko (1.5, 2)?"
+      },
+      "feedbackCorrect": {
+        "en": "Graphing can estimate; algebra confirms exact values.",
+        "es": "Graficar estima; el álgebra confirma valores exactos.",
+        "pl": "Wykres szacuje; algebra potwierdza dokładne wartości."
+      },
+      "feedbackIncorrect": {
+        "en": "Crossing once means one approximate intersection point.",
+        "es": "Cruzarse una vez significa un punto de intersección aproximado.",
+        "pl": "Jedno przecięcie oznacza jeden przybliżony punkt."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(F)",
+            "A.2(I)",
+            "A.1(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "8.EE.C.8b",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "Exactly (0, 0)",
+          "No solution",
+          "Infinitely many",
+          "About (1.5, 2)"
+        ],
+        "es": [
+          "Exactamente (0, 0)",
+          "Sin solución",
+          "Infinitas",
+          "Aprox. (1.5, 2)"
+        ],
+        "pl": [
+          "Dokładnie (0, 0)",
+          "Brak rozwiązań",
+          "Nieskończenie wiele",
+          "Około (1.5, 2)"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "estimate_vs_none"
+      ]
+    },
+    {
+      "id": "alg1-l09-i10",
+      "knowledgePointIds": [
+        "kp.alg1.systems.meaning"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Why does intersection solve both equations?",
+        "es": "¿Por qué la intersección resuelve ambas ecuaciones?",
+        "pl": "Dlaczego przecięcie rozwiązuje oba równania?"
+      },
+      "feedbackCorrect": {
+        "en": "A point on both lines is a common solution — A-REI.D.11 idea.",
+        "es": "Un punto en ambas rectas es solución común — idea A-REI.D.11.",
+        "pl": "Punkt na obu prostych to wspólne rozwiązanie — idea A-REI.D.11."
+      },
+      "feedbackIncorrect": {
+        "en": "Only the shared point(s) satisfy both equations at once.",
+        "es": "Solo el/los punto(s) compartido(s) satisfacen ambas a la vez.",
+        "pl": "Tylko wspólny punkt (punkty) spełnia oba naraz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(I)",
+            "A.3(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "That point lies on both graphs, so it satisfies both",
+          "Intersection only fixes the slopes",
+          "Any nearby point also works",
+          "Graphs never share points"
+        ],
+        "es": [
+          "Ese punto está en ambas gráficas, así satisface ambas",
+          "La intersección solo fija las pendientes",
+          "Cualquier punto cercano también sirve",
+          "Las gráficas nunca comparten puntos"
+        ],
+        "pl": [
+          "Ten punkt leży na obu wykresach, więc spełnia oba",
+          "Przecięcie tylko ustala nachylenia",
+          "Każdy pobliski punkt też działa",
+          "Wykresy nigdy nie dzielą punktów"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "nearby_ok",
+        "slope_only"
+      ]
+    }
+  ]
+}

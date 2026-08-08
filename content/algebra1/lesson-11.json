@@ -1,0 +1,1307 @@
+{
+  "id": "alg1-l11",
+  "courseId": "algebra1",
+  "order": 11,
+  "title": {
+    "en": "Exponent Properties — Product, Quotient, Power",
+    "es": "Propiedades de exponentes — producto, cociente, potencia",
+    "pl": "Własności potęg — iloczyn, iloraz, potęga"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.exponents.product",
+    "kp.alg1.exponents.quotient",
+    "kp.alg1.exponents.power"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_11",
+    "unlockOnMastery": [
+      "lesson_board_12"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will simplify expressions using product, quotient, and power rules for exponents with the same base.",
+        "es": "Simplificarás expresiones usando las reglas de producto, cociente y potencia para exponentes de la misma base.",
+        "pl": "Będziesz upraszczać wyrażenia regułami iloczynu, ilorazu i potęgi dla tej samej podstawy."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: three exponent rules",
+        "es": "Enseñar: tres reglas de exponentes",
+        "pl": "Nauczanie: trzy reguły potęg"
+      },
+      "body": {
+        "en": "Same base: multiply → add exponents; divide → subtract; raise a power to a power → multiply exponents.",
+        "es": "Misma base: multiplicar → sumar exponentes; dividir → restar; potenciar una potencia → multiplicar exponentes.",
+        "pl": "Ta sama podstawa: mnożenie → dodaj wykładniki; dzielenie → odejmij; potęga potęgi → pomnóż wykładniki."
+      },
+      "bodyMath": [
+        "a^{m} \\cdot a^{n} = a^{m+n}",
+        "\\dfrac{a^{m}}{a^{n}} = a^{m-n}",
+        "(a^{m})^{n} = a^{mn}"
+      ],
+      "itemIds": [
+        "alg1-l11-t01",
+        "alg1-l11-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Apply each rule to numbers and variables; watch for bare factors like m = m^1.",
+        "es": "Aplica cada regla a números y variables; vigila factores solos como m = m^1.",
+        "pl": "Stosuj każdą regułę do liczb i zmiennych; uważaj na czynniki jak m = m^1."
+      },
+      "itemIds": [
+        "alg1-l11-g01",
+        "alg1-l11-g02",
+        "alg1-l11-g03",
+        "alg1-l11-g04",
+        "alg1-l11-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l11-i01",
+        "alg1-l11-i02",
+        "alg1-l11-i03",
+        "alg1-l11-i04",
+        "alg1-l11-i05",
+        "alg1-l11-i06",
+        "alg1-l11-i07",
+        "alg1-l11-i08",
+        "alg1-l11-i09",
+        "alg1-l11-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l11-t01",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify x^3 · x^4 using the product rule.",
+        "es": "Simplifica x^3 · x^4 con la regla del producto.",
+        "pl": "Uprość x^3 · x^4 regułą iloczynu."
+      },
+      "feedbackCorrect": {
+        "en": "Same base: add exponents — 3 + 4 = 7.",
+        "es": "Misma base: suma exponentes — 3 + 4 = 7.",
+        "pl": "Ta sama podstawa: dodaj wykładniki — 3 + 4 = 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Product rule: a^m · a^n = a^(m+n), not a^(mn).",
+        "es": "Regla del producto: a^m · a^n = a^(m+n), no a^(mn).",
+        "pl": "Reguła iloczynu: a^m · a^n = a^(m+n), nie a^(mn)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{3} \\cdot x^{4}",
+      "choices": {
+        "en": [
+          "x^7",
+          "x^12",
+          "x^1",
+          "2x^7"
+        ],
+        "es": [
+          "x^7",
+          "x^12",
+          "x^1",
+          "2x^7"
+        ],
+        "pl": [
+          "x^7",
+          "x^12",
+          "x^1",
+          "2x^7"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "multiply_exponents",
+        "add_bases"
+      ]
+    },
+    {
+      "id": "alg1-l11-t02",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.power"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (y^2)^5 using the power rule.",
+        "es": "Simplifica (y^2)^5 con la regla de potencia.",
+        "pl": "Uprość (y^2)^5 regułą potęgi."
+      },
+      "feedbackCorrect": {
+        "en": "Multiply exponents: 2 · 5 = 10.",
+        "es": "Multiplica exponentes: 2 · 5 = 10.",
+        "pl": "Pomnóż wykładniki: 2 · 5 = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Power rule: (a^m)^n = a^(mn), not a^(m+n).",
+        "es": "Regla de potencia: (a^m)^n = a^(mn), no a^(m+n).",
+        "pl": "Reguła potęgi: (a^m)^n = a^(mn), nie a^(m+n)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(y^{2})^{5}",
+      "choices": {
+        "en": [
+          "y^7",
+          "y^10",
+          "y^25",
+          "5y^2"
+        ],
+        "es": [
+          "y^7",
+          "y^10",
+          "y^25",
+          "5y^2"
+        ],
+        "pl": [
+          "y^7",
+          "y^10",
+          "y^25",
+          "5y^2"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "add_instead",
+        "tower_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l11-g01",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify 2^3 · 2^2.",
+        "es": "Simplifica 2^3 · 2^2.",
+        "pl": "Uprość 2^3 · 2^2."
+      },
+      "feedbackCorrect": {
+        "en": "Add exponents: 3 + 2 = 5 → 2^5.",
+        "es": "Suma exponentes: 3 + 2 = 5 → 2^5.",
+        "pl": "Dodaj wykładniki: 3 + 2 = 5 → 2^5."
+      },
+      "feedbackIncorrect": {
+        "en": "Keep the base 2; only add the exponents.",
+        "es": "Mantén la base 2; solo suma los exponentes.",
+        "pl": "Zachowaj podstawę 2; tylko dodaj wykładniki."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "2^{3} \\cdot 2^{2}",
+      "choices": {
+        "en": [
+          "2^6",
+          "4^5",
+          "2^5",
+          "2^1"
+        ],
+        "es": [
+          "2^6",
+          "4^5",
+          "2^5",
+          "2^1"
+        ],
+        "pl": [
+          "2^6",
+          "4^5",
+          "2^5",
+          "2^1"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "multiply_exponents",
+        "multiply_bases"
+      ]
+    },
+    {
+      "id": "alg1-l11-g02",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.quotient"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify a^8 / a^3.",
+        "es": "Simplifica a^8 / a^3.",
+        "pl": "Uprość a^8 / a^3."
+      },
+      "feedbackCorrect": {
+        "en": "Subtract exponents: 8 − 3 = 5.",
+        "es": "Resta exponentes: 8 − 3 = 5.",
+        "pl": "Odejmij wykładniki: 8 − 3 = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Quotient rule: a^m / a^n = a^(m−n).",
+        "es": "Regla del cociente: a^m / a^n = a^(m−n).",
+        "pl": "Reguła ilorazu: a^m / a^n = a^(m−n)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\dfrac{a^{8}}{a^{3}}",
+      "choices": {
+        "en": [
+          "a^11",
+          "a^24",
+          "a^(8/3)",
+          "a^5"
+        ],
+        "es": [
+          "a^11",
+          "a^24",
+          "a^(8/3)",
+          "a^5"
+        ],
+        "pl": [
+          "a^11",
+          "a^24",
+          "a^(8/3)",
+          "a^5"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "add_exponents",
+        "divide_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-g03",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.quotient"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify b^4 / b^4.",
+        "es": "Simplifica b^4 / b^4.",
+        "pl": "Uprość b^4 / b^4."
+      },
+      "feedbackCorrect": {
+        "en": "4 − 4 = 0 → b^0 = 1 for b ≠ 0.",
+        "es": "4 − 4 = 0 → b^0 = 1 si b ≠ 0.",
+        "pl": "4 − 4 = 0 → b^0 = 1 dla b ≠ 0."
+      },
+      "feedbackIncorrect": {
+        "en": "Equal exponents subtract to 0; nonzero base to the 0 is 1.",
+        "es": "Exponentes iguales restan a 0; base no nula a la 0 es 1.",
+        "pl": "Równe wykładniki dają 0; niezerowa podstawa do 0 to 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\dfrac{b^{4}}{b^{4}}",
+      "choices": {
+        "en": [
+          "b^0 which equals 1 (b ≠ 0)",
+          "b^1",
+          "b^8",
+          "0"
+        ],
+        "es": [
+          "b^0 que vale 1 (b ≠ 0)",
+          "b^1",
+          "b^8",
+          "0"
+        ],
+        "pl": [
+          "b^0 równe 1 (b ≠ 0)",
+          "b^1",
+          "b^8",
+          "0"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "zero_power_wrong",
+        "add_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-g04",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.power"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (3^2)^3.",
+        "es": "Simplifica (3^2)^3.",
+        "pl": "Uprość (3^2)^3."
+      },
+      "feedbackCorrect": {
+        "en": "2 · 3 = 6 → 3^6.",
+        "es": "2 · 3 = 6 → 3^6.",
+        "pl": "2 · 3 = 6 → 3^6."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply the exponents; keep base 3.",
+        "es": "Multiplica los exponentes; mantén base 3.",
+        "pl": "Pomnóż wykładniki; zachowaj podstawę 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(3^{2})^{3}",
+      "choices": {
+        "en": [
+          "3^5",
+          "3^6",
+          "9^3",
+          "3^8"
+        ],
+        "es": [
+          "3^5",
+          "3^6",
+          "9^3",
+          "3^8"
+        ],
+        "pl": [
+          "3^5",
+          "3^6",
+          "9^3",
+          "3^8"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "add_instead",
+        "change_base"
+      ]
+    },
+    {
+      "id": "alg1-l11-g05",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify m^2 · m · m^5 (remember m = m^1).",
+        "es": "Simplifica m^2 · m · m^5 (recuerda m = m^1).",
+        "pl": "Uprość m^2 · m · m^5 (pamiętaj m = m^1)."
+      },
+      "feedbackCorrect": {
+        "en": "2 + 1 + 5 = 8 → m^8.",
+        "es": "2 + 1 + 5 = 8 → m^8.",
+        "pl": "2 + 1 + 5 = 8 → m^8."
+      },
+      "feedbackIncorrect": {
+        "en": "Treat bare m as m^1, then add all exponents.",
+        "es": "Trata m solo como m^1 y suma todos los exponentes.",
+        "pl": "Traktuj samo m jako m^1 i dodaj wszystkie wykładniki."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "m^{2} \\cdot m \\cdot m^{5}",
+      "choices": {
+        "en": [
+          "m^7",
+          "m^10",
+          "m^8",
+          "3m^7"
+        ],
+        "es": [
+          "m^7",
+          "m^10",
+          "m^8",
+          "3m^7"
+        ],
+        "pl": [
+          "m^7",
+          "m^10",
+          "m^8",
+          "3m^7"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "forgot_m1",
+        "multiply_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i01",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify x^5 · x^2.",
+        "es": "Simplifica x^5 · x^2.",
+        "pl": "Uprość x^5 · x^2."
+      },
+      "feedbackCorrect": {
+        "en": "5 + 2 = 7.",
+        "es": "5 + 2 = 7.",
+        "pl": "5 + 2 = 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Add exponents for the product of powers.",
+        "es": "Suma exponentes para el producto de potencias.",
+        "pl": "Dodaj wykładniki dla iloczynu potęg."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{5} \\cdot x^{2}",
+      "choices": {
+        "en": [
+          "x^10",
+          "x^3",
+          "2x^7",
+          "x^7"
+        ],
+        "es": [
+          "x^10",
+          "x^3",
+          "2x^7",
+          "x^7"
+        ],
+        "pl": [
+          "x^10",
+          "x^3",
+          "2x^7",
+          "x^7"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "multiply_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i02",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.quotient"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify w^9 / w^4.",
+        "es": "Simplifica w^9 / w^4.",
+        "pl": "Uprość w^9 / w^4."
+      },
+      "feedbackCorrect": {
+        "en": "9 − 4 = 5.",
+        "es": "9 − 4 = 5.",
+        "pl": "9 − 4 = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract the bottom exponent from the top.",
+        "es": "Resta el exponente de abajo del de arriba.",
+        "pl": "Odejmij dolny wykładnik od górnego."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\dfrac{w^{9}}{w^{4}}",
+      "choices": {
+        "en": [
+          "w^5",
+          "w^13",
+          "w^36",
+          "w^(9/4)"
+        ],
+        "es": [
+          "w^5",
+          "w^13",
+          "w^36",
+          "w^(9/4)"
+        ],
+        "pl": [
+          "w^5",
+          "w^13",
+          "w^36",
+          "w^(9/4)"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "add_exponents",
+        "divide_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i03",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.power"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (z^3)^4.",
+        "es": "Simplifica (z^3)^4.",
+        "pl": "Uprość (z^3)^4."
+      },
+      "feedbackCorrect": {
+        "en": "3 · 4 = 12.",
+        "es": "3 · 4 = 12.",
+        "pl": "3 · 4 = 12."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply exponents for a power of a power.",
+        "es": "Multiplica exponentes para potencia de potencia.",
+        "pl": "Pomnóż wykładniki dla potęgi potęgi."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(z^{3})^{4}",
+      "choices": {
+        "en": [
+          "z^7",
+          "z^12",
+          "z^81",
+          "4z^3"
+        ],
+        "es": [
+          "z^7",
+          "z^12",
+          "z^81",
+          "4z^3"
+        ],
+        "pl": [
+          "z^7",
+          "z^12",
+          "z^81",
+          "4z^3"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "add_instead"
+      ]
+    },
+    {
+      "id": "alg1-l11-i04",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify 5^2 · 5^3 · 5.",
+        "es": "Simplifica 5^2 · 5^3 · 5.",
+        "pl": "Uprość 5^2 · 5^3 · 5."
+      },
+      "feedbackCorrect": {
+        "en": "2 + 3 + 1 = 6 → 5^6.",
+        "es": "2 + 3 + 1 = 6 → 5^6.",
+        "pl": "2 + 3 + 1 = 6 → 5^6."
+      },
+      "feedbackIncorrect": {
+        "en": "Include the bare 5 as 5^1.",
+        "es": "Incluye el 5 solo como 5^1.",
+        "pl": "Uwzględnij samo 5 jako 5^1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "5^{2} \\cdot 5^{3} \\cdot 5",
+      "choices": {
+        "en": [
+          "5^5",
+          "5^7",
+          "5^6",
+          "15^5"
+        ],
+        "es": [
+          "5^5",
+          "5^7",
+          "5^6",
+          "15^5"
+        ],
+        "pl": [
+          "5^5",
+          "5^7",
+          "5^6",
+          "15^5"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "forgot_m1",
+        "multiply_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i05",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.quotient"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (c^7) / (c^2).",
+        "es": "Simplifica (c^7) / (c^2).",
+        "pl": "Uprość (c^7) / (c^2)."
+      },
+      "feedbackCorrect": {
+        "en": "7 − 2 = 5.",
+        "es": "7 − 2 = 5.",
+        "pl": "7 − 2 = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Same base → subtract exponents.",
+        "es": "Misma base → resta exponentes.",
+        "pl": "Ta sama podstawa → odejmij wykładniki."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\dfrac{c^{7}}{c^{2}}",
+      "choices": {
+        "en": [
+          "c^9",
+          "c^14",
+          "c^(7/2)",
+          "c^5"
+        ],
+        "es": [
+          "c^9",
+          "c^14",
+          "c^(7/2)",
+          "c^5"
+        ],
+        "pl": [
+          "c^9",
+          "c^14",
+          "c^(7/2)",
+          "c^5"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "add_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i06",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.power"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (n^4)^2.",
+        "es": "Simplifica (n^4)^2.",
+        "pl": "Uprość (n^4)^2."
+      },
+      "feedbackCorrect": {
+        "en": "4 · 2 = 8.",
+        "es": "4 · 2 = 8.",
+        "pl": "4 · 2 = 8."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not add 4 + 2 for a power of a power.",
+        "es": "No sumes 4 + 2 para potencia de potencia.",
+        "pl": "Nie dodawaj 4 + 2 dla potęgi potęgi."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(n^{4})^{2}",
+      "choices": {
+        "en": [
+          "n^8",
+          "n^6",
+          "n^16",
+          "2n^4"
+        ],
+        "es": [
+          "n^8",
+          "n^6",
+          "n^16",
+          "2n^4"
+        ],
+        "pl": [
+          "n^8",
+          "n^6",
+          "n^16",
+          "2n^4"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "add_instead"
+      ]
+    },
+    {
+      "id": "alg1-l11-i07",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which expression equals x^3 · x^3?",
+        "es": "¿Qué expresión equivale a x^3 · x^3?",
+        "pl": "Które wyrażenie równa się x^3 · x^3?"
+      },
+      "feedbackCorrect": {
+        "en": "3 + 3 = 6; also (x^3)^2 = x^6 — same value.",
+        "es": "3 + 3 = 6; también (x^3)^2 = x^6 — mismo valor.",
+        "pl": "3 + 3 = 6; też (x^3)^2 = x^6 — ta sama wartość."
+      },
+      "feedbackIncorrect": {
+        "en": "Product of equal powers adds exponents to 6.",
+        "es": "Producto de potencias iguales suma exponentes a 6.",
+        "pl": "Iloczyn równych potęg dodaje wykładniki do 6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{3} \\cdot x^{3}",
+      "choices": {
+        "en": [
+          "(x^3)^2 only is different",
+          "x^6",
+          "x^9",
+          "6x"
+        ],
+        "es": [
+          "solo (x^3)^2 es distinto",
+          "x^6",
+          "x^9",
+          "6x"
+        ],
+        "pl": [
+          "tylko (x^3)^2 jest inne",
+          "x^6",
+          "x^9",
+          "6x"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "multiply_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i08",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.quotient"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (d^5 · d^2) / d^4.",
+        "es": "Simplifica (d^5 · d^2) / d^4.",
+        "pl": "Uprość (d^5 · d^2) / d^4."
+      },
+      "feedbackCorrect": {
+        "en": "Numerator d^7; then 7 − 4 = 3.",
+        "es": "Numerador d^7; luego 7 − 4 = 3.",
+        "pl": "Licznik d^7; potem 7 − 4 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "First combine the product in the numerator, then subtract.",
+        "es": "Primero combina el producto del numerador, luego resta.",
+        "pl": "Najpierw połącz iloczyn w liczniku, potem odejmij."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\dfrac{d^{5} \\cdot d^{2}}{d^{4}}",
+      "choices": {
+        "en": [
+          "d^7",
+          "d^11",
+          "d^3",
+          "d^1"
+        ],
+        "es": [
+          "d^7",
+          "d^11",
+          "d^3",
+          "d^1"
+        ],
+        "pl": [
+          "d^7",
+          "d^11",
+          "d^3",
+          "d^1"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "order_wrong",
+        "add_exponents"
+      ]
+    },
+    {
+      "id": "alg1-l11-i09",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.power"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify ((p^2)^3) · p.",
+        "es": "Simplifica ((p^2)^3) · p.",
+        "pl": "Uprość ((p^2)^3) · p."
+      },
+      "feedbackCorrect": {
+        "en": "(p^2)^3 = p^6; then p^6 · p^1 = p^7.",
+        "es": "(p^2)^3 = p^6; luego p^6 · p^1 = p^7.",
+        "pl": "(p^2)^3 = p^6; potem p^6 · p^1 = p^7."
+      },
+      "feedbackIncorrect": {
+        "en": "Power rule first, then product rule with p^1.",
+        "es": "Primero potencia, luego producto con p^1.",
+        "pl": "Najpierw potęga, potem iloczyn z p^1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "((p^{2})^{3}) \\cdot p",
+      "choices": {
+        "en": [
+          "p^6",
+          "p^5",
+          "p^8",
+          "p^7"
+        ],
+        "es": [
+          "p^6",
+          "p^5",
+          "p^8",
+          "p^7"
+        ],
+        "pl": [
+          "p^6",
+          "p^5",
+          "p^8",
+          "p^7"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "forgot_m1",
+        "add_instead"
+      ]
+    },
+    {
+      "id": "alg1-l11-i10",
+      "knowledgePointIds": [
+        "kp.alg1.exponents.product"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which rule turns a^m · a^n into a single power?",
+        "es": "¿Qué regla convierte a^m · a^n en una sola potencia?",
+        "pl": "Która reguła zamienia a^m · a^n w jedną potęgę?"
+      },
+      "feedbackCorrect": {
+        "en": "Product rule: same base → add exponents.",
+        "es": "Regla del producto: misma base → suma exponentes.",
+        "pl": "Reguła iloczynu: ta sama podstawa → dodaj wykładniki."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiplying exponents is for (a^m)^n, not a^m · a^n.",
+        "es": "Multiplicar exponentes es para (a^m)^n, no a^m · a^n.",
+        "pl": "Mnożenie wykładników jest dla (a^m)^n, nie a^m · a^n."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "a^{m} \\cdot a^{n}",
+      "choices": {
+        "en": [
+          "Add the exponents (product rule)",
+          "Multiply the exponents",
+          "Subtract the exponents",
+          "Divide the bases"
+        ],
+        "es": [
+          "Sumar los exponentes (regla del producto)",
+          "Multiplicar los exponentes",
+          "Restar los exponentes",
+          "Dividir las bases"
+        ],
+        "pl": [
+          "Dodać wykładniki (reguła iloczynu)",
+          "Pomnożyć wykładniki",
+          "Odjąć wykładniki",
+          "Podzielić podstawy"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "rule_confusion"
+      ]
+    }
+  ]
+}

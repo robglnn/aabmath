@@ -1,6 +1,6 @@
 import type { Locale } from '../../content/types'
 import { t } from '../i18n'
-import { renderKatex } from '../math/renderKatex'
+import { renderChoiceLabel, renderKatex } from '../math/renderKatex'
 import type { LessonScreenData } from '../types'
 
 export class LessonScreen {
@@ -152,7 +152,7 @@ export class LessonScreen {
         const btn = document.createElement('button')
         btn.type = 'button'
         btn.className = 'hud-game-btn hud-choice-btn'
-        btn.textContent = label
+        renderChoiceLabel(btn, label)
         btn.addEventListener('click', () => this.onSubmit?.(String(idx)))
         this.choicesEl.appendChild(btn)
       })

@@ -1121,6 +1121,1077 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.slope.intercept.form",
+      "title": {
+        "en": "Read slope-intercept form y = mx + b",
+        "es": "Leer la forma pendiente-intersección y = mx + b",
+        "pl": "Odczytywać postać kierunkową y = mx + b"
+      },
+      "prerequisites": [
+        "kp.alg1.slope.intuition",
+        "kp.alg1.function.linear.intro"
+      ],
+      "encompassing": [
+        "kp.alg1.slope.intuition"
+      ],
+      "successCriteria": {
+        "en": "Student identifies slope m and y-intercept b from an equation in slope-intercept form.",
+        "es": "El estudiante identifica la pendiente m y la intersección b a partir de una ecuación en forma pendiente-intersección.",
+        "pl": "Uczeń identyfikuje nachylenie m i punkt przecięcia b z równania w postaci kierunkowej."
+      },
+      "misconceptions": {
+        "en": [
+          "Swapping m and b (treating the constant as slope)",
+          "Thinking the coefficient of x is always positive"
+        ],
+        "es": [
+          "Intercambiar m y b (tratar la constante como pendiente)",
+          "Pensar que el coeficiente de x siempre es positivo"
+        ],
+        "pl": [
+          "Zamiana m i b (traktowanie stałej jako nachylenia)",
+          "Myślenie, że współczynnik przy x jest zawsze dodatni"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "8.EE.B.6",
+            "F-IF.C.7a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.F.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.graph.slope.intercept",
+      "title": {
+        "en": "Graph lines from slope-intercept form",
+        "es": "Graficar rectas desde la forma pendiente-intersección",
+        "pl": "Rysować proste z postaci kierunkowej"
+      },
+      "prerequisites": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "successCriteria": {
+        "en": "Student plots the y-intercept and uses rise/run from slope to graph a line from y = mx + b.",
+        "es": "El estudiante marca la intersección con y y usa subida/avance de la pendiente para graficar y = mx + b.",
+        "pl": "Uczeń zaznacza przecięcie z osią y i używa wzrostu/przebiegu nachylenia, by narysować y = mx + b."
+      },
+      "misconceptions": {
+        "en": [
+          "Plotting intercept on the x-axis instead of the y-axis",
+          "Using run/rise instead of rise/run when stepping the slope"
+        ],
+        "es": [
+          "Marcar la intersección en el eje x en lugar del eje y",
+          "Usar avance/subida en lugar de subida/avance al aplicar la pendiente"
+        ],
+        "pl": [
+          "Zaznaczanie przecięcia na osi x zamiast osi y",
+          "Używanie przebiegu/wzrostu zamiast wzrostu/przebiegu przy nachyleniu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.1(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.3",
+            "F-IF.C.7a",
+            "A-REI.D.10"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.F.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.intercept.identify",
+      "title": {
+        "en": "Identify intercepts of a linear graph",
+        "es": "Identificar intersecciones de una gráfica lineal",
+        "pl": "Identyfikować punkty przecięcia wykresu liniowego"
+      },
+      "prerequisites": [
+        "kp.alg1.slope.intercept.form"
+      ],
+      "successCriteria": {
+        "en": "Student finds y-intercept (and simple x-intercept when asked) from an equation or described graph.",
+        "es": "El estudiante halla la intersección con y (y la intersección con x simple cuando se pide) desde una ecuación o gráfica descrita.",
+        "pl": "Uczeń znajduje przecięcie z osią y (oraz proste przecięcie z osią x, gdy pytają) z równania lub opisanego wykresu."
+      },
+      "misconceptions": {
+        "en": [
+          "Confusing x-intercept with y-intercept",
+          "Setting the wrong variable to zero when finding an intercept"
+        ],
+        "es": [
+          "Confundir intersección con x e intersección con y",
+          "Igualar a cero la variable incorrecta al hallar una intersección"
+        ],
+        "pl": [
+          "Mylenie przecięcia z osią x i z osią y",
+          "Zerowanie złej zmiennej przy szukaniu przecięcia"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(C)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7a",
+            "A-REI.D.10",
+            "8.F.B.3"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.write.equation.slope.yint",
+      "title": {
+        "en": "Write y = mx + b from slope and y-intercept",
+        "es": "Escribir y = mx + b a partir de pendiente e intersección",
+        "pl": "Zapisywać y = mx + b z nachylenia i przecięcia z osią y"
+      },
+      "prerequisites": [
+        "kp.alg1.slope.intercept.form",
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "successCriteria": {
+        "en": "Student writes a linear equation in slope-intercept form given m and the y-intercept.",
+        "es": "El estudiante escribe una ecuación lineal en forma pendiente-intersección dados m y la intersección con y.",
+        "pl": "Uczeń zapisuje równanie liniowe w postaci kierunkowej mając m i przecięcie z osią y."
+      },
+      "misconceptions": {
+        "en": [
+          "Writing x = my + b instead of y = mx + b",
+          "Putting the intercept next to x as if it were slope"
+        ],
+        "es": [
+          "Escribir x = my + b en lugar de y = mx + b",
+          "Poner la intersección junto a x como si fuera pendiente"
+        ],
+        "pl": [
+          "Zapisywanie x = my + b zamiast y = mx + b",
+          "Umieszczanie przecięcia przy x jakby było nachyleniem"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(B)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-LE.A.2",
+            "A-CED.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.F.4"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.write.equation.point.slope",
+      "title": {
+        "en": "Write linear equations from a point and slope (or two points)",
+        "es": "Escribir ecuaciones lineales desde un punto y pendiente (o dos puntos)",
+        "pl": "Zapisywać równania liniowe z punktu i nachylenia (lub dwóch punktów)"
+      },
+      "prerequisites": [
+        "kp.alg1.write.equation.slope.yint",
+        "kp.alg1.slope.intuition"
+      ],
+      "encompassing": [
+        "kp.alg1.write.equation.slope.yint"
+      ],
+      "successCriteria": {
+        "en": "Student finds slope between two points when needed, then builds y = mx + b using a known point to solve for b.",
+        "es": "El estudiante halla la pendiente entre dos puntos cuando hace falta, luego construye y = mx + b usando un punto conocido para hallar b.",
+        "pl": "Uczeń wyznacza nachylenie między dwoma punktami w razie potrzeby, potem buduje y = mx + b używając znanego punktu do znalezienia b."
+      },
+      "misconceptions": {
+        "en": [
+          "Using slope formula with swapped Δx/Δy",
+          "Forgetting to solve for b after substituting a point"
+        ],
+        "es": [
+          "Usar la fórmula de pendiente con Δx/Δy intercambiados",
+          "Olvidar resolver b después de sustituir un punto"
+        ],
+        "pl": [
+          "Używanie wzoru na nachylenie z zamienionymi Δx/Δy",
+          "Zapominanie o obliczeniu b po podstawieniu punktu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(C)",
+            "A.3(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-LE.A.2",
+            "A-CED.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.F.4"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.parallel.slope",
+      "title": {
+        "en": "Recognize parallel lines by equal slopes",
+        "es": "Reconocer rectas paralelas por pendientes iguales",
+        "pl": "Rozpoznawać proste równoległe po równych nachyleniach"
+      },
+      "prerequisites": [
+        "kp.alg1.slope.intercept.form",
+        "kp.alg1.write.equation.slope.yint"
+      ],
+      "successCriteria": {
+        "en": "Student explains that non-vertical parallel lines have equal slopes and writes a parallel line through a given point.",
+        "es": "El estudiante explica que rectas paralelas no verticales tienen pendientes iguales y escribe una paralela por un punto dado.",
+        "pl": "Uczeń wyjaśnia, że nierównoległe do osi y proste równoległe mają równe nachylenia i zapisuje prostą równoległą przez dany punkt."
+      },
+      "misconceptions": {
+        "en": [
+          "Thinking parallel lines must share the same y-intercept",
+          "Confusing parallel (same slope) with perpendicular (negative reciprocal)"
+        ],
+        "es": [
+          "Pensar que las paralelas deben compartir la misma intersección con y",
+          "Confundir paralelas (misma pendiente) con perpendiculares (recíproco negativo)"
+        ],
+        "pl": [
+          "Myślenie, że równoległe muszą mieć to samo przecięcie z osią y",
+          "Mylenie równoległych (to samo nachylenie) z prostopadłymi (ujemna odwrotność)"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(E)",
+            "A.2(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.6",
+            "G-GPE.B.5",
+            "F-LE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.GR.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.meaning",
+      "title": {
+        "en": "Interpret a solution of a linear system",
+        "es": "Interpretar una solución de un sistema lineal",
+        "pl": "Interpretować rozwiązanie układu równań liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.graph.slope.intercept",
+        "kp.alg1.equation.meaning"
+      ],
+      "successCriteria": {
+        "en": "Student states that a solution to a two-equation system is an ordered pair that satisfies both equations (graphically: intersection).",
+        "es": "El estudiante afirma que una solución de un sistema de dos ecuaciones es un par ordenado que satisface ambas (gráficamente: intersección).",
+        "pl": "Uczeń stwierdza, że rozwiązanie układu dwóch równań to para uporządkowana spełniająca oba (graficznie: punkt przecięcia)."
+      },
+      "misconceptions": {
+        "en": [
+          "Thinking any point on one line solves the system",
+          "Confusing “no solution” with “infinitely many solutions”"
+        ],
+        "es": [
+          "Pensar que cualquier punto de una recta resuelve el sistema",
+          "Confundir “sin solución” con “infinitas soluciones”"
+        ],
+        "pl": [
+          "Myślenie, że dowolny punkt jednej prostej rozwiązuje układ",
+          "Mylenie „brak rozwiązań” z „nieskończenie wiele rozwiązań”"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(I)",
+            "A.3(F)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.8"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.graphical",
+      "title": {
+        "en": "Solve systems by graphing (intersection)",
+        "es": "Resolver sistemas graficando (intersección)",
+        "pl": "Rozwiązywać układy przez rysowanie (przecięcie)"
+      },
+      "prerequisites": [
+        "kp.alg1.systems.meaning",
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "successCriteria": {
+        "en": "Student estimates or identifies the intersection point of two graphed lines as the system solution when it exists.",
+        "es": "El estudiante estima o identifica el punto de intersección de dos rectas graficadas como solución del sistema cuando existe.",
+        "pl": "Uczeń szacuje lub identyfikuje punkt przecięcia dwóch narysowanych prostych jako rozwiązanie układu, gdy istnieje."
+      },
+      "misconceptions": {
+        "en": [
+          "Reading only the x- or only the y-coordinate of the intersection",
+          "Assuming parallel-looking lines always intersect somewhere off the grid"
+        ],
+        "es": [
+          "Leer solo la coordenada x o solo la y de la intersección",
+          "Asumir que rectas que parecen paralelas siempre se intersectan fuera de la cuadrícula"
+        ],
+        "pl": [
+          "Odczytywanie tylko współrzędnej x lub tylko y przecięcia",
+          "Zakładanie, że „prawie równoległe” zawsze przecinają się poza siatką"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(F)",
+            "A.2(I)",
+            "A.1(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "8.EE.C.8b",
+            "A-REI.D.11"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.8"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.substitution",
+      "title": {
+        "en": "Solve systems by substitution (intro)",
+        "es": "Resolver sistemas por sustitución (intro)",
+        "pl": "Rozwiązywać układy metodą podstawiania (wstęp)"
+      },
+      "prerequisites": [
+        "kp.alg1.systems.meaning",
+        "kp.alg1.solve.two.step"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes an isolated expression from one equation into the other, solves for one variable, then back-substitutes.",
+        "es": "El estudiante sustituye una expresión aislada de una ecuación en la otra, resuelve una variable y luego sustituye de vuelta.",
+        "pl": "Uczeń podstawia wyizolowane wyrażenie z jednego równania do drugiego, rozwiązuje jedną zmienną, potem podstawia z powrotem."
+      },
+      "misconceptions": {
+        "en": [
+          "Substituting into the same equation instead of the other",
+          "Stopping after finding one variable and forgetting the pair"
+        ],
+        "es": [
+          "Sustituir en la misma ecuación en lugar de la otra",
+          "Detenerse tras hallar una variable y olvidar el par"
+        ],
+        "pl": [
+          "Podstawianie do tego samego równania zamiast do drugiego",
+          "Zatrzymanie się po jednej zmiennej i zapominanie o parze"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "8.EE.C.8c",
+            "A-REI.C.6"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.8b"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.elimination",
+      "title": {
+        "en": "Solve systems by elimination (add/subtract)",
+        "es": "Resolver sistemas por eliminación (sumar/restar)",
+        "pl": "Rozwiązywać układy metodą eliminacji (dodawanie/odejmowanie)"
+      },
+      "prerequisites": [
+        "kp.alg1.systems.meaning",
+        "kp.alg1.systems.substitution"
+      ],
+      "encompassing": [
+        "kp.alg1.systems.substitution"
+      ],
+      "successCriteria": {
+        "en": "Student eliminates one variable by adding or subtracting aligned equations and solves the resulting one-variable equation.",
+        "es": "El estudiante elimina una variable sumando o restando ecuaciones alineadas y resuelve la ecuación de una variable resultante.",
+        "pl": "Uczeń eliminuje jedną zmienną przez dodanie lub odjęcie równań i rozwiązuje powstałe równanie jednej zmiennej."
+      },
+      "misconceptions": {
+        "en": [
+          "Adding equations that do not cancel a variable",
+          "Forgetting to apply the operation to every term on both sides"
+        ],
+        "es": [
+          "Sumar ecuaciones que no cancelan una variable",
+          "Olvidar aplicar la operación a cada término en ambos lados"
+        ],
+        "pl": [
+          "Dodawanie równań, które nie kasują zmiennej",
+          "Zapominanie o zastosowaniu operacji do każdego wyrazu po obu stronach"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.2(I)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8b",
+            "A-REI.C.6",
+            "A-REI.C.5"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.9.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.elimination.scale",
+      "title": {
+        "en": "Scale equations before elimination",
+        "es": "Escalar ecuaciones antes de eliminar",
+        "pl": "Mnożyć równania przed eliminacją"
+      },
+      "prerequisites": [
+        "kp.alg1.systems.elimination"
+      ],
+      "successCriteria": {
+        "en": "Student multiplies one or both equations by a constant so coefficients of one variable become opposites (or equal), then eliminates.",
+        "es": "El estudiante multiplica una o ambas ecuaciones por una constante para que los coeficientes de una variable sean opuestos (o iguales) y luego elimina.",
+        "pl": "Uczeń mnoży jedno lub oba równania przez stałą, by współczynniki jednej zmiennej stały się przeciwne (lub równe), potem eliminuje."
+      },
+      "misconceptions": {
+        "en": [
+          "Multiplying only one side of an equation",
+          "Choosing a scale that does not create matching coefficients"
+        ],
+        "es": [
+          "Multiplicar solo un lado de una ecuación",
+          "Elegir un escalado que no iguala coeficientes"
+        ],
+        "pl": [
+          "Mnożenie tylko jednej strony równania",
+          "Wybór skali, która nie wyrównuje współczynników"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.C.5",
+            "A-REI.C.6",
+            "8.EE.C.8b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.verify",
+      "title": {
+        "en": "Check a system solution in both equations",
+        "es": "Comprobar una solución del sistema en ambas ecuaciones",
+        "pl": "Sprawdzać rozwiązanie układu w obu równaniach"
+      },
+      "prerequisites": [
+        "kp.alg1.systems.meaning",
+        "kp.alg1.equation.verify"
+      ],
+      "encompassing": [
+        "kp.alg1.equation.verify"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes an ordered pair into both equations and decides whether it is a solution.",
+        "es": "El estudiante sustituye un par ordenado en ambas ecuaciones y decide si es solución.",
+        "pl": "Uczeń podstawia par uporządkowany do obu równań i decyduje, czy jest rozwiązaniem."
+      },
+      "misconceptions": {
+        "en": [
+          "Checking only one equation",
+          "Accepting a pair that fails after arithmetic slips"
+        ],
+        "es": [
+          "Comprobar solo una ecuación",
+          "Aceptar un par que falla tras errores aritméticos"
+        ],
+        "pl": [
+          "Sprawdzanie tylko jednego równania",
+          "Akceptowanie pary, która nie przechodzi po błędzie rachunkowym"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(C)",
+            "A.1(D)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.C.8a",
+            "A-REI.C.6",
+            "A-REI.D.11"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.exponents.product",
+      "title": {
+        "en": "Product of powers: a^m · a^n = a^(m+n)",
+        "es": "Producto de potencias: a^m · a^n = a^(m+n)",
+        "pl": "Iloczyn potęg: a^m · a^n = a^(m+n)"
+      },
+      "prerequisites": [
+        "kp.alg1.order.ops",
+        "kp.alg1.expression.parts"
+      ],
+      "successCriteria": {
+        "en": "Student multiplies powers with the same base by adding exponents.",
+        "es": "El estudiante multiplica potencias de la misma base sumando exponentes.",
+        "pl": "Uczeń mnoży potęgi o tej samej podstawie, dodając wykładniki."
+      },
+      "misconceptions": {
+        "en": [
+          "Multiplying the exponents instead of adding",
+          "Adding the bases as well as the exponents"
+        ],
+        "es": [
+          "Multiplicar los exponentes en lugar de sumarlos",
+          "Sumar también las bases además de los exponentes"
+        ],
+        "pl": [
+          "Mnożenie wykładników zamiast dodawania",
+          "Dodawanie również podstaw oprócz wykładników"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.NSO.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.exponents.quotient",
+      "title": {
+        "en": "Quotient of powers: a^m / a^n = a^(m−n)",
+        "es": "Cociente de potencias: a^m / a^n = a^(m−n)",
+        "pl": "Iloraz potęg: a^m / a^n = a^(m−n)"
+      },
+      "prerequisites": [
+        "kp.alg1.exponents.product"
+      ],
+      "encompassing": [
+        "kp.alg1.exponents.product"
+      ],
+      "successCriteria": {
+        "en": "Student divides powers with the same base by subtracting exponents.",
+        "es": "El estudiante divide potencias de la misma base restando exponentes.",
+        "pl": "Uczeń dzieli potęgi o tej samej podstawie, odejmując wykładniki."
+      },
+      "misconceptions": {
+        "en": [
+          "Subtracting bases or dividing exponents",
+          "Writing a^(n−m) instead of a^(m−n) when dividing a^m by a^n"
+        ],
+        "es": [
+          "Restar bases o dividir exponentes",
+          "Escribir a^(n−m) en lugar de a^(m−n) al dividir a^m entre a^n"
+        ],
+        "pl": [
+          "Odejmowanie podstaw lub dzielenie wykładników",
+          "Zapisywanie a^(n−m) zamiast a^(m−n) przy dzieleniu a^m przez a^n"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.exponents.power",
+      "title": {
+        "en": "Power of a power: (a^m)^n = a^(mn)",
+        "es": "Potencia de una potencia: (a^m)^n = a^(mn)",
+        "pl": "Potęga potęgi: (a^m)^n = a^(mn)"
+      },
+      "prerequisites": [
+        "kp.alg1.exponents.product"
+      ],
+      "successCriteria": {
+        "en": "Student raises a power to a power by multiplying exponents.",
+        "es": "El estudiante eleva una potencia a otra potencia multiplicando exponentes.",
+        "pl": "Uczeń podnosi potęgę do potęgi, mnożąc wykładniki."
+      },
+      "misconceptions": {
+        "en": [
+          "Adding exponents instead of multiplying for (a^m)^n",
+          "Raising the base and exponent incorrectly (a^(m^n))"
+        ],
+        "es": [
+          "Sumar exponentes en lugar de multiplicar para (a^m)^n",
+          "Elevar mal la base y el exponente (a^(m^n))"
+        ],
+        "pl": [
+          "Dodawanie wykładników zamiast mnożenia dla (a^m)^n",
+          "Błędne podnoszenie podstawy i wykładnika (a^(m^n))"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.A.1",
+            "N-RN.A.1",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.polynomial.classify",
+      "title": {
+        "en": "Classify polynomials by degree and term count",
+        "es": "Clasificar polinomios por grado y número de términos",
+        "pl": "Klasyfikować wielomiany według stopnia i liczby wyrazów"
+      },
+      "prerequisites": [
+        "kp.alg1.expression.parts",
+        "kp.alg1.exponents.product"
+      ],
+      "successCriteria": {
+        "en": "Student names degree (highest exponent of a variable term) and type (mono/bi/tri/poly by terms) for simple polynomials.",
+        "es": "El estudiante nombra el grado (mayor exponente de un término variable) y el tipo (mono/bi/tri/poli por términos) de polinomios simples.",
+        "pl": "Uczeń podaje stopień (najwyższy wykładnik wyrazu zmiennego) i typ (jedno-/dwu-/trój-/wielomian) prostych wielomianów."
+      },
+      "misconceptions": {
+        "en": [
+          "Using the number of terms as the degree",
+          "Ignoring the variable and treating the constant as the degree"
+        ],
+        "es": [
+          "Usar el número de términos como el grado",
+          "Ignorar la variable y tratar la constante como el grado"
+        ],
+        "pl": [
+          "Traktowanie liczby wyrazów jako stopnia",
+          "Ignorowanie zmiennej i traktowanie stałej jako stopnia"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.polynomial.add",
+      "title": {
+        "en": "Add polynomials by combining like terms",
+        "es": "Sumar polinomios combinando términos semejantes",
+        "pl": "Dodawać wielomiany przez łączenie wyrazów podobnych"
+      },
+      "prerequisites": [
+        "kp.alg1.polynomial.classify",
+        "kp.alg1.expression.parts"
+      ],
+      "encompassing": [
+        "kp.alg1.expression.parts"
+      ],
+      "successCriteria": {
+        "en": "Student adds two polynomials by combining like terms and writes the sum in standard form.",
+        "es": "El estudiante suma dos polinomios combinando términos semejantes y escribe la suma en forma estándar.",
+        "pl": "Uczeń dodaje dwa wielomiany, łącząc wyrazy podobne, i zapisuje sumę w postaci standardowej."
+      },
+      "misconceptions": {
+        "en": [
+          "Combining unlike terms (different powers)",
+          "Adding exponents when combining like terms"
+        ],
+        "es": [
+          "Combinar términos no semejantes (distintas potencias)",
+          "Sumar exponentes al combinar términos semejantes"
+        ],
+        "pl": [
+          "Łączenie niepodobnych wyrazów (różne potęgi)",
+          "Dodawanie wykładników przy łączeniu wyrazów podobnych"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.polynomial.subtract",
+      "title": {
+        "en": "Subtract polynomials (distribute the minus)",
+        "es": "Restar polinomios (distribuir el menos)",
+        "pl": "Odejmować wielomiany (rozdzielanie minusa)"
+      },
+      "prerequisites": [
+        "kp.alg1.polynomial.add"
+      ],
+      "encompassing": [
+        "kp.alg1.polynomial.add"
+      ],
+      "successCriteria": {
+        "en": "Student subtracts polynomials by distributing a negative sign to each term of the subtrahend, then combining like terms.",
+        "es": "El estudiante resta polinomios distribuyendo el signo negativo a cada término del sustraendo y luego combina términos semejantes.",
+        "pl": "Uczeń odejmuje wielomiany, rozdzielając znak minus na każdy wyraz odjemnika, potem łączy wyrazy podobne."
+      },
+      "misconceptions": {
+        "en": [
+          "Only changing the sign of the first term of the subtrahend",
+          "Treating subtraction as addition without distributing the minus"
+        ],
+        "es": [
+          "Cambiar solo el signo del primer término del sustraendo",
+          "Tratar la resta como suma sin distribuir el menos"
+        ],
+        "pl": [
+          "Zmiana znaku tylko pierwszego wyrazu odjemnika",
+          "Traktowanie odejmowania jak dodawania bez rozdzielenia minusa"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.1"
+          ]
+        }
+      ]
     }
   ]
 }

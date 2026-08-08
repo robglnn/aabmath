@@ -1,0 +1,1312 @@
+{
+  "id": "alg1-l12",
+  "courseId": "algebra1",
+  "order": 12,
+  "title": {
+    "en": "Polynomials — Classify, Add, Subtract",
+    "es": "Polinomios — clasificar, sumar, restar",
+    "pl": "Wielomiany — klasyfikacja, dodawanie, odejmowanie"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.polynomial.classify",
+    "kp.alg1.polynomial.add",
+    "kp.alg1.polynomial.subtract"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_12",
+    "unlockOnMastery": [
+      "lesson_board_13"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will classify polynomials by degree and term count, then add and subtract by combining like terms (with careful distribution of the minus).",
+        "es": "Clasificarás polinomios por grado y número de términos, y sumarás/restarás combinando términos semejantes (distribuyendo el menos con cuidado).",
+        "pl": "Będziesz klasyfikować wielomiany według stopnia i liczby wyrazów oraz dodawać/odejmować łącząc wyrazy podobne (ostrożnie rozdzielając minus)."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: classify & combine",
+        "es": "Enseñar: clasificar y combinar",
+        "pl": "Nauczanie: klasyfikacja i łączenie"
+      },
+      "body": {
+        "en": "Degree = highest variable power; mono/bi/tri by terms. Add like powers. Subtract by distributing −1 across the second polynomial.",
+        "es": "Grado = mayor potencia de la variable; mono/bi/tri por términos. Suma potencias semejantes. Resta distribuyendo −1 en el segundo polinomio.",
+        "pl": "Stopień = najwyższa potęga zmiennej; jedno-/dwu-/trój- według wyrazów. Dodawaj podobne potęgi. Odejmuj rozdzielając −1 na drugi wielomian."
+      },
+      "bodyMath": [
+        "4x^{3} - 2x + 7 \\;(\\text{degree } 3)",
+        "(2x + 3) + (5x - 1) = 7x + 2",
+        "(5x + 2) - (3x - 4) = 2x + 6"
+      ],
+      "itemIds": [
+        "alg1-l12-t01",
+        "alg1-l12-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Name degrees and types, then practice sums and differences with sign flips.",
+        "es": "Nombra grados y tipos; practica sumas y diferencias con cambios de signo.",
+        "pl": "Nazywaj stopnie i typy; ćwicz sumy i różnice ze zmianami znaków."
+      },
+      "itemIds": [
+        "alg1-l12-g01",
+        "alg1-l12-g02",
+        "alg1-l12-g03",
+        "alg1-l12-g04",
+        "alg1-l12-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l12-i01",
+        "alg1-l12-i02",
+        "alg1-l12-i03",
+        "alg1-l12-i04",
+        "alg1-l12-i05",
+        "alg1-l12-i06",
+        "alg1-l12-i07",
+        "alg1-l12-i08",
+        "alg1-l12-i09",
+        "alg1-l12-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l12-t01",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the degree of 4x^3 − 2x + 7?",
+        "es": "¿Cuál es el grado de 4x^3 − 2x + 7?",
+        "pl": "Jaki jest stopień 4x^3 − 2x + 7?"
+      },
+      "feedbackCorrect": {
+        "en": "Degree is the highest exponent on the variable: 3.",
+        "es": "El grado es el mayor exponente de la variable: 3.",
+        "pl": "Stopień to najwyższy wykładnik zmiennej: 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not confuse degree with coefficient or term count.",
+        "es": "No confundas grado con coeficiente o número de términos.",
+        "pl": "Nie myl stopnia ze współczynnikiem ani liczbą wyrazów."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4x^{3} - 2x + 7",
+      "choices": {
+        "en": [
+          "3 (highest power of x)",
+          "2 (number of variable terms)",
+          "4 (leading coefficient)",
+          "7 (constant term)"
+        ],
+        "es": [
+          "3 (mayor potencia de x)",
+          "2 (número de términos variables)",
+          "4 (coeficiente principal)",
+          "7 (término constante)"
+        ],
+        "pl": [
+          "3 (najwyższa potęga x)",
+          "2 (liczba wyrazów zmiennych)",
+          "4 (współczynnik wiodący)",
+          "7 (wyraz wolny)"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "term_count_as_degree",
+        "coeff_as_degree"
+      ]
+    },
+    {
+      "id": "alg1-l12-t02",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.add"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Add (2x + 3) + (5x − 1).",
+        "es": "Suma (2x + 3) + (5x − 1).",
+        "pl": "Dodaj (2x + 3) + (5x − 1)."
+      },
+      "feedbackCorrect": {
+        "en": "Like terms: 2x+5x=7x and 3+(−1)=2.",
+        "es": "Términos semejantes: 2x+5x=7x y 3+(−1)=2.",
+        "pl": "Wyrazy podobne: 2x+5x=7x i 3+(−1)=2."
+      },
+      "feedbackIncorrect": {
+        "en": "Combine x-terms and constants separately.",
+        "es": "Combina términos en x y constantes por separado.",
+        "pl": "Łącz wyrazy z x i stałe osobno."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(2x + 3) + (5x - 1)",
+      "choices": {
+        "en": [
+          "7x − 2",
+          "7x + 2",
+          "3x + 2",
+          "10x + 2"
+        ],
+        "es": [
+          "7x − 2",
+          "7x + 2",
+          "3x + 2",
+          "10x + 2"
+        ],
+        "pl": [
+          "7x − 2",
+          "7x + 2",
+          "3x + 2",
+          "10x + 2"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "unlike_combined",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l12-g01",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Classify 5x^2 by term count.",
+        "es": "Clasifica 5x^2 por número de términos.",
+        "pl": "Sklasyfikuj 5x^2 według liczby wyrazów."
+      },
+      "feedbackCorrect": {
+        "en": "One term → monomial; degree is still 2.",
+        "es": "Un término → monomio; el grado sigue siendo 2.",
+        "pl": "Jeden wyraz → jednomian; stopień nadal 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Term count names mono/bi/tri; degree is the exponent.",
+        "es": "El número de términos nombra mono/bi/tri; el grado es el exponente.",
+        "pl": "Liczba wyrazów nazywa jedno-/dwu-/trój-; stopień to wykładnik."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "5x^{2}",
+      "choices": {
+        "en": [
+          "Binomial",
+          "Trinomial",
+          "Monomial (one term)",
+          "Constant only"
+        ],
+        "es": [
+          "Binomio",
+          "Trinomio",
+          "Monomio (un término)",
+          "Solo constante"
+        ],
+        "pl": [
+          "Dwumian",
+          "Trójmian",
+          "Jednomian (jeden wyraz)",
+          "Tylko stała"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "degree_as_type"
+      ]
+    },
+    {
+      "id": "alg1-l12-g02",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Classify x^2 + 3x − 4 by term count.",
+        "es": "Clasifica x^2 + 3x − 4 por número de términos.",
+        "pl": "Sklasyfikuj x^2 + 3x − 4 według liczby wyrazów."
+      },
+      "feedbackCorrect": {
+        "en": "Three terms → trinomial; degree is 2.",
+        "es": "Tres términos → trinomio; el grado es 2.",
+        "pl": "Trzy wyrazy → trójmian; stopień to 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Count terms for the name; highest power for degree.",
+        "es": "Cuenta términos para el nombre; mayor potencia para el grado.",
+        "pl": "Policz wyrazy dla nazwy; najwyższa potęga dla stopnia."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 3x - 4",
+      "choices": {
+        "en": [
+          "Binomial",
+          "Monomial",
+          "Degree 3 polynomial",
+          "Trinomial (three terms)"
+        ],
+        "es": [
+          "Binomio",
+          "Monomio",
+          "Polinomio de grado 3",
+          "Trinomio (tres términos)"
+        ],
+        "pl": [
+          "Dwumian",
+          "Jednomian",
+          "Wielomian stopnia 3",
+          "Trójmian (trzy wyrazy)"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "degree_as_type",
+        "term_count_as_degree"
+      ]
+    },
+    {
+      "id": "alg1-l12-g03",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.add"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Add (x^2 + 4x) + (3x^2 − x + 5).",
+        "es": "Suma (x^2 + 4x) + (3x^2 − x + 5).",
+        "pl": "Dodaj (x^2 + 4x) + (3x^2 − x + 5)."
+      },
+      "feedbackCorrect": {
+        "en": "x^2+3x^2=4x^2; 4x+(−x)=3x; +5.",
+        "es": "x^2+3x^2=4x^2; 4x+(−x)=3x; +5.",
+        "pl": "x^2+3x^2=4x^2; 4x+(−x)=3x; +5."
+      },
+      "feedbackIncorrect": {
+        "en": "Combine only like powers of x.",
+        "es": "Combina solo potencias semejantes de x.",
+        "pl": "Łącz tylko podobne potęgi x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(x^{2} + 4x) + (3x^{2} - x + 5)",
+      "choices": {
+        "en": [
+          "4x^2 + 3x + 5",
+          "4x^2 + 5x + 5",
+          "3x^2 + 3x + 5",
+          "4x^2 − 3x + 5"
+        ],
+        "es": [
+          "4x^2 + 3x + 5",
+          "4x^2 + 5x + 5",
+          "3x^2 + 3x + 5",
+          "4x^2 − 3x + 5"
+        ],
+        "pl": [
+          "4x^2 + 3x + 5",
+          "4x^2 + 5x + 5",
+          "3x^2 + 3x + 5",
+          "4x^2 − 3x + 5"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "unlike_combined",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l12-g04",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.subtract"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Subtract (5x + 2) − (3x − 4).",
+        "es": "Resta (5x + 2) − (3x − 4).",
+        "pl": "Odejmij (5x + 2) − (3x − 4)."
+      },
+      "feedbackCorrect": {
+        "en": "Distribute minus: 5x+2−3x+4 = 2x+6.",
+        "es": "Distribuye el menos: 5x+2−3x+4 = 2x+6.",
+        "pl": "Rozdziel minus: 5x+2−3x+4 = 2x+6."
+      },
+      "feedbackIncorrect": {
+        "en": "Minus before (3x − 4) flips both signs → −3x + 4.",
+        "es": "El menos ante (3x − 4) cambia ambos signos → −3x + 4.",
+        "pl": "Minus przed (3x − 4) zmienia oba znaki → −3x + 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(5x + 2) - (3x - 4)",
+      "choices": {
+        "en": [
+          "2x − 2",
+          "2x + 6",
+          "8x − 2",
+          "2x − 6"
+        ],
+        "es": [
+          "2x − 2",
+          "2x + 6",
+          "8x − 2",
+          "2x − 6"
+        ],
+        "pl": [
+          "2x − 2",
+          "2x + 6",
+          "8x − 2",
+          "2x − 6"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "first_term_only",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l12-g05",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.subtract"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Subtract (2x^2 + x) − (x^2 − 3x).",
+        "es": "Resta (2x^2 + x) − (x^2 − 3x).",
+        "pl": "Odejmij (2x^2 + x) − (x^2 − 3x)."
+      },
+      "feedbackCorrect": {
+        "en": "2x^2+x − x^2 + 3x = x^2 + 4x.",
+        "es": "2x^2+x − x^2 + 3x = x^2 + 4x.",
+        "pl": "2x^2+x − x^2 + 3x = x^2 + 4x."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute the minus to every term of the second polynomial.",
+        "es": "Distribuye el menos a cada término del segundo polinomio.",
+        "pl": "Rozdziel minus na każdy wyraz drugiego wielomianu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(2x^{2} + x) - (x^{2} - 3x)",
+      "choices": {
+        "en": [
+          "x^2 − 2x",
+          "3x^2 + 4x",
+          "x^2 + 4x",
+          "x^2 − 4x"
+        ],
+        "es": [
+          "x^2 − 2x",
+          "3x^2 + 4x",
+          "x^2 + 4x",
+          "x^2 − 4x"
+        ],
+        "pl": [
+          "x^2 − 2x",
+          "3x^2 + 4x",
+          "x^2 + 4x",
+          "x^2 − 4x"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "first_term_only",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l12-i01",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Degree of 9 − 6x?",
+        "es": "¿Grado de 9 − 6x?",
+        "pl": "Stopień 9 − 6x?"
+      },
+      "feedbackCorrect": {
+        "en": "Highest power is x^1 → degree 1.",
+        "es": "La mayor potencia es x^1 → grado 1.",
+        "pl": "Najwyższa potęga to x^1 → stopień 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Constants are degree 0; linear terms are degree 1.",
+        "es": "Constantes son grado 0; términos lineales grado 1.",
+        "pl": "Stałe mają stopień 0; wyrazy liniowe stopień 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "9 - 6x",
+      "choices": {
+        "en": [
+          "0",
+          "6",
+          "9",
+          "1"
+        ],
+        "es": [
+          "0",
+          "6",
+          "9",
+          "1"
+        ],
+        "pl": [
+          "0",
+          "6",
+          "9",
+          "1"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "1",
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "constant_as_degree",
+        "coeff_as_degree"
+      ]
+    },
+    {
+      "id": "alg1-l12-i02",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Classify 7 by degree and type.",
+        "es": "Clasifica 7 por grado y tipo.",
+        "pl": "Sklasyfikuj 7 według stopnia i typu."
+      },
+      "feedbackCorrect": {
+        "en": "A nonzero constant is a degree-0 monomial.",
+        "es": "Una constante no nula es un monomio de grado 0.",
+        "pl": "Niezerowa stała to jednomian stopnia 0."
+      },
+      "feedbackIncorrect": {
+        "en": "The number itself is not the degree.",
+        "es": "El número mismo no es el grado.",
+        "pl": "Sama liczba nie jest stopniem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "7",
+      "choices": {
+        "en": [
+          "Constant monomial, degree 0",
+          "Linear binomial",
+          "Degree 7 monomial",
+          "Not a polynomial"
+        ],
+        "es": [
+          "Monomio constante, grado 0",
+          "Binomio lineal",
+          "Monomio de grado 7",
+          "No es polinomio"
+        ],
+        "pl": [
+          "Stały jednomian, stopień 0",
+          "Liniowy dwumian",
+          "Jednomian stopnia 7",
+          "To nie wielomian"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "coeff_as_degree"
+      ]
+    },
+    {
+      "id": "alg1-l12-i03",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.add"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Add (3x^2 − 5) + (x^2 + 2x + 1).",
+        "es": "Suma (3x^2 − 5) + (x^2 + 2x + 1).",
+        "pl": "Dodaj (3x^2 − 5) + (x^2 + 2x + 1)."
+      },
+      "feedbackCorrect": {
+        "en": "3+1=4 for x^2; +2x; −5+1=−4.",
+        "es": "3+1=4 para x^2; +2x; −5+1=−4.",
+        "pl": "3+1=4 dla x^2; +2x; −5+1=−4."
+      },
+      "feedbackIncorrect": {
+        "en": "Combine like terms carefully with the constants.",
+        "es": "Combina términos semejantes con cuidado en las constantes.",
+        "pl": "Łącz wyrazy podobne ostrożnie ze stałymi."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(3x^{2} - 5) + (x^{2} + 2x + 1)",
+      "choices": {
+        "en": [
+          "4x^2 + 2x − 5",
+          "4x^2 + 2x − 4",
+          "3x^2 + 2x − 4",
+          "4x^2 − 2x − 4"
+        ],
+        "es": [
+          "4x^2 + 2x − 5",
+          "4x^2 + 2x − 4",
+          "3x^2 + 2x − 4",
+          "4x^2 − 2x − 4"
+        ],
+        "pl": [
+          "4x^2 + 2x − 5",
+          "4x^2 + 2x − 4",
+          "3x^2 + 2x − 4",
+          "4x^2 − 2x − 4"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_error",
+        "unlike_combined"
+      ]
+    },
+    {
+      "id": "alg1-l12-i04",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.add"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Add (−2x + 8) + (5x − 3).",
+        "es": "Suma (−2x + 8) + (5x − 3).",
+        "pl": "Dodaj (−2x + 8) + (5x − 3)."
+      },
+      "feedbackCorrect": {
+        "en": "−2x+5x=3x; 8−3=5.",
+        "es": "−2x+5x=3x; 8−3=5.",
+        "pl": "−2x+5x=3x; 8−3=5."
+      },
+      "feedbackIncorrect": {
+        "en": "Watch the signs when combining.",
+        "es": "Cuida los signos al combinar.",
+        "pl": "Uważaj na znaki przy łączeniu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(-2x + 8) + (5x - 3)",
+      "choices": {
+        "en": [
+          "3x − 5",
+          "7x + 5",
+          "3x + 5",
+          "−7x + 5"
+        ],
+        "es": [
+          "3x − 5",
+          "7x + 5",
+          "3x + 5",
+          "−7x + 5"
+        ],
+        "pl": [
+          "3x − 5",
+          "7x + 5",
+          "3x + 5",
+          "−7x + 5"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l12-i05",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.subtract"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Subtract (6x − 1) − (2x + 5).",
+        "es": "Resta (6x − 1) − (2x + 5).",
+        "pl": "Odejmij (6x − 1) − (2x + 5)."
+      },
+      "feedbackCorrect": {
+        "en": "6x−1−2x−5 = 4x−6.",
+        "es": "6x−1−2x−5 = 4x−6.",
+        "pl": "6x−1−2x−5 = 4x−6."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute minus to +5 as well → −5.",
+        "es": "Distribuye el menos también a +5 → −5.",
+        "pl": "Rozdziel minus też na +5 → −5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(6x - 1) - (2x + 5)",
+      "choices": {
+        "en": [
+          "4x + 4",
+          "8x − 6",
+          "4x − 4",
+          "4x − 6"
+        ],
+        "es": [
+          "4x + 4",
+          "8x − 6",
+          "4x − 4",
+          "4x − 6"
+        ],
+        "pl": [
+          "4x + 4",
+          "8x − 6",
+          "4x − 4",
+          "4x − 6"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "first_term_only",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l12-i06",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.subtract"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Subtract (x^2 + 5x − 2) − (3x^2 − x).",
+        "es": "Resta (x^2 + 5x − 2) − (3x^2 − x).",
+        "pl": "Odejmij (x^2 + 5x − 2) − (3x^2 − x)."
+      },
+      "feedbackCorrect": {
+        "en": "x^2−3x^2=−2x^2; 5x−(−x)=6x; −2.",
+        "es": "x^2−3x^2=−2x^2; 5x−(−x)=6x; −2.",
+        "pl": "x^2−3x^2=−2x^2; 5x−(−x)=6x; −2."
+      },
+      "feedbackIncorrect": {
+        "en": "Minus times −x becomes +x when distributing.",
+        "es": "Menos por −x se vuelve +x al distribuir.",
+        "pl": "Minus razy −x daje +x przy rozdzielaniu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(x^{2} + 5x - 2) - (3x^{2} - x)",
+      "choices": {
+        "en": [
+          "−2x^2 + 6x − 2",
+          "−2x^2 + 4x − 2",
+          "2x^2 + 6x − 2",
+          "−2x^2 + 6x + 2"
+        ],
+        "es": [
+          "−2x^2 + 6x − 2",
+          "−2x^2 + 4x − 2",
+          "2x^2 + 6x − 2",
+          "−2x^2 + 6x + 2"
+        ],
+        "pl": [
+          "−2x^2 + 6x − 2",
+          "−2x^2 + 4x − 2",
+          "2x^2 + 6x − 2",
+          "−2x^2 + 6x + 2"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_error",
+        "first_term_only"
+      ]
+    },
+    {
+      "id": "alg1-l12-i07",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Degree of 2x^4 + x^2 − 9?",
+        "es": "¿Grado de 2x^4 + x^2 − 9?",
+        "pl": "Stopień 2x^4 + x^2 − 9?"
+      },
+      "feedbackCorrect": {
+        "en": "Highest power is 4.",
+        "es": "La mayor potencia es 4.",
+        "pl": "Najwyższa potęga to 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Degree follows the leading (highest) power, not the constant.",
+        "es": "El grado sigue la potencia mayor, no la constante.",
+        "pl": "Stopień idzie za najwyższą potęgą, nie za stałą."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "2x^{4} + x^{2} - 9",
+      "choices": {
+        "en": [
+          "2",
+          "4",
+          "3",
+          "9"
+        ],
+        "es": [
+          "2",
+          "4",
+          "3",
+          "9"
+        ],
+        "pl": [
+          "2",
+          "4",
+          "3",
+          "9"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "4",
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "term_count_as_degree",
+        "constant_as_degree"
+      ]
+    },
+    {
+      "id": "alg1-l12-i08",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.add"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Add (4x^2 − 3x + 1) + (−x^2 + 3x − 1).",
+        "es": "Suma (4x^2 − 3x + 1) + (−x^2 + 3x − 1).",
+        "pl": "Dodaj (4x^2 − 3x + 1) + (−x^2 + 3x − 1)."
+      },
+      "feedbackCorrect": {
+        "en": "4−1=3 for x^2; −3x+3x=0; 1−1=0 → 3x^2.",
+        "es": "4−1=3 para x^2; −3x+3x=0; 1−1=0 → 3x^2.",
+        "pl": "4−1=3 dla x^2; −3x+3x=0; 1−1=0 → 3x^2."
+      },
+      "feedbackIncorrect": {
+        "en": "Like terms cancel completely for x and the constant.",
+        "es": "Los términos semejantes se cancelan en x y la constante.",
+        "pl": "Wyrazy podobne kasują się całkowicie dla x i stałej."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(4x^{2} - 3x + 1) + (-x^{2} + 3x - 1)",
+      "choices": {
+        "en": [
+          "3x^2 − 6x",
+          "5x^2",
+          "3x^2",
+          "3x^2 + 2"
+        ],
+        "es": [
+          "3x^2 − 6x",
+          "5x^2",
+          "3x^2",
+          "3x^2 + 2"
+        ],
+        "pl": [
+          "3x^2 − 6x",
+          "5x^2",
+          "3x^2",
+          "3x^2 + 2"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "missed_cancel"
+      ]
+    },
+    {
+      "id": "alg1-l12-i09",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.subtract"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the first step of (A) − (B) for polynomials?",
+        "es": "¿Cuál es el primer paso de (A) − (B) para polinomios?",
+        "pl": "Jaki jest pierwszy krok (A) − (B) dla wielomianów?"
+      },
+      "feedbackCorrect": {
+        "en": "Subtraction = add the opposite of each term in B.",
+        "es": "Restar = sumar el opuesto de cada término de B.",
+        "pl": "Odejmowanie = dodaj przeciwieństwo każdego wyrazu B."
+      },
+      "feedbackIncorrect": {
+        "en": "Every term of the subtrahend gets a sign flip.",
+        "es": "Cada término del sustraendo cambia de signo.",
+        "pl": "Każdy wyraz odjemnika zmienia znak."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "A - B",
+      "choices": {
+        "en": [
+          "Only flip the first term of B",
+          "Add A and B without changing signs",
+          "Multiply degrees",
+          "Distribute a minus to every term of B, then combine like terms"
+        ],
+        "es": [
+          "Solo cambiar el primer término de B",
+          "Sumar A y B sin cambiar signos",
+          "Multiplicar grados",
+          "Distribuir un menos a cada término de B y luego combinar"
+        ],
+        "pl": [
+          "Zmienić tylko pierwszy wyraz B",
+          "Dodać A i B bez zmiany znaków",
+          "Mnożyć stopnie",
+          "Rozdzielić minus na każdy wyraz B, potem łączyć podobne"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "first_term_only"
+      ]
+    },
+    {
+      "id": "alg1-l12-i10",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.classify"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Best description of 3x + 1?",
+        "es": "¿Mejor descripción de 3x + 1?",
+        "pl": "Najlepszy opis 3x + 1?"
+      },
+      "feedbackCorrect": {
+        "en": "Two terms and highest power 1 → linear binomial.",
+        "es": "Dos términos y potencia mayor 1 → binomio lineal.",
+        "pl": "Dwa wyrazy i najwyższa potęga 1 → liniowy dwumian."
+      },
+      "feedbackIncorrect": {
+        "en": "Degree from highest power; type from term count.",
+        "es": "Grado por potencia mayor; tipo por número de términos.",
+        "pl": "Stopień z najwyższej potęgi; typ z liczby wyrazów."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "A-APR.A.1",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "3x + 1",
+      "choices": {
+        "en": [
+          "Linear binomial (degree 1, two terms)",
+          "Quadratic monomial",
+          "Cubic trinomial",
+          "Degree 3 binomial"
+        ],
+        "es": [
+          "Binomio lineal (grado 1, dos términos)",
+          "Monomio cuadrático",
+          "Trinomio cúbico",
+          "Binomio de grado 3"
+        ],
+        "pl": [
+          "Liniowy dwumian (stopień 1, dwa wyrazy)",
+          "Kwadratowy jednomian",
+          "Sześcienny trójmian",
+          "Dwumian stopnia 3"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "degree_as_type",
+        "term_count_as_degree"
+      ]
+    }
+  ]
+}
