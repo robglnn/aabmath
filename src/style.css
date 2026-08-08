@@ -1,0 +1,834 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a1628;
+  font-family: "Press Start 2P", "VT323", "Courier New", monospace;
+  color: #e8fff0;
+  touch-action: none;
+  user-select: none;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#hud-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#hud-root .interactive {
+  pointer-events: auto;
+}
+
+:root {
+  --hud-green: #3dff9a;
+  --hud-white: #f4fff8;
+  --hud-blue: #5eb7ff;
+  --hud-cyan: #5ef0ff;
+  --hud-orange: #ff9a3d;
+  --hud-red: #ff5e7a;
+  --hud-panel: rgba(8, 20, 36, 0.88);
+  --hud-border: #3dff9a;
+  --hud-font: "Press Start 2P", "VT323", "Courier New", monospace;
+  --hud-font-readable: "VT323", "Courier New", monospace;
+}
+
+/* ── Shared chrome ─────────────────────────────────────── */
+
+.hud-status-panel {
+  position: absolute;
+  top: clamp(8px, 2vmin, 16px);
+  right: clamp(8px, 2vmin, 16px);
+  min-width: 9rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--hud-panel);
+  border: 2px solid var(--hud-blue);
+  box-shadow: 0 0 0 1px #000, inset 0 0 12px rgba(94, 183, 255, 0.15);
+  font-family: var(--hud-font-readable);
+  font-size: clamp(14px, 2.2vmin, 20px);
+  line-height: 1.35;
+  text-shadow: 0 0 4px rgba(61, 255, 154, 0.35);
+}
+
+.hud-status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.hud-label,
+.hud-label-score,
+.hud-label-progress {
+  color: var(--hud-blue);
+}
+
+.hud-rank {
+  color: var(--hud-white);
+}
+
+.hud-score {
+  color: var(--hud-green);
+}
+
+.hud-progress {
+  color: var(--hud-cyan);
+}
+
+.hud-vitals {
+  position: absolute;
+  top: clamp(8px, 2vmin, 16px);
+  left: clamp(8px, 2vmin, 16px);
+  width: clamp(120px, 18vmin, 180px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.45rem 0.5rem;
+  background: var(--hud-panel);
+  border: 2px solid var(--hud-green);
+  box-shadow: 0 0 0 1px #000;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(12px, 1.8vmin, 16px);
+}
+
+.hud-vital-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hud-vital-icon {
+  width: 1.1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.hud-icon-heart {
+  color: var(--hud-red);
+}
+
+.hud-icon-energy {
+  color: var(--hud-green);
+}
+
+.hud-vital-label {
+  width: 1.1rem;
+  color: var(--hud-cyan);
+  font-size: 0.85em;
+}
+
+.hud-vital-track {
+  flex: 1;
+  height: 0.55rem;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.hud-vital-fill {
+  height: 100%;
+  width: 50%;
+  transition: width 0.25s ease;
+}
+
+.hud-fill-health {
+  background: linear-gradient(90deg, #c41e3a, var(--hud-red));
+}
+
+.hud-fill-energy {
+  background: linear-gradient(90deg, #1a8f4a, var(--hud-green));
+}
+
+.hud-fill-trig {
+  background: linear-gradient(90deg, #2a6eb8, var(--hud-blue));
+}
+
+.hud-locale-switcher {
+  position: absolute;
+  bottom: clamp(8px, 2vmin, 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  background: var(--hud-panel);
+  border: 1px solid var(--hud-blue);
+  z-index: 20;
+}
+
+.hud-locale-btn {
+  font-family: var(--hud-font-readable);
+  font-size: clamp(12px, 1.8vmin, 16px);
+  padding: 0.2rem 0.45rem;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--hud-blue);
+  cursor: pointer;
+}
+
+.hud-locale-btn.hud-locale-active {
+  border-color: var(--hud-green);
+  color: var(--hud-green);
+  background: rgba(61, 255, 154, 0.12);
+}
+
+/* ── Screen overlays (sparse diegetic — world shows through) ─ */
+
+.hud-screen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hud-screen[hidden] {
+  display: none !important;
+}
+
+.hud-corner-exit {
+  position: absolute;
+  bottom: clamp(48px, 8vmin, 72px);
+  left: clamp(8px, 2vmin, 16px);
+  padding: 0.25rem 0.5rem;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(12px, 1.8vmin, 16px);
+  color: var(--hud-blue);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(94, 183, 255, 0.45);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  pointer-events: auto;
+}
+
+.hud-corner-exit:hover,
+.hud-corner-exit:focus-visible {
+  color: var(--hud-green);
+  border-color: var(--hud-green);
+  outline: none;
+}
+
+.hud-btn {
+  font-family: var(--hud-font-readable);
+  font-size: clamp(13px, 2vmin, 18px);
+  padding: 0.35rem 0.65rem;
+  background: rgba(0, 0, 0, 0.65);
+  border: 2px solid var(--hud-white);
+  color: var(--hud-white);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hud-btn:hover,
+.hud-btn:focus-visible {
+  border-color: var(--hud-green);
+  color: var(--hud-green);
+  outline: none;
+}
+
+.hud-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.hud-game-btn {
+  font-family: var(--hud-font);
+  font-size: clamp(8px, 1.4vmin, 11px);
+  padding: 0.45rem 0.75rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--hud-green);
+  color: var(--hud-green);
+  cursor: pointer;
+  text-shadow: 0 0 8px rgba(61, 255, 154, 0.5);
+  letter-spacing: 0.08em;
+}
+
+.hud-game-btn:hover,
+.hud-game-btn:focus-visible {
+  background: rgba(61, 255, 154, 0.12);
+  outline: none;
+}
+
+/* ── Lesson — in-world chalkboard overlay ──────────────── */
+
+.hud-lesson {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: clamp(48px, 10vmin, 72px) clamp(8px, 2vmin, 20px) clamp(40px, 7vmin, 56px);
+}
+
+.hud-lesson-banner {
+  justify-self: center;
+  margin: 0;
+  font-family: var(--hud-font);
+  font-size: clamp(8px, 1.4vmin, 11px);
+  line-height: 1.6;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(94, 240, 255, 0.45);
+  pointer-events: none;
+}
+
+.hud-lesson-label {
+  color: var(--hud-cyan);
+}
+
+.hud-lesson-course {
+  color: var(--hud-white);
+}
+
+.hud-lesson-course::before {
+  content: ' ';
+}
+
+.hud-lesson-scene {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: min(72vw, 560px);
+  margin-left: clamp(4px, 3vw, 48px);
+  gap: clamp(8px, 2vmin, 16px);
+}
+
+.hud-chalkboard-mount {
+  width: 100%;
+}
+
+.hud-chalkboard-frame {
+  padding: clamp(6px, 1.2vmin, 10px);
+  background: linear-gradient(145deg, #5c4030 0%, #3d2818 50%, #2a1a10 100%);
+  border: 3px solid #6b4a2e;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.55),
+    inset 0 2px 0 rgba(255, 220, 180, 0.08);
+}
+
+.hud-chalkboard {
+  background: linear-gradient(180deg, #1a2e1a 0%, #0c160c 100%);
+  border: 2px solid #2a3a28;
+  padding: clamp(20px, 4vmin, 36px) clamp(16px, 3vmin, 28px);
+  min-height: clamp(110px, 24vmin, 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.65);
+}
+
+.hud-katex-area {
+  color: var(--hud-white);
+  font-size: clamp(20px, 4vmin, 32px);
+  text-align: center;
+  text-shadow: 0 0 12px rgba(94, 240, 255, 0.35);
+}
+
+.hud-katex-area .katex {
+  color: var(--hud-cyan);
+}
+
+.hud-prompt-text {
+  margin: 0.65rem 0 0;
+  font-family: var(--hud-font);
+  font-size: clamp(8px, 1.5vmin, 12px);
+  color: var(--hud-cyan);
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 10px rgba(94, 240, 255, 0.5);
+}
+
+.hud-mastery-gate {
+  margin: 0.5rem 0 0;
+  padding: 0.25rem 0;
+  text-align: left;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(13px, 2vmin, 17px);
+  text-shadow: 0 0 6px currentColor;
+}
+
+.hud-gate-fail {
+  color: var(--hud-orange);
+}
+
+.hud-gate-pass {
+  color: var(--hud-green);
+}
+
+.hud-lesson-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(8px, 2vmin, 16px);
+  flex-wrap: wrap;
+}
+
+.hud-answer-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 10rem;
+}
+
+.hud-answer-label {
+  font-family: var(--hud-font);
+  font-size: clamp(7px, 1.2vmin, 10px);
+  color: var(--hud-cyan);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 6px rgba(94, 240, 255, 0.4);
+}
+
+.hud-answer-field {
+  font-family: var(--hud-font-readable);
+  font-size: clamp(18px, 3vmin, 26px);
+  padding: 0.2rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--hud-green);
+  color: var(--hud-white);
+  text-shadow: 0 0 8px rgba(61, 255, 154, 0.35);
+}
+
+.hud-answer-field:focus {
+  outline: none;
+  border-bottom-color: var(--hud-cyan);
+}
+
+.hud-standards-footer {
+  justify-self: center;
+  margin: 0;
+  text-align: center;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(12px, 1.8vmin, 16px);
+  color: var(--hud-cyan);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 8px rgba(94, 240, 255, 0.35);
+  pointer-events: none;
+}
+
+/* ── Progress Report — stone pedestal hologram ─────────── */
+
+.hud-progress-report {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: clamp(48px, 10vmin, 72px) clamp(12px, 4vw, 64px) clamp(40px, 7vmin, 56px);
+}
+
+.hud-pedestal-scene {
+  position: relative;
+  width: min(52vw, 420px);
+  pointer-events: none;
+}
+
+.hud-pedestal-glow {
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  width: 70%;
+  height: 28%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(94, 183, 255, 0.35) 0%, transparent 70%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.hud-hologram {
+  position: relative;
+  padding: clamp(14px, 2.5vmin, 24px) clamp(16px, 3vmin, 28px);
+  background: linear-gradient(
+    165deg,
+    rgba(20, 48, 72, 0.42) 0%,
+    rgba(8, 24, 40, 0.28) 100%
+  );
+  border: 2px solid rgba(94, 183, 255, 0.55);
+  box-shadow:
+    0 0 24px rgba(94, 183, 255, 0.25),
+    inset 0 0 30px rgba(94, 240, 255, 0.08);
+  backdrop-filter: blur(2px);
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 92% 100%, 0 100%);
+}
+
+.hud-hologram::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(94, 240, 255, 0.2);
+  pointer-events: none;
+}
+
+.hud-hologram-title {
+  margin: 0 0 0.75rem;
+  text-align: left;
+  font-family: var(--hud-font);
+  font-size: clamp(8px, 1.4vmin, 11px);
+  color: var(--hud-white);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(94, 240, 255, 0.45);
+}
+
+.hud-mastery-list,
+.hud-alignment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(15px, 2.3vmin, 20px);
+}
+
+.hud-mastery-line,
+.hud-alignment-line {
+  padding: 0.2rem 0;
+  text-shadow: 0 0 6px rgba(94, 183, 255, 0.25);
+}
+
+.hud-mastery-topic,
+.hud-alignment-label {
+  color: var(--hud-white);
+}
+
+.hud-mastery-pct,
+.hud-alignment-status {
+  color: var(--hud-blue);
+}
+
+.hud-met {
+  color: var(--hud-green) !important;
+  text-shadow: 0 0 8px rgba(61, 255, 154, 0.45);
+}
+
+.hud-alignment-heading {
+  margin: 0.65rem 0 0.3rem;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(12px, 1.8vmin, 16px);
+  color: var(--hud-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hud-report-standards {
+  margin: 0.65rem 0 0;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(11px, 1.6vmin, 14px);
+  color: var(--hud-cyan);
+  opacity: 0.85;
+}
+
+/* ── Dig / Touch Controls ──────────────────────────────── */
+
+.hud-dig-controls {
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.hud-unlock-toast {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: var(--hud-panel);
+  border: 2px solid var(--hud-cyan);
+  color: var(--hud-cyan);
+  font-family: var(--hud-font-readable);
+  font-size: clamp(16px, 2.8vmin, 24px);
+  text-shadow: 0 0 8px rgba(94, 240, 255, 0.5);
+  pointer-events: none;
+  animation: hud-toast-pulse 1.5s ease-in-out infinite;
+}
+
+.hud-toast-visible {
+  display: block;
+}
+
+@keyframes hud-toast-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.75; }
+}
+
+.hud-dig-bottom {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: clamp(8px, 2vmin, 20px);
+  padding-bottom: clamp(48px, 8vmin, 64px);
+  pointer-events: none;
+}
+
+.hud-joystick-zone {
+  position: relative;
+  width: clamp(100px, 16vmin, 140px);
+  height: clamp(100px, 16vmin, 140px);
+  border-radius: 50%;
+  background: rgba(80, 90, 100, 0.45);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  touch-action: none;
+}
+
+.hud-radar-stub {
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  border: 1px solid rgba(61, 255, 154, 0.4);
+  background: radial-gradient(circle, rgba(61, 255, 154, 0.08) 0%, transparent 70%);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hud-radar-sweep {
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(61, 255, 154, 0.35) 30deg, transparent 60deg);
+  animation: hud-radar-spin 3s linear infinite;
+}
+
+.hud-radar-blip {
+  position: absolute;
+  top: 35%;
+  left: 62%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hud-green);
+  box-shadow: 0 0 6px var(--hud-green);
+}
+
+@keyframes hud-radar-spin {
+  to { transform: rotate(360deg); }
+}
+
+.hud-joystick-knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 36%;
+  height: 36%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  border: 2px solid var(--hud-white);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.hud-dig-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.hud-btn-move {
+  border-color: var(--hud-white);
+  min-width: 5.5rem;
+}
+
+.hud-btn-laser {
+  border-color: var(--hud-orange);
+  color: var(--hud-orange);
+  min-width: 8rem;
+  padding: 0.5rem 0.85rem;
+  font-size: clamp(14px, 2.2vmin, 20px);
+  box-shadow: 0 0 12px rgba(255, 154, 61, 0.35);
+}
+
+.hud-btn-laser:hover,
+.hud-btn-laser:focus-visible {
+  border-color: #ffb366;
+  color: #ffb366;
+}
+
+/* ── Main Hub — floating select over vista ─────────────── */
+
+.hud-main-hub {
+  display: block;
+}
+
+.hud-hub-vista {
+  position: absolute;
+  inset: 0;
+}
+
+.hud-radar-corner {
+  position: absolute;
+  bottom: clamp(48px, 8vmin, 64px);
+  left: clamp(8px, 2vmin, 20px);
+  pointer-events: none;
+}
+
+.hud-radar-hub {
+  width: clamp(80px, 14vmin, 120px);
+  height: clamp(80px, 14vmin, 120px);
+  border-radius: 50%;
+}
+
+.hud-hub-float {
+  position: absolute;
+  top: clamp(52px, 11vmin, 80px);
+  right: clamp(12px, 5vw, 72px);
+  width: min(58vw, 400px);
+  padding: clamp(12px, 2.2vmin, 20px) clamp(14px, 2.5vmin, 24px);
+  background: rgba(0, 0, 0, 0.38);
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+}
+
+.hud-hub-title {
+  margin: 0;
+  font-family: var(--hud-font);
+  font-size: clamp(9px, 1.6vmin, 12px);
+  color: var(--hud-white);
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+.hud-hub-subtitle {
+  margin: 0.5rem 0 0.65rem;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(14px, 2.2vmin, 18px);
+  color: var(--hud-white);
+}
+
+.hud-module-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.hud-module-row {
+  display: block;
+  width: 100%;
+  padding: 0.2rem 0;
+  font-family: var(--hud-font-readable);
+  font-size: clamp(16px, 2.5vmin, 22px);
+  background: transparent;
+  border: none;
+  color: var(--hud-green);
+  cursor: pointer;
+  text-align: left;
+  text-shadow: 0 0 10px rgba(61, 255, 154, 0.45);
+  letter-spacing: 0.04em;
+}
+
+.hud-module-playable:hover,
+.hud-module-playable:focus-visible {
+  color: var(--hud-cyan);
+  text-shadow: 0 0 12px rgba(94, 240, 255, 0.55);
+  outline: none;
+}
+
+.hud-module-locked {
+  color: rgba(255, 255, 255, 0.32);
+  text-shadow: none;
+  cursor: not-allowed;
+}
+
+/* ── Landscape phone tweaks ────────────────────────────── */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .hud-lesson {
+    padding-top: 36px;
+    padding-bottom: 32px;
+  }
+
+  .hud-lesson-scene {
+    width: min(68vw, 480px);
+    margin-left: 8px;
+  }
+
+  .hud-chalkboard {
+    min-height: 72px;
+    padding: 10px;
+  }
+
+  .hud-hub-float {
+    top: 40px;
+    right: 8px;
+    width: min(52vw, 340px);
+  }
+
+  .hud-pedestal-scene {
+    width: min(48vw, 360px);
+  }
+
+  .hud-dig-bottom {
+    padding-bottom: 40px;
+  }
+
+  .hud-locale-switcher {
+    bottom: 4px;
+  }
+
+  .hud-corner-exit {
+    bottom: 32px;
+  }
+}
+
+/* Mobile touch controls — HUD builder may restyle */
+.touch-joystick {
+  position: fixed;
+  left: max(1rem, env(safe-area-inset-left));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(20, 30, 48, 0.55);
+  border: 2px solid rgba(94, 183, 255, 0.45);
+}
+
+.touch-joystick__knob {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(61, 255, 154, 0.75);
+  border: 2px solid var(--hud-white);
+  transform: translate(-50%, -50%);
+}
+
+.touch-fire {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
+  padding: 0.85rem 1rem;
+  font-family: inherit;
+  font-size: 0.55rem;
+  letter-spacing: 0.04em;
+  color: #1a1010;
+  background: linear-gradient(180deg, #ffb347 0%, #ff7a18 100%);
+  border: 2px solid #fff3d0;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 #8a3a08;
+  cursor: pointer;
+}
+
+.touch-fire:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #8a3a08;
+}
+
+@media (min-width: 900px) and (pointer: fine) {
+  .touch-joystick,
+  .touch-fire {
+    opacity: 0.35;
+  }
+}

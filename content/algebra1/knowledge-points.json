@@ -1,0 +1,582 @@
+{
+  "knowledgePoints": [
+    {
+      "id": "kp.alg1.variable.identify",
+      "title": {
+        "en": "Identify variables and constants",
+        "es": "Identificar variables y constantes",
+        "pl": "Identyfikacja zmiennych i stałych"
+      },
+      "prerequisites": [],
+      "successCriteria": {
+        "en": "Student correctly distinguishes variables from constants in algebraic expressions.",
+        "es": "El estudiante distingue correctamente variables de constantes en expresiones algebraicas.",
+        "pl": "Uczeń poprawnie rozróżnia zmienne od stałych w wyrażeniach algebraicznych."
+      },
+      "misconceptions": {
+        "en": [
+          "Thinking a letter always means the same fixed number",
+          "Confusing a coefficient with a variable"
+        ],
+        "es": [
+          "Pensar que una letra siempre significa el mismo número fijo",
+          "Confundir un coeficiente con una variable"
+        ],
+        "pl": [
+          "Myślenie, że litera zawsze oznacza tę samą ustaloną liczbę",
+          "Mylenie współczynnika ze zmienną"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-SSE.A.1a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.expression.parts",
+      "title": {
+        "en": "Name parts of an expression",
+        "es": "Nombrar partes de una expresión",
+        "pl": "Nazwanie części wyrażenia"
+      },
+      "prerequisites": [
+        "kp.alg1.variable.identify"
+      ],
+      "successCriteria": {
+        "en": "Student identifies terms, coefficients, constants, and factors in an expression.",
+        "es": "El estudiante identifica términos, coeficientes, constantes y factores en una expresión.",
+        "pl": "Uczeń identyfikuje wyrazy, współczynniki, stałe i czynniki w wyrażeniu."
+      },
+      "misconceptions": {
+        "en": [
+          "Calling the entire expression a “term”",
+          "Treating the constant as a coefficient of a missing variable"
+        ],
+        "es": [
+          "Llamar “término” a toda la expresión",
+          "Tratar la constante como coeficiente de una variable ausente"
+        ],
+        "pl": [
+          "Nazywanie całego wyrażenia „wyrazem”",
+          "Traktowanie stałej jako współczynnika brakującej zmiennej"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.expression.translate",
+      "title": {
+        "en": "Translate between words and expressions",
+        "es": "Traducir entre palabras y expresiones",
+        "pl": "Tłumaczenie między słowami a wyrażeniami"
+      },
+      "prerequisites": [
+        "kp.alg1.expression.parts"
+      ],
+      "successCriteria": {
+        "en": "Student writes algebraic expressions from verbal phrases and reads expressions in words.",
+        "es": "El estudiante escribe expresiones algebraicas a partir de frases verbales y lee expresiones en palabras.",
+        "pl": "Uczeń zapisuje wyrażenia algebraiczne z fraz słownych i odczytuje wyrażenia słownie."
+      },
+      "misconceptions": {
+        "en": [
+          "Reversing subtraction order (“less than”)",
+          "Treating “times the sum” as multiplying only the first number"
+        ],
+        "es": [
+          "Invertir el orden en la resta (“menos que”)",
+          "Tratar “veces la suma” como multiplicar solo el primer número"
+        ],
+        "pl": [
+          "Odwracanie kolejności odejmowania („mniej niż”)",
+          "Traktowanie „razy suma” jako mnożenia tylko pierwszej liczby"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.order.ops",
+      "title": {
+        "en": "Apply order of operations with variables",
+        "es": "Aplicar el orden de operaciones con variables",
+        "pl": "Stosowanie kolejności działań ze zmiennymi"
+      },
+      "prerequisites": [
+        "kp.alg1.expression.parts"
+      ],
+      "successCriteria": {
+        "en": "Student applies grouping, exponents, multiply/divide, then add/subtract in the correct order.",
+        "es": "El estudiante aplica agrupación, exponentes, multiplicar/dividir y luego sumar/restar en el orden correcto.",
+        "pl": "Uczeń stosuje grupowanie, potęgi, mnożenie/dzielenie, a następnie dodawanie/odejmowanie we właściwej kolejności."
+      },
+      "misconceptions": {
+        "en": [
+          "Working strictly left-to-right ignoring exponents/grouping",
+          "Doing addition before multiplication"
+        ],
+        "es": [
+          "Trabajar estrictamente de izquierda a derecha ignorando exponentes/agrupación",
+          "Sumar antes de multiplicar"
+        ],
+        "pl": [
+          "Praca ściśle od lewej do prawej z pominięciem potęg/grupowania",
+          "Dodawanie przed mnożeniem"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "6.EE.A.2c",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "6.EE.2c"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.eval.substitute",
+      "title": {
+        "en": "Substitute and evaluate expressions",
+        "es": "Sustituir y evaluar expresiones",
+        "pl": "Podstawianie i obliczanie wyrażeń"
+      },
+      "prerequisites": [
+        "kp.alg1.order.ops",
+        "kp.alg1.variable.identify"
+      ],
+      "encompassing": [
+        "kp.alg1.order.ops"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes a given value for a variable and evaluates using order of operations.",
+        "es": "El estudiante sustituye un valor dado por una variable y evalúa usando el orden de operaciones.",
+        "pl": "Uczeń podstawia daną wartość za zmienną i oblicza z użyciem kolejności działań."
+      },
+      "misconceptions": {
+        "en": [
+          "Substituting but not using parentheses for negatives",
+          "Evaluating only part of a multi-term expression"
+        ],
+        "es": [
+          "Sustituir sin usar paréntesis para negativos",
+          "Evaluar solo parte de una expresión de varios términos"
+        ],
+        "pl": [
+          "Podstawianie bez nawiasów przy liczbach ujemnych",
+          "Obliczanie tylko części wyrażenia wielowyrazowego"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.eval.multi.var",
+      "title": {
+        "en": "Evaluate multi-variable expressions",
+        "es": "Evaluar expresiones con varias variables",
+        "pl": "Obliczanie wyrażeń wielu zmiennych"
+      },
+      "prerequisites": [
+        "kp.alg1.eval.substitute"
+      ],
+      "encompassing": [
+        "kp.alg1.eval.substitute"
+      ],
+      "successCriteria": {
+        "en": "Student correctly substitutes values for two or more variables and evaluates.",
+        "es": "El estudiante sustituye correctamente valores para dos o más variables y evalúa.",
+        "pl": "Uczeń poprawnie podstawia wartości za dwie lub więcej zmiennych i oblicza."
+      },
+      "misconceptions": {
+        "en": [
+          "Assigning values to the wrong variables",
+          "Combining unlike variable symbols before substituting"
+        ],
+        "es": [
+          "Asignar valores a las variables incorrectas",
+          "Combinar símbolos de variables distintos antes de sustituir"
+        ],
+        "pl": [
+          "Przypisywanie wartości niewłaściwym zmiennym",
+          "Łączenie różnych symboli zmiennych przed podstawieniem"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.equation.meaning",
+      "title": {
+        "en": "Understand equality and true equations",
+        "es": "Comprender la igualdad y ecuaciones verdaderas",
+        "pl": "Rozumienie równości i prawdziwych równań"
+      },
+      "prerequisites": [
+        "kp.alg1.expression.translate",
+        "kp.alg1.eval.substitute"
+      ],
+      "successCriteria": {
+        "en": "Student explains that an equation asserts two expressions are equal and checks truth by substitution.",
+        "es": "El estudiante explica que una ecuación afirma que dos expresiones son iguales y verifica la verdad por sustitución.",
+        "pl": "Uczeń wyjaśnia, że równanie stwierdza równość dwóch wyrażeń i sprawdza prawdziwość przez podstawienie."
+      },
+      "misconceptions": {
+        "en": [
+          "Believing the equals sign means “and then the answer is”",
+          "Thinking any two expressions written with = are automatically true"
+        ],
+        "es": [
+          "Creer que el signo igual significa “y luego la respuesta es”",
+          "Pensar que cualesquiera dos expresiones con = son automáticamente verdaderas"
+        ],
+        "pl": [
+          "Traktowanie znaku równości jako „a potem wynik to”",
+          "Myślenie, że dowolne dwa wyrażenia ze znakiem = są automatycznie prawdziwe"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.equation.vs.expression",
+      "title": {
+        "en": "Distinguish equations from expressions",
+        "es": "Distinguir ecuaciones de expresiones",
+        "pl": "Rozróżnianie równań i wyrażeń"
+      },
+      "prerequisites": [
+        "kp.alg1.equation.meaning"
+      ],
+      "successCriteria": {
+        "en": "Student classifies mathematical phrases as expressions or equations and explains why.",
+        "es": "El estudiante clasifica frases matemáticas como expresiones o ecuaciones y explica por qué.",
+        "pl": "Uczeń klasyfikuje zapisy matematyczne jako wyrażenia lub równania i wyjaśnia dlaczego."
+      },
+      "misconceptions": {
+        "en": [
+          "Calling any expression with a variable an equation",
+          "Thinking solving means simplifying an expression"
+        ],
+        "es": [
+          "Llamar ecuación a cualquier expresión con variable",
+          "Pensar que resolver significa simplificar una expresión"
+        ],
+        "pl": [
+          "Nazywanie równaniem każdego wyrażenia ze zmienną",
+          "Myślenie, że rozwiązywanie oznacza upraszczanie wyrażenia"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.solve.one.step",
+      "title": {
+        "en": "Solve one-step linear equations",
+        "es": "Resolver ecuaciones lineales de un paso",
+        "pl": "Rozwiązywanie jednokrokowych równań liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.equation.vs.expression",
+        "kp.alg1.eval.substitute"
+      ],
+      "successCriteria": {
+        "en": "Student isolates the variable using a single inverse operation and checks the solution.",
+        "es": "El estudiante aísla la variable con una sola operación inversa y verifica la solución.",
+        "pl": "Uczeń izoluje zmienną jedną operacją odwrotną i sprawdza rozwiązanie."
+      },
+      "misconceptions": {
+        "en": [
+          "Adding when division is needed (or vice versa)",
+          "Performing the inverse on only one side"
+        ],
+        "es": [
+          "Sumar cuando se necesita dividir (o viceversa)",
+          "Aplicar la inversa solo a un lado"
+        ],
+        "pl": [
+          "Dodawanie gdy potrzebne jest dzielenie (lub odwrotnie)",
+          "Wykonywanie operacji odwrotnej tylko po jednej stronie"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.solve.two.step",
+      "title": {
+        "en": "Solve two-step linear equations",
+        "es": "Resolver ecuaciones lineales de dos pasos",
+        "pl": "Rozwiązywanie dwukrokowych równań liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.solve.one.step"
+      ],
+      "encompassing": [
+        "kp.alg1.solve.one.step"
+      ],
+      "successCriteria": {
+        "en": "Student solves ax+b=c form equations with two inverse operations and verifies.",
+        "es": "El estudiante resuelve ecuaciones de la forma ax+b=c con dos operaciones inversas y verifica.",
+        "pl": "Uczeń rozwiązuje równania postaci ax+b=c dwoma operacjami odwrotnymi i weryfikuje."
+      },
+      "misconceptions": {
+        "en": [
+          "Dividing before undoing addition/subtraction",
+          "Changing the sign incorrectly when moving terms"
+        ],
+        "es": [
+          "Dividir antes de deshacer suma/resta",
+          "Cambiar el signo incorrectamente al mover términos"
+        ],
+        "pl": [
+          "Dzielenie przed cofnięciem dodawania/odejmowania",
+          "Błędna zmiana znaku przy przenoszeniu wyrazów"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

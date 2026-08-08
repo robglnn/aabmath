@@ -1,0 +1,1218 @@
+{
+  "id": "alg1-l01",
+  "courseId": "algebra1",
+  "order": 1,
+  "title": {
+    "en": "Variables, Expressions, and the Language of Algebra",
+    "es": "Variables, expresiones y el lenguaje del álgebra",
+    "pl": "Zmienne, wyrażenia i język algebry"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.variable.identify",
+    "kp.alg1.expression.parts",
+    "kp.alg1.expression.translate"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_1",
+    "unlockOnMastery": [
+      "lesson_board_2"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will identify variables and constants, name the parts of an expression, and translate between algebraic symbols and everyday language.",
+        "es": "Identificarás variables y constantes, nombrarás las partes de una expresión y traducirás entre símbolos algebraicos y el lenguaje cotidiano.",
+        "pl": "Będziesz identyfikować zmienne i stałe, nazywać części wyrażenia oraz tłumaczyć między symbolami algebraicznymi a językiem codziennym."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: the language of algebra",
+        "es": "Enseñar: el lenguaje del álgebra",
+        "pl": "Nauczanie: język algebry"
+      },
+      "body": {
+        "en": "A variable (like x) stands for a number that can change. A constant is a fixed value. Expressions combine numbers and variables with operations. Terms are pieces added or subtracted; a coefficient multiplies a variable.",
+        "es": "Una variable (como x) representa un número que puede cambiar. Una constante es un valor fijo. Las expresiones combinan números y variables con operaciones. Los términos se suman o restan; un coeficiente multiplica una variable.",
+        "pl": "Zmienna (np. x) oznacza liczbę, która może się zmieniać. Stała to ustalona wartość. Wyrażenia łączą liczby i zmienne działaniami. Wyrazy dodaje się lub odejmuje; współczynnik mnoży zmienną."
+      },
+      "bodyMath": [
+        "7x + 3",
+        "2n + 5",
+        "3(n + 4)"
+      ],
+      "itemIds": [
+        "alg1-l01-t01",
+        "alg1-l01-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Work these with support. Watch for “less than” word order and coefficients of −x.",
+        "es": "Resuelve estos con apoyo. Cuida el orden en “menos que” y los coeficientes de −x.",
+        "pl": "Rozwiąż z pomocą. Uważaj na kolejność w „mniej niż” oraz współczynniki −x."
+      },
+      "itemIds": [
+        "alg1-l01-g01",
+        "alg1-l01-g02",
+        "alg1-l01-g03",
+        "alg1-l01-g04",
+        "alg1-l01-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l01-i01",
+        "alg1-l01-i02",
+        "alg1-l01-i03",
+        "alg1-l01-i04",
+        "alg1-l01-i05",
+        "alg1-l01-i06",
+        "alg1-l01-i07",
+        "alg1-l01-i08",
+        "alg1-l01-i09"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l01-t01",
+      "knowledgePointIds": [
+        "kp.alg1.variable.identify"
+      ],
+      "difficulty": 0.2,
+      "irt": {
+        "a": 1,
+        "b": -1.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In the expression 7x + 3, which symbol is a variable?",
+        "es": "En la expresión 7x + 3, ¿qué símbolo es una variable?",
+        "pl": "W wyrażeniu 7x + 3, który symbol jest zmienną?"
+      },
+      "feedbackCorrect": {
+        "en": "Yes — x stands for an unknown or changing value.",
+        "es": "Sí — x representa un valor desconocido o variable.",
+        "pl": "Tak — x oznacza nieznaną lub zmieniającą się wartość."
+      },
+      "feedbackIncorrect": {
+        "en": "A variable is a letter that represents a value. Here that letter is x.",
+        "es": "Una variable es una letra que representa un valor. Aquí esa letra es x.",
+        "pl": "Zmienna to litera reprezentująca wartość. Tutaj tą literą jest x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "7x + 3",
+      "choices": {
+        "en": [
+          "7",
+          "x",
+          "3",
+          "+"
+        ],
+        "es": [
+          "7",
+          "x",
+          "3",
+          "+"
+        ],
+        "pl": [
+          "7",
+          "x",
+          "3",
+          "+"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "confuse_coefficient",
+        "confuse_constant"
+      ]
+    },
+    {
+      "id": "alg1-l01-t02",
+      "knowledgePointIds": [
+        "kp.alg1.expression.parts"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.1,
+        "b": -0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the coefficient of y in 5y − 8?",
+        "es": "¿Cuál es el coeficiente de y en 5y − 8?",
+        "pl": "Jaki jest współczynnik y w wyrażeniu 5y − 8?"
+      },
+      "feedbackCorrect": {
+        "en": "The coefficient is the numerical factor multiplying the variable: 5.",
+        "es": "El coeficiente es el factor numérico que multiplica la variable: 5.",
+        "pl": "Współczynnik to czynnik liczbowy mnożący zmienną: 5."
+      },
+      "feedbackIncorrect": {
+        "en": "The coefficient of y is the number multiplied by y, which is 5.",
+        "es": "El coeficiente de y es el número que multiplica a y, que es 5.",
+        "pl": "Współczynnik y to liczba mnożona przez y, czyli 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        }
+      ],
+      "promptMath": "5y - 8",
+      "choices": {
+        "en": [
+          "5",
+          "y",
+          "−8",
+          "5y"
+        ],
+        "es": [
+          "5",
+          "y",
+          "−8",
+          "5y"
+        ],
+        "pl": [
+          "5",
+          "y",
+          "−8",
+          "5y"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "confuse_term_with_coeff",
+        "confuse_constant"
+      ]
+    },
+    {
+      "id": "alg1-l01-g01",
+      "knowledgePointIds": [
+        "kp.alg1.variable.identify"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1,
+        "b": -0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which of the following is a constant in 4a + b − 9?",
+        "es": "¿Cuál de los siguientes es una constante en 4a + b − 9?",
+        "pl": "Która z poniższych jest stałą w 4a + b − 9?"
+      },
+      "feedbackCorrect": {
+        "en": "−9 does not change with the variables; it is the constant term.",
+        "es": "−9 no cambia con las variables; es el término constante.",
+        "pl": "−9 nie zmienia się wraz ze zmiennymi; to wyraz stały."
+      },
+      "feedbackIncorrect": {
+        "en": "Constants are fixed numbers not multiplied by a variable. Here the constant term is −9.",
+        "es": "Las constantes son números fijos no multiplicados por una variable. Aquí el término constante es −9.",
+        "pl": "Stałe to ustalone liczby niepomnożone przez zmienną. Tutaj wyraz stały to −9."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "4a + b - 9",
+      "choices": {
+        "en": [
+          "4a",
+          "b",
+          "−9",
+          "4"
+        ],
+        "es": [
+          "4a",
+          "b",
+          "−9",
+          "4"
+        ],
+        "pl": [
+          "4a",
+          "b",
+          "−9",
+          "4"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "confuse_coeff_as_constant",
+        "miss_sign"
+      ]
+    },
+    {
+      "id": "alg1-l01-g02",
+      "knowledgePointIds": [
+        "kp.alg1.expression.parts"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.1,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "How many terms are in 3x + 2y − 7?",
+        "es": "¿Cuántos términos hay en 3x + 2y − 7?",
+        "pl": "Ile wyrazów ma wyrażenie 3x + 2y − 7?"
+      },
+      "feedbackCorrect": {
+        "en": "The terms are 3x, 2y, and −7 — three terms.",
+        "es": "Los términos son 3x, 2y y −7 — tres términos.",
+        "pl": "Wyrazy to 3x, 2y oraz −7 — trzy wyrazy."
+      },
+      "feedbackIncorrect": {
+        "en": "Terms are parts separated by + or − (keeping the sign). There are three: 3x, 2y, −7.",
+        "es": "Los términos se separan por + o − (conservando el signo). Hay tres: 3x, 2y, −7.",
+        "pl": "Wyrazy rozdzielają + lub − (ze znakiem). Są trzy: 3x, 2y, −7."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        }
+      ],
+      "promptMath": "3x + 2y - 7",
+      "choices": {
+        "en": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "es": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pl": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "count_factors_as_terms",
+        "ignore_constant_term"
+      ]
+    },
+    {
+      "id": "alg1-l01-g03",
+      "knowledgePointIds": [
+        "kp.alg1.expression.translate"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.2,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which expression means “5 more than twice a number n”?",
+        "es": "¿Qué expresión significa “5 más que el doble de un número n”?",
+        "pl": "Które wyrażenie oznacza „5 więcej niż podwojona liczba n”?"
+      },
+      "feedbackCorrect": {
+        "en": "Twice n is 2n; five more than that is 2n + 5.",
+        "es": "El doble de n es 2n; cinco más que eso es 2n + 5.",
+        "pl": "Podwojone n to 2n; pięć więcej to 2n + 5."
+      },
+      "feedbackIncorrect": {
+        "en": "“Twice n” → 2n. “5 more than” means add 5 → 2n + 5.",
+        "es": "“El doble de n” → 2n. “5 más que” significa sumar 5 → 2n + 5.",
+        "pl": "„Podwojone n” → 2n. „5 więcej” oznacza dodać 5 → 2n + 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "5n + 2",
+          "2n + 5",
+          "2(n + 5)",
+          "n + 5 · 2"
+        ],
+        "es": [
+          "5n + 2",
+          "2n + 5",
+          "2(n + 5)",
+          "n + 5 · 2"
+        ],
+        "pl": [
+          "5n + 2",
+          "2n + 5",
+          "2(n + 5)",
+          "n + 5 · 2"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "2n+5",
+      "diagnosticTags": [
+        "reverse_operations",
+        "misread_twice",
+        "distribute_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l01-g04",
+      "knowledgePointIds": [
+        "kp.alg1.expression.translate"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Translate: “7 less than a number x.”",
+        "es": "Traduce: “7 menos que un número x.”",
+        "pl": "Przetłumacz: „7 mniej niż liczba x.”"
+      },
+      "feedbackCorrect": {
+        "en": "“7 less than x” means start with x and subtract 7: x − 7.",
+        "es": "“7 menos que x” significa empezar con x y restar 7: x − 7.",
+        "pl": "„7 mniej niż x” oznacza zacząć od x i odjąć 7: x − 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Watch the order: “A less than B” is B − A, so x − 7.",
+        "es": "Cuidado con el orden: “A menos que B” es B − A, así que x − 7.",
+        "pl": "Uwaga na kolejność: „A mniej niż B” to B − A, więc x − 7."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "7 − x",
+          "x − 7",
+          "7x − 1",
+          "x + 7"
+        ],
+        "es": [
+          "7 − x",
+          "x − 7",
+          "7x − 1",
+          "x + 7"
+        ],
+        "pl": [
+          "7 − x",
+          "x − 7",
+          "7x − 1",
+          "x + 7"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "x-7",
+      "diagnosticTags": [
+        "reverse_subtraction"
+      ]
+    },
+    {
+      "id": "alg1-l01-g05",
+      "knowledgePointIds": [
+        "kp.alg1.expression.parts",
+        "kp.alg1.variable.identify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.1,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In −3m + 12, what is the constant term?",
+        "es": "En −3m + 12, ¿cuál es el término constante?",
+        "pl": "W −3m + 12, jaki jest wyraz stały?"
+      },
+      "feedbackCorrect": {
+        "en": "12 is not attached to a variable, so it is the constant term.",
+        "es": "12 no está unido a una variable, así que es el término constante.",
+        "pl": "12 nie jest powiązane ze zmienną, więc to wyraz stały."
+      },
+      "feedbackIncorrect": {
+        "en": "The constant term has no variable factor. Here it is 12. (−3 is the coefficient of m.)",
+        "es": "El término constante no tiene factor variable. Aquí es 12. (−3 es el coeficiente de m.)",
+        "pl": "Wyraz stały nie ma czynnika zmiennej. Tutaj to 12. (−3 to współczynnik m.)"
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        }
+      ],
+      "promptMath": "-3m + 12",
+      "choices": {
+        "en": [
+          "−3",
+          "m",
+          "12",
+          "−3m"
+        ],
+        "es": [
+          "−3",
+          "m",
+          "12",
+          "−3m"
+        ],
+        "pl": [
+          "−3",
+          "m",
+          "12",
+          "−3m"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "confuse_coeff_as_constant"
+      ]
+    },
+    {
+      "id": "alg1-l01-i01",
+      "knowledgePointIds": [
+        "kp.alg1.variable.identify"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1,
+        "b": -0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which is a variable in 2πr?",
+        "es": "¿Cuál es una variable en 2πr?",
+        "pl": "Która jest zmienną w 2πr?"
+      },
+      "feedbackCorrect": {
+        "en": "r is the variable; 2 and π are treated as constants in this context.",
+        "es": "r es la variable; 2 y π se tratan como constantes en este contexto.",
+        "pl": "r jest zmienną; 2 i π traktujemy tu jako stałe."
+      },
+      "feedbackIncorrect": {
+        "en": "In 2πr, r is the changing quantity (variable). π is a constant.",
+        "es": "En 2πr, r es la cantidad que cambia (variable). π es una constante.",
+        "pl": "W 2πr zmienną jest r. π jest stałą."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "2\\pi r",
+      "choices": {
+        "en": [
+          "2",
+          "π",
+          "r",
+          "2π"
+        ],
+        "es": [
+          "2",
+          "π",
+          "r",
+          "2π"
+        ],
+        "pl": [
+          "2",
+          "π",
+          "r",
+          "2π"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "treat_pi_as_variable"
+      ]
+    },
+    {
+      "id": "alg1-l01-i02",
+      "knowledgePointIds": [
+        "kp.alg1.expression.parts"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.1,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the coefficient of x in −x + 4?",
+        "es": "¿Cuál es el coeficiente de x en −x + 4?",
+        "pl": "Jaki jest współczynnik x w −x + 4?"
+      },
+      "feedbackCorrect": {
+        "en": "−x means −1 · x, so the coefficient is −1.",
+        "es": "−x significa −1 · x, así que el coeficiente es −1.",
+        "pl": "−x oznacza −1 · x, więc współczynnik to −1."
+      },
+      "feedbackIncorrect": {
+        "en": "When a variable appears alone with a minus, the coefficient is −1.",
+        "es": "Cuando una variable aparece sola con un menos, el coeficiente es −1.",
+        "pl": "Gdy zmienna występuje sama ze znakiem minus, współczynnik to −1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        }
+      ],
+      "promptMath": "-x + 4",
+      "choices": {
+        "en": [
+          "−1",
+          "1",
+          "4",
+          "0"
+        ],
+        "es": [
+          "−1",
+          "1",
+          "4",
+          "0"
+        ],
+        "pl": [
+          "−1",
+          "1",
+          "4",
+          "0"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "miss_implied_coeff"
+      ]
+    },
+    {
+      "id": "alg1-l01-i03",
+      "knowledgePointIds": [
+        "kp.alg1.expression.translate"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "“The product of 4 and a number k” is:",
+        "es": "“El producto de 4 y un número k” es:",
+        "pl": "„Iloczyn 4 i liczby k” to:"
+      },
+      "feedbackCorrect": {
+        "en": "Product means multiply: 4k.",
+        "es": "Producto significa multiplicar: 4k.",
+        "pl": "Iloczyn oznacza mnożenie: 4k."
+      },
+      "feedbackIncorrect": {
+        "en": "“Product” → multiplication, so 4k (or 4 · k).",
+        "es": "“Producto” → multiplicación, así que 4k.",
+        "pl": "„Iloczyn” → mnożenie, więc 4k."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "4 + k",
+          "4 − k",
+          "4k",
+          "k/4"
+        ],
+        "es": [
+          "4 + k",
+          "4 − k",
+          "4k",
+          "k/4"
+        ],
+        "pl": [
+          "4 + k",
+          "4 − k",
+          "4k",
+          "k/4"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "4k",
+      "diagnosticTags": [
+        "confuse_product_sum"
+      ]
+    },
+    {
+      "id": "alg1-l01-i04",
+      "knowledgePointIds": [
+        "kp.alg1.expression.translate"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which matches “the quotient of a number m and 3”?",
+        "es": "¿Cuál corresponde a “el cociente de un número m y 3”?",
+        "pl": "Które odpowiada „ilorazowi liczby m i 3”?"
+      },
+      "feedbackCorrect": {
+        "en": "Quotient of m and 3 is m ÷ 3 = m/3.",
+        "es": "El cociente de m y 3 es m ÷ 3 = m/3.",
+        "pl": "Iloraz m i 3 to m ÷ 3 = m/3."
+      },
+      "feedbackIncorrect": {
+        "en": "Order matters: “quotient of A and B” is A ÷ B → m/3.",
+        "es": "El orden importa: “cociente de A y B” es A ÷ B → m/3.",
+        "pl": "Kolejność ma znaczenie: „iloraz A i B” to A ÷ B → m/3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "3/m",
+          "m/3",
+          "m − 3",
+          "3m"
+        ],
+        "es": [
+          "3/m",
+          "m/3",
+          "m − 3",
+          "3m"
+        ],
+        "pl": [
+          "3/m",
+          "m/3",
+          "m − 3",
+          "3m"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "\\frac{m}{3}",
+      "diagnosticTags": [
+        "reverse_division"
+      ]
+    },
+    {
+      "id": "alg1-l01-i05",
+      "knowledgePointIds": [
+        "kp.alg1.expression.parts"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Identify the factors of the term 6xy.",
+        "es": "Identifica los factores del término 6xy.",
+        "pl": "Wskaż czynniki wyrazu 6xy."
+      },
+      "feedbackCorrect": {
+        "en": "6xy is the product of factors 6, x, and y.",
+        "es": "6xy es el producto de los factores 6, x e y.",
+        "pl": "6xy to iloczyn czynników 6, x i y."
+      },
+      "feedbackIncorrect": {
+        "en": "A term’s factors are the pieces being multiplied. For 6xy they are 6, x, and y.",
+        "es": "Los factores de un término son las piezas que se multiplican. Para 6xy son 6, x e y.",
+        "pl": "Czynniki wyrazu to mnożone części. Dla 6xy to 6, x i y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        }
+      ],
+      "promptMath": "6xy",
+      "choices": {
+        "en": [
+          "6, x, and y",
+          "6 and xy only",
+          "6xy as one factor only",
+          "x and y only"
+        ],
+        "es": [
+          "6, x e y",
+          "6 y xy solamente",
+          "6xy como un solo factor",
+          "solo x e y"
+        ],
+        "pl": [
+          "6, x i y",
+          "tylko 6 i xy",
+          "tylko 6xy jako jeden czynnik",
+          "tylko x i y"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "miss_numeric_factor"
+      ]
+    },
+    {
+      "id": "alg1-l01-i06",
+      "knowledgePointIds": [
+        "kp.alg1.expression.translate"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.3,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "“3 times the sum of n and 4” is:",
+        "es": "“3 veces la suma de n y 4” es:",
+        "pl": "„3 razy suma n i 4” to:"
+      },
+      "feedbackCorrect": {
+        "en": "Sum first: (n + 4), then multiply by 3 → 3(n + 4).",
+        "es": "Primero la suma: (n + 4), luego multiplicar por 3 → 3(n + 4).",
+        "pl": "Najpierw suma: (n + 4), potem mnożenie przez 3 → 3(n + 4)."
+      },
+      "feedbackIncorrect": {
+        "en": "“Times the sum” requires parentheses: 3(n + 4), not 3n + 4.",
+        "es": "“Veces la suma” requiere paréntesis: 3(n + 4), no 3n + 4.",
+        "pl": "„Razy suma” wymaga nawiasów: 3(n + 4), nie 3n + 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "3n + 4",
+          "3(n + 4)",
+          "n + 4 · 3",
+          "3n + 12"
+        ],
+        "es": [
+          "3n + 4",
+          "3(n + 4)",
+          "n + 4 · 3",
+          "3n + 12"
+        ],
+        "pl": [
+          "3n + 4",
+          "3(n + 4)",
+          "n + 4 · 3",
+          "3n + 12"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "3(n+4)",
+      "diagnosticTags": [
+        "miss_parentheses",
+        "partial_distribute"
+      ]
+    },
+    {
+      "id": "alg1-l01-i07",
+      "knowledgePointIds": [
+        "kp.alg1.variable.identify",
+        "kp.alg1.expression.parts"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In 8 + 2t, which is a term that contains a variable?",
+        "es": "En 8 + 2t, ¿cuál es un término que contiene una variable?",
+        "pl": "W 8 + 2t, który wyraz zawiera zmienną?"
+      },
+      "feedbackCorrect": {
+        "en": "2t is a variable term; 8 is the constant term.",
+        "es": "2t es un término con variable; 8 es el término constante.",
+        "pl": "2t to wyraz ze zmienną; 8 to wyraz stały."
+      },
+      "feedbackIncorrect": {
+        "en": "The variable term includes the variable: 2t. 8 is constant.",
+        "es": "El término con variable incluye la variable: 2t. 8 es constante.",
+        "pl": "Wyraz ze zmienną zawiera zmienną: 2t. 8 jest stałą."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "8 + 2t",
+      "choices": {
+        "en": [
+          "8",
+          "2t",
+          "2",
+          "+"
+        ],
+        "es": [
+          "8",
+          "2t",
+          "2",
+          "+"
+        ],
+        "pl": [
+          "8",
+          "2t",
+          "2",
+          "+"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "confuse_coeff_with_term"
+      ]
+    },
+    {
+      "id": "alg1-l01-i08",
+      "knowledgePointIds": [
+        "kp.alg1.expression.translate"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.35,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Write in words: 2x − 9",
+        "es": "Escribe en palabras: 2x − 9",
+        "pl": "Zapisz słownie: 2x − 9"
+      },
+      "feedbackCorrect": {
+        "en": "2x − 9 is “9 less than twice x.”",
+        "es": "2x − 9 es “9 menos que el doble de x.”",
+        "pl": "2x − 9 to „9 mniej niż podwojone x.”"
+      },
+      "feedbackIncorrect": {
+        "en": "Subtracting 9 from 2x means “9 less than twice x.”",
+        "es": "Restar 9 de 2x significa “9 menos que el doble de x.”",
+        "pl": "Odjęcie 9 od 2x oznacza „9 mniej niż podwojone x.”"
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2a",
+            "6.EE.B.6"
+          ]
+        }
+      ],
+      "promptMath": "2x - 9",
+      "choices": {
+        "en": [
+          "9 less than twice a number x",
+          "twice a number x less than 9",
+          "2 less than 9 times x",
+          "the sum of 2x and 9"
+        ],
+        "es": [
+          "9 menos que el doble de un número x",
+          "el doble de un número x menos que 9",
+          "2 menos que 9 veces x",
+          "la suma de 2x y 9"
+        ],
+        "pl": [
+          "9 mniej niż podwojona liczba x",
+          "podwojona liczba x mniej niż 9",
+          "2 mniej niż 9 razy x",
+          "suma 2x i 9"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "reverse_verbal_order"
+      ]
+    },
+    {
+      "id": "alg1-l01-i09",
+      "knowledgePointIds": [
+        "kp.alg1.expression.parts"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.1,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "How many terms does 4(a + b) have before distributing?",
+        "es": "¿Cuántos términos tiene 4(a + b) antes de distribuir?",
+        "pl": "Ile wyrazów ma 4(a + b) przed rozdzielnością?"
+      },
+      "feedbackCorrect": {
+        "en": "As written, 4(a + b) is a single term (a product).",
+        "es": "Tal como está escrito, 4(a + b) es un solo término (un producto).",
+        "pl": "W tej postaci 4(a + b) to jeden wyraz (iloczyn)."
+      },
+      "feedbackIncorrect": {
+        "en": "Grouped as a product, the whole expression is one term until you distribute.",
+        "es": "Agrupado como producto, toda la expresión es un término hasta distribuir.",
+        "pl": "Jako iloczyn całe wyrażenie to jeden wyraz, dopóki nie rozdzielisz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1a",
+            "6.EE.A.2b"
+          ]
+        }
+      ],
+      "promptMath": "4(a + b)",
+      "choices": {
+        "en": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "es": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pl": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "count_inside_parens_as_terms"
+      ]
+    }
+  ]
+}

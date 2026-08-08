@@ -1,0 +1,1308 @@
+{
+  "id": "alg1-l03",
+  "courseId": "algebra1",
+  "order": 3,
+  "title": {
+    "en": "From Expressions to Equations — Equality & Solving Simple Linear Equations",
+    "es": "De expresiones a ecuaciones — igualdad y resolución de ecuaciones lineales simples",
+    "pl": "Od wyrażeń do równań — równość i rozwiązywanie prostych równań liniowych"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.equation.meaning",
+    "kp.alg1.equation.vs.expression",
+    "kp.alg1.solve.one.step",
+    "kp.alg1.solve.two.step"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_3",
+    "unlockOnMastery": [
+      "hub_region_ruins_east"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will distinguish expressions from equations, interpret equality, and solve one- and two-step linear equations, checking solutions by substitution.",
+        "es": "Distinguirás expresiones de ecuaciones, interpretarás la igualdad y resolverás ecuaciones lineales de uno y dos pasos, verificando por sustitución.",
+        "pl": "Będziesz rozróżniać wyrażenia od równań, interpretować równość oraz rozwiązywać jedno- i dwukrokowe równania liniowe, sprawdzając przez podstawienie."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: balance and inverse operations",
+        "es": "Enseñar: balance y operaciones inversas",
+        "pl": "Nauczanie: równowaga i działania odwrotne"
+      },
+      "body": {
+        "en": "An equation says two expressions are equal. Keep the balance: whatever you do to one side, do to the other. Undo operations in reverse order (usually undo +/− before ·/÷ for ax+b=c).",
+        "es": "Una ecuación dice que dos expresiones son iguales. Mantén el equilibrio: lo que hagas a un lado, hazlo al otro. Deshaz operaciones en orden inverso (usualmente +/− antes de ·/÷ para ax+b=c).",
+        "pl": "Równanie mówi, że dwa wyrażenia są równe. Zachowaj równowagę: co robisz po jednej stronie, zrób po drugiej. Cofaj działania w odwrotnej kolejności (zwykle +/− przed ·/÷ dla ax+b=c)."
+      },
+      "bodyMath": [
+        "x + 7 = 12",
+        "4x = 20",
+        "2x + 3 = 11"
+      ],
+      "itemIds": [
+        "alg1-l03-t01",
+        "alg1-l03-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Check candidate solutions by substitution. For two-step equations, undo addition/subtraction before multiplication/division.",
+        "es": "Verifica soluciones candidatas por sustitución. En dos pasos, deshaz suma/resta antes de multiplicación/división.",
+        "pl": "Sprawdzaj rozwiązania przez podstawienie. W dwóch krokach cofaj dodawanie/odejmowanie przed mnożeniem/dzieleniem."
+      },
+      "itemIds": [
+        "alg1-l03-g01",
+        "alg1-l03-g02",
+        "alg1-l03-g03",
+        "alg1-l03-g04",
+        "alg1-l03-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l03-i01",
+        "alg1-l03-i02",
+        "alg1-l03-i03",
+        "alg1-l03-i04",
+        "alg1-l03-i05",
+        "alg1-l03-i06",
+        "alg1-l03-i07",
+        "alg1-l03-i08",
+        "alg1-l03-i09",
+        "alg1-l03-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l03-t01",
+      "knowledgePointIds": [
+        "kp.alg1.equation.vs.expression"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1,
+        "b": -1.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which is an equation?",
+        "es": "¿Cuál es una ecuación?",
+        "pl": "Które jest równaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "An equation has an equals sign stating two expressions are equal.",
+        "es": "Una ecuación tiene un signo igual que afirma que dos expresiones son iguales.",
+        "pl": "Równanie ma znak równości stwierdzający równość dwóch wyrażeń."
+      },
+      "feedbackIncorrect": {
+        "en": "Only 3x + 2 = 11 asserts equality. The others are expressions.",
+        "es": "Solo 3x + 2 = 11 afirma igualdad. Las demás son expresiones.",
+        "pl": "Tylko 3x + 2 = 11 stwierdza równość. Pozostałe to wyrażenia."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "3x + 2",
+          "3x + 2 = 11",
+          "3(x + 2)",
+          "x² − 1"
+        ],
+        "es": [
+          "3x + 2",
+          "3x + 2 = 11",
+          "3(x + 2)",
+          "x² − 1"
+        ],
+        "pl": [
+          "3x + 2",
+          "3x + 2 = 11",
+          "3(x + 2)",
+          "x² − 1"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "call_expression_equation"
+      ]
+    },
+    {
+      "id": "alg1-l03-t02",
+      "knowledgePointIds": [
+        "kp.alg1.solve.one.step"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.1,
+        "b": -0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x + 7 = 12",
+        "es": "Resuelve: x + 7 = 12",
+        "pl": "Rozwiąż: x + 7 = 12"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 7 from both sides: x = 5. Check: 5 + 7 = 12.",
+        "es": "Resta 7 a ambos lados: x = 5. Verifica: 5 + 7 = 12.",
+        "pl": "Odejmij 7 od obu stron: x = 5. Sprawdź: 5 + 7 = 12."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo +7 by subtracting 7 from both sides → x = 5.",
+        "es": "Deshaz +7 restando 7 a ambos lados → x = 5.",
+        "pl": "Cofnij +7 odejmując 7 od obu stron → x = 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        }
+      ],
+      "promptMath": "x + 7 = 12",
+      "choices": {
+        "en": [
+          "x = 5",
+          "x = 19",
+          "x = 7",
+          "x = 12"
+        ],
+        "es": [
+          "x = 5",
+          "x = 19",
+          "x = 7",
+          "x = 12"
+        ],
+        "pl": [
+          "x = 5",
+          "x = 19",
+          "x = 7",
+          "x = 12"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=5",
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "wrong_inverse",
+        "one_side_only"
+      ]
+    },
+    {
+      "id": "alg1-l03-g01",
+      "knowledgePointIds": [
+        "kp.alg1.equation.meaning"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.1,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Is x = 3 a solution of 2x + 1 = 7?",
+        "es": "¿Es x = 3 una solución de 2x + 1 = 7?",
+        "pl": "Czy x = 3 jest rozwiązaniem 2x + 1 = 7?"
+      },
+      "feedbackCorrect": {
+        "en": "2(3) + 1 = 7, which equals the right side — yes.",
+        "es": "2(3) + 1 = 7, igual al lado derecho — sí.",
+        "pl": "2(3) + 1 = 7, równa prawej stronie — tak."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute: 2 · 3 + 1 = 7. Both sides match, so it is a solution.",
+        "es": "Sustituye: 2 · 3 + 1 = 7. Ambos lados coinciden, así que es solución.",
+        "pl": "Podstaw: 2 · 3 + 1 = 7. Strony się zgadzają, więc to rozwiązanie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        }
+      ],
+      "promptMath": "2x + 1 = 7",
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Only if x is positive",
+          "Cannot tell"
+        ],
+        "es": [
+          "Sí",
+          "No",
+          "Solo si x es positivo",
+          "No se puede saber"
+        ],
+        "pl": [
+          "Tak",
+          "Nie",
+          "Tylko gdy x jest dodatnie",
+          "Nie da się stwierdzić"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "check_arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l03-g02",
+      "knowledgePointIds": [
+        "kp.alg1.solve.one.step"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 4x = 20",
+        "es": "Resuelve: 4x = 20",
+        "pl": "Rozwiąż: 4x = 20"
+      },
+      "feedbackCorrect": {
+        "en": "Divide both sides by 4: x = 5.",
+        "es": "Divide ambos lados entre 4: x = 5.",
+        "pl": "Podziel obie strony przez 4: x = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo multiplication by 4 by dividing both sides by 4 → x = 5.",
+        "es": "Deshaz la multiplicación por 4 dividiendo ambos lados entre 4 → x = 5.",
+        "pl": "Cofnij mnożenie przez 4 dzieląc obie strony przez 4 → x = 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        }
+      ],
+      "promptMath": "4x = 20",
+      "choices": {
+        "en": [
+          "x = 5",
+          "x = 16",
+          "x = 24",
+          "x = 80"
+        ],
+        "es": [
+          "x = 5",
+          "x = 16",
+          "x = 24",
+          "x = 80"
+        ],
+        "pl": [
+          "x = 5",
+          "x = 16",
+          "x = 24",
+          "x = 80"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=5",
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "subtract_instead_of_divide",
+        "one_side_only"
+      ]
+    },
+    {
+      "id": "alg1-l03-g03",
+      "knowledgePointIds": [
+        "kp.alg1.solve.one.step"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x − 9 = 4",
+        "es": "Resuelve: x − 9 = 4",
+        "pl": "Rozwiąż: x − 9 = 4"
+      },
+      "feedbackCorrect": {
+        "en": "Add 9 to both sides: x = 13.",
+        "es": "Suma 9 a ambos lados: x = 13.",
+        "pl": "Dodaj 9 do obu stron: x = 13."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo −9 by adding 9 to both sides → x = 13.",
+        "es": "Deshaz −9 sumando 9 a ambos lados → x = 13.",
+        "pl": "Cofnij −9 dodając 9 do obu stron → x = 13."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        }
+      ],
+      "promptMath": "x - 9 = 4",
+      "choices": {
+        "en": [
+          "x = 13",
+          "x = −5",
+          "x = 5",
+          "x = 36"
+        ],
+        "es": [
+          "x = 13",
+          "x = −5",
+          "x = 5",
+          "x = 36"
+        ],
+        "pl": [
+          "x = 13",
+          "x = −5",
+          "x = 5",
+          "x = 36"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=13",
+      "acceptNumeric": 13,
+      "diagnosticTags": [
+        "wrong_inverse"
+      ]
+    },
+    {
+      "id": "alg1-l03-g04",
+      "knowledgePointIds": [
+        "kp.alg1.solve.two.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2x + 3 = 11",
+        "es": "Resuelve: 2x + 3 = 11",
+        "pl": "Rozwiąż: 2x + 3 = 11"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 3: 2x = 8; divide by 2: x = 4.",
+        "es": "Resta 3: 2x = 8; divide entre 2: x = 4.",
+        "pl": "Odejmij 3: 2x = 8; podziel przez 2: x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo +3 first, then undo ·2. You get x = 4.",
+        "es": "Deshaz +3 primero, luego deshaz ·2. Obtienes x = 4.",
+        "pl": "Najpierw cofnij +3, potem ·2. Wynik x = 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        }
+      ],
+      "promptMath": "2x + 3 = 11",
+      "choices": {
+        "en": [
+          "x = 4",
+          "x = 7",
+          "x = 5.5",
+          "x = 8"
+        ],
+        "es": [
+          "x = 4",
+          "x = 7",
+          "x = 5.5",
+          "x = 8"
+        ],
+        "pl": [
+          "x = 4",
+          "x = 7",
+          "x = 5.5",
+          "x = 8"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=4",
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "divide_before_subtract",
+        "one_side_only"
+      ]
+    },
+    {
+      "id": "alg1-l03-g05",
+      "knowledgePointIds": [
+        "kp.alg1.equation.vs.expression"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.05,
+        "b": -0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which statement is true?",
+        "es": "¿Cuál afirmación es verdadera?",
+        "pl": "Które stwierdzenie jest prawdziwe?"
+      },
+      "feedbackCorrect": {
+        "en": "Equations make a claim about equality; expressions name a quantity.",
+        "es": "Las ecuaciones afirman igualdad; las expresiones nombran una cantidad.",
+        "pl": "Równania stwierdzają równość; wyrażenia nazywają wielkość."
+      },
+      "feedbackIncorrect": {
+        "en": "You solve equations. Expressions are evaluated or simplified, not “solved.”",
+        "es": "Se resuelven ecuaciones. Las expresiones se evalúan o simplifican, no se “resuelven.”",
+        "pl": "Rozwiązujemy równania. Wyrażenia obliczamy lub upraszczamy, nie „rozwiązujemy.”"
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "An expression can be solved for x; an equation can only be simplified",
+          "An equation can be true or false for a value of x; an expression just names a value",
+          "Expressions always contain equals signs",
+          "Equations never contain variables"
+        ],
+        "es": [
+          "Una expresión se puede resolver para x; una ecuación solo se simplifica",
+          "Una ecuación puede ser verdadera o falsa para un valor de x; una expresión solo nombra un valor",
+          "Las expresiones siempre tienen signos igual",
+          "Las ecuaciones nunca tienen variables"
+        ],
+        "pl": [
+          "Wyrażenie można rozwiązać względem x; równanie tylko uprościć",
+          "Równanie może być prawdziwe lub fałszywe dla wartości x; wyrażenie tylko nazywa wartość",
+          "Wyrażenia zawsze mają znaki równości",
+          "Równania nigdy nie zawierają zmiennych"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "solve_vs_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l03-i01",
+      "knowledgePointIds": [
+        "kp.alg1.equation.vs.expression"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1,
+        "b": -0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Classify 5y − 2:",
+        "es": "Clasifica 5y − 2:",
+        "pl": "Sklasyfikuj 5y − 2:"
+      },
+      "feedbackCorrect": {
+        "en": "No equals sign → expression.",
+        "es": "Sin signo igual → expresión.",
+        "pl": "Bez znaku równości → wyrażenie."
+      },
+      "feedbackIncorrect": {
+        "en": "Without =, it is an expression, not an equation.",
+        "es": "Sin =, es una expresión, no una ecuación.",
+        "pl": "Bez = to wyrażenie, nie równanie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        }
+      ],
+      "promptMath": "5y - 2",
+      "choices": {
+        "en": [
+          "Equation",
+          "Expression",
+          "Inequality",
+          "Formula only"
+        ],
+        "es": [
+          "Ecuación",
+          "Expresión",
+          "Inecuación",
+          "Solo fórmula"
+        ],
+        "pl": [
+          "Równanie",
+          "Wyrażenie",
+          "Nierówność",
+          "Tylko wzór"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "call_expression_equation"
+      ]
+    },
+    {
+      "id": "alg1-l03-i02",
+      "knowledgePointIds": [
+        "kp.alg1.equation.meaning"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does x = 2 make 5x − 1 = 9 true?",
+        "es": "¿Hace x = 2 verdadera la ecuación 5x − 1 = 9?",
+        "pl": "Czy x = 2 spełnia 5x − 1 = 9?"
+      },
+      "feedbackCorrect": {
+        "en": "5(2) − 1 = 9. Yes, it is a solution.",
+        "es": "5(2) − 1 = 9. Sí, es solución.",
+        "pl": "5(2) − 1 = 9. Tak, to rozwiązanie."
+      },
+      "feedbackIncorrect": {
+        "en": "Check: 5 · 2 − 1 = 9. Both sides equal.",
+        "es": "Verifica: 5 · 2 − 1 = 9. Ambos lados iguales.",
+        "pl": "Sprawdź: 5 · 2 − 1 = 9. Strony równe."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        }
+      ],
+      "promptMath": "5x - 1 = 9",
+      "choices": {
+        "en": [
+          "Yes",
+          "No",
+          "Only for integers",
+          "Only for even x"
+        ],
+        "es": [
+          "Sí",
+          "No",
+          "Solo para enteros",
+          "Solo para x pares"
+        ],
+        "pl": [
+          "Tak",
+          "Nie",
+          "Tylko dla całkowitych",
+          "Tylko dla parzystych x"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "check_arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l03-i03",
+      "knowledgePointIds": [
+        "kp.alg1.solve.one.step"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x/3 = 6",
+        "es": "Resuelve: x/3 = 6",
+        "pl": "Rozwiąż: x/3 = 6"
+      },
+      "feedbackCorrect": {
+        "en": "Multiply both sides by 3: x = 18.",
+        "es": "Multiplica ambos lados por 3: x = 18.",
+        "pl": "Pomnóż obie strony przez 3: x = 18."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo division by 3 by multiplying both sides by 3 → x = 18.",
+        "es": "Deshaz la división entre 3 multiplicando ambos lados por 3 → x = 18.",
+        "pl": "Cofnij dzielenie przez 3 mnożąc obie strony przez 3 → x = 18."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x}{3} = 6",
+      "choices": {
+        "en": [
+          "x = 18",
+          "x = 2",
+          "x = 9",
+          "x = 3"
+        ],
+        "es": [
+          "x = 18",
+          "x = 2",
+          "x = 9",
+          "x = 3"
+        ],
+        "pl": [
+          "x = 18",
+          "x = 2",
+          "x = 9",
+          "x = 3"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=18",
+      "acceptNumeric": 18,
+      "diagnosticTags": [
+        "divide_instead_of_multiply"
+      ]
+    },
+    {
+      "id": "alg1-l03-i04",
+      "knowledgePointIds": [
+        "kp.alg1.solve.one.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: −5 + x = 2",
+        "es": "Resuelve: −5 + x = 2",
+        "pl": "Rozwiąż: −5 + x = 2"
+      },
+      "feedbackCorrect": {
+        "en": "Add 5 to both sides: x = 7.",
+        "es": "Suma 5 a ambos lados: x = 7.",
+        "pl": "Dodaj 5 do obu stron: x = 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Add 5 to both sides to isolate x → x = 7.",
+        "es": "Suma 5 a ambos lados para aislar x → x = 7.",
+        "pl": "Dodaj 5 do obu stron, by wyizolować x → x = 7."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        }
+      ],
+      "promptMath": "-5 + x = 2",
+      "choices": {
+        "en": [
+          "x = 7",
+          "x = −3",
+          "x = 3",
+          "x = −7"
+        ],
+        "es": [
+          "x = 7",
+          "x = −3",
+          "x = 3",
+          "x = −7"
+        ],
+        "pl": [
+          "x = 7",
+          "x = −3",
+          "x = 3",
+          "x = −7"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=7",
+      "acceptNumeric": 7,
+      "diagnosticTags": [
+        "sign_error_inverse"
+      ]
+    },
+    {
+      "id": "alg1-l03-i05",
+      "knowledgePointIds": [
+        "kp.alg1.solve.two.step"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.3,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 3x − 4 = 11",
+        "es": "Resuelve: 3x − 4 = 11",
+        "pl": "Rozwiąż: 3x − 4 = 11"
+      },
+      "feedbackCorrect": {
+        "en": "Add 4: 3x = 15; divide by 3: x = 5.",
+        "es": "Suma 4: 3x = 15; divide entre 3: x = 5.",
+        "pl": "Dodaj 4: 3x = 15; podziel przez 3: x = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo −4 first (add 4), then divide by 3 → x = 5.",
+        "es": "Deshaz −4 primero (suma 4), luego divide entre 3 → x = 5.",
+        "pl": "Najpierw cofnij −4 (dodaj 4), potem podziel przez 3 → x = 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        }
+      ],
+      "promptMath": "3x - 4 = 11",
+      "choices": {
+        "en": [
+          "x = 5",
+          "x = 15/3",
+          "x = 7",
+          "x = 3"
+        ],
+        "es": [
+          "x = 5",
+          "x = 15/3",
+          "x = 7",
+          "x = 3"
+        ],
+        "pl": [
+          "x = 5",
+          "x = 15/3",
+          "x = 7",
+          "x = 3"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=5",
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "divide_before_add",
+        "arithmetic_slip"
+      ]
+    },
+    {
+      "id": "alg1-l03-i06",
+      "knowledgePointIds": [
+        "kp.alg1.solve.two.step"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.35,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 5x + 2 = −8",
+        "es": "Resuelve: 5x + 2 = −8",
+        "pl": "Rozwiąż: 5x + 2 = −8"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 2: 5x = −10; divide by 5: x = −2.",
+        "es": "Resta 2: 5x = −10; divide entre 5: x = −2.",
+        "pl": "Odejmij 2: 5x = −10; podziel przez 5: x = −2."
+      },
+      "feedbackIncorrect": {
+        "en": "5x = −10 after subtracting 2; x = −2.",
+        "es": "5x = −10 tras restar 2; x = −2.",
+        "pl": "Po odjęciu 2: 5x = −10; x = −2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        }
+      ],
+      "promptMath": "5x + 2 = -8",
+      "choices": {
+        "en": [
+          "x = −2",
+          "x = −2.5",
+          "x = 2",
+          "x = −10"
+        ],
+        "es": [
+          "x = −2",
+          "x = −2.5",
+          "x = 2",
+          "x = −10"
+        ],
+        "pl": [
+          "x = −2",
+          "x = −2.5",
+          "x = 2",
+          "x = −10"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=-2",
+      "acceptNumeric": -2,
+      "diagnosticTags": [
+        "sign_error_inverse",
+        "divide_before_subtract"
+      ]
+    },
+    {
+      "id": "alg1-l03-i07",
+      "knowledgePointIds": [
+        "kp.alg1.solve.two.step"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.4,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: \\(\\frac{x}{2} + 3 = 7\\)",
+        "es": "Resuelve: \\(\\frac{x}{2} + 3 = 7\\)",
+        "pl": "Rozwiąż: \\(\\frac{x}{2} + 3 = 7\\)"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 3: x/2 = 4; multiply by 2: x = 8.",
+        "es": "Resta 3: x/2 = 4; multiplica por 2: x = 8.",
+        "pl": "Odejmij 3: x/2 = 4; pomnóż przez 2: x = 8."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo +3 first, then undo ÷2 → x = 8.",
+        "es": "Deshaz +3 primero, luego deshaz ÷2 → x = 8.",
+        "pl": "Najpierw cofnij +3, potem ÷2 → x = 8."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x}{2} + 3 = 7",
+      "choices": {
+        "en": [
+          "x = 8",
+          "x = 20",
+          "x = 5",
+          "x = 4"
+        ],
+        "es": [
+          "x = 8",
+          "x = 20",
+          "x = 5",
+          "x = 4"
+        ],
+        "pl": [
+          "x = 8",
+          "x = 20",
+          "x = 5",
+          "x = 4"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=8",
+      "acceptNumeric": 8,
+      "diagnosticTags": [
+        "multiply_before_subtract"
+      ]
+    },
+    {
+      "id": "alg1-l03-i08",
+      "knowledgePointIds": [
+        "kp.alg1.solve.one.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: −3x = 15",
+        "es": "Resuelve: −3x = 15",
+        "pl": "Rozwiąż: −3x = 15"
+      },
+      "feedbackCorrect": {
+        "en": "Divide both sides by −3: x = −5.",
+        "es": "Divide ambos lados entre −3: x = −5.",
+        "pl": "Podziel obie strony przez −3: x = −5."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide by the coefficient −3. 15 ÷ (−3) = −5.",
+        "es": "Divide entre el coeficiente −3. 15 ÷ (−3) = −5.",
+        "pl": "Podziel przez współczynnik −3. 15 ÷ (−3) = −5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "6.EE.B.7"
+          ]
+        }
+      ],
+      "promptMath": "-3x = 15",
+      "choices": {
+        "en": [
+          "x = −5",
+          "x = 5",
+          "x = −45",
+          "x = 12"
+        ],
+        "es": [
+          "x = −5",
+          "x = 5",
+          "x = −45",
+          "x = 12"
+        ],
+        "pl": [
+          "x = −5",
+          "x = 5",
+          "x = −45",
+          "x = 12"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=-5",
+      "acceptNumeric": -5,
+      "diagnosticTags": [
+        "sign_error_on_divide"
+      ]
+    },
+    {
+      "id": "alg1-l03-i09",
+      "knowledgePointIds": [
+        "kp.alg1.solve.two.step",
+        "kp.alg1.equation.meaning"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.4,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2(x − 1) = 10",
+        "es": "Resuelve: 2(x − 1) = 10",
+        "pl": "Rozwiąż: 2(x − 1) = 10"
+      },
+      "feedbackCorrect": {
+        "en": "Divide by 2: x − 1 = 5; add 1: x = 6. Check: 2(5) = 10.",
+        "es": "Divide entre 2: x − 1 = 5; suma 1: x = 6. Verifica: 2(5) = 10.",
+        "pl": "Podziel przez 2: x − 1 = 5; dodaj 1: x = 6. Sprawdź: 2(5) = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Either distribute or divide both sides by 2 first; then x = 6.",
+        "es": "Distribuye o divide ambos lados entre 2 primero; luego x = 6.",
+        "pl": "Rozdziel lub najpierw podziel obie strony przez 2; potem x = 6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        }
+      ],
+      "promptMath": "2(x - 1) = 10",
+      "choices": {
+        "en": [
+          "x = 6",
+          "x = 4",
+          "x = 5",
+          "x = 11"
+        ],
+        "es": [
+          "x = 6",
+          "x = 4",
+          "x = 5",
+          "x = 11"
+        ],
+        "pl": [
+          "x = 6",
+          "x = 4",
+          "x = 5",
+          "x = 11"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=6",
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "distribute_wrong",
+        "forget_add_back"
+      ]
+    },
+    {
+      "id": "alg1-l03-i10",
+      "knowledgePointIds": [
+        "kp.alg1.equation.meaning"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which value makes 4x = 2x + 10 true?",
+        "es": "¿Qué valor hace verdadera 4x = 2x + 10?",
+        "pl": "Która wartość spełnia 4x = 2x + 10?"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 2x: 2x = 10; x = 5. Check: 20 = 10 + 10.",
+        "es": "Resta 2x: 2x = 10; x = 5. Verifica: 20 = 10 + 10.",
+        "pl": "Odejmij 2x: 2x = 10; x = 5. Sprawdź: 20 = 10 + 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract 2x from both sides → 2x = 10 → x = 5.",
+        "es": "Resta 2x de ambos lados → 2x = 10 → x = 5.",
+        "pl": "Odejmij 2x od obu stron → 2x = 10 → x = 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "6.EE.B.5"
+          ]
+        }
+      ],
+      "promptMath": "4x = 2x + 10",
+      "choices": {
+        "en": [
+          "x = 5",
+          "x = 10",
+          "x = 2",
+          "x = 0"
+        ],
+        "es": [
+          "x = 5",
+          "x = 10",
+          "x = 2",
+          "x = 0"
+        ],
+        "pl": [
+          "x = 5",
+          "x = 10",
+          "x = 2",
+          "x = 0"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x=5",
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "guess_without_check"
+      ]
+    }
+  ]
+}

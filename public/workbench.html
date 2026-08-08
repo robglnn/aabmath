@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axiom Reach — Gauntlet Workbench</title>
+  <style>
+    :root { font-family: ui-monospace, Consolas, monospace; background: #0b1020; color: #d7ffe8; }
+    body { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { color: #7dffb3; }
+    .bar { background: #1a2438; border-radius: 6px; overflow: hidden; height: 12px; margin: 0.5rem 0 1.5rem; }
+    .bar > span { display: block; height: 100%; background: #3dff9a; width: 42%; }
+    section { border: 1px solid #2a3a55; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
+    .pass { color: #3dff9a; } .fail { color: #ff6b6b; } .wip { color: #ffd166; }
+    a { color: #8ecbff; }
+  </style>
+</head>
+<body>
+  <h1>Axiom Reach — Gauntlet Workbench</h1>
+  <p>Wave 1 PASS. Wave 2 in progress. Target: Algebra I course gate. Pages: <a href="https://robglnn.github.io/aabmath/">robglnn.github.io/aabmath</a></p>
+  <div class="bar"><span id="overall"></span></div>
+  <section>
+    <h2>Status</h2>
+    <ul id="targets">
+      <li class="pass">[PASS] Wave 1 exit gate</li>
+      <li class="wip">[WIP] Wave 2 — Alg I L4–6 content (builder running)</li>
+      <li class="wip">[WIP] Wave 2 — boards 4–6 + spaced review in play</li>
+      <li class="wip">[WIP] GitHub Pages deploy (workflow + base path)</li>
+      <li class="wip">[ ] Algebra I course gate</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Log</h2>
+    <pre id="log">[orchestrator] /loop 8h armed (AGENT_LOOP_TICK_aabmath_gauntlet)
+[orchestrator] Wave 2 started: L4–6 + world/SR + GitHub Pages
+[builder] content L4–6: RUNNING
+[builder] world boards + SR play: RUNNING</pre>
+  </section>
+</body>
+</html>

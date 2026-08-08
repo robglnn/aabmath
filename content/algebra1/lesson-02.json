@@ -1,0 +1,1237 @@
+{
+  "id": "alg1-l02",
+  "courseId": "algebra1",
+  "order": 2,
+  "title": {
+    "en": "Evaluating Expressions & Order of Operations with Variables",
+    "es": "Evaluación de expresiones y orden de operaciones con variables",
+    "pl": "Obliczanie wyrażeń i kolejność działań ze zmiennymi"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.order.ops",
+    "kp.alg1.eval.substitute",
+    "kp.alg1.eval.multi.var"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_2",
+    "unlockOnMastery": [
+      "lesson_board_3"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will evaluate numerical and algebraic expressions by substituting values and applying order of operations.",
+        "es": "Evaluarás expresiones numéricas y algebraicas sustituyendo valores y aplicando el orden de operaciones.",
+        "pl": "Będziesz obliczać wyrażenia liczbowe i algebraiczne przez podstawianie wartości i stosowanie kolejności działań."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: substitute, then PEMDAS/GEMDAS",
+        "es": "Enseñar: sustituir, luego PEMDAS/GEMDAS",
+        "pl": "Nauczanie: podstaw, potem kolejność działań"
+      },
+      "body": {
+        "en": "Replace each variable with its value (use parentheses for negatives). Then: Grouping → Exponents → Multiply/Divide (left to right) → Add/Subtract (left to right).",
+        "es": "Reemplaza cada variable por su valor (usa paréntesis para negativos). Luego: Agrupación → Exponentes → Multiplicar/Dividir (izq. a der.) → Sumar/Restar (izq. a der.).",
+        "pl": "Zamień każdą zmienną na wartość (nawiasy przy ujemnych). Potem: Grupowanie → Potęgi → Mnożenie/Dzielenie (od lewej) → Dodawanie/Odejmowanie (od lewej)."
+      },
+      "bodyMath": [
+        "3 + 4 \\cdot 2 = 11",
+        "2x + 1 \\text{ for } x = 5",
+        "2(5 + 3) - 4 = 12"
+      ],
+      "itemIds": [
+        "alg1-l02-t01",
+        "alg1-l02-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Check signs after substituting negatives and keep multiply/divide left-to-right.",
+        "es": "Revisa los signos al sustituir negativos y mantén multiplicar/dividir de izquierda a derecha.",
+        "pl": "Sprawdzaj znaki po podstawieniu ujemnych i trzymaj mnożenie/dzielenie od lewej."
+      },
+      "itemIds": [
+        "alg1-l02-g01",
+        "alg1-l02-g02",
+        "alg1-l02-g03",
+        "alg1-l02-g04",
+        "alg1-l02-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l02-i01",
+        "alg1-l02-i02",
+        "alg1-l02-i03",
+        "alg1-l02-i04",
+        "alg1-l02-i05",
+        "alg1-l02-i06",
+        "alg1-l02-i07",
+        "alg1-l02-i08",
+        "alg1-l02-i09"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l02-t01",
+      "knowledgePointIds": [
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate: 3 + 4 · 2",
+        "es": "Evalúa: 3 + 4 · 2",
+        "pl": "Oblicz: 3 + 4 · 2"
+      },
+      "feedbackCorrect": {
+        "en": "Multiply first: 4 · 2 = 8, then 3 + 8 = 11.",
+        "es": "Primero multiplica: 4 · 2 = 8, luego 3 + 8 = 11.",
+        "pl": "Najpierw mnożenie: 4 · 2 = 8, potem 3 + 8 = 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Order of operations: multiply before add. 4 · 2 = 8, then 3 + 8 = 11 (not 14).",
+        "es": "Orden de operaciones: multiplica antes de sumar. 4 · 2 = 8, luego 3 + 8 = 11 (no 14).",
+        "pl": "Kolejność działań: mnożenie przed dodawaniem. 4 · 2 = 8, potem 3 + 8 = 11 (nie 14)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "3 + 4 \\cdot 2",
+      "choices": {
+        "en": [
+          "14",
+          "11",
+          "10",
+          "24"
+        ],
+        "es": [
+          "14",
+          "11",
+          "10",
+          "24"
+        ],
+        "pl": [
+          "14",
+          "11",
+          "10",
+          "24"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "left_to_right_only"
+      ]
+    },
+    {
+      "id": "alg1-l02-t02",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.1,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If x = 5, evaluate 2x + 1.",
+        "es": "Si x = 5, evalúa 2x + 1.",
+        "pl": "Jeśli x = 5, oblicz 2x + 1."
+      },
+      "feedbackCorrect": {
+        "en": "Substitute: 2(5) + 1 = 10 + 1 = 11.",
+        "es": "Sustituye: 2(5) + 1 = 10 + 1 = 11.",
+        "pl": "Podstaw: 2(5) + 1 = 10 + 1 = 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Replace x with 5: 2 · 5 + 1 = 11.",
+        "es": "Reemplaza x por 5: 2 · 5 + 1 = 11.",
+        "pl": "Zamień x na 5: 2 · 5 + 1 = 11."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "2x + 1,\\; x = 5",
+      "choices": {
+        "en": [
+          "11",
+          "10",
+          "7",
+          "12"
+        ],
+        "es": [
+          "11",
+          "10",
+          "7",
+          "12"
+        ],
+        "pl": [
+          "11",
+          "10",
+          "7",
+          "12"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "forgot_multiply",
+        "added_first"
+      ]
+    },
+    {
+      "id": "alg1-l02-g01",
+      "knowledgePointIds": [
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate: 18 ÷ 3 · 2 + 1",
+        "es": "Evalúa: 18 ÷ 3 · 2 + 1",
+        "pl": "Oblicz: 18 ÷ 3 · 2 + 1"
+      },
+      "feedbackCorrect": {
+        "en": "Left to right for ÷ and ·: 18 ÷ 3 = 6, 6 · 2 = 12, then + 1 → 13.",
+        "es": "De izquierda a derecha para ÷ y ·: 18 ÷ 3 = 6, 6 · 2 = 12, luego + 1 → 13.",
+        "pl": "Od lewej dla ÷ i ·: 18 ÷ 3 = 6, 6 · 2 = 12, potem + 1 → 13."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply/divide left to right before adding: (18 ÷ 3) · 2 + 1 = 13.",
+        "es": "Multiplica/divide de izquierda a derecha antes de sumar: (18 ÷ 3) · 2 + 1 = 13.",
+        "pl": "Mnoż/dziel od lewej przed dodawaniem: (18 ÷ 3) · 2 + 1 = 13."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "18 \\div 3 \\cdot 2 + 1",
+      "choices": {
+        "en": [
+          "4",
+          "13",
+          "7",
+          "12"
+        ],
+        "es": [
+          "4",
+          "13",
+          "7",
+          "12"
+        ],
+        "pl": [
+          "4",
+          "13",
+          "7",
+          "12"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 13,
+      "diagnosticTags": [
+        "multiply_before_divide_wrong",
+        "paren_error"
+      ]
+    },
+    {
+      "id": "alg1-l02-g02",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.2,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If n = 4, evaluate n² − 3.",
+        "es": "Si n = 4, evalúa n² − 3.",
+        "pl": "Jeśli n = 4, oblicz n² − 3."
+      },
+      "feedbackCorrect": {
+        "en": "4² = 16; 16 − 3 = 13.",
+        "es": "4² = 16; 16 − 3 = 13.",
+        "pl": "4² = 16; 16 − 3 = 13."
+      },
+      "feedbackIncorrect": {
+        "en": "Square first: 4² = 16, then subtract 3 to get 13.",
+        "es": "Primero eleva al cuadrado: 4² = 16, luego resta 3 y obtienes 13.",
+        "pl": "Najpierw potęga: 4² = 16, potem odejmij 3 — wynik 13."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "n^2 - 3,\\; n = 4",
+      "choices": {
+        "en": [
+          "13",
+          "5",
+          "1",
+          "19"
+        ],
+        "es": [
+          "13",
+          "5",
+          "1",
+          "19"
+        ],
+        "pl": [
+          "13",
+          "5",
+          "1",
+          "19"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 13,
+      "diagnosticTags": [
+        "square_after_subtract",
+        "double_instead_of_square"
+      ]
+    },
+    {
+      "id": "alg1-l02-g03",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute",
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.25,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If x = −2, evaluate 3x + 5.",
+        "es": "Si x = −2, evalúa 3x + 5.",
+        "pl": "Jeśli x = −2, oblicz 3x + 5."
+      },
+      "feedbackCorrect": {
+        "en": "3(−2) + 5 = −6 + 5 = −1.",
+        "es": "3(−2) + 5 = −6 + 5 = −1.",
+        "pl": "3(−2) + 5 = −6 + 5 = −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Use parentheses with negatives: 3(−2) = −6, then −6 + 5 = −1.",
+        "es": "Usa paréntesis con negativos: 3(−2) = −6, luego −6 + 5 = −1.",
+        "pl": "Użyj nawiasów przy ujemnych: 3(−2) = −6, potem −6 + 5 = −1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "3x + 5,\\; x = -2",
+      "choices": {
+        "en": [
+          "−1",
+          "11",
+          "1",
+          "−6"
+        ],
+        "es": [
+          "−1",
+          "11",
+          "1",
+          "−6"
+        ],
+        "pl": [
+          "−1",
+          "11",
+          "1",
+          "−6"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": -1,
+      "diagnosticTags": [
+        "sign_error_on_substitute"
+      ]
+    },
+    {
+      "id": "alg1-l02-g04",
+      "knowledgePointIds": [
+        "kp.alg1.eval.multi.var"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If a = 3 and b = 4, evaluate 2a + b.",
+        "es": "Si a = 3 y b = 4, evalúa 2a + b.",
+        "pl": "Jeśli a = 3 i b = 4, oblicz 2a + b."
+      },
+      "feedbackCorrect": {
+        "en": "2(3) + 4 = 6 + 4 = 10.",
+        "es": "2(3) + 4 = 6 + 4 = 10.",
+        "pl": "2(3) + 4 = 6 + 4 = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute each variable: 2 · 3 + 4 = 10.",
+        "es": "Sustituye cada variable: 2 · 3 + 4 = 10.",
+        "pl": "Podstaw każdą zmienną: 2 · 3 + 4 = 10."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "2a + b,\\; a = 3,\\; b = 4",
+      "choices": {
+        "en": [
+          "10",
+          "14",
+          "7",
+          "11"
+        ],
+        "es": [
+          "10",
+          "14",
+          "7",
+          "11"
+        ],
+        "pl": [
+          "10",
+          "14",
+          "7",
+          "11"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 10,
+      "diagnosticTags": [
+        "swap_variable_values"
+      ]
+    },
+    {
+      "id": "alg1-l02-g05",
+      "knowledgePointIds": [
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.3,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate: 2(5 + 3) − 4",
+        "es": "Evalúa: 2(5 + 3) − 4",
+        "pl": "Oblicz: 2(5 + 3) − 4"
+      },
+      "feedbackCorrect": {
+        "en": "Parentheses first: 5 + 3 = 8; 2 · 8 = 16; 16 − 4 = 12.",
+        "es": "Primero paréntesis: 5 + 3 = 8; 2 · 8 = 16; 16 − 4 = 12.",
+        "pl": "Najpierw nawiasy: 5 + 3 = 8; 2 · 8 = 16; 16 − 4 = 12."
+      },
+      "feedbackIncorrect": {
+        "en": "Do grouping first: 2(8) − 4 = 16 − 4 = 12.",
+        "es": "Haz primero el agrupamiento: 2(8) − 4 = 16 − 4 = 12.",
+        "pl": "Najpierw grupowanie: 2(8) − 4 = 16 − 4 = 12."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "2(5 + 3) - 4",
+      "choices": {
+        "en": [
+          "12",
+          "14",
+          "6",
+          "20"
+        ],
+        "es": [
+          "12",
+          "14",
+          "6",
+          "20"
+        ],
+        "pl": [
+          "12",
+          "14",
+          "6",
+          "20"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 12,
+      "diagnosticTags": [
+        "skip_parentheses"
+      ]
+    },
+    {
+      "id": "alg1-l02-i01",
+      "knowledgePointIds": [
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.1,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate: 5 · 2²",
+        "es": "Evalúa: 5 · 2²",
+        "pl": "Oblicz: 5 · 2²"
+      },
+      "feedbackCorrect": {
+        "en": "Exponent first: 2² = 4; 5 · 4 = 20.",
+        "es": "Primero el exponente: 2² = 4; 5 · 4 = 20.",
+        "pl": "Najpierw potęga: 2² = 4; 5 · 4 = 20."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not compute (5 · 2)². Exponent applies to 2 only: 5 · 4 = 20.",
+        "es": "No calcules (5 · 2)². El exponente solo aplica a 2: 5 · 4 = 20.",
+        "pl": "Nie licz (5 · 2)². Potęga dotyczy tylko 2: 5 · 4 = 20."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "5 \\cdot 2^2",
+      "choices": {
+        "en": [
+          "20",
+          "100",
+          "10",
+          "25"
+        ],
+        "es": [
+          "20",
+          "100",
+          "10",
+          "25"
+        ],
+        "pl": [
+          "20",
+          "100",
+          "10",
+          "25"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 20,
+      "diagnosticTags": [
+        "exponent_on_product"
+      ]
+    },
+    {
+      "id": "alg1-l02-i02",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If y = 6, evaluate y/2 + 3.",
+        "es": "Si y = 6, evalúa y/2 + 3.",
+        "pl": "Jeśli y = 6, oblicz y/2 + 3."
+      },
+      "feedbackCorrect": {
+        "en": "6/2 + 3 = 3 + 3 = 6.",
+        "es": "6/2 + 3 = 3 + 3 = 6.",
+        "pl": "6/2 + 3 = 3 + 3 = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide first: 6 ÷ 2 = 3, then add 3 → 6.",
+        "es": "Divide primero: 6 ÷ 2 = 3, luego suma 3 → 6.",
+        "pl": "Najpierw dzielenie: 6 ÷ 2 = 3, potem dodaj 3 → 6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{y}{2} + 3,\\; y = 6",
+      "choices": {
+        "en": [
+          "6",
+          "4.5",
+          "9",
+          "3"
+        ],
+        "es": [
+          "6",
+          "4.5",
+          "9",
+          "3"
+        ],
+        "pl": [
+          "6",
+          "4.5",
+          "9",
+          "3"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "divide_whole_sum"
+      ]
+    },
+    {
+      "id": "alg1-l02-i03",
+      "knowledgePointIds": [
+        "kp.alg1.eval.multi.var"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If p = 2 and q = 5, evaluate 3p − q.",
+        "es": "Si p = 2 y q = 5, evalúa 3p − q.",
+        "pl": "Jeśli p = 2 i q = 5, oblicz 3p − q."
+      },
+      "feedbackCorrect": {
+        "en": "3(2) − 5 = 6 − 5 = 1.",
+        "es": "3(2) − 5 = 6 − 5 = 1.",
+        "pl": "3(2) − 5 = 6 − 5 = 1."
+      },
+      "feedbackIncorrect": {
+        "en": "3 · 2 − 5 = 1. Do not compute 3(2 − 5).",
+        "es": "3 · 2 − 5 = 1. No calcules 3(2 − 5).",
+        "pl": "3 · 2 − 5 = 1. Nie licz 3(2 − 5)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "3p - q,\\; p = 2,\\; q = 5",
+      "choices": {
+        "en": [
+          "1",
+          "11",
+          "−1",
+          "6"
+        ],
+        "es": [
+          "1",
+          "11",
+          "−1",
+          "6"
+        ],
+        "pl": [
+          "1",
+          "11",
+          "−1",
+          "6"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "swap_variable_values",
+        "false_grouping"
+      ]
+    },
+    {
+      "id": "alg1-l02-i04",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute",
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.3,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If x = 3, evaluate 4(x + 1) − 2.",
+        "es": "Si x = 3, evalúa 4(x + 1) − 2.",
+        "pl": "Jeśli x = 3, oblicz 4(x + 1) − 2."
+      },
+      "feedbackCorrect": {
+        "en": "4(3 + 1) − 2 = 4(4) − 2 = 16 − 2 = 14.",
+        "es": "4(3 + 1) − 2 = 4(4) − 2 = 16 − 2 = 14.",
+        "pl": "4(3 + 1) − 2 = 4(4) − 2 = 16 − 2 = 14."
+      },
+      "feedbackIncorrect": {
+        "en": "Parentheses → 4; multiply → 16; subtract 2 → 14.",
+        "es": "Paréntesis → 4; multiplica → 16; resta 2 → 14.",
+        "pl": "Nawiasy → 4; mnożenie → 16; odejmij 2 → 14."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "4(x + 1) - 2,\\; x = 3",
+      "choices": {
+        "en": [
+          "14",
+          "12",
+          "16",
+          "10"
+        ],
+        "es": [
+          "14",
+          "12",
+          "16",
+          "10"
+        ],
+        "pl": [
+          "14",
+          "12",
+          "16",
+          "10"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 14,
+      "diagnosticTags": [
+        "distribute_wrong",
+        "skip_parentheses"
+      ]
+    },
+    {
+      "id": "alg1-l02-i05",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If m = −3, evaluate m² + 1.",
+        "es": "Si m = −3, evalúa m² + 1.",
+        "pl": "Jeśli m = −3, oblicz m² + 1."
+      },
+      "feedbackCorrect": {
+        "en": "(−3)² = 9; 9 + 1 = 10.",
+        "es": "(−3)² = 9; 9 + 1 = 10.",
+        "pl": "(−3)² = 9; 9 + 1 = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Squaring a negative gives a positive: (−3)² = 9, then + 1 = 10.",
+        "es": "Al cuadrado, un negativo da positivo: (−3)² = 9, luego + 1 = 10.",
+        "pl": "Kwadrat liczby ujemnej jest dodatni: (−3)² = 9, potem + 1 = 10."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "m^2 + 1,\\; m = -3",
+      "choices": {
+        "en": [
+          "10",
+          "−8",
+          "8",
+          "−10"
+        ],
+        "es": [
+          "10",
+          "−8",
+          "8",
+          "−10"
+        ],
+        "pl": [
+          "10",
+          "−8",
+          "8",
+          "−10"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 10,
+      "diagnosticTags": [
+        "negative_square_sign"
+      ]
+    },
+    {
+      "id": "alg1-l02-i06",
+      "knowledgePointIds": [
+        "kp.alg1.eval.multi.var",
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.35,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If x = 2 and y = 3, evaluate x² + 2y.",
+        "es": "Si x = 2 y y = 3, evalúa x² + 2y.",
+        "pl": "Jeśli x = 2 i y = 3, oblicz x² + 2y."
+      },
+      "feedbackCorrect": {
+        "en": "2² + 2(3) = 4 + 6 = 10.",
+        "es": "2² + 2(3) = 4 + 6 = 10.",
+        "pl": "2² + 2(3) = 4 + 6 = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Square x first, then multiply 2y: 4 + 6 = 10.",
+        "es": "Primero eleva x al cuadrado, luego multiplica 2y: 4 + 6 = 10.",
+        "pl": "Najpierw kwadrat x, potem 2y: 4 + 6 = 10."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "x^2 + 2y,\\; x = 2,\\; y = 3",
+      "choices": {
+        "en": [
+          "10",
+          "16",
+          "8",
+          "12"
+        ],
+        "es": [
+          "10",
+          "16",
+          "8",
+          "12"
+        ],
+        "pl": [
+          "10",
+          "16",
+          "8",
+          "12"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 10,
+      "diagnosticTags": [
+        "swap_variable_values",
+        "exponent_error"
+      ]
+    },
+    {
+      "id": "alg1-l02-i07",
+      "knowledgePointIds": [
+        "kp.alg1.order.ops"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.3,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate: 24 ÷ (4 + 2) · 3",
+        "es": "Evalúa: 24 ÷ (4 + 2) · 3",
+        "pl": "Oblicz: 24 ÷ (4 + 2) · 3"
+      },
+      "feedbackCorrect": {
+        "en": "Parentheses: 6; 24 ÷ 6 = 4; 4 · 3 = 12.",
+        "es": "Paréntesis: 6; 24 ÷ 6 = 4; 4 · 3 = 12.",
+        "pl": "Nawiasy: 6; 24 ÷ 6 = 4; 4 · 3 = 12."
+      },
+      "feedbackIncorrect": {
+        "en": "Group first, then ÷ and · left to right: 24 ÷ 6 · 3 = 12.",
+        "es": "Agrupa primero, luego ÷ y · de izquierda a derecha: 24 ÷ 6 · 3 = 12.",
+        "pl": "Najpierw grupowanie, potem ÷ i · od lewej: 24 ÷ 6 · 3 = 12."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "24 \\div (4 + 2) \\cdot 3",
+      "choices": {
+        "en": [
+          "12",
+          "2",
+          "18",
+          "4"
+        ],
+        "es": [
+          "12",
+          "2",
+          "18",
+          "4"
+        ],
+        "pl": [
+          "12",
+          "2",
+          "18",
+          "4"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 12,
+      "diagnosticTags": [
+        "skip_parentheses",
+        "left_to_right_only"
+      ]
+    },
+    {
+      "id": "alg1-l02-i08",
+      "knowledgePointIds": [
+        "kp.alg1.eval.substitute"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.4,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If t = 5, evaluate 2t² − t.",
+        "es": "Si t = 5, evalúa 2t² − t.",
+        "pl": "Jeśli t = 5, oblicz 2t² − t."
+      },
+      "feedbackCorrect": {
+        "en": "2(25) − 5 = 50 − 5 = 45.",
+        "es": "2(25) − 5 = 50 − 5 = 45.",
+        "pl": "2(25) − 5 = 50 − 5 = 45."
+      },
+      "feedbackIncorrect": {
+        "en": "t² = 25; 2 · 25 = 50; subtract t → 45. Not (2t)².",
+        "es": "t² = 25; 2 · 25 = 50; resta t → 45. No es (2t)².",
+        "pl": "t² = 25; 2 · 25 = 50; odejmij t → 45. To nie (2t)²."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "2t^2 - t,\\; t = 5",
+      "choices": {
+        "en": [
+          "45",
+          "15",
+          "50",
+          "40"
+        ],
+        "es": [
+          "45",
+          "15",
+          "50",
+          "40"
+        ],
+        "pl": [
+          "45",
+          "15",
+          "50",
+          "40"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 45,
+      "diagnosticTags": [
+        "exponent_on_product",
+        "forgot_last_term"
+      ]
+    },
+    {
+      "id": "alg1-l02-i09",
+      "knowledgePointIds": [
+        "kp.alg1.eval.multi.var"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.3,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If a = −1 and b = 4, evaluate a + 3b.",
+        "es": "Si a = −1 y b = 4, evalúa a + 3b.",
+        "pl": "Jeśli a = −1 i b = 4, oblicz a + 3b."
+      },
+      "feedbackCorrect": {
+        "en": "−1 + 3(4) = −1 + 12 = 11.",
+        "es": "−1 + 3(4) = −1 + 12 = 11.",
+        "pl": "−1 + 3(4) = −1 + 12 = 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply 3b first: 3 · 4 = 12, then −1 + 12 = 11.",
+        "es": "Multiplica 3b primero: 3 · 4 = 12, luego −1 + 12 = 11.",
+        "pl": "Najpierw 3b: 3 · 4 = 12, potem −1 + 12 = 11."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "6.EE.A.2c"
+          ]
+        }
+      ],
+      "promptMath": "a + 3b,\\; a = -1,\\; b = 4",
+      "choices": {
+        "en": [
+          "11",
+          "−13",
+          "7",
+          "12"
+        ],
+        "es": [
+          "11",
+          "−13",
+          "7",
+          "12"
+        ],
+        "pl": [
+          "11",
+          "−13",
+          "7",
+          "12"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "sign_error_on_substitute",
+        "swap_variable_values"
+      ]
+    }
+  ]
+}

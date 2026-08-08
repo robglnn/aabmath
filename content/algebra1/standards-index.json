@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "jurisdictions": [
+    "TX",
+    "CCSS",
+    "CA",
+    "FL",
+    "NJ",
+    "NY"
+  ],
+  "primaryDisplay": [
+    "TX",
+    "CCSS"
+  ],
+  "codes": {
+    "TX": {
+      "A.1(A)": {
+        "description": {
+          "en": "Apply mathematics to problems arising in everyday life, society, and the workplace",
+          "es": "Aplicar las matemáticas a problemas de la vida cotidiana, la sociedad y el trabajo",
+          "pl": "Stosować matematykę do problemów życia codziennego, społeczeństwa i pracy"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.variable.identify",
+          "kp.alg1.expression.translate"
+        ]
+      },
+      "A.1(B)": {
+        "description": {
+          "en": "Use a problem-solving model that incorporates analyzing given information, formulating a plan, determining a solution, and evaluating the problem-solving process",
+          "es": "Usar un modelo de resolución de problemas que incluya analizar información, formular un plan, determinar una solución y evaluar el proceso",
+          "pl": "Stosować model rozwiązywania problemów: analiza danych, plan, rozwiązanie i ocena procesu"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.order.ops",
+          "kp.alg1.eval.substitute",
+          "kp.alg1.solve.one.step",
+          "kp.alg1.solve.two.step"
+        ]
+      },
+      "A.1(D)": {
+        "description": {
+          "en": "Communicate mathematical ideas, reasoning, and their implications using multiple representations",
+          "es": "Comunicar ideas matemáticas, razonamiento e implicaciones usando múltiples representaciones",
+          "pl": "Komunikować idee matematyczne, rozumowanie i ich konsekwencje za pomocą wielu reprezentacji"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.variable.identify",
+          "kp.alg1.expression.parts",
+          "kp.alg1.expression.translate",
+          "kp.alg1.equation.meaning",
+          "kp.alg1.equation.vs.expression"
+        ]
+      },
+      "A.1(F)": {
+        "description": {
+          "en": "Analyze mathematical relationships to connect and communicate mathematical ideas",
+          "es": "Analizar relaciones matemáticas para conectar y comunicar ideas matemáticas",
+          "pl": "Analizować zależności matematyczne, by łączyć i komunikować idee matematyczne"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.expression.parts",
+          "kp.alg1.order.ops",
+          "kp.alg1.eval.multi.var",
+          "kp.alg1.solve.two.step"
+        ]
+      },
+      "A.5(A)": {
+        "description": {
+          "en": "Solve linear equations in one variable, including those for which the application of the distributive property is necessary and for which variables are included on both sides",
+          "es": "Resolver ecuaciones lineales en una variable, incluidas las que requieren la propiedad distributiva y variables en ambos lados",
+          "pl": "Rozwiązywać równania liniowe jednej zmiennej, także z własnością rozdzielności i zmiennymi po obu stronach"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.equation.meaning",
+          "kp.alg1.equation.vs.expression",
+          "kp.alg1.solve.one.step",
+          "kp.alg1.solve.two.step"
+        ]
+      },
+      "A.12(B)": {
+        "description": {
+          "en": "Evaluate functions, expressed in function notation, given one or more elements in their domains",
+          "es": "Evaluar funciones, expresadas en notación de función, dados uno o más elementos de sus dominios",
+          "pl": "Obliczać wartości funkcji w notacji funkcyjnej dla danych elementów dziedziny"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.expression.translate",
+          "kp.alg1.eval.substitute",
+          "kp.alg1.eval.multi.var"
+        ]
+      }
+    },
+    "CCSS": {
+      "A-SSE.A.1": {
+        "description": {
+          "en": "Interpret expressions that represent a quantity in terms of its context",
+          "es": "Interpretar expresiones que representan una cantidad en términos de su contexto",
+          "pl": "Interpretować wyrażenia reprezentujące wielkość w kontekście"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.variable.identify",
+          "kp.alg1.expression.parts",
+          "kp.alg1.expression.translate",
+          "kp.alg1.order.ops",
+          "kp.alg1.eval.substitute",
+          "kp.alg1.eval.multi.var"
+        ]
+      },
+      "A-SSE.A.1a": {
+        "description": {
+          "en": "Interpret parts of an expression, such as terms, factors, and coefficients",
+          "es": "Interpretar partes de una expresión, como términos, factores y coeficientes",
+          "pl": "Interpretować części wyrażenia: wyrazy, czynniki i współczynniki"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.variable.identify",
+          "kp.alg1.expression.parts"
+        ]
+      },
+      "A-REI.A.1": {
+        "description": {
+          "en": "Explain each step in solving a simple equation as following from the equality of numbers",
+          "es": "Explicar cada paso al resolver una ecuación simple como consecuencia de la igualdad de números",
+          "pl": "Wyjaśniać każdy krok rozwiązywania prostego równania jako wynik równości liczb"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.equation.meaning",
+          "kp.alg1.equation.vs.expression",
+          "kp.alg1.solve.one.step",
+          "kp.alg1.solve.two.step"
+        ]
+      },
+      "A-REI.B.3": {
+        "description": {
+          "en": "Solve linear equations and inequalities in one variable",
+          "es": "Resolver ecuaciones e inequaciones lineales en una variable",
+          "pl": "Rozwiązywać równania i nierówności liniowe jednej zmiennej"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.solve.one.step",
+          "kp.alg1.solve.two.step"
+        ]
+      },
+      "6.EE.A.2a": {
+        "description": {
+          "en": "Write expressions with variables",
+          "es": "Escribir expresiones con variables",
+          "pl": "Zapisywać wyrażenia ze zmiennymi"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.expression.translate"
+        ]
+      },
+      "6.EE.A.2b": {
+        "description": {
+          "en": "Identify parts of an expression",
+          "es": "Identificar partes de una expresión",
+          "pl": "Identyfikować części wyrażenia"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.expression.parts"
+        ]
+      },
+      "6.EE.A.2c": {
+        "description": {
+          "en": "Evaluate expressions at specific values",
+          "es": "Evaluar expresiones en valores específicos",
+          "pl": "Obliczać wyrażenia dla konkretnych wartości"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.order.ops",
+          "kp.alg1.eval.substitute",
+          "kp.alg1.eval.multi.var"
+        ]
+      },
+      "6.EE.B.5": {
+        "description": {
+          "en": "Understand solving an equation as a process of reasoning",
+          "es": "Comprender la resolución de ecuaciones como proceso de razonamiento",
+          "pl": "Rozumieć rozwiązywanie równania jako proces rozumowania"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.equation.meaning"
+        ]
+      },
+      "6.EE.B.6": {
+        "description": {
+          "en": "Use variables to represent numbers",
+          "es": "Usar variables para representar números",
+          "pl": "Używać zmiennych do reprezentowania liczb"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.expression.translate"
+        ]
+      },
+      "6.EE.B.7": {
+        "description": {
+          "en": "Solve equations of the form x+p=q and px=q",
+          "es": "Resolver ecuaciones de la forma x+p=q y px=q",
+          "pl": "Rozwiązywać równania postaci x+p=q oraz px=q"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.solve.one.step"
+        ]
+      },
+      "7.EE.B.4": {
+        "description": {
+          "en": "Use variables to write and solve equations",
+          "es": "Usar variables para escribir y resolver ecuaciones",
+          "pl": "Używać zmiennych do zapisu i rozwiązywania równań"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.solve.two.step"
+        ]
+      }
+    }
+  },
+  "lessonCoverage": {
+    "alg1-l01": [
+      "A.1(A)",
+      "A.1(D)",
+      "A.1(F)",
+      "A.12(B)",
+      "A-SSE.A.1",
+      "A-SSE.A.1a",
+      "6.EE.A.2a",
+      "6.EE.A.2b",
+      "6.EE.B.6"
+    ],
+    "alg1-l02": [
+      "A.1(B)",
+      "A.1(F)",
+      "A.12(B)",
+      "A-SSE.A.1",
+      "6.EE.A.2c"
+    ],
+    "alg1-l03": [
+      "A.1(B)",
+      "A.1(D)",
+      "A.5(A)",
+      "A-REI.A.1",
+      "A-REI.B.3",
+      "6.EE.B.5",
+      "6.EE.B.7",
+      "7.EE.B.4"
+    ]
+  }
+}
