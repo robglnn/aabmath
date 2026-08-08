@@ -1,0 +1,1304 @@
+{
+  "id": "alg1-l20",
+  "courseId": "algebra1",
+  "order": 20,
+  "title": {
+    "en": "Radical Expressions — Square Roots",
+    "es": "Expresiones radicales — raíces cuadradas",
+    "pl": "Wyrażenia pierwiastkowe — pierwiastki kwadratowe"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.radical.perfect.squares",
+    "kp.alg1.radical.simplify",
+    "kp.alg1.radical.operations"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_20",
+    "unlockOnMastery": [
+      "lesson_board_21"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will evaluate perfect-square roots, simplify radicals, and multiply/divide simple square roots.",
+        "es": "Evaluarás raíces de cuadrados perfectos, simplificarás radicales y multiplicarás/dividirás raíces simples.",
+        "pl": "Będziesz obliczać pierwiastki kwadratów doskonałych, upraszczać pierwiastki oraz mnożyć/dzielić proste pierwiastki."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: pull perfect squares",
+        "es": "Enseñar: sacar cuadrados perfectos",
+        "pl": "Nauczanie: wyciąganie kwadratów"
+      },
+      "body": {
+        "en": "√ means the principal root. Factor the largest perfect square out of the radicand; multiply/divide by combining radicands.",
+        "es": "√ significa la raíz principal. Saca el mayor cuadrado perfecto del radicando; multiplica/divide combinando radicandos.",
+        "pl": "√ oznacza pierwiastek główny. Wyciągnij największy kwadrat doskonały; mnoż/dziel łącząc podpierwiastkowe."
+      },
+      "bodyMath": [
+        "\\sqrt{k^{2}m}=k\\sqrt{m}",
+        "\\sqrt{a}\\cdot\\sqrt{b}=\\sqrt{ab}",
+        "\\sqrt{50}=5\\sqrt{2}"
+      ],
+      "itemIds": [
+        "alg1-l20-t01",
+        "alg1-l20-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Evaluate perfect squares, simplify, and practice product/quotient of square roots.",
+        "es": "Evalúa cuadrados perfectos, simplifica y practica producto/cociente de raíces.",
+        "pl": "Obliczaj kwadraty doskonałe, upraszczaj i ćwicz iloczyn/iloraz pierwiastków."
+      },
+      "itemIds": [
+        "alg1-l20-g01",
+        "alg1-l20-g02",
+        "alg1-l20-g03",
+        "alg1-l20-g04",
+        "alg1-l20-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l20-i01",
+        "alg1-l20-i02",
+        "alg1-l20-i03",
+        "alg1-l20-i04",
+        "alg1-l20-i05",
+        "alg1-l20-i06",
+        "alg1-l20-i07",
+        "alg1-l20-i08",
+        "alg1-l20-i09",
+        "alg1-l20-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l20-t01",
+      "knowledgePointIds": [
+        "kp.alg1.radical.perfect.squares"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is √81?",
+        "es": "¿Cuánto es √81?",
+        "pl": "Ile wynosi √81?"
+      },
+      "feedbackCorrect": {
+        "en": "9² = 81, and the radical symbol means the principal (nonnegative) root 9.",
+        "es": "9² = 81, y el radical significa la raíz principal (no negativa) 9.",
+        "pl": "9² = 81, a symbol pierwiastka oznacza pierwiastek główny (nieujemny) 9."
+      },
+      "feedbackIncorrect": {
+        "en": "√ denotes the principal square root — report 9, not ±9.",
+        "es": "√ denota la raíz cuadrada principal — reporta 9, no ±9.",
+        "pl": "√ oznacza główny pierwiastek kwadratowy — podaj 9, nie ±9."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{81}",
+      "choices": {
+        "en": [
+          "$9$",
+          "$-9$",
+          "$\\pm 9$",
+          "$40.5$"
+        ],
+        "es": [
+          "$9$",
+          "$-9$",
+          "$\\pm 9$",
+          "$40.5$"
+        ],
+        "pl": [
+          "$9$",
+          "$-9$",
+          "$\\pm 9$",
+          "$40.5$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 9,
+      "diagnosticTags": [
+        "pm_instead_of_principal",
+        "half_error"
+      ]
+    },
+    {
+      "id": "alg1-l20-t02",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √50.",
+        "es": "Simplifica √50.",
+        "pl": "Uprość √50."
+      },
+      "feedbackCorrect": {
+        "en": "50 = 25 · 2, so √50 = √25 · √2 = 5√2.",
+        "es": "50 = 25 · 2, así √50 = √25 · √2 = 5√2.",
+        "pl": "50 = 25 · 2, więc √50 = √25 · √2 = 5√2."
+      },
+      "feedbackIncorrect": {
+        "en": "Pull out the largest perfect square 25, not 2 or 10.",
+        "es": "Saca el mayor cuadrado perfecto 25, no 2 ni 10.",
+        "pl": "Wyciągnij największy kwadrat doskonały 25, nie 2 ani 10."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{50}",
+      "choices": {
+        "en": [
+          "$25\\sqrt{2}$",
+          "$5\\sqrt{2}$",
+          "$2\\sqrt{5}$",
+          "$10\\sqrt{5}$"
+        ],
+        "es": [
+          "$25\\sqrt{2}$",
+          "$5\\sqrt{2}$",
+          "$2\\sqrt{5}$",
+          "$10\\sqrt{5}$"
+        ],
+        "pl": [
+          "$25\\sqrt{2}$",
+          "$5\\sqrt{2}$",
+          "$2\\sqrt{5}$",
+          "$10\\sqrt{5}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_perfect_square",
+        "incomplete_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-g01",
+      "knowledgePointIds": [
+        "kp.alg1.radical.perfect.squares"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which of these is a perfect square?",
+        "es": "¿Cuál de estos es un cuadrado perfecto?",
+        "pl": "Która z tych liczb jest kwadratem doskonałym?"
+      },
+      "feedbackCorrect": {
+        "en": "16 = 4², so it is a perfect square; the others are not.",
+        "es": "16 = 4², así es un cuadrado perfecto; los otros no.",
+        "pl": "16 = 4², więc to kwadrat doskonały; pozostałe nie."
+      },
+      "feedbackIncorrect": {
+        "en": "Ask whether an integer square equals the number — only 16 works here.",
+        "es": "Pregunta si un cuadrado entero iguala el número — solo 16 funciona aquí.",
+        "pl": "Sprawdź, czy kwadrat całkowity równa się liczbie — tu tylko 16."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "12,\\ 16,\\ 18,\\ 20",
+      "choices": {
+        "en": [
+          "$12$",
+          "$18$",
+          "$16$",
+          "$20$"
+        ],
+        "es": [
+          "$12$",
+          "$18$",
+          "$16$",
+          "$20$"
+        ],
+        "pl": [
+          "$12$",
+          "$18$",
+          "$16$",
+          "$20$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "not_perfect_square"
+      ]
+    },
+    {
+      "id": "alg1-l20-g02",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √72.",
+        "es": "Simplifica √72.",
+        "pl": "Uprość √72."
+      },
+      "feedbackCorrect": {
+        "en": "72 = 36 · 2, so √72 = 6√2.",
+        "es": "72 = 36 · 2, así √72 = 6√2.",
+        "pl": "72 = 36 · 2, więc √72 = 6√2."
+      },
+      "feedbackIncorrect": {
+        "en": "Use 36 as the perfect-square factor (not leaving √8).",
+        "es": "Usa 36 como factor cuadrado perfecto (no dejes √8).",
+        "pl": "Użyj 36 jako czynnika kwadratowego (nie zostawiaj √8)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{72}",
+      "choices": {
+        "en": [
+          "$8\\sqrt{2}$",
+          "$36\\sqrt{2}$",
+          "$3\\sqrt{8}$",
+          "$6\\sqrt{2}$"
+        ],
+        "es": [
+          "$8\\sqrt{2}$",
+          "$36\\sqrt{2}$",
+          "$3\\sqrt{8}$",
+          "$6\\sqrt{2}$"
+        ],
+        "pl": [
+          "$8\\sqrt{2}$",
+          "$36\\sqrt{2}$",
+          "$3\\sqrt{8}$",
+          "$6\\sqrt{2}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "incomplete_simplify",
+        "wrong_perfect_square"
+      ]
+    },
+    {
+      "id": "alg1-l20-g03",
+      "knowledgePointIds": [
+        "kp.alg1.radical.operations"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √3 · √12.",
+        "es": "Simplifica √3 · √12.",
+        "pl": "Uprość √3 · √12."
+      },
+      "feedbackCorrect": {
+        "en": "Multiply under one radical: √3 · √12 = √36 = 6.",
+        "es": "Multiplica bajo un radical: √3 · √12 = √36 = 6.",
+        "pl": "Pomnóż pod jednym pierwiastkiem: √3 · √12 = √36 = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply under one radical: √(3 · 12) = √36 = 6.",
+        "es": "Multiplica bajo un radical: √(3 · 12) = √36 = 6.",
+        "pl": "Pomnóż pod jednym pierwiastkiem: √(3 · 12) = √36 = 6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{3}\\cdot\\sqrt{12}",
+      "choices": {
+        "en": [
+          "$6$",
+          "$3\\sqrt{4}$",
+          "$\\sqrt{15}$",
+          "$36$"
+        ],
+        "es": [
+          "$6$",
+          "$3\\sqrt{4}$",
+          "$\\sqrt{15}$",
+          "$36$"
+        ],
+        "pl": [
+          "$6$",
+          "$3\\sqrt{4}$",
+          "$\\sqrt{15}$",
+          "$36$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "add_radicands",
+        "forgot_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-g04",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √18.",
+        "es": "Simplifica √18.",
+        "pl": "Uprość √18."
+      },
+      "feedbackCorrect": {
+        "en": "18 = 9 · 2, so √18 = 3√2.",
+        "es": "18 = 9 · 2, así √18 = 3√2.",
+        "pl": "18 = 9 · 2, więc √18 = 3√2."
+      },
+      "feedbackIncorrect": {
+        "en": "The perfect-square factor is 9, giving coefficient 3 outside.",
+        "es": "El factor cuadrado perfecto es 9, dando coeficiente 3 afuera.",
+        "pl": "Czynnik kwadratowy to 9, więc współczynnik 3 na zewnątrz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{18}",
+      "choices": {
+        "en": [
+          "$9\\sqrt{2}$",
+          "$3\\sqrt{2}$",
+          "$2\\sqrt{3}$",
+          "$6\\sqrt{3}$"
+        ],
+        "es": [
+          "$9\\sqrt{2}$",
+          "$3\\sqrt{2}$",
+          "$2\\sqrt{3}$",
+          "$6\\sqrt{3}$"
+        ],
+        "pl": [
+          "$9\\sqrt{2}$",
+          "$3\\sqrt{2}$",
+          "$2\\sqrt{3}$",
+          "$6\\sqrt{3}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_perfect_square",
+        "incomplete_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-g05",
+      "knowledgePointIds": [
+        "kp.alg1.radical.operations"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √48 / √3.",
+        "es": "Simplifica √48 / √3.",
+        "pl": "Uprość √48 / √3."
+      },
+      "feedbackCorrect": {
+        "en": "Divide radicands: √48 / √3 = √16 = 4.",
+        "es": "Divide radicandos: √48 / √3 = √16 = 4.",
+        "pl": "Podziel podpierwiastkowe: √48 / √3 = √16 = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide the radicands first, then take the square root of 16.",
+        "es": "Divide primero los radicandos y luego la raíz de 16.",
+        "pl": "Najpierw podziel podpierwiastkowe, potem pierwiastek z 16."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{\\sqrt{48}}{\\sqrt{3}}",
+      "choices": {
+        "en": [
+          "$16$",
+          "$\\sqrt{16}$",
+          "$4$",
+          "$\\sqrt{45}$"
+        ],
+        "es": [
+          "$16$",
+          "$\\sqrt{16}$",
+          "$4$",
+          "$\\sqrt{45}$"
+        ],
+        "pl": [
+          "$16$",
+          "$\\sqrt{16}$",
+          "$4$",
+          "$\\sqrt{45}$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "subtract_radicands",
+        "forgot_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-i01",
+      "knowledgePointIds": [
+        "kp.alg1.radical.perfect.squares"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is √121?",
+        "es": "¿Cuánto es √121?",
+        "pl": "Ile wynosi √121?"
+      },
+      "feedbackCorrect": {
+        "en": "11² = 121, so the principal root is 11.",
+        "es": "11² = 121, así la raíz principal es 11.",
+        "pl": "11² = 121, więc pierwiastek główny to 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Find the nonnegative number whose square is 121.",
+        "es": "Halla el número no negativo cuyo cuadrado es 121.",
+        "pl": "Znajdź nieujemną liczbę, której kwadrat to 121."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{121}",
+      "choices": {
+        "en": [
+          "$12$",
+          "$\\pm 11$",
+          "$60.5$",
+          "$11$"
+        ],
+        "es": [
+          "$12$",
+          "$\\pm 11$",
+          "$60.5$",
+          "$11$"
+        ],
+        "pl": [
+          "$12$",
+          "$\\pm 11$",
+          "$60.5$",
+          "$11$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "pm_instead_of_principal",
+        "off_by_one"
+      ]
+    },
+    {
+      "id": "alg1-l20-i02",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √32.",
+        "es": "Simplifica √32.",
+        "pl": "Uprość √32."
+      },
+      "feedbackCorrect": {
+        "en": "32 = 16 · 2, so √32 = 4√2.",
+        "es": "32 = 16 · 2, así √32 = 4√2.",
+        "pl": "32 = 16 · 2, więc √32 = 4√2."
+      },
+      "feedbackIncorrect": {
+        "en": "Fully simplify: do not stop at 2√8.",
+        "es": "Simplifica por completo: no te quedes en 2√8.",
+        "pl": "Uprość w pełni: nie zatrzymuj się na 2√8."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{32}",
+      "choices": {
+        "en": [
+          "$4\\sqrt{2}$",
+          "$2\\sqrt{8}$",
+          "$16\\sqrt{2}$",
+          "$8\\sqrt{2}$"
+        ],
+        "es": [
+          "$4\\sqrt{2}$",
+          "$2\\sqrt{8}$",
+          "$16\\sqrt{2}$",
+          "$8\\sqrt{2}$"
+        ],
+        "pl": [
+          "$4\\sqrt{2}$",
+          "$2\\sqrt{8}$",
+          "$16\\sqrt{2}$",
+          "$8\\sqrt{2}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "incomplete_simplify",
+        "wrong_perfect_square"
+      ]
+    },
+    {
+      "id": "alg1-l20-i03",
+      "knowledgePointIds": [
+        "kp.alg1.radical.operations"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √8 · √2.",
+        "es": "Simplifica √8 · √2.",
+        "pl": "Uprość √8 · √2."
+      },
+      "feedbackCorrect": {
+        "en": "Combine: √8 · √2 = √16 = 4.",
+        "es": "Combina: √8 · √2 = √16 = 4.",
+        "pl": "Połącz: √8 · √2 = √16 = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Combine into √16, then take the root.",
+        "es": "Combina en √16 y luego toma la raíz.",
+        "pl": "Połącz w √16, potem weź pierwiastek."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{8}\\cdot\\sqrt{2}",
+      "choices": {
+        "en": [
+          "$2\\sqrt{4}$",
+          "$4$",
+          "$\\sqrt{10}$",
+          "$16$"
+        ],
+        "es": [
+          "$2\\sqrt{4}$",
+          "$4$",
+          "$\\sqrt{10}$",
+          "$16$"
+        ],
+        "pl": [
+          "$2\\sqrt{4}$",
+          "$4$",
+          "$\\sqrt{10}$",
+          "$16$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "add_radicands",
+        "forgot_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-i04",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √75.",
+        "es": "Simplifica √75.",
+        "pl": "Uprość √75."
+      },
+      "feedbackCorrect": {
+        "en": "75 = 25 · 3, so √75 = 5√3.",
+        "es": "75 = 25 · 3, así √75 = 5√3.",
+        "pl": "75 = 25 · 3, więc √75 = 5√3."
+      },
+      "feedbackIncorrect": {
+        "en": "Factor 25 out of 75; the leftover radicand is 3.",
+        "es": "Saca 25 de 75; el radicando restante es 3.",
+        "pl": "Wyciągnij 25 z 75; pozostały podpierwiastkowy to 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{75}",
+      "choices": {
+        "en": [
+          "$25\\sqrt{3}$",
+          "$3\\sqrt{5}$",
+          "$5\\sqrt{3}$",
+          "$15\\sqrt{5}$"
+        ],
+        "es": [
+          "$25\\sqrt{3}$",
+          "$3\\sqrt{5}$",
+          "$5\\sqrt{3}$",
+          "$15\\sqrt{5}$"
+        ],
+        "pl": [
+          "$25\\sqrt{3}$",
+          "$3\\sqrt{5}$",
+          "$5\\sqrt{3}$",
+          "$15\\sqrt{5}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "wrong_perfect_square",
+        "swapped_factors"
+      ]
+    },
+    {
+      "id": "alg1-l20-i05",
+      "knowledgePointIds": [
+        "kp.alg1.radical.perfect.squares"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which statement is true?",
+        "es": "¿Cuál afirmación es verdadera?",
+        "pl": "Które twierdzenie jest prawdziwe?"
+      },
+      "feedbackCorrect": {
+        "en": "√(9+16) = √25 = 5, while 3 + 4 = 7 — radicals do not distribute over addition.",
+        "es": "√(9+16) = √25 = 5, mientras 3 + 4 = 7 — los radicales no se distribuyen sobre la suma.",
+        "pl": "√(9+16) = √25 = 5, a 3 + 4 = 7 — pierwiastki nie rozdzielają się względem dodawania."
+      },
+      "feedbackIncorrect": {
+        "en": "Test a concrete counterexample: √25 ≠ √9 + √16.",
+        "es": "Prueba un contraejemplo concreto: √25 ≠ √9 + √16.",
+        "pl": "Sprawdź konkretny kontrprzykład: √25 ≠ √9 + √16."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{a+b}\\ \\text{vs}\\ \\sqrt{a}+\\sqrt{b}",
+      "choices": {
+        "en": [
+          "$\\sqrt{9+16}=3+4$",
+          "$\\sqrt{a+b}=\\sqrt{a}+\\sqrt{b}\\text{ always}$",
+          "$\\sqrt{25}=\\pm 5$",
+          "$\\sqrt{9+16}=5\\ne 3+4$"
+        ],
+        "es": [
+          "$\\sqrt{9+16}=3+4$",
+          "$\\sqrt{a+b}=\\sqrt{a}+\\sqrt{b}\\text{ siempre}$",
+          "$\\sqrt{25}=\\pm 5$",
+          "$\\sqrt{9+16}=5\\ne 3+4$"
+        ],
+        "pl": [
+          "$\\sqrt{9+16}=3+4$",
+          "$\\sqrt{a+b}=\\sqrt{a}+\\sqrt{b}\\text{ zawsze}$",
+          "$\\sqrt{25}=\\pm 5$",
+          "$\\sqrt{9+16}=5\\ne 3+4$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "distribute_over_add",
+        "pm_instead_of_principal"
+      ]
+    },
+    {
+      "id": "alg1-l20-i06",
+      "knowledgePointIds": [
+        "kp.alg1.radical.operations"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √6 · √24.",
+        "es": "Simplifica √6 · √24.",
+        "pl": "Uprość √6 · √24."
+      },
+      "feedbackCorrect": {
+        "en": "Product of radicands: √6 · √24 = √144 = 12.",
+        "es": "Producto de radicandos: √6 · √24 = √144 = 12.",
+        "pl": "Iloczyn podpierwiastkowych: √6 · √24 = √144 = 12."
+      },
+      "feedbackIncorrect": {
+        "en": "Product of radicands is 144, a perfect square.",
+        "es": "El producto de radicandos es 144, un cuadrado perfecto.",
+        "pl": "Iloczyn podpierwiastkowych to 144, kwadrat doskonały."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{6}\\cdot\\sqrt{24}",
+      "choices": {
+        "en": [
+          "$12$",
+          "$\\sqrt{30}$",
+          "$6\\sqrt{4}$",
+          "$144$"
+        ],
+        "es": [
+          "$12$",
+          "$\\sqrt{30}$",
+          "$6\\sqrt{4}$",
+          "$144$"
+        ],
+        "pl": [
+          "$12$",
+          "$\\sqrt{30}$",
+          "$6\\sqrt{4}$",
+          "$144$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 12,
+      "diagnosticTags": [
+        "add_radicands",
+        "forgot_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-i07",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √98.",
+        "es": "Simplifica √98.",
+        "pl": "Uprość √98."
+      },
+      "feedbackCorrect": {
+        "en": "98 = 49 · 2, so √98 = 7√2.",
+        "es": "98 = 49 · 2, así √98 = 7√2.",
+        "pl": "98 = 49 · 2, więc √98 = 7√2."
+      },
+      "feedbackIncorrect": {
+        "en": "Largest perfect square dividing 98 is 49.",
+        "es": "El mayor cuadrado perfecto que divide a 98 es 49.",
+        "pl": "Największy kwadrat doskonały dzielący 98 to 49."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{98}",
+      "choices": {
+        "en": [
+          "$49\\sqrt{2}$",
+          "$7\\sqrt{2}$",
+          "$2\\sqrt{7}$",
+          "$14\\sqrt{7}$"
+        ],
+        "es": [
+          "$49\\sqrt{2}$",
+          "$7\\sqrt{2}$",
+          "$2\\sqrt{7}$",
+          "$14\\sqrt{7}$"
+        ],
+        "pl": [
+          "$49\\sqrt{2}$",
+          "$7\\sqrt{2}$",
+          "$2\\sqrt{7}$",
+          "$14\\sqrt{7}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_perfect_square",
+        "swapped_factors"
+      ]
+    },
+    {
+      "id": "alg1-l20-i08",
+      "knowledgePointIds": [
+        "kp.alg1.radical.operations"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √45 / √5.",
+        "es": "Simplifica √45 / √5.",
+        "pl": "Uprość √45 / √5."
+      },
+      "feedbackCorrect": {
+        "en": "√45 / √5 = √9 = 3 after dividing radicands.",
+        "es": "√45 / √5 = √9 = 3 tras dividir radicandos.",
+        "pl": "√45 / √5 = √9 = 3 po podzieleniu podpierwiastkowych."
+      },
+      "feedbackIncorrect": {
+        "en": "45 ÷ 5 = 9 under one radical.",
+        "es": "45 ÷ 5 = 9 bajo un solo radical.",
+        "pl": "45 ÷ 5 = 9 pod jednym pierwiastkiem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{\\sqrt{45}}{\\sqrt{5}}",
+      "choices": {
+        "en": [
+          "$9$",
+          "$\\sqrt{9}$",
+          "$3$",
+          "$\\sqrt{40}$"
+        ],
+        "es": [
+          "$9$",
+          "$\\sqrt{9}$",
+          "$3$",
+          "$\\sqrt{40}$"
+        ],
+        "pl": [
+          "$9$",
+          "$\\sqrt{9}$",
+          "$3$",
+          "$\\sqrt{40}$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "subtract_radicands",
+        "forgot_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-i09",
+      "knowledgePointIds": [
+        "kp.alg1.radical.simplify"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify √12 · √3.",
+        "es": "Simplifica √12 · √3.",
+        "pl": "Uprość √12 · √3."
+      },
+      "feedbackCorrect": {
+        "en": "√12 · √3 = √36 = 6 (or 2√3 · √3 = 2 · 3 = 6).",
+        "es": "√12 · √3 = √36 = 6 (o 2√3 · √3 = 2 · 3 = 6).",
+        "pl": "√12 · √3 = √36 = 6 (lub 2√3 · √3 = 2 · 3 = 6)."
+      },
+      "feedbackIncorrect": {
+        "en": "Either multiply first to √36, or simplify √12 = 2√3 then multiply.",
+        "es": "Multiplica primero a √36, o simplifica √12 = 2√3 y luego multiplica.",
+        "pl": "Albo najpierw √36, albo uprość √12 = 2√3 i potem pomnóż."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\sqrt{12}\\cdot\\sqrt{3}",
+      "choices": {
+        "en": [
+          "$3\\sqrt{4}$",
+          "$\\sqrt{15}$",
+          "$36$",
+          "$6$"
+        ],
+        "es": [
+          "$3\\sqrt{4}$",
+          "$\\sqrt{15}$",
+          "$36$",
+          "$6$"
+        ],
+        "pl": [
+          "$3\\sqrt{4}$",
+          "$\\sqrt{15}$",
+          "$36$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "add_radicands",
+        "forgot_simplify"
+      ]
+    },
+    {
+      "id": "alg1-l20-i10",
+      "knowledgePointIds": [
+        "kp.alg1.radical.operations"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (√18) / (√2).",
+        "es": "Simplifica (√18) / (√2).",
+        "pl": "Uprość (√18) / (√2)."
+      },
+      "feedbackCorrect": {
+        "en": "√18 / √2 = √9 = 3 after dividing radicands.",
+        "es": "√18 / √2 = √9 = 3 tras dividir radicandos.",
+        "pl": "√18 / √2 = √9 = 3 po podzieleniu podpierwiastkowych."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide radicands: 18/2 = 9, then √9 = 3.",
+        "es": "Divide radicandos: 18/2 = 9, luego √9 = 3.",
+        "pl": "Podziel podpierwiastkowe: 18/2 = 9, potem √9 = 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{\\sqrt{18}}{\\sqrt{2}}",
+      "choices": {
+        "en": [
+          "$3$",
+          "$9$",
+          "$\\sqrt{16}$",
+          "$4$"
+        ],
+        "es": [
+          "$3$",
+          "$9$",
+          "$\\sqrt{16}$",
+          "$4$"
+        ],
+        "pl": [
+          "$3$",
+          "$9$",
+          "$\\sqrt{16}$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "subtract_radicands",
+        "forgot_simplify"
+      ]
+    }
+  ]
+}

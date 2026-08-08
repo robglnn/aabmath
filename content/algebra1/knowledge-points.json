@@ -3278,6 +3278,552 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.exponential.recognize",
+      "title": {
+        "en": "Recognize exponential growth and decay",
+        "es": "Reconocer crecimiento y decaimiento exponencial",
+        "pl": "Rozpoznawać wzrost i zanikanie wykładnicze"
+      },
+      "prerequisites": [
+        "kp.alg1.graph.slope.intercept",
+        "kp.alg1.exponents.product"
+      ],
+      "successCriteria": {
+        "en": "Student distinguishes exponential patterns (common ratio) from linear (common difference) in tables and graphs.",
+        "es": "El estudiante distingue patrones exponenciales (razón común) de lineales (diferencia común) en tablas y gráficas.",
+        "pl": "Uczeń odróżnia wzorce wykładnicze (wspólny iloraz) od liniowych (wspólna różnica) w tabelach i wykresach."
+      },
+      "misconceptions": {
+        "en": [
+          "Calling any curved graph exponential without checking a constant multiplier",
+          "Confusing growth (b > 1) with decay (0 < b < 1)"
+        ],
+        "es": [
+          "Llamar exponencial a cualquier gráfica curva sin verificar un multiplicador constante",
+          "Confundir crecimiento (b > 1) con decaimiento (0 < b < 1)"
+        ],
+        "pl": [
+          "Nazywanie wykładniczym każdego krzywego wykresu bez stałego mnożnika",
+          "Mylenie wzrostu (b > 1) z zanikaniem (0 < b < 1)"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.1c",
+            "F-LE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-LE.1c"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.exponential.form",
+      "title": {
+        "en": "Form y = a·b^x — identify a and b",
+        "es": "Forma y = a·b^x — identificar a y b",
+        "pl": "Postać y = a·b^x — identyfikować a i b"
+      },
+      "prerequisites": [
+        "kp.alg1.exponential.recognize",
+        "kp.alg1.exponents.power"
+      ],
+      "encompassing": [
+        "kp.alg1.exponential.recognize"
+      ],
+      "successCriteria": {
+        "en": "Student reads initial value a (when x = 0) and growth/decay factor b from a rule, table, or context.",
+        "es": "El estudiante lee el valor inicial a (cuando x = 0) y el factor b de crecimiento/decaimiento de una regla, tabla o contexto.",
+        "pl": "Uczeń odczytuje wartość początkową a (gdy x = 0) oraz czynnik b wzrostu/zanikania z reguły, tabeli lub kontekstu."
+      },
+      "misconceptions": {
+        "en": [
+          "Treating b as an additive rate (like slope) instead of a multiplier",
+          "Swapping a and b when writing y = a·b^x"
+        ],
+        "es": [
+          "Tratar b como una tasa aditiva (como pendiente) en lugar de un multiplicador",
+          "Intercambiar a y b al escribir y = a·b^x"
+        ],
+        "pl": [
+          "Traktowanie b jak stopy addytywnej (jak nachylenie) zamiast mnożnika",
+          "Zamienianie a i b przy zapisie y = a·b^x"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-LE.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.exponential.evaluate",
+      "title": {
+        "en": "Evaluate and extend exponential rules",
+        "es": "Evaluar y extender reglas exponenciales",
+        "pl": "Obliczać i rozszerzać reguły wykładnicze"
+      },
+      "prerequisites": [
+        "kp.alg1.exponential.form"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes integer x into y = a·b^x and finds next terms of a geometric sequence from a recursive multiply-by-b rule.",
+        "es": "El estudiante sustituye x entero en y = a·b^x y halla términos siguientes de una sucesión geométrica multiplicando por b.",
+        "pl": "Uczeń podstawia całkowite x do y = a·b^x i znajduje kolejne wyrazy ciągu geometrycznego mnożąc przez b."
+      },
+      "misconceptions": {
+        "en": [
+          "Adding b repeatedly instead of multiplying",
+          "Using b^x without multiplying by a"
+        ],
+        "es": [
+          "Sumar b repetidamente en lugar de multiplicar",
+          "Usar b^x sin multiplicar por a"
+        ],
+        "pl": [
+          "Dodawanie b wielokrotnie zamiast mnożenia",
+          "Używanie b^x bez mnożenia przez a"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-LE.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.radical.perfect.squares",
+      "title": {
+        "en": "Perfect squares and simple square roots",
+        "es": "Cuadrados perfectos y raíces cuadradas simples",
+        "pl": "Kwadraty doskonałe i proste pierwiastki kwadratowe"
+      },
+      "prerequisites": [
+        "kp.alg1.exponents.power",
+        "kp.alg1.order.ops"
+      ],
+      "successCriteria": {
+        "en": "Student recognizes perfect squares and evaluates √n for perfect-square n (principal/nonnegative root).",
+        "es": "El estudiante reconoce cuadrados perfectos y evalúa √n para n cuadrado perfecto (raíz principal no negativa).",
+        "pl": "Uczeń rozpoznaje kwadraty doskonałe i oblicza √n dla doskonałego n (główny pierwiastek nieujemny)."
+      },
+      "misconceptions": {
+        "en": [
+          "Reporting ±√n when the radical symbol alone means the principal root",
+          "Thinking √(a + b) = √a + √b"
+        ],
+        "es": [
+          "Reportar ±√n cuando el radical solo significa la raíz principal",
+          "Creer que √(a + b) = √a + √b"
+        ],
+        "pl": [
+          "Podawanie ±√n, gdy sam symbol pierwiastka oznacza pierwiastek główny",
+          "Myślenie, że √(a + b) = √a + √b"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "N-RN.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.NSO.1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.radical.simplify",
+      "title": {
+        "en": "Simplify square-root radicals",
+        "es": "Simplificar radicales de raíz cuadrada",
+        "pl": "Upraszczać pierwiastki kwadratowe"
+      },
+      "prerequisites": [
+        "kp.alg1.radical.perfect.squares",
+        "kp.alg1.factor.gcf"
+      ],
+      "encompassing": [
+        "kp.alg1.radical.perfect.squares"
+      ],
+      "successCriteria": {
+        "en": "Student factors out the largest perfect-square factor: √(k²·m) = k√m (m square-free when possible).",
+        "es": "El estudiante saca el mayor factor cuadrado perfecto: √(k²·m) = k√m (m libre de cuadrados cuando es posible).",
+        "pl": "Uczeń wyciąga największy czynnik kwadratowy: √(k²·m) = k√m (m bezkwadratowe, gdy możliwe)."
+      },
+      "misconceptions": {
+        "en": [
+          "Pulling out a non-square factor as if it were a perfect square",
+          "Leaving a perfect-square factor inside the radical"
+        ],
+        "es": [
+          "Sacar un factor no cuadrado como si fuera cuadrado perfecto",
+          "Dejar un factor cuadrado perfecto dentro del radical"
+        ],
+        "pl": [
+          "Wyciąganie czynnika niekwadratowego jak kwadratu doskonałego",
+          "Zostawianie czynnika kwadratowego wewnątrz pierwiastka"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "N-RN.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.NSO.1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.radical.operations",
+      "title": {
+        "en": "Multiply and divide simple square roots",
+        "es": "Multiplicar y dividir raíces cuadradas simples",
+        "pl": "Mnożyć i dzielić proste pierwiastki kwadratowe"
+      },
+      "prerequisites": [
+        "kp.alg1.radical.simplify"
+      ],
+      "successCriteria": {
+        "en": "Student uses √a·√b = √(ab) and √a/√b = √(a/b) (b > 0), then simplifies the result.",
+        "es": "El estudiante usa √a·√b = √(ab) y √a/√b = √(a/b) (b > 0), luego simplifica el resultado.",
+        "pl": "Uczeń stosuje √a·√b = √(ab) i √a/√b = √(a/b) (b > 0), potem upraszcza wynik."
+      },
+      "misconceptions": {
+        "en": [
+          "Adding radicals by adding radicands: √a + √b ≠ √(a+b)",
+          "Forgetting to simplify after multiplying or dividing"
+        ],
+        "es": [
+          "Sumar radicales sumando radicandos: √a + √b ≠ √(a+b)",
+          "Olvidar simplificar después de multiplicar o dividir"
+        ],
+        "pl": [
+          "Dodawanie pierwiastków przez dodawanie podpierwiastkowych: √a + √b ≠ √(a+b)",
+          "Zapominanie o uproszczeniu po mnożeniu lub dzieleniu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.11(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "N-RN.A.2",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "N-RN.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.NSO.1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.rational.simplify",
+      "title": {
+        "en": "Simplify simple rational expressions",
+        "es": "Simplificar expresiones racionales simples",
+        "pl": "Upraszczać proste wyrażenia wymierne"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.gcf",
+        "kp.alg1.exponents.quotient"
+      ],
+      "successCriteria": {
+        "en": "Student factors numerator and denominator when needed and cancels only common factors (not terms).",
+        "es": "El estudiante factoriza numerador y denominador cuando hace falta y cancela solo factores comunes (no términos).",
+        "pl": "Uczeń rozkłada licznik i mianownik gdy trzeba i skraca tylko wspólne czynniki (nie składniki)."
+      },
+      "misconceptions": {
+        "en": [
+          "Canceling terms across a sum (e.g. canceling x in (x+2)/x)",
+          "Canceling only part of a factor"
+        ],
+        "es": [
+          "Cancelar términos en una suma (p. ej. cancelar x en (x+2)/x)",
+          "Cancelar solo parte de un factor"
+        ],
+        "pl": [
+          "Skracanie składników w sumie (np. x w (x+2)/x)",
+          "Skracanie tylko części czynnika"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.rational.multiply",
+      "title": {
+        "en": "Multiply simple rational expressions",
+        "es": "Multiplicar expresiones racionales simples",
+        "pl": "Mnożyć proste wyrażenia wymierne"
+      },
+      "prerequisites": [
+        "kp.alg1.rational.simplify",
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "encompassing": [
+        "kp.alg1.rational.simplify"
+      ],
+      "successCriteria": {
+        "en": "Student multiplies numerators and denominators (or factors first), then cancels common factors before expanding.",
+        "es": "El estudiante multiplica numeradores y denominadores (o factoriza primero), luego cancela factores comunes antes de expandir.",
+        "pl": "Uczeń mnoży liczniki i mianowniki (lub najpierw rozkłada), potem skraca wspólne czynniki przed rozwinięciem."
+      },
+      "misconceptions": {
+        "en": [
+          "Cross-adding instead of multiplying fractions",
+          "Canceling after incorrectly expanding both sides"
+        ],
+        "es": [
+          "Sumar en cruz en lugar de multiplicar fracciones",
+          "Cancelar después de expandir incorrectamente ambos lados"
+        ],
+        "pl": [
+          "Dodawanie na krzyż zamiast mnożenia ułamków",
+          "Skracanie po błędnym rozwinięciu obu stron"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.rational.divide",
+      "title": {
+        "en": "Divide simple rational expressions",
+        "es": "Dividir expresiones racionales simples",
+        "pl": "Dzielić proste wyrażenia wymierne"
+      },
+      "prerequisites": [
+        "kp.alg1.rational.multiply"
+      ],
+      "successCriteria": {
+        "en": "Student rewrites division as multiplication by the reciprocal, then multiplies and simplifies.",
+        "es": "El estudiante reescribe la división como multiplicación por el recíproco, luego multiplica y simplifica.",
+        "pl": "Uczeń przepisuje dzielenie jako mnożenie przez odwrotność, potem mnoży i upraszcza."
+      },
+      "misconceptions": {
+        "en": [
+          "Flipping the first fraction instead of the divisor",
+          "Dividing numerators and denominators separately without reciprocals"
+        ],
+        "es": [
+          "Invertir la primera fracción en lugar del divisor",
+          "Dividir numeradores y denominadores por separado sin recíprocos"
+        ],
+        "pl": [
+          "Odwracanie pierwszego ułamka zamiast dzielnika",
+          "Dzielenie liczników i mianowników osobno bez odwrotności"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.7"
+          ]
+        }
+      ]
     }
   ]
 }

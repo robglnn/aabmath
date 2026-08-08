@@ -1,0 +1,1301 @@
+{
+  "id": "alg1-l19",
+  "courseId": "algebra1",
+  "order": 19,
+  "title": {
+    "en": "Exponential Growth & Decay Intro",
+    "es": "Introducción al crecimiento y decaimiento exponencial",
+    "pl": "Wstęp do wzrostu i zanikania wykładniczego"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.exponential.recognize",
+    "kp.alg1.exponential.form",
+    "kp.alg1.exponential.evaluate"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_19",
+    "unlockOnMastery": [
+      "lesson_board_20"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will recognize growth/decay, read a and b in y = a·b^x, and evaluate simple exponential rules.",
+        "es": "Reconocerás crecimiento/decaimiento, leerás a y b en y = a·b^x y evaluarás reglas exponenciales simples.",
+        "pl": "Będziesz rozpoznawać wzrost/zanikanie, odczytywać a i b w y = a·b^x oraz obliczać proste reguły wykładnicze."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: ratio & form",
+        "es": "Enseñar: razón y forma",
+        "pl": "Nauczanie: iloraz i postać"
+      },
+      "body": {
+        "en": "Exponential change multiplies by a constant factor b each step. Write y = a·b^x with a = y(0).",
+        "es": "El cambio exponencial multiplica por un factor constante b cada paso. Escribe y = a·b^x con a = y(0).",
+        "pl": "Zmiana wykładnicza mnoży przez stały czynnik b na każdym kroku. Zapisz y = a·b^x z a = y(0)."
+      },
+      "bodyMath": [
+        "y=a\\cdot b^{x}",
+        "b>1:\\uparrow;\\quad 0<b<1:\\downarrow",
+        "5,10,20,40:\\ b=2"
+      ],
+      "itemIds": [
+        "alg1-l19-t01",
+        "alg1-l19-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Classify growth vs decay, identify a and b, and evaluate friendly integer powers.",
+        "es": "Clasifica crecimiento vs decaimiento, identifica a y b, y evalúa potencias enteras amables.",
+        "pl": "Klasyfikuj wzrost vs zanikanie, identyfikuj a i b oraz obliczaj wygodne potęgi całkowite."
+      },
+      "itemIds": [
+        "alg1-l19-g01",
+        "alg1-l19-g02",
+        "alg1-l19-g03",
+        "alg1-l19-g04",
+        "alg1-l19-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l19-i01",
+        "alg1-l19-i02",
+        "alg1-l19-i03",
+        "alg1-l19-i04",
+        "alg1-l19-i05",
+        "alg1-l19-i06",
+        "alg1-l19-i07",
+        "alg1-l19-i08",
+        "alg1-l19-i09",
+        "alg1-l19-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l19-t01",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.recognize"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "The table shows y values for x = 0, 1, 2, 3: 5, 10, 20, 40. What kind of pattern is this?",
+        "es": "La tabla muestra y para x = 0, 1, 2, 3: 5, 10, 20, 40. ¿Qué tipo de patrón es?",
+        "pl": "Tabela pokazuje y dla x = 0, 1, 2, 3: 5, 10, 20, 40. Jaki to wzorzec?"
+      },
+      "feedbackCorrect": {
+        "en": "Each term is twice the previous — a constant ratio of 2 means exponential growth.",
+        "es": "Cada término es el doble del anterior: una razón constante 2 indica crecimiento exponencial.",
+        "pl": "Każdy wyraz jest dwa razy większy od poprzedniego — stały iloraz 2 to wzrost wykładniczy."
+      },
+      "feedbackIncorrect": {
+        "en": "Check ratios: 10/5 = 20/10 = 40/20 = 2, not a constant difference.",
+        "es": "Mira las razones: 10/5 = 20/10 = 40/20 = 2, no una diferencia constante.",
+        "pl": "Sprawdź ilorazy: 10/5 = 20/10 = 40/20 = 2, nie stała różnica."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.1c",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "5,\\ 10,\\ 20,\\ 40",
+      "choices": {
+        "en": [
+          "Exponential growth (×2 each step)",
+          "Linear growth (+5 each step)",
+          "Exponential decay",
+          "Quadratic only"
+        ],
+        "es": [
+          "Crecimiento exponencial (×2 cada paso)",
+          "Crecimiento lineal (+5 cada paso)",
+          "Decaimiento exponencial",
+          "Solo cuadrático"
+        ],
+        "pl": [
+          "Wzrost wykładniczy (×2 na krok)",
+          "Wzrost liniowy (+5 na krok)",
+          "Zanikanie wykładnicze",
+          "Tylko kwadratowy"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "linear_vs_exp",
+        "growth_vs_decay"
+      ]
+    },
+    {
+      "id": "alg1-l19-t02",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.form"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In y = 3 · 2^x, what is the initial value a and the growth factor b?",
+        "es": "En y = 3 · 2^x, ¿cuál es el valor inicial a y el factor de crecimiento b?",
+        "pl": "W y = 3 · 2^x, jaka jest wartość początkowa a i czynnik wzrostu b?"
+      },
+      "feedbackCorrect": {
+        "en": "Form y = a·b^x: a = 3 is the starting value; b = 2 multiplies each step.",
+        "es": "Forma y = a·b^x: a = 3 es el valor inicial; b = 2 multiplica en cada paso.",
+        "pl": "Postać y = a·b^x: a = 3 to wartość początkowa; b = 2 mnoży na każdym kroku."
+      },
+      "feedbackIncorrect": {
+        "en": "a is the coefficient in front; b is the base of the exponential.",
+        "es": "a es el coeficiente delante; b es la base de la exponencial.",
+        "pl": "a to współczynnik z przodu; b to podstawa potęgi."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        }
+      ],
+      "promptMath": "y=3\\cdot 2^{x}",
+      "choices": {
+        "en": [
+          "$a=2,\\ b=3$",
+          "$a=3,\\ b=2$",
+          "$a=3,\\ b=\\tfrac12$",
+          "$a=6,\\ b=2$"
+        ],
+        "es": [
+          "$a=2,\\ b=3$",
+          "$a=3,\\ b=2$",
+          "$a=3,\\ b=\\tfrac12$",
+          "$a=6,\\ b=2$"
+        ],
+        "pl": [
+          "$a=2,\\ b=3$",
+          "$a=3,\\ b=2$",
+          "$a=3,\\ b=\\tfrac12$",
+          "$a=6,\\ b=2$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "swap_a_b",
+        "wrong_factor"
+      ]
+    },
+    {
+      "id": "alg1-l19-g01",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.recognize"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A quantity is multiplied by 0.8 each year. Is this growth or decay?",
+        "es": "Una cantidad se multiplica por 0.8 cada año. ¿Es crecimiento o decaimiento?",
+        "pl": "Wielkość jest mnożona przez 0.8 co rok. Czy to wzrost czy zanikanie?"
+      },
+      "feedbackCorrect": {
+        "en": "When the factor b is between 0 and 1, each step shrinks the value — decay.",
+        "es": "Si el factor b está entre 0 y 1, cada paso reduce el valor: decaimiento.",
+        "pl": "Gdy czynnik b jest między 0 a 1, każdy krok zmniejsza wartość — zanikanie."
+      },
+      "feedbackIncorrect": {
+        "en": "Growth needs b > 1; positivity alone is not enough.",
+        "es": "El crecimiento necesita b > 1; solo ser positivo no basta.",
+        "pl": "Wzrost wymaga b > 1; sama dodatniość nie wystarczy."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.1c",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "b=0.8",
+      "choices": {
+        "en": [
+          "Growth (b > 1)",
+          "Neither — it is linear",
+          "Decay (0 < b < 1)",
+          "Growth because 0.8 > 0"
+        ],
+        "es": [
+          "Crecimiento (b > 1)",
+          "Ninguno — es lineal",
+          "Decaimiento (0 < b < 1)",
+          "Crecimiento porque 0.8 > 0"
+        ],
+        "pl": [
+          "Wzrost (b > 1)",
+          "Żadne — to liniowe",
+          "Zanikanie (0 < b < 1)",
+          "Wzrost, bo 0.8 > 0"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "growth_vs_decay",
+        "sign_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l19-g02",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.form"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A culture starts at 200 cells and triples each hour. Which model fits?",
+        "es": "Un cultivo empieza con 200 células y se triplica cada hora. ¿Qué modelo encaja?",
+        "pl": "Kultura zaczyna od 200 komórek i potraja się co godzinę. Który model pasuje?"
+      },
+      "feedbackCorrect": {
+        "en": "Start 200 and multiply by 3 each hour → y = 200 · 3^x.",
+        "es": "Empieza en 200 y multiplica por 3 cada hora → y = 200 · 3^x.",
+        "pl": "Start 200 i mnożenie przez 3 co godzinę → y = 200 · 3^x."
+      },
+      "feedbackIncorrect": {
+        "en": "Tripling is a factor of 3 in the base, not adding 3x or swapping a and b.",
+        "es": "Triplicar es un factor 3 en la base, no sumar 3x ni intercambiar a y b.",
+        "pl": "Potrójnienie to czynnik 3 w podstawie, nie dodawanie 3x ani zamiana a i b."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        }
+      ],
+      "promptMath": "y=a\\cdot b^{x}",
+      "choices": {
+        "en": [
+          "$y=200\\cdot 3x$",
+          "$y=3\\cdot 200^{x}$",
+          "$y=200+3x$",
+          "$y=200\\cdot 3^{x}$"
+        ],
+        "es": [
+          "$y=200\\cdot 3x$",
+          "$y=3\\cdot 200^{x}$",
+          "$y=200+3x$",
+          "$y=200\\cdot 3^{x}$"
+        ],
+        "pl": [
+          "$y=200\\cdot 3x$",
+          "$y=3\\cdot 200^{x}$",
+          "$y=200+3x$",
+          "$y=200\\cdot 3^{x}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "linear_model",
+        "swap_a_b"
+      ]
+    },
+    {
+      "id": "alg1-l19-g03",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.evaluate"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If y = 5 · 2^x, what is y when x = 3?",
+        "es": "Si y = 5 · 2^x, ¿cuánto es y cuando x = 3?",
+        "pl": "Jeśli y = 5 · 2^x, ile wynosi y przy x = 3?"
+      },
+      "feedbackCorrect": {
+        "en": "2³ = 8, then 5 · 8 = 40.",
+        "es": "2³ = 8, luego 5 · 8 = 40.",
+        "pl": "2³ = 8, potem 5 · 8 = 40."
+      },
+      "feedbackIncorrect": {
+        "en": "Compute the power first, then multiply by 5 — do not add 5 + 2·3.",
+        "es": "Calcula primero la potencia y luego multiplica por 5 — no sumes 5 + 2·3.",
+        "pl": "Najpierw potęga, potem mnożenie przez 5 — nie dodawaj 5 + 2·3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        }
+      ],
+      "promptMath": "y=5\\cdot 2^{3}",
+      "choices": {
+        "en": [
+          "$40$",
+          "$30$",
+          "$16$",
+          "$13$"
+        ],
+        "es": [
+          "$40$",
+          "$30$",
+          "$16$",
+          "$13$"
+        ],
+        "pl": [
+          "$40$",
+          "$30$",
+          "$16$",
+          "$13$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 40,
+      "diagnosticTags": [
+        "add_instead_of_multiply",
+        "power_error"
+      ]
+    },
+    {
+      "id": "alg1-l19-g04",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.evaluate"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Sequence: 4, 12, 36, … Each term multiplies by 3. What is the next term?",
+        "es": "Sucesión: 4, 12, 36, … Cada término se multiplica por 3. ¿Cuál es el siguiente?",
+        "pl": "Ciąg: 4, 12, 36, … Każdy wyraz mnoży się przez 3. Jaki jest następny?"
+      },
+      "feedbackCorrect": {
+        "en": "36 × 3 = 108 — keep the same common ratio.",
+        "es": "36 × 3 = 108 — mantén la misma razón común.",
+        "pl": "36 × 3 = 108 — zachowaj ten sam wspólny iloraz."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply the last term by 3; do not add 3 or double.",
+        "es": "Multiplica el último término por 3; no sumes 3 ni dupliques.",
+        "pl": "Pomnóż ostatni wyraz przez 3; nie dodawaj 3 ani nie podwajaj."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        }
+      ],
+      "promptMath": "4,\\ 12,\\ 36,\\ ?",
+      "choices": {
+        "en": [
+          "$72$",
+          "$108$",
+          "$39$",
+          "$144$"
+        ],
+        "es": [
+          "$72$",
+          "$108$",
+          "$39$",
+          "$144$"
+        ],
+        "pl": [
+          "$72$",
+          "$108$",
+          "$39$",
+          "$144$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 108,
+      "diagnosticTags": [
+        "add_instead_of_multiply",
+        "wrong_ratio"
+      ]
+    },
+    {
+      "id": "alg1-l19-g05",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.form"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = 80 · (1/2)^x models which situation best?",
+        "es": "y = 80 · (1/2)^x modela mejor ¿cuál situación?",
+        "pl": "y = 80 · (1/2)^x najlepiej modeluje którą sytuację?"
+      },
+      "feedbackCorrect": {
+        "en": "a = 80 and b = 1/2 < 1 → start at 80 and halve each unit of x.",
+        "es": "a = 80 y b = 1/2 < 1 → empieza en 80 y se reduce a la mitad en cada unidad de x.",
+        "pl": "a = 80 i b = 1/2 < 1 → start 80 i połowienie na każdą jednostkę x."
+      },
+      "feedbackIncorrect": {
+        "en": "Because b = 1/2 is less than 1, the model decays by half — it does not double.",
+        "es": "Como b = 1/2 es menor que 1, el modelo decae a la mitad — no se duplica.",
+        "pl": "Ponieważ b = 1/2 < 1, model zanika o połowę — nie podwaja się."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        }
+      ],
+      "promptMath": "y=80\\cdot\\left(\\tfrac12\\right)^{x}",
+      "choices": {
+        "en": [
+          "Starts at 80 and doubles each step",
+          "Starts at 1/2 and grows by 80",
+          "Starts at 80 and halves each step (decay)",
+          "Linear decrease of 80"
+        ],
+        "es": [
+          "Empieza en 80 y se duplica cada paso",
+          "Empieza en 1/2 y crece en 80",
+          "Empieza en 80 y se reduce a la mitad cada paso (decaimiento)",
+          "Descenso lineal de 80"
+        ],
+        "pl": [
+          "Zaczyna od 80 i co krok się podwaja",
+          "Zaczyna od 1/2 i rośnie o 80",
+          "Zaczyna od 80 i co krok się połowi (zanikanie)",
+          "Liniowy spadek o 80"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "growth_vs_decay",
+        "swap_a_b"
+      ]
+    },
+    {
+      "id": "alg1-l19-i01",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.recognize"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which table shows exponential decay?",
+        "es": "¿Qué tabla muestra decaimiento exponencial?",
+        "pl": "Która tabela pokazuje zanikanie wykładnicze?"
+      },
+      "feedbackCorrect": {
+        "en": "100 → 50 → 25 → 12.5 multiplies by 1/2 each time — exponential decay.",
+        "es": "100 → 50 → 25 → 12.5 se multiplica por 1/2 cada vez — decaimiento exponencial.",
+        "pl": "100 → 50 → 25 → 12.5 mnoży się przez 1/2 za każdym razem — zanikanie wykładnicze."
+      },
+      "feedbackIncorrect": {
+        "en": "Decay needs a constant ratio between 0 and 1; −10 each step is linear.",
+        "es": "El decaimiento necesita razón constante entre 0 y 1; −10 cada paso es lineal.",
+        "pl": "Zanikanie wymaga stałego ilorazu między 0 a 1; −10 na krok to liniowe."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.1c",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "y:\\ ?,\\ ?,\\ ?,\\ ?",
+      "choices": {
+        "en": [
+          "100, 90, 80, 70",
+          "2, 4, 8, 16",
+          "1, 4, 9, 16",
+          "100, 50, 25, 12.5"
+        ],
+        "es": [
+          "100, 90, 80, 70",
+          "2, 4, 8, 16",
+          "1, 4, 9, 16",
+          "100, 50, 25, 12.5"
+        ],
+        "pl": [
+          "100, 90, 80, 70",
+          "2, 4, 8, 16",
+          "1, 4, 9, 16",
+          "100, 50, 25, 12.5"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "linear_vs_exp",
+        "growth_vs_decay"
+      ]
+    },
+    {
+      "id": "alg1-l19-i02",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.form"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "At x = 0, y = 12. Each step multiplies by 1.5. Write y = a·b^x.",
+        "es": "En x = 0, y = 12. Cada paso multiplica por 1.5. Escribe y = a·b^x.",
+        "pl": "Przy x = 0, y = 12. Każdy krok mnoży przez 1.5. Zapisz y = a·b^x."
+      },
+      "feedbackCorrect": {
+        "en": "Initial value a = 12 and factor b = 1.5 give y = 12 · (1.5)^x.",
+        "es": "Valor inicial a = 12 y factor b = 1.5 dan y = 12 · (1.5)^x.",
+        "pl": "Wartość początkowa a = 12 i czynnik b = 1.5 dają y = 12 · (1.5)^x."
+      },
+      "feedbackIncorrect": {
+        "en": "Put the starting amount in front and the multiplier in the base.",
+        "es": "Pon el valor inicial delante y el multiplicador en la base.",
+        "pl": "Wartość startową z przodu, mnożnik w podstawie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        }
+      ],
+      "promptMath": "a=12,\\ b=1.5",
+      "choices": {
+        "en": [
+          "$y=12\\cdot(1.5)^{x}$",
+          "$y=1.5\\cdot 12^{x}$",
+          "$y=12+1.5x$",
+          "$y=12\\cdot(0.5)^{x}$"
+        ],
+        "es": [
+          "$y=12\\cdot(1.5)^{x}$",
+          "$y=1.5\\cdot 12^{x}$",
+          "$y=12+1.5x$",
+          "$y=12\\cdot(0.5)^{x}$"
+        ],
+        "pl": [
+          "$y=12\\cdot(1.5)^{x}$",
+          "$y=1.5\\cdot 12^{x}$",
+          "$y=12+1.5x$",
+          "$y=12\\cdot(0.5)^{x}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "swap_a_b",
+        "linear_model"
+      ]
+    },
+    {
+      "id": "alg1-l19-i03",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.evaluate"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate y = 2 · 3^x at x = 4.",
+        "es": "Evalúa y = 2 · 3^x en x = 4.",
+        "pl": "Oblicz y = 2 · 3^x dla x = 4."
+      },
+      "feedbackCorrect": {
+        "en": "3⁴ = 81, then 2 · 81 = 162.",
+        "es": "3⁴ = 81, luego 2 · 81 = 162.",
+        "pl": "3⁴ = 81, potem 2 · 81 = 162."
+      },
+      "feedbackIncorrect": {
+        "en": "3⁴ is 81, not 12; multiply the power by the leading 2.",
+        "es": "3⁴ es 81, no 12; multiplica la potencia por el 2 inicial.",
+        "pl": "3⁴ to 81, nie 12; pomnóż potęgę przez początkowe 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        }
+      ],
+      "promptMath": "y=2\\cdot 3^{4}",
+      "choices": {
+        "en": [
+          "$81$",
+          "$162$",
+          "$24$",
+          "$54$"
+        ],
+        "es": [
+          "$81$",
+          "$162$",
+          "$24$",
+          "$54$"
+        ],
+        "pl": [
+          "$81$",
+          "$162$",
+          "$24$",
+          "$54$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 162,
+      "diagnosticTags": [
+        "power_error",
+        "forgot_a"
+      ]
+    },
+    {
+      "id": "alg1-l19-i04",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.recognize"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "On a graph, y starts at 4 and doubles for each +1 in x. Which equation matches?",
+        "es": "En una gráfica, y empieza en 4 y se duplica por cada +1 en x. ¿Qué ecuación coincide?",
+        "pl": "Na wykresie y zaczyna od 4 i podwaja się przy każdym +1 w x. Które równanie pasuje?"
+      },
+      "feedbackCorrect": {
+        "en": "Start 4 and double → multiply by 2 each step: y = 4 · 2^x.",
+        "es": "Empieza en 4 y duplica → multiplica por 2 cada paso: y = 4 · 2^x.",
+        "pl": "Start 4 i podwajanie → mnożenie przez 2 na krok: y = 4 · 2^x."
+      },
+      "feedbackIncorrect": {
+        "en": "Doubling is exponential with b = 2, not a linear +2x model.",
+        "es": "Duplicar es exponencial con b = 2, no un modelo lineal +2x.",
+        "pl": "Podwajanie to wykładnicze z b = 2, nie liniowe +2x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.1c",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "y=4\\cdot 2^{x}",
+      "choices": {
+        "en": [
+          "$y=4+2x$",
+          "$y=2\\cdot 4^{x}$",
+          "$y=4\\cdot 2^{x}$",
+          "$y=4\\cdot\\left(\\tfrac12\\right)^{x}$"
+        ],
+        "es": [
+          "$y=4+2x$",
+          "$y=2\\cdot 4^{x}$",
+          "$y=4\\cdot 2^{x}$",
+          "$y=4\\cdot\\left(\\tfrac12\\right)^{x}$"
+        ],
+        "pl": [
+          "$y=4+2x$",
+          "$y=2\\cdot 4^{x}$",
+          "$y=4\\cdot 2^{x}$",
+          "$y=4\\cdot\\left(\\tfrac12\\right)^{x}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "linear_model",
+        "growth_vs_decay"
+      ]
+    },
+    {
+      "id": "alg1-l19-i05",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.form"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which values of a and b give decay starting at 50 that shrinks by 20% each step?",
+        "es": "¿Qué valores de a y b dan decaimiento que empieza en 50 y se reduce 20% cada paso?",
+        "pl": "Które a i b dają zanikanie od 50 ze spadkiem 20% na krok?"
+      },
+      "feedbackCorrect": {
+        "en": "Keep 80% → multiply by 0.8; a = 50 is the start.",
+        "es": "Conservar 80% → multiplicar por 0.8; a = 50 es el inicio.",
+        "pl": "Zachować 80% → mnożyć przez 0.8; a = 50 to początek."
+      },
+      "feedbackIncorrect": {
+        "en": "A 20% decrease leaves 80% of the previous value, so b = 0.8 not 0.2.",
+        "es": "Una baja del 20% deja el 80% del valor anterior, así b = 0.8 no 0.2.",
+        "pl": "Spadek o 20% zostawia 80% poprzedniej wartości, więc b = 0.8 nie 0.2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        }
+      ],
+      "promptMath": "y=a\\cdot b^{x}",
+      "choices": {
+        "en": [
+          "$a=50,\\ b=1.2$",
+          "$a=50,\\ b=0.2$",
+          "$a=0.8,\\ b=50$",
+          "$a=50,\\ b=0.8$"
+        ],
+        "es": [
+          "$a=50,\\ b=1.2$",
+          "$a=50,\\ b=0.2$",
+          "$a=0.8,\\ b=50$",
+          "$a=50,\\ b=0.8$"
+        ],
+        "pl": [
+          "$a=50,\\ b=1.2$",
+          "$a=50,\\ b=0.2$",
+          "$a=0.8,\\ b=50$",
+          "$a=50,\\ b=0.8$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "percent_to_factor",
+        "swap_a_b"
+      ]
+    },
+    {
+      "id": "alg1-l19-i06",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.evaluate"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = 100 · (0.5)^x. Find y when x = 2.",
+        "es": "y = 100 · (0.5)^x. Halla y cuando x = 2.",
+        "pl": "y = 100 · (0.5)^x. Znajdź y dla x = 2."
+      },
+      "feedbackCorrect": {
+        "en": "(0.5)² = 0.25, then 100 · 0.25 = 25.",
+        "es": "(0.5)² = 0.25, luego 100 · 0.25 = 25.",
+        "pl": "(0.5)² = 0.25, potem 100 · 0.25 = 25."
+      },
+      "feedbackIncorrect": {
+        "en": "Square the factor first: half twice is one-fourth of 100.",
+        "es": "Primero eleva el factor al cuadrado: la mitad dos veces es un cuarto de 100.",
+        "pl": "Najpierw podnieś czynnik do kwadratu: połowa dwa razy to ćwierć ze 100."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        }
+      ],
+      "promptMath": "y=100\\cdot(0.5)^{2}",
+      "choices": {
+        "en": [
+          "$25$",
+          "$50$",
+          "$200$",
+          "$0.5$"
+        ],
+        "es": [
+          "$25$",
+          "$50$",
+          "$200$",
+          "$0.5$"
+        ],
+        "pl": [
+          "$25$",
+          "$50$",
+          "$200$",
+          "$0.5$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 25,
+      "diagnosticTags": [
+        "power_error",
+        "forgot_a"
+      ]
+    },
+    {
+      "id": "alg1-l19-i07",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.recognize"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Why is 3, 6, 9, 12 linear rather than exponential?",
+        "es": "¿Por qué 3, 6, 9, 12 es lineal y no exponencial?",
+        "pl": "Dlaczego 3, 6, 9, 12 jest liniowe, a nie wykładnicze?"
+      },
+      "feedbackCorrect": {
+        "en": "Adding 3 each step is a constant difference — the hallmark of linear change.",
+        "es": "Sumar 3 cada paso es diferencia constante — sello del cambio lineal.",
+        "pl": "Dodawanie 3 na krok to stała różnica — cecha zmiany liniowej."
+      },
+      "feedbackIncorrect": {
+        "en": "Ratios 6/3 = 2 but 9/6 = 1.5 are not equal, so it is not exponential.",
+        "es": "Las razones 6/3 = 2 pero 9/6 = 1.5 no son iguales, así no es exponencial.",
+        "pl": "Ilorazy 6/3 = 2, ale 9/6 = 1.5 nie są równe, więc to nie wykładnicze."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.1c",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "3,\\ 6,\\ 9,\\ 12",
+      "choices": {
+        "en": [
+          "It multiplies by 2 each time",
+          "Constant difference +3, not a constant ratio",
+          "All sequences are exponential",
+          "It decays by half"
+        ],
+        "es": [
+          "Se multiplica por 2 cada vez",
+          "Diferencia constante +3, no una razón constante",
+          "Todas las sucesiones son exponenciales",
+          "Decae a la mitad"
+        ],
+        "pl": [
+          "Mnoży się przez 2 za każdym razem",
+          "Stała różnica +3, nie stały iloraz",
+          "Wszystkie ciągi są wykładnicze",
+          "Zanika o połowę"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "linear_vs_exp",
+        "ratio_check"
+      ]
+    },
+    {
+      "id": "alg1-l19-i08",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.form"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which equation matches the table (x, y): (0, 7), (1, 21), (2, 63)?",
+        "es": "¿Qué ecuación coincide con la tabla (x, y): (0, 7), (1, 21), (2, 63)?",
+        "pl": "Które równanie pasuje do tabeli (x, y): (0, 7), (1, 21), (2, 63)?"
+      },
+      "feedbackCorrect": {
+        "en": "y(0) = 7 = a, and 21/7 = 63/21 = 3 = b, so y = 7 · 3^x.",
+        "es": "y(0) = 7 = a, y 21/7 = 63/21 = 3 = b, así y = 7 · 3^x.",
+        "pl": "y(0) = 7 = a oraz 21/7 = 63/21 = 3 = b, więc y = 7 · 3^x."
+      },
+      "feedbackIncorrect": {
+        "en": "Read a from x = 0 and b from the common ratio of successive y-values.",
+        "es": "Lee a en x = 0 y b de la razón común de los y sucesivos.",
+        "pl": "Odczytaj a z x = 0 i b ze wspólnego ilorazu kolejnych y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-LE.A.1c"
+          ]
+        }
+      ],
+      "promptMath": "(0,7),\\ (1,21),\\ (2,63)",
+      "choices": {
+        "en": [
+          "$y=7\\cdot 3x$",
+          "$y=3\\cdot 7^{x}$",
+          "$y=7\\cdot 3^{x}$",
+          "$y=7+3x$"
+        ],
+        "es": [
+          "$y=7\\cdot 3x$",
+          "$y=3\\cdot 7^{x}$",
+          "$y=7\\cdot 3^{x}$",
+          "$y=7+3x$"
+        ],
+        "pl": [
+          "$y=7\\cdot 3x$",
+          "$y=3\\cdot 7^{x}$",
+          "$y=7\\cdot 3^{x}$",
+          "$y=7+3x$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "swap_a_b",
+        "linear_model"
+      ]
+    },
+    {
+      "id": "alg1-l19-i09",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.evaluate"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A recursive rule: a₁ = 5, aₙ = 2 · aₙ₋₁. What is a₄?",
+        "es": "Regla recursiva: a₁ = 5, aₙ = 2 · aₙ₋₁. ¿Cuánto es a₄?",
+        "pl": "Reguła rekurencyjna: a₁ = 5, aₙ = 2 · aₙ₋₁. Ile wynosi a₄?"
+      },
+      "feedbackCorrect": {
+        "en": "5 → 10 → 20 → 40 after three doublings to reach term 4.",
+        "es": "5 → 10 → 20 → 40 tras tres duplicaciones para llegar al término 4.",
+        "pl": "5 → 10 → 20 → 40 po trzech podwojeniach do wyrazu 4."
+      },
+      "feedbackIncorrect": {
+        "en": "From a₁ to a₄ you apply ×2 three times: 5 · 2³ = 40.",
+        "es": "De a₁ a a₄ aplicas ×2 tres veces: 5 · 2³ = 40.",
+        "pl": "Od a₁ do a₄ stosujesz ×2 trzy razy: 5 · 2³ = 40."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        }
+      ],
+      "promptMath": "a_{1}=5,\\ a_{n}=2a_{n-1}",
+      "choices": {
+        "en": [
+          "$20$",
+          "$10$",
+          "$80$",
+          "$40$"
+        ],
+        "es": [
+          "$20$",
+          "$10$",
+          "$80$",
+          "$40$"
+        ],
+        "pl": [
+          "$20$",
+          "$10$",
+          "$80$",
+          "$40$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 40,
+      "diagnosticTags": [
+        "off_by_one",
+        "add_instead_of_multiply"
+      ]
+    },
+    {
+      "id": "alg1-l19-i10",
+      "knowledgePointIds": [
+        "kp.alg1.exponential.evaluate"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y = 6 · 2^x. Which ordered pair is on the graph?",
+        "es": "y = 6 · 2^x. ¿Qué par ordenado está en la gráfica?",
+        "pl": "y = 6 · 2^x. Która para uporządkowana leży na wykresie?"
+      },
+      "feedbackCorrect": {
+        "en": "At x = 2: 6 · 2² = 6 · 4 = 24, so (2, 24).",
+        "es": "En x = 2: 6 · 2² = 6 · 4 = 24, así (2, 24).",
+        "pl": "Przy x = 2: 6 · 2² = 6 · 4 = 24, więc (2, 24)."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x into 6 · 2^x carefully; (0, 6) would be the y-intercept, not (0, 2).",
+        "es": "Sustituye x en 6 · 2^x con cuidado; (0, 6) sería el intercepto y, no (0, 2).",
+        "pl": "Podstaw x do 6 · 2^x ostrożnie; (0, 6) to przecięcie y, nie (0, 2)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.9(B)",
+            "A.9(C)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-LE.A.2",
+            "F-IF.C.7e"
+          ]
+        }
+      ],
+      "promptMath": "y=6\\cdot 2^{x}",
+      "choices": {
+        "en": [
+          "$(2,24)$",
+          "$(2,12)$",
+          "$(1,8)$",
+          "$(0,2)$"
+        ],
+        "es": [
+          "$(2,24)$",
+          "$(2,12)$",
+          "$(1,8)$",
+          "$(0,2)$"
+        ],
+        "pl": [
+          "$(2,24)$",
+          "$(2,12)$",
+          "$(1,8)$",
+          "$(0,2)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "forgot_a",
+        "power_error"
+      ]
+    }
+  ]
+}

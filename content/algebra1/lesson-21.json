@@ -1,0 +1,1300 @@
+{
+  "id": "alg1-l21",
+  "courseId": "algebra1",
+  "order": 21,
+  "title": {
+    "en": "Rational Expressions Intro",
+    "es": "Introducción a expresiones racionales",
+    "pl": "Wstęp do wyrażeń wymiernych"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.rational.simplify",
+    "kp.alg1.rational.multiply",
+    "kp.alg1.rational.divide"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_21",
+    "unlockOnMastery": [
+      "lesson_board_22"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will simplify, multiply, and divide simple rational expressions by canceling factors.",
+        "es": "Simplificarás, multiplicarás y dividirás expresiones racionales simples cancelando factores.",
+        "pl": "Będziesz upraszczać, mnożyć i dzielić proste wyrażenia wymierne przez skracanie czynników."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: cancel factors",
+        "es": "Enseñar: cancelar factores",
+        "pl": "Nauczanie: skracanie czynników"
+      },
+      "body": {
+        "en": "Factor first. Cancel only common factors (never terms in a sum). Division = multiply by the reciprocal.",
+        "es": "Factoriza primero. Cancela solo factores comunes (nunca términos de una suma). División = multiplicar por el recíproco.",
+        "pl": "Najpierw rozłóż. Skracaj tylko wspólne czynniki (nigdy składników sumy). Dzielenie = mnożenie przez odwrotność."
+      },
+      "bodyMath": [
+        "\\frac{ac}{bc}=\\frac{a}{b}",
+        "\\frac{a}{b}\\div\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}",
+        "\\frac{x^{2}-9}{x-3}=x+3\\ (x\\ne 3)"
+      ],
+      "itemIds": [
+        "alg1-l21-t01",
+        "alg1-l21-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Simplify monomials and binomials, then multiply and divide with canceling.",
+        "es": "Simplifica monomios y binomios; luego multiplica y divide cancelando.",
+        "pl": "Upraszczaj jednomiany i dwumiany; potem mnoż i dziel ze skracaniem."
+      },
+      "itemIds": [
+        "alg1-l21-g01",
+        "alg1-l21-g02",
+        "alg1-l21-g03",
+        "alg1-l21-g04",
+        "alg1-l21-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l21-i01",
+        "alg1-l21-i02",
+        "alg1-l21-i03",
+        "alg1-l21-i04",
+        "alg1-l21-i05",
+        "alg1-l21-i06",
+        "alg1-l21-i07",
+        "alg1-l21-i08",
+        "alg1-l21-i09",
+        "alg1-l21-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l21-t01",
+      "knowledgePointIds": [
+        "kp.alg1.rational.simplify"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (6x) / (3x) for x ≠ 0.",
+        "es": "Simplifica (6x) / (3x) para x ≠ 0.",
+        "pl": "Uprość (6x) / (3x) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "Cancel the common factor x and divide coefficients: 6/3 = 2.",
+        "es": "Cancela el factor común x y divide coeficientes: 6/3 = 2.",
+        "pl": "Skróć wspólny czynnik x i podziel współczynniki: 6/3 = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Cancel matching factors completely — you should not leave an extra x.",
+        "es": "Cancela factores coincidentes por completo — no debe quedar una x extra.",
+        "pl": "Skróć pasujące czynniki całkowicie — nie powinno zostać dodatkowe x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{6x}{3x}",
+      "choices": {
+        "en": [
+          "$2$",
+          "$2x$",
+          "$3$",
+          "$6$"
+        ],
+        "es": [
+          "$2$",
+          "$2x$",
+          "$3$",
+          "$6$"
+        ],
+        "pl": [
+          "$2$",
+          "$2x$",
+          "$3$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "left_variable",
+        "cancel_terms"
+      ]
+    },
+    {
+      "id": "alg1-l21-t02",
+      "knowledgePointIds": [
+        "kp.alg1.rational.multiply"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply: (2/3) · (9/4).",
+        "es": "Multiplica: (2/3) · (9/4).",
+        "pl": "Pomnóż: (2/3) · (9/4)."
+      },
+      "feedbackCorrect": {
+        "en": "Cancel 3 with 9 and 2 with 4 → 1/1 · 3/2 = 3/2.",
+        "es": "Cancela 3 con 9 y 2 con 4 → 1/1 · 3/2 = 3/2.",
+        "pl": "Skróć 3 z 9 i 2 z 4 → 1/1 · 3/2 = 3/2."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply numerators and denominators, then reduce — or cancel first.",
+        "es": "Multiplica numeradores y denominadores y reduce — o cancela primero.",
+        "pl": "Pomnóż liczniki i mianowniki, potem uprość — albo najpierw skróć."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{2}{3}\\cdot\\frac{9}{4}",
+      "choices": {
+        "en": [
+          "$\\frac{18}{12}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{11}{7}$",
+          "$\\frac{8}{27}$"
+        ],
+        "es": [
+          "$\\frac{18}{12}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{11}{7}$",
+          "$\\frac{8}{27}$"
+        ],
+        "pl": [
+          "$\\frac{18}{12}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{11}{7}$",
+          "$\\frac{8}{27}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "add_fractions",
+        "forgot_reduce"
+      ]
+    },
+    {
+      "id": "alg1-l21-g01",
+      "knowledgePointIds": [
+        "kp.alg1.rational.simplify"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (x²) / (x) for x ≠ 0.",
+        "es": "Simplifica (x²) / (x) para x ≠ 0.",
+        "pl": "Uprość (x²) / (x) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "Subtract exponents: x² / x = x^(2−1) = x.",
+        "es": "Resta exponentes: x² / x = x^(2−1) = x.",
+        "pl": "Odejmij wykładniki: x² / x = x^(2−1) = x."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract exponents when dividing matching bases — result is x, not 1.",
+        "es": "Resta exponentes al dividir bases iguales — el resultado es x, no 1.",
+        "pl": "Odejmij wykładniki przy dzieleniu tych samych podstaw — wynik to x, nie 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x^{2}}{x}",
+      "choices": {
+        "en": [
+          "$x^{3}$",
+          "$1$",
+          "$x$",
+          "$x^{2}$"
+        ],
+        "es": [
+          "$x^{3}$",
+          "$1$",
+          "$x$",
+          "$x^{2}$"
+        ],
+        "pl": [
+          "$x^{3}$",
+          "$1$",
+          "$x$",
+          "$x^{2}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "exponent_error",
+        "cancel_all"
+      ]
+    },
+    {
+      "id": "alg1-l21-g02",
+      "knowledgePointIds": [
+        "kp.alg1.rational.simplify"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (4x + 8) / 4.",
+        "es": "Simplifica (4x + 8) / 4.",
+        "pl": "Uprość (4x + 8) / 4."
+      },
+      "feedbackCorrect": {
+        "en": "Factor 4(x + 2)/4 = x + 2.",
+        "es": "Factoriza 4(x + 2)/4 = x + 2.",
+        "pl": "Rozłóż 4(x + 2)/4 = x + 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide every term by 4: 4x/4 + 8/4 = x + 2.",
+        "es": "Divide cada término entre 4: 4x/4 + 8/4 = x + 2.",
+        "pl": "Podziel każdy składnik przez 4: 4x/4 + 8/4 = x + 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{4x+8}{4}",
+      "choices": {
+        "en": [
+          "$x+8$",
+          "$4x+2$",
+          "$x$",
+          "$x+2$"
+        ],
+        "es": [
+          "$x+8$",
+          "$4x+2$",
+          "$x$",
+          "$x+2$"
+        ],
+        "pl": [
+          "$x+8$",
+          "$4x+2$",
+          "$x$",
+          "$x+2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "cancel_one_term",
+        "forgot_constant"
+      ]
+    },
+    {
+      "id": "alg1-l21-g03",
+      "knowledgePointIds": [
+        "kp.alg1.rational.multiply"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply: (x/5) · (10/x) for x ≠ 0.",
+        "es": "Multiplica: (x/5) · (10/x) para x ≠ 0.",
+        "pl": "Pomnóż: (x/5) · (10/x) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "Cancel x and reduce 10/5 → 2.",
+        "es": "Cancela x y reduce 10/5 → 2.",
+        "pl": "Skróć x i uprość 10/5 → 2."
+      },
+      "feedbackIncorrect": {
+        "en": "After canceling x you still simplify 10/5 to 2.",
+        "es": "Tras cancelar x aún simplificas 10/5 a 2.",
+        "pl": "Po skróceniu x nadal upraszczasz 10/5 do 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x}{5}\\cdot\\frac{10}{x}",
+      "choices": {
+        "en": [
+          "$2$",
+          "$10$",
+          "$\\frac{10x}{5x}$",
+          "$\\frac{x}{2}$"
+        ],
+        "es": [
+          "$2$",
+          "$10$",
+          "$\\frac{10x}{5x}$",
+          "$\\frac{x}{2}$"
+        ],
+        "pl": [
+          "$2$",
+          "$10$",
+          "$\\frac{10x}{5x}$",
+          "$\\frac{x}{2}$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "forgot_reduce",
+        "cancel_terms"
+      ]
+    },
+    {
+      "id": "alg1-l21-g04",
+      "knowledgePointIds": [
+        "kp.alg1.rational.divide"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Divide: (3/4) ÷ (1/2).",
+        "es": "Divide: (3/4) ÷ (1/2).",
+        "pl": "Podziel: (3/4) ÷ (1/2)."
+      },
+      "feedbackCorrect": {
+        "en": "Multiply by the reciprocal: (3/4) · (2/1) = 6/4 = 3/2.",
+        "es": "Multiplica por el recíproco: (3/4) · (2/1) = 6/4 = 3/2.",
+        "pl": "Pomnóż przez odwrotność: (3/4) · (2/1) = 6/4 = 3/2."
+      },
+      "feedbackIncorrect": {
+        "en": "Flip the second fraction only, then multiply.",
+        "es": "Invierte solo la segunda fracción y luego multiplica.",
+        "pl": "Odwróć tylko drugi ułamek, potem pomnóż."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{3}{4}\\div\\frac{1}{2}",
+      "choices": {
+        "en": [
+          "$\\frac{3}{8}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{2}{3}$",
+          "$6$"
+        ],
+        "es": [
+          "$\\frac{3}{8}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{2}{3}$",
+          "$6$"
+        ],
+        "pl": [
+          "$\\frac{3}{8}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{2}{3}$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "flip_first",
+        "multiply_without_flip"
+      ]
+    },
+    {
+      "id": "alg1-l21-g05",
+      "knowledgePointIds": [
+        "kp.alg1.rational.divide"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Divide: (x/3) ÷ (x/6) for x ≠ 0.",
+        "es": "Divide: (x/3) ÷ (x/6) para x ≠ 0.",
+        "pl": "Podziel: (x/3) ÷ (x/6) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x/3) · (6/x) = 6/3 = 2 after canceling x.",
+        "es": "(x/3) · (6/x) = 6/3 = 2 tras cancelar x.",
+        "pl": "(x/3) · (6/x) = 6/3 = 2 po skróceniu x."
+      },
+      "feedbackIncorrect": {
+        "en": "Reciprocal of x/6 is 6/x; cancel x and simplify coefficients.",
+        "es": "El recíproco de x/6 es 6/x; cancela x y simplifica coeficientes.",
+        "pl": "Odwrotność x/6 to 6/x; skróć x i uprość współczynniki."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x}{3}\\div\\frac{x}{6}",
+      "choices": {
+        "en": [
+          "$\\frac{1}{2}$",
+          "$x^{2}$",
+          "$2$",
+          "$18$"
+        ],
+        "es": [
+          "$\\frac{1}{2}$",
+          "$x^{2}$",
+          "$2$",
+          "$18$"
+        ],
+        "pl": [
+          "$\\frac{1}{2}$",
+          "$x^{2}$",
+          "$2$",
+          "$18$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "flip_first",
+        "forgot_reduce"
+      ]
+    },
+    {
+      "id": "alg1-l21-i01",
+      "knowledgePointIds": [
+        "kp.alg1.rational.simplify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (10x³) / (5x) for x ≠ 0.",
+        "es": "Simplifica (10x³) / (5x) para x ≠ 0.",
+        "pl": "Uprość (10x³) / (5x) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "10/5 = 2 and x³/x = x² → 2x².",
+        "es": "10/5 = 2 y x³/x = x² → 2x².",
+        "pl": "10/5 = 2 oraz x³/x = x² → 2x²."
+      },
+      "feedbackIncorrect": {
+        "en": "Reduce coefficients and subtract exponents on x.",
+        "es": "Reduce coeficientes y resta exponentes de x.",
+        "pl": "Uprość współczynniki i odejmij wykładniki przy x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{10x^{3}}{5x}",
+      "choices": {
+        "en": [
+          "$2x^{3}$",
+          "$5x^{2}$",
+          "$2x$",
+          "$2x^{2}$"
+        ],
+        "es": [
+          "$2x^{3}$",
+          "$5x^{2}$",
+          "$2x$",
+          "$2x^{2}$"
+        ],
+        "pl": [
+          "$2x^{3}$",
+          "$5x^{2}$",
+          "$2x$",
+          "$2x^{2}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "exponent_error",
+        "coeff_error"
+      ]
+    },
+    {
+      "id": "alg1-l21-i02",
+      "knowledgePointIds": [
+        "kp.alg1.rational.simplify"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify (x² − 9) / (x − 3) for x ≠ 3.",
+        "es": "Simplifica (x² − 9) / (x − 3) para x ≠ 3.",
+        "pl": "Uprość (x² − 9) / (x − 3) dla x ≠ 3."
+      },
+      "feedbackCorrect": {
+        "en": "Difference of squares: (x − 3)(x + 3)/(x − 3) = x + 3.",
+        "es": "Diferencia de cuadrados: (x − 3)(x + 3)/(x − 3) = x + 3.",
+        "pl": "Różnica kwadratów: (x − 3)(x + 3)/(x − 3) = x + 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Factor the numerator first, then cancel the matching (x − 3).",
+        "es": "Factoriza primero el numerador y luego cancela el (x − 3) coincidente.",
+        "pl": "Najpierw rozłóż licznik, potem skróć pasujące (x − 3)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x^{2}-9}{x-3}",
+      "choices": {
+        "en": [
+          "$x+3$",
+          "$x-3$",
+          "$x^{2}-3$",
+          "$x-9$"
+        ],
+        "es": [
+          "$x+3$",
+          "$x-3$",
+          "$x^{2}-3$",
+          "$x-9$"
+        ],
+        "pl": [
+          "$x+3$",
+          "$x-3$",
+          "$x^{2}-3$",
+          "$x-9$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "no_factor",
+        "cancel_terms"
+      ]
+    },
+    {
+      "id": "alg1-l21-i03",
+      "knowledgePointIds": [
+        "kp.alg1.rational.multiply"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply: (3x/4) · (8/9x) for x ≠ 0.",
+        "es": "Multiplica: (3x/4) · (8/9x) para x ≠ 0.",
+        "pl": "Pomnóż: (3x/4) · (8/9x) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "Cancel x, reduce 8/4 = 2 and 3/9 = 1/3 → 2/3.",
+        "es": "Cancela x, reduce 8/4 = 2 y 3/9 = 1/3 → 2/3.",
+        "pl": "Skróć x, uprość 8/4 = 2 i 3/9 = 1/3 → 2/3."
+      },
+      "feedbackIncorrect": {
+        "en": "Cancel common factors before multiplying leftovers.",
+        "es": "Cancela factores comunes antes de multiplicar lo que queda.",
+        "pl": "Skróć wspólne czynniki przed mnożeniem reszty."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{3x}{4}\\cdot\\frac{8}{9x}",
+      "choices": {
+        "en": [
+          "$\\frac{24x}{36x}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{3}{2}$",
+          "$6$"
+        ],
+        "es": [
+          "$\\frac{24x}{36x}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{3}{2}$",
+          "$6$"
+        ],
+        "pl": [
+          "$\\frac{24x}{36x}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{3}{2}$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "forgot_reduce",
+        "cancel_terms"
+      ]
+    },
+    {
+      "id": "alg1-l21-i04",
+      "knowledgePointIds": [
+        "kp.alg1.rational.multiply"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply: ((x + 1)/5) · (10/(x + 1)) for x ≠ −1.",
+        "es": "Multiplica: ((x + 1)/5) · (10/(x + 1)) para x ≠ −1.",
+        "pl": "Pomnóż: ((x + 1)/5) · (10/(x + 1)) dla x ≠ −1."
+      },
+      "feedbackCorrect": {
+        "en": "Cancel (x + 1); 10/5 = 2.",
+        "es": "Cancela (x + 1); 10/5 = 2.",
+        "pl": "Skróć (x + 1); 10/5 = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Whole factors cancel; then simplify the numeric fraction.",
+        "es": "Se cancelan factores enteros; luego simplifica la fracción numérica.",
+        "pl": "Skracają się całe czynniki; potem uprość ułamek liczbowy."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x+1}{5}\\cdot\\frac{10}{x+1}",
+      "choices": {
+        "en": [
+          "$10$",
+          "$\\frac{10(x+1)}{5(x+1)}$",
+          "$2$",
+          "$50$"
+        ],
+        "es": [
+          "$10$",
+          "$\\frac{10(x+1)}{5(x+1)}$",
+          "$2$",
+          "$50$"
+        ],
+        "pl": [
+          "$10$",
+          "$\\frac{10(x+1)}{5(x+1)}$",
+          "$2$",
+          "$50$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "forgot_reduce",
+        "partial_cancel"
+      ]
+    },
+    {
+      "id": "alg1-l21-i05",
+      "knowledgePointIds": [
+        "kp.alg1.rational.divide"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Divide: (2/5) ÷ (4/15).",
+        "es": "Divide: (2/5) ÷ (4/15).",
+        "pl": "Podziel: (2/5) ÷ (4/15)."
+      },
+      "feedbackCorrect": {
+        "en": "Multiply by the reciprocal: (2/5) · (15/4) = 30/20 = 3/2.",
+        "es": "Multiplica por el recíproco: (2/5) · (15/4) = 30/20 = 3/2.",
+        "pl": "Pomnóż przez odwrotność: (2/5) · (15/4) = 30/20 = 3/2."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply by 15/4, the reciprocal of 4/15, then reduce.",
+        "es": "Multiplica por 15/4, el recíproco de 4/15, y reduce.",
+        "pl": "Pomnóż przez 15/4, odwrotność 4/15, potem uprość."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{2}{5}\\div\\frac{4}{15}",
+      "choices": {
+        "en": [
+          "$\\frac{8}{75}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{15}{4}$",
+          "$\\frac{3}{2}$"
+        ],
+        "es": [
+          "$\\frac{8}{75}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{15}{4}$",
+          "$\\frac{3}{2}$"
+        ],
+        "pl": [
+          "$\\frac{8}{75}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{15}{4}$",
+          "$\\frac{3}{2}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "multiply_without_flip",
+        "forgot_reduce"
+      ]
+    },
+    {
+      "id": "alg1-l21-i06",
+      "knowledgePointIds": [
+        "kp.alg1.rational.simplify"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which simplification is illegal?",
+        "es": "¿Qué simplificación es ilegal?",
+        "pl": "Które uproszczenie jest niedozwolone?"
+      },
+      "feedbackCorrect": {
+        "en": "You cannot cancel a term from a sum — (x + 2)/x is not 2.",
+        "es": "No puedes cancelar un término de una suma — (x + 2)/x no es 2.",
+        "pl": "Nie można skracać składnika z sumy — (x + 2)/x to nie 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Only common factors cancel; terms added in the numerator stay.",
+        "es": "Solo se cancelan factores comunes; los términos sumados en el numerador quedan.",
+        "pl": "Skracają się tylko wspólne czynniki; składniki w liczniku zostają."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x+2}{x}",
+      "choices": {
+        "en": [
+          "$\\frac{x+2}{x}\\to 2\\quad(\\text{cancel }x)$",
+          "$\\frac{6x}{3x}\\to 2$",
+          "$\\frac{x^{2}}{x}\\to x$",
+          "$\\frac{4(x+1)}{4}\\to x+1$"
+        ],
+        "es": [
+          "$\\frac{x+2}{x}\\to 2\\quad(\\text{cancelar }x)$",
+          "$\\frac{6x}{3x}\\to 2$",
+          "$\\frac{x^{2}}{x}\\to x$",
+          "$\\frac{4(x+1)}{4}\\to x+1$"
+        ],
+        "pl": [
+          "$\\frac{x+2}{x}\\to 2\\quad(\\text{skróć }x)$",
+          "$\\frac{6x}{3x}\\to 2$",
+          "$\\frac{x^{2}}{x}\\to x$",
+          "$\\frac{4(x+1)}{4}\\to x+1$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "cancel_terms"
+      ]
+    },
+    {
+      "id": "alg1-l21-i07",
+      "knowledgePointIds": [
+        "kp.alg1.rational.multiply"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply: ((x − 2)/(x + 5)) · ((x + 5)/4) for x ≠ −5.",
+        "es": "Multiplica: ((x − 2)/(x + 5)) · ((x + 5)/4) para x ≠ −5.",
+        "pl": "Pomnóż: ((x − 2)/(x + 5)) · ((x + 5)/4) dla x ≠ −5."
+      },
+      "feedbackCorrect": {
+        "en": "Cancel (x + 5) → (x − 2)/4.",
+        "es": "Cancela (x + 5) → (x − 2)/4.",
+        "pl": "Skróć (x + 5) → (x − 2)/4."
+      },
+      "feedbackIncorrect": {
+        "en": "Matching binomial factors cancel across the product.",
+        "es": "Los factores binomiales coincidentes se cancelan en el producto.",
+        "pl": "Pasujące czynniki dwumianowe skracają się w iloczynie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x-2}{x+5}\\cdot\\frac{x+5}{4}",
+      "choices": {
+        "en": [
+          "$\\frac{x-2}{x+5}$",
+          "$\\frac{x-2}{4}$",
+          "$x-2$",
+          "$\\frac{(x-2)(x+5)}{4(x+5)}$"
+        ],
+        "es": [
+          "$\\frac{x-2}{x+5}$",
+          "$\\frac{x-2}{4}$",
+          "$x-2$",
+          "$\\frac{(x-2)(x+5)}{4(x+5)}$"
+        ],
+        "pl": [
+          "$\\frac{x-2}{x+5}$",
+          "$\\frac{x-2}{4}$",
+          "$x-2$",
+          "$\\frac{(x-2)(x+5)}{4(x+5)}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "forgot_cancel",
+        "forgot_denominator"
+      ]
+    },
+    {
+      "id": "alg1-l21-i08",
+      "knowledgePointIds": [
+        "kp.alg1.rational.divide"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Divide: (5x/2) ÷ (10/x) for x ≠ 0.",
+        "es": "Divide: (5x/2) ÷ (10/x) para x ≠ 0.",
+        "pl": "Podziel: (5x/2) ÷ (10/x) dla x ≠ 0."
+      },
+      "feedbackCorrect": {
+        "en": "Flip and multiply: (5x/2) · (x/10) = 5x²/20 = x²/4.",
+        "es": "Invierte y multiplica: (5x/2) · (x/10) = 5x²/20 = x²/4.",
+        "pl": "Odwróć i pomnóż: (5x/2) · (x/10) = 5x²/20 = x²/4."
+      },
+      "feedbackIncorrect": {
+        "en": "Reciprocal of 10/x is x/10; multiply and reduce 5/20.",
+        "es": "El recíproco de 10/x es x/10; multiplica y reduce 5/20.",
+        "pl": "Odwrotność 10/x to x/10; pomnóż i uprość 5/20."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{5x}{2}\\div\\frac{10}{x}",
+      "choices": {
+        "en": [
+          "$\\frac{5x}{20}$",
+          "$\\frac{50x}{2x}$",
+          "$\\frac{x^{2}}{4}$",
+          "$\\frac{x}{4}$"
+        ],
+        "es": [
+          "$\\frac{5x}{20}$",
+          "$\\frac{50x}{2x}$",
+          "$\\frac{x^{2}}{4}$",
+          "$\\frac{x}{4}$"
+        ],
+        "pl": [
+          "$\\frac{5x}{20}$",
+          "$\\frac{50x}{2x}$",
+          "$\\frac{x^{2}}{4}$",
+          "$\\frac{x}{4}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "flip_first",
+        "forgot_reduce"
+      ]
+    },
+    {
+      "id": "alg1-l21-i09",
+      "knowledgePointIds": [
+        "kp.alg1.rational.divide"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Divide: ((x + 3)/7) ÷ ((x + 3)/14) for x ≠ −3.",
+        "es": "Divide: ((x + 3)/7) ÷ ((x + 3)/14) para x ≠ −3.",
+        "pl": "Podziel: ((x + 3)/7) ÷ ((x + 3)/14) dla x ≠ −3."
+      },
+      "feedbackCorrect": {
+        "en": "Multiply by 14/(x + 3); cancel (x + 3) → 14/7 = 2.",
+        "es": "Multiplica por 14/(x + 3); cancela (x + 3) → 14/7 = 2.",
+        "pl": "Pomnóż przez 14/(x + 3); skróć (x + 3) → 14/7 = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "After flipping the divisor, the (x + 3) factors cancel cleanly.",
+        "es": "Tras invertir el divisor, los factores (x + 3) se cancelan limpio.",
+        "pl": "Po odwróceniu dzielnika czynniki (x + 3) skracają się czysto."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x+3}{7}\\div\\frac{x+3}{14}",
+      "choices": {
+        "en": [
+          "$\\frac{1}{2}$",
+          "$14$",
+          "$\\frac{(x+3)^{2}}{98}$",
+          "$2$"
+        ],
+        "es": [
+          "$\\frac{1}{2}$",
+          "$14$",
+          "$\\frac{(x+3)^{2}}{98}$",
+          "$2$"
+        ],
+        "pl": [
+          "$\\frac{1}{2}$",
+          "$14$",
+          "$\\frac{(x+3)^{2}}{98}$",
+          "$2$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "multiply_without_flip",
+        "forgot_cancel"
+      ]
+    },
+    {
+      "id": "alg1-l21-i10",
+      "knowledgePointIds": [
+        "kp.alg1.rational.multiply"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply: ((x² − 1)/6) · (3/(x − 1)) for x ≠ 1.",
+        "es": "Multiplica: ((x² − 1)/6) · (3/(x − 1)) para x ≠ 1.",
+        "pl": "Pomnóż: ((x² − 1)/6) · (3/(x − 1)) dla x ≠ 1."
+      },
+      "feedbackCorrect": {
+        "en": "Factor x² − 1 = (x − 1)(x + 1); cancel (x − 1); 3/6 = 1/2 → (x + 1)/2.",
+        "es": "Factoriza x² − 1 = (x − 1)(x + 1); cancela (x − 1); 3/6 = 1/2 → (x + 1)/2.",
+        "pl": "Rozłóż x² − 1 = (x − 1)(x + 1); skróć (x − 1); 3/6 = 1/2 → (x + 1)/2."
+      },
+      "feedbackIncorrect": {
+        "en": "Factor the difference of squares before canceling with (x − 1).",
+        "es": "Factoriza la diferencia de cuadrados antes de cancelar con (x − 1).",
+        "pl": "Rozłóż różnicę kwadratów przed skróceniem z (x − 1)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.D.6",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x^{2}-1}{6}\\cdot\\frac{3}{x-1}",
+      "choices": {
+        "en": [
+          "$\\frac{x+1}{2}$",
+          "$\\frac{x-1}{2}$",
+          "$x+1$",
+          "$\\frac{3(x^{2}-1)}{6(x-1)}$"
+        ],
+        "es": [
+          "$\\frac{x+1}{2}$",
+          "$\\frac{x-1}{2}$",
+          "$x+1$",
+          "$\\frac{3(x^{2}-1)}{6(x-1)}$"
+        ],
+        "pl": [
+          "$\\frac{x+1}{2}$",
+          "$\\frac{x-1}{2}$",
+          "$x+1$",
+          "$\\frac{3(x^{2}-1)}{6(x-1)}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "no_factor",
+        "wrong_remaining_factor"
+      ]
+    }
+  ]
+}

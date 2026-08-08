@@ -49,8 +49,17 @@
 - Item counts: 17 / 17 / 17; promptMath 17/17; distinct EN/ES/PL feedback (0 clones); `npm run build` green
 - **Critic wave6 PASS:** `docs/gauntlet/critic-content-wave6.md` — largest gap: EN `\text{ or }` inside ES/PL KaTeX choices (non-blocking)
 
+## Wave 7 content (PASS)
+- Algebra I L19–L21 EN/ES/PL via `scripts/author-algebra1-l19-l21.mjs`
+- +9 KPs (exp recognize/form/evaluate; radical perfect/simplify/ops; rational simplify/multiply/divide)
+- Unlock: L18→board_19 → L19→20 → L20→21 → L21→board_22 teaser
+- World boards 19–21 in `WorldSites.ts` (spread); correctIndex hist `[5,4,4,4]`
+- Notes: `docs/gauntlet/wave7-content-notes.md`
+- Item counts: 17 / 17 / 17; promptMath 17/17; distinct EN/ES/PL feedback (0 clones); no EN `\text{ or }` in ES/PL choices
+- **Critic wave7 PASS:** `docs/gauntlet/critic-content-wave7.md` — largest gap: shared EN `\text{vs}` in `promptMath` (`alg1-l20-i05`)
+
 ## Next
-- Wave 6 exit gate
+- Wave 7 exit gate
 - GitHub Pages deploy (if needed)
 - Algebra I course gate / human playtest
 - Harden spaced-review UX and IRT with real attempt data

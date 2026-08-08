@@ -58,7 +58,14 @@
           "kp.alg1.quadratic.zero.product",
           "kp.alg1.quadratic.formula",
           "kp.alg1.quadratic.formula.apply",
-          "kp.alg1.quadratic.vertex.axis"
+          "kp.alg1.quadratic.vertex.axis",
+          "kp.alg1.exponential.evaluate",
+          "kp.alg1.radical.perfect.squares",
+          "kp.alg1.radical.simplify",
+          "kp.alg1.radical.operations",
+          "kp.alg1.rational.simplify",
+          "kp.alg1.rational.multiply",
+          "kp.alg1.rational.divide"
         ]
       },
       "A.1(D)": {
@@ -92,7 +99,8 @@
           "kp.alg1.quadratic.check.roots",
           "kp.alg1.quadratic.discriminant",
           "kp.alg1.quadratic.parabola.direction",
-          "kp.alg1.quadratic.graph.features"
+          "kp.alg1.quadratic.graph.features",
+          "kp.alg1.exponential.recognize"
         ]
       },
       "A.1(F)": {
@@ -133,7 +141,14 @@
           "kp.alg1.quadratic.formula.apply",
           "kp.alg1.quadratic.parabola.direction",
           "kp.alg1.quadratic.vertex.axis",
-          "kp.alg1.quadratic.graph.features"
+          "kp.alg1.quadratic.graph.features",
+          "kp.alg1.exponential.form",
+          "kp.alg1.radical.perfect.squares",
+          "kp.alg1.radical.simplify",
+          "kp.alg1.radical.operations",
+          "kp.alg1.rational.simplify",
+          "kp.alg1.rational.multiply",
+          "kp.alg1.rational.divide"
         ]
       },
       "A.5(A)": {
@@ -351,7 +366,10 @@
           "kp.alg1.factor.gcf",
           "kp.alg1.factor.trinomial.a1",
           "kp.alg1.factor.difference.squares",
-          "kp.alg1.factor.trinomial.more"
+          "kp.alg1.factor.trinomial.more",
+          "kp.alg1.rational.simplify",
+          "kp.alg1.rational.multiply",
+          "kp.alg1.rational.divide"
         ]
       },
       "A.10(E)": {
@@ -404,6 +422,52 @@
           "kp.alg1.quadratic.parabola.direction",
           "kp.alg1.quadratic.vertex.axis",
           "kp.alg1.quadratic.graph.features"
+        ]
+      },
+      "A.9(B)": {
+        "description": {
+          "en": "Interpret the meaning of the values of a and b in exponential functions of the form f(x) = ab^x in real-world problems",
+          "es": "Interpretar el significado de a y b en funciones exponenciales f(x) = ab^x en problemas del mundo real",
+          "pl": "Interpretować znaczenie a i b w funkcjach wykładniczych f(x) = ab^x w zadaniach rzeczywistych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponential.recognize",
+          "kp.alg1.exponential.form",
+          "kp.alg1.exponential.evaluate"
+        ]
+      },
+      "A.9(C)": {
+        "description": {
+          "en": "Write exponential functions in the form f(x) = ab^x (where b is a rational number) to describe problems arising from mathematical and real-world situations, including growth and decay",
+          "es": "Escribir funciones exponenciales f(x) = ab^x (b racional) para describir problemas matemáticos y del mundo real, incluido crecimiento y decaimiento",
+          "pl": "Zapisywać funkcje wykładnicze f(x) = ab^x (b wymierne) opisujące problemy matematyczne i rzeczywiste, w tym wzrost i zanikanie"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponential.form",
+          "kp.alg1.exponential.evaluate"
+        ]
+      },
+      "A.9(D)": {
+        "description": {
+          "en": "Graph exponential functions that model growth and decay and show key attributes including intercepts",
+          "es": "Graficar funciones exponenciales de crecimiento y decaimiento mostrando atributos clave, incluidos interceptos",
+          "pl": "Rysować funkcje wykładnicze wzrostu i zanikania z kluczowymi cechami, w tym przecięciami"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponential.recognize",
+          "kp.alg1.exponential.form"
+        ]
+      },
+      "A.11(A)": {
+        "description": {
+          "en": "Simplify numerical radical expressions involving square roots",
+          "es": "Simplificar expresiones radicales numéricas que involucran raíces cuadradas",
+          "pl": "Upraszczać numeryczne wyrażenia pierwiastkowe z pierwiastkami kwadratowymi"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.radical.perfect.squares",
+          "kp.alg1.radical.simplify",
+          "kp.alg1.radical.operations"
         ]
       }
     },
@@ -695,14 +759,17 @@
       },
       "F-LE.A.2": {
         "description": {
-          "en": "Construct linear and exponential functions given a graph, description, or two input-output pairs",
-          "es": "Construir funciones lineales y exponenciales dadas una gráfica, descripción o dos pares entrada-salida",
-          "pl": "Konstruować funkcje liniowe i wykładnicze z wykresu, opisu lub dwóch par argument–wartość"
+          "en": "Construct linear and exponential functions, including arithmetic and geometric sequences, given a graph, a description of a relationship, or two input-output pairs",
+          "es": "Construir funciones lineales y exponenciales, incluidas sucesiones aritméticas y geométricas, dada una gráfica, descripción o dos pares entrada-salida",
+          "pl": "Konstruować funkcje liniowe i wykładnicze, w tym ciągi arytmetyczne i geometryczne, z wykresu, opisu lub dwóch par wejście-wyjście"
         },
         "knowledgePointIds": [
           "kp.alg1.write.equation.slope.yint",
           "kp.alg1.write.equation.point.slope",
-          "kp.alg1.parallel.slope"
+          "kp.alg1.parallel.slope",
+          "kp.alg1.exponential.recognize",
+          "kp.alg1.exponential.form",
+          "kp.alg1.exponential.evaluate"
         ]
       },
       "A-CED.A.2": {
@@ -857,7 +924,13 @@
           "kp.alg1.factor.verify",
           "kp.alg1.factor.difference.squares",
           "kp.alg1.factor.trinomial.more",
-          "kp.alg1.factor.perfect.square"
+          "kp.alg1.factor.perfect.square",
+          "kp.alg1.radical.perfect.squares",
+          "kp.alg1.radical.simplify",
+          "kp.alg1.radical.operations",
+          "kp.alg1.rational.simplify",
+          "kp.alg1.rational.multiply",
+          "kp.alg1.rational.divide"
         ]
       },
       "A-SSE.B.3a": {
@@ -913,6 +986,52 @@
         },
         "knowledgePointIds": [
           "kp.alg1.quadratic.vertex.axis"
+        ]
+      },
+      "F-LE.A.1c": {
+        "description": {
+          "en": "Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another",
+          "es": "Reconocer situaciones en las que una cantidad crece o decae a una tasa porcentual constante por intervalo unitario",
+          "pl": "Rozpoznawać sytuacje, w których wielkość rośnie lub zanika ze stałą stopą procentową na jednostkowy przedział"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponential.recognize",
+          "kp.alg1.exponential.form"
+        ]
+      },
+      "F-IF.C.7e": {
+        "description": {
+          "en": "Graph exponential functions, showing intercepts and end behavior",
+          "es": "Graficar funciones exponenciales, mostrando interceptos y comportamiento final",
+          "pl": "Rysować funkcje wykładnicze, pokazując przecięcia i zachowanie na końcach"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.exponential.evaluate",
+          "kp.alg1.exponential.recognize"
+        ]
+      },
+      "N-RN.A.2": {
+        "description": {
+          "en": "Rewrite expressions involving radicals and rational exponents using the properties of exponents",
+          "es": "Reescribir expresiones con radicales y exponentes racionales usando propiedades de exponentes",
+          "pl": "Przepisywać wyrażenia z pierwiastkami i wykładnikami wymiernymi za pomocą własności potęg"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.radical.perfect.squares",
+          "kp.alg1.radical.simplify",
+          "kp.alg1.radical.operations"
+        ]
+      },
+      "A-APR.D.6": {
+        "description": {
+          "en": "Rewrite simple rational expressions in different forms; write a(x)/b(x) in the form q(x) + r(x)/b(x), where a(x), b(x), q(x), and r(x) are polynomials with the degree of r(x) less than the degree of b(x)",
+          "es": "Reescribir expresiones racionales simples en distintas formas; escribir a(x)/b(x) como q(x) + r(x)/b(x) con deg r < deg b",
+          "pl": "Przepisywać proste wyrażenia wymierne w innych postaciach; zapisywać a(x)/b(x) jako q(x) + r(x)/b(x) przy deg r < deg b"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.rational.simplify",
+          "kp.alg1.rational.multiply",
+          "kp.alg1.rational.divide"
         ]
       }
     }
@@ -1100,6 +1219,31 @@
       "F-IF.C.7a",
       "A-REI.D.10",
       "A-SSE.B.3b"
+    ],
+    "alg1-l19": [
+      "A.9(B)",
+      "A.9(C)",
+      "A.9(D)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "F-LE.A.1c",
+      "F-LE.A.2",
+      "F-IF.C.7e"
+    ],
+    "alg1-l20": [
+      "A.11(A)",
+      "A.1(B)",
+      "A.1(F)",
+      "N-RN.A.2",
+      "A-SSE.A.2"
+    ],
+    "alg1-l21": [
+      "A.10(D)",
+      "A.1(B)",
+      "A.1(F)",
+      "A-APR.D.6",
+      "A-SSE.A.2"
     ]
   }
 }
