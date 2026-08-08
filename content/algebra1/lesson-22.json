@@ -1,0 +1,1299 @@
+{
+  "id": "alg1-l22",
+  "courseId": "algebra1",
+  "order": 22,
+  "title": {
+    "en": "Absolute Value Equations & Inequalities",
+    "es": "Ecuaciones y desigualdades de valor absoluto",
+    "pl": "Równania i nierówności z wartością bezwzględną"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.absolute.meaning",
+    "kp.alg1.absolute.equations",
+    "kp.alg1.absolute.inequalities"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_22",
+    "unlockOnMastery": [
+      "lesson_board_23"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will solve absolute value equations and inequalities using distance and compound cases.",
+        "es": "Resolverás ecuaciones y desigualdades de valor absoluto usando distancia y casos compuestos.",
+        "pl": "Będziesz rozwiązywać równania i nierówności z wartością bezwzględną przez odległość i przypadki złożone."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: distance & cases",
+        "es": "Enseñar: distancia y casos",
+        "pl": "Nauczanie: odległość i przypadki"
+      },
+      "body": {
+        "en": "|expression| is distance. Equations split into ± cases when the right side is nonnegative; inequalities use AND for < and OR for >.",
+        "es": "|expresión| es distancia. Las ecuaciones se dividen en casos ± si el lado derecho es no negativo; desigualdades usan Y para < y O para >.",
+        "pl": "|wyrażenie| to odległość. Równania rozdzielają się na przypadki ±, gdy prawa strona jest nieujemna; nierówności używają I dla < i LUB dla >."
+      },
+      "bodyMath": [
+        "|x|=c\\Rightarrow x=\\pm c\\ (c\\ge 0)",
+        "|x|<c\\Rightarrow -c<x<c",
+        "|x|>c\\Rightarrow x<-c\\ \\vee\\ x>c"
+      ],
+      "itemIds": [
+        "alg1-l22-t01",
+        "alg1-l22-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Evaluate absolute values, solve two-branch equations, and rewrite inequalities with AND/OR.",
+        "es": "Evalúa valores absolutos, resuelve ecuaciones de dos ramas y reescribe desigualdades con Y/O.",
+        "pl": "Obliczaj wartości bezwzględne, rozwiązuj równania dwugałęziowe i przepisuj nierówności z I/LUB."
+      },
+      "itemIds": [
+        "alg1-l22-g01",
+        "alg1-l22-g02",
+        "alg1-l22-g03",
+        "alg1-l22-g04",
+        "alg1-l22-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l22-i01",
+        "alg1-l22-i02",
+        "alg1-l22-i03",
+        "alg1-l22-i04",
+        "alg1-l22-i05",
+        "alg1-l22-i06",
+        "alg1-l22-i07",
+        "alg1-l22-i08",
+        "alg1-l22-i09",
+        "alg1-l22-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l22-t01",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.meaning"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is |−7|?",
+        "es": "¿Cuánto es |−7|?",
+        "pl": "Ile wynosi |−7|?"
+      },
+      "feedbackCorrect": {
+        "en": "Absolute value is distance from 0, so |−7| = 7.",
+        "es": "El valor absoluto es la distancia a 0, así |−7| = 7.",
+        "pl": "Wartość bezwzględna to odległość od 0, więc |−7| = 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Distance is never negative — strip the sign after taking absolute value.",
+        "es": "La distancia nunca es negativa: quita el signo al tomar valor absoluto.",
+        "pl": "Odległość nigdy nie jest ujemna — usuń znak po wzięciu wartości bezwzględnej."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.NS.C.7c"
+          ]
+        }
+      ],
+      "promptMath": "|{-7}|",
+      "choices": {
+        "en": [
+          "$7$",
+          "$-7$",
+          "$0$",
+          "$14$"
+        ],
+        "es": [
+          "$7$",
+          "$-7$",
+          "$0$",
+          "$14$"
+        ],
+        "pl": [
+          "$7$",
+          "$-7$",
+          "$0$",
+          "$14$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 7,
+      "diagnosticTags": [
+        "sign_error",
+        "double_magnitude"
+      ]
+    },
+    {
+      "id": "alg1-l22-t02",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |x| = 5. Which pair is correct?",
+        "es": "Resuelve |x| = 5. ¿Cuál par es correcto?",
+        "pl": "Rozwiąż |x| = 5. Która para jest poprawna?"
+      },
+      "feedbackCorrect": {
+        "en": "Distance 5 from 0 means x = 5 or x = −5.",
+        "es": "Distancia 5 desde 0 significa x = 5 o x = −5.",
+        "pl": "Odległość 5 od 0 oznacza x = 5 lub x = −5."
+      },
+      "feedbackIncorrect": {
+        "en": "Absolute value equations usually split into two linear cases when the right side is positive.",
+        "es": "Las ecuaciones de valor absoluto suelen dividirse en dos casos lineales si el lado derecho es positivo.",
+        "pl": "Równania z wartością bezwzględną zwykle rozdzielają się na dwa przypadki liniowe, gdy prawa strona jest dodatnia."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x|=5",
+      "choices": {
+        "en": [
+          "$x=5\\ \\text{ only}$",
+          "$x=5\\ \\text{ or }\\ x=-5$",
+          "$x=-5\\ \\text{ only}$",
+          "$x=0$"
+        ],
+        "es": [
+          "$x=5\\ \\text{ solo}$",
+          "$x=5\\ \\text{ o }\\ x=-5$",
+          "$x=-5\\ \\text{ solo}$",
+          "$x=0$"
+        ],
+        "pl": [
+          "$x=5\\ \\text{ tylko}$",
+          "$x=5\\ \\text{ lub }\\ x=-5$",
+          "$x=-5\\ \\text{ tylko}$",
+          "$x=0$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "miss_negative_branch",
+        "zero_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l22-g01",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.meaning"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "On a number line, |x − 2| means the distance between x and which number?",
+        "es": "En la recta, |x − 2| es la distancia entre x y qué número?",
+        "pl": "Na osi |x − 2| to odległość między x a jaką liczbą?"
+      },
+      "feedbackCorrect": {
+        "en": "|x − a| is distance from x to a, so here a = 2.",
+        "es": "|x − a| es la distancia de x a a; aquí a = 2.",
+        "pl": "|x − a| to odległość x od a; tu a = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Think “distance to the number being subtracted,” not to zero unless a = 0.",
+        "es": "Piensa “distancia al número que se resta,” no a cero salvo que a = 0.",
+        "pl": "Myśl „odległość od odejmowanej liczby”, nie od zera, chyba że a = 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.NS.C.7c"
+          ]
+        }
+      ],
+      "promptMath": "|x-2|",
+      "choices": {
+        "en": [
+          "$0$",
+          "$-2$",
+          "$2$",
+          "$x$"
+        ],
+        "es": [
+          "$0$",
+          "$-2$",
+          "$2$",
+          "$x$"
+        ],
+        "pl": [
+          "$0$",
+          "$-2$",
+          "$2$",
+          "$x$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "center_wrong",
+        "zero_default"
+      ]
+    },
+    {
+      "id": "alg1-l22-g02",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |2x − 1| = 7. What are the solutions?",
+        "es": "Resuelve |2x − 1| = 7. ¿Cuáles son las soluciones?",
+        "pl": "Rozwiąż |2x − 1| = 7. Jakie są rozwiązania?"
+      },
+      "feedbackCorrect": {
+        "en": "Split: 2x − 1 = 7 → x = 4; 2x − 1 = −7 → x = −3.",
+        "es": "Divide: 2x − 1 = 7 → x = 4; 2x − 1 = −7 → x = −3.",
+        "pl": "Rozdziel: 2x − 1 = 7 → x = 4; 2x − 1 = −7 → x = −3."
+      },
+      "feedbackIncorrect": {
+        "en": "Set the inside equal to 7 and to −7, then solve each linear equation.",
+        "es": "Iguala el interior a 7 y a −7; luego resuelve cada ecuación lineal.",
+        "pl": "Przyrównaj wnętrze do 7 i do −7, potem rozwiąż każde równanie liniowe."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|2x-1|=7",
+      "choices": {
+        "en": [
+          "$x=4\\ \\text{ only}$",
+          "$x=3\\ \\text{ or }\\ x=-4$",
+          "$x=\\tfrac82$",
+          "$x=4\\ \\text{ or }\\ x=-3$"
+        ],
+        "es": [
+          "$x=4\\ \\text{ solo}$",
+          "$x=3\\ \\text{ o }\\ x=-4$",
+          "$x=\\tfrac82$",
+          "$x=4\\ \\text{ o }\\ x=-3$"
+        ],
+        "pl": [
+          "$x=4\\ \\text{ tylko}$",
+          "$x=3\\ \\text{ lub }\\ x=-4$",
+          "$x=\\tfrac82$",
+          "$x=4\\ \\text{ lub }\\ x=-3$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "miss_branch",
+        "arithmetic_error"
+      ]
+    },
+    {
+      "id": "alg1-l22-g03",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "How many real solutions does |x + 3| = −2 have?",
+        "es": "¿Cuántas soluciones reales tiene |x + 3| = −2?",
+        "pl": "Ile rozwiązań rzeczywistych ma |x + 3| = −2?"
+      },
+      "feedbackCorrect": {
+        "en": "Absolute value cannot equal a negative number — no real solutions.",
+        "es": "El valor absoluto no puede igualar un negativo: no hay soluciones reales.",
+        "pl": "Wartość bezwzględna nie może równać się liczbie ujemnej — brak rozwiązań rzeczywistych."
+      },
+      "feedbackIncorrect": {
+        "en": "The left side is always ≥ 0, so it can never equal −2.",
+        "es": "El lado izquierdo siempre es ≥ 0, así que nunca iguala −2.",
+        "pl": "Lewa strona zawsze jest ≥ 0, więc nigdy nie równa się −2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x+3|=-2",
+      "choices": {
+        "en": [
+          "$0$",
+          "$1$",
+          "$2$",
+          "$3$"
+        ],
+        "es": [
+          "$0$",
+          "$1$",
+          "$2$",
+          "$3$"
+        ],
+        "pl": [
+          "$0$",
+          "$1$",
+          "$2$",
+          "$3$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 0,
+      "diagnosticTags": [
+        "negative_rhs",
+        "force_two_solutions"
+      ]
+    },
+    {
+      "id": "alg1-l22-g04",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.inequalities"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which compound inequality matches |x| < 4?",
+        "es": "¿Qué desigualdad compuesta corresponde a |x| < 4?",
+        "pl": "Która złożona nierówność odpowiada |x| < 4?"
+      },
+      "feedbackCorrect": {
+        "en": "“Less than” absolute value is an AND interval between −c and c.",
+        "es": "“Menor que” en valor absoluto es un intervalo Y entre −c y c.",
+        "pl": "„Mniejsze niż” przy wartości bezwzględnej to przedział I między −c a c."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not use the OR outside form — that is for |x| > 4.",
+        "es": "No uses la forma O exterior: esa es para |x| > 4.",
+        "pl": "Nie używaj formy LUB na zewnątrz — to dla |x| > 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x|<4",
+      "choices": {
+        "en": [
+          "$x<-4\\ \\text{ or }\\ x>4$",
+          "$-4<x<4$",
+          "$x<-4$",
+          "$x>4$"
+        ],
+        "es": [
+          "$x<-4\\ \\text{ o }\\ x>4$",
+          "$-4<x<4$",
+          "$x<-4$",
+          "$x>4$"
+        ],
+        "pl": [
+          "$x<-4\\ \\text{ lub }\\ x>4$",
+          "$-4<x<4$",
+          "$x<-4$",
+          "$x>4$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "and_or_swap",
+        "endpoint_error"
+      ]
+    },
+    {
+      "id": "alg1-l22-g05",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.inequalities"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which describes |x − 1| ≥ 3?",
+        "es": "¿Cuál describe |x − 1| ≥ 3?",
+        "pl": "Co opisuje |x − 1| ≥ 3?"
+      },
+      "feedbackCorrect": {
+        "en": "x − 1 ≤ −3 or x − 1 ≥ 3 → x ≤ −2 or x ≥ 4.",
+        "es": "x − 1 ≤ −3 o x − 1 ≥ 3 → x ≤ −2 o x ≥ 4.",
+        "pl": "x − 1 ≤ −3 lub x − 1 ≥ 3 → x ≤ −2 lub x ≥ 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Greater-than absolute value opens outward as an OR compound inequality.",
+        "es": "Mayor-que en valor absoluto se abre hacia afuera como desigualdad O.",
+        "pl": "Większe-niż przy wartości bezwzględnej otwiera się na zewnątrz jako nierówność LUB."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x-1|\\ge 3",
+      "choices": {
+        "en": [
+          "$-2\\le x\\le 4$",
+          "$x\\ge 4\\ \\text{ only}$",
+          "$x\\le -2\\ \\text{ or }\\ x\\ge 4$",
+          "$x\\le -2\\ \\text{ only}$"
+        ],
+        "es": [
+          "$-2\\le x\\le 4$",
+          "$x\\ge 4\\ \\text{ solo}$",
+          "$x\\le -2\\ \\text{ o }\\ x\\ge 4$",
+          "$x\\le -2\\ \\text{ solo}$"
+        ],
+        "pl": [
+          "$-2\\le x\\le 4$",
+          "$x\\ge 4\\ \\text{ tylko}$",
+          "$x\\le -2\\ \\text{ lub }\\ x\\ge 4$",
+          "$x\\le -2\\ \\text{ tylko}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "and_or_swap",
+        "center_shift"
+      ]
+    },
+    {
+      "id": "alg1-l22-i01",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.meaning"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate |3 − 8|.",
+        "es": "Evalúa |3 − 8|.",
+        "pl": "Oblicz |3 − 8|."
+      },
+      "feedbackCorrect": {
+        "en": "3 − 8 = −5, and |−5| = 5.",
+        "es": "3 − 8 = −5, y |−5| = 5.",
+        "pl": "3 − 8 = −5, a |−5| = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Simplify inside first, then take absolute value of the result.",
+        "es": "Simplifica primero el interior; luego toma el valor absoluto.",
+        "pl": "Najpierw uprość wnętrze, potem weź wartość bezwzględną wyniku."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.NS.C.7c"
+          ]
+        }
+      ],
+      "promptMath": "|3-8|",
+      "choices": {
+        "en": [
+          "$-5$",
+          "$11$",
+          "$3$",
+          "$5$"
+        ],
+        "es": [
+          "$-5$",
+          "$11$",
+          "$3$",
+          "$5$"
+        ],
+        "pl": [
+          "$-5$",
+          "$11$",
+          "$3$",
+          "$5$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "order_ops",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l22-i02",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |x + 4| = 9.",
+        "es": "Resuelve |x + 4| = 9.",
+        "pl": "Rozwiąż |x + 4| = 9."
+      },
+      "feedbackCorrect": {
+        "en": "Both cases: x + 4 = 9 → x = 5; x + 4 = −9 → x = −13.",
+        "es": "Ambos casos: x + 4 = 9 → x = 5; x + 4 = −9 → x = −13.",
+        "pl": "Oba przypadki: x + 4 = 9 → x = 5; x + 4 = −9 → x = −13."
+      },
+      "feedbackIncorrect": {
+        "en": "Solve both x + 4 = 9 and x + 4 = −9.",
+        "es": "Resuelve tanto x + 4 = 9 como x + 4 = −9.",
+        "pl": "Rozwiąż zarówno x + 4 = 9, jak i x + 4 = −9."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x+4|=9",
+      "choices": {
+        "en": [
+          "$x=5\\ \\text{ or }\\ x=-13$",
+          "$x=5\\ \\text{ only}$",
+          "$x=13\\ \\text{ or }\\ x=-5$",
+          "$x=-4$"
+        ],
+        "es": [
+          "$x=5\\ \\text{ o }\\ x=-13$",
+          "$x=5\\ \\text{ solo}$",
+          "$x=13\\ \\text{ o }\\ x=-5$",
+          "$x=-4$"
+        ],
+        "pl": [
+          "$x=5\\ \\text{ lub }\\ x=-13$",
+          "$x=5\\ \\text{ tylko}$",
+          "$x=13\\ \\text{ lub }\\ x=-5$",
+          "$x=-4$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "miss_branch",
+        "sign_flip_error"
+      ]
+    },
+    {
+      "id": "alg1-l22-i03",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |3x| = 12.",
+        "es": "Resuelve |3x| = 12.",
+        "pl": "Rozwiąż |3x| = 12."
+      },
+      "feedbackCorrect": {
+        "en": "3x = 12 or 3x = −12 → x = 4 or x = −4.",
+        "es": "3x = 12 o 3x = −12 → x = 4 o x = −4.",
+        "pl": "3x = 12 lub 3x = −12 → x = 4 lub x = −4."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide both cases by 3; do not cube or invert incorrectly.",
+        "es": "Divide ambos casos entre 3; no eleves al cubo ni inviertas mal.",
+        "pl": "Podziel oba przypadki przez 3; nie potęguj ani nie odwracaj błędnie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|3x|=12",
+      "choices": {
+        "en": [
+          "$x=4\\ \\text{ only}$",
+          "$x=4\\ \\text{ or }\\ x=-4$",
+          "$x=36$",
+          "$x=\\tfrac{1}{4}$"
+        ],
+        "es": [
+          "$x=4\\ \\text{ solo}$",
+          "$x=4\\ \\text{ o }\\ x=-4$",
+          "$x=36$",
+          "$x=\\tfrac{1}{4}$"
+        ],
+        "pl": [
+          "$x=4\\ \\text{ tylko}$",
+          "$x=4\\ \\text{ lub }\\ x=-4$",
+          "$x=36$",
+          "$x=\\tfrac{1}{4}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "miss_branch",
+        "scale_error"
+      ]
+    },
+    {
+      "id": "alg1-l22-i04",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.inequalities"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |x| > 2.",
+        "es": "Resuelve |x| > 2.",
+        "pl": "Rozwiąż |x| > 2."
+      },
+      "feedbackCorrect": {
+        "en": "Outside the interval (−2, 2): x < −2 or x > 2.",
+        "es": "Fuera del intervalo (−2, 2): x < −2 o x > 2.",
+        "pl": "Na zewnątrz przedziału (−2, 2): x < −2 lub x > 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Greater-than uses OR rays, not the AND middle interval.",
+        "es": "Mayor-que usa rayos O, no el intervalo Y del medio.",
+        "pl": "Większe-niż używa promieni LUB, nie środkowego przedziału I."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x|>2",
+      "choices": {
+        "en": [
+          "$-2<x<2$",
+          "$x>2\\ \\text{ only}$",
+          "$x<-2\\ \\text{ or }\\ x>2$",
+          "$x<-2\\ \\text{ only}$"
+        ],
+        "es": [
+          "$-2<x<2$",
+          "$x>2\\ \\text{ solo}$",
+          "$x<-2\\ \\text{ o }\\ x>2$",
+          "$x<-2\\ \\text{ solo}$"
+        ],
+        "pl": [
+          "$-2<x<2$",
+          "$x>2\\ \\text{ tylko}$",
+          "$x<-2\\ \\text{ lub }\\ x>2$",
+          "$x<-2\\ \\text{ tylko}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "and_or_swap"
+      ]
+    },
+    {
+      "id": "alg1-l22-i05",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.inequalities"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |2x + 1| ≤ 5.",
+        "es": "Resuelve |2x + 1| ≤ 5.",
+        "pl": "Rozwiąż |2x + 1| ≤ 5."
+      },
+      "feedbackCorrect": {
+        "en": "AND chain: −5 ≤ 2x + 1 ≤ 5 → −6 ≤ 2x ≤ 4 → −3 ≤ x ≤ 2.",
+        "es": "Cadena Y: −5 ≤ 2x + 1 ≤ 5 → −6 ≤ 2x ≤ 4 → −3 ≤ x ≤ 2.",
+        "pl": "Łańcuch I: −5 ≤ 2x + 1 ≤ 5 → −6 ≤ 2x ≤ 4 → −3 ≤ x ≤ 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Less-than-or-equal absolute value is a closed AND interval; solve both sides carefully.",
+        "es": "Menor-o-igual en valor absoluto es un intervalo Y cerrado; resuelve ambos lados con cuidado.",
+        "pl": "Mniejsze-równe przy wartości bezwzględnej to domknięty przedział I; rozwiąż obie strony ostrożnie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|2x+1|\\le 5",
+      "choices": {
+        "en": [
+          "$x\\le -3\\ \\text{ or }\\ x\\ge 2$",
+          "$-5\\le x\\le 5$",
+          "$x\\ge 2$",
+          "$-3\\le x\\le 2$"
+        ],
+        "es": [
+          "$x\\le -3\\ \\text{ o }\\ x\\ge 2$",
+          "$-5\\le x\\le 5$",
+          "$x\\ge 2$",
+          "$-3\\le x\\le 2$"
+        ],
+        "pl": [
+          "$x\\le -3\\ \\text{ lub }\\ x\\ge 2$",
+          "$-5\\le x\\le 5$",
+          "$x\\ge 2$",
+          "$-3\\le x\\le 2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "and_or_swap",
+        "scale_error"
+      ]
+    },
+    {
+      "id": "alg1-l22-i06",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.meaning"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which statement is always true?",
+        "es": "¿Cuál enunciado es siempre verdadero?",
+        "pl": "Które stwierdzenie jest zawsze prawdziwe?"
+      },
+      "feedbackCorrect": {
+        "en": "Absolute value is a nonnegative distance for every real number.",
+        "es": "El valor absoluto es una distancia no negativa para todo real.",
+        "pl": "Wartość bezwzględna to nieujemna odległość dla każdej liczby rzeczywistej."
+      },
+      "feedbackIncorrect": {
+        "en": "|a| equals a only when a ≥ 0; it equals −a when a < 0.",
+        "es": "|a| iguala a solo si a ≥ 0; iguala −a cuando a < 0.",
+        "pl": "|a| równa się a tylko gdy a ≥ 0; równa się −a gdy a < 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.NS.C.7c"
+          ]
+        }
+      ],
+      "promptMath": "|a|\\ge 0",
+      "choices": {
+        "en": [
+          "|a| ≥ 0 for every real a",
+          "|a| is always equal to a",
+          "|a| is always negative",
+          "|a| = −a always"
+        ],
+        "es": [
+          "|a| ≥ 0 para todo real a",
+          "|a| siempre es igual a a",
+          "|a| siempre es negativo",
+          "|a| = −a siempre"
+        ],
+        "pl": [
+          "|a| ≥ 0 dla każdego rzeczywistego a",
+          "|a| zawsze równa się a",
+          "|a| zawsze jest ujemne",
+          "|a| = −a zawsze"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "identity_confusion",
+        "always_negative"
+      ]
+    },
+    {
+      "id": "alg1-l22-i07",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |4 − x| = 6.",
+        "es": "Resuelve |4 − x| = 6.",
+        "pl": "Rozwiąż |4 − x| = 6."
+      },
+      "feedbackCorrect": {
+        "en": "Cases: 4 − x = 6 → x = −2; 4 − x = −6 → x = 10.",
+        "es": "Casos: 4 − x = 6 → x = −2; 4 − x = −6 → x = 10.",
+        "pl": "Przypadki: 4 − x = 6 → x = −2; 4 − x = −6 → x = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Watch the subtracted variable: solve 4 − x = ±6 carefully.",
+        "es": "Cuidado con la variable restada: resuelve 4 − x = ±6 con cuidado.",
+        "pl": "Uważaj na odejmowaną zmienną: rozwiąż 4 − x = ±6 ostrożnie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|4-x|=6",
+      "choices": {
+        "en": [
+          "$x=2\\ \\text{ or }\\ x=-10$",
+          "$x=-2\\ \\text{ or }\\ x=10$",
+          "$x=10\\ \\text{ only}$",
+          "$x=-2\\ \\text{ only}$"
+        ],
+        "es": [
+          "$x=2\\ \\text{ o }\\ x=-10$",
+          "$x=-2\\ \\text{ o }\\ x=10$",
+          "$x=10\\ \\text{ solo}$",
+          "$x=-2\\ \\text{ solo}$"
+        ],
+        "pl": [
+          "$x=2\\ \\text{ lub }\\ x=-10$",
+          "$x=-2\\ \\text{ lub }\\ x=10$",
+          "$x=10\\ \\text{ tylko}$",
+          "$x=-2\\ \\text{ tylko}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "variable_on_right",
+        "miss_branch"
+      ]
+    },
+    {
+      "id": "alg1-l22-i08",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.inequalities"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |x + 2| < 1.",
+        "es": "Resuelve |x + 2| < 1.",
+        "pl": "Rozwiąż |x + 2| < 1."
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 2 throughout: −1 < x + 2 < 1 → −3 < x < −1.",
+        "es": "Resta 2 en toda la cadena: −1 < x + 2 < 1 → −3 < x < −1.",
+        "pl": "Odejmij 2 w całym łańcuchu: −1 < x + 2 < 1 → −3 < x < −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Shift the center left by 2; keep the AND interval open.",
+        "es": "Desplaza el centro 2 a la izquierda; mantén el intervalo Y abierto.",
+        "pl": "Przesuń środek o 2 w lewo; zachowaj otwarty przedział I."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x+2|<1",
+      "choices": {
+        "en": [
+          "$x<-3\\ \\text{ or }\\ x>-1$",
+          "$-1<x<3$",
+          "$-3<x<-1$",
+          "$x>-1$"
+        ],
+        "es": [
+          "$x<-3\\ \\text{ o }\\ x>-1$",
+          "$-1<x<3$",
+          "$-3<x<-1$",
+          "$x>-1$"
+        ],
+        "pl": [
+          "$x<-3\\ \\text{ lub }\\ x>-1$",
+          "$-1<x<3$",
+          "$-3<x<-1$",
+          "$x>-1$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "center_shift",
+        "and_or_swap"
+      ]
+    },
+    {
+      "id": "alg1-l22-i09",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.equations"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If |x| = 0, what is x?",
+        "es": "Si |x| = 0, ¿cuánto es x?",
+        "pl": "Jeśli |x| = 0, ile wynosi x?"
+      },
+      "feedbackCorrect": {
+        "en": "Only 0 is distance 0 from the origin, so x = 0.",
+        "es": "Solo 0 está a distancia 0 del origen, así x = 0.",
+        "pl": "Tylko 0 ma odległość 0 od początku, więc x = 0."
+      },
+      "feedbackIncorrect": {
+        "en": "This is the unique case with one solution — not two branches.",
+        "es": "Este es el caso único con una solución — no dos ramas.",
+        "pl": "To jedyny przypadek z jednym rozwiązaniem — nie dwie gałęzie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|x|=0",
+      "choices": {
+        "en": [
+          "$1$",
+          "$-1$",
+          "no solution",
+          "$0$"
+        ],
+        "es": [
+          "$1$",
+          "$-1$",
+          "sin solución",
+          "$0$"
+        ],
+        "pl": [
+          "$1$",
+          "$-1$",
+          "brak rozwiązania",
+          "$0$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 0,
+      "diagnosticTags": [
+        "zero_case",
+        "force_two"
+      ]
+    },
+    {
+      "id": "alg1-l22-i10",
+      "knowledgePointIds": [
+        "kp.alg1.absolute.inequalities"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve |3x − 6| > 9.",
+        "es": "Resuelve |3x − 6| > 9.",
+        "pl": "Rozwiąż |3x − 6| > 9."
+      },
+      "feedbackCorrect": {
+        "en": "3x − 6 < −9 or 3x − 6 > 9 → x < −1 or x > 5.",
+        "es": "3x − 6 < −9 o 3x − 6 > 9 → x < −1 o x > 5.",
+        "pl": "3x − 6 < −9 lub 3x − 6 > 9 → x < −1 lub x > 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide by 3 carefully on both OR branches after isolating.",
+        "es": "Divide entre 3 con cuidado en ambas ramas O tras aislar.",
+        "pl": "Podziel przez 3 ostrożnie na obu gałęziach LUB po izolacji."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        }
+      ],
+      "promptMath": "|3x-6|>9",
+      "choices": {
+        "en": [
+          "$x<-1\\ \\text{ or }\\ x>5$",
+          "$-1<x<5$",
+          "$x>5\\ \\text{ only}$",
+          "$x<-1\\ \\text{ only}$"
+        ],
+        "es": [
+          "$x<-1\\ \\text{ o }\\ x>5$",
+          "$-1<x<5$",
+          "$x>5\\ \\text{ solo}$",
+          "$x<-1\\ \\text{ solo}$"
+        ],
+        "pl": [
+          "$x<-1\\ \\text{ lub }\\ x>5$",
+          "$-1<x<5$",
+          "$x>5\\ \\text{ tylko}$",
+          "$x<-1\\ \\text{ tylko}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "and_or_swap",
+        "scale_error"
+      ]
+    }
+  ]
+}

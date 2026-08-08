@@ -58,8 +58,17 @@
 - Item counts: 17 / 17 / 17; promptMath 17/17; distinct EN/ES/PL feedback (0 clones); no EN `\text{ or }` in ES/PL choices
 - **Critic wave7 PASS:** `docs/gauntlet/critic-content-wave7.md` — largest gap: shared EN `\text{vs}` in `promptMath` (`alg1-l20-i05`)
 
+## Wave 8 content (PASS)
+- Algebra I L22–L24 EN/ES/PL via `scripts/author-algebra1-l22-l24.mjs`
+- +9 KPs (abs meaning/equations/inequalities; function notation/domain/range; arithmetic/geometric/nth-term)
+- Unlock: L21→board_22 → L22→23 → L23→24 → L24→board_25 teaser
+- World boards 22–24 in `WorldSites.ts` (spread); correctIndex hist `[5,4,4,4]`
+- Notes: `docs/gauntlet/wave8-content-notes.md`
+- Item counts: 17 / 17 / 17; promptMath 17/17; distinct EN/ES/PL feedback (0 clones); no EN `\text{ or }` in ES/PL choices
+- **Critic wave8 PASS:** `docs/gauntlet/critic-content-wave8.md` — largest gap: shared EN `\text{function?}` / `\text{classify}` / `\text{zeros}`
+
 ## Next
-- Wave 7 exit gate
+- Wave 8 exit gate
 - GitHub Pages deploy (if needed)
 - Algebra I course gate / human playtest
 - Harden spaced-review UX and IRT with real attempt data

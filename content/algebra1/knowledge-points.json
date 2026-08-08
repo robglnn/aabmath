@@ -3824,6 +3824,558 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.absolute.meaning",
+      "title": {
+        "en": "Interpret absolute value as distance",
+        "es": "Interpretar el valor absoluto como distancia",
+        "pl": "Interpretować wartość bezwzględną jako odległość"
+      },
+      "prerequisites": [
+        "kp.alg1.inequality.meaning",
+        "kp.alg1.solve.two.step"
+      ],
+      "successCriteria": {
+        "en": "Student explains |x| as distance from 0 and evaluates |a| for integers a.",
+        "es": "El estudiante explica |x| como distancia desde 0 y evalúa |a| para enteros a.",
+        "pl": "Uczeń wyjaśnia |x| jako odległość od 0 i oblicza |a| dla całkowitych a."
+      },
+      "misconceptions": {
+        "en": [
+          "Treating absolute value as always making the inside negative",
+          "Dropping bars without flipping signs when the inside is negative"
+        ],
+        "es": [
+          "Tratar el valor absoluto como si siempre volviera negativo el interior",
+          "Quitar barras sin cambiar signos cuando el interior es negativo"
+        ],
+        "pl": [
+          "Traktowanie wartości bezwzględnej jakby zawsze czyniła wnętrze ujemnym",
+          "Usuwanie kresek bez zmiany znaków, gdy wnętrze jest ujemne"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.NS.C.7c"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.absolute.equations",
+      "title": {
+        "en": "Solve absolute value equations",
+        "es": "Resolver ecuaciones de valor absoluto",
+        "pl": "Rozwiązywać równania z wartością bezwzględną"
+      },
+      "prerequisites": [
+        "kp.alg1.absolute.meaning",
+        "kp.alg1.solve.both.sides"
+      ],
+      "encompassing": [
+        "kp.alg1.absolute.meaning"
+      ],
+      "successCriteria": {
+        "en": "Student solves |ax+b| = c (c ≥ 0) by writing ax+b = c and ax+b = −c, then checks extraneous cases when c < 0.",
+        "es": "El estudiante resuelve |ax+b| = c (c ≥ 0) escribiendo ax+b = c y ax+b = −c, y verifica casos sin solución si c < 0.",
+        "pl": "Uczeń rozwiązuje |ax+b| = c (c ≥ 0) zapisując ax+b = c oraz ax+b = −c i sprawdza brak rozwiązań gdy c < 0."
+      },
+      "misconceptions": {
+        "en": [
+          "Writing only the positive case and missing the negative branch",
+          "Believing |expression| = negative has two real solutions"
+        ],
+        "es": [
+          "Escribir solo el caso positivo y omitir la rama negativa",
+          "Creer que |expresión| = negativo tiene dos soluciones reales"
+        ],
+        "pl": [
+          "Zapisywanie tylko przypadku dodatniego i pomijanie ujemnej gałęzi",
+          "Wiara, że |wyrażenie| = ujemne ma dwa rozwiązania rzeczywiste"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.absolute.inequalities",
+      "title": {
+        "en": "Solve absolute value inequalities",
+        "es": "Resolver desigualdades de valor absoluto",
+        "pl": "Rozwiązywać nierówności z wartością bezwzględną"
+      },
+      "prerequisites": [
+        "kp.alg1.absolute.equations",
+        "kp.alg1.inequality.two.step"
+      ],
+      "encompassing": [
+        "kp.alg1.absolute.equations"
+      ],
+      "successCriteria": {
+        "en": "Student rewrites |ax+b| < c as a compound AND inequality and |ax+b| > c as a compound OR inequality (c > 0).",
+        "es": "El estudiante reescribe |ax+b| < c como desigualdad compuesta Y y |ax+b| > c como O (c > 0).",
+        "pl": "Uczeń przepisuje |ax+b| < c jako złożoną nierówność I oraz |ax+b| > c jako LUB (c > 0)."
+      },
+      "misconceptions": {
+        "en": [
+          "Using OR for “less than” and AND for “greater than”",
+          "Forgetting to flip inequality directions when multiplying by −1"
+        ],
+        "es": [
+          "Usar O para “menor que” y Y para “mayor que”",
+          "Olvidar invertir desigualdades al multiplicar por −1"
+        ],
+        "pl": [
+          "Używanie LUB dla „mniejsze niż” i I dla „większe niż”",
+          "Zapominanie o odwróceniu nierówności przy mnożeniu przez −1"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-CED.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.function.notation",
+      "title": {
+        "en": "Use function notation f(x)",
+        "es": "Usar la notación de función f(x)",
+        "pl": "Stosować notację funkcyjną f(x)"
+      },
+      "prerequisites": [
+        "kp.alg1.function.linear.intro",
+        "kp.alg1.eval.substitute"
+      ],
+      "successCriteria": {
+        "en": "Student evaluates f(a) by substituting x = a into the rule and distinguishes f(x) from f · x.",
+        "es": "El estudiante evalúa f(a) sustituyendo x = a en la regla y distingue f(x) de f · x.",
+        "pl": "Uczeń oblicza f(a) podstawiając x = a do wzoru i odróżnia f(x) od f · x."
+      },
+      "misconceptions": {
+        "en": [
+          "Reading f(x) as “f times x”",
+          "Substituting into the wrong place or leaving x in the answer"
+        ],
+        "es": [
+          "Leer f(x) como “f por x”",
+          "Sustituir en el lugar incorrecto o dejar x en la respuesta"
+        ],
+        "pl": [
+          "Czytanie f(x) jako „f razy x”",
+          "Podstawianie w złe miejsce lub zostawianie x w odpowiedzi"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.function.domain",
+      "title": {
+        "en": "Identify domain of simple functions",
+        "es": "Identificar el dominio de funciones simples",
+        "pl": "Wyznaczać dziedzinę prostych funkcji"
+      },
+      "prerequisites": [
+        "kp.alg1.function.notation"
+      ],
+      "successCriteria": {
+        "en": "Student names the set of allowed inputs for linear rules and simple restrictions (e.g. nonzero denominators).",
+        "es": "El estudiante nombra el conjunto de entradas permitidas para reglas lineales y restricciones simples (p. ej. denominadores no nulos).",
+        "pl": "Uczeń podaje zbiór dopuszczalnych argumentów dla reguł liniowych i prostych ograniczeń (np. mianownik ≠ 0)."
+      },
+      "misconceptions": {
+        "en": [
+          "Confusing domain (inputs) with range (outputs)",
+          "Ignoring restrictions that exclude values from the domain"
+        ],
+        "es": [
+          "Confundir dominio (entradas) con rango (salidas)",
+          "Ignorar restricciones que excluyen valores del dominio"
+        ],
+        "pl": [
+          "Mylenie dziedziny (argumenty) z przeciwdziedziną (wartości)",
+          "Ignorowanie ograniczeń wykluczających wartości z dziedziny"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.function.range",
+      "title": {
+        "en": "Identify range of simple functions",
+        "es": "Identificar el rango de funciones simples",
+        "pl": "Wyznaczać przeciwdziedzinę prostych funkcji"
+      },
+      "prerequisites": [
+        "kp.alg1.function.domain",
+        "kp.alg1.function.notation"
+      ],
+      "encompassing": [
+        "kp.alg1.function.domain"
+      ],
+      "successCriteria": {
+        "en": "Student finds possible outputs from a rule, table, or graph for linear and simple discrete cases.",
+        "es": "El estudiante halla salidas posibles a partir de una regla, tabla o gráfica en casos lineales y discretos simples.",
+        "pl": "Uczeń znajduje możliwe wartości z wzoru, tabeli lub wykresu dla przypadków liniowych i prostych dyskretnych."
+      },
+      "misconceptions": {
+        "en": [
+          "Listing inputs when asked for range",
+          "Assuming every linear function’s range is all real numbers without checking context"
+        ],
+        "es": [
+          "Listar entradas cuando se pide el rango",
+          "Asumir que el rango de toda lineal es todos los reales sin mirar el contexto"
+        ],
+        "pl": [
+          "Wypisywanie argumentów zamiast wartości",
+          "Zakładanie, że przeciwdziedzina każdej funkcji liniowej to wszystkie reals bez kontekstu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.sequence.arithmetic",
+      "title": {
+        "en": "Recognize arithmetic sequences",
+        "es": "Reconocer sucesiones aritméticas",
+        "pl": "Rozpoznawać ciągi arytmetyczne"
+      },
+      "prerequisites": [
+        "kp.alg1.rate.of.change",
+        "kp.alg1.function.linear.intro"
+      ],
+      "successCriteria": {
+        "en": "Student identifies a common difference d and finds the next term of an arithmetic sequence.",
+        "es": "El estudiante identifica una diferencia común d y halla el siguiente término de una sucesión aritmética.",
+        "pl": "Uczeń identyfikuje wspólną różnicę d i znajduje następny wyraz ciągu arytmetycznego."
+      },
+      "misconceptions": {
+        "en": [
+          "Using a ratio when the pattern is additive",
+          "Computing d from non-consecutive terms without dividing by the step count"
+        ],
+        "es": [
+          "Usar una razón cuando el patrón es aditivo",
+          "Calcular d entre términos no consecutivos sin dividir por el número de pasos"
+        ],
+        "pl": [
+          "Używanie ilorazu, gdy wzorzec jest addytywny",
+          "Obliczanie d między niekolejnymi wyrazami bez dzielenia przez liczbę kroków"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-BF.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.sequence.geometric",
+      "title": {
+        "en": "Recognize geometric sequences",
+        "es": "Reconocer sucesiones geométricas",
+        "pl": "Rozpoznawać ciągi geometryczne"
+      },
+      "prerequisites": [
+        "kp.alg1.exponential.recognize",
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "successCriteria": {
+        "en": "Student identifies a common ratio r and finds the next term of a geometric sequence.",
+        "es": "El estudiante identifica una razón común r y halla el siguiente término de una sucesión geométrica.",
+        "pl": "Uczeń identyfikuje wspólny iloraz r i znajduje następny wyraz ciągu geometrycznego."
+      },
+      "misconceptions": {
+        "en": [
+          "Adding a constant when the pattern multiplies",
+          "Mixing up common difference with common ratio"
+        ],
+        "es": [
+          "Sumar una constante cuando el patrón multiplica",
+          "Confundir diferencia común con razón común"
+        ],
+        "pl": [
+          "Dodawanie stałej, gdy wzorzec mnoży",
+          "Mylenie wspólnej różnicy ze wspólnym ilorazem"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-BF.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.sequence.nth.term",
+      "title": {
+        "en": "Write nth-term formulas for sequences",
+        "es": "Escribir fórmulas del término n-ésimo",
+        "pl": "Zapisywać wzory na n-ty wyraz ciągu"
+      },
+      "prerequisites": [
+        "kp.alg1.sequence.arithmetic",
+        "kp.alg1.sequence.geometric"
+      ],
+      "encompassing": [
+        "kp.alg1.sequence.arithmetic",
+        "kp.alg1.sequence.geometric"
+      ],
+      "successCriteria": {
+        "en": "Student writes a_n = a_1 + (n−1)d or a_n = a_1 · r^(n−1) and evaluates for small n.",
+        "es": "El estudiante escribe a_n = a_1 + (n−1)d o a_n = a_1 · r^(n−1) y evalúa para n pequeños.",
+        "pl": "Uczeń zapisuje a_n = a_1 + (n−1)d lub a_n = a_1 · r^(n−1) i oblicza dla małych n."
+      },
+      "misconceptions": {
+        "en": [
+          "Using n instead of (n−1) in the explicit formula",
+          "Applying an arithmetic formula to a geometric sequence"
+        ],
+        "es": [
+          "Usar n en lugar de (n−1) en la fórmula explícita",
+          "Aplicar una fórmula aritmética a una sucesión geométrica"
+        ],
+        "pl": [
+          "Używanie n zamiast (n−1) we wzorze jawnym",
+          "Stosowanie wzoru arytmetycznego do ciągu geometrycznego"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-BF.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.5.3"
+          ]
+        }
+      ]
     }
   ]
 }

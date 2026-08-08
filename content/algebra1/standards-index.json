@@ -65,7 +65,9 @@
           "kp.alg1.radical.operations",
           "kp.alg1.rational.simplify",
           "kp.alg1.rational.multiply",
-          "kp.alg1.rational.divide"
+          "kp.alg1.rational.divide",
+          "kp.alg1.absolute.equations",
+          "kp.alg1.absolute.inequalities"
         ]
       },
       "A.1(D)": {
@@ -100,7 +102,13 @@
           "kp.alg1.quadratic.discriminant",
           "kp.alg1.quadratic.parabola.direction",
           "kp.alg1.quadratic.graph.features",
-          "kp.alg1.exponential.recognize"
+          "kp.alg1.exponential.recognize",
+          "kp.alg1.absolute.meaning",
+          "kp.alg1.function.notation",
+          "kp.alg1.function.domain",
+          "kp.alg1.function.range",
+          "kp.alg1.sequence.arithmetic",
+          "kp.alg1.sequence.geometric"
         ]
       },
       "A.1(F)": {
@@ -148,7 +156,16 @@
           "kp.alg1.radical.operations",
           "kp.alg1.rational.simplify",
           "kp.alg1.rational.multiply",
-          "kp.alg1.rational.divide"
+          "kp.alg1.rational.divide",
+          "kp.alg1.absolute.meaning",
+          "kp.alg1.absolute.equations",
+          "kp.alg1.absolute.inequalities",
+          "kp.alg1.function.notation",
+          "kp.alg1.function.domain",
+          "kp.alg1.function.range",
+          "kp.alg1.sequence.arithmetic",
+          "kp.alg1.sequence.geometric",
+          "kp.alg1.sequence.nth.term"
         ]
       },
       "A.5(A)": {
@@ -164,7 +181,9 @@
           "kp.alg1.solve.two.step",
           "kp.alg1.solve.multi.step",
           "kp.alg1.solve.both.sides",
-          "kp.alg1.equation.verify"
+          "kp.alg1.equation.verify",
+          "kp.alg1.absolute.meaning",
+          "kp.alg1.absolute.equations"
         ]
       },
       "A.12(B)": {
@@ -177,7 +196,9 @@
           "kp.alg1.expression.translate",
           "kp.alg1.eval.substitute",
           "kp.alg1.eval.multi.var",
-          "kp.alg1.function.linear.intro"
+          "kp.alg1.function.linear.intro",
+          "kp.alg1.function.notation",
+          "kp.alg1.function.range"
         ]
       },
       "A.5(B)": {
@@ -189,7 +210,8 @@
         "knowledgePointIds": [
           "kp.alg1.inequality.meaning",
           "kp.alg1.inequality.one.step",
-          "kp.alg1.inequality.two.step"
+          "kp.alg1.inequality.two.step",
+          "kp.alg1.absolute.inequalities"
         ]
       },
       "A.2(A)": {
@@ -200,7 +222,9 @@
         },
         "knowledgePointIds": [
           "kp.alg1.function.linear.intro",
-          "kp.alg1.intercept.identify"
+          "kp.alg1.intercept.identify",
+          "kp.alg1.function.domain",
+          "kp.alg1.function.range"
         ]
       },
       "A.3(A)": {
@@ -469,6 +493,39 @@
           "kp.alg1.radical.simplify",
           "kp.alg1.radical.operations"
         ]
+      },
+      "A.12(A)": {
+        "description": {
+          "en": "Decide whether relations represented verbally, tabularly, graphically, and symbolically define a function",
+          "es": "Decidir si relaciones representadas verbal, tabular, gráfica y simbólicamente definen una función",
+          "pl": "Rozstrzygać, czy relacje przedstawione słownie, tabelarycznie, graficznie i symbolicznie definiują funkcję"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.function.domain",
+          "kp.alg1.function.notation"
+        ]
+      },
+      "A.12(C)": {
+        "description": {
+          "en": "Identify terms of arithmetic and geometric sequences when the sequences are given using function notation or recursive formulas",
+          "es": "Identificar términos de sucesiones aritméticas y geométricas dadas en notación de función o fórmulas recursivas",
+          "pl": "Identyfikować wyrazy ciągów arytmetycznych i geometrycznych danych w notacji funkcyjnej lub wzorach rekurencyjnych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.sequence.arithmetic",
+          "kp.alg1.sequence.geometric",
+          "kp.alg1.sequence.nth.term"
+        ]
+      },
+      "A.12(D)": {
+        "description": {
+          "en": "Write a formula for the nth term of arithmetic and geometric sequences, given the value of several of their terms",
+          "es": "Escribir una fórmula para el término n-ésimo de sucesiones aritméticas y geométricas, dados varios términos",
+          "pl": "Zapisywać wzór na n-ty wyraz ciągów arytmetycznych i geometrycznych, mając kilka wyrazów"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.sequence.nth.term"
+        ]
       }
     },
     "CCSS": {
@@ -543,7 +600,10 @@
           "kp.alg1.equation.verify",
           "kp.alg1.inequality.meaning",
           "kp.alg1.inequality.one.step",
-          "kp.alg1.inequality.two.step"
+          "kp.alg1.inequality.two.step",
+          "kp.alg1.absolute.meaning",
+          "kp.alg1.absolute.equations",
+          "kp.alg1.absolute.inequalities"
         ]
       },
       "6.EE.A.2a": {
@@ -658,7 +718,10 @@
           "pl": "Rozumieć, że funkcja ze zbioru w zbiór przypisuje każdemu elementowi dziedziny dokładnie jeden element przeciwdziedziny"
         },
         "knowledgePointIds": [
-          "kp.alg1.function.linear.intro"
+          "kp.alg1.function.linear.intro",
+          "kp.alg1.function.notation",
+          "kp.alg1.function.domain",
+          "kp.alg1.function.range"
         ]
       },
       "F-LE.A.1b": {
@@ -769,7 +832,10 @@
           "kp.alg1.parallel.slope",
           "kp.alg1.exponential.recognize",
           "kp.alg1.exponential.form",
-          "kp.alg1.exponential.evaluate"
+          "kp.alg1.exponential.evaluate",
+          "kp.alg1.sequence.arithmetic",
+          "kp.alg1.sequence.geometric",
+          "kp.alg1.sequence.nth.term"
         ]
       },
       "A-CED.A.2": {
@@ -1033,6 +1099,61 @@
           "kp.alg1.rational.multiply",
           "kp.alg1.rational.divide"
         ]
+      },
+      "A-CED.A.1": {
+        "description": {
+          "en": "Create equations and inequalities in one variable and use them to solve problems",
+          "es": "Crear ecuaciones y desigualdades en una variable y usarlas para resolver problemas",
+          "pl": "Tworzyć równania i nierówności jednej zmiennej i używać ich do rozwiązywania problemów"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.absolute.equations",
+          "kp.alg1.absolute.inequalities"
+        ]
+      },
+      "F-IF.A.2": {
+        "description": {
+          "en": "Use function notation, evaluate functions for inputs in their domains, and interpret statements that use function notation in terms of a context",
+          "es": "Usar notación de función, evaluar funciones para entradas en sus dominios e interpretar enunciados con notación de función en contexto",
+          "pl": "Stosować notację funkcyjną, obliczać wartości dla argumentów z dziedziny i interpretować zapisy z notacją funkcyjną w kontekście"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.function.notation",
+          "kp.alg1.function.domain",
+          "kp.alg1.function.range"
+        ]
+      },
+      "F-BF.A.1a": {
+        "description": {
+          "en": "Determine an explicit expression, a recursive process, or steps for calculation from a context",
+          "es": "Determinar una expresión explícita, un proceso recursivo o pasos de cálculo a partir de un contexto",
+          "pl": "Wyznaczać wyrażenie jawne, proces rekurencyjny lub kroki obliczeń z kontekstu"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.sequence.nth.term"
+        ]
+      },
+      "F-BF.A.2": {
+        "description": {
+          "en": "Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms",
+          "es": "Escribir sucesiones aritméticas y geométricas de forma recursiva y con fórmula explícita, modelar situaciones y traducir entre ambas formas",
+          "pl": "Zapisywać ciągi arytmetyczne i geometryczne rekurencyjnie i jawnym wzorem, modelować sytuacje i przechodzić między formami"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.sequence.arithmetic",
+          "kp.alg1.sequence.geometric",
+          "kp.alg1.sequence.nth.term"
+        ]
+      },
+      "6.NS.C.7c": {
+        "description": {
+          "en": "Understand the absolute value of a rational number as its distance from 0 on the number line",
+          "es": "Entender el valor absoluto de un racional como su distancia a 0 en la recta numérica",
+          "pl": "Rozumieć wartość bezwzględną liczby wymiernej jako odległość od 0 na osi liczbowej"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.absolute.meaning"
+        ]
       }
     }
   },
@@ -1244,6 +1365,34 @@
       "A.1(F)",
       "A-APR.D.6",
       "A-SSE.A.2"
+    ],
+    "alg1-l22": [
+      "A.5(A)",
+      "A.5(B)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-REI.B.3",
+      "A-CED.A.1",
+      "6.NS.C.7c"
+    ],
+    "alg1-l23": [
+      "A.12(A)",
+      "A.12(B)",
+      "A.2(A)",
+      "A.1(D)",
+      "A.1(F)",
+      "F-IF.A.1",
+      "F-IF.A.2"
+    ],
+    "alg1-l24": [
+      "A.12(C)",
+      "A.12(D)",
+      "A.1(D)",
+      "A.1(F)",
+      "F-BF.A.1a",
+      "F-BF.A.2",
+      "F-LE.A.2"
     ]
   }
 }

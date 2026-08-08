@@ -1,0 +1,1306 @@
+{
+  "id": "alg1-l24",
+  "courseId": "algebra1",
+  "order": 24,
+  "title": {
+    "en": "Arithmetic & Geometric Sequences Intro",
+    "es": "Introducción a sucesiones aritméticas y geométricas",
+    "pl": "Wstęp do ciągów arytmetycznych i geometrycznych"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.sequence.arithmetic",
+    "kp.alg1.sequence.geometric",
+    "kp.alg1.sequence.nth.term"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_24",
+    "unlockOnMastery": [
+      "lesson_board_25"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will recognize arithmetic and geometric sequences and write basic nth-term formulas.",
+        "es": "Reconocerás sucesiones aritméticas y geométricas y escribirás fórmulas básicas del n-ésimo término.",
+        "pl": "Będziesz rozpoznawać ciągi arytmetyczne i geometryczne oraz zapisywać podstawowe wzory na n-ty wyraz."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: d, r, and a_n",
+        "es": "Enseñar: d, r y a_n",
+        "pl": "Nauczanie: d, r i a_n"
+      },
+      "body": {
+        "en": "Arithmetic adds a constant d; geometric multiplies by a constant r. Explicit: a_n = a_1+(n−1)d or a_n = a_1·r^(n−1).",
+        "es": "Aritmética suma una constante d; geométrica multiplica por una constante r. Explícitas: a_n = a_1+(n−1)d o a_n = a_1·r^(n−1).",
+        "pl": "Arytmetyczny dodaje stałą d; geometryczny mnoży przez stałą r. Jawne: a_n = a_1+(n−1)d lub a_n = a_1·r^(n−1)."
+      },
+      "bodyMath": [
+        "a_n=a_1+(n-1)d",
+        "a_n=a_1\\cdot r^{n-1}",
+        "d:\\ +\\ ;\\ r:\\ \\times"
+      ],
+      "itemIds": [
+        "alg1-l24-t01",
+        "alg1-l24-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Classify sequences, find next terms, and evaluate or write nth-term formulas.",
+        "es": "Clasifica sucesiones, halla términos siguientes y evalúa o escribe fórmulas del n-ésimo.",
+        "pl": "Klasyfikuj ciągi, znajduj następne wyrazy oraz obliczaj lub zapisuj wzory na n-ty wyraz."
+      },
+      "itemIds": [
+        "alg1-l24-g01",
+        "alg1-l24-g02",
+        "alg1-l24-g03",
+        "alg1-l24-g04",
+        "alg1-l24-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l24-i01",
+        "alg1-l24-i02",
+        "alg1-l24-i03",
+        "alg1-l24-i04",
+        "alg1-l24-i05",
+        "alg1-l24-i06",
+        "alg1-l24-i07",
+        "alg1-l24-i08",
+        "alg1-l24-i09",
+        "alg1-l24-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l24-t01",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Sequence: 3, 7, 11, 15, … What is the common difference?",
+        "es": "Sucesión: 3, 7, 11, 15, … ¿Cuál es la diferencia común?",
+        "pl": "Ciąg: 3, 7, 11, 15, … Jaka jest wspólna różnica?"
+      },
+      "feedbackCorrect": {
+        "en": "Consecutive differences: 7 − 3 = 11 − 7 = 15 − 11 = 4.",
+        "es": "Diferencias consecutivas: 7 − 3 = 11 − 7 = 15 − 11 = 4.",
+        "pl": "Kolejne różnice: 7 − 3 = 11 − 7 = 15 − 11 = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract consecutive terms; the constant result is d.",
+        "es": "Resta términos consecutivos; el resultado constante es d.",
+        "pl": "Odejmij kolejne wyrazy; stały wynik to d."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "3,\\ 7,\\ 11,\\ 15,\\ \\ldots",
+      "choices": {
+        "en": [
+          "$4$",
+          "$3$",
+          "$7$",
+          "$2$"
+        ],
+        "es": [
+          "$4$",
+          "$3$",
+          "$7$",
+          "$2$"
+        ],
+        "pl": [
+          "$4$",
+          "$3$",
+          "$7$",
+          "$2$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "ratio_instead",
+        "wrong_pair"
+      ]
+    },
+    {
+      "id": "alg1-l24-t02",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.geometric"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Sequence: 2, 6, 18, 54, … What is the common ratio?",
+        "es": "Sucesión: 2, 6, 18, 54, … ¿Cuál es la razón común?",
+        "pl": "Ciąg: 2, 6, 18, 54, … Jaki jest wspólny iloraz?"
+      },
+      "feedbackCorrect": {
+        "en": "Consecutive ratios: 6/2 = 18/6 = 54/18 = 3.",
+        "es": "Razones consecutivas: 6/2 = 18/6 = 54/18 = 3.",
+        "pl": "Kolejne ilorazy: 6/2 = 18/6 = 54/18 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide consecutive terms; the constant quotient is r.",
+        "es": "Divide términos consecutivos; el cociente constante es r.",
+        "pl": "Podziel kolejne wyrazy; stały iloraz to r."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "2,\\ 6,\\ 18,\\ 54,\\ \\ldots",
+      "choices": {
+        "en": [
+          "$4$",
+          "$3$",
+          "$2$",
+          "$6$"
+        ],
+        "es": [
+          "$4$",
+          "$3$",
+          "$2$",
+          "$6$"
+        ],
+        "pl": [
+          "$4$",
+          "$3$",
+          "$2$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "difference_instead",
+        "wrong_pair"
+      ]
+    },
+    {
+      "id": "alg1-l24-g01",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Next term after 10, 6, 2, −2, …?",
+        "es": "¿Siguiente término después de 10, 6, 2, −2, …?",
+        "pl": "Następny wyraz po 10, 6, 2, −2, …?"
+      },
+      "feedbackCorrect": {
+        "en": "Common difference d = −4, so −2 + (−4) = −6.",
+        "es": "Diferencia común d = −4, así −2 + (−4) = −6.",
+        "pl": "Wspólna różnica d = −4, więc −2 + (−4) = −6."
+      },
+      "feedbackIncorrect": {
+        "en": "Keep adding the same d; here each term decreases by 4.",
+        "es": "Sigue sumando el mismo d; aquí cada término baja 4.",
+        "pl": "Dodawaj to samo d; tu każdy wyraz maleje o 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "10,\\ 6,\\ 2,\\ -2,\\ ?",
+      "choices": {
+        "en": [
+          "$-4$",
+          "$2$",
+          "$-6$",
+          "$-8$"
+        ],
+        "es": [
+          "$-4$",
+          "$2$",
+          "$-6$",
+          "$-8$"
+        ],
+        "pl": [
+          "$-4$",
+          "$2$",
+          "$-6$",
+          "$-8$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": -6,
+      "diagnosticTags": [
+        "wrong_d",
+        "geometric_guess"
+      ]
+    },
+    {
+      "id": "alg1-l24-g02",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.geometric"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Next term after 81, 27, 9, 3, …?",
+        "es": "¿Siguiente término después de 81, 27, 9, 3, …?",
+        "pl": "Następny wyraz po 81, 27, 9, 3, …?"
+      },
+      "feedbackCorrect": {
+        "en": "Common ratio r = 1/3, so 3 · (1/3) = 1.",
+        "es": "Razón común r = 1/3, así 3 · (1/3) = 1.",
+        "pl": "Wspólny iloraz r = 1/3, więc 3 · (1/3) = 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply by the same r each time; here divide by 3.",
+        "es": "Multiplica por el mismo r cada vez; aquí divide entre 3.",
+        "pl": "Mnoż przez to samo r za każdym razem; tu dziel przez 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "81,\\ 27,\\ 9,\\ 3,\\ ?",
+      "choices": {
+        "en": [
+          "$0$",
+          "$-3$",
+          "$9$",
+          "$1$"
+        ],
+        "es": [
+          "$0$",
+          "$-3$",
+          "$9$",
+          "$1$"
+        ],
+        "pl": [
+          "$0$",
+          "$-3$",
+          "$9$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "difference_instead",
+        "wrong_r"
+      ]
+    },
+    {
+      "id": "alg1-l24-g03",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.nth.term"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Arithmetic: a_1 = 5, d = 3. Which is a_n?",
+        "es": "Aritmética: a_1 = 5, d = 3. ¿Cuál es a_n?",
+        "pl": "Arytmetyczny: a_1 = 5, d = 3. Które to a_n?"
+      },
+      "feedbackCorrect": {
+        "en": "Explicit arithmetic: a_n = a_1 + (n − 1)d.",
+        "es": "Aritmética explícita: a_n = a_1 + (n − 1)d.",
+        "pl": "Jawny wzór arytmetyczny: a_n = a_1 + (n − 1)d."
+      },
+      "feedbackIncorrect": {
+        "en": "Use (n − 1), not n; do not switch to a geometric form.",
+        "es": "Usa (n − 1), no n; no cambies a forma geométrica.",
+        "pl": "Użyj (n − 1), nie n; nie przechodź na postać geometryczną."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "a_1=5,\\ d=3",
+      "choices": {
+        "en": [
+          "$a_n=5+(n-1)\\cdot 3$",
+          "$a_n=5+n\\cdot 3$",
+          "$a_n=5\\cdot 3^{n-1}$",
+          "$a_n=3+(n-1)\\cdot 5$"
+        ],
+        "es": [
+          "$a_n=5+(n-1)\\cdot 3$",
+          "$a_n=5+n\\cdot 3$",
+          "$a_n=5\\cdot 3^{n-1}$",
+          "$a_n=3+(n-1)\\cdot 5$"
+        ],
+        "pl": [
+          "$a_n=5+(n-1)\\cdot 3$",
+          "$a_n=5+n\\cdot 3$",
+          "$a_n=5\\cdot 3^{n-1}$",
+          "$a_n=3+(n-1)\\cdot 5$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "off_by_one",
+        "geometric_form"
+      ]
+    },
+    {
+      "id": "alg1-l24-g04",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.nth.term"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Geometric: a_1 = 4, r = 2. Which is a_n?",
+        "es": "Geométrica: a_1 = 4, r = 2. ¿Cuál es a_n?",
+        "pl": "Geometryczny: a_1 = 4, r = 2. Które to a_n?"
+      },
+      "feedbackCorrect": {
+        "en": "Explicit geometric: a_n = a_1 · r^(n−1).",
+        "es": "Geométrica explícita: a_n = a_1 · r^(n−1).",
+        "pl": "Jawny wzór geometryczny: a_n = a_1 · r^(n−1)."
+      },
+      "feedbackIncorrect": {
+        "en": "Exponent is n − 1; do not use an arithmetic add formula.",
+        "es": "El exponente es n − 1; no uses una fórmula aritmética de suma.",
+        "pl": "Wykładnik to n − 1; nie używaj wzoru arytmetycznego z dodawaniem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "a_1=4,\\ r=2",
+      "choices": {
+        "en": [
+          "$a_n=4+2(n-1)$",
+          "$a_n=4\\cdot 2^{n-1}$",
+          "$a_n=4\\cdot 2^{n}$",
+          "$a_n=2\\cdot 4^{n-1}$"
+        ],
+        "es": [
+          "$a_n=4+2(n-1)$",
+          "$a_n=4\\cdot 2^{n-1}$",
+          "$a_n=4\\cdot 2^{n}$",
+          "$a_n=2\\cdot 4^{n-1}$"
+        ],
+        "pl": [
+          "$a_n=4+2(n-1)$",
+          "$a_n=4\\cdot 2^{n-1}$",
+          "$a_n=4\\cdot 2^{n}$",
+          "$a_n=2\\cdot 4^{n-1}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "off_by_one",
+        "arithmetic_form"
+      ]
+    },
+    {
+      "id": "alg1-l24-g05",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Is 2, 4, 8, 16 arithmetic or geometric?",
+        "es": "¿2, 4, 8, 16 es aritmética o geométrica?",
+        "pl": "Czy 2, 4, 8, 16 jest arytmetyczny czy geometryczny?"
+      },
+      "feedbackCorrect": {
+        "en": "Ratios are constantly 2; differences are not constant.",
+        "es": "Las razones son constantemente 2; las diferencias no son constantes.",
+        "pl": "Ilorazy są stale 2; różnice nie są stałe."
+      },
+      "feedbackIncorrect": {
+        "en": "Check both: 4−2 ≠ 8−4, but 4/2 = 8/4 = 2.",
+        "es": "Revisa ambas: 4−2 ≠ 8−4, pero 4/2 = 8/4 = 2.",
+        "pl": "Sprawdź obie: 4−2 ≠ 8−4, ale 4/2 = 8/4 = 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "2,\\ 4,\\ 8,\\ 16",
+      "choices": {
+        "en": [
+          "Arithmetic (d = 2)",
+          "Both equally",
+          "Geometric (r = 2)",
+          "Neither"
+        ],
+        "es": [
+          "Aritmética (d = 2)",
+          "Ambas por igual",
+          "Geométrica (r = 2)",
+          "Ninguna"
+        ],
+        "pl": [
+          "Arytmetyczny (d = 2)",
+          "Oba jednakowo",
+          "Geometryczny (r = 2)",
+          "Żaden"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "type_confusion",
+        "d_equals_r_visual"
+      ]
+    },
+    {
+      "id": "alg1-l24-i01",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Find the 5th term of 1, 5, 9, 13, …",
+        "es": "Halla el 5.º término de 1, 5, 9, 13, …",
+        "pl": "Znajdź 5. wyraz ciągu 1, 5, 9, 13, …"
+      },
+      "feedbackCorrect": {
+        "en": "d = 4; a_5 = 13 + 4 = 17 (or 1 + 4·4).",
+        "es": "d = 4; a_5 = 13 + 4 = 17 (o 1 + 4·4).",
+        "pl": "d = 4; a_5 = 13 + 4 = 17 (lub 1 + 4·4)."
+      },
+      "feedbackIncorrect": {
+        "en": "Add d once more after the 4th term.",
+        "es": "Suma d una vez más después del 4.º término.",
+        "pl": "Dodaj d jeszcze raz po 4. wyrazie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "1,\\ 5,\\ 9,\\ 13,\\ ?",
+      "choices": {
+        "en": [
+          "$15$",
+          "$21$",
+          "$16$",
+          "$17$"
+        ],
+        "es": [
+          "$15$",
+          "$21$",
+          "$16$",
+          "$17$"
+        ],
+        "pl": [
+          "$15$",
+          "$21$",
+          "$16$",
+          "$17$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 17,
+      "diagnosticTags": [
+        "off_by_one",
+        "wrong_d"
+      ]
+    },
+    {
+      "id": "alg1-l24-i02",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.geometric"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Find the next term of 5, −10, 20, −40, …",
+        "es": "Halla el siguiente término de 5, −10, 20, −40, …",
+        "pl": "Znajdź następny wyraz 5, −10, 20, −40, …"
+      },
+      "feedbackCorrect": {
+        "en": "r = −2, so −40 · (−2) = 80.",
+        "es": "r = −2, así −40 · (−2) = 80.",
+        "pl": "r = −2, więc −40 · (−2) = 80."
+      },
+      "feedbackIncorrect": {
+        "en": "Keep multiplying by −2; signs alternate.",
+        "es": "Sigue multiplicando por −2; los signos alternan.",
+        "pl": "Mnóż dalej przez −2; znaki się naprzemienne."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "5,\\ -10,\\ 20,\\ -40,\\ ?",
+      "choices": {
+        "en": [
+          "$80$",
+          "$-80$",
+          "$40$",
+          "$-20$"
+        ],
+        "es": [
+          "$80$",
+          "$-80$",
+          "$40$",
+          "$-20$"
+        ],
+        "pl": [
+          "$80$",
+          "$-80$",
+          "$40$",
+          "$-20$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 80,
+      "diagnosticTags": [
+        "sign_ratio",
+        "difference_instead"
+      ]
+    },
+    {
+      "id": "alg1-l24-i03",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.nth.term"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "a_n = 2 + (n − 1)·5. What is a_4?",
+        "es": "a_n = 2 + (n − 1)·5. ¿Cuánto es a_4?",
+        "pl": "a_n = 2 + (n − 1)·5. Ile wynosi a_4?"
+      },
+      "feedbackCorrect": {
+        "en": "Plug n = 4: a_4 = 2 + 3·5 = 2 + 15 = 17.",
+        "es": "Sustituye n = 4: a_4 = 2 + 3·5 = 2 + 15 = 17.",
+        "pl": "Wstaw n = 4: a_4 = 2 + 3·5 = 2 + 15 = 17."
+      },
+      "feedbackIncorrect": {
+        "en": "Use n − 1 = 3, not n = 4 inside the product.",
+        "es": "Usa n − 1 = 3, no n = 4 dentro del producto.",
+        "pl": "Użyj n − 1 = 3, nie n = 4 w iloczynie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "a_n=2+(n-1)\\cdot 5;\\ a_4=?",
+      "choices": {
+        "en": [
+          "$22$",
+          "$17$",
+          "$15$",
+          "$20$"
+        ],
+        "es": [
+          "$22$",
+          "$17$",
+          "$15$",
+          "$20$"
+        ],
+        "pl": [
+          "$22$",
+          "$17$",
+          "$15$",
+          "$20$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 17,
+      "diagnosticTags": [
+        "off_by_one",
+        "arithmetic"
+      ]
+    },
+    {
+      "id": "alg1-l24-i04",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.nth.term"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "a_n = 3 · 2^(n−1). What is a_5?",
+        "es": "a_n = 3 · 2^(n−1). ¿Cuánto es a_5?",
+        "pl": "a_n = 3 · 2^(n−1). Ile wynosi a_5?"
+      },
+      "feedbackCorrect": {
+        "en": "With n − 1 = 4: a_5 = 3 · 2^4 = 3 · 16 = 48.",
+        "es": "Con n − 1 = 4: a_5 = 3 · 2^4 = 3 · 16 = 48.",
+        "pl": "Przy n − 1 = 4: a_5 = 3 · 2^4 = 3 · 16 = 48."
+      },
+      "feedbackIncorrect": {
+        "en": "Exponent is 4 when n = 5; then multiply by 3.",
+        "es": "El exponente es 4 cuando n = 5; luego multiplica por 3.",
+        "pl": "Wykładnik to 4 przy n = 5; potem pomnóż przez 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "a_n=3\\cdot 2^{n-1};\\ a_5=?",
+      "choices": {
+        "en": [
+          "$96$",
+          "$24$",
+          "$48$",
+          "$32$"
+        ],
+        "es": [
+          "$96$",
+          "$24$",
+          "$48$",
+          "$32$"
+        ],
+        "pl": [
+          "$96$",
+          "$24$",
+          "$48$",
+          "$32$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 48,
+      "diagnosticTags": [
+        "off_by_one",
+        "power_error"
+      ]
+    },
+    {
+      "id": "alg1-l24-i05",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Terms a_2 = 11 and a_5 = 20 in an arithmetic sequence. What is d?",
+        "es": "Términos a_2 = 11 y a_5 = 20 en una sucesión aritmética. ¿Cuál es d?",
+        "pl": "Wyrazy a_2 = 11 i a_5 = 20 w ciągu arytmetycznym. Ile wynosi d?"
+      },
+      "feedbackCorrect": {
+        "en": "From a_2 to a_5 is 3 steps: (20 − 11)/3 = 3.",
+        "es": "De a_2 a a_5 hay 3 pasos: (20 − 11)/3 = 3.",
+        "pl": "Od a_2 do a_5 są 3 kroki: (20 − 11)/3 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide the change by the number of steps between indices.",
+        "es": "Divide el cambio entre el número de pasos entre índices.",
+        "pl": "Podziel zmianę przez liczbę kroków między indeksami."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "a_2=11,\\ a_5=20",
+      "choices": {
+        "en": [
+          "$9$",
+          "$4$",
+          "$2$",
+          "$3$"
+        ],
+        "es": [
+          "$9$",
+          "$4$",
+          "$2$",
+          "$3$"
+        ],
+        "pl": [
+          "$9$",
+          "$4$",
+          "$2$",
+          "$3$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "skip_steps",
+        "difference_raw"
+      ]
+    },
+    {
+      "id": "alg1-l24-i06",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.geometric"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Terms a_1 = 8 and a_3 = 2 in a geometric sequence (positive r). What is r?",
+        "es": "Términos a_1 = 8 y a_3 = 2 en sucesión geométrica (r positivo). ¿Cuál es r?",
+        "pl": "Wyrazy a_1 = 8 i a_3 = 2 w ciągu geometrycznym (r dodatnie). Ile wynosi r?"
+      },
+      "feedbackCorrect": {
+        "en": "Two steps: a_3 = a_1 · r² → 2 = 8r² → r² = 1/4 → r = 1/2.",
+        "es": "Dos pasos: a_3 = a_1 · r² → 2 = 8r² → r² = 1/4 → r = 1/2.",
+        "pl": "Dwa kroki: a_3 = a_1 · r² → 2 = 8r² → r² = 1/4 → r = 1/2."
+      },
+      "feedbackIncorrect": {
+        "en": "Two steps mean r squared, not a single ratio 2/8 alone without root.",
+        "es": "Dos pasos significan r al cuadrado, no solo la razón 2/8 sin raíz.",
+        "pl": "Dwa kroki oznaczają r do kwadratu, nie sam iloraz 2/8 bez pierwiastka."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "a_1=8,\\ a_3=2",
+      "choices": {
+        "en": [
+          "$\\tfrac12$",
+          "$\\tfrac14$",
+          "$2$",
+          "$4$"
+        ],
+        "es": [
+          "$\\tfrac12$",
+          "$\\tfrac14$",
+          "$2$",
+          "$4$"
+        ],
+        "pl": [
+          "$\\tfrac12$",
+          "$\\tfrac14$",
+          "$2$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "skip_steps",
+        "forget_root"
+      ]
+    },
+    {
+      "id": "alg1-l24-i07",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.nth.term"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Write a_n for 7, 10, 13, 16, …",
+        "es": "Escribe a_n para 7, 10, 13, 16, …",
+        "pl": "Zapisz a_n dla 7, 10, 13, 16, …"
+      },
+      "feedbackCorrect": {
+        "en": "Arithmetic form: a_1 = 7, d = 3 → a_n = 7 + (n − 1)·3.",
+        "es": "Forma aritmética: a_1 = 7, d = 3 → a_n = 7 + (n − 1)·3.",
+        "pl": "Postać arytmetyczna: a_1 = 7, d = 3 → a_n = 7 + (n − 1)·3."
+      },
+      "feedbackIncorrect": {
+        "en": "Arithmetic uses add d(n−1), not multiply by 3^(n−1).",
+        "es": "Aritmética usa sumar d(n−1), no multiplicar por 3^(n−1).",
+        "pl": "Arytmetyczny dodaje d(n−1), nie mnoży przez 3^(n−1)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "7,\\ 10,\\ 13,\\ 16,\\ \\ldots",
+      "choices": {
+        "en": [
+          "$a_n=7+n\\cdot 3$",
+          "$a_n=7+(n-1)\\cdot 3$",
+          "$a_n=7\\cdot 3^{n-1}$",
+          "$a_n=3+(n-1)\\cdot 7$"
+        ],
+        "es": [
+          "$a_n=7+n\\cdot 3$",
+          "$a_n=7+(n-1)\\cdot 3$",
+          "$a_n=7\\cdot 3^{n-1}$",
+          "$a_n=3+(n-1)\\cdot 7$"
+        ],
+        "pl": [
+          "$a_n=7+n\\cdot 3$",
+          "$a_n=7+(n-1)\\cdot 3$",
+          "$a_n=7\\cdot 3^{n-1}$",
+          "$a_n=3+(n-1)\\cdot 7$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "off_by_one",
+        "geometric_form"
+      ]
+    },
+    {
+      "id": "alg1-l24-i08",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.nth.term"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Write a_n for 5, 15, 45, 135, …",
+        "es": "Escribe a_n para 5, 15, 45, 135, …",
+        "pl": "Zapisz a_n dla 5, 15, 45, 135, …"
+      },
+      "feedbackCorrect": {
+        "en": "Geometric form: a_1 = 5, r = 3 → a_n = 5 · 3^(n−1).",
+        "es": "Forma geométrica: a_1 = 5, r = 3 → a_n = 5 · 3^(n−1).",
+        "pl": "Postać geometryczna: a_1 = 5, r = 3 → a_n = 5 · 3^(n−1)."
+      },
+      "feedbackIncorrect": {
+        "en": "Geometric uses a_1 · r^(n−1), not an arithmetic add.",
+        "es": "Geométrica usa a_1 · r^(n−1), no una suma aritmética.",
+        "pl": "Geometryczny używa a_1 · r^(n−1), nie sumy arytmetycznej."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(D)",
+            "A.12(C)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-BF.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "5,\\ 15,\\ 45,\\ 135,\\ \\ldots",
+      "choices": {
+        "en": [
+          "$a_n=5+(n-1)\\cdot 3$",
+          "$a_n=5\\cdot 3^{n}$",
+          "$a_n=5\\cdot 3^{n-1}$",
+          "$a_n=3\\cdot 5^{n-1}$"
+        ],
+        "es": [
+          "$a_n=5+(n-1)\\cdot 3$",
+          "$a_n=5\\cdot 3^{n}$",
+          "$a_n=5\\cdot 3^{n-1}$",
+          "$a_n=3\\cdot 5^{n-1}$"
+        ],
+        "pl": [
+          "$a_n=5+(n-1)\\cdot 3$",
+          "$a_n=5\\cdot 3^{n}$",
+          "$a_n=5\\cdot 3^{n-1}$",
+          "$a_n=3\\cdot 5^{n-1}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "off_by_one",
+        "arithmetic_form"
+      ]
+    },
+    {
+      "id": "alg1-l24-i09",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.arithmetic"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which sequence is arithmetic?",
+        "es": "¿Cuál sucesión es aritmética?",
+        "pl": "Który ciąg jest arytmetyczny?"
+      },
+      "feedbackCorrect": {
+        "en": "Differences are constantly −3 in 4, 1, −2, −5.",
+        "es": "Las diferencias son constantemente −3 en 4, 1, −2, −5.",
+        "pl": "Różnice są stale −3 w 4, 1, −2, −5."
+      },
+      "feedbackIncorrect": {
+        "en": "Look for a constant difference, not a constant ratio or Fibonacci-like adds.",
+        "es": "Busca diferencia constante, no razón constante ni sumas tipo Fibonacci.",
+        "pl": "Szukaj stałej różnicy, nie stałego ilorazu ani sum Fibonacciego."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\text{classify}",
+      "choices": {
+        "en": [
+          "$3,\\ 6,\\ 12,\\ 24$",
+          "$2,\\ 3,\\ 5,\\ 8$",
+          "$1,\\ 1,\\ 2,\\ 3$",
+          "$4,\\ 1,\\ -2,\\ -5$"
+        ],
+        "es": [
+          "$3,\\ 6,\\ 12,\\ 24$",
+          "$2,\\ 3,\\ 5,\\ 8$",
+          "$1,\\ 1,\\ 2,\\ 3$",
+          "$4,\\ 1,\\ -2,\\ -5$"
+        ],
+        "pl": [
+          "$3,\\ 6,\\ 12,\\ 24$",
+          "$2,\\ 3,\\ 5,\\ 8$",
+          "$1,\\ 1,\\ 2,\\ 3$",
+          "$4,\\ 1,\\ -2,\\ -5$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "type_confusion",
+        "fib_distract"
+      ]
+    },
+    {
+      "id": "alg1-l24-i10",
+      "knowledgePointIds": [
+        "kp.alg1.sequence.geometric"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "a_1 = 2, r = −3. What is a_4?",
+        "es": "a_1 = 2, r = −3. ¿Cuánto es a_4?",
+        "pl": "a_1 = 2, r = −3. Ile wynosi a_4?"
+      },
+      "feedbackCorrect": {
+        "en": "Odd power stays negative: a_4 = 2 · (−3)^3 = 2 · (−27) = −54.",
+        "es": "Potencia impar sigue negativa: a_4 = 2 · (−3)^3 = 2 · (−27) = −54.",
+        "pl": "Nieparzysta potęga zostaje ujemna: a_4 = 2 · (−3)^3 = 2 · (−27) = −54."
+      },
+      "feedbackIncorrect": {
+        "en": "Odd powers of −3 stay negative; exponent is n − 1 = 3.",
+        "es": "Potencias impares de −3 siguen negativas; el exponente es n − 1 = 3.",
+        "pl": "Nieparzyste potęgi −3 pozostają ujemne; wykładnik to n − 1 = 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(C)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-BF.A.2",
+            "F-LE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "a_1=2,\\ r=-3;\\ a_4=?",
+      "choices": {
+        "en": [
+          "$-54$",
+          "$54$",
+          "$-18$",
+          "$18$"
+        ],
+        "es": [
+          "$-54$",
+          "$54$",
+          "$-18$",
+          "$18$"
+        ],
+        "pl": [
+          "$-54$",
+          "$54$",
+          "$-18$",
+          "$18$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": -54,
+      "diagnosticTags": [
+        "sign_power",
+        "off_by_one"
+      ]
+    }
+  ]
+}

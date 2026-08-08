@@ -37,7 +37,7 @@ function asLesson(raw: unknown): LessonPack {
   return raw as LessonPack
 }
 
-/** Load Algebra I lesson packs (L1–L21 via glob of content/algebra1/lesson-*.json). */
+/** Load Algebra I lesson packs (L1–L24 via glob of content/algebra1/lesson-*.json). */
 export function loadAlgebra1Content(): Algebra1Content {
   const knowledgePoints = (knowledgePointsDoc as { knowledgePoints: KnowledgePoint[] }).knowledgePoints
   const lessons = Object.values(lessonModules)

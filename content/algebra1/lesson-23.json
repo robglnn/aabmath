@@ -1,0 +1,1303 @@
+{
+  "id": "alg1-l23",
+  "courseId": "algebra1",
+  "order": 23,
+  "title": {
+    "en": "Function Notation, Domain & Range",
+    "es": "Notación de función, dominio y rango",
+    "pl": "Notacja funkcyjna, dziedzina i przeciwdziedzina"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.function.notation",
+    "kp.alg1.function.domain",
+    "kp.alg1.function.range"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_23",
+    "unlockOnMastery": [
+      "lesson_board_24"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will use function notation and identify domain and range for simple functions.",
+        "es": "Usarás notación de función e identificarás dominio y rango de funciones simples.",
+        "pl": "Będziesz stosować notację funkcyjną oraz wyznaczać dziedzinę i przeciwdziedzinę prostych funkcji."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: f(x), inputs, outputs",
+        "es": "Enseñar: f(x), entradas, salidas",
+        "pl": "Nauczanie: f(x), argumenty, wartości"
+      },
+      "body": {
+        "en": "f(a) means substitute x = a. Domain = allowed inputs; range = possible outputs. Watch denominators and radicands.",
+        "es": "f(a) significa sustituir x = a. Dominio = entradas permitidas; rango = salidas posibles. Cuidado con denominadores y radicandos.",
+        "pl": "f(a) oznacza podstawienie x = a. Dziedzina = dopuszczalne argumenty; przeciwdziedzina = możliwe wartości. Uważaj na mianowniki i podpierwiastkowe."
+      },
+      "bodyMath": [
+        "f(a)\\leftarrow x{=}a",
+        "D:\\ x\\ne \\text{zeros}",
+        "R:\\{y:y=f(x)\\}"
+      ],
+      "itemIds": [
+        "alg1-l23-t01",
+        "alg1-l23-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Evaluate f(a), find restricted domains, and list ranges from tables and rules.",
+        "es": "Evalúa f(a), halla dominios restringidos y lista rangos desde tablas y reglas.",
+        "pl": "Obliczaj f(a), znajduj ograniczone dziedziny i wypisuj przeciwdziedziny z tabel i wzorów."
+      },
+      "itemIds": [
+        "alg1-l23-g01",
+        "alg1-l23-g02",
+        "alg1-l23-g03",
+        "alg1-l23-g04",
+        "alg1-l23-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l23-i01",
+        "alg1-l23-i02",
+        "alg1-l23-i03",
+        "alg1-l23-i04",
+        "alg1-l23-i05",
+        "alg1-l23-i06",
+        "alg1-l23-i07",
+        "alg1-l23-i08",
+        "alg1-l23-i09",
+        "alg1-l23-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l23-t01",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = 2x + 3, what is f(4)?",
+        "es": "Si f(x) = 2x + 3, ¿cuánto es f(4)?",
+        "pl": "Jeśli f(x) = 2x + 3, ile wynosi f(4)?"
+      },
+      "feedbackCorrect": {
+        "en": "Substitute: f(4) = 2(4) + 3 = 11.",
+        "es": "Sustituye: f(4) = 2(4) + 3 = 11.",
+        "pl": "Podstaw: f(4) = 2(4) + 3 = 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Replace every x with 4; do not multiply f by 4.",
+        "es": "Reemplaza cada x por 4; no multipliques f por 4.",
+        "pl": "Zastąp każde x przez 4; nie mnoż f przez 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "f(x)=2x+3;\\ f(4)=?",
+      "choices": {
+        "en": [
+          "$11$",
+          "$8$",
+          "$7$",
+          "$24$"
+        ],
+        "es": [
+          "$11$",
+          "$8$",
+          "$7$",
+          "$24$"
+        ],
+        "pl": [
+          "$11$",
+          "$8$",
+          "$7$",
+          "$24$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "times_f",
+        "partial_sub"
+      ]
+    },
+    {
+      "id": "alg1-l23-t02",
+      "knowledgePointIds": [
+        "kp.alg1.function.domain"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For f(x) = 5x − 1 with no extra restrictions, what is the domain?",
+        "es": "Para f(x) = 5x − 1 sin más restricciones, ¿cuál es el dominio?",
+        "pl": "Dla f(x) = 5x − 1 bez dodatkowych ograniczeń, jaka jest dziedzina?"
+      },
+      "feedbackCorrect": {
+        "en": "A linear polynomial accepts every real input.",
+        "es": "Un polinomio lineal acepta toda entrada real.",
+        "pl": "Wielomian liniowy przyjmuje każdy rzeczywisty argument."
+      },
+      "feedbackIncorrect": {
+        "en": "Without a stated context or denominator, domain is all reals.",
+        "es": "Sin contexto o denominador declarado, el dominio es todos los reales.",
+        "pl": "Bez kontekstu lub mianownika dziedzina to wszystkie reals."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "f(x)=5x-1",
+      "choices": {
+        "en": [
+          "Only x > 0",
+          "All real numbers",
+          "Only integers",
+          "Empty set"
+        ],
+        "es": [
+          "Solo x > 0",
+          "Todos los números reales",
+          "Solo enteros",
+          "Conjunto vacío"
+        ],
+        "pl": [
+          "Tylko x > 0",
+          "Wszystkie liczby rzeczywiste",
+          "Tylko całkowite",
+          "Zbiór pusty"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "restrict_unnecessarily",
+        "empty_domain"
+      ]
+    },
+    {
+      "id": "alg1-l23-g01",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If g(x) = x² − 1, find g(−3).",
+        "es": "Si g(x) = x² − 1, halla g(−3).",
+        "pl": "Jeśli g(x) = x² − 1, znajdź g(−3)."
+      },
+      "feedbackCorrect": {
+        "en": "Square first: (−3)² − 1 = 9 − 1 = 8.",
+        "es": "Primero el cuadrado: (−3)² − 1 = 9 − 1 = 8.",
+        "pl": "Najpierw kwadrat: (−3)² − 1 = 9 − 1 = 8."
+      },
+      "feedbackIncorrect": {
+        "en": "Square the negative first: (−3)² = 9, then subtract 1.",
+        "es": "Eleva al cuadrado el negativo primero: (−3)² = 9, luego resta 1.",
+        "pl": "Najpierw kwadrat ujemnej: (−3)² = 9, potem odejmij 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "g(x)=x^{2}-1;\\ g(-3)=?",
+      "choices": {
+        "en": [
+          "$10$",
+          "$-10$",
+          "$8$",
+          "$-8$"
+        ],
+        "es": [
+          "$10$",
+          "$-10$",
+          "$8$",
+          "$-8$"
+        ],
+        "pl": [
+          "$10$",
+          "$-10$",
+          "$8$",
+          "$-8$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 8,
+      "diagnosticTags": [
+        "sign_square",
+        "order_ops"
+      ]
+    },
+    {
+      "id": "alg1-l23-g02",
+      "knowledgePointIds": [
+        "kp.alg1.function.domain"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What value is excluded from the domain of h(x) = 1/(x − 4)?",
+        "es": "¿Qué valor se excluye del dominio de h(x) = 1/(x − 4)?",
+        "pl": "Jaka wartość jest wykluczona z dziedziny h(x) = 1/(x − 4)?"
+      },
+      "feedbackCorrect": {
+        "en": "Denominator zero when x − 4 = 0 → x = 4 is excluded.",
+        "es": "Denominador cero cuando x − 4 = 0 → se excluye x = 4.",
+        "pl": "Mianownik zero gdy x − 4 = 0 → wykluczamy x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Set the denominator equal to zero to find excluded inputs.",
+        "es": "Iguala el denominador a cero para hallar entradas excluidas.",
+        "pl": "Przyrównaj mianownik do zera, by znaleźć wykluczone argumenty."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "h(x)=\\dfrac{1}{x-4}",
+      "choices": {
+        "en": [
+          "$0$",
+          "$1$",
+          "$-4$",
+          "$4$"
+        ],
+        "es": [
+          "$0$",
+          "$1$",
+          "$-4$",
+          "$4$"
+        ],
+        "pl": [
+          "$0$",
+          "$1$",
+          "$-4$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "wrong_zero",
+        "numerator_focus"
+      ]
+    },
+    {
+      "id": "alg1-l23-g03",
+      "knowledgePointIds": [
+        "kp.alg1.function.range"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "The table maps 1→3, 2→5, 3→7. What is the range?",
+        "es": "La tabla mapea 1→3, 2→5, 3→7. ¿Cuál es el rango?",
+        "pl": "Tabela mapuje 1→3, 2→5, 3→7. Jaka jest przeciwdziedzina?"
+      },
+      "feedbackCorrect": {
+        "en": "Range is the set of outputs: {3, 5, 7}.",
+        "es": "El rango es el conjunto de salidas: {3, 5, 7}.",
+        "pl": "Przeciwdziedzina to zbiór wartości: {3, 5, 7}."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not list the inputs — those are the domain.",
+        "es": "No listes las entradas: esas son el dominio.",
+        "pl": "Nie wypisuj argumentów — to dziedzina."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\{(1,3),(2,5),(3,7)\\}",
+      "choices": {
+        "en": [
+          "$\\{3,5,7\\}$",
+          "$\\{1,2,3\\}$",
+          "$\\{1,3,5,7\\}$",
+          "$\\{0\\}$"
+        ],
+        "es": [
+          "$\\{3,5,7\\}$",
+          "$\\{1,2,3\\}$",
+          "$\\{1,3,5,7\\}$",
+          "$\\{0\\}$"
+        ],
+        "pl": [
+          "$\\{3,5,7\\}$",
+          "$\\{1,2,3\\}$",
+          "$\\{1,3,5,7\\}$",
+          "$\\{0\\}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "domain_vs_range",
+        "merge_sets"
+      ]
+    },
+    {
+      "id": "alg1-l23-g04",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = 3x − 2 and f(a) = 10, what is a?",
+        "es": "Si f(x) = 3x − 2 y f(a) = 10, ¿cuánto es a?",
+        "pl": "Jeśli f(x) = 3x − 2 i f(a) = 10, ile wynosi a?"
+      },
+      "feedbackCorrect": {
+        "en": "Solve for input: 3a − 2 = 10 → 3a = 12 → a = 4.",
+        "es": "Resuelve la entrada: 3a − 2 = 10 → 3a = 12 → a = 4.",
+        "pl": "Rozwiąż argument: 3a − 2 = 10 → 3a = 12 → a = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Set the rule equal to 10 and solve for the input a.",
+        "es": "Iguala la regla a 10 y resuelve para la entrada a.",
+        "pl": "Przyrównaj wzór do 10 i rozwiąż względem argumentu a."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "f(a)=10;\\ f(x)=3x-2",
+      "choices": {
+        "en": [
+          "$8$",
+          "$4$",
+          "$12$",
+          "$\\tfrac{8}{3}$"
+        ],
+        "es": [
+          "$8$",
+          "$4$",
+          "$12$",
+          "$\\tfrac{8}{3}$"
+        ],
+        "pl": [
+          "$8$",
+          "$4$",
+          "$12$",
+          "$\\tfrac{8}{3}$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "solve_for_input",
+        "arithmetic"
+      ]
+    },
+    {
+      "id": "alg1-l23-g05",
+      "knowledgePointIds": [
+        "kp.alg1.function.range"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For f(x) = −2x + 1 over all reals, which best describes the range?",
+        "es": "Para f(x) = −2x + 1 sobre todos los reales, ¿qué describe mejor el rango?",
+        "pl": "Dla f(x) = −2x + 1 na wszystkich reals, co najlepiej opisuje przeciwdziedzinę?"
+      },
+      "feedbackCorrect": {
+        "en": "A nonconstant linear function is onto the reals — range is all reals.",
+        "es": "Una lineal no constante cubre todos los reales: el rango es todos los reales.",
+        "pl": "Niekostantna funkcja liniowa pokrywa reals — przeciwdziedzina to wszystkie reals."
+      },
+      "feedbackIncorrect": {
+        "en": "Slope ≠ 0 means every real output is hit exactly once.",
+        "es": "Pendiente ≠ 0 significa que cada salida real se alcanza exactamente una vez.",
+        "pl": "Nachylenie ≠ 0 oznacza, że każda rzeczywista wartość jest osiągana dokładnie raz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "f(x)=-2x+1",
+      "choices": {
+        "en": [
+          "Only y ≥ 0",
+          "Only y ≤ 1",
+          "All real numbers",
+          "Only integers"
+        ],
+        "es": [
+          "Solo y ≥ 0",
+          "Solo y ≤ 1",
+          "Todos los números reales",
+          "Solo enteros"
+        ],
+        "pl": [
+          "Tylko y ≥ 0",
+          "Tylko y ≤ 1",
+          "Wszystkie liczby rzeczywiste",
+          "Tylko całkowite"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "restrict_range",
+        "y_intercept_as_bound"
+      ]
+    },
+    {
+      "id": "alg1-l23-i01",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = −x + 6, find f(2).",
+        "es": "Si f(x) = −x + 6, halla f(2).",
+        "pl": "Jeśli f(x) = −x + 6, znajdź f(2)."
+      },
+      "feedbackCorrect": {
+        "en": "Substitute: f(2) = −2 + 6 = 4.",
+        "es": "Sustituye: f(2) = −2 + 6 = 4.",
+        "pl": "Podstaw: f(2) = −2 + 6 = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Apply the negative to the input: −(2) + 6.",
+        "es": "Aplica el negativo a la entrada: −(2) + 6.",
+        "pl": "Zastosuj minus do argumentu: −(2) + 6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "f(2)=?",
+      "choices": {
+        "en": [
+          "$8$",
+          "$-2$",
+          "$12$",
+          "$4$"
+        ],
+        "es": [
+          "$8$",
+          "$-2$",
+          "$12$",
+          "$4$"
+        ],
+        "pl": [
+          "$8$",
+          "$-2$",
+          "$12$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "sign_error",
+        "times_f"
+      ]
+    },
+    {
+      "id": "alg1-l23-i02",
+      "knowledgePointIds": [
+        "kp.alg1.function.domain"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Domain of k(x) = √(x − 3) (real-valued). Which is correct?",
+        "es": "Dominio de k(x) = √(x − 3) (valores reales). ¿Cuál es correcto?",
+        "pl": "Dziedzina k(x) = √(x − 3) (wartości rzeczywiste). Które jest poprawne?"
+      },
+      "feedbackCorrect": {
+        "en": "Radicand ≥ 0 → x − 3 ≥ 0 → x ≥ 3.",
+        "es": "Radicando ≥ 0 → x − 3 ≥ 0 → x ≥ 3.",
+        "pl": "Podpierwiastkowe ≥ 0 → x − 3 ≥ 0 → x ≥ 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Include the endpoint where the radicand is zero.",
+        "es": "Incluye el extremo donde el radicando es cero.",
+        "pl": "Uwzględnij koniec, gdzie podpierwiastkowe jest zerem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "k(x)=\\sqrt{x-3}",
+      "choices": {
+        "en": [
+          "$x\\ge 3$",
+          "$x>3$",
+          "$x\\le 3$",
+          "$\\text{all reals}$"
+        ],
+        "es": [
+          "$x\\ge 3$",
+          "$x>3$",
+          "$x\\le 3$",
+          "$\\text{todos los reales}$"
+        ],
+        "pl": [
+          "$x\\ge 3$",
+          "$x>3$",
+          "$x\\le 3$",
+          "$\\text{wszystkie rzeczywiste}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "open_vs_closed",
+        "flip_inequality"
+      ]
+    },
+    {
+      "id": "alg1-l23-i03",
+      "knowledgePointIds": [
+        "kp.alg1.function.range"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "f maps {−1, 0, 2} to {4, 1, 7} respectively. Range is?",
+        "es": "f mapea {−1, 0, 2} a {4, 1, 7} respectivamente. ¿Rango?",
+        "pl": "f mapuje {−1, 0, 2} na {4, 1, 7} odpowiednio. Przeciwdziedzina?"
+      },
+      "feedbackCorrect": {
+        "en": "Collect outputs: {1, 4, 7}.",
+        "es": "Reúne las salidas: {1, 4, 7}.",
+        "pl": "Zbierz wartości: {1, 4, 7}."
+      },
+      "feedbackIncorrect": {
+        "en": "Range uses y-values, not the domain inputs.",
+        "es": "El rango usa valores y, no las entradas del dominio.",
+        "pl": "Przeciwdziedzina to wartości y, nie argumenty dziedziny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "f(-1)=4,\\ f(0)=1,\\ f(2)=7",
+      "choices": {
+        "en": [
+          "$\\{-1,0,2\\}$",
+          "$\\{1,4,7\\}$",
+          "$\\{4\\}$",
+          "$\\{0,1,2,4,7\\}$"
+        ],
+        "es": [
+          "$\\{-1,0,2\\}$",
+          "$\\{1,4,7\\}$",
+          "$\\{4\\}$",
+          "$\\{0,1,2,4,7\\}$"
+        ],
+        "pl": [
+          "$\\{-1,0,2\\}$",
+          "$\\{1,4,7\\}$",
+          "$\\{4\\}$",
+          "$\\{0,1,2,4,7\\}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "domain_vs_range"
+      ]
+    },
+    {
+      "id": "alg1-l23-i04",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If p(x) = 4 − 5x, compute p(−1).",
+        "es": "Si p(x) = 4 − 5x, calcula p(−1).",
+        "pl": "Jeśli p(x) = 4 − 5x, oblicz p(−1)."
+      },
+      "feedbackCorrect": {
+        "en": "Negatives cancel: 4 − 5(−1) = 4 + 5 = 9.",
+        "es": "Los negativos se cancelan: 4 − 5(−1) = 4 + 5 = 9.",
+        "pl": "Ujemne się znoszą: 4 − 5(−1) = 4 + 5 = 9."
+      },
+      "feedbackIncorrect": {
+        "en": "Minus times a negative input becomes plus.",
+        "es": "Menos por una entrada negativa se vuelve más.",
+        "pl": "Minus razy ujemny argument daje plus."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "p(-1)=?",
+      "choices": {
+        "en": [
+          "$-1$",
+          "$4$",
+          "$9$",
+          "$-9$"
+        ],
+        "es": [
+          "$-1$",
+          "$4$",
+          "$9$",
+          "$-9$"
+        ],
+        "pl": [
+          "$-1$",
+          "$4$",
+          "$9$",
+          "$-9$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 9,
+      "diagnosticTags": [
+        "double_negative",
+        "times_f"
+      ]
+    },
+    {
+      "id": "alg1-l23-i05",
+      "knowledgePointIds": [
+        "kp.alg1.function.domain"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which x is NOT in the domain of r(x) = (x + 1)/(x(x − 2))?",
+        "es": "¿Qué x NO está en el dominio de r(x) = (x + 1)/(x(x − 2))?",
+        "pl": "Które x NIE należy do dziedziny r(x) = (x + 1)/(x(x − 2))?"
+      },
+      "feedbackCorrect": {
+        "en": "Denominator zero at x = 0 and x = 2 (numerator zero at −1 is fine).",
+        "es": "Denominador cero en x = 0 y x = 2 (cero del numerador en −1 está bien).",
+        "pl": "Mianownik zero przy x = 0 i x = 2 (zero licznika przy −1 jest OK)."
+      },
+      "feedbackIncorrect": {
+        "en": "Exclude zeros of the denominator, not the numerator.",
+        "es": "Excluye ceros del denominador, no del numerador.",
+        "pl": "Wyklucz zera mianownika, nie licznika."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "r(x)=\\dfrac{x+1}{x(x-2)}",
+      "choices": {
+        "en": [
+          "$x=-1\\ \\text{ only}$",
+          "$x=1$",
+          "$x=3$",
+          "$x=0\\ \\text{ and }\\ x=2$"
+        ],
+        "es": [
+          "$x=-1\\ \\text{ solo}$",
+          "$x=1$",
+          "$x=3$",
+          "$x=0\\ \\text{ y }\\ x=2$"
+        ],
+        "pl": [
+          "$x=-1\\ \\text{ tylko}$",
+          "$x=1$",
+          "$x=3$",
+          "$x=0\\ \\text{ i }\\ x=2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "numerator_as_domain",
+        "miss_factor"
+      ]
+    },
+    {
+      "id": "alg1-l23-i06",
+      "knowledgePointIds": [
+        "kp.alg1.function.range"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Constant function f(x) = 7 for all real x. Range is?",
+        "es": "Función constante f(x) = 7 para todo x real. ¿Rango?",
+        "pl": "Funkcja stała f(x) = 7 dla każdego rzeczywistego x. Przeciwdziedzina?"
+      },
+      "feedbackCorrect": {
+        "en": "Every input maps to 7, so the range is the singleton {7}.",
+        "es": "Toda entrada va a 7, así el rango es el singleton {7}.",
+        "pl": "Każdy argument daje 7, więc przeciwdziedzina to singleton {7}."
+      },
+      "feedbackIncorrect": {
+        "en": "A constant function does not hit all reals — only that constant.",
+        "es": "Una constante no alcanza todos los reales: solo esa constante.",
+        "pl": "Stała nie osiąga wszystkich reals — tylko tę stałą."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "f(x)=7",
+      "choices": {
+        "en": [
+          "$\\{7\\}$",
+          "$\\text{all reals}$",
+          "$\\{0,7\\}$",
+          "$\\emptyset$"
+        ],
+        "es": [
+          "$\\{7\\}$",
+          "$\\text{todos los reales}$",
+          "$\\{0,7\\}$",
+          "$\\emptyset$"
+        ],
+        "pl": [
+          "$\\{7\\}$",
+          "$\\text{wszystkie rzeczywiste}$",
+          "$\\{0,7\\}$",
+          "$\\emptyset$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "constant_range",
+        "all_reals_default"
+      ]
+    },
+    {
+      "id": "alg1-l23-i07",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = 2x + 1 and g(x) = x − 4, what is f(g(5))?",
+        "es": "Si f(x) = 2x + 1 y g(x) = x − 4, ¿cuánto es f(g(5))?",
+        "pl": "Jeśli f(x) = 2x + 1 i g(x) = x − 4, ile wynosi f(g(5))?"
+      },
+      "feedbackCorrect": {
+        "en": "Inner then outer: g(5) = 1; f(1) = 2(1) + 1 = 3.",
+        "es": "Interior luego exterior: g(5) = 1; f(1) = 2(1) + 1 = 3.",
+        "pl": "Wewnętrzna, potem zewnętrzna: g(5) = 1; f(1) = 2(1) + 1 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Evaluate the inner function first, then apply f.",
+        "es": "Evalúa primero la función interior; luego aplica f.",
+        "pl": "Najpierw oblicz funkcję wewnętrzną, potem zastosuj f."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "f(g(5))=?",
+      "choices": {
+        "en": [
+          "$7$",
+          "$3$",
+          "$11$",
+          "$1$"
+        ],
+        "es": [
+          "$7$",
+          "$3$",
+          "$11$",
+          "$1$"
+        ],
+        "pl": [
+          "$7$",
+          "$3$",
+          "$11$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "composition_order",
+        "arithmetic"
+      ]
+    },
+    {
+      "id": "alg1-l23-i08",
+      "knowledgePointIds": [
+        "kp.alg1.function.domain"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A relation from a finite set of students to their ages is a function if…",
+        "es": "Una relación de un conjunto finito de estudiantes a sus edades es función si…",
+        "pl": "Relacja ze skończonego zbioru uczniów do ich wieku jest funkcją, jeśli…"
+      },
+      "feedbackCorrect": {
+        "en": "A function assigns each input exactly one output.",
+        "es": "Una función asigna a cada entrada exactamente una salida.",
+        "pl": "Funkcja przypisuje każdemu argumentowi dokładnie jedną wartość."
+      },
+      "feedbackIncorrect": {
+        "en": "Uniqueness is required for outputs per input, not the reverse.",
+        "es": "Se requiere unicidad de salida por entrada, no al revés.",
+        "pl": "Wymagana jest jednoznaczność wartości dla argumentu, nie odwrotnie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\text{function?}",
+      "choices": {
+        "en": [
+          "Each age maps to exactly one student",
+          "Ages may be missing",
+          "Each student maps to exactly one age",
+          "Students may have two ages"
+        ],
+        "es": [
+          "Cada edad mapea a exactamente un estudiante",
+          "Pueden faltar edades",
+          "Cada estudiante mapea a exactamente una edad",
+          "Estudiantes pueden tener dos edades"
+        ],
+        "pl": [
+          "Każdy wiek mapuje na dokładnie jednego ucznia",
+          "Wiek może brakować",
+          "Każdy uczeń mapuje na dokładnie jeden wiek",
+          "Uczniowie mogą mieć dwa wieki"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "vertical_line",
+        "invert_definition"
+      ]
+    },
+    {
+      "id": "alg1-l23-i09",
+      "knowledgePointIds": [
+        "kp.alg1.function.range"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "f(x) = x² with domain {−2, −1, 0, 1, 2}. Range is?",
+        "es": "f(x) = x² con dominio {−2, −1, 0, 1, 2}. ¿Rango?",
+        "pl": "f(x) = x² z dziedziną {−2, −1, 0, 1, 2}. Przeciwdziedzina?"
+      },
+      "feedbackCorrect": {
+        "en": "Squares: 4, 1, 0, 1, 4 → unique outputs {0, 1, 4}.",
+        "es": "Cuadrados: 4, 1, 0, 1, 4 → salidas únicas {0, 1, 4}.",
+        "pl": "Kwadraty: 4, 1, 0, 1, 4 → unikalne wartości {0, 1, 4}."
+      },
+      "feedbackIncorrect": {
+        "en": "Duplicate outputs collapse in a set; do not copy the domain.",
+        "es": "Las salidas duplicadas colapsan en un conjunto; no copies el dominio.",
+        "pl": "Powtórzone wartości zlewają się w zbiorze; nie kopiuj dziedziny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.12(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2"
+          ]
+        }
+      ],
+      "promptMath": "f(x)=x^{2},\\ D=\\{-2,-1,0,1,2\\}",
+      "choices": {
+        "en": [
+          "$\\{-2,-1,0,1,2\\}$",
+          "$\\{0,1,2,4\\}$",
+          "$\\{4\\}$",
+          "$\\{0,1,4\\}$"
+        ],
+        "es": [
+          "$\\{-2,-1,0,1,2\\}$",
+          "$\\{0,1,2,4\\}$",
+          "$\\{4\\}$",
+          "$\\{0,1,4\\}$"
+        ],
+        "pl": [
+          "$\\{-2,-1,0,1,2\\}$",
+          "$\\{0,1,2,4\\}$",
+          "$\\{4\\}$",
+          "$\\{0,1,4\\}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "domain_vs_range",
+        "duplicate_outputs"
+      ]
+    },
+    {
+      "id": "alg1-l23-i10",
+      "knowledgePointIds": [
+        "kp.alg1.function.notation"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = (x − 1)/2 and f(b) = 5, find b.",
+        "es": "Si f(x) = (x − 1)/2 y f(b) = 5, halla b.",
+        "pl": "Jeśli f(x) = (x − 1)/2 i f(b) = 5, znajdź b."
+      },
+      "feedbackCorrect": {
+        "en": "Clear the denominator: (b − 1)/2 = 5 → b − 1 = 10 → b = 11.",
+        "es": "Limpia el denominador: (b − 1)/2 = 5 → b − 1 = 10 → b = 11.",
+        "pl": "Usuń mianownik: (b − 1)/2 = 5 → b − 1 = 10 → b = 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply both sides by 2, then add 1.",
+        "es": "Multiplica ambos lados por 2; luego suma 1.",
+        "pl": "Pomnóż obie strony przez 2, potem dodaj 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\dfrac{b-1}{2}=5",
+      "choices": {
+        "en": [
+          "$11$",
+          "$9$",
+          "$10$",
+          "$6$"
+        ],
+        "es": [
+          "$11$",
+          "$9$",
+          "$10$",
+          "$6$"
+        ],
+        "pl": [
+          "$11$",
+          "$9$",
+          "$10$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "solve_for_input",
+        "fraction_error"
+      ]
+    }
+  ]
+}
