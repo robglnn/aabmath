@@ -1,0 +1,1297 @@
+{
+  "id": "alg1-l25",
+  "courseId": "algebra1",
+  "order": 25,
+  "title": {
+    "en": "Systems of Linear Inequalities",
+    "es": "Sistemas de desigualdades lineales",
+    "pl": "Układy nierówności liniowych"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.inequality.two.var",
+    "kp.alg1.systems.inequalities.region",
+    "kp.alg1.systems.inequalities.test"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_25",
+    "unlockOnMastery": [
+      "lesson_board_26"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will graph systems of linear inequalities and identify solution regions with test points.",
+        "es": "Graficarás sistemas de desigualdades lineales e identificarás regiones solución con puntos de prueba.",
+        "pl": "Będziesz rysować układy nierówności liniowych i identyfikować obszary rozwiązań punktami próbnymi."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: half-planes & overlap",
+        "es": "Enseñar: semplanos y solapamiento",
+        "pl": "Nauczanie: półpłaszczyzny i przecięcie"
+      },
+      "body": {
+        "en": "Graph each inequality’s half-plane (solid/dashed boundary). The system solution is the intersection of the shaded regions; test points to verify.",
+        "es": "Grafica el semplano de cada desigualdad (frontera continua/discontinua). La solución del sistema es la intersección de las regiones; verifica con puntos de prueba.",
+        "pl": "Narysuj półpłaszczyznę każdej nierówności (granica ciągła/przerywana). Rozwiązanie układu to przecięcie obszarów; sprawdzaj punktami próbnymi."
+      },
+      "bodyMath": [
+        "y>mx+b:\\ ---",
+        "H_1\\cap H_2",
+        "(x_0,y_0)"
+      ],
+      "itemIds": [
+        "alg1-l25-t01",
+        "alg1-l25-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Classify boundaries, shade sides, and test ordered pairs in systems.",
+        "es": "Clasifica fronteras, sombrea lados y prueba pares ordenados en sistemas.",
+        "pl": "Klasyfikuj granice, zacieniaj strony i sprawdzaj pary w układach."
+      },
+      "itemIds": [
+        "alg1-l25-g01",
+        "alg1-l25-g02",
+        "alg1-l25-g03",
+        "alg1-l25-g04",
+        "alg1-l25-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l25-i01",
+        "alg1-l25-i02",
+        "alg1-l25-i03",
+        "alg1-l25-i04",
+        "alg1-l25-i05",
+        "alg1-l25-i06",
+        "alg1-l25-i07",
+        "alg1-l25-i08",
+        "alg1-l25-i09",
+        "alg1-l25-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l25-t01",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y > 2x − 1, should the boundary line be solid or dashed?",
+        "es": "Para y > 2x − 1, ¿la frontera debe ser continua o discontinua?",
+        "pl": "Dla y > 2x − 1 granica ma być ciągła czy przerywana?"
+      },
+      "feedbackCorrect": {
+        "en": "Strict inequalities (> or <) use a dashed boundary; points on the line are not solutions.",
+        "es": "Las desigualdades estrictas (> o <) usan frontera discontinua; los puntos de la recta no son soluciones.",
+        "pl": "Ostre nierówności (> lub <) mają przerywaną granicę; punkty na prostej nie są rozwiązaniami."
+      },
+      "feedbackIncorrect": {
+        "en": "Use solid only for ≤ or ≥; here > means the boundary is not included.",
+        "es": "Usa continua solo para ≤ o ≥; aquí > significa que la frontera no se incluye.",
+        "pl": "Ciągłą stosuj tylko dla ≤ lub ≥; tu > oznacza, że granica nie należy do rozwiązań."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "y>2x-1",
+      "choices": {
+        "en": [
+          "$\\text{dashed}$",
+          "$\\text{solid}$",
+          "$\\text{none}$",
+          "$\\text{both}$"
+        ],
+        "es": [
+          "$\\text{discontinua}$",
+          "$\\text{continua}$",
+          "$\\text{ninguna}$",
+          "$\\text{ambas}$"
+        ],
+        "pl": [
+          "$\\text{przerywana}$",
+          "$\\text{ciągła}$",
+          "$\\text{żadna}$",
+          "$\\text{obie}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "solid_vs_dashed",
+        "strict_vs_closed"
+      ]
+    },
+    {
+      "id": "alg1-l25-t02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "The solution of a system of two linear inequalities is the region where…",
+        "es": "La solución de un sistema de dos desigualdades lineales es la región donde…",
+        "pl": "Rozwiązaniem układu dwóch nierówności liniowych jest obszar, gdzie…"
+      },
+      "feedbackCorrect": {
+        "en": "AND: a point must satisfy both inequalities — the overlapping shaded region.",
+        "es": "Y: un punto debe satisfacer ambas — la región sombreada que se solapa.",
+        "pl": "I: punkt musi spełniać obie — wspólny zacieniony obszar."
+      },
+      "feedbackIncorrect": {
+        "en": "Systems use intersection (both), not union (either).",
+        "es": "Los sistemas usan intersección (ambas), no unión (alguna).",
+        "pl": "Układy używają przecięcia (obie), nie sumy (któraś)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.3(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} y\\ge x \\\\ y\\le 4-x \\end{cases}",
+      "choices": {
+        "en": [
+          "$\\text{either true}$",
+          "$\\text{both true}$",
+          "$\\text{neither}$",
+          "$\\text{only y}$"
+        ],
+        "es": [
+          "$\\text{alguna cierta}$",
+          "$\\text{ambas ciertas}$",
+          "$\\text{ninguna}$",
+          "$\\text{solo y}$"
+        ],
+        "pl": [
+          "$\\text{któraś}$",
+          "$\\text{obie prawdziwe}$",
+          "$\\text{żadna}$",
+          "$\\text{tylko y}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "union_vs_intersection",
+        "one_inequality_only"
+      ]
+    },
+    {
+      "id": "alg1-l25-g01",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Test (0,0) in y ≤ −x + 3. Does it satisfy the inequality?",
+        "es": "Prueba (0,0) en y ≤ −x + 3. ¿Satisface la desigualdad?",
+        "pl": "Sprawdź (0,0) w y ≤ −x + 3. Czy spełnia nierówność?"
+      },
+      "feedbackCorrect": {
+        "en": "0 ≤ −0 + 3 → 0 ≤ 3 is true, so (0,0) is in the half-plane.",
+        "es": "0 ≤ −0 + 3 → 0 ≤ 3 es verdadero, así (0,0) está en el semplano.",
+        "pl": "0 ≤ −0 + 3 → 0 ≤ 3 jest prawdziwe, więc (0,0) leży w półpłaszczyźnie."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x=0, y=0 into the inequality and check the truth value.",
+        "es": "Sustituye x=0, y=0 en la desigualdad y verifica el valor de verdad.",
+        "pl": "Podstaw x=0, y=0 do nierówności i sprawdź wartość logiczną."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "(0,0):\\ y\\le -x+3",
+      "choices": {
+        "en": [
+          "$\\text{no}$",
+          "$\\text{on line only}$",
+          "$\\text{yes}$",
+          "$\\text{undefined}$"
+        ],
+        "es": [
+          "$\\text{falso}$",
+          "$\\text{solo en recta}$",
+          "$\\text{sí}$",
+          "$\\text{indefinido}$"
+        ],
+        "pl": [
+          "$\\text{nie}$",
+          "$\\text{tylko na prostej}$",
+          "$\\text{tak}$",
+          "$\\text{nieokreślone}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "arith_error",
+        "boundary_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l25-g02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.test"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: y ≥ 1 and x ≤ 2. Is (3, 2) a solution?",
+        "es": "Sistema: y ≥ 1 y x ≤ 2. ¿Es (3, 2) solución?",
+        "pl": "Układ: y ≥ 1 i x ≤ 2. Czy (3, 2) jest rozwiązaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "y=2 ≥ 1 is true, but x=3 ≤ 2 is false — fails the system.",
+        "es": "y=2 ≥ 1 es cierto, pero x=3 ≤ 2 es falso — falla el sistema.",
+        "pl": "y=2 ≥ 1 jest prawdziwe, ale x=3 ≤ 2 jest fałszywe — układ nie."
+      },
+      "feedbackIncorrect": {
+        "en": "Both inequalities must hold; check x ≤ 2 carefully.",
+        "es": "Ambas desigualdades deben cumplirse; revisa x ≤ 2 con cuidado.",
+        "pl": "Obie nierówności muszą zachodzić; uważnie sprawdź x ≤ 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} y\\ge 1 \\\\ x\\le 2 \\end{cases}\\ (3,2)",
+      "choices": {
+        "en": [
+          "$\\text{yes}$",
+          "$\\text{only if =}$",
+          "$\\text{maybe}$",
+          "$\\text{no}$"
+        ],
+        "es": [
+          "$\\text{sí}$",
+          "$\\text{solo si =}$",
+          "$\\text{quizá}$",
+          "$\\text{falso}$"
+        ],
+        "pl": [
+          "$\\text{tak}$",
+          "$\\text{tylko gdy =}$",
+          "$\\text{może}$",
+          "$\\text{nie}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "checked_one_only",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l25-g03",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "difficulty": 0.42,
+      "irt": {
+        "a": 1.15,
+        "b": -0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which describes the solution set of y ≥ 0 and x ≥ 0?",
+        "es": "¿Qué describe el conjunto solución de y ≥ 0 y x ≥ 0?",
+        "pl": "Co opisuje zbiór rozwiązań y ≥ 0 i x ≥ 0?"
+      },
+      "feedbackCorrect": {
+        "en": "Nonnegative x and y include the first quadrant and the nonnegative axes.",
+        "es": "x e y no negativos incluyen el primer cuadrante y los ejes no negativos.",
+        "pl": "Nieuujemne x i y obejmują pierwszą ćwiartkę i nieujemne osie."
+      },
+      "feedbackIncorrect": {
+        "en": "x ≥ 0 and y ≥ 0 is the closed first quadrant (including axes).",
+        "es": "x ≥ 0 e y ≥ 0 es el primer cuadrante cerrado (incluyendo ejes).",
+        "pl": "x ≥ 0 i y ≥ 0 to domknięta pierwsza ćwiartka (z osiami)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.3(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} y\\ge 0 \\\\ x\\ge 0 \\end{cases}",
+      "choices": {
+        "en": [
+          "$\\text{1st quadrant + axes}$",
+          "$\\text{3rd only}$",
+          "$\\text{all plane}$",
+          "$\\text{empty}$"
+        ],
+        "es": [
+          "$\\text{1.er cuadrante + ejes}$",
+          "$\\text{solo 3.er}$",
+          "$\\text{todo el plano}$",
+          "$\\text{vacío}$"
+        ],
+        "pl": [
+          "$\\text{I ćwiartka + osie}$",
+          "$\\text{tylko III}$",
+          "$\\text{cała płaszczyzna}$",
+          "$\\text{pusty}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_quadrant",
+        "open_vs_closed"
+      ]
+    },
+    {
+      "id": "alg1-l25-g04",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For 2x + y < 4 rewritten as y < −2x + 4, shade…",
+        "es": "Para 2x + y < 4 escrito como y < −2x + 4, sombrea…",
+        "pl": "Dla 2x + y < 4 zapisanej jako y < −2x + 4 zacieniaj…"
+      },
+      "feedbackCorrect": {
+        "en": "y < (line) means points with smaller y — below the dashed line.",
+        "es": "y < (recta) significa puntos con y menor — debajo de la discontinua.",
+        "pl": "y < (prosta) oznacza punkty z mniejszym y — pod przerywaną."
+      },
+      "feedbackIncorrect": {
+        "en": "When solved for y, the inequality direction tells above vs below.",
+        "es": "Al despejar y, el sentido de la desigualdad indica arriba o abajo.",
+        "pl": "Po rozwiązaniu względem y kierunek nierówności mówi nad lub pod."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "y<-2x+4",
+      "choices": {
+        "en": [
+          "$\\text{above the line}$",
+          "$\\text{below the line}$",
+          "$\\text{on the line}$",
+          "$\\text{nowhere}$"
+        ],
+        "es": [
+          "$\\text{sobre la recta}$",
+          "$\\text{bajo la recta}$",
+          "$\\text{en la recta}$",
+          "$\\text{ningún lado}$"
+        ],
+        "pl": [
+          "$\\text{nad prostą}$",
+          "$\\text{pod prostą}$",
+          "$\\text{na prostej}$",
+          "$\\text{nigdzie}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "above_vs_below",
+        "forgot_solve_y"
+      ]
+    },
+    {
+      "id": "alg1-l25-g05",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.test"
+      ],
+      "difficulty": 0.48,
+      "irt": {
+        "a": 1.15,
+        "b": -0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: x + y ≤ 5 and y ≥ x. Is (2, 2) a solution?",
+        "es": "Sistema: x + y ≤ 5 y y ≥ x. ¿Es (2, 2) solución?",
+        "pl": "Układ: x + y ≤ 5 i y ≥ x. Czy (2, 2) jest rozwiązaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "2+2=4 ≤ 5 and 2 ≥ 2 both true — (2,2) is in the region.",
+        "es": "2+2=4 ≤ 5 y 2 ≥ 2 ambas ciertas — (2,2) está en la región.",
+        "pl": "2+2=4 ≤ 5 i 2 ≥ 2 obie prawdziwe — (2,2) jest w obszarze."
+      },
+      "feedbackIncorrect": {
+        "en": "Check both: sum ≤ 5 and y compared with x.",
+        "es": "Verifica ambas: suma ≤ 5 e y comparado con x.",
+        "pl": "Sprawdź obie: suma ≤ 5 oraz y względem x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} x+y\\le 5 \\\\ y\\ge x \\end{cases}\\ (2,2)",
+      "choices": {
+        "en": [
+          "$\\text{no}$",
+          "$\\text{boundary only}$",
+          "$\\text{yes}$",
+          "$\\text{need graph}$"
+        ],
+        "es": [
+          "$\\text{falso}$",
+          "$\\text{solo frontera}$",
+          "$\\text{sí}$",
+          "$\\text{falta gráfica}$"
+        ],
+        "pl": [
+          "$\\text{nie}$",
+          "$\\text{tylko brzeg}$",
+          "$\\text{tak}$",
+          "$\\text{potrzeba wykresu}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "arith_error",
+        "equality_excluded"
+      ]
+    },
+    {
+      "id": "alg1-l25-i01",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which inequality has a solid boundary and shade above y = −x?",
+        "es": "¿Qué desigualdad tiene frontera continua y sombreado sobre y = −x?",
+        "pl": "Która nierówność ma ciągłą granicę i zacienienie nad y = −x?"
+      },
+      "feedbackCorrect": {
+        "en": "≥ includes the line (solid) and above means greater y.",
+        "es": "≥ incluye la recta (continua) y “sobre” significa y mayor.",
+        "pl": "≥ obejmuje prostą (ciągła), a „nad” oznacza większe y."
+      },
+      "feedbackIncorrect": {
+        "en": "Solid ↔ ≤/≥; above ↔ y greater than the line expression.",
+        "es": "Continua ↔ ≤/≥; sobre ↔ y mayor que la expresión de la recta.",
+        "pl": "Ciągła ↔ ≤/≥; nad ↔ y większe niż wyrażenie prostej."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "y\\,?\\,-x",
+      "choices": {
+        "en": [
+          "$y > -x$",
+          "$y < -x$",
+          "$y \\le -x$",
+          "$y \\ge -x$"
+        ],
+        "es": [
+          "$y > -x$",
+          "$y < -x$",
+          "$y \\le -x$",
+          "$y \\ge -x$"
+        ],
+        "pl": [
+          "$y > -x$",
+          "$y < -x$",
+          "$y \\le -x$",
+          "$y \\ge -x$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "strict_vs_closed",
+        "above_vs_below"
+      ]
+    },
+    {
+      "id": "alg1-l25-i02",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.test"
+      ],
+      "difficulty": 0.52,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "How many of {(0,0),(1,3),(4,0)} satisfy y ≥ 2x and x ≥ 0?",
+        "es": "¿Cuántos de {(0,0),(1,3),(4,0)} cumplen y ≥ 2x y x ≥ 0?",
+        "pl": "Ile z {(0,0),(1,3),(4,0)} spełnia y ≥ 2x i x ≥ 0?"
+      },
+      "feedbackCorrect": {
+        "en": "(0,0): yes. (1,3): 3≥2 yes. (4,0): 0≥8 no. Count = 2.",
+        "es": "(0,0): sí. (1,3): 3≥2 sí. (4,0): 0≥8 no. Total = 2.",
+        "pl": "(0,0): tak. (1,3): 3≥2 tak. (4,0): 0≥8 nie. Liczba = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Test each ordered pair in both inequalities.",
+        "es": "Prueba cada par ordenado en ambas desigualdades.",
+        "pl": "Sprawdź każdą parę w obu nierównościach."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\{(0,0),(1,3),(4,0)\\}",
+      "choices": {
+        "en": [
+          "$2$",
+          "$1$",
+          "$3$",
+          "$0$"
+        ],
+        "es": [
+          "$2$",
+          "$1$",
+          "$3$",
+          "$0$"
+        ],
+        "pl": [
+          "$2$",
+          "$1$",
+          "$3$",
+          "$0$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "missed_point",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l25-i03",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If two half-planes do not overlap, the system solution set is…",
+        "es": "Si dos semplanos no se solapan, el conjunto solución del sistema es…",
+        "pl": "Jeśli dwie półpłaszczyzny nie mają części wspólnej, zbiór rozwiązań układu jest…"
+      },
+      "feedbackCorrect": {
+        "en": "No common points means the intersection — the solution — is empty.",
+        "es": "Sin puntos comunes, la intersección — la solución — es vacía.",
+        "pl": "Brak wspólnych punktów oznacza, że przecięcie — rozwiązanie — jest puste."
+      },
+      "feedbackIncorrect": {
+        "en": "A system needs points that lie in every inequality’s half-plane.",
+        "es": "Un sistema necesita puntos en el semplano de cada desigualdad.",
+        "pl": "Układ wymaga punktów leżących w półpłaszczyźnie każdej nierówności."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.3(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "H_1\\cap H_2=\\varnothing",
+      "choices": {
+        "en": [
+          "$\\text{a line}$",
+          "$\\text{empty}$",
+          "$\\text{all plane}$",
+          "$\\text{one point}$"
+        ],
+        "es": [
+          "$\\text{una recta}$",
+          "$\\text{vacío}$",
+          "$\\text{todo el plano}$",
+          "$\\text{un punto}$"
+        ],
+        "pl": [
+          "$\\text{prosta}$",
+          "$\\text{pusty}$",
+          "$\\text{cała płaszczyzna}$",
+          "$\\text{jeden punkt}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "confused_with_parallel_eq",
+        "union_vs_intersection"
+      ]
+    },
+    {
+      "id": "alg1-l25-i04",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Point (1, 5) is on the line y = 3x + 2. For y > 3x + 2, is (1,5) a solution?",
+        "es": "El punto (1, 5) está en y = 3x + 2. Para y > 3x + 2, ¿es (1,5) solución?",
+        "pl": "Punkt (1, 5) leży na y = 3x + 2. Dla y > 3x + 2, czy (1,5) jest rozwiązaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "On the boundary: 5 = 3(1)+2, so y > 3x+2 fails (needs strict greater).",
+        "es": "En la frontera: 5 = 3(1)+2, así y > 3x+2 falla (exige estrictamente mayor).",
+        "pl": "Na brzegu: 5 = 3(1)+2, więc y > 3x+2 nie zachodzi (wymaga ostrego >)."
+      },
+      "feedbackIncorrect": {
+        "en": "Strict > excludes the boundary line itself.",
+        "es": "El > estricto excluye la propia recta frontera.",
+        "pl": "Ostre > wyklucza samą prostą brzegową."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "(1,5)\\in y=3x+2;\\ y>3x+2?",
+      "choices": {
+        "en": [
+          "$\\text{yes}$",
+          "$\\text{only if solid}$",
+          "$\\text{no}$",
+          "$\\text{always}$"
+        ],
+        "es": [
+          "$\\text{sí}$",
+          "$\\text{solo si continua}$",
+          "$\\text{falso}$",
+          "$\\text{siempre}$"
+        ],
+        "pl": [
+          "$\\text{tak}$",
+          "$\\text{tylko gdy ciągła}$",
+          "$\\text{nie}$",
+          "$\\text{zawsze}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "boundary_included",
+        "strict_vs_closed"
+      ]
+    },
+    {
+      "id": "alg1-l25-i05",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.test"
+      ],
+      "difficulty": 0.58,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: y ≤ −x + 6 and y ≥ 2. Which point is NOT a solution?",
+        "es": "Sistema: y ≤ −x + 6 y y ≥ 2. ¿Qué punto NO es solución?",
+        "pl": "Układ: y ≤ −x + 6 i y ≥ 2. Który punkt NIE jest rozwiązaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "(5,1): y=1 fails y ≥ 2. The others satisfy both.",
+        "es": "(5,1): y=1 falla y ≥ 2. Los otros cumplen ambas.",
+        "pl": "(5,1): y=1 nie spełnia y ≥ 2. Pozostałe spełniają obie."
+      },
+      "feedbackIncorrect": {
+        "en": "Reject any point with y < 2 or above the line y = −x+6.",
+        "es": "Rechaza puntos con y < 2 o por encima de y = −x+6.",
+        "pl": "Odrzuć punkty z y < 2 lub nad prostą y = −x+6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} y\\le -x+6 \\\\ y\\ge 2 \\end{cases}",
+      "choices": {
+        "en": [
+          "$(2,3)$",
+          "$(0,4)$",
+          "$(1,2)$",
+          "$(5,1)$"
+        ],
+        "es": [
+          "$(2,3)$",
+          "$(0,4)$",
+          "$(1,2)$",
+          "$(5,1)$"
+        ],
+        "pl": [
+          "$(2,3)$",
+          "$(0,4)$",
+          "$(1,2)$",
+          "$(5,1)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "picked_valid",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l25-i06",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Constraints: x ≥ 0, y ≥ 0, x + y ≤ 4. The feasible region is a…",
+        "es": "Restricciones: x ≥ 0, y ≥ 0, x + y ≤ 4. La región factible es un…",
+        "pl": "Ograniczenia: x ≥ 0, y ≥ 0, x + y ≤ 4. Obszar dopuszczalny to…"
+      },
+      "feedbackCorrect": {
+        "en": "Axes and the line x+y=4 cut a right triangle in the first quadrant.",
+        "es": "Los ejes y la recta x+y=4 cortan un triángulo rectángulo en el primer cuadrante.",
+        "pl": "Osie i prosta x+y=4 wycinają trójkąt prostokątny w pierwszej ćwiartce."
+      },
+      "feedbackIncorrect": {
+        "en": "Three linear boundaries meeting in the closed first quadrant form a triangle.",
+        "es": "Tres fronteras lineales que se encuentran en el primer cuadrante cerrado forman un triángulo.",
+        "pl": "Trzy liniowe brzegi w domkniętej pierwszej ćwiartce tworzą trójkąt."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.3(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "x\\ge 0,\\ y\\ge 0,\\ x+y\\le 4",
+      "choices": {
+        "en": [
+          "$\\text{triangle}$",
+          "$\\text{infinite strip}$",
+          "$\\text{circle}$",
+          "$\\text{empty}$"
+        ],
+        "es": [
+          "$\\text{triángulo}$",
+          "$\\text{franja infinita}$",
+          "$\\text{círculo}$",
+          "$\\text{vacío}$"
+        ],
+        "pl": [
+          "$\\text{trójkąt}$",
+          "$\\text{nieskończony pas}$",
+          "$\\text{koło}$",
+          "$\\text{pusty}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_shape",
+        "forgot_nonneg"
+      ]
+    },
+    {
+      "id": "alg1-l25-i07",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.62,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Rewrite −3x + y ≥ 6 in slope-intercept form for graphing.",
+        "es": "Reescribe −3x + y ≥ 6 en forma pendiente-intersección para graficar.",
+        "pl": "Zapisz −3x + y ≥ 6 w postaci kierunkowej do rysowania."
+      },
+      "feedbackCorrect": {
+        "en": "Add 3x: y ≥ 3x + 6. Inequality direction stays the same.",
+        "es": "Suma 3x: y ≥ 3x + 6. El sentido de la desigualdad no cambia.",
+        "pl": "Dodaj 3x: y ≥ 3x + 6. Kierunek nierówności się nie zmienia."
+      },
+      "feedbackIncorrect": {
+        "en": "Isolate y by adding 3x to both sides; do not flip when adding.",
+        "es": "Despeja y sumando 3x a ambos lados; no inviertas al sumar.",
+        "pl": "Wyodrębnij y dodając 3x do obu stron; przy dodawaniu nie odwracaj."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "-3x+y\\ge 6",
+      "choices": {
+        "en": [
+          "$y \\le 3x + 6$",
+          "$y \\ge 3x + 6$",
+          "$y \\ge -3x + 6$",
+          "$y \\ge 3x - 6$"
+        ],
+        "es": [
+          "$y \\le 3x + 6$",
+          "$y \\ge 3x + 6$",
+          "$y \\ge -3x + 6$",
+          "$y \\ge 3x - 6$"
+        ],
+        "pl": [
+          "$y \\le 3x + 6$",
+          "$y \\ge 3x + 6$",
+          "$y \\ge -3x + 6$",
+          "$y \\ge 3x - 6$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "flipped_wrong",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l25-i08",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.test"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: y > x − 1 and y < 2x + 1. Is (0, 0) a solution?",
+        "es": "Sistema: y > x − 1 y y < 2x + 1. ¿Es (0, 0) solución?",
+        "pl": "Układ: y > x − 1 i y < 2x + 1. Czy (0, 0) jest rozwiązaniem?"
+      },
+      "feedbackCorrect": {
+        "en": "0 > −1 true and 0 < 1 true — interior point of the strip.",
+        "es": "0 > −1 cierto y 0 < 1 cierto — punto interior de la franja.",
+        "pl": "0 > −1 prawdziwe i 0 < 1 prawdziwe — punkt wewnątrz pasa."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute (0,0) into both strict inequalities.",
+        "es": "Sustituye (0,0) en ambas desigualdades estrictas.",
+        "pl": "Podstaw (0,0) do obu ostrych nierówności."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} y>x-1 \\\\ y<2x+1 \\end{cases}\\ (0,0)",
+      "choices": {
+        "en": [
+          "$\\text{no}$",
+          "$\\text{on both lines}$",
+          "$\\text{yes}$",
+          "$\\text{only first}$"
+        ],
+        "es": [
+          "$\\text{falso}$",
+          "$\\text{en ambas rectas}$",
+          "$\\text{sí}$",
+          "$\\text{solo la 1.}$"
+        ],
+        "pl": [
+          "$\\text{nie}$",
+          "$\\text{na obu prostych}$",
+          "$\\text{tak}$",
+          "$\\text{tylko pierwsza}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "checked_one_only",
+        "boundary_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l25-i09",
+      "knowledgePointIds": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "difficulty": 0.68,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "y ≥ 2 and y ≤ 2. The solution region is…",
+        "es": "y ≥ 2 y y ≤ 2. La región solución es…",
+        "pl": "y ≥ 2 i y ≤ 2. Obszar rozwiązań to…"
+      },
+      "feedbackCorrect": {
+        "en": "Both force y = 2: the intersection is the horizontal line y = 2.",
+        "es": "Ambas fuerzan y = 2: la intersección es la recta horizontal y = 2.",
+        "pl": "Obie wymuszają y = 2: przecięcie to pozioma prosta y = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "y ≥ 2 and y ≤ 2 together mean exactly y = 2.",
+        "es": "y ≥ 2 e y ≤ 2 juntas significan exactamente y = 2.",
+        "pl": "y ≥ 2 i y ≤ 2 razem oznaczają dokładnie y = 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.3(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} y\\ge 2 \\\\ y\\le 2 \\end{cases}",
+      "choices": {
+        "en": [
+          "$\\text{above }y=2$",
+          "$\\text{empty}$",
+          "$\\text{all plane}$",
+          "$\\text{the line }y=2$"
+        ],
+        "es": [
+          "$\\text{sobre }y=2$",
+          "$\\text{vacío}$",
+          "$\\text{todo el plano}$",
+          "$\\text{la recta }y=2$"
+        ],
+        "pl": [
+          "$\\text{nad }y=2$",
+          "$\\text{pusty}$",
+          "$\\text{cała płaszczyzna}$",
+          "$\\text{prosta }y=2$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "thought_empty",
+        "thought_halfplane"
+      ]
+    },
+    {
+      "id": "alg1-l25-i10",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.75,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "When multiplying an inequality by −1 to isolate y, you must…",
+        "es": "Al multiplicar una desigualdad por −1 para despejar y, debes…",
+        "pl": "Mnożąc nierówność przez −1, by wyodrębnić y, musisz…"
+      },
+      "feedbackCorrect": {
+        "en": "Multiplying/dividing by a negative reverses the inequality symbol.",
+        "es": "Multiplicar/dividir por un negativo invierte el símbolo de desigualdad.",
+        "pl": "Mnożenie/dzielenie przez ujemną odwraca znak nierówności."
+      },
+      "feedbackIncorrect": {
+        "en": "−y < 2x → multiply by −1 → y > −2x.",
+        "es": "−y < 2x → multiplica por −1 → y > −2x.",
+        "pl": "−y < 2x → pomnóż przez −1 → y > −2x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        }
+      ],
+      "promptMath": "-y < 2x \\Rightarrow ?",
+      "choices": {
+        "en": [
+          "$\\text{flip the sign}$",
+          "$\\text{keep the sign}$",
+          "$\\text{drop y}$",
+          "$\\text{square both}$"
+        ],
+        "es": [
+          "$\\text{invertir el sentido}$",
+          "$\\text{mantener el sentido}$",
+          "$\\text{quitar y}$",
+          "$\\text{cuadrar}$"
+        ],
+        "pl": [
+          "$\\text{odwrócić znak}$",
+          "$\\text{zostawić znak}$",
+          "$\\text{usunąć y}$",
+          "$\\text{podnieść do kwadratu}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "forgot_flip",
+        "sign_error"
+      ]
+    }
+  ]
+}

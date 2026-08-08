@@ -1,0 +1,1304 @@
+{
+  "id": "alg1-l27",
+  "courseId": "algebra1",
+  "order": 27,
+  "title": {
+    "en": "Algebra I Modeling & Multi-Step Applications",
+    "es": "Modelado de Álgebra I y aplicaciones de varios pasos",
+    "pl": "Modelowanie algebry I i zastosowania wieloetapowe"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.modeling.write",
+    "kp.alg1.modeling.multi.step",
+    "kp.alg1.modeling.choose"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_27",
+    "unlockOnMastery": [
+      "lesson_board_28"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will write, solve, and check multi-step Algebra I models from real contexts.",
+        "es": "Escribirás, resolverás y verificarás modelos de Álgebra I de varios pasos desde contextos reales.",
+        "pl": "Będziesz zapisywać, rozwiązywać i sprawdzać wieloetapowe modele algebry I z kontekstu."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: write, solve, check",
+        "es": "Enseñar: escribir, resolver, verificar",
+        "pl": "Nauczanie: zapisz, rozwiąż, sprawdź"
+      },
+      "body": {
+        "en": "Translate contexts into equations, inequalities, or systems; solve multi-step; choose the right structure; always check units and reasonableness.",
+        "es": "Traduce contextos a ecuaciones, desigualdades o sistemas; resuelve varios pasos; elige la estructura correcta; siempre verifica unidades y razonabilidad.",
+        "pl": "Tłumacz konteksty na równania, nierówności lub układy; rozwiązuj wieloetapowo; wybieraj właściwą strukturę; zawsze sprawdzaj jednostki i sensowność."
+      },
+      "bodyMath": [
+        "\\rightarrow\\ \\text{eq}",
+        "\\rightarrow\\ x",
+        "\\rightarrow\\ \\checkmark"
+      ],
+      "itemIds": [
+        "alg1-l27-t01",
+        "alg1-l27-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Build models, solve applications, and justify which representation fits.",
+        "es": "Construye modelos, resuelve aplicaciones y justifica qué representación encaja.",
+        "pl": "Buduj modele, rozwiązuj zastosowania i uzasadniaj, która reprezentacja pasuje."
+      },
+      "itemIds": [
+        "alg1-l27-g01",
+        "alg1-l27-g02",
+        "alg1-l27-g03",
+        "alg1-l27-g04",
+        "alg1-l27-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l27-i01",
+        "alg1-l27-i02",
+        "alg1-l27-i03",
+        "alg1-l27-i04",
+        "alg1-l27-i05",
+        "alg1-l27-i06",
+        "alg1-l27-i07",
+        "alg1-l27-i08",
+        "alg1-l27-i09",
+        "alg1-l27-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l27-t01",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.write"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A taxi charges $3 plus $2 per mile. Cost C after m miles is…",
+        "es": "Un taxi cobra $3 más $2 por milla. El costo C tras m millas es…",
+        "pl": "Taksówka bierze 3$ plus 2$ za milę. Koszt C po m milach to…"
+      },
+      "feedbackCorrect": {
+        "en": "Fixed $3 plus $2 each mile: C = 2m + 3.",
+        "es": "Fijo $3 más $2 por milla: C = 2m + 3.",
+        "pl": "Stałe 3$ plus 2$ za milę: C = 2m + 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Constant fee is the intercept; per-mile rate is the slope.",
+        "es": "La tarifa fija es la intersección; la tarifa por milla es la pendiente.",
+        "pl": "Stała opłata to wyraz wolny; stawka za milę to nachylenie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.2(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "C(m)=?",
+      "choices": {
+        "en": [
+          "$C=2m+3$",
+          "$C=3m+2$",
+          "$C=2m-3$",
+          "$C=m+5$"
+        ],
+        "es": [
+          "$C=2m+3$",
+          "$C=3m+2$",
+          "$C=2m-3$",
+          "$C=m+5$"
+        ],
+        "pl": [
+          "$C=2m+3$",
+          "$C=3m+2$",
+          "$C=2m-3$",
+          "$C=m+5$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "swapped_rate_fee",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l27-t02",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve 3x + 5 = 20 for a ticket budget model. What is x?",
+        "es": "Resuelve 3x + 5 = 20 para un modelo de presupuesto. ¿Cuánto es x?",
+        "pl": "Rozwiąż 3x + 5 = 20 dla modelu budżetu. Ile wynosi x?"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 5: 3x = 15 → x = 5.",
+        "es": "Resta 5: 3x = 15 → x = 5.",
+        "pl": "Odejmij 5: 3x = 15 → x = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract 5, then divide by 3.",
+        "es": "Resta 5 y luego divide entre 3.",
+        "pl": "Odejmij 5, potem podziel przez 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "3x+5=20",
+      "choices": {
+        "en": [
+          "$4$",
+          "$5$",
+          "$6$",
+          "$15$"
+        ],
+        "es": [
+          "$4$",
+          "$5$",
+          "$6$",
+          "$15$"
+        ],
+        "pl": [
+          "$4$",
+          "$5$",
+          "$6$",
+          "$15$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "forgot_subtract",
+        "divided_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l27-g01",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.choose"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "You need at least 12 points and at most 40 minutes. Best model type?",
+        "es": "Necesitas al menos 12 puntos y como máximo 40 minutos. ¿Mejor tipo de modelo?",
+        "pl": "Potrzebujesz co najmniej 12 punktów i co najwyżej 40 minut. Najlepszy typ modelu?"
+      },
+      "feedbackCorrect": {
+        "en": "“At least” and “at most” are inequality constraints.",
+        "es": "“Al menos” y “como máximo” son restricciones de desigualdad.",
+        "pl": "„Co najmniej” i „co najwyżej” to ograniczenia nierównościowe."
+      },
+      "feedbackIncorrect": {
+        "en": "Equality alone cannot capture ≥ / ≤ requirements.",
+        "es": "La igualdad sola no captura requisitos ≥ / ≤.",
+        "pl": "Sama równość nie oddaje wymagań ≥ / ≤."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.3",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "p\\ge 12,\\ t\\le 40",
+      "choices": {
+        "en": [
+          "$\\text{one equality}$",
+          "$\\text{only graph}$",
+          "$\\text{inequalities}$",
+          "$\\text{ratio only}$"
+        ],
+        "es": [
+          "$\\text{una igualdad}$",
+          "$\\text{solo gráfica}$",
+          "$\\text{desigualdades}$",
+          "$\\text{solo razón}$"
+        ],
+        "pl": [
+          "$\\text{jedna równość}$",
+          "$\\text{tylko wykres}$",
+          "$\\text{nierówności}$",
+          "$\\text{tylko stosunek}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "used_equality",
+        "ignored_constraint"
+      ]
+    },
+    {
+      "id": "alg1-l27-g02",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.write"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Adult tickets $8, child $5. Total $46 for a+c tickets. Equation?",
+        "es": "Entradas adulto $8, niño $5. Total $46 por a+c entradas. ¿Ecuación?",
+        "pl": "Bilet dorosły 8$, dziecko 5$. Suma 46$ za a+c biletów. Równanie?"
+      },
+      "feedbackCorrect": {
+        "en": "Value equation: 8a + 5c = 46.",
+        "es": "Ecuación de valor: 8a + 5c = 46.",
+        "pl": "Równanie wartości: 8a + 5c = 46."
+      },
+      "feedbackIncorrect": {
+        "en": "Money totals use price × count for each type, summed.",
+        "es": "Los totales de dinero usan precio × cantidad de cada tipo, sumados.",
+        "pl": "Sumy pieniędzy: cena × liczba każdego typu, zsumowane."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.2(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "8a+5c=46",
+      "choices": {
+        "en": [
+          "$8a+5c=a+c$",
+          "$a+c=46$",
+          "$8a-5c=46$",
+          "$8a+5c=46$"
+        ],
+        "es": [
+          "$8a+5c=a+c$",
+          "$a+c=46$",
+          "$8a-5c=46$",
+          "$8a+5c=46$"
+        ],
+        "pl": [
+          "$8a+5c=a+c$",
+          "$a+c=46$",
+          "$8a-5c=46$",
+          "$8a+5c=46$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "count_as_value",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l27-g03",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.42,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Phone plan: $20 + $0.10 per text. Cost is $32. How many texts?",
+        "es": "Plan: $20 + $0.10 por mensaje. El costo es $32. ¿Cuántos mensajes?",
+        "pl": "Plan: 20$ + 0,10$ za SMS. Koszt 32$. Ile SMS-ów?"
+      },
+      "feedbackCorrect": {
+        "en": "After removing the fee: 0.10t = 12 → t = 120.",
+        "es": "Tras quitar la tarifa fija: 0.10t = 12 → t = 120.",
+        "pl": "Po odjęciu opłaty stałej: 0.10t = 12 → t = 120."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract 20, then divide by 0.10.",
+        "es": "Resta 20 y divide entre 0.10.",
+        "pl": "Odejmij 20, potem podziel przez 0.10."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "20+0.10t=32",
+      "choices": {
+        "en": [
+          "$120$",
+          "$12$",
+          "$320$",
+          "$52$"
+        ],
+        "es": [
+          "$120$",
+          "$12$",
+          "$320$",
+          "$52$"
+        ],
+        "pl": [
+          "$120$",
+          "$12$",
+          "$320$",
+          "$52$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 120,
+      "diagnosticTags": [
+        "forgot_fee",
+        "decimal_error"
+      ]
+    },
+    {
+      "id": "alg1-l27-g04",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.choose"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Two unknowns linked by two independent facts. Prefer…",
+        "es": "Dos desconocidas ligadas por dos hechos independientes. Prefiere…",
+        "pl": "Dwie niewiadome związane dwoma niezależnymi faktami. Preferuj…"
+      },
+      "feedbackCorrect": {
+        "en": "Two independent constraints on two variables → a system of equations.",
+        "es": "Dos restricciones independientes en dos variables → un sistema de ecuaciones.",
+        "pl": "Dwa niezależne ograniczenia na dwie zmienne → układ równań."
+      },
+      "feedbackIncorrect": {
+        "en": "One equation alone usually leaves a free variable.",
+        "es": "Una sola ecuación suele dejar una variable libre.",
+        "pl": "Jedno równanie zwykle zostawia wolną zmienną."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.3",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "2\\ \\text{var},\\ 2\\ \\text{eq}",
+      "choices": {
+        "en": [
+          "$\\text{one expression}$",
+          "$\\text{a system}$",
+          "$\\text{only inequality}$",
+          "$\\text{scatter only}$"
+        ],
+        "es": [
+          "$\\text{una expresión}$",
+          "$\\text{un sistema}$",
+          "$\\text{solo desigualdad}$",
+          "$\\text{solo dispersión}$"
+        ],
+        "pl": [
+          "$\\text{jedno wyrażenie}$",
+          "$\\text{układ}$",
+          "$\\text{tylko nierówność}$",
+          "$\\text{tylko rozrzut}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "one_eq_only",
+        "forced_inequality"
+      ]
+    },
+    {
+      "id": "alg1-l27-g05",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.48,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Rectangle: length = w+3, perimeter 30. Find width w.",
+        "es": "Rectángulo: largo = w+3, perímetro 30. Halla el ancho w.",
+        "pl": "Prostokąt: długość = w+3, obwód 30. Znajdź szerokość w."
+      },
+      "feedbackCorrect": {
+        "en": "Perimeter: 2(2w+3)=30 → 2w+3=15 → w=6.",
+        "es": "Perímetro: 2(2w+3)=30 → 2w+3=15 → w=6.",
+        "pl": "Obwód: 2(2w+3)=30 → 2w+3=15 → w=6."
+      },
+      "feedbackIncorrect": {
+        "en": "Perimeter is 2(L+W); substitute L = w+3.",
+        "es": "El perímetro es 2(L+W); sustituye L = w+3.",
+        "pl": "Obwód to 2(L+W); podstaw L = w+3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "2(w+(w+3))=30",
+      "choices": {
+        "en": [
+          "$7$",
+          "$9$",
+          "$6$",
+          "$12$"
+        ],
+        "es": [
+          "$7$",
+          "$9$",
+          "$6$",
+          "$12$"
+        ],
+        "pl": [
+          "$7$",
+          "$9$",
+          "$6$",
+          "$12$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "used_area",
+        "forgot_times_2"
+      ]
+    },
+    {
+      "id": "alg1-l27-i01",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.write"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Savings S starts at 40 and grows by 15 each week w. Model?",
+        "es": "El ahorro S empieza en 40 y crece 15 cada semana w. ¿Modelo?",
+        "pl": "Oszczędności S startują od 40 i rosną o 15 co tydzień w. Model?"
+      },
+      "feedbackCorrect": {
+        "en": "Initial 40 + 15 per week: S = 15w + 40.",
+        "es": "Inicial 40 + 15 por semana: S = 15w + 40.",
+        "pl": "Początkowe 40 + 15 na tydzień: S = 15w + 40."
+      },
+      "feedbackIncorrect": {
+        "en": "Starting amount is the intercept; weekly growth is the slope.",
+        "es": "La cantidad inicial es la intersección; el crecimiento semanal es la pendiente.",
+        "pl": "Kwota początkowa to wyraz wolny; tygodniowy wzrost to nachylenie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.2(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "S(w)=?",
+      "choices": {
+        "en": [
+          "$S=40w+15$",
+          "$S=15w-40$",
+          "$S=w+55$",
+          "$S=15w+40$"
+        ],
+        "es": [
+          "$S=40w+15$",
+          "$S=15w-40$",
+          "$S=w+55$",
+          "$S=15w+40$"
+        ],
+        "pl": [
+          "$S=40w+15$",
+          "$S=15w-40$",
+          "$S=w+55$",
+          "$S=15w+40$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "swapped_rate_fee",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l27-i02",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.52,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Mixture: 2 lb of $4 coffee with 3 lb of $7 coffee. Cost per lb of mix?",
+        "es": "Mezcla: 2 lb de café a $4 con 3 lb a $7. ¿Costo por lb de la mezcla?",
+        "pl": "Mieszanka: 2 lb kawy po 4$ z 3 lb po 7$. Koszt na lb mieszanki?"
+      },
+      "feedbackCorrect": {
+        "en": "Total cost 8+21=29; total mass 5; 29/5 = 5.8.",
+        "es": "Costo total 8+21=29; masa total 5; 29/5 = 5.8.",
+        "pl": "Koszt łączny 8+21=29; masa 5; 29/5 = 5.8."
+      },
+      "feedbackIncorrect": {
+        "en": "Weighted average: (sum of value)/(sum of mass).",
+        "es": "Promedio ponderado: (suma de valor)/(suma de masa).",
+        "pl": "Średnia ważona: (suma wartości)/(suma masy)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{2\\cdot 4+3\\cdot 7}{2+3}",
+      "choices": {
+        "en": [
+          "$5.8$",
+          "$5.5$",
+          "$6$",
+          "$11$"
+        ],
+        "es": [
+          "$5.8$",
+          "$5.5$",
+          "$6$",
+          "$11$"
+        ],
+        "pl": [
+          "$5.8$",
+          "$5.5$",
+          "$6$",
+          "$11$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 5.8,
+      "tolerance": 0.05,
+      "diagnosticTags": [
+        "averaged_prices",
+        "forgot_weights"
+      ]
+    },
+    {
+      "id": "alg1-l27-i03",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.choose"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Fence length fixed; maximize enclosed rectangular area. This is primarily…",
+        "es": "Longitud de cerca fija; maximizar área rectangular. Esto es principalmente…",
+        "pl": "Stała długość ogrodzenia; maksymalizacja prostokątnego pola. To głównie…"
+      },
+      "feedbackCorrect": {
+        "en": "A fixed perimeter with max area is a classic optimization/modeling setup.",
+        "es": "Perímetro fijo con área máxima es un planteo clásico de optimización/modelado.",
+        "pl": "Stały obwód i max pole to klasyczny układ optymalizacji/modelowania."
+      },
+      "feedbackIncorrect": {
+        "en": "You write a relation, then find an extreme value under a constraint.",
+        "es": "Escribes una relación y luego hallas un extremo bajo una restricción.",
+        "pl": "Zapisujesz zależność, potem szukasz ekstremum przy ograniczeniu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.3",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "P=\\text{const},\\ A\\to\\max",
+      "choices": {
+        "en": [
+          "$\\text{scatter fit}$",
+          "$\\text{optimization model}$",
+          "$\\text{absolute value}$",
+          "$\\text{radical only}$"
+        ],
+        "es": [
+          "$\\text{ajuste de dispersión}$",
+          "$\\text{modelo de optimización}$",
+          "$\\text{valor absoluto}$",
+          "$\\text{solo radical}$"
+        ],
+        "pl": [
+          "$\\text{dopasowanie rozrzutu}$",
+          "$\\text{model optymalizacji}$",
+          "$\\text{wartość bezwzględna}$",
+          "$\\text{tylko pierwiastek}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_tool",
+        "ignored_constraint"
+      ]
+    },
+    {
+      "id": "alg1-l27-i04",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.write"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Boat speed in still water b; current 3. Downstream rate is…",
+        "es": "Velocidad del bote en agua quieta b; corriente 3. La tasa río abajo es…",
+        "pl": "Prędkość łodzi w stojącej wodzie b; prąd 3. Tempo z prądem to…"
+      },
+      "feedbackCorrect": {
+        "en": "Current adds to still-water speed downstream: b + 3.",
+        "es": "La corriente se suma a la velocidad río abajo: b + 3.",
+        "pl": "Prąd dodaje się do prędkości z prądem: b + 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Downstream: add current; upstream: subtract current.",
+        "es": "Río abajo: suma la corriente; río arriba: réstala.",
+        "pl": "Z prądem: dodaj prąd; pod prąd: odejmij prąd."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.2(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "v_{down}=?",
+      "choices": {
+        "en": [
+          "$b-3$",
+          "$3b$",
+          "$b+3$",
+          "$b/3$"
+        ],
+        "es": [
+          "$b-3$",
+          "$3b$",
+          "$b+3$",
+          "$b/3$"
+        ],
+        "pl": [
+          "$b-3$",
+          "$3b$",
+          "$b+3$",
+          "$b/3$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "upstream_down",
+        "multiplied"
+      ]
+    },
+    {
+      "id": "alg1-l27-i05",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.58,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "2(x − 4) = 3x + 1. Solve for x in a cost-balance model.",
+        "es": "2(x − 4) = 3x + 1. Resuelve x en un modelo de balance de costos.",
+        "pl": "2(x − 4) = 3x + 1. Rozwiąż x w modelu bilansu kosztów."
+      },
+      "feedbackCorrect": {
+        "en": "Distribute then collect: 2x − 8 = 3x + 1 → x = −9.",
+        "es": "Distribuye y reúne: 2x − 8 = 3x + 1 → x = −9.",
+        "pl": "Rozdziel i zbierz: 2x − 8 = 3x + 1 → x = −9."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute, collect like terms, isolate x.",
+        "es": "Distribuye, reúne términos semejantes, despeja x.",
+        "pl": "Rozdziel, zbierz wyrazy podobne, wyodrębnij x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "2(x-4)=3x+1",
+      "choices": {
+        "en": [
+          "$9$",
+          "$-7$",
+          "$7$",
+          "$-9$"
+        ],
+        "es": [
+          "$9$",
+          "$-7$",
+          "$7$",
+          "$-9$"
+        ],
+        "pl": [
+          "$9$",
+          "$-7$",
+          "$7$",
+          "$-9$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": -9,
+      "diagnosticTags": [
+        "distribute_error",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l27-i06",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.choose"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A story gives “twice a number plus 7 is 19.” Best first step?",
+        "es": "Una historia dice “el doble de un número más 7 es 19.” ¿Mejor primer paso?",
+        "pl": "Opowieść: „podwojona liczba plus 7 to 19.” Najlepszy pierwszy krok?"
+      },
+      "feedbackCorrect": {
+        "en": "Translate words into 2n + 7 = 19, then solve.",
+        "es": "Traduce palabras a 2n + 7 = 19 y luego resuelve.",
+        "pl": "Przetłumacz słowa na 2n + 7 = 19, potem rozwiąż."
+      },
+      "feedbackIncorrect": {
+        "en": "Modeling starts by writing a precise algebraic statement.",
+        "es": "El modelado empieza escribiendo un enunciado algebraico preciso.",
+        "pl": "Modelowanie zaczyna się od precyzyjnego zapisu algebraicznego."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.3",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "2n+7=19",
+      "choices": {
+        "en": [
+          "$\\text{write equation}$",
+          "$\\text{guess only}$",
+          "$\\text{draw scatter}$",
+          "$\\text{ignore 7}$"
+        ],
+        "es": [
+          "$\\text{escribir ecuación}$",
+          "$\\text{solo adivinar}$",
+          "$\\text{dibujar dispersión}$",
+          "$\\text{ignorar 7}$"
+        ],
+        "pl": [
+          "$\\text{zapisać równanie}$",
+          "$\\text{tylko zgadywać}$",
+          "$\\text{rysować rozrzut}$",
+          "$\\text{ignorować 7}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "skipped_model",
+        "wrong_tool"
+      ]
+    },
+    {
+      "id": "alg1-l27-i07",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.62,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Car rents for $40/day + $0.25/mi. Two days, 80 mi. Total cost?",
+        "es": "Auto: $40/día + $0.25/mi. Dos días, 80 mi. ¿Costo total?",
+        "pl": "Auto: 40$/dzień + 0,25$/mi. Dwa dni, 80 mi. Całkowity koszt?"
+      },
+      "feedbackCorrect": {
+        "en": "Days: 80. Miles: 20. Total 100.",
+        "es": "Días: 80. Millas: 20. Total 100.",
+        "pl": "Dni: 80. Mile: 20. Razem 100."
+      },
+      "feedbackIncorrect": {
+        "en": "Compute daily fee × days plus mileage fee × miles.",
+        "es": "Calcula tarifa diaria × días más tarifa por milla × millas.",
+        "pl": "Policz opłatę dzienną × dni plus opłatę za milę × mile."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "2\\cdot 40+0.25\\cdot 80",
+      "choices": {
+        "en": [
+          "$80$",
+          "$100$",
+          "$120$",
+          "$90$"
+        ],
+        "es": [
+          "$80$",
+          "$100$",
+          "$120$",
+          "$90$"
+        ],
+        "pl": [
+          "$80$",
+          "$100$",
+          "$120$",
+          "$90$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 100,
+      "diagnosticTags": [
+        "missed_days",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l27-i08",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.write"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Inequality: spend at most $50 on items costing $x each, buying n items.",
+        "es": "Desigualdad: gastar a lo sumo $50 en artículos de $x cada uno, comprando n.",
+        "pl": "Nierówność: wydać co najwyżej 50$ na rzeczy po x$ sztuka, kupując n."
+      },
+      "feedbackCorrect": {
+        "en": "“At most 50” means nx ≤ 50.",
+        "es": "“A lo sumo 50” significa nx ≤ 50.",
+        "pl": "„Co najwyżej 50” oznacza nx ≤ 50."
+      },
+      "feedbackIncorrect": {
+        "en": "At most → ≤; at least → ≥.",
+        "es": "A lo sumo → ≤; al menos → ≥.",
+        "pl": "Co najwyżej → ≤; co najmniej → ≥."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.2(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "nx\\,?\\,50",
+      "choices": {
+        "en": [
+          "$nx \\ge 50$",
+          "$n+x=50$",
+          "$nx \\le 50$",
+          "$n/x=50$"
+        ],
+        "es": [
+          "$nx \\ge 50$",
+          "$n+x=50$",
+          "$nx \\le 50$",
+          "$n/x=50$"
+        ],
+        "pl": [
+          "$nx \\ge 50$",
+          "$n+x=50$",
+          "$nx \\le 50$",
+          "$n/x=50$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "flipped_inequality",
+        "used_equality"
+      ]
+    },
+    {
+      "id": "alg1-l27-i09",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "difficulty": 0.68,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: x + y = 10 and 2x − y = 2. Find x.",
+        "es": "Sistema: x + y = 10 y 2x − y = 2. Halla x.",
+        "pl": "Układ: x + y = 10 i 2x − y = 2. Znajdź x."
+      },
+      "feedbackCorrect": {
+        "en": "Add: 3x = 12 → x = 4 (then y = 6).",
+        "es": "Suma: 3x = 12 → x = 4 (luego y = 6).",
+        "pl": "Dodaj: 3x = 12 → x = 4 (potem y = 6)."
+      },
+      "feedbackIncorrect": {
+        "en": "Elimination: add to cancel y, then back-substitute.",
+        "es": "Eliminación: suma para cancelar y, luego sustituye.",
+        "pl": "Eliminacja: dodaj, by skasować y, potem podstaw wstecz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} x+y=10 \\\\ 2x-y=2 \\end{cases}",
+      "choices": {
+        "en": [
+          "$6$",
+          "$3$",
+          "$5$",
+          "$4$"
+        ],
+        "es": [
+          "$6$",
+          "$3$",
+          "$5$",
+          "$4$"
+        ],
+        "pl": [
+          "$6$",
+          "$3$",
+          "$5$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "added_wrong",
+        "swapped_xy"
+      ]
+    },
+    {
+      "id": "alg1-l27-i10",
+      "knowledgePointIds": [
+        "kp.alg1.modeling.choose"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.75,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "After solving a model, you should always…",
+        "es": "Tras resolver un modelo, siempre debes…",
+        "pl": "Po rozwiązaniu modelu zawsze powinieneś…"
+      },
+      "feedbackCorrect": {
+        "en": "Interpret the answer: units, domain, and real-world reasonableness.",
+        "es": "Interpreta la respuesta: unidades, dominio y razonabilidad en el mundo real.",
+        "pl": "Zinterpretuj wynik: jednostki, dziedzina i sensowność w rzeczywistości."
+      },
+      "feedbackIncorrect": {
+        "en": "A numeric solve is incomplete until checked in context.",
+        "es": "Una resolución numérica está incompleta hasta verificarla en contexto.",
+        "pl": "Wynik liczbowy jest niekompletny, dopóki nie sprawdzisz go w kontekście."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.3",
+            "A-CED.A.2"
+          ]
+        }
+      ],
+      "promptMath": "\\checkmark\\ ?",
+      "choices": {
+        "en": [
+          "$\\text{check units/sense}$",
+          "$\\text{delete data}$",
+          "$\\text{force r=1}$",
+          "$\\text{ignore context}$"
+        ],
+        "es": [
+          "$\\text{revisar unidades/sentido}$",
+          "$\\text{borrar datos}$",
+          "$\\text{forzar r=1}$",
+          "$\\text{ignorar contexto}$"
+        ],
+        "pl": [
+          "$\\text{sprawdzić jedn./sens}$",
+          "$\\text{usunąć dane}$",
+          "$\\text{wymuszać r=1}$",
+          "$\\text{ignorować kontekst}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "skipped_check",
+        "wrong_tool"
+      ]
+    }
+  ]
+}

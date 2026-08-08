@@ -4376,6 +4376,562 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.inequality.two.var",
+      "title": {
+        "en": "Graph a linear inequality in two variables",
+        "es": "Graficar una desigualdad lineal en dos variables",
+        "pl": "Rysować nierówność liniową dwóch zmiennych"
+      },
+      "prerequisites": [
+        "kp.alg1.graph.slope.intercept",
+        "kp.alg1.inequality.meaning"
+      ],
+      "successCriteria": {
+        "en": "Student graphs the boundary line (solid/dashed) and shades the correct half-plane using a test point.",
+        "es": "El estudiante grafica la frontera (continua/discontinua) y sombrea el semplano correcto con un punto de prueba.",
+        "pl": "Uczeń rysuje prostą brzegową (ciągła/przerywana) i zacienia właściwą półpłaszczyznę punktem próbnym."
+      },
+      "misconceptions": {
+        "en": [
+          "Using a solid boundary for < or >",
+          "Shading the wrong side after a failed or skipped test point"
+        ],
+        "es": [
+          "Usar frontera continua para < o >",
+          "Sombrear el lado incorrecto tras un punto de prueba fallido u omitido"
+        ],
+        "pl": [
+          "Używanie ciągłej granicy dla < lub >",
+          "Zacienianie złej strony po nieudanym lub pominiętym punkcie próbnym"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(D)",
+            "A.1(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.12"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.9.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.inequalities.region",
+      "title": {
+        "en": "Graph systems of linear inequalities",
+        "es": "Graficar sistemas de desigualdades lineales",
+        "pl": "Rysować układy nierówności liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.inequality.two.var",
+        "kp.alg1.systems.meaning"
+      ],
+      "encompassing": [
+        "kp.alg1.inequality.two.var"
+      ],
+      "successCriteria": {
+        "en": "Student identifies the intersection (overlap) of two half-planes as the solution region of a system.",
+        "es": "El estudiante identifica la intersección (solapamiento) de dos semplanos como la región solución del sistema.",
+        "pl": "Uczeń identyfikuje przecięcie (wspólny obszar) dwóch półpłaszczyzn jako obszar rozwiązań układu."
+      },
+      "misconceptions": {
+        "en": [
+          "Shading the union instead of the intersection",
+          "Thinking parallel boundaries always mean an empty solution set"
+        ],
+        "es": [
+          "Sombrear la unión en lugar de la intersección",
+          "Pensar que fronteras paralelas siempre dan conjunto vacío"
+        ],
+        "pl": [
+          "Zacienianie sumy zamiast przecięcia",
+          "Myślenie, że równoległe brzegi zawsze dają zbiór pusty"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.3(D)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.12"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.9.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.systems.inequalities.test",
+      "title": {
+        "en": "Test points in inequality solution regions",
+        "es": "Probar puntos en regiones de soluciones de desigualdades",
+        "pl": "Sprawdzać punkty w obszarach rozwiązań nierówności"
+      },
+      "prerequisites": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "encompassing": [
+        "kp.alg1.systems.inequalities.region"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes ordered pairs into both inequalities to decide membership in the solution set.",
+        "es": "El estudiante sustituye pares ordenados en ambas desigualdades para decidir pertenencia al conjunto solución.",
+        "pl": "Uczeń podstawia pary uporządkowane do obu nierówności, by rozstrzygnąć przynależność do zbioru rozwiązań."
+      },
+      "misconceptions": {
+        "en": [
+          "Checking only one inequality of the system",
+          "Treating boundary points as solutions when inequalities are strict"
+        ],
+        "es": [
+          "Verificar solo una desigualdad del sistema",
+          "Tratar puntos de la frontera como soluciones cuando las desigualdades son estrictas"
+        ],
+        "pl": [
+          "Sprawdzanie tylko jednej nierówności układu",
+          "Traktowanie punktów brzegu jako rozwiązań przy nierównościach ostrych"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(H)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.D.12",
+            "A-CED.A.3"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.12"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.9.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.scatter.interpret",
+      "title": {
+        "en": "Read and interpret scatter plots",
+        "es": "Leer e interpretar diagramas de dispersión",
+        "pl": "Odczytywać i interpretować wykresy rozrzutu"
+      },
+      "prerequisites": [
+        "kp.alg1.rate.of.change",
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "successCriteria": {
+        "en": "Student describes bivariate data patterns from a scatter plot (clusters, outliers, overall shape).",
+        "es": "El estudiante describe patrones de datos bivariados en un diagrama de dispersión (grupos, atípicos, forma).",
+        "pl": "Uczeń opisuje wzorce danych dwuzmiennych na wykresie rozrzutu (skupiska, wartości odstające, kształt)."
+      },
+      "misconceptions": {
+        "en": [
+          "Reading every point as lying on a single exact line",
+          "Ignoring clear outliers when describing the overall trend"
+        ],
+        "es": [
+          "Leer cada punto como si estuviera en una sola recta exacta",
+          "Ignorar atípicos claros al describir la tendencia general"
+        ],
+        "pl": [
+          "Odczytywanie każdego punktu jakby leżał na jednej dokładnej prostej",
+          "Ignorowanie wyraźnych wartości odstających przy opisie trendu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "S-ID.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.DP.2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.correlation.direction",
+      "title": {
+        "en": "Describe correlation direction and strength",
+        "es": "Describir dirección y fuerza de la correlación",
+        "pl": "Opisywać kierunek i siłę korelacji"
+      },
+      "prerequisites": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "encompassing": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "successCriteria": {
+        "en": "Student labels association as positive, negative, or roughly none, and qualitatively strong vs weak.",
+        "es": "El estudiante etiqueta la asociación como positiva, negativa o aproximadamente nula, y cualitativamente fuerte o débil.",
+        "pl": "Uczeń określa związek jako dodatni, ujemny lub w przybliżeniu zerowy oraz jakościowo silny lub słaby."
+      },
+      "misconceptions": {
+        "en": [
+          "Confusing positive slope of a fit line with causation",
+          "Calling weak positive association “no correlation”"
+        ],
+        "es": [
+          "Confundir pendiente positiva de la recta de ajuste con causalidad",
+          "Llamar “sin correlación” a una asociación positiva débil"
+        ],
+        "pl": [
+          "Mylenie dodatniego nachylenia prostej dopasowania z przyczynowością",
+          "Nazywanie słabej korelacji dodatniej „brakiem korelacji”"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.4(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.C.8",
+            "S-ID.C.9"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "S-ID.8"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.DP.2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.line.best.fit",
+      "title": {
+        "en": "Use a line of best fit",
+        "es": "Usar una recta de mejor ajuste",
+        "pl": "Stosować prostą najlepszego dopasowania"
+      },
+      "prerequisites": [
+        "kp.alg1.correlation.direction",
+        "kp.alg1.write.equation.slope.yint"
+      ],
+      "encompassing": [
+        "kp.alg1.correlation.direction"
+      ],
+      "successCriteria": {
+        "en": "Student reads or applies a linear model y ≈ mx + b from a scatter plot to estimate or predict.",
+        "es": "El estudiante lee o aplica un modelo lineal y ≈ mx + b de un diagrama de dispersión para estimar o predecir.",
+        "pl": "Uczeń odczytuje lub stosuje model liniowy y ≈ mx + b z wykresu rozrzutu do szacowania lub przewidywania."
+      },
+      "misconceptions": {
+        "en": [
+          "Extrapolating far beyond the data as if the fit were exact",
+          "Using the wrong slope sign relative to the association"
+        ],
+        "es": [
+          "Extrapolar mucho más allá de los datos como si el ajuste fuera exacto",
+          "Usar el signo incorrecto de la pendiente respecto a la asociación"
+        ],
+        "pl": [
+          "Ekstrapolowanie daleko poza dane jakby dopasowanie było dokładne",
+          "Używanie złego znaku nachylenia względem związku"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "S-ID.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.DP.2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.modeling.write",
+      "title": {
+        "en": "Write algebraic models from contexts",
+        "es": "Escribir modelos algebraicos desde contextos",
+        "pl": "Zapisywać modele algebraiczne z kontekstu"
+      },
+      "prerequisites": [
+        "kp.alg1.expression.translate",
+        "kp.alg1.write.equation.slope.yint"
+      ],
+      "successCriteria": {
+        "en": "Student translates a real-world constraint or relationship into an equation or inequality.",
+        "es": "El estudiante traduce una restricción o relación del mundo real en una ecuación o desigualdad.",
+        "pl": "Uczeń tłumaczy ograniczenie lub zależność z życia na równanie lub nierówność."
+      },
+      "misconceptions": {
+        "en": [
+          "Mixing units or reversing which quantity is the independent variable",
+          "Writing expressions where equations are required"
+        ],
+        "es": [
+          "Mezclar unidades o invertir cuál cantidad es la variable independiente",
+          "Escribir expresiones donde se requieren ecuaciones"
+        ],
+        "pl": [
+          "Mieszanie jednostek lub odwracanie zmiennej niezależnej",
+          "Zapisywanie wyrażeń tam, gdzie potrzebne są równania"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.2(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-CED.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-CED.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.modeling.multi.step",
+      "title": {
+        "en": "Solve multi-step modeling problems",
+        "es": "Resolver problemas de modelado de varios pasos",
+        "pl": "Rozwiązywać wieloetapowe zadania modelowania"
+      },
+      "prerequisites": [
+        "kp.alg1.modeling.write",
+        "kp.alg1.solve.multi.step"
+      ],
+      "encompassing": [
+        "kp.alg1.modeling.write"
+      ],
+      "successCriteria": {
+        "en": "Student plans, computes, and interprets a numeric answer in context for a multi-step Algebra I application.",
+        "es": "El estudiante planifica, calcula e interpreta una respuesta numérica en contexto en una aplicación de varios pasos.",
+        "pl": "Uczeń planuje, oblicza i interpretuje wynik liczbowy w kontekście wieloetapowego zastosowania algebry I."
+      },
+      "misconceptions": {
+        "en": [
+          "Stopping after forming the model without solving",
+          "Reporting a raw number without checking units or reasonableness"
+        ],
+        "es": [
+          "Detenerse tras formar el modelo sin resolver",
+          "Reportar un número sin verificar unidades o razonabilidad"
+        ],
+        "pl": [
+          "Zatrzymanie się po utworzeniu modelu bez rozwiązania",
+          "Podawanie liczby bez sprawdzenia jednostek lub sensowności"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.5(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.3"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-CED.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.modeling.choose",
+      "title": {
+        "en": "Choose and justify a modeling approach",
+        "es": "Elegir y justificar un enfoque de modelado",
+        "pl": "Wybierać i uzasadniać podejście modelowania"
+      },
+      "prerequisites": [
+        "kp.alg1.modeling.multi.step",
+        "kp.alg1.systems.verify"
+      ],
+      "encompassing": [
+        "kp.alg1.modeling.multi.step"
+      ],
+      "successCriteria": {
+        "en": "Student selects linear vs system vs inequality models when appropriate and justifies the choice briefly.",
+        "es": "El estudiante elige modelos lineales, de sistemas o de desigualdades cuando corresponde y justifica brevemente.",
+        "pl": "Uczeń wybiera model liniowy, układ lub nierówność, gdy to właściwe, i krótko uzasadnia wybór."
+      },
+      "misconceptions": {
+        "en": [
+          "Defaulting to one equation when two constraints require a system",
+          "Using equality when a constraint is clearly an inequality"
+        ],
+        "es": [
+          "Usar por defecto una ecuación cuando dos restricciones requieren un sistema",
+          "Usar igualdad cuando la restricción es claramente una desigualdad"
+        ],
+        "pl": [
+          "Domyślne jedno równanie, gdy dwa ograniczenia wymagają układu",
+          "Używanie równości, gdy ograniczenie jest wyraźnie nierównością"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.3",
+            "A-CED.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-CED.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.5"
+          ]
+        }
+      ]
     }
   ]
 }

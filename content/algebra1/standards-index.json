@@ -24,7 +24,13 @@
           "kp.alg1.variable.identify",
           "kp.alg1.expression.translate",
           "kp.alg1.rate.of.change",
-          "kp.alg1.write.equation.slope.yint"
+          "kp.alg1.write.equation.slope.yint",
+          "kp.alg1.scatter.interpret",
+          "kp.alg1.correlation.direction",
+          "kp.alg1.line.best.fit",
+          "kp.alg1.modeling.write",
+          "kp.alg1.modeling.multi.step",
+          "kp.alg1.modeling.choose"
         ]
       },
       "A.1(B)": {
@@ -67,7 +73,11 @@
           "kp.alg1.rational.multiply",
           "kp.alg1.rational.divide",
           "kp.alg1.absolute.equations",
-          "kp.alg1.absolute.inequalities"
+          "kp.alg1.absolute.inequalities",
+          "kp.alg1.systems.inequalities.test",
+          "kp.alg1.modeling.write",
+          "kp.alg1.modeling.multi.step",
+          "kp.alg1.modeling.choose"
         ]
       },
       "A.1(D)": {
@@ -108,7 +118,12 @@
           "kp.alg1.function.domain",
           "kp.alg1.function.range",
           "kp.alg1.sequence.arithmetic",
-          "kp.alg1.sequence.geometric"
+          "kp.alg1.sequence.geometric",
+          "kp.alg1.inequality.two.var",
+          "kp.alg1.systems.inequalities.region",
+          "kp.alg1.scatter.interpret",
+          "kp.alg1.correlation.direction",
+          "kp.alg1.line.best.fit"
         ]
       },
       "A.1(F)": {
@@ -165,7 +180,12 @@
           "kp.alg1.function.range",
           "kp.alg1.sequence.arithmetic",
           "kp.alg1.sequence.geometric",
-          "kp.alg1.sequence.nth.term"
+          "kp.alg1.sequence.nth.term",
+          "kp.alg1.inequality.two.var",
+          "kp.alg1.systems.inequalities.region",
+          "kp.alg1.systems.inequalities.test",
+          "kp.alg1.line.best.fit",
+          "kp.alg1.modeling.choose"
         ]
       },
       "A.5(A)": {
@@ -269,7 +289,8 @@
           "pl": "Zapisywać równania liniowe dwóch zmiennych z tabeli, wykresu i opisu słownego"
         },
         "knowledgePointIds": [
-          "kp.alg1.write.equation.point.slope"
+          "kp.alg1.write.equation.point.slope",
+          "kp.alg1.modeling.write"
         ]
       },
       "A.2(E)": {
@@ -330,7 +351,8 @@
           "kp.alg1.systems.graphical",
           "kp.alg1.systems.elimination",
           "kp.alg1.systems.elimination.scale",
-          "kp.alg1.systems.verify"
+          "kp.alg1.systems.verify",
+          "kp.alg1.modeling.multi.step"
         ]
       },
       "A.1(C)": {
@@ -526,6 +548,60 @@
         "knowledgePointIds": [
           "kp.alg1.sequence.nth.term"
         ]
+      },
+      "A.3(D)": {
+        "description": {
+          "en": "Graph the solution set of linear inequalities in two variables on the coordinate plane",
+          "es": "Graficar el conjunto solución de desigualdades lineales en dos variables en el plano",
+          "pl": "Rysować zbiór rozwiązań nierówności liniowych dwóch zmiennych na płaszczyźnie"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.inequality.two.var",
+          "kp.alg1.systems.inequalities.region"
+        ]
+      },
+      "A.3(H)": {
+        "description": {
+          "en": "Graph the solution set of systems of two linear inequalities in two variables on the coordinate plane",
+          "es": "Graficar el conjunto solución de sistemas de dos desigualdades lineales en dos variables",
+          "pl": "Rysować zbiór rozwiązań układów dwóch nierówności liniowych dwóch zmiennych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.systems.inequalities.region",
+          "kp.alg1.systems.inequalities.test"
+        ]
+      },
+      "A.4(A)": {
+        "description": {
+          "en": "Calculate, using technology, the correlation coefficient between two quantitative variables and interpret this quantity as a measure of the strength of the linear association",
+          "es": "Calcular, con tecnología, el coeficiente de correlación entre dos variables cuantitativas e interpretarlo como medida de la fuerza de la asociación lineal",
+          "pl": "Obliczać (z technologią) współczynnik korelacji dwóch zmiennych ilościowych i interpretować go jako miarę siły związku liniowego"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.scatter.interpret",
+          "kp.alg1.correlation.direction",
+          "kp.alg1.line.best.fit"
+        ]
+      },
+      "A.4(B)": {
+        "description": {
+          "en": "Compare and contrast association and causation in real-world problems",
+          "es": "Comparar y contrastar asociación y causalidad en problemas del mundo real",
+          "pl": "Porównywać i przeciwstawiać związek oraz przyczynowość w problemach rzeczywistych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.correlation.direction"
+        ]
+      },
+      "A.4(C)": {
+        "description": {
+          "en": "Write, with and without technology, linear functions that provide a reasonable fit to data to estimate solutions and make predictions for real-world problems",
+          "es": "Escribir, con y sin tecnología, funciones lineales que se ajusten razonablemente a datos para estimar y predecir en problemas reales",
+          "pl": "Zapisywać (z technologią i bez) funkcje liniowe rozsądnie dopasowane do danych, by szacować i przewidywać w problemach rzeczywistych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.line.best.fit"
+        ]
       }
     },
     "CCSS": {
@@ -603,7 +679,8 @@
           "kp.alg1.inequality.two.step",
           "kp.alg1.absolute.meaning",
           "kp.alg1.absolute.equations",
-          "kp.alg1.absolute.inequalities"
+          "kp.alg1.absolute.inequalities",
+          "kp.alg1.modeling.multi.step"
         ]
       },
       "6.EE.A.2a": {
@@ -846,7 +923,9 @@
         },
         "knowledgePointIds": [
           "kp.alg1.write.equation.slope.yint",
-          "kp.alg1.write.equation.point.slope"
+          "kp.alg1.write.equation.point.slope",
+          "kp.alg1.modeling.write",
+          "kp.alg1.modeling.choose"
         ]
       },
       "G-GPE.B.5": {
@@ -1108,7 +1187,10 @@
         },
         "knowledgePointIds": [
           "kp.alg1.absolute.equations",
-          "kp.alg1.absolute.inequalities"
+          "kp.alg1.absolute.inequalities",
+          "kp.alg1.modeling.write",
+          "kp.alg1.modeling.multi.step",
+          "kp.alg1.modeling.choose"
         ]
       },
       "F-IF.A.2": {
@@ -1153,6 +1235,83 @@
         },
         "knowledgePointIds": [
           "kp.alg1.absolute.meaning"
+        ]
+      },
+      "A-REI.D.12": {
+        "description": {
+          "en": "Graph the solutions to a linear inequality in two variables as a half-plane, and graph the solution set to a system of linear inequalities as the intersection of the corresponding half-planes",
+          "es": "Graficar soluciones de una desigualdad lineal en dos variables como semplano, y el conjunto solución de un sistema como intersección de semplanos",
+          "pl": "Rysować rozwiązania nierówności liniowej dwóch zmiennych jako półpłaszczyznę oraz zbiór rozwiązań układu jako przecięcie półpłaszczyzn"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.inequality.two.var",
+          "kp.alg1.systems.inequalities.region",
+          "kp.alg1.systems.inequalities.test"
+        ]
+      },
+      "A-CED.A.3": {
+        "description": {
+          "en": "Represent constraints by equations or inequalities, and by systems of equations and/or inequalities, and interpret solutions as viable or nonviable options in a modeling context",
+          "es": "Representar restricciones con ecuaciones o desigualdades y con sistemas, e interpretar soluciones como opciones viables o no en un contexto de modelado",
+          "pl": "Przedstawiać ograniczenia równaniami lub nierównościami oraz układami i interpretować rozwiązania jako opcje możliwe lub niemożliwe w modelowaniu"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.inequality.two.var",
+          "kp.alg1.systems.inequalities.region",
+          "kp.alg1.systems.inequalities.test",
+          "kp.alg1.modeling.choose"
+        ]
+      },
+      "S-ID.B.6": {
+        "description": {
+          "en": "Represent data on two quantitative variables on a scatter plot, and describe how the variables are related",
+          "es": "Representar datos de dos variables cuantitativas en un diagrama de dispersión y describir cómo se relacionan",
+          "pl": "Przedstawiać dane dwóch zmiennych ilościowych na wykresie rozrzutu i opisywać ich związek"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.scatter.interpret",
+          "kp.alg1.line.best.fit"
+        ]
+      },
+      "S-ID.B.6a": {
+        "description": {
+          "en": "Fit a function to the data; use functions fitted to data to solve problems in the context of the data",
+          "es": "Ajustar una función a los datos; usar funciones ajustadas para resolver problemas en el contexto de los datos",
+          "pl": "Dopasować funkcję do danych; używać dopasowanych funkcji do rozwiązywania problemów w kontekście danych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.scatter.interpret",
+          "kp.alg1.line.best.fit"
+        ]
+      },
+      "S-ID.C.7": {
+        "description": {
+          "en": "Interpret the slope and the intercept of a linear model in the context of the data",
+          "es": "Interpretar la pendiente y la intersección de un modelo lineal en el contexto de los datos",
+          "pl": "Interpretować nachylenie i przecięcie modelu liniowego w kontekście danych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.line.best.fit"
+        ]
+      },
+      "S-ID.C.8": {
+        "description": {
+          "en": "Compute (using technology) and interpret the correlation coefficient of a linear fit",
+          "es": "Calcular (con tecnología) e interpretar el coeficiente de correlación de un ajuste lineal",
+          "pl": "Obliczać (z technologią) i interpretować współczynnik korelacji dopasowania liniowego"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.correlation.direction"
+        ]
+      },
+      "S-ID.C.9": {
+        "description": {
+          "en": "Distinguish between correlation and causation",
+          "es": "Distinguir entre correlación y causalidad",
+          "pl": "Rozróżniać korelację i przyczynowość"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.correlation.direction"
         ]
       }
     }
@@ -1393,6 +1552,39 @@
       "F-BF.A.1a",
       "F-BF.A.2",
       "F-LE.A.2"
+    ],
+    "alg1-l25": [
+      "A.3(D)",
+      "A.3(H)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-REI.D.12",
+      "A-CED.A.3"
+    ],
+    "alg1-l26": [
+      "A.4(A)",
+      "A.4(B)",
+      "A.4(C)",
+      "A.1(A)",
+      "A.1(D)",
+      "A.1(F)",
+      "S-ID.B.6",
+      "S-ID.B.6a",
+      "S-ID.C.7",
+      "S-ID.C.8",
+      "S-ID.C.9"
+    ],
+    "alg1-l27": [
+      "A.1(A)",
+      "A.1(B)",
+      "A.1(F)",
+      "A.2(C)",
+      "A.5(C)",
+      "A-CED.A.1",
+      "A-CED.A.2",
+      "A-CED.A.3",
+      "A-REI.B.3"
     ]
   }
 }

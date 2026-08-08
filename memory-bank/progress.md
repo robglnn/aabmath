@@ -67,10 +67,18 @@
 - Item counts: 17 / 17 / 17; promptMath 17/17; distinct EN/ES/PL feedback (0 clones); no EN `\text{ or }` in ES/PL choices
 - **Critic wave8 PASS:** `docs/gauntlet/critic-content-wave8.md` — largest gap: shared EN `\text{function?}` / `\text{classify}` / `\text{zeros}`
 
+## Wave 9 content (PASS)
+- Algebra I L25–L27 EN/ES/PL via `scripts/author-algebra1-l25-l27.mjs`
+- +9 KPs (two-var inequality; systems inequalities region/test; scatter/correlation/best-fit; modeling write/multi/choose)
+- Unlock: L24→board_25 → L25→26 → L26→27 → L27→board_28 teaser
+- World boards 25–27 in `WorldSites.ts` (spread (−16,36), (32,−30), (−34,8)); correctIndex hist `[5,4,4,4]`
+- Notes: `docs/gauntlet/wave9-content-notes.md`
+- Item counts: 17 / 17 / 17; promptMath 17/17; 0 feedback clones; 0 EN `\text{or/and/yes/no}` in ES/PL; `npm run build` green
+- **Critic wave9 PASS:** `docs/gauntlet/critic-content-wave9.md` — largest gap: shared EN `\text{cloud}` / `\text{cause?}` / `\text{grupos/clusters}` in `promptMath`
+
 ## Next
-- Wave 8 exit gate
-- GitHub Pages deploy (if needed)
-- Algebra I course gate / human playtest
+- Wave 9 exit gate
+- Algebra I course gate (~30) / human playtest
 - Harden spaced-review UX and IRT with real attempt data
 
 ## Play

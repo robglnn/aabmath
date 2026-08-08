@@ -1,0 +1,1302 @@
+{
+  "id": "alg1-l26",
+  "courseId": "algebra1",
+  "order": 26,
+  "title": {
+    "en": "Scatter Plots, Correlation & Line of Best Fit",
+    "es": "Diagramas de dispersión, correlación y recta de mejor ajuste",
+    "pl": "Wykresy rozrzutu, korelacja i prosta najlepszego dopasowania"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.scatter.interpret",
+    "kp.alg1.correlation.direction",
+    "kp.alg1.line.best.fit"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_26",
+    "unlockOnMastery": [
+      "lesson_board_27"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will interpret scatter plots, describe correlation, and use lines of best fit.",
+        "es": "Interpretarás diagramas de dispersión, describirás correlación y usarás rectas de mejor ajuste.",
+        "pl": "Będziesz interpretować wykresy rozrzutu, opisywać korelację i stosować proste najlepszego dopasowania."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: cloud, r, and fit",
+        "es": "Enseñar: nube, r y ajuste",
+        "pl": "Nauczanie: chmura, r i dopasowanie"
+      },
+      "body": {
+        "en": "Scatter plots show bivariate patterns. Correlation direction/strength (r) is not causation. A line of best fit y ≈ mx + b estimates and predicts within the data range.",
+        "es": "Los diagramas de dispersión muestran patrones bivariados. La dirección/fuerza de r no es causalidad. Una recta de mejor ajuste y ≈ mx + b estima y predice dentro del rango de datos.",
+        "pl": "Wykresy rozrzutu pokazują wzorce dwuzmienne. Kierunek/siła r to nie przyczynowość. Prosta y ≈ mx + b szacuje i przewiduje w zakresie danych."
+      },
+      "bodyMath": [
+        "(x_i,y_i)",
+        "r\\in[-1,1]",
+        "y\\approx mx+b"
+      ],
+      "itemIds": [
+        "alg1-l26-t01",
+        "alg1-l26-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Describe association, interpret r, and use linear fits carefully.",
+        "es": "Describe la asociación, interpreta r y usa ajustes lineales con cuidado.",
+        "pl": "Opisuj związek, interpretuj r i ostrożnie stosuj dopasowania liniowe."
+      },
+      "itemIds": [
+        "alg1-l26-g01",
+        "alg1-l26-g02",
+        "alg1-l26-g03",
+        "alg1-l26-g04",
+        "alg1-l26-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l26-i01",
+        "alg1-l26-i02",
+        "alg1-l26-i03",
+        "alg1-l26-i04",
+        "alg1-l26-i05",
+        "alg1-l26-i06",
+        "alg1-l26-i07",
+        "alg1-l26-i08",
+        "alg1-l26-i09",
+        "alg1-l26-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l26-t01",
+      "knowledgePointIds": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A scatter plot shows many points rising left→right. What pattern is that?",
+        "es": "Un diagrama de dispersión muestra muchos puntos que suben de izq. a der. ¿Qué patrón es?",
+        "pl": "Wykres rozrzutu pokazuje wiele punktów rosnących od lewej do prawej. Jaki to wzorzec?"
+      },
+      "feedbackCorrect": {
+        "en": "As x increases, y tends to increase — positive association.",
+        "es": "Al aumentar x, y tiende a aumentar — asociación positiva.",
+        "pl": "Gdy x rośnie, y zwykle rośnie — związek dodatni."
+      },
+      "feedbackIncorrect": {
+        "en": "Rising cloud = positive; falling cloud = negative.",
+        "es": "Nube ascendente = positiva; descendente = negativa.",
+        "pl": "Chmura rosnąca = dodatni; opadająca = ujemny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        }
+      ],
+      "promptMath": "(x\\uparrow,\\ y\\uparrow)",
+      "choices": {
+        "en": [
+          "$\\text{positive assoc.}$",
+          "$\\text{negative assoc.}$",
+          "$\\text{none}$",
+          "$\\text{circle}$"
+        ],
+        "es": [
+          "$\\text{asoc. positiva}$",
+          "$\\text{asoc. negativa}$",
+          "$\\text{ninguna}$",
+          "$\\text{círculo}$"
+        ],
+        "pl": [
+          "$\\text{związek +}$",
+          "$\\text{związek −}$",
+          "$\\text{brak}$",
+          "$\\text{okrąg}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_flip",
+        "no_pattern"
+      ]
+    },
+    {
+      "id": "alg1-l26-t02",
+      "knowledgePointIds": [
+        "kp.alg1.line.best.fit"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A line of best fit is y = 0.5x + 2. Estimate y when x = 8.",
+        "es": "Una recta de mejor ajuste es y = 0.5x + 2. Estima y cuando x = 8.",
+        "pl": "Prosta najlepszego dopasowania: y = 0.5x + 2. Oszacuj y dla x = 8."
+      },
+      "feedbackCorrect": {
+        "en": "Substitute: 0.5(8)+2 = 4+2 = 6.",
+        "es": "Sustituye: 0.5(8)+2 = 4+2 = 6.",
+        "pl": "Podstaw: 0.5(8)+2 = 4+2 = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x into the linear model: y = mx + b.",
+        "es": "Sustituye x en el modelo lineal: y = mx + b.",
+        "pl": "Podstaw x do modelu liniowego: y = mx + b."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        }
+      ],
+      "promptMath": "y=0.5x+2,\\ x=8",
+      "choices": {
+        "en": [
+          "$4$",
+          "$6$",
+          "$10$",
+          "$2$"
+        ],
+        "es": [
+          "$4$",
+          "$6$",
+          "$10$",
+          "$2$"
+        ],
+        "pl": [
+          "$4$",
+          "$6$",
+          "$10$",
+          "$2$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "used_intercept_only",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l26-g01",
+      "knowledgePointIds": [
+        "kp.alg1.correlation.direction"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Points fall as x increases. Correlation direction is…",
+        "es": "Los puntos bajan al aumentar x. La dirección de la correlación es…",
+        "pl": "Punkty opadają, gdy x rośnie. Kierunek korelacji to…"
+      },
+      "feedbackCorrect": {
+        "en": "Downward trend means negative association / correlation.",
+        "es": "Tendencia descendente significa asociación / correlación negativa.",
+        "pl": "Trend spadkowy oznacza związek / korelację ujemną."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative: larger x paired with smaller y on average.",
+        "es": "Negativa: x mayores emparejados con y menores en promedio.",
+        "pl": "Ujemna: większe x zwykle z mniejszymi y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.4(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.C.8",
+            "S-ID.C.9"
+          ]
+        }
+      ],
+      "promptMath": "(x\\uparrow,\\ y\\downarrow)",
+      "choices": {
+        "en": [
+          "$\\text{positive}$",
+          "$\\text{zero only}$",
+          "$\\text{negative}$",
+          "$\\text{perfect +}$"
+        ],
+        "es": [
+          "$\\text{positiva}$",
+          "$\\text{solo cero}$",
+          "$\\text{negativa}$",
+          "$\\text{perfecta +}$"
+        ],
+        "pl": [
+          "$\\text{dodatnia}$",
+          "$\\text{tylko zero}$",
+          "$\\text{ujemna}$",
+          "$\\text{doskonała +}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sign_flip",
+        "confused_strength"
+      ]
+    },
+    {
+      "id": "alg1-l26-g02",
+      "knowledgePointIds": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "One point sits far from the main cloud. That point is often called…",
+        "es": "Un punto está muy lejos de la nube principal. Ese punto suele llamarse…",
+        "pl": "Jeden punkt leży daleko od głównej chmury. Taki punkt często nazywa się…"
+      },
+      "feedbackCorrect": {
+        "en": "A point far from the pattern is an outlier (may pull a fit line).",
+        "es": "Un punto lejos del patrón es atípico (puede tirar de la recta de ajuste).",
+        "pl": "Punkt daleko od wzorca to wartość odstająca (może ciągnąć prostą)."
+      },
+      "feedbackIncorrect": {
+        "en": "Outliers are unusual points relative to the rest of the scatter.",
+        "es": "Los atípicos son puntos inusuales respecto al resto de la dispersión.",
+        "pl": "Wartości odstające to nietypowe punkty względem reszty rozrzutu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        }
+      ],
+      "promptMath": "(x^*,y^*)\\notin\\text{cloud}",
+      "choices": {
+        "en": [
+          "$\\text{median}$",
+          "$\\text{mode}$",
+          "$\\text{intercept}$",
+          "$\\text{outlier}$"
+        ],
+        "es": [
+          "$\\text{mediana}$",
+          "$\\text{moda}$",
+          "$\\text{intersección}$",
+          "$\\text{atípico}$"
+        ],
+        "pl": [
+          "$\\text{mediana}$",
+          "$\\text{moda}$",
+          "$\\text{przecięcie}$",
+          "$\\text{odstający}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "confused_center",
+        "ignored_outlier"
+      ]
+    },
+    {
+      "id": "alg1-l26-g03",
+      "knowledgePointIds": [
+        "kp.alg1.line.best.fit"
+      ],
+      "difficulty": 0.42,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Fit line: y = −2x + 10. Slope means each +1 in x changes y by…",
+        "es": "Recta de ajuste: y = −2x + 10. La pendiente significa que +1 en x cambia y en…",
+        "pl": "Prosta: y = −2x + 10. Nachylenie oznacza, że +1 w x zmienia y o…"
+      },
+      "feedbackCorrect": {
+        "en": "Slope m = −2: predicted y decreases by 2 per unit increase in x.",
+        "es": "Pendiente m = −2: y predicha baja 2 por cada unidad que sube x.",
+        "pl": "Nachylenie m = −2: przewidywane y spada o 2 na jednostkę wzrostu x."
+      },
+      "feedbackIncorrect": {
+        "en": "In y = mx + b, m is the rate of change of the model.",
+        "es": "En y = mx + b, m es la tasa de cambio del modelo.",
+        "pl": "W y = mx + b m to tempo zmiany modelu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        }
+      ],
+      "promptMath": "y=-2x+10",
+      "choices": {
+        "en": [
+          "$-2$",
+          "$2$",
+          "$10$",
+          "$-10$"
+        ],
+        "es": [
+          "$-2$",
+          "$2$",
+          "$10$",
+          "$-10$"
+        ],
+        "pl": [
+          "$-2$",
+          "$2$",
+          "$10$",
+          "$-10$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": -2,
+      "diagnosticTags": [
+        "used_intercept",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l26-g04",
+      "knowledgePointIds": [
+        "kp.alg1.correlation.direction"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "r ≈ 0.95 for a linear fit suggests the association is…",
+        "es": "r ≈ 0.95 para un ajuste lineal sugiere que la asociación es…",
+        "pl": "r ≈ 0.95 dla dopasowania liniowego sugeruje, że związek jest…"
+      },
+      "feedbackCorrect": {
+        "en": "r near +1 means strong positive linear association.",
+        "es": "r cerca de +1 significa asociación lineal positiva fuerte.",
+        "pl": "r blisko +1 oznacza silny dodatni związek liniowy."
+      },
+      "feedbackIncorrect": {
+        "en": "|r| near 1 → strong; sign of r → direction.",
+        "es": "|r| cerca de 1 → fuerte; signo de r → dirección.",
+        "pl": "|r| blisko 1 → silny; znak r → kierunek."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.4(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.C.8",
+            "S-ID.C.9"
+          ]
+        }
+      ],
+      "promptMath": "r\\approx 0.95",
+      "choices": {
+        "en": [
+          "$\\text{strong −}$",
+          "$\\text{strong +}$",
+          "$\\text{weak +}$",
+          "$\\text{none}$"
+        ],
+        "es": [
+          "$\\text{fuerte −}$",
+          "$\\text{fuerte +}$",
+          "$\\text{débil +}$",
+          "$\\text{ninguna}$"
+        ],
+        "pl": [
+          "$\\text{silna −}$",
+          "$\\text{silna +}$",
+          "$\\text{słaba +}$",
+          "$\\text{brak}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "strength_direction_swap",
+        "near_zero"
+      ]
+    },
+    {
+      "id": "alg1-l26-g05",
+      "knowledgePointIds": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "difficulty": 0.48,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Points form a tight cloud with no clear up/down trend. Best description?",
+        "es": "Los puntos forman una nube densa sin tendencia clara arriba/abajo. ¿Mejor descripción?",
+        "pl": "Punkty tworzą zwartą chmurę bez wyraźnego trendu góra/dół. Najlepszy opis?"
+      },
+      "feedbackCorrect": {
+        "en": "No clear monotone trend suggests little or no linear association.",
+        "es": "Sin tendencia monótona clara sugiere poca o nula asociación lineal.",
+        "pl": "Brak wyraźnego monotonicznego trendu sugeruje słaby lub brak związku liniowego."
+      },
+      "feedbackIncorrect": {
+        "en": "Strong linear patterns lean clearly up or down.",
+        "es": "Los patrones lineales fuertes se inclinan claramente arriba o abajo.",
+        "pl": "Silne wzorce liniowe wyraźnie wznoszą się lub opadają."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        }
+      ],
+      "promptMath": "\\{(x_i,y_i)\\}",
+      "choices": {
+        "en": [
+          "$\\text{strong +}$",
+          "$\\text{strong −}$",
+          "$\\text{little/no linear}$",
+          "$\\text{exact line}$"
+        ],
+        "es": [
+          "$\\text{fuerte +}$",
+          "$\\text{fuerte −}$",
+          "$\\text{poca/nula lineal}$",
+          "$\\text{recta exacta}$"
+        ],
+        "pl": [
+          "$\\text{silna +}$",
+          "$\\text{silna −}$",
+          "$\\text{słaba/brak liniowej}$",
+          "$\\text{dokładna prosta}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "forced_trend",
+        "confused_strength"
+      ]
+    },
+    {
+      "id": "alg1-l26-i01",
+      "knowledgePointIds": [
+        "kp.alg1.line.best.fit"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Model y = 3x − 1. Predict y at x = 5.",
+        "es": "Modelo y = 3x − 1. Predice y en x = 5.",
+        "pl": "Model y = 3x − 1. Przewidź y przy x = 5."
+      },
+      "feedbackCorrect": {
+        "en": "Compute: 3(5)−1 = 15−1 = 14.",
+        "es": "Calcula: 3(5)−1 = 15−1 = 14.",
+        "pl": "Oblicz: 3(5)−1 = 15−1 = 14."
+      },
+      "feedbackIncorrect": {
+        "en": "Evaluate mx + b at the given x.",
+        "es": "Evalúa mx + b en el x dado.",
+        "pl": "Oblicz mx + b dla danego x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        }
+      ],
+      "promptMath": "y=3x-1,\\ x=5",
+      "choices": {
+        "en": [
+          "$15$",
+          "$16$",
+          "$12$",
+          "$14$"
+        ],
+        "es": [
+          "$15$",
+          "$16$",
+          "$12$",
+          "$14$"
+        ],
+        "pl": [
+          "$15$",
+          "$16$",
+          "$12$",
+          "$14$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 14,
+      "diagnosticTags": [
+        "forgot_subtract",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l26-i02",
+      "knowledgePointIds": [
+        "kp.alg1.correlation.direction"
+      ],
+      "difficulty": 0.52,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "True or false: a strong correlation proves that x causes y.",
+        "es": "Verdadero o falso: una correlación fuerte prueba que x causa y.",
+        "pl": "Prawda czy fałsz: silna korelacja dowodzi, że x powoduje y."
+      },
+      "feedbackCorrect": {
+        "en": "Correlation ≠ causation — association can arise without a causal link.",
+        "es": "Correlación ≠ causalidad — puede haber asociación sin vínculo causal.",
+        "pl": "Korelacja ≠ przyczynowość — związek może istnieć bez związku przyczynowego."
+      },
+      "feedbackIncorrect": {
+        "en": "Even |r| near 1 does not by itself prove cause.",
+        "es": "Incluso |r| cerca de 1 no prueba por sí solo la causa.",
+        "pl": "Nawet |r| blisko 1 samo w sobie nie dowodzi przyczyny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.4(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.C.8",
+            "S-ID.C.9"
+          ]
+        }
+      ],
+      "promptMath": "|r|\\approx 1\\Rightarrow\\text{cause?}",
+      "choices": {
+        "en": [
+          "$\\text{false}$",
+          "$\\text{true}$",
+          "$\\text{only if }r>0$",
+          "$\\text{only if }r<0$"
+        ],
+        "es": [
+          "$\\text{falso}$",
+          "$\\text{verdadero}$",
+          "$\\text{solo si }r>0$",
+          "$\\text{solo si }r<0$"
+        ],
+        "pl": [
+          "$\\text{fałsz}$",
+          "$\\text{prawda}$",
+          "$\\text{tylko gdy }r>0$",
+          "$\\text{tylko gdy }r<0$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "causation_claim",
+        "direction_only"
+      ]
+    },
+    {
+      "id": "alg1-l26-i03",
+      "knowledgePointIds": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Hours studied (x) vs test score (y) show a rising cloud. Expect…",
+        "es": "Horas de estudio (x) vs puntuación (y) muestran nube ascendente. Espera…",
+        "pl": "Godziny nauki (x) vs wynik (y) dają rosnącą chmurę. Oczekuj…"
+      },
+      "feedbackCorrect": {
+        "en": "Rising pattern suggests positive association between hours and score.",
+        "es": "El patrón ascendente sugiere asociación positiva entre horas y puntuación.",
+        "pl": "Rosnący wzorzec sugeruje dodatni związek godzin z wynikiem."
+      },
+      "feedbackIncorrect": {
+        "en": "Upward trend ↔ positive; downward ↔ negative.",
+        "es": "Tendencia alcista ↔ positiva; bajista ↔ negativa.",
+        "pl": "Trend w górę ↔ dodatni; w dół ↔ ujemny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        }
+      ],
+      "promptMath": "x\\uparrow,\\ y\\uparrow",
+      "choices": {
+        "en": [
+          "$\\text{negative assoc.}$",
+          "$\\text{positive assoc.}$",
+          "$\\text{r=0 exact}$",
+          "$\\text{no data}$"
+        ],
+        "es": [
+          "$\\text{asoc. negativa}$",
+          "$\\text{asoc. positiva}$",
+          "$\\text{r=0 exacto}$",
+          "$\\text{sin datos}$"
+        ],
+        "pl": [
+          "$\\text{związek −}$",
+          "$\\text{związek +}$",
+          "$\\text{r=0 dokładnie}$",
+          "$\\text{brak danych}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_flip",
+        "causation_claim"
+      ]
+    },
+    {
+      "id": "alg1-l26-i04",
+      "knowledgePointIds": [
+        "kp.alg1.line.best.fit"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Fit: y = 4x + 1. What is the y-intercept of the model?",
+        "es": "Ajuste: y = 4x + 1. ¿Cuál es la intersección con y del modelo?",
+        "pl": "Dopasowanie: y = 4x + 1. Jakie jest przecięcie z osią y modelu?"
+      },
+      "feedbackCorrect": {
+        "en": "In y = mx + b, b = 1 is the model’s y-intercept.",
+        "es": "En y = mx + b, b = 1 es la intersección con y del modelo.",
+        "pl": "W y = mx + b b = 1 to przecięcie modelu z osią y."
+      },
+      "feedbackIncorrect": {
+        "en": "b is the constant term; m is the slope.",
+        "es": "b es el término constante; m es la pendiente.",
+        "pl": "b to wyraz wolny; m to nachylenie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        }
+      ],
+      "promptMath": "y=4x+1",
+      "choices": {
+        "en": [
+          "$4$",
+          "$0$",
+          "$1$",
+          "$5$"
+        ],
+        "es": [
+          "$4$",
+          "$0$",
+          "$1$",
+          "$5$"
+        ],
+        "pl": [
+          "$4$",
+          "$0$",
+          "$1$",
+          "$5$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "swapped_m_b",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l26-i05",
+      "knowledgePointIds": [
+        "kp.alg1.correlation.direction"
+      ],
+      "difficulty": 0.58,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which r indicates the strongest linear association?",
+        "es": "¿Qué r indica la asociación lineal más fuerte?",
+        "pl": "Które r wskazuje najsilniejszy związek liniowy?"
+      },
+      "feedbackCorrect": {
+        "en": "Strength is |r|; |−0.9| = 0.9 is largest.",
+        "es": "La fuerza es |r|; |−0.9| = 0.9 es la mayor.",
+        "pl": "Siła to |r|; |−0.9| = 0.9 jest największe."
+      },
+      "feedbackIncorrect": {
+        "en": "Compare absolute values of r, not the signed values alone.",
+        "es": "Compara valores absolutos de r, no solo los signos.",
+        "pl": "Porównuj wartości bezwzględne r, nie same znaki."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.4(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.C.8",
+            "S-ID.C.9"
+          ]
+        }
+      ],
+      "promptMath": "r\\in\\{-0.2,\\ 0.4,\\ -0.9,\\ 0.1\\}",
+      "choices": {
+        "en": [
+          "$0.4$",
+          "$-0.2$",
+          "$0.1$",
+          "$-0.9$"
+        ],
+        "es": [
+          "$0.4$",
+          "$-0.2$",
+          "$0.1$",
+          "$-0.9$"
+        ],
+        "pl": [
+          "$0.4$",
+          "$-0.2$",
+          "$0.1$",
+          "$-0.9$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": -0.9,
+      "diagnosticTags": [
+        "ignored_abs",
+        "picked_positive"
+      ]
+    },
+    {
+      "id": "alg1-l26-i06",
+      "knowledgePointIds": [
+        "kp.alg1.line.best.fit"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Data x from 2 to 10; fit y = x + 3. Predicting at x = 100 is…",
+        "es": "Datos x de 2 a 10; ajuste y = x + 3. Predecir en x = 100 es…",
+        "pl": "Dane x od 2 do 10; dopasowanie y = x + 3. Predykcja przy x = 100 to…"
+      },
+      "feedbackCorrect": {
+        "en": "x=100 is far outside the data — extrapolation is unreliable.",
+        "es": "x=100 está muy fuera de los datos — la extrapolación es poco fiable.",
+        "pl": "x=100 daleko poza danymi — ekstrapolacja jest zawodna."
+      },
+      "feedbackIncorrect": {
+        "en": "Interpolation stays inside the observed x-range; extrapolation goes beyond.",
+        "es": "La interpolación queda dentro del rango de x; la extrapolación va más allá.",
+        "pl": "Interpolacja zostaje w zakresie x; ekstrapolacja wychodzi poza."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        }
+      ],
+      "promptMath": "x\\in[2,10];\\ \\hat y(100)",
+      "choices": {
+        "en": [
+          "$\\text{risky extrapol.}$",
+          "$\\text{safe interp.}$",
+          "$\\text{exact}$",
+          "$\\text{impossible}$"
+        ],
+        "es": [
+          "$\\text{extrap. riesgosa}$",
+          "$\\text{interp. segura}$",
+          "$\\text{exacta}$",
+          "$\\text{imposible}$"
+        ],
+        "pl": [
+          "$\\text{ryzyk. ekstrapol.}$",
+          "$\\text{bezpiecz. interp.}$",
+          "$\\text{dokładna}$",
+          "$\\text{niemożliwa}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "extrapolation_ok",
+        "thought_impossible"
+      ]
+    },
+    {
+      "id": "alg1-l26-i07",
+      "knowledgePointIds": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "difficulty": 0.62,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Two clusters appear in a scatter plot. A single straight fit may…",
+        "es": "Aparecen dos grupos en un diagrama de dispersión. Un solo ajuste recto puede…",
+        "pl": "Na wykresie rozrzutu widać dwa skupiska. Jedno dopasowanie prostą może…"
+      },
+      "feedbackCorrect": {
+        "en": "One line can poorly represent two separate groups — inspect structure first.",
+        "es": "Una recta puede representar mal dos grupos separados — inspecciona la estructura primero.",
+        "pl": "Jedna prosta może źle reprezentować dwie grupy — najpierw zbadaj strukturę."
+      },
+      "feedbackIncorrect": {
+        "en": "Look for subgroups before trusting a single linear summary.",
+        "es": "Busca subgrupos antes de confiar en un resumen lineal único.",
+        "pl": "Szukaj podgrup zanim zaufasz jednemu liniowemu podsumowaniu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        }
+      ],
+      "promptMath": "2\\ \\text{grupos/clusters}",
+      "choices": {
+        "en": [
+          "$\\text{always perfect}$",
+          "$\\text{mislead}$",
+          "$\\text{force r=0}$",
+          "$\\text{remove axes}$"
+        ],
+        "es": [
+          "$\\text{siempre perfecto}$",
+          "$\\text{engañar}$",
+          "$\\text{forzar r=0}$",
+          "$\\text{quitar ejes}$"
+        ],
+        "pl": [
+          "$\\text{zawsze idealne}$",
+          "$\\text{mylnie}$",
+          "$\\text{wymuszać r=0}$",
+          "$\\text{usuwać osie}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "ignored_structure",
+        "forced_line"
+      ]
+    },
+    {
+      "id": "alg1-l26-i08",
+      "knowledgePointIds": [
+        "kp.alg1.correlation.direction"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "r = −0.3 is best described as…",
+        "es": "r = −0.3 se describe mejor como…",
+        "pl": "r = −0.3 najlepiej opisać jako…"
+      },
+      "feedbackCorrect": {
+        "en": "|r|=0.3 is modest; the sign is negative → weak negative.",
+        "es": "|r|=0.3 es modesto; el signo es negativo → débil negativa.",
+        "pl": "|r|=0.3 jest umiarkowane; znak ujemny → słaba ujemna."
+      },
+      "feedbackIncorrect": {
+        "en": "Near ±1 is strong; near 0 is weak.",
+        "es": "Cerca de ±1 es fuerte; cerca de 0 es débil.",
+        "pl": "Blisko ±1 to silna; blisko 0 to słaba."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.4(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.C.8",
+            "S-ID.C.9"
+          ]
+        }
+      ],
+      "promptMath": "r=-0.3",
+      "choices": {
+        "en": [
+          "$\\text{strong −}$",
+          "$\\text{strong +}$",
+          "$\\text{weak −}$",
+          "$\\text{perfect}$"
+        ],
+        "es": [
+          "$\\text{fuerte −}$",
+          "$\\text{fuerte +}$",
+          "$\\text{débil −}$",
+          "$\\text{perfecta}$"
+        ],
+        "pl": [
+          "$\\text{silna −}$",
+          "$\\text{silna +}$",
+          "$\\text{słaba −}$",
+          "$\\text{doskonała}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "strength_overstated",
+        "sign_flip"
+      ]
+    },
+    {
+      "id": "alg1-l26-i09",
+      "knowledgePointIds": [
+        "kp.alg1.line.best.fit"
+      ],
+      "difficulty": 0.68,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Fit y = 2x + 5 models cost. Slope 2 means…",
+        "es": "El ajuste y = 2x + 5 modela costo. La pendiente 2 significa…",
+        "pl": "Dopasowanie y = 2x + 5 modeluje koszt. Nachylenie 2 oznacza…"
+      },
+      "feedbackCorrect": {
+        "en": "m=2: predicted cost rises by 2 for each additional unit of x.",
+        "es": "m=2: el costo predicho sube 2 por cada unidad adicional de x.",
+        "pl": "m=2: przewidywany koszt rośnie o 2 na każdą dodatkową jednostkę x."
+      },
+      "feedbackIncorrect": {
+        "en": "Slope is the change in y per unit change in x; intercept is the constant term.",
+        "es": "La pendiente es el cambio de y por unidad de x; la intersección es el término constante.",
+        "pl": "Nachylenie to zmiana y na jednostkę x; wyraz wolny to stała."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(C)",
+            "A.4(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6a",
+            "S-ID.C.7"
+          ]
+        }
+      ],
+      "promptMath": "y=2x+5",
+      "choices": {
+        "en": [
+          "$\\text{fixed cost 2}$",
+          "$\\text{+5 per unit x}$",
+          "$\\text{x=2}$",
+          "$\\text{+2 per unit x}$"
+        ],
+        "es": [
+          "$\\text{costo fijo 2}$",
+          "$\\text{+5 por unidad x}$",
+          "$\\text{x=2}$",
+          "$\\text{+2 por unidad x}$"
+        ],
+        "pl": [
+          "$\\text{koszt stały 2}$",
+          "$\\text{+5 na jedn. x}$",
+          "$\\text{x=2}$",
+          "$\\text{+2 na jedn. x}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "swapped_m_b",
+        "units_ignored"
+      ]
+    },
+    {
+      "id": "alg1-l26-i10",
+      "knowledgePointIds": [
+        "kp.alg1.scatter.interpret"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.75,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If every point lies exactly on a falling line, correlation is…",
+        "es": "Si cada punto cae exactamente en una recta descendente, la correlación es…",
+        "pl": "Jeśli każdy punkt leży dokładnie na opadającej prostej, korelacja jest…"
+      },
+      "feedbackCorrect": {
+        "en": "Perfect negative linear fit means r = −1.",
+        "es": "Ajuste lineal negativo perfecto significa r = −1.",
+        "pl": "Doskonałe ujemne dopasowanie liniowe oznacza r = −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Perfect positive → r=1; perfect negative → r=−1; none → near 0.",
+        "es": "Positiva perfecta → r=1; negativa perfecta → r=−1; nula → cerca de 0.",
+        "pl": "Doskonała dodatnia → r=1; doskonała ujemna → r=−1; brak → blisko 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.4(A)",
+            "A.1(D)",
+            "A.1(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "S-ID.B.6",
+            "S-ID.B.6a"
+          ]
+        }
+      ],
+      "promptMath": "r\\to ?",
+      "choices": {
+        "en": [
+          "$-1$",
+          "$1$",
+          "$0$",
+          "$0.5$"
+        ],
+        "es": [
+          "$-1$",
+          "$1$",
+          "$0$",
+          "$0.5$"
+        ],
+        "pl": [
+          "$-1$",
+          "$1$",
+          "$0$",
+          "$0.5$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": -1,
+      "diagnosticTags": [
+        "sign_flip",
+        "thought_zero"
+      ]
+    }
+  ]
+}
