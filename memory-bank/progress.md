@@ -22,8 +22,18 @@
 - KaTeX remediation: `docs/gauntlet/remediation-katex-wave3.md`
 - **Critic wave3b PASS:** `docs/gauntlet/critic-content-wave3b.md` — L8 `promptMath` 17/17; MC choice KaTeX; unlock/shuffle/build OK
 
+## Wave 4 content (PASS)
+- Algebra I L10–L12 EN/ES/PL via `scripts/author-algebra1-l10-l12.mjs`
+- +9 KPs (elimination, exponents, polynomials); `lessonCoverage` l10–l12
+- Unlock: L9→board_10 → L10→11 → L11→12 → L12→board_13 teaser
+- World boards 10–12 in `WorldSites.ts` (spread); correctIndex hist `[5,4,4,4]`
+- Notes: `docs/gauntlet/wave4-content-notes.md`
+- Item counts: 17 / 17 / 17; promptMath 17/17; zero raw `\frac` in choices; `npm run build` green
+- **Critic wave4 PASS:** `docs/gauntlet/critic-content-wave4.md`
+
 ## Next
 - Wave 3 exit gate
+- Wave 4 exit gate
 - GitHub Pages deploy (if needed)
 - Algebra I course gate / human playtest
 - Harden spaced-review UX and IRT with real attempt data

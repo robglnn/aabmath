@@ -9,42 +9,23 @@
     body { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
     h1 { color: #7dffb3; }
     .bar { background: #1a2438; border-radius: 6px; overflow: hidden; height: 12px; margin: 0.5rem 0 1.5rem; }
-    .bar > span { display: block; height: 100%; background: #3dff9a; width: 75%; }
+    .bar > span { display: block; height: 100%; background: #3dff9a; width: 78%; }
     section { border: 1px solid #2a3a55; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
-    .pass { color: #3dff9a; } .fail { color: #ff6b6b; } .wip { color: #ffd166; }
+    .pass { color: #3dff9a; } .wip { color: #ffd166; }
     a { color: #8ecbff; }
   </style>
 </head>
 <body>
   <h1>Axiom Reach — Gauntlet Workbench</h1>
-  <p>Wave 4 content <span class="pass">DONE</span> (L10–12). Play: <a href="https://robglnn.github.io/aabmath/">robglnn.github.io/aabmath</a></p>
+  <p>L1–12 live. Wave 5 building. <a href="https://robglnn.github.io/aabmath/">Play</a></p>
   <div class="bar"><span></span></div>
-  <section>
-    <h2>Status</h2>
-    <ul>
-      <li class="pass">[PASS] Wave 1 exit gate</li>
-      <li class="pass">[PASS] Wave 2 — L4–6 + boards + SR + MC shuffle</li>
-      <li class="pass">[DONE] Wave 3 content authored — Alg I L7–9 + boards 7–9</li>
-      <li class="fail">[FAIL] Wave 3 content critic — KaTeX (see critic-content-wave3.md)</li>
-      <li class="pass">[DONE] Wave 4 content — Alg I L10–12 + boards 10–12</li>
-      <li class="wip">[ ] Wave 3 exit gate</li>
-      <li class="wip">[ ] Wave 4 content critic</li>
-      <li class="wip">[ ] Algebra I course gate</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Largest gap</h2>
-    <p class="wip">Wave 4 authored (elimination / exponents / polynomials). Wave 3 KaTeX critic still open; Wave 4 ships 17/17 <code>promptMath</code> and zero raw <code>\frac</code> in MC choices.</p>
-  </section>
-  <section>
-    <h2>Log</h2>
-    <pre>[critic] content wave2b: PASS — MC shuffle closes always-A
-[critic] world-sr wave2b: PASS — SR due in-session
-[orchestrator] exit-gate-wave2: PASS
-[builder] Wave 3 content: L7–9 EN/ES/PL + 9 KPs + boards 7–9
-[critic] content wave3: FAIL — KaTeX (L8 promptMath 2/17; raw \frac in MC choices)
-[builder] Wave 4 content: L10–12 EN/ES/PL + 9 KPs + boards 10–12
-[builder] unlock L9→10→11→12→13 teaser; notes wave4-content-notes.md; build green</pre>
-  </section>
+  <ul>
+    <li class="pass">[PASS] Waves 1–4 (L1–12)</li>
+    <li class="wip">[WIP] Wave 5 — L13–15 factoring</li>
+    <li class="wip">[ ] Algebra I course gate</li>
+  </ul>
+  <pre>[critic] content wave4: PASS
+[orchestrator] exit-gate-wave4: PASS
+[builder] Wave 5 L13–15: RUNNING</pre>
 </body>
 </html>
