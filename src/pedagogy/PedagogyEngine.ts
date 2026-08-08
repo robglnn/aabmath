@@ -1,4 +1,4 @@
-import type { KnowledgePoint, LessonPack, PlayerProgress, StudentAttempt } from '../content/types'
+import type { KnowledgePoint, LessonPack, PlayerProgress, SpacedReviewEntry, StudentAttempt } from '../content/types'
 import { getIndependentItemIds } from '../content/loadContent'
 
 const DEFAULT_MASTERY_THRESHOLD = 0.8
@@ -95,7 +95,7 @@ export class PedagogyEngine {
       m.status = 'mastered'
       m.accuracy = Math.max(m.accuracy, scored.accuracy)
       this.progress.mastery[kpId] = m
-      this.enqueueReview(kpId, 1)
+      this.enqueueReviewOnMastery(kpId)
     }
     return scored
   }
@@ -104,16 +104,42 @@ export class PedagogyEngine {
     return this.progress.completedLessons.includes(lesson.id) ? lesson.worldHook.unlockOnMastery : []
   }
 
+  /** Base lesson board plus unlockOnMastery targets from completed lessons. */
+  unlockedSiteIds(lessons: LessonPack[]): Set<string> {
+    const unlocked = new Set<string>(['lesson_board_1'])
+    for (const lesson of lessons) {
+      if (!this.progress.completedLessons.includes(lesson.id)) continue
+      for (const siteId of lesson.worldHook.unlockOnMastery) {
+        unlocked.add(siteId)
+      }
+    }
+    return unlocked
+  }
+
   prerequisitesMet(knowledgePointId: string): boolean {
     const kp = this.knowledgePoints.get(knowledgePointId)
     if (!kp) return false
     return kp.prerequisites.every((pre) => this.progress.mastery[pre]?.status === 'mastered')
   }
 
-  enqueueReview(knowledgePointId: string, days = 1): void {
+  /**
+   * First enqueue after lesson mastery — due in-session so closing the board or
+   * progress pedestal can open ReviewRunner in the same play session.
+   */
+  enqueueReviewOnMastery(knowledgePointId: string, now = Date.now()): void {
     this.progress.spacedQueue.push({
       knowledgePointId,
-      dueAt: Date.now() + days * 86400000,
+      dueAt: now,
+      ease: 2.3,
+      intervalDays: 0,
+    })
+  }
+
+  /** Manual / dev enqueue with a day-based interval (not used on first mastery). */
+  enqueueReview(knowledgePointId: string, days = 1, now = Date.now()): void {
+    this.progress.spacedQueue.push({
+      knowledgePointId,
+      dueAt: now + days * 86400000,
       ease: 2.3,
       intervalDays: days,
     })
@@ -121,6 +147,29 @@ export class PedagogyEngine {
 
   dueReviews(now = Date.now()): string[] {
     return this.progress.spacedQueue.filter((e) => e.dueAt <= now).map((e) => e.knowledgePointId)
+  }
+
+  /** Reschedule a due review entry after a retrieval attempt. */
+  rescheduleReview(knowledgePointId: string, correct: boolean, now = Date.now()): void {
+    const entry = this.findDueReviewEntry(knowledgePointId, now)
+    if (!entry) return
+
+    if (correct) {
+      entry.intervalDays = Math.max(1, Math.round(entry.intervalDays * entry.ease))
+      entry.ease = Math.min(entry.ease + 0.1, 2.8)
+    } else {
+      entry.intervalDays = 1
+      entry.ease = Math.max(1.3, entry.ease - 0.2)
+      const mastery = this.progress.mastery[knowledgePointId]
+      if (mastery) mastery.status = 'due_review'
+    }
+    entry.dueAt = now + entry.intervalDays * 86400000
+  }
+
+  private findDueReviewEntry(knowledgePointId: string, now: number): SpacedReviewEntry | undefined {
+    return this.progress.spacedQueue.find(
+      (entry) => entry.knowledgePointId === knowledgePointId && entry.dueAt <= now,
+    )
   }
 }
 

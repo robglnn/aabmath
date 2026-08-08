@@ -1,0 +1,1292 @@
+{
+  "id": "alg1-l05",
+  "courseId": "algebra1",
+  "order": 5,
+  "title": {
+    "en": "Linear Inequalities — One-Step, Two-Step & the Number Line",
+    "es": "Desigualdades lineales — un paso, dos pasos y la recta numérica",
+    "pl": "Nierówności liniowe — jeden krok, dwa kroki i oś liczbowa"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.inequality.meaning",
+    "kp.alg1.inequality.one.step",
+    "kp.alg1.inequality.two.step"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_5",
+    "unlockOnMastery": [
+      "lesson_board_6"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will interpret inequality symbols on a number line and solve one- and two-step linear inequalities, flipping when multiplying or dividing by a negative.",
+        "es": "Interpretarás símbolos de desigualdad en la recta y resolverás desigualdades lineales de uno y dos pasos, invirtiendo al multiplicar o dividir por un negativo.",
+        "pl": "Będziesz interpretować symbole nierówności na osi i rozwiązywać jedno- oraz dwukrokowe nierówności liniowe, odwracając przy mnożeniu lub dzieleniu przez ujemną."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: solution sets and flips",
+        "es": "Enseñar: conjuntos solución e inversiones",
+        "pl": "Nauczanie: zbiory rozwiązań i odwracanie"
+      },
+      "body": {
+        "en": "An inequality describes a set of numbers. Open circles exclude the endpoint (<, >); closed include it (≤, ≥). Solve like equations, but flip the inequality when you multiply or divide both sides by a negative number.",
+        "es": "Una desigualdad describe un conjunto de números. Círculos abiertos excluyen el extremo (<, >); cerrados lo incluyen (≤, ≥). Resuelve como ecuaciones, pero invierte al multiplicar o dividir por un negativo.",
+        "pl": "Nierówność opisuje zbiór liczb. Otwarte kółka wykluczają koniec (<, >); zamknięte obejmują (≤, ≥). Rozwiązuj jak równania, ale odwróć nierówność przy mnożeniu lub dzieleniu przez ujemną."
+      },
+      "bodyMath": [
+        "x > 3",
+        "x + 4 \\le 10",
+        "-2x \\ge 8"
+      ],
+      "itemIds": [
+        "alg1-l05-t01",
+        "alg1-l05-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Match number-line graphs, solve one- and two-step inequalities, and practice the flip rule.",
+        "es": "Relaciona gráficas en la recta, resuelve desigualdades de uno y dos pasos y practica la regla de inversión.",
+        "pl": "Dopasuj wykresy na osi, rozwiązuj nierówności jedno- i dwukrokowe oraz ćwicz regułę odwracania."
+      },
+      "itemIds": [
+        "alg1-l05-g01",
+        "alg1-l05-g02",
+        "alg1-l05-g03",
+        "alg1-l05-g04",
+        "alg1-l05-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l05-i01",
+        "alg1-l05-i02",
+        "alg1-l05-i03",
+        "alg1-l05-i04",
+        "alg1-l05-i05",
+        "alg1-l05-i06",
+        "alg1-l05-i07",
+        "alg1-l05-i08",
+        "alg1-l05-i09",
+        "alg1-l05-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l05-t01",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.meaning"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What does x > 3 mean on a number line?",
+        "es": "¿Qué significa x > 3 en la recta numérica?",
+        "pl": "Co oznacza x > 3 na osi liczbowej?"
+      },
+      "feedbackCorrect": {
+        "en": "Strict > excludes 3 (open circle) and includes all greater values (ray right).",
+        "es": "El > estricto excluye 3 (círculo abierto) e incluye valores mayores (rayo a la derecha).",
+        "pl": "Ostre > wyklucza 3 (otwarte kółko) i obejmuje większe wartości (półprosta w prawo)."
+      },
+      "feedbackIncorrect": {
+        "en": "Use an open circle for > or <, and shade toward larger numbers for >.",
+        "es": "Usa círculo abierto para > o <, y sombrea hacia números mayores para >.",
+        "pl": "Użyj otwartego kółka dla > lub <, i zacieniaj w stronę większych liczb dla >."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.EE.B.8"
+          ]
+        }
+      ],
+      "promptMath": "x > 3",
+      "choices": {
+        "en": [
+          "Open circle at 3, ray to the right",
+          "Closed circle at 3, ray to the right",
+          "Open circle at 3, ray to the left",
+          "Only the point 3"
+        ],
+        "es": [
+          "Círculo abierto en 3, rayo a la derecha",
+          "Círculo cerrado en 3, rayo a la derecha",
+          "Círculo abierto en 3, rayo a la izquierda",
+          "Solo el punto 3"
+        ],
+        "pl": [
+          "Otwarte kółko w 3, półprosta w prawo",
+          "Zamknięte kółko w 3, półprosta w prawo",
+          "Otwarte kółko w 3, półprosta w lewo",
+          "Tylko punkt 3"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "closed_for_strict",
+        "wrong_ray_direction"
+      ]
+    },
+    {
+      "id": "alg1-l05-t02",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.one.step"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.05,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x + 4 ≤ 10",
+        "es": "Resuelve: x + 4 ≤ 10",
+        "pl": "Rozwiąż: x + 4 ≤ 10"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 4 from both sides: x ≤ 6. Closed ray left of 6 (includes 6).",
+        "es": "Resta 4 a ambos lados: x ≤ 6. Rayo cerrado a la izquierda de 6 (incluye 6).",
+        "pl": "Odejmij 4 od obu stron: x ≤ 6. Domknięta półprosta w lewo od 6 (z 6)."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo +4 by subtracting 4; keep ≤ (adding/subtracting does not flip).",
+        "es": "Deshaz +4 restando 4; conserva ≤ (sumar/restar no invierte).",
+        "pl": "Cofnij +4 odejmując 4; zachowaj ≤ (dodawanie/odejmowanie nie odwraca)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "x + 4 \\le 10",
+      "choices": {
+        "en": [
+          "x ≥ 6",
+          "x ≤ 6",
+          "x ≤ 14",
+          "x = 6"
+        ],
+        "es": [
+          "x ≥ 6",
+          "x ≤ 6",
+          "x ≤ 14",
+          "x = 6"
+        ],
+        "pl": [
+          "x ≥ 6",
+          "x ≤ 6",
+          "x ≤ 14",
+          "x = 6"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "x\\le 6",
+      "diagnosticTags": [
+        "flip_on_add",
+        "replace_with_equals"
+      ]
+    },
+    {
+      "id": "alg1-l05-g01",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.meaning"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.1,
+        "b": -0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which graph matches x ≤ −2?",
+        "es": "¿Qué gráfica corresponde a x ≤ −2?",
+        "pl": "Który wykres odpowiada x ≤ −2?"
+      },
+      "feedbackCorrect": {
+        "en": "≤ includes the endpoint (closed) and goes toward smaller numbers (left).",
+        "es": "≤ incluye el extremo (cerrado) y va hacia números menores (izquierda).",
+        "pl": "≤ obejmuje koniec (domknięte) i idzie ku mniejszym liczbom (w lewo)."
+      },
+      "feedbackIncorrect": {
+        "en": "≤ uses a closed circle; shade left for “less than or equal.”",
+        "es": "≤ usa círculo cerrado; sombrea a la izquierda para “menor o igual.”",
+        "pl": "≤ używa zamkniętego kółka; zacieniaj w lewo dla „mniejsze lub równe.”"
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.EE.B.8"
+          ]
+        }
+      ],
+      "promptMath": "x \\le -2",
+      "choices": {
+        "en": [
+          "Open circle at −2, ray left",
+          "Closed circle at −2, ray right",
+          "Closed circle at −2, ray left",
+          "Open circle at 2, ray left"
+        ],
+        "es": [
+          "Círculo abierto en −2, rayo izquierda",
+          "Círculo cerrado en −2, rayo derecha",
+          "Círculo cerrado en −2, rayo izquierda",
+          "Círculo abierto en 2, rayo izquierda"
+        ],
+        "pl": [
+          "Otwarte kółko w −2, półprosta w lewo",
+          "Zamknięte kółko w −2, półprosta w prawo",
+          "Zamknięte kółko w −2, półprosta w lewo",
+          "Otwarte kółko w 2, półprosta w lewo"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "open_for_inclusive",
+        "wrong_ray_direction"
+      ]
+    },
+    {
+      "id": "alg1-l05-g02",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.one.step"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 3x > 12",
+        "es": "Resuelve: 3x > 12",
+        "pl": "Rozwiąż: 3x > 12"
+      },
+      "feedbackCorrect": {
+        "en": "Divide both sides by 3 (positive): x > 4. Inequality direction stays.",
+        "es": "Divide ambos lados entre 3 (positivo): x > 4. La dirección se conserva.",
+        "pl": "Podziel obie strony przez 3 (dodatnie): x > 4. Kierunek nierówności zostaje."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide by positive 3 → x > 4. Do not flip; do not change > to ≥.",
+        "es": "Divide entre 3 positivo → x > 4. No inviertas; no cambies > a ≥.",
+        "pl": "Podziel przez dodatnie 3 → x > 4. Nie odwracaj; nie zmieniaj > na ≥."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "3x > 12",
+      "choices": {
+        "en": [
+          "x < 4",
+          "x > 36",
+          "x ≥ 4",
+          "x > 4"
+        ],
+        "es": [
+          "x < 4",
+          "x > 36",
+          "x ≥ 4",
+          "x > 4"
+        ],
+        "pl": [
+          "x < 4",
+          "x > 36",
+          "x ≥ 4",
+          "x > 4"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "x>4",
+      "diagnosticTags": [
+        "flip_on_positive_divide",
+        "strict_to_inclusive"
+      ]
+    },
+    {
+      "id": "alg1-l05-g03",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2x + 3 < 11",
+        "es": "Resuelve: 2x + 3 < 11",
+        "pl": "Rozwiąż: 2x + 3 < 11"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 3: 2x < 8 → divide by 2: x < 4.",
+        "es": "Resta 3: 2x < 8 → divide entre 2: x < 4.",
+        "pl": "Odejmij 3: 2x < 8 → podziel przez 2: x < 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo +3 first, then divide by 2. Keep < → x < 4.",
+        "es": "Deshaz +3 primero, luego divide entre 2. Conserva < → x < 4.",
+        "pl": "Najpierw cofnij +3, potem podziel przez 2. Zachowaj < → x < 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "2x + 3 < 11",
+      "choices": {
+        "en": [
+          "x < 4",
+          "x > 4",
+          "x < 7",
+          "x ≤ 4"
+        ],
+        "es": [
+          "x < 4",
+          "x > 4",
+          "x < 7",
+          "x ≤ 4"
+        ],
+        "pl": [
+          "x < 4",
+          "x > 4",
+          "x < 7",
+          "x ≤ 4"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x<4",
+      "diagnosticTags": [
+        "wrong_order",
+        "strict_to_inclusive"
+      ]
+    },
+    {
+      "id": "alg1-l05-g04",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: −2x ≥ 8",
+        "es": "Resuelve: −2x ≥ 8",
+        "pl": "Rozwiąż: −2x ≥ 8"
+      },
+      "feedbackCorrect": {
+        "en": "Divide by −2 and flip: x ≤ −4.",
+        "es": "Divide entre −2 e invierte: x ≤ −4.",
+        "pl": "Podziel przez −2 i odwróć: x ≤ −4."
+      },
+      "feedbackIncorrect": {
+        "en": "When dividing by a negative, flip the inequality: x ≤ −4.",
+        "es": "Al dividir por un negativo, invierte la desigualdad: x ≤ −4.",
+        "pl": "Przy dzieleniu przez ujemną odwróć nierówność: x ≤ −4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "-2x \\ge 8",
+      "choices": {
+        "en": [
+          "x ≥ −4",
+          "x ≤ −4",
+          "x ≤ 4",
+          "x ≥ 4"
+        ],
+        "es": [
+          "x ≥ −4",
+          "x ≤ −4",
+          "x ≤ 4",
+          "x ≥ 4"
+        ],
+        "pl": [
+          "x ≥ −4",
+          "x ≤ −4",
+          "x ≤ 4",
+          "x ≥ 4"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "x\\le -4",
+      "diagnosticTags": [
+        "forgot_flip",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l05-g05",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.meaning"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.1,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which value is in the solution set of x ≥ 5?",
+        "es": "¿Qué valor está en el conjunto solución de x ≥ 5?",
+        "pl": "Która wartość należy do zbioru rozwiązań x ≥ 5?"
+      },
+      "feedbackCorrect": {
+        "en": "≥ includes the boundary; 5 is in the set.",
+        "es": "≥ incluye el borde; 5 está en el conjunto.",
+        "pl": "≥ obejmuje granicę; 5 należy do zbioru."
+      },
+      "feedbackIncorrect": {
+        "en": "x ≥ 5 means all numbers greater than or equal to 5 — including 5.",
+        "es": "x ≥ 5 significa todos los números mayores o iguales a 5 — incluido 5.",
+        "pl": "x ≥ 5 oznacza wszystkie liczby ≥ 5 — w tym 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.EE.B.8"
+          ]
+        }
+      ],
+      "promptMath": "x \\ge 5",
+      "choices": {
+        "en": [
+          "4",
+          "0",
+          "5",
+          "−5"
+        ],
+        "es": [
+          "4",
+          "0",
+          "5",
+          "−5"
+        ],
+        "pl": [
+          "4",
+          "0",
+          "5",
+          "−5"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "exclude_boundary"
+      ]
+    },
+    {
+      "id": "alg1-l05-i01",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.one.step"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x − 5 > 2",
+        "es": "Resuelve: x − 5 > 2",
+        "pl": "Rozwiąż: x − 5 > 2"
+      },
+      "feedbackCorrect": {
+        "en": "Add 5: x > 7.",
+        "es": "Suma 5: x > 7.",
+        "pl": "Dodaj 5: x > 7."
+      },
+      "feedbackIncorrect": {
+        "en": "Undo −5 by adding 5; keep > → x > 7.",
+        "es": "Deshaz −5 sumando 5; conserva > → x > 7.",
+        "pl": "Cofnij −5 dodając 5; zachowaj > → x > 7."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "x - 5 > 2",
+      "choices": {
+        "en": [
+          "x < 7",
+          "x > −3",
+          "x ≥ 7",
+          "x > 7"
+        ],
+        "es": [
+          "x < 7",
+          "x > −3",
+          "x ≥ 7",
+          "x > 7"
+        ],
+        "pl": [
+          "x < 7",
+          "x > −3",
+          "x ≥ 7",
+          "x > 7"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "x>7",
+      "diagnosticTags": [
+        "wrong_inverse",
+        "strict_to_inclusive"
+      ]
+    },
+    {
+      "id": "alg1-l05-i02",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.one.step"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: x/4 ≤ 3",
+        "es": "Resuelve: x/4 ≤ 3",
+        "pl": "Rozwiąż: x/4 ≤ 3"
+      },
+      "feedbackCorrect": {
+        "en": "Multiply by 4: x ≤ 12.",
+        "es": "Multiplica por 4: x ≤ 12.",
+        "pl": "Pomnóż przez 4: x ≤ 12."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply both sides by positive 4; keep ≤ → x ≤ 12.",
+        "es": "Multiplica ambos lados por 4 positivo; conserva ≤ → x ≤ 12.",
+        "pl": "Pomnóż obie strony przez dodatnie 4; zachowaj ≤ → x ≤ 12."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "\\frac{x}{4} \\le 3",
+      "choices": {
+        "en": [
+          "x ≤ 12",
+          "x ≥ 12",
+          "x ≤ 0.75",
+          "x < 12"
+        ],
+        "es": [
+          "x ≤ 12",
+          "x ≥ 12",
+          "x ≤ 0.75",
+          "x < 12"
+        ],
+        "pl": [
+          "x ≤ 12",
+          "x ≥ 12",
+          "x ≤ 0.75",
+          "x < 12"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x\\le 12",
+      "diagnosticTags": [
+        "flip_on_positive_multiply",
+        "strict_to_inclusive"
+      ]
+    },
+    {
+      "id": "alg1-l05-i03",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 3x − 1 ≥ 8",
+        "es": "Resuelve: 3x − 1 ≥ 8",
+        "pl": "Rozwiąż: 3x − 1 ≥ 8"
+      },
+      "feedbackCorrect": {
+        "en": "Add 1: 3x ≥ 9 → x ≥ 3.",
+        "es": "Suma 1: 3x ≥ 9 → x ≥ 3.",
+        "pl": "Dodaj 1: 3x ≥ 9 → x ≥ 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Add 1, then divide by 3 → x ≥ 3.",
+        "es": "Suma 1, luego divide entre 3 → x ≥ 3.",
+        "pl": "Dodaj 1, potem podziel przez 3 → x ≥ 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "3x - 1 \\ge 8",
+      "choices": {
+        "en": [
+          "x ≤ 3",
+          "x ≥ 3",
+          "x ≥ 7/3",
+          "x > 3"
+        ],
+        "es": [
+          "x ≤ 3",
+          "x ≥ 3",
+          "x ≥ 7/3",
+          "x > 3"
+        ],
+        "pl": [
+          "x ≤ 3",
+          "x ≥ 3",
+          "x ≥ 7/3",
+          "x > 3"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "x\\ge 3",
+      "diagnosticTags": [
+        "wrong_order"
+      ]
+    },
+    {
+      "id": "alg1-l05-i04",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.2,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: −3x + 6 < 0",
+        "es": "Resuelve: −3x + 6 < 0",
+        "pl": "Rozwiąż: −3x + 6 < 0"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 6: −3x < −6 → divide by −3 and flip: x > 2.",
+        "es": "Resta 6: −3x < −6 → divide entre −3 e invierte: x > 2.",
+        "pl": "Odejmij 6: −3x < −6 → podziel przez −3 i odwróć: x > 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Remember to flip when dividing by −3 → x > 2.",
+        "es": "Recuerda invertir al dividir entre −3 → x > 2.",
+        "pl": "Pamiętaj o odwróceniu przy dzieleniu przez −3 → x > 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "-3x + 6 < 0",
+      "choices": {
+        "en": [
+          "x < 2",
+          "x > −2",
+          "x > 2",
+          "x ≥ 2"
+        ],
+        "es": [
+          "x < 2",
+          "x > −2",
+          "x > 2",
+          "x ≥ 2"
+        ],
+        "pl": [
+          "x < 2",
+          "x > −2",
+          "x > 2",
+          "x ≥ 2"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "x>2",
+      "diagnosticTags": [
+        "forgot_flip"
+      ]
+    },
+    {
+      "id": "alg1-l05-i05",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.meaning"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which graph matches x < 0?",
+        "es": "¿Qué gráfica corresponde a x < 0?",
+        "pl": "Który wykres odpowiada x < 0?"
+      },
+      "feedbackCorrect": {
+        "en": "Strict < → open at 0; smaller numbers → ray left.",
+        "es": "Estricto < → abierto en 0; menores → rayo izquierda.",
+        "pl": "Ostre < → otwarte w 0; mniejsze → półprosta w lewo."
+      },
+      "feedbackIncorrect": {
+        "en": "Open circle for <; shade left of 0.",
+        "es": "Círculo abierto para <; sombrea a la izquierda de 0.",
+        "pl": "Otwarte kółko dla <; zacieniaj na lewo od 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.EE.B.8"
+          ]
+        }
+      ],
+      "promptMath": "x < 0",
+      "choices": {
+        "en": [
+          "Closed circle at 0, ray left",
+          "Open circle at 0, ray right",
+          "Closed circle at 0, ray right",
+          "Open circle at 0, ray left"
+        ],
+        "es": [
+          "Círculo cerrado en 0, rayo izquierda",
+          "Círculo abierto en 0, rayo derecha",
+          "Círculo cerrado en 0, rayo derecha",
+          "Círculo abierto en 0, rayo izquierda"
+        ],
+        "pl": [
+          "Zamknięte kółko w 0, półprosta w lewo",
+          "Otwarte kółko w 0, półprosta w prawo",
+          "Zamknięte kółko w 0, półprosta w prawo",
+          "Otwarte kółko w 0, półprosta w lewo"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "closed_for_strict",
+        "wrong_ray_direction"
+      ]
+    },
+    {
+      "id": "alg1-l05-i06",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 5x + 10 ≤ 0",
+        "es": "Resuelve: 5x + 10 ≤ 0",
+        "pl": "Rozwiąż: 5x + 10 ≤ 0"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 10: 5x ≤ −10 → x ≤ −2.",
+        "es": "Resta 10: 5x ≤ −10 → x ≤ −2.",
+        "pl": "Odejmij 10: 5x ≤ −10 → x ≤ −2."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract 10, divide by 5 (positive) → x ≤ −2.",
+        "es": "Resta 10, divide entre 5 (positivo) → x ≤ −2.",
+        "pl": "Odejmij 10, podziel przez 5 (dodatnie) → x ≤ −2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "5x + 10 \\le 0",
+      "choices": {
+        "en": [
+          "x ≤ −2",
+          "x ≥ −2",
+          "x ≤ 2",
+          "x < −2"
+        ],
+        "es": [
+          "x ≤ −2",
+          "x ≥ −2",
+          "x ≤ 2",
+          "x < −2"
+        ],
+        "pl": [
+          "x ≤ −2",
+          "x ≥ −2",
+          "x ≤ 2",
+          "x < −2"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x\\le -2",
+      "diagnosticTags": [
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l05-i07",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.one.step"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: −x < 5",
+        "es": "Resuelve: −x < 5",
+        "pl": "Rozwiąż: −x < 5"
+      },
+      "feedbackCorrect": {
+        "en": "Multiply/divide by −1 and flip: x > −5.",
+        "es": "Multiplica/divide por −1 e invierte: x > −5.",
+        "pl": "Pomnóż/podziel przez −1 i odwróć: x > −5."
+      },
+      "feedbackIncorrect": {
+        "en": "Dividing by −1 flips < to > → x > −5.",
+        "es": "Dividir entre −1 invierte < a > → x > −5.",
+        "pl": "Dzielenie przez −1 odwraca < na > → x > −5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "-x < 5",
+      "choices": {
+        "en": [
+          "x < −5",
+          "x > −5",
+          "x > 5",
+          "x < 5"
+        ],
+        "es": [
+          "x < −5",
+          "x > −5",
+          "x > 5",
+          "x < 5"
+        ],
+        "pl": [
+          "x < −5",
+          "x > −5",
+          "x > 5",
+          "x < 5"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "x>-5",
+      "diagnosticTags": [
+        "forgot_flip"
+      ]
+    },
+    {
+      "id": "alg1-l05-i08",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.meaning"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.2,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Is −1 a solution of x > 0?",
+        "es": "¿Es −1 una solución de x > 0?",
+        "pl": "Czy −1 jest rozwiązaniem x > 0?"
+      },
+      "feedbackCorrect": {
+        "en": "−1 is less than 0, so it is not in x > 0.",
+        "es": "−1 es menor que 0, así que no está en x > 0.",
+        "pl": "−1 jest mniejsze od 0, więc nie należy do x > 0."
+      },
+      "feedbackIncorrect": {
+        "en": "x > 0 is only positive numbers; −1 fails.",
+        "es": "x > 0 son solo números positivos; −1 falla.",
+        "pl": "x > 0 to tylko liczby dodatnie; −1 odpada."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.EE.B.8"
+          ]
+        }
+      ],
+      "promptMath": "x > 0",
+      "choices": {
+        "en": [
+          "Yes",
+          "Only if closed circle",
+          "No",
+          "Cannot tell"
+        ],
+        "es": [
+          "Sí",
+          "Solo si círculo cerrado",
+          "No",
+          "No se puede saber"
+        ],
+        "pl": [
+          "Tak",
+          "Tylko przy zamkniętym kółku",
+          "Nie",
+          "Nie da się stwierdzić"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "number_line_misread"
+      ]
+    },
+    {
+      "id": "alg1-l05-i09",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.2,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2(x − 3) ≥ 4",
+        "es": "Resuelve: 2(x − 3) ≥ 4",
+        "pl": "Rozwiąż: 2(x − 3) ≥ 4"
+      },
+      "feedbackCorrect": {
+        "en": "2x − 6 ≥ 4 → 2x ≥ 10 → x ≥ 5.",
+        "es": "2x − 6 ≥ 4 → 2x ≥ 10 → x ≥ 5.",
+        "pl": "2x − 6 ≥ 4 → 2x ≥ 10 → x ≥ 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute (or divide by 2 first), then solve → x ≥ 5.",
+        "es": "Distribuye (o divide entre 2 primero), luego resuelve → x ≥ 5.",
+        "pl": "Rozdziel (lub najpierw podziel przez 2), potem rozwiąż → x ≥ 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "2(x - 3) \\ge 4",
+      "choices": {
+        "en": [
+          "x ≤ 5",
+          "x ≥ 1",
+          "x > 5",
+          "x ≥ 5"
+        ],
+        "es": [
+          "x ≤ 5",
+          "x ≥ 1",
+          "x > 5",
+          "x ≥ 5"
+        ],
+        "pl": [
+          "x ≤ 5",
+          "x ≥ 1",
+          "x > 5",
+          "x ≥ 5"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "x\\ge 5",
+      "diagnosticTags": [
+        "forgot_distribute"
+      ]
+    },
+    {
+      "id": "alg1-l05-i10",
+      "knowledgePointIds": [
+        "kp.alg1.inequality.two.step"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.2,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 4 − x ≤ 1",
+        "es": "Resuelve: 4 − x ≤ 1",
+        "pl": "Rozwiąż: 4 − x ≤ 1"
+      },
+      "feedbackCorrect": {
+        "en": "Subtract 4: −x ≤ −3 → multiply by −1 and flip: x ≥ 3.",
+        "es": "Resta 4: −x ≤ −3 → multiplica por −1 e invierte: x ≥ 3.",
+        "pl": "Odejmij 4: −x ≤ −3 → pomnóż przez −1 i odwróć: x ≥ 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Isolate −x, then flip when multiplying by −1 → x ≥ 3.",
+        "es": "Aísla −x, luego invierte al multiplicar por −1 → x ≥ 3.",
+        "pl": "Izoluj −x, potem odwróć przy mnożeniu przez −1 → x ≥ 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "4 - x \\le 1",
+      "choices": {
+        "en": [
+          "x ≥ 3",
+          "x ≤ 3",
+          "x ≥ −3",
+          "x ≤ −3"
+        ],
+        "es": [
+          "x ≥ 3",
+          "x ≤ 3",
+          "x ≥ −3",
+          "x ≤ −3"
+        ],
+        "pl": [
+          "x ≥ 3",
+          "x ≤ 3",
+          "x ≥ −3",
+          "x ≤ −3"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "x\\ge 3",
+      "diagnosticTags": [
+        "forgot_flip",
+        "sign_error"
+      ]
+    }
+  ]
+}

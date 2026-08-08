@@ -9,10 +9,18 @@
 - Gauntlet critics **PASS**: world 1b, HUD 1b, content 1b
 - Exit gate: `docs/gauntlet/exit-gate-wave1.md`
 
-## Next (post–wave 1)
-- Human playtest on landscape iPhone + PC
-- Optional art smoothing / chunk split
-- Lesson 4+ via `docs/pipeline.md`
+## Wave 2 content (authored; critic FAIL)
+- Algebra I L4–L6 EN/ES/PL via `docs/pipeline.md`
+- +9 KPs; standards-index `lessonCoverage` for l04–l06
+- Unlock: L3→board_4 → L4→board_5 → L5→board_6 → L6→board_7 teaser
+- Notes: `docs/gauntlet/wave2-content-notes.md`
+- **Critic FAIL:** `docs/gauntlet/critic-content-wave2.md` — MC `correctIndex` always 0 on L5/L6 (gate gameable)
+
+## Next
+- Remediate content wave2 FAIL (reshuffle choice keys / runtime shuffle)
+- Remediate world/SR critic FAIL
+- GitHub Pages deploy
+- Algebra I course gate / human playtest
 - Harden spaced-review UX and IRT with real attempt data
 
 ## Play

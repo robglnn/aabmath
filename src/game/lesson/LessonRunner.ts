@@ -3,6 +3,7 @@ import { flattenStandards, getSectionItemIds } from '../../content/loadContent'
 import type { LessonScreenData } from '../../ui/types'
 import type { PedagogyEngine } from '../../pedagogy/PedagogyEngine'
 import { gradeItem } from './gradeItem'
+import { shuffleMcChoices, type McShuffleState } from './shuffleMcChoices'
 
 const PHASE_ORDER: Array<'objective' | 'teach' | 'guided' | 'independent'> = [
   'objective',
@@ -21,6 +22,9 @@ export class LessonRunner {
   private lastFeedback?: string
   private lastGateMessage?: string
   private gateScorePercent = 0
+  private shuffleNonce = 0
+  private shuffleKey: string | null = null
+  private mcShuffle: McShuffleState | null = null
 
   constructor(
     private readonly lesson: LessonPack,
@@ -105,11 +109,12 @@ export class LessonRunner {
       }
     }
 
+    const mcShuffle = this.getMcShuffle(item)
     return {
       ...base,
       promptLatex: item.promptMath ?? '',
       promptText: item.prompt[this.locale],
-      choices: item.choices?.[this.locale],
+      choices: mcShuffle?.choices[this.locale] ?? item.choices?.[this.locale],
     }
   }
 
@@ -141,7 +146,7 @@ export class LessonRunner {
       return this.getViewState()
     }
 
-    const correct = gradeItem(item, answer, this.locale)
+    const correct = gradeItem(item, answer, this.locale, this.getMcShuffle(item))
     this.engine.recordAttempt(
       {
         itemId: item.id,
@@ -196,6 +201,20 @@ export class LessonRunner {
     this.itemIndex = 0
     this.awaitingContinue = false
     this.phaseIndex = PHASE_ORDER.indexOf('independent')
+    this.shuffleNonce += 1
+    this.shuffleKey = null
+    this.mcShuffle = null
+  }
+
+  private getMcShuffle(item: LessonItem): McShuffleState | null {
+    if (!item.choices || item.correctIndex === undefined) return null
+    const phase = this.currentPhase()
+    const key = `${phase}:${this.itemIndex}:${this.shuffleNonce}`
+    if (this.shuffleKey !== key) {
+      this.shuffleKey = key
+      this.mcShuffle = shuffleMcChoices(item)
+    }
+    return this.mcShuffle
   }
 
   private currentPhase(): (typeof PHASE_ORDER)[number] | 'complete' {

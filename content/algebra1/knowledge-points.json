@@ -577,6 +577,550 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.solve.multi.step",
+      "title": {
+        "en": "Solve multi-step linear equations",
+        "es": "Resolver ecuaciones lineales de varios pasos",
+        "pl": "Rozwiązywanie wielokrokowych równań liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.solve.two.step"
+      ],
+      "encompassing": [
+        "kp.alg1.solve.two.step"
+      ],
+      "successCriteria": {
+        "en": "Student combines like terms and/or uses the distributive property, then isolates the variable with inverse operations and verifies.",
+        "es": "El estudiante combina términos semejantes y/o usa la propiedad distributiva, luego aísla la variable con operaciones inversas y verifica.",
+        "pl": "Uczeń łączy wyrazy podobne i/lub stosuje rozdzielność, potem izoluje zmienną działaniami odwrotnymi i weryfikuje."
+      },
+      "misconceptions": {
+        "en": [
+          "Combining unlike terms before solving",
+          "Forgetting to distribute to every term inside parentheses"
+        ],
+        "es": [
+          "Combinar términos no semejantes antes de resolver",
+          "Olvidar distribuir a cada término dentro de los paréntesis"
+        ],
+        "pl": [
+          "Łączenie niepodobnych wyrazów przed rozwiązaniem",
+          "Zapominanie o rozdzielności na każdy wyraz w nawiasie"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1",
+            "7.EE.B.4"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.solve.both.sides",
+      "title": {
+        "en": "Solve equations with variables on both sides",
+        "es": "Resolver ecuaciones con variables en ambos lados",
+        "pl": "Rozwiązywanie równań ze zmiennymi po obu stronach"
+      },
+      "prerequisites": [
+        "kp.alg1.solve.multi.step"
+      ],
+      "encompassing": [
+        "kp.alg1.solve.multi.step"
+      ],
+      "successCriteria": {
+        "en": "Student collects variable terms on one side and constants on the other, then solves and checks by substitution.",
+        "es": "El estudiante reúne términos con variable en un lado y constantes en el otro, luego resuelve y verifica por sustitución.",
+        "pl": "Uczeń zbiera wyrazy ze zmienną po jednej stronie i stałe po drugiej, potem rozwiązuje i sprawdza przez podstawienie."
+      },
+      "misconceptions": {
+        "en": [
+          "Subtracting a variable term from only one side",
+          "Treating both-sides equations as two unrelated one-sided equations"
+        ],
+        "es": [
+          "Restar un término con variable de un solo lado",
+          "Tratar ecuaciones con ambos lados como dos ecuaciones independientes"
+        ],
+        "pl": [
+          "Odejmowanie wyrazu ze zmienną tylko od jednej strony",
+          "Traktowanie równań z obu stron jako dwóch niezależnych równań"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-REI.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.equation.verify",
+      "title": {
+        "en": "Verify solutions by substitution",
+        "es": "Verificar soluciones por sustitución",
+        "pl": "Weryfikacja rozwiązań przez podstawienie"
+      },
+      "prerequisites": [
+        "kp.alg1.equation.meaning",
+        "kp.alg1.solve.one.step"
+      ],
+      "successCriteria": {
+        "en": "Student substitutes a candidate value into both sides of an equation and decides whether it is a true solution.",
+        "es": "El estudiante sustituye un valor candidato en ambos lados de una ecuación y decide si es una solución verdadera.",
+        "pl": "Uczeń podstawia wartość kandydującą do obu stron równania i stwierdza, czy to prawdziwe rozwiązanie."
+      },
+      "misconceptions": {
+        "en": [
+          "Checking only one side of the equation",
+          "Accepting a value that makes sides unequal"
+        ],
+        "es": [
+          "Verificar solo un lado de la ecuación",
+          "Aceptar un valor que hace lados desiguales"
+        ],
+        "pl": [
+          "Sprawdzanie tylko jednej strony równania",
+          "Akceptowanie wartości, która nie zrównuje stron"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.1(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.A.1",
+            "A-REI.B.3",
+            "6.EE.B.5"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.inequality.meaning",
+      "title": {
+        "en": "Interpret inequalities and number-line graphs",
+        "es": "Interpretar desigualdades y gráficas en la recta numérica",
+        "pl": "Interpretacja nierówności i wykresów na osi liczbowej"
+      },
+      "prerequisites": [
+        "kp.alg1.equation.meaning",
+        "kp.alg1.solve.one.step"
+      ],
+      "successCriteria": {
+        "en": "Student reads inequality symbols, describes solution sets, and matches open/closed rays on a number line.",
+        "es": "El estudiante lee símbolos de desigualdad, describe conjuntos solución y relaciona rayos abiertos/cerrados en la recta.",
+        "pl": "Uczeń odczytuje symbole nierówności, opisuje zbiory rozwiązań i dopasowuje półproste otwarte/domknięte na osi."
+      },
+      "misconceptions": {
+        "en": [
+          "Using a closed circle for a strict inequality",
+          "Thinking the inequality only allows a single number"
+        ],
+        "es": [
+          "Usar círculo cerrado para una desigualdad estricta",
+          "Pensar que la desigualdad solo permite un solo número"
+        ],
+        "pl": [
+          "Używanie zamkniętego kółka przy ostrej nierówności",
+          "Myślenie, że nierówność dopuszcza tylko jedną liczbę"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "6.EE.B.8"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.inequality.one.step",
+      "title": {
+        "en": "Solve one-step linear inequalities",
+        "es": "Resolver desigualdades lineales de un paso",
+        "pl": "Rozwiązywanie jednokrokowych nierówności liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.inequality.meaning",
+        "kp.alg1.solve.one.step"
+      ],
+      "successCriteria": {
+        "en": "Student isolates the variable in a one-step inequality using inverse operations and states the solution set.",
+        "es": "El estudiante aísla la variable en una desigualdad de un paso con operaciones inversas y expresa el conjunto solución.",
+        "pl": "Uczeń izoluje zmienną w jednokrokowej nierówności działaniami odwrotnymi i podaje zbiór rozwiązań."
+      },
+      "misconceptions": {
+        "en": [
+          "Replacing the inequality with an equals sign permanently",
+          "Flipping the inequality when adding or subtracting"
+        ],
+        "es": [
+          "Reemplazar la desigualdad por igualdad de forma permanente",
+          "Invertir la desigualdad al sumar o restar"
+        ],
+        "pl": [
+          "Trwałe zastępowanie nierówności znakiem równości",
+          "Odwracanie nierówności przy dodawaniu lub odejmowaniu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.inequality.two.step",
+      "title": {
+        "en": "Solve two-step linear inequalities",
+        "es": "Resolver desigualdades lineales de dos pasos",
+        "pl": "Rozwiązywanie dwukrokowych nierówności liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.inequality.one.step",
+        "kp.alg1.solve.two.step"
+      ],
+      "encompassing": [
+        "kp.alg1.inequality.one.step"
+      ],
+      "successCriteria": {
+        "en": "Student solves ax+b < c (and similar) with two inverse operations, flipping when multiplying/dividing by a negative.",
+        "es": "El estudiante resuelve ax+b < c (y similares) con dos operaciones inversas, invirtiendo al multiplicar/dividir por un negativo.",
+        "pl": "Uczeń rozwiązuje ax+b < c (i podobne) dwoma działaniami odwrotnymi, odwracając przy mnożeniu/dzieleniu przez ujemną."
+      },
+      "misconceptions": {
+        "en": [
+          "Forgetting to flip when multiplying/dividing by a negative",
+          "Undoing multiplication before addition/subtraction"
+        ],
+        "es": [
+          "Olvidar invertir al multiplicar/dividir por un negativo",
+          "Deshacer la multiplicación antes que suma/resta"
+        ],
+        "pl": [
+          "Zapominanie o odwróceniu przy mnożeniu/dzieleniu przez ujemną",
+          "Cofanie mnożenia przed dodawaniem/odejmowaniem"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "7.EE.B.4b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.function.linear.intro",
+      "title": {
+        "en": "Introduce linear functions",
+        "es": "Introducir funciones lineales",
+        "pl": "Wprowadzenie do funkcji liniowych"
+      },
+      "prerequisites": [
+        "kp.alg1.solve.two.step",
+        "kp.alg1.eval.substitute"
+      ],
+      "successCriteria": {
+        "en": "Student recognizes that a linear function has a constant rate of change and relates inputs to outputs with a rule like y = mx + b.",
+        "es": "El estudiante reconoce que una función lineal tiene tasa de cambio constante y relaciona entradas con salidas con una regla como y = mx + b.",
+        "pl": "Uczeń rozpoznaje, że funkcja liniowa ma stałą stopę zmian i łączy argumenty z wartościami regułą typu y = mx + b."
+      },
+      "misconceptions": {
+        "en": [
+          "Thinking every equation in x and y is automatically linear",
+          "Confusing a single ordered pair with the whole function"
+        ],
+        "es": [
+          "Pensar que toda ecuación en x e y es automáticamente lineal",
+          "Confundir un solo par ordenado con toda la función"
+        ],
+        "pl": [
+          "Myślenie, że każde równanie z x i y jest automatycznie liniowe",
+          "Mylenie jednej pary uporządkowanej z całą funkcją"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.A.1",
+            "F-IF.A.1",
+            "F-LE.A.1b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.rate.of.change",
+      "title": {
+        "en": "Interpret rate of change",
+        "es": "Interpretar la tasa de cambio",
+        "pl": "Interpretacja stopy zmian"
+      },
+      "prerequisites": [
+        "kp.alg1.function.linear.intro"
+      ],
+      "successCriteria": {
+        "en": "Student finds and interprets the constant rate of change from a table, context, or equation for a linear relationship.",
+        "es": "El estudiante halla e interpreta la tasa de cambio constante a partir de una tabla, contexto o ecuación lineal.",
+        "pl": "Uczeń znajduje i interpretuje stałą stopę zmian z tabeli, kontekstu lub równania liniowego."
+      },
+      "misconceptions": {
+        "en": [
+          "Using Δx/Δy instead of Δy/Δx",
+          "Treating a changing difference between outputs as constant rate"
+        ],
+        "es": [
+          "Usar Δx/Δy en lugar de Δy/Δx",
+          "Tratar una diferencia cambiante entre salidas como tasa constante"
+        ],
+        "pl": [
+          "Używanie Δx/Δy zamiast Δy/Δx",
+          "Traktowanie zmieniającej się różnicy wartości jako stałej stopy"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.slope.intuition",
+      "title": {
+        "en": "Build slope intuition (rise over run)",
+        "es": "Construir intuición de pendiente (subida sobre avance)",
+        "pl": "Intuicja nachylenia (wzrost przez przebieg)"
+      },
+      "prerequisites": [
+        "kp.alg1.rate.of.change"
+      ],
+      "encompassing": [
+        "kp.alg1.rate.of.change"
+      ],
+      "successCriteria": {
+        "en": "Student computes slope as rise/run (or Δy/Δx) between two points and describes steepness and direction (positive/negative).",
+        "es": "El estudiante calcula la pendiente como subida/avance (o Δy/Δx) entre dos puntos y describe inclinación y dirección (positiva/negativa).",
+        "pl": "Uczeń oblicza nachylenie jako wzrost/przebieg (lub Δy/Δx) między dwoma punktami i opisuje stromość oraz kierunek (dodatni/ujemny)."
+      },
+      "misconceptions": {
+        "en": [
+          "Subtracting coordinates in inconsistent order (mixing x and y differences)",
+          "Believing steeper always means larger absolute slope without checking signs"
+        ],
+        "es": [
+          "Restar coordenadas en orden inconsistente (mezclar diferencias de x e y)",
+          "Creer que más empinado siempre significa mayor pendiente absoluta sin mirar signos"
+        ],
+        "pl": [
+          "Odejmowanie współrzędnych w niespójnej kolejności (mieszanie różnic x i y)",
+          "Sądzenie, że stromiej zawsze znaczy większa |nachylenie| bez znaków"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "8.EE.5"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.2"
+          ]
+        }
+      ]
     }
   ]
 }

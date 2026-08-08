@@ -147,25 +147,25 @@
       "promptMath": "3 + 4 \\cdot 2",
       "choices": {
         "en": [
-          "14",
           "11",
+          "14",
           "10",
           "24"
         ],
         "es": [
-          "14",
           "11",
+          "14",
           "10",
           "24"
         ],
         "pl": [
-          "14",
           "11",
+          "14",
           "10",
           "24"
         ]
       },
-      "correctIndex": 1,
+      "correctIndex": 0,
       "acceptNumeric": 11,
       "diagnosticTags": [
         "left_to_right_only"
@@ -217,25 +217,25 @@
       "promptMath": "2x + 1,\\; x = 5",
       "choices": {
         "en": [
-          "11",
           "10",
+          "11",
           "7",
           "12"
         ],
         "es": [
-          "11",
           "10",
+          "11",
           "7",
           "12"
         ],
         "pl": [
-          "11",
           "10",
+          "11",
           "7",
           "12"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "acceptNumeric": 11,
       "diagnosticTags": [
         "forgot_multiply",
@@ -289,24 +289,24 @@
       "choices": {
         "en": [
           "4",
-          "13",
           "7",
+          "13",
           "12"
         ],
         "es": [
           "4",
-          "13",
           "7",
+          "13",
           "12"
         ],
         "pl": [
           "4",
-          "13",
           "7",
+          "13",
           "12"
         ]
       },
-      "correctIndex": 1,
+      "correctIndex": 2,
       "acceptNumeric": 13,
       "diagnosticTags": [
         "multiply_before_divide_wrong",
@@ -359,25 +359,25 @@
       "promptMath": "n^2 - 3,\\; n = 4",
       "choices": {
         "en": [
-          "13",
           "5",
           "1",
-          "19"
+          "19",
+          "13"
         ],
         "es": [
-          "13",
           "5",
           "1",
-          "19"
+          "19",
+          "13"
         ],
         "pl": [
-          "13",
           "5",
           "1",
-          "19"
+          "19",
+          "13"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "acceptNumeric": 13,
       "diagnosticTags": [
         "square_after_subtract",
@@ -501,25 +501,25 @@
       "promptMath": "2a + b,\\; a = 3,\\; b = 4",
       "choices": {
         "en": [
-          "10",
           "14",
+          "10",
           "7",
           "11"
         ],
         "es": [
-          "10",
           "14",
+          "10",
           "7",
           "11"
         ],
         "pl": [
-          "10",
           "14",
+          "10",
           "7",
           "11"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "acceptNumeric": 10,
       "diagnosticTags": [
         "swap_variable_values"
@@ -571,25 +571,25 @@
       "promptMath": "2(5 + 3) - 4",
       "choices": {
         "en": [
-          "12",
           "14",
           "6",
+          "12",
           "20"
         ],
         "es": [
-          "12",
           "14",
           "6",
+          "12",
           "20"
         ],
         "pl": [
-          "12",
           "14",
           "6",
+          "12",
           "20"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 2,
       "acceptNumeric": 12,
       "diagnosticTags": [
         "skip_parentheses"
@@ -641,25 +641,25 @@
       "promptMath": "5 \\cdot 2^2",
       "choices": {
         "en": [
-          "20",
           "100",
           "10",
-          "25"
+          "25",
+          "20"
         ],
         "es": [
-          "20",
           "100",
           "10",
-          "25"
+          "25",
+          "20"
         ],
         "pl": [
-          "20",
           "100",
           "10",
-          "25"
+          "25",
+          "20"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "acceptNumeric": 20,
       "diagnosticTags": [
         "exponent_on_product"
@@ -781,25 +781,25 @@
       "promptMath": "3p - q,\\; p = 2,\\; q = 5",
       "choices": {
         "en": [
-          "1",
           "11",
+          "1",
           "−1",
           "6"
         ],
         "es": [
-          "1",
           "11",
+          "1",
           "−1",
           "6"
         ],
         "pl": [
-          "1",
           "11",
+          "1",
           "−1",
           "6"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "acceptNumeric": 1,
       "diagnosticTags": [
         "swap_variable_values",
@@ -853,25 +853,25 @@
       "promptMath": "4(x + 1) - 2,\\; x = 3",
       "choices": {
         "en": [
-          "14",
           "12",
           "16",
+          "14",
           "10"
         ],
         "es": [
-          "14",
           "12",
           "16",
+          "14",
           "10"
         ],
         "pl": [
-          "14",
           "12",
           "16",
+          "14",
           "10"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 2,
       "acceptNumeric": 14,
       "diagnosticTags": [
         "distribute_wrong",
@@ -924,25 +924,25 @@
       "promptMath": "m^2 + 1,\\; m = -3",
       "choices": {
         "en": [
-          "10",
           "−8",
           "8",
-          "−10"
+          "−10",
+          "10"
         ],
         "es": [
-          "10",
           "−8",
           "8",
-          "−10"
+          "−10",
+          "10"
         ],
         "pl": [
-          "10",
           "−8",
           "8",
-          "−10"
+          "−10",
+          "10"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "acceptNumeric": 10,
       "diagnosticTags": [
         "negative_square_sign"
@@ -1066,25 +1066,25 @@
       "promptMath": "24 \\div (4 + 2) \\cdot 3",
       "choices": {
         "en": [
-          "12",
           "2",
+          "12",
           "18",
           "4"
         ],
         "es": [
-          "12",
           "2",
+          "12",
           "18",
           "4"
         ],
         "pl": [
-          "12",
           "2",
+          "12",
           "18",
           "4"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "acceptNumeric": 12,
       "diagnosticTags": [
         "skip_parentheses",
@@ -1137,25 +1137,25 @@
       "promptMath": "2t^2 - t,\\; t = 5",
       "choices": {
         "en": [
-          "45",
           "15",
           "50",
+          "45",
           "40"
         ],
         "es": [
-          "45",
           "15",
           "50",
+          "45",
           "40"
         ],
         "pl": [
-          "45",
           "15",
           "50",
+          "45",
           "40"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 2,
       "acceptNumeric": 45,
       "diagnosticTags": [
         "exponent_on_product",
@@ -1208,25 +1208,25 @@
       "promptMath": "a + 3b,\\; a = -1,\\; b = 4",
       "choices": {
         "en": [
-          "11",
           "−13",
           "7",
-          "12"
+          "12",
+          "11"
         ],
         "es": [
-          "11",
           "−13",
           "7",
-          "12"
+          "12",
+          "11"
         ],
         "pl": [
-          "11",
           "−13",
           "7",
-          "12"
+          "12",
+          "11"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "acceptNumeric": 11,
       "diagnosticTags": [
         "sign_error_on_substitute",

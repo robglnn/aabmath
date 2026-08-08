@@ -1,18 +1,18 @@
 # Active Context
 
 ## Focus
-Gauntlet **Wave 2** running under `/loop 8h`. Destination: Algebra I course gate PASS + GitHub Pages playable.
+**Wave 2 exit PASS.** Wave 3 in flight (Alg I L7–9). 15m Gauntlet loop armed.
 
-## Loop
-- Sentinel: `AGENT_LOOP_TICK_aabmath_gauntlet`
-- Interval: 8 hours
-- On tick: remediate open FAILs else advance next Alg I cluster
+## Critic scoreboard
+- Wave 1: PASS
+- Wave 2 world/SR: PASS (`critic-world-sr-wave2b.md`)
+- Wave 2 content: PASS (`critic-content-wave2b.md`)
+- Wave 2 exit: `docs/gauntlet/exit-gate-wave2.md`
 
-## Wave 2 in flight
-- Content L4–6 (multi-step eq, inequalities, linear intro)
-- World boards 4–6 + spaced review in play
-- GitHub Pages: `base` via `GITHUB_PAGES=true`, workflow `.github/workflows/deploy-pages.yml`
+## Next
+- L7–9 (slope-intercept, writing lines, systems intro)
+- Continue toward full Algebra I course gate
 
 ## Play
-- Local: `npm run dev` → http://localhost:5173/
-- Online (after push + Pages enable): https://robglnn.github.io/aabmath/
+- Local: `npm run dev`
+- Online: https://robglnn.github.io/aabmath/

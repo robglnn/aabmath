@@ -1,0 +1,1319 @@
+{
+  "id": "alg1-l06",
+  "courseId": "algebra1",
+  "order": 6,
+  "title": {
+    "en": "Linear Functions — Rate of Change & Slope Intuition",
+    "es": "Funciones lineales — tasa de cambio e intuición de pendiente",
+    "pl": "Funkcje liniowe — stopa zmian i intuicja nachylenia"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.function.linear.intro",
+    "kp.alg1.rate.of.change",
+    "kp.alg1.slope.intuition"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_6",
+    "unlockOnMastery": [
+      "lesson_board_7"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will recognize linear functions, find constant rates of change from tables and contexts, and compute slope as rise over run.",
+        "es": "Reconocerás funciones lineales, hallarás tasas de cambio constantes en tablas y contextos, y calcularás pendiente como subida sobre avance.",
+        "pl": "Będziesz rozpoznawać funkcje liniowe, znajdować stałe stopy zmian z tabel i kontekstów oraz obliczać nachylenie jako wzrost przez przebieg."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: constant rate and slope",
+        "es": "Enseñar: tasa constante y pendiente",
+        "pl": "Nauczanie: stała stopa i nachylenie"
+      },
+      "body": {
+        "en": "A linear function has a constant rate of change. In y = mx + b, m is that rate (slope). Slope = rise/run = Δy/Δx between two points. Positive slopes rise; negative slopes fall.",
+        "es": "Una función lineal tiene tasa de cambio constante. En y = mx + b, m es esa tasa (pendiente). Pendiente = subida/avance = Δy/Δx entre dos puntos. Pendientes positivas suben; negativas bajan.",
+        "pl": "Funkcja liniowa ma stałą stopę zmian. W y = mx + b m to ta stopa (nachylenie). Nachylenie = wzrost/przebieg = Δy/Δx między dwoma punktami. Dodatnie rosną; ujemne spadają."
+      },
+      "bodyMath": [
+        "y = 2x + 1",
+        "m = \\frac{\\Delta y}{\\Delta x}",
+        "y = -4x + 7"
+      ],
+      "itemIds": [
+        "alg1-l06-t01",
+        "alg1-l06-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Evaluate linear rules, read rates from tables and contexts, and compute slopes between points.",
+        "es": "Evalúa reglas lineales, lee tasas en tablas y contextos, y calcula pendientes entre puntos.",
+        "pl": "Obliczaj reguły liniowe, odczytuj stopy z tabel i kontekstów oraz nachylenia między punktami."
+      },
+      "itemIds": [
+        "alg1-l06-g01",
+        "alg1-l06-g02",
+        "alg1-l06-g03",
+        "alg1-l06-g04",
+        "alg1-l06-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l06-i01",
+        "alg1-l06-i02",
+        "alg1-l06-i03",
+        "alg1-l06-i04",
+        "alg1-l06-i05",
+        "alg1-l06-i06",
+        "alg1-l06-i07",
+        "alg1-l06-i08",
+        "alg1-l06-i09",
+        "alg1-l06-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l06-t01",
+      "knowledgePointIds": [
+        "kp.alg1.function.linear.intro"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which rule describes a linear function?",
+        "es": "¿Qué regla describe una función lineal?",
+        "pl": "Która reguła opisuje funkcję liniową?"
+      },
+      "feedbackCorrect": {
+        "en": "y = 2x + 1 has constant rate of change 2 — a classic linear rule.",
+        "es": "y = 2x + 1 tiene tasa de cambio constante 2 — regla lineal clásica.",
+        "pl": "y = 2x + 1 ma stałą stopę zmian 2 — klasyczna reguła liniowa."
+      },
+      "feedbackIncorrect": {
+        "en": "Linear functions look like y = mx + b (constant rate). Powers, reciprocals, and exponentials are not linear.",
+        "es": "Las funciones lineales son como y = mx + b (tasa constante). Potencias, reciprocos y exponenciales no son lineales.",
+        "pl": "Funkcje liniowe mają postać y = mx + b (stała stopa). Potęgi, odwrotności i wykładnicze nie są liniowe."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.A.1",
+            "F-IF.A.1",
+            "F-LE.A.1b"
+          ]
+        }
+      ],
+      "promptMath": "y = 2x + 1",
+      "choices": {
+        "en": [
+          "y = 2x + 1",
+          "y = x^2 + 1",
+          "y = 2/x",
+          "y = 2^x"
+        ],
+        "es": [
+          "y = 2x + 1",
+          "y = x^2 + 1",
+          "y = 2/x",
+          "y = 2^x"
+        ],
+        "pl": [
+          "y = 2x + 1",
+          "y = x^2 + 1",
+          "y = 2/x",
+          "y = 2^x"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "nonlinear_as_linear"
+      ]
+    },
+    {
+      "id": "alg1-l06-t02",
+      "knowledgePointIds": [
+        "kp.alg1.rate.of.change"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.05,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A table shows x: 1, 2, 3 and y: 5, 8, 11. What is the rate of change?",
+        "es": "Una tabla muestra x: 1, 2, 3 e y: 5, 8, 11. ¿Cuál es la tasa de cambio?",
+        "pl": "Tabela: x: 1, 2, 3 oraz y: 5, 8, 11. Jaka jest stopa zmian?"
+      },
+      "feedbackCorrect": {
+        "en": "Δy/Δx = (8−5)/(2−1) = 3 (same between each consecutive pair).",
+        "es": "Δy/Δx = (8−5)/(2−1) = 3 (igual entre cada par consecutivo).",
+        "pl": "Δy/Δx = (8−5)/(2−1) = 3 (to samo między kolejnymi parami)."
+      },
+      "feedbackIncorrect": {
+        "en": "Rate of change = change in y ÷ change in x. Here each step adds 3 to y when x increases by 1.",
+        "es": "Tasa de cambio = cambio en y ÷ cambio en x. Aquí cada paso suma 3 a y cuando x aumenta 1.",
+        "pl": "Stopa zmian = zmiana y ÷ zmiana x. Tu każdy krok dodaje 3 do y, gdy x rośnie o 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "1",
+          "3",
+          "5",
+          "8"
+        ],
+        "es": [
+          "1",
+          "3",
+          "5",
+          "8"
+        ],
+        "pl": [
+          "1",
+          "3",
+          "5",
+          "8"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "dx_over_dy",
+        "use_y_not_delta"
+      ]
+    },
+    {
+      "id": "alg1-l06-g01",
+      "knowledgePointIds": [
+        "kp.alg1.function.linear.intro"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.1,
+        "b": -0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = 3x − 2, what is f(4)?",
+        "es": "Si f(x) = 3x − 2, ¿cuánto es f(4)?",
+        "pl": "Jeśli f(x) = 3x − 2, ile wynosi f(4)?"
+      },
+      "feedbackCorrect": {
+        "en": "f(4) = 3·4 − 2 = 12 − 2 = 10.",
+        "es": "f(4) = 3·4 − 2 = 12 − 2 = 10.",
+        "pl": "f(4) = 3·4 − 2 = 12 − 2 = 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x = 4 into 3x − 2 → 12 − 2 = 10.",
+        "es": "Sustituye x = 4 en 3x − 2 → 12 − 2 = 10.",
+        "pl": "Podstaw x = 4 do 3x − 2 → 12 − 2 = 10."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.A.1",
+            "F-IF.A.1",
+            "F-LE.A.1b"
+          ]
+        }
+      ],
+      "promptMath": "f(x) = 3x - 2",
+      "choices": {
+        "en": [
+          "12",
+          "14",
+          "10",
+          "5"
+        ],
+        "es": [
+          "12",
+          "14",
+          "10",
+          "5"
+        ],
+        "pl": [
+          "12",
+          "14",
+          "10",
+          "5"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "10",
+      "acceptNumeric": 10,
+      "diagnosticTags": [
+        "eval_error"
+      ]
+    },
+    {
+      "id": "alg1-l06-g02",
+      "knowledgePointIds": [
+        "kp.alg1.rate.of.change"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A bike travels 30 miles in 2 hours at constant speed. What is the rate of change in miles per hour?",
+        "es": "Una bici recorre 30 millas en 2 horas a velocidad constante. ¿Cuál es la tasa de cambio en millas por hora?",
+        "pl": "Rower jedzie 30 mil w 2 godziny ze stałą prędkością. Jaka jest stopa zmian w milach na godzinę?"
+      },
+      "feedbackCorrect": {
+        "en": "Rate = 30 miles ÷ 2 hours = 15 mi/h.",
+        "es": "Tasa = 30 millas ÷ 2 horas = 15 mi/h.",
+        "pl": "Stopa = 30 mil ÷ 2 godziny = 15 mi/h."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide distance by time for constant rate: 30/2 = 15.",
+        "es": "Divide distancia entre tiempo para tasa constante: 30/2 = 15.",
+        "pl": "Podziel drogę przez czas dla stałej stopy: 30/2 = 15."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "30",
+          "60",
+          "2",
+          "15"
+        ],
+        "es": [
+          "30",
+          "60",
+          "2",
+          "15"
+        ],
+        "pl": [
+          "30",
+          "60",
+          "2",
+          "15"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "15",
+      "acceptNumeric": 15,
+      "diagnosticTags": [
+        "invert_rate"
+      ]
+    },
+    {
+      "id": "alg1-l06-g03",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intuition"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "What is the slope of the line through (1, 2) and (3, 8)?",
+        "es": "¿Cuál es la pendiente de la recta por (1, 2) y (3, 8)?",
+        "pl": "Jakie jest nachylenie prostej przez (1, 2) i (3, 8)?"
+      },
+      "feedbackCorrect": {
+        "en": "m = (8−2)/(3−1) = 6/2 = 3.",
+        "es": "m = (8−2)/(3−1) = 6/2 = 3.",
+        "pl": "m = (8−2)/(3−1) = 6/2 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Slope = rise/run = (y₂−y₁)/(x₂−x₁) = 6/2 = 3.",
+        "es": "Pendiente = subida/avance = (y₂−y₁)/(x₂−x₁) = 6/2 = 3.",
+        "pl": "Nachylenie = wzrost/przebieg = (y₂−y₁)/(x₂−x₁) = 6/2 = 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "m = \\frac{\\Delta y}{\\Delta x}",
+      "choices": {
+        "en": [
+          "3",
+          "2",
+          "6",
+          "1/3"
+        ],
+        "es": [
+          "3",
+          "2",
+          "6",
+          "1/3"
+        ],
+        "pl": [
+          "3",
+          "2",
+          "6",
+          "1/3"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "dx_over_dy",
+        "order_swap"
+      ]
+    },
+    {
+      "id": "alg1-l06-g04",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intuition"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.25,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A line has slope −2. As x increases by 1, what happens to y?",
+        "es": "Una recta tiene pendiente −2. Cuando x aumenta 1, ¿qué pasa con y?",
+        "pl": "Prosta ma nachylenie −2. Gdy x rośnie o 1, co dzieje się z y?"
+      },
+      "feedbackCorrect": {
+        "en": "Negative slope means y falls as x rises; magnitude 2 means decrease by 2 per unit x.",
+        "es": "Pendiente negativa: y baja cuando x sube; magnitud 2 significa bajar 2 por cada unidad de x.",
+        "pl": "Ujemne nachylenie: y spada, gdy x rośnie; |2| oznacza spadek o 2 na jednostkę x."
+      },
+      "feedbackIncorrect": {
+        "en": "Slope −2 = Δy/Δx = −2/1, so y changes by −2 when x increases by 1.",
+        "es": "Pendiente −2 = Δy/Δx = −2/1, así que y cambia en −2 cuando x aumenta 1.",
+        "pl": "Nachylenie −2 = Δy/Δx = −2/1, więc y zmienia się o −2, gdy x rośnie o 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "y increases by 2",
+          "y decreases by 2",
+          "y decreases by 1/2",
+          "y stays the same"
+        ],
+        "es": [
+          "y aumenta en 2",
+          "y disminuye en 2",
+          "y disminuye en 1/2",
+          "y no cambia"
+        ],
+        "pl": [
+          "y rośnie o 2",
+          "y maleje o 2",
+          "y maleje o 1/2",
+          "y się nie zmienia"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "ignore_sign",
+        "invert_slope"
+      ]
+    },
+    {
+      "id": "alg1-l06-g05",
+      "knowledgePointIds": [
+        "kp.alg1.rate.of.change"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In y = −4x + 7, what is the rate of change?",
+        "es": "En y = −4x + 7, ¿cuál es la tasa de cambio?",
+        "pl": "W y = −4x + 7, jaka jest stopa zmian?"
+      },
+      "feedbackCorrect": {
+        "en": "In y = mx + b, the rate of change (slope) is m = −4.",
+        "es": "En y = mx + b, la tasa de cambio (pendiente) es m = −4.",
+        "pl": "W y = mx + b stopa zmian (nachylenie) to m = −4."
+      },
+      "feedbackIncorrect": {
+        "en": "The coefficient of x is the constant rate: m = −4 (not the intercept 7).",
+        "es": "El coeficiente de x es la tasa constante: m = −4 (no la intersección 7).",
+        "pl": "Współczynnik przy x to stała stopa: m = −4 (nie wyraz wolny 7)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        }
+      ],
+      "promptMath": "y = -4x + 7",
+      "choices": {
+        "en": [
+          "4",
+          "7",
+          "−4",
+          "−7"
+        ],
+        "es": [
+          "4",
+          "7",
+          "−4",
+          "−7"
+        ],
+        "pl": [
+          "4",
+          "7",
+          "−4",
+          "−7"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "-4",
+      "acceptNumeric": -4,
+      "diagnosticTags": [
+        "confuse_intercept",
+        "drop_sign"
+      ]
+    },
+    {
+      "id": "alg1-l06-i01",
+      "knowledgePointIds": [
+        "kp.alg1.function.linear.intro"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.2,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which situation is linear?",
+        "es": "¿Qué situación es lineal?",
+        "pl": "Która sytuacja jest liniowa?"
+      },
+      "feedbackCorrect": {
+        "en": "Constant dollars per hour is a constant rate — linear.",
+        "es": "Dólares por hora constantes = tasa constante — lineal.",
+        "pl": "Stałe dolary na godzinę = stała stopa — liniowe."
+      },
+      "feedbackIncorrect": {
+        "en": "Look for constant rate of change. Doubling, squares, and halving are not linear.",
+        "es": "Busca tasa de cambio constante. Duplicar, cuadrados y reducir a la mitad no son lineales.",
+        "pl": "Szukaj stałej stopy zmian. Podwajanie, kwadraty i połowienie nie są liniowe."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.A.1",
+            "F-IF.A.1",
+            "F-LE.A.1b"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "Population doubles every year",
+          "Area of a square vs side length",
+          "Bounce height halves each bounce",
+          "Earn $12 per hour with no tip variation"
+        ],
+        "es": [
+          "La población se duplica cada año",
+          "Área de un cuadrado vs lado",
+          "La altura del rebote se reduce a la mitad",
+          "Ganar $12 por hora sin variación de propina"
+        ],
+        "pl": [
+          "Populacja podwaja się co rok",
+          "Pole kwadratu vs długość boku",
+          "Wysokość odbicia maleje o połowę",
+          "Zarobek 12 $/h bez zmiennych napiwków"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "nonlinear_as_linear"
+      ]
+    },
+    {
+      "id": "alg1-l06-i02",
+      "knowledgePointIds": [
+        "kp.alg1.function.linear.intro"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If g(x) = −x + 5, what is g(2)?",
+        "es": "Si g(x) = −x + 5, ¿cuánto es g(2)?",
+        "pl": "Jeśli g(x) = −x + 5, ile wynosi g(2)?"
+      },
+      "feedbackCorrect": {
+        "en": "g(2) = −2 + 5 = 3.",
+        "es": "g(2) = −2 + 5 = 3.",
+        "pl": "g(2) = −2 + 5 = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute x = 2: −2 + 5 = 3.",
+        "es": "Sustituye x = 2: −2 + 5 = 3.",
+        "pl": "Podstaw x = 2: −2 + 5 = 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.A.1",
+            "F-IF.A.1",
+            "F-LE.A.1b"
+          ]
+        }
+      ],
+      "promptMath": "g(x) = -x + 5",
+      "choices": {
+        "en": [
+          "3",
+          "7",
+          "−3",
+          "5"
+        ],
+        "es": [
+          "3",
+          "7",
+          "−3",
+          "5"
+        ],
+        "pl": [
+          "3",
+          "7",
+          "−3",
+          "5"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "3",
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "eval_error",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l06-i03",
+      "knowledgePointIds": [
+        "kp.alg1.rate.of.change"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Table: x 0,2,4 and y 1,5,9. Rate of change?",
+        "es": "Tabla: x 0,2,4 e y 1,5,9. ¿Tasa de cambio?",
+        "pl": "Tabela: x 0,2,4 oraz y 1,5,9. Stopa zmian?"
+      },
+      "feedbackCorrect": {
+        "en": "(5−1)/(2−0) = 4/2 = 2.",
+        "es": "(5−1)/(2−0) = 4/2 = 2.",
+        "pl": "(5−1)/(2−0) = 4/2 = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "Δy/Δx between consecutive points: 4/2 = 2.",
+        "es": "Δy/Δx entre puntos consecutivos: 4/2 = 2.",
+        "pl": "Δy/Δx między kolejnymi punktami: 4/2 = 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "4",
+          "2",
+          "1",
+          "0.5"
+        ],
+        "es": [
+          "4",
+          "2",
+          "1",
+          "0.5"
+        ],
+        "pl": [
+          "4",
+          "2",
+          "1",
+          "0.5"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "2",
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "dx_over_dy",
+        "use_x_step_only"
+      ]
+    },
+    {
+      "id": "alg1-l06-i04",
+      "knowledgePointIds": [
+        "kp.alg1.rate.of.change"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In y = (1/2)x − 3, rate of change is?",
+        "es": "En y = (1/2)x − 3, ¿la tasa de cambio es?",
+        "pl": "W y = (1/2)x − 3 stopa zmian to?"
+      },
+      "feedbackCorrect": {
+        "en": "m = 1/2 is the constant rate of change.",
+        "es": "m = 1/2 es la tasa de cambio constante.",
+        "pl": "m = 1/2 to stała stopa zmian."
+      },
+      "feedbackIncorrect": {
+        "en": "In y = mx + b, rate = m = 1/2 (not the intercept −3).",
+        "es": "En y = mx + b, tasa = m = 1/2 (no la intersección −3).",
+        "pl": "W y = mx + b stopa = m = 1/2 (nie wyraz wolny −3)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        }
+      ],
+      "promptMath": "y = \\frac{1}{2}x - 3",
+      "choices": {
+        "en": [
+          "−3",
+          "2",
+          "1/2",
+          "−1/2"
+        ],
+        "es": [
+          "−3",
+          "2",
+          "1/2",
+          "−1/2"
+        ],
+        "pl": [
+          "−3",
+          "2",
+          "1/2",
+          "−1/2"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "\\frac{1}{2}",
+      "diagnosticTags": [
+        "confuse_intercept",
+        "invert_slope"
+      ]
+    },
+    {
+      "id": "alg1-l06-i05",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intuition"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Slope through (0, 4) and (2, 0)?",
+        "es": "¿Pendiente por (0, 4) y (2, 0)?",
+        "pl": "Nachylenie przez (0, 4) i (2, 0)?"
+      },
+      "feedbackCorrect": {
+        "en": "m = (0−4)/(2−0) = −4/2 = −2.",
+        "es": "m = (0−4)/(2−0) = −4/2 = −2.",
+        "pl": "m = (0−4)/(2−0) = −4/2 = −2."
+      },
+      "feedbackIncorrect": {
+        "en": "Rise/run = −4/2 = −2 (falling line).",
+        "es": "Subida/avance = −4/2 = −2 (recta descendente).",
+        "pl": "Wzrost/przebieg = −4/2 = −2 (prosta opadająca)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "m = \\frac{0-4}{2-0}",
+      "choices": {
+        "en": [
+          "2",
+          "−1/2",
+          "4",
+          "−2"
+        ],
+        "es": [
+          "2",
+          "−1/2",
+          "4",
+          "−2"
+        ],
+        "pl": [
+          "2",
+          "−1/2",
+          "4",
+          "−2"
+        ]
+      },
+      "correctIndex": 3,
+      "correctLatex": "-2",
+      "acceptNumeric": -2,
+      "diagnosticTags": [
+        "drop_sign",
+        "dx_over_dy"
+      ]
+    },
+    {
+      "id": "alg1-l06-i06",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intuition"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.2,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which slope is steeper (larger |m|)?",
+        "es": "¿Qué pendiente es más empinada (mayor |m|)?",
+        "pl": "Które nachylenie jest stromsze (większe |m|)?"
+      },
+      "feedbackCorrect": {
+        "en": "|−5| = 5 is largest; steepest among the options.",
+        "es": "|−5| = 5 es el mayor; el más empinado.",
+        "pl": "|−5| = 5 jest największe; najbardziej strome."
+      },
+      "feedbackIncorrect": {
+        "en": "Compare absolute values: |−5| > |2| > |−1| > |0|.",
+        "es": "Compara valores absolutos: |−5| > |2| > |−1| > |0|.",
+        "pl": "Porównaj wartości bezwzględne: |−5| > |2| > |−1| > |0|."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "m = −5",
+          "m = 2",
+          "m = −1",
+          "m = 0"
+        ],
+        "es": [
+          "m = −5",
+          "m = 2",
+          "m = −1",
+          "m = 0"
+        ],
+        "pl": [
+          "m = −5",
+          "m = 2",
+          "m = −1",
+          "m = 0"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "ignore_absolute_value"
+      ]
+    },
+    {
+      "id": "alg1-l06-i07",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intuition"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.2,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Slope through (−1, 3) and (1, 3)?",
+        "es": "¿Pendiente por (−1, 3) y (1, 3)?",
+        "pl": "Nachylenie przez (−1, 3) i (1, 3)?"
+      },
+      "feedbackCorrect": {
+        "en": "Δy = 0 → horizontal line → slope 0.",
+        "es": "Δy = 0 → recta horizontal → pendiente 0.",
+        "pl": "Δy = 0 → pozioma → nachylenie 0."
+      },
+      "feedbackIncorrect": {
+        "en": "(3−3)/(1−(−1)) = 0/2 = 0.",
+        "es": "(3−3)/(1−(−1)) = 0/2 = 0.",
+        "pl": "(3−3)/(1−(−1)) = 0/2 = 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "3",
+          "0",
+          "2",
+          "undefined"
+        ],
+        "es": [
+          "3",
+          "0",
+          "2",
+          "indefinida"
+        ],
+        "pl": [
+          "3",
+          "0",
+          "2",
+          "nieokreślone"
+        ]
+      },
+      "correctIndex": 1,
+      "correctLatex": "0",
+      "acceptNumeric": 0,
+      "diagnosticTags": [
+        "horizontal_as_undefined"
+      ]
+    },
+    {
+      "id": "alg1-l06-i08",
+      "knowledgePointIds": [
+        "kp.alg1.rate.of.change"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Temperature drops 6° in 3 hours steadily. Rate of change (° per hour)?",
+        "es": "La temperatura baja 6° en 3 horas de forma constante. ¿Tasa (° por hora)?",
+        "pl": "Temperatura spada o 6° w 3 godziny stale. Stopa (° na godzinę)?"
+      },
+      "feedbackCorrect": {
+        "en": "−6° / 3 h = −2° per hour.",
+        "es": "−6° / 3 h = −2° por hora.",
+        "pl": "−6° / 3 h = −2° na godzinę."
+      },
+      "feedbackIncorrect": {
+        "en": "Include the negative for a drop: −6/3 = −2.",
+        "es": "Incluye el negativo por la bajada: −6/3 = −2.",
+        "pl": "Uwzględnij minus przy spadku: −6/3 = −2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.1(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.B.4",
+            "F-IF.B.6",
+            "8.EE.B.5"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "2",
+          "−6",
+          "−2",
+          "3"
+        ],
+        "es": [
+          "2",
+          "−6",
+          "−2",
+          "3"
+        ],
+        "pl": [
+          "2",
+          "−6",
+          "−2",
+          "3"
+        ]
+      },
+      "correctIndex": 2,
+      "correctLatex": "-2",
+      "acceptNumeric": -2,
+      "diagnosticTags": [
+        "drop_sign",
+        "invert_rate"
+      ]
+    },
+    {
+      "id": "alg1-l06-i09",
+      "knowledgePointIds": [
+        "kp.alg1.function.linear.intro"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In y = mx + b, what does b represent?",
+        "es": "En y = mx + b, ¿qué representa b?",
+        "pl": "W y = mx + b, co oznacza b?"
+      },
+      "feedbackCorrect": {
+        "en": "b is the y-intercept — the output when x = 0.",
+        "es": "b es la intersección con y — la salida cuando x = 0.",
+        "pl": "b to punkt przecięcia z osią y — wartość gdy x = 0."
+      },
+      "feedbackIncorrect": {
+        "en": "m is slope/rate; b is where the line crosses the y-axis.",
+        "es": "m es pendiente/tasa; b es donde la recta corta el eje y.",
+        "pl": "m to nachylenie/stopa; b to przecięcie z osią y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.1(D)",
+            "A.12(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.F.A.1",
+            "F-IF.A.1",
+            "F-LE.A.1b"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "slope",
+          "rate of change",
+          "always the maximum y",
+          "y-intercept (value when x = 0)"
+        ],
+        "es": [
+          "pendiente",
+          "tasa de cambio",
+          "siempre el máximo y",
+          "intersección con y (valor cuando x = 0)"
+        ],
+        "pl": [
+          "nachylenie",
+          "stopa zmian",
+          "zawsze maksimum y",
+          "punkt przecięcia z osią y (gdy x = 0)"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "confuse_m_and_b"
+      ]
+    },
+    {
+      "id": "alg1-l06-i10",
+      "knowledgePointIds": [
+        "kp.alg1.slope.intuition"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.2,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Slope through (2, −1) and (5, 5)?",
+        "es": "¿Pendiente por (2, −1) y (5, 5)?",
+        "pl": "Nachylenie przez (2, −1) i (5, 5)?"
+      },
+      "feedbackCorrect": {
+        "en": "m = (5−(−1))/(5−2) = 6/3 = 2.",
+        "es": "m = (5−(−1))/(5−2) = 6/3 = 2.",
+        "pl": "m = (5−(−1))/(5−2) = 6/3 = 2."
+      },
+      "feedbackIncorrect": {
+        "en": "(y₂−y₁)/(x₂−x₁) = 6/3 = 2.",
+        "es": "(y₂−y₁)/(x₂−x₁) = 6/3 = 2.",
+        "pl": "(y₂−y₁)/(x₂−x₁) = 6/3 = 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.3(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "8.EE.B.5",
+            "8.F.B.4",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "choices": {
+        "en": [
+          "2",
+          "3",
+          "6",
+          "1/2"
+        ],
+        "es": [
+          "2",
+          "3",
+          "6",
+          "1/2"
+        ],
+        "pl": [
+          "2",
+          "3",
+          "6",
+          "1/2"
+        ]
+      },
+      "correctIndex": 0,
+      "correctLatex": "2",
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "order_swap",
+        "arithmetic_error"
+      ]
+    }
+  ]
+}

@@ -166,6 +166,39 @@ export function buildWorldSites(scene: THREE.Scene): WorldSite[] {
     interactRadius: 4,
   })
 
+  const board4 = createLessonBoard()
+  placeOnGround(board4, 22, 8)
+  board4.rotation.y = -0.45
+  scene.add(board4)
+  sites.push({
+    siteId: 'lesson_board_4',
+    mesh: board4,
+    position: board4.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board5 = createLessonBoard()
+  placeOnGround(board5, -22, 10)
+  board5.rotation.y = 0.85
+  scene.add(board5)
+  sites.push({
+    siteId: 'lesson_board_5',
+    mesh: board5,
+    position: board5.position.clone(),
+    interactRadius: 4,
+  })
+
+  const board6 = createLessonBoard()
+  placeOnGround(board6, 6, 26)
+  board6.rotation.y = -0.15
+  scene.add(board6)
+  sites.push({
+    siteId: 'lesson_board_6',
+    mesh: board6,
+    position: board6.position.clone(),
+    interactRadius: 4,
+  })
+
   const pedestal = createProgressPedestal()
   placeOnGround(pedestal, 14, -6)
   pedestal.rotation.y = -0.5

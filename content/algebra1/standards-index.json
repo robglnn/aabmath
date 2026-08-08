@@ -22,7 +22,8 @@
         },
         "knowledgePointIds": [
           "kp.alg1.variable.identify",
-          "kp.alg1.expression.translate"
+          "kp.alg1.expression.translate",
+          "kp.alg1.rate.of.change"
         ]
       },
       "A.1(B)": {
@@ -35,7 +36,12 @@
           "kp.alg1.order.ops",
           "kp.alg1.eval.substitute",
           "kp.alg1.solve.one.step",
-          "kp.alg1.solve.two.step"
+          "kp.alg1.solve.two.step",
+          "kp.alg1.solve.multi.step",
+          "kp.alg1.solve.both.sides",
+          "kp.alg1.equation.verify",
+          "kp.alg1.inequality.one.step",
+          "kp.alg1.inequality.two.step"
         ]
       },
       "A.1(D)": {
@@ -49,7 +55,11 @@
           "kp.alg1.expression.parts",
           "kp.alg1.expression.translate",
           "kp.alg1.equation.meaning",
-          "kp.alg1.equation.vs.expression"
+          "kp.alg1.equation.vs.expression",
+          "kp.alg1.equation.verify",
+          "kp.alg1.inequality.meaning",
+          "kp.alg1.function.linear.intro",
+          "kp.alg1.rate.of.change"
         ]
       },
       "A.1(F)": {
@@ -62,7 +72,10 @@
           "kp.alg1.expression.parts",
           "kp.alg1.order.ops",
           "kp.alg1.eval.multi.var",
-          "kp.alg1.solve.two.step"
+          "kp.alg1.solve.two.step",
+          "kp.alg1.solve.multi.step",
+          "kp.alg1.inequality.two.step",
+          "kp.alg1.slope.intuition"
         ]
       },
       "A.5(A)": {
@@ -75,7 +88,10 @@
           "kp.alg1.equation.meaning",
           "kp.alg1.equation.vs.expression",
           "kp.alg1.solve.one.step",
-          "kp.alg1.solve.two.step"
+          "kp.alg1.solve.two.step",
+          "kp.alg1.solve.multi.step",
+          "kp.alg1.solve.both.sides",
+          "kp.alg1.equation.verify"
         ]
       },
       "A.12(B)": {
@@ -87,7 +103,52 @@
         "knowledgePointIds": [
           "kp.alg1.expression.translate",
           "kp.alg1.eval.substitute",
-          "kp.alg1.eval.multi.var"
+          "kp.alg1.eval.multi.var",
+          "kp.alg1.function.linear.intro"
+        ]
+      },
+      "A.5(B)": {
+        "description": {
+          "en": "Solve linear inequalities in one variable, including those for which the application of the distributive property is necessary and for which variables are included on both sides",
+          "es": "Resolver desigualdades lineales en una variable, incluidas las que requieren la propiedad distributiva y variables en ambos lados",
+          "pl": "Rozwiązywać nierówności liniowe jednej zmiennej, także z rozdzielnością i zmiennymi po obu stronach"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.inequality.meaning",
+          "kp.alg1.inequality.one.step",
+          "kp.alg1.inequality.two.step"
+        ]
+      },
+      "A.2(A)": {
+        "description": {
+          "en": "Determine the domain and range of linear functions in mathematical and real-world situations",
+          "es": "Determinar el dominio y el rango de funciones lineales en situaciones matemáticas y del mundo real",
+          "pl": "Określać dziedzinę i przeciwdziedzinę funkcji liniowych w sytuacjach matematycznych i rzeczywistych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.function.linear.intro"
+        ]
+      },
+      "A.3(A)": {
+        "description": {
+          "en": "Determine the slope of a line given a table of values, a graph, two points on the line, and an equation written in various forms",
+          "es": "Determinar la pendiente de una recta dada una tabla, una gráfica, dos puntos o una ecuación en varias formas",
+          "pl": "Wyznaczać nachylenie prostej z tabeli, wykresu, dwóch punktów lub równania w różnych postaciach"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.rate.of.change",
+          "kp.alg1.slope.intuition"
+        ]
+      },
+      "A.3(B)": {
+        "description": {
+          "en": "Calculate the rate of change of a linear function represented tabularly, graphically, or algebraically in context of mathematical and real-world problems",
+          "es": "Calcular la tasa de cambio de una función lineal representada en tabla, gráfica o algebraicamente en contexto",
+          "pl": "Obliczać stopę zmian funkcji liniowej z tabeli, wykresu lub algebraicznie w kontekście"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.slope.intuition",
+          "kp.alg1.rate.of.change"
         ]
       }
     },
@@ -128,7 +189,10 @@
           "kp.alg1.equation.meaning",
           "kp.alg1.equation.vs.expression",
           "kp.alg1.solve.one.step",
-          "kp.alg1.solve.two.step"
+          "kp.alg1.solve.two.step",
+          "kp.alg1.solve.multi.step",
+          "kp.alg1.solve.both.sides",
+          "kp.alg1.equation.verify"
         ]
       },
       "A-REI.B.3": {
@@ -139,7 +203,13 @@
         },
         "knowledgePointIds": [
           "kp.alg1.solve.one.step",
-          "kp.alg1.solve.two.step"
+          "kp.alg1.solve.two.step",
+          "kp.alg1.solve.multi.step",
+          "kp.alg1.solve.both.sides",
+          "kp.alg1.equation.verify",
+          "kp.alg1.inequality.meaning",
+          "kp.alg1.inequality.one.step",
+          "kp.alg1.inequality.two.step"
         ]
       },
       "6.EE.A.2a": {
@@ -181,7 +251,8 @@
           "pl": "Rozumieć rozwiązywanie równania jako proces rozumowania"
         },
         "knowledgePointIds": [
-          "kp.alg1.equation.meaning"
+          "kp.alg1.equation.meaning",
+          "kp.alg1.equation.verify"
         ]
       },
       "6.EE.B.6": {
@@ -211,7 +282,93 @@
           "pl": "Używać zmiennych do zapisu i rozwiązywania równań"
         },
         "knowledgePointIds": [
-          "kp.alg1.solve.two.step"
+          "kp.alg1.solve.two.step",
+          "kp.alg1.solve.multi.step"
+        ]
+      },
+      "6.EE.B.8": {
+        "description": {
+          "en": "Write an inequality to represent a constraint and graph on a number line",
+          "es": "Escribir una desigualdad que represente una restricción y graficarla en la recta",
+          "pl": "Zapisywać nierówność jako ograniczenie i rysować na osi liczbowej"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.inequality.meaning"
+        ]
+      },
+      "7.EE.B.4b": {
+        "description": {
+          "en": "Solve word problems leading to inequalities of the form px + q > r or px + q < r",
+          "es": "Resolver problemas que conduzcan a desigualdades de la forma px + q > r o px + q < r",
+          "pl": "Rozwiązywać zadania prowadzące do nierówności postaci px + q > r lub px + q < r"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.inequality.one.step",
+          "kp.alg1.inequality.two.step"
+        ]
+      },
+      "8.F.A.1": {
+        "description": {
+          "en": "Understand that a function assigns to each input exactly one output",
+          "es": "Comprender que una función asigna a cada entrada exactamente una salida",
+          "pl": "Rozumieć, że funkcja przypisuje każdemu argumentowi dokładnie jedną wartość"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.function.linear.intro"
+        ]
+      },
+      "F-IF.A.1": {
+        "description": {
+          "en": "Understand that a function from one set to another assigns each element of the domain to exactly one element of the range",
+          "es": "Comprender que una función de un conjunto a otro asigna cada elemento del dominio a exactamente un elemento del rango",
+          "pl": "Rozumieć, że funkcja ze zbioru w zbiór przypisuje każdemu elementowi dziedziny dokładnie jeden element przeciwdziedziny"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.function.linear.intro"
+        ]
+      },
+      "F-LE.A.1b": {
+        "description": {
+          "en": "Recognize situations in which one quantity changes at a constant rate relative to another",
+          "es": "Reconocer situaciones en las que una cantidad cambia a tasa constante respecto a otra",
+          "pl": "Rozpoznawać sytuacje, w których jedna wielkość zmienia się ze stałą stopą względem drugiej"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.function.linear.intro",
+          "kp.alg1.rate.of.change"
+        ]
+      },
+      "8.F.B.4": {
+        "description": {
+          "en": "Construct a function to model a linear relationship between two quantities",
+          "es": "Construir una función que modele una relación lineal entre dos cantidades",
+          "pl": "Konstruować funkcję modelującą zależność liniową dwóch wielkości"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.rate.of.change",
+          "kp.alg1.slope.intuition"
+        ]
+      },
+      "F-IF.B.6": {
+        "description": {
+          "en": "Calculate and interpret the average rate of change of a function over a specified interval",
+          "es": "Calcular e interpretar la tasa media de cambio de una función en un intervalo",
+          "pl": "Obliczać i interpretować średnią stopę zmian funkcji na przedziale"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.rate.of.change",
+          "kp.alg1.slope.intuition"
+        ]
+      },
+      "8.EE.B.5": {
+        "description": {
+          "en": "Graph proportional relationships, interpreting the unit rate as the slope of the graph",
+          "es": "Graficar relaciones proporcionales, interpretando la tasa unitaria como la pendiente",
+          "pl": "Rysować zależności proporcjonalne, interpretując stopę jednostkową jako nachylenie"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.rate.of.change",
+          "kp.alg1.slope.intuition"
         ]
       }
     }
@@ -244,6 +401,39 @@
       "6.EE.B.5",
       "6.EE.B.7",
       "7.EE.B.4"
+    ],
+    "alg1-l04": [
+      "A.5(A)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-REI.A.1",
+      "A-REI.B.3",
+      "6.EE.B.5",
+      "7.EE.B.4"
+    ],
+    "alg1-l05": [
+      "A.5(B)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-REI.B.3",
+      "6.EE.B.8",
+      "7.EE.B.4b"
+    ],
+    "alg1-l06": [
+      "A.2(A)",
+      "A.3(A)",
+      "A.3(B)",
+      "A.1(A)",
+      "A.1(D)",
+      "A.12(B)",
+      "8.F.A.1",
+      "F-IF.A.1",
+      "F-LE.A.1b",
+      "8.F.B.4",
+      "F-IF.B.6",
+      "8.EE.B.5"
     ]
   }
 }

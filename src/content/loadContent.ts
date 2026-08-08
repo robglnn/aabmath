@@ -1,10 +1,12 @@
-import type { KnowledgePoint, LessonPack, StandardsRef } from './types'
+import type { KnowledgePoint, LessonItem, LessonPack, StandardsRef } from './types'
 
 import knowledgePointsDoc from '../../content/algebra1/knowledge-points.json'
 import standardsIndexDoc from '../../content/algebra1/standards-index.json'
-import lesson01 from '../../content/algebra1/lesson-01.json'
-import lesson02 from '../../content/algebra1/lesson-02.json'
-import lesson03 from '../../content/algebra1/lesson-03.json'
+
+const lessonModules = import.meta.glob('../../content/algebra1/lesson-*.json', {
+  eager: true,
+  import: 'default',
+})
 
 export interface StandardsIndex {
   version: number
@@ -35,12 +37,12 @@ function asLesson(raw: unknown): LessonPack {
   return raw as LessonPack
 }
 
-/** Load Algebra I L1–L3 packs (static JSON under content/algebra1/). */
+/** Load Algebra I lesson packs (L1–L6 via glob of content/algebra1/lesson-*.json). */
 export function loadAlgebra1Content(): Algebra1Content {
   const knowledgePoints = (knowledgePointsDoc as { knowledgePoints: KnowledgePoint[] }).knowledgePoints
-  const lessons = [asLesson(lesson01), asLesson(lesson02), asLesson(lesson03)].sort(
-    (a, b) => a.order - b.order,
-  )
+  const lessons = Object.values(lessonModules)
+    .map((raw) => asLesson(raw))
+    .sort((a, b) => a.order - b.order)
 
   return {
     knowledgePoints,
@@ -71,4 +73,33 @@ export function flattenStandards(refs: StandardsRef[], primary = ['TX', 'CCSS'])
 
 export function lessonByWorldSite(content: Algebra1Content, siteId: string): LessonPack | undefined {
   return content.lessons.find((l) => l.worldHook.siteId === siteId)
+}
+
+/** Pick up to `max` review items for due knowledge points (prefers independent items). */
+export function pickReviewItems(content: Algebra1Content, knowledgePointIds: string[], max = 3): LessonItem[] {
+  const picked: LessonItem[] = []
+  const usedItemIds = new Set<string>()
+
+  for (const kpId of knowledgePointIds) {
+    if (picked.length >= max) break
+
+    let best: LessonItem | undefined
+    for (const lesson of content.lessons) {
+      const independentIds = new Set(getSectionItemIds(lesson, 'independent'))
+      const candidates = lesson.items.filter(
+        (item) => item.knowledgePointIds.includes(kpId) && !usedItemIds.has(item.id),
+      )
+      const preferred = candidates.find((item) => independentIds.has(item.id)) ?? candidates[0]
+      if (preferred && (!best || independentIds.has(preferred.id))) {
+        best = preferred
+      }
+    }
+
+    if (best) {
+      picked.push(best)
+      usedItemIds.add(best.id)
+    }
+  }
+
+  return picked
 }

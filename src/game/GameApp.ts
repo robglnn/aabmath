@@ -1,14 +1,20 @@
 import * as THREE from 'three'
-import { loadAlgebra1Content, lessonByWorldSite } from '../content/loadContent'
+import { loadAlgebra1Content, lessonByWorldSite, pickReviewItems } from '../content/loadContent'
 import { HudController } from '../ui/HudController'
 import { buildProgressReportData } from './lesson/buildProgressReport'
 import { LessonRunner } from './lesson/LessonRunner'
+import { ReviewRunner } from './lesson/ReviewRunner'
 import { InputManager } from './input/InputManager'
 import { PlayerController } from './player/PlayerController'
 import { ThirdPersonCamera } from './player/ThirdPersonCamera'
 import { DigSiteManager, PalmLaserSystem } from './laser/PalmLaser'
 import { buildWorld, updateWorld, type WorldContext } from './world/WorldScene'
-import { createDefaultProgress, PedagogyEngine } from '../pedagogy/PedagogyEngine'
+import { PedagogyEngine } from '../pedagogy/PedagogyEngine'
+import {
+  applySrDebugOverride,
+  loadPlayerProgress,
+  savePlayerProgress,
+} from '../pedagogy/progressStorage'
 
 /**
  * Composition root — wires world, player, camera, lasers, input, HUD.
@@ -34,10 +40,11 @@ export class GameApp {
   private readonly clockTarget = new THREE.Vector3()
 
   private readonly content = loadAlgebra1Content()
-  private readonly progress = createDefaultProgress()
+  private readonly progress = loadPlayerProgress()
   private readonly pedagogy = new PedagogyEngine(this.progress, this.content.knowledgePointById)
   private lessonRunner: LessonRunner | null = null
-  private readonly unlockedSites = new Set<string>(['lesson_board_1'])
+  private reviewRunner: ReviewRunner | null = null
+  private pendingAfterReview: (() => void) | null = null
 
   constructor(
     readonly canvas: HTMLCanvasElement,
@@ -70,6 +77,9 @@ export class GameApp {
     this.digSites = new DigSiteManager(this.scene, crater, 'dig_crater_1')
 
     this.input = new InputManager(canvas, hudRoot, { mountTouch: false })
+
+    applySrDebugOverride(this.progress)
+    this.hud.setLocale(this.progress.locale)
 
     this.wireHudCallbacks()
     this.wireWorldHooks()
@@ -164,25 +174,54 @@ export class GameApp {
         }
       },
       onLessonSubmit: (answer) => {
+        if (this.reviewRunner) {
+          const view = this.reviewRunner.submitAnswer(answer)
+          this.openLesson(view)
+          this.syncHudStats()
+          this.persistProgress()
+          if (this.reviewRunner.shouldExit()) {
+            const then = this.pendingAfterReview ?? (() => this.enterDigMode())
+            this.reviewRunner = null
+            this.pendingAfterReview = null
+            this.hud.hideLesson()
+            then()
+          }
+          return
+        }
         if (!this.lessonRunner) return
         const view = this.lessonRunner.submitAnswer(answer)
         this.openLesson(view)
         this.syncHudStats()
+        this.persistProgress()
         if (view.gatePassed) {
           const lesson = this.lessonRunner.getLesson()
-          for (const siteId of this.pedagogy.unlockSiteIds(lesson)) {
-            this.unlockedSites.add(siteId)
+          for (const _siteId of this.pedagogy.unlockSiteIds(lesson)) {
             this.hud.showUnlockToast(lesson.title.en)
           }
         }
       },
       onLessonClose: () => {
+        if (this.reviewRunner) {
+          if (!this.reviewRunner.canClose()) return
+          const then = this.pendingAfterReview ?? (() => this.enterDigMode())
+          this.reviewRunner = null
+          this.pendingAfterReview = null
+          then()
+          return
+        }
         if (this.lessonRunner && !this.lessonRunner.canClose()) return
         this.lessonRunner = null
-        this.enterDigMode()
+        this.maybeStartSpacedReview(() => this.enterDigMode())
+        this.persistProgress()
       },
       onLocaleChange: (locale) => {
         this.progress.locale = locale
+        this.persistProgress()
+        if (this.reviewRunner) {
+          this.reviewRunner.setLocale(locale)
+          this.openLesson(this.reviewRunner.getViewState())
+          return
+        }
         if (this.lessonRunner) {
           this.lessonRunner.setLocale(locale)
           this.openLesson(this.lessonRunner.getViewState())
@@ -208,7 +247,9 @@ export class GameApp {
           return
         }
         if (siteId === 'progress_pedestal') {
-          this.openProgressReport(buildProgressReportData(this.content, this.pedagogy))
+          this.maybeStartSpacedReview(() => {
+            this.openProgressReport(buildProgressReportData(this.content, this.pedagogy))
+          })
           return
         }
         if (siteId === 'hub_plaza') {
@@ -220,14 +261,42 @@ export class GameApp {
   }
 
   private startLessonAtSite(siteId: string): void {
-    if (!this.unlockedSites.has(siteId)) {
+    if (!this.pedagogy.unlockedSiteIds(this.content.lessons).has(siteId)) {
       this.hud.showUnlockToast('LOCKED')
       return
     }
     const lesson = lessonByWorldSite(this.content, siteId)
     if (!lesson) return
+    this.reviewRunner = null
+    this.pendingAfterReview = null
     this.lessonRunner = new LessonRunner(lesson, this.pedagogy, this.hud.getLocale())
     this.openLesson(this.lessonRunner.getViewState())
+  }
+
+  private maybeStartSpacedReview(then: () => void): void {
+    const due = this.pedagogy.dueReviews()
+    if (due.length === 0) {
+      then()
+      return
+    }
+    const items = pickReviewItems(this.content, due, 3)
+    if (items.length === 0) {
+      then()
+      return
+    }
+    this.pendingAfterReview = then
+    this.lessonRunner = null
+    this.reviewRunner = new ReviewRunner(
+      items,
+      this.content.knowledgePointById,
+      this.pedagogy,
+      this.hud.getLocale(),
+    )
+    this.openLesson(this.reviewRunner.getViewState())
+  }
+
+  private persistProgress(): void {
+    savePlayerProgress(this.pedagogy.getProgress())
   }
 
   private syncHudStats(): void {
@@ -244,7 +313,7 @@ export class GameApp {
     const px = this.player.mesh.position.x
     const pz = this.player.mesh.position.z
     for (const site of this.world.sites) {
-      if (site.siteId.startsWith('lesson_board') && !this.unlockedSites.has(site.siteId)) {
+      if (site.siteId.startsWith('lesson_board') && !this.pedagogy.unlockedSiteIds(this.content.lessons).has(site.siteId)) {
         continue
       }
       const dx = site.mesh.position.x - px

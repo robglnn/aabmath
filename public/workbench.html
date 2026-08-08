@@ -9,7 +9,7 @@
     body { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
     h1 { color: #7dffb3; }
     .bar { background: #1a2438; border-radius: 6px; overflow: hidden; height: 12px; margin: 0.5rem 0 1.5rem; }
-    .bar > span { display: block; height: 100%; background: #3dff9a; width: 42%; }
+    .bar > span { display: block; height: 100%; background: #3dff9a; width: 55%; }
     section { border: 1px solid #2a3a55; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
     .pass { color: #3dff9a; } .fail { color: #ff6b6b; } .wip { color: #ffd166; }
     a { color: #8ecbff; }
@@ -17,24 +17,23 @@
 </head>
 <body>
   <h1>Axiom Reach — Gauntlet Workbench</h1>
-  <p>Wave 1 PASS. Wave 2 in progress. Target: Algebra I course gate. Pages: <a href="https://robglnn.github.io/aabmath/">robglnn.github.io/aabmath</a></p>
-  <div class="bar"><span id="overall"></span></div>
+  <p>Wave 2 PASS. Wave 3 starting. Play: <a href="https://robglnn.github.io/aabmath/">robglnn.github.io/aabmath</a></p>
+  <div class="bar"><span></span></div>
   <section>
     <h2>Status</h2>
-    <ul id="targets">
+    <ul>
       <li class="pass">[PASS] Wave 1 exit gate</li>
-      <li class="wip">[WIP] Wave 2 — Alg I L4–6 content (builder running)</li>
-      <li class="wip">[WIP] Wave 2 — boards 4–6 + spaced review in play</li>
-      <li class="wip">[WIP] GitHub Pages deploy (workflow + base path)</li>
+      <li class="pass">[PASS] Wave 2 — L4–6 + boards + SR + MC shuffle</li>
+      <li class="wip">[WIP] Wave 3 — Alg I L7–9</li>
       <li class="wip">[ ] Algebra I course gate</li>
     </ul>
   </section>
   <section>
     <h2>Log</h2>
-    <pre id="log">[orchestrator] /loop 8h armed (AGENT_LOOP_TICK_aabmath_gauntlet)
-[orchestrator] Wave 2 started: L4–6 + world/SR + GitHub Pages
-[builder] content L4–6: RUNNING
-[builder] world boards + SR play: RUNNING</pre>
+    <pre>[critic] content wave2b: PASS — MC shuffle closes always-A
+[critic] world-sr wave2b: PASS — SR due in-session
+[orchestrator] exit-gate-wave2: PASS
+[orchestrator] Wave 3 started: L7–9 cluster</pre>
   </section>
 </body>
 </html>

@@ -17,7 +17,7 @@
   "worldHook": {
     "siteId": "lesson_board_3",
     "unlockOnMastery": [
-      "hub_region_ruins_east"
+      "lesson_board_4"
     ]
   },
   "sections": [
@@ -147,25 +147,25 @@
       ],
       "choices": {
         "en": [
-          "3x + 2",
           "3x + 2 = 11",
+          "3x + 2",
           "3(x + 2)",
           "x² − 1"
         ],
         "es": [
-          "3x + 2",
           "3x + 2 = 11",
+          "3x + 2",
           "3(x + 2)",
           "x² − 1"
         ],
         "pl": [
-          "3x + 2",
           "3x + 2 = 11",
+          "3x + 2",
           "3(x + 2)",
           "x² − 1"
         ]
       },
-      "correctIndex": 1,
+      "correctIndex": 0,
       "diagnosticTags": [
         "call_expression_equation"
       ]
@@ -216,25 +216,25 @@
       "promptMath": "x + 7 = 12",
       "choices": {
         "en": [
-          "x = 5",
           "x = 19",
+          "x = 5",
           "x = 7",
           "x = 12"
         ],
         "es": [
-          "x = 5",
           "x = 19",
+          "x = 5",
           "x = 7",
           "x = 12"
         ],
         "pl": [
-          "x = 5",
           "x = 19",
+          "x = 5",
           "x = 7",
           "x = 12"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "correctLatex": "x=5",
       "acceptNumeric": 5,
       "diagnosticTags": [
@@ -287,25 +287,25 @@
       "promptMath": "2x + 1 = 7",
       "choices": {
         "en": [
-          "Yes",
           "No",
           "Only if x is positive",
+          "Yes",
           "Cannot tell"
         ],
         "es": [
-          "Sí",
           "No",
           "Solo si x es positivo",
+          "Sí",
           "No se puede saber"
         ],
         "pl": [
-          "Tak",
           "Nie",
           "Tylko gdy x jest dodatnie",
+          "Tak",
           "Nie da się stwierdzić"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 2,
       "diagnosticTags": [
         "check_arithmetic_error"
       ]
@@ -356,25 +356,25 @@
       "promptMath": "4x = 20",
       "choices": {
         "en": [
-          "x = 5",
           "x = 16",
           "x = 24",
-          "x = 80"
+          "x = 80",
+          "x = 5"
         ],
         "es": [
-          "x = 5",
           "x = 16",
           "x = 24",
-          "x = 80"
+          "x = 80",
+          "x = 5"
         ],
         "pl": [
-          "x = 5",
           "x = 16",
           "x = 24",
-          "x = 80"
+          "x = 80",
+          "x = 5"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "correctLatex": "x=5",
       "acceptNumeric": 5,
       "diagnosticTags": [
@@ -500,25 +500,25 @@
       "promptMath": "2x + 3 = 11",
       "choices": {
         "en": [
-          "x = 4",
           "x = 7",
+          "x = 4",
           "x = 5.5",
           "x = 8"
         ],
         "es": [
-          "x = 4",
           "x = 7",
+          "x = 4",
           "x = 5.5",
           "x = 8"
         ],
         "pl": [
-          "x = 4",
           "x = 7",
+          "x = 4",
           "x = 5.5",
           "x = 8"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "correctLatex": "x=4",
       "acceptNumeric": 4,
       "diagnosticTags": [
@@ -571,24 +571,24 @@
       "choices": {
         "en": [
           "An expression can be solved for x; an equation can only be simplified",
-          "An equation can be true or false for a value of x; an expression just names a value",
           "Expressions always contain equals signs",
+          "An equation can be true or false for a value of x; an expression just names a value",
           "Equations never contain variables"
         ],
         "es": [
           "Una expresión se puede resolver para x; una ecuación solo se simplifica",
-          "Una ecuación puede ser verdadera o falsa para un valor de x; una expresión solo nombra un valor",
           "Las expresiones siempre tienen signos igual",
+          "Una ecuación puede ser verdadera o falsa para un valor de x; una expresión solo nombra un valor",
           "Las ecuaciones nunca tienen variables"
         ],
         "pl": [
           "Wyrażenie można rozwiązać względem x; równanie tylko uprościć",
-          "Równanie może być prawdziwe lub fałszywe dla wartości x; wyrażenie tylko nazywa wartość",
           "Wyrażenia zawsze mają znaki równości",
+          "Równanie może być prawdziwe lub fałszywe dla wartości x; wyrażenie tylko nazywa wartość",
           "Równania nigdy nie zawierają zmiennych"
         ]
       },
-      "correctIndex": 1,
+      "correctIndex": 2,
       "diagnosticTags": [
         "solve_vs_simplify"
       ]
@@ -639,24 +639,24 @@
       "choices": {
         "en": [
           "Equation",
-          "Expression",
           "Inequality",
-          "Formula only"
+          "Formula only",
+          "Expression"
         ],
         "es": [
           "Ecuación",
-          "Expresión",
           "Inecuación",
-          "Solo fórmula"
+          "Solo fórmula",
+          "Expresión"
         ],
         "pl": [
           "Równanie",
-          "Wyrażenie",
           "Nierówność",
-          "Tylko wzór"
+          "Tylko wzór",
+          "Wyrażenie"
         ]
       },
-      "correctIndex": 1,
+      "correctIndex": 3,
       "diagnosticTags": [
         "call_expression_equation"
       ]
@@ -775,25 +775,25 @@
       "promptMath": "\\frac{x}{3} = 6",
       "choices": {
         "en": [
-          "x = 18",
           "x = 2",
+          "x = 18",
           "x = 9",
           "x = 3"
         ],
         "es": [
-          "x = 18",
           "x = 2",
+          "x = 18",
           "x = 9",
           "x = 3"
         ],
         "pl": [
-          "x = 18",
           "x = 2",
+          "x = 18",
           "x = 9",
           "x = 3"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "correctLatex": "x=18",
       "acceptNumeric": 18,
       "diagnosticTags": [
@@ -846,25 +846,25 @@
       "promptMath": "-5 + x = 2",
       "choices": {
         "en": [
-          "x = 7",
           "x = −3",
           "x = 3",
+          "x = 7",
           "x = −7"
         ],
         "es": [
-          "x = 7",
           "x = −3",
           "x = 3",
+          "x = 7",
           "x = −7"
         ],
         "pl": [
-          "x = 7",
           "x = −3",
           "x = 3",
+          "x = 7",
           "x = −7"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 2,
       "correctLatex": "x=7",
       "acceptNumeric": 7,
       "diagnosticTags": [
@@ -918,25 +918,25 @@
       "promptMath": "3x - 4 = 11",
       "choices": {
         "en": [
-          "x = 5",
           "x = 15/3",
           "x = 7",
-          "x = 3"
+          "x = 3",
+          "x = 5"
         ],
         "es": [
-          "x = 5",
           "x = 15/3",
           "x = 7",
-          "x = 3"
+          "x = 3",
+          "x = 5"
         ],
         "pl": [
-          "x = 5",
           "x = 15/3",
           "x = 7",
-          "x = 3"
+          "x = 3",
+          "x = 5"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "correctLatex": "x=5",
       "acceptNumeric": 5,
       "diagnosticTags": [
@@ -1064,25 +1064,25 @@
       "promptMath": "\\frac{x}{2} + 3 = 7",
       "choices": {
         "en": [
-          "x = 8",
           "x = 20",
+          "x = 8",
           "x = 5",
           "x = 4"
         ],
         "es": [
-          "x = 8",
           "x = 20",
+          "x = 8",
           "x = 5",
           "x = 4"
         ],
         "pl": [
-          "x = 8",
           "x = 20",
+          "x = 8",
           "x = 5",
           "x = 4"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 1,
       "correctLatex": "x=8",
       "acceptNumeric": 8,
       "diagnosticTags": [
@@ -1135,25 +1135,25 @@
       "promptMath": "-3x = 15",
       "choices": {
         "en": [
-          "x = −5",
           "x = 5",
           "x = −45",
+          "x = −5",
           "x = 12"
         ],
         "es": [
-          "x = −5",
           "x = 5",
           "x = −45",
+          "x = −5",
           "x = 12"
         ],
         "pl": [
-          "x = −5",
           "x = 5",
           "x = −45",
+          "x = −5",
           "x = 12"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 2,
       "correctLatex": "x=-5",
       "acceptNumeric": -5,
       "diagnosticTags": [
@@ -1208,25 +1208,25 @@
       "promptMath": "2(x - 1) = 10",
       "choices": {
         "en": [
-          "x = 6",
           "x = 4",
           "x = 5",
-          "x = 11"
+          "x = 11",
+          "x = 6"
         ],
         "es": [
-          "x = 6",
           "x = 4",
           "x = 5",
-          "x = 11"
+          "x = 11",
+          "x = 6"
         ],
         "pl": [
-          "x = 6",
           "x = 4",
           "x = 5",
-          "x = 11"
+          "x = 11",
+          "x = 6"
         ]
       },
-      "correctIndex": 0,
+      "correctIndex": 3,
       "correctLatex": "x=6",
       "acceptNumeric": 6,
       "diagnosticTags": [
