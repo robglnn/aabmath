@@ -1,12 +1,15 @@
 # Active Context
 
 ## Focus
-**Wave 9 exit PASS** (L1–27). Wave 10 L28–30 capstone in flight → Algebra I course gate.
-
-## Course progress
-- Lessons critic-PASS through: **27**
-- Capstone: L28–30 building/critic next
-- Then: `docs/gauntlet/exit-gate-algebra1.md`
+**Algebra I course gate PASS.** 30 lessons live in-world. Optional next: Geometry / Alg II (ask Harrison).
 
 ## Play
 https://robglnn.github.io/aabmath/
+
+## Docs
+- `docs/gauntlet/exit-gate-algebra1.md`
+- `docs/handoff.md`
+- `docs/pipeline.md`
+
+## Loop
+15m `AGENT_LOOP_TICK_aabmath_gauntlet` still armed — may polish residuals or idle until human stops.

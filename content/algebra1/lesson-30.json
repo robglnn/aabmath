@@ -1,0 +1,1301 @@
+{
+  "id": "alg1-l30",
+  "courseId": "algebra1",
+  "order": 30,
+  "title": {
+    "en": "Algebra I Course Capstone",
+    "es": "Capstone del curso de Álgebra I",
+    "pl": "Capstone kursu algebry I"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.capstone.fluency",
+    "kp.alg1.capstone.connect",
+    "kp.alg1.capstone.mastery"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_30",
+    "unlockOnMastery": [
+      "course_algebra1_complete"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will demonstrate Algebra I course mastery on a mixed independent-heavy set (≥80%).",
+        "es": "Demostrarás el dominio del curso de Álgebra I en un conjunto mixto con énfasis independiente (≥80%).",
+        "pl": "Wykazesz opanowanie kursu algebry I na mieszanym zestawie z naciskiem na samodzielność (≥80%)."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: mastery habits",
+        "es": "Enseñar: hábitos de dominio",
+        "pl": "Nauczanie: nawyki opanowania"
+      },
+      "body": {
+        "en": "Classify, connect representations, solve, and check reasonableness. This is the Algebra I mastery check — still with teach and guided warm-up before a heavy independent set.",
+        "es": "Clasifica, conecta representaciones, resuelve y verifica razonabilidad. Esta es la verificación de dominio de Álgebra I — aún con teach y práctica guiada antes del conjunto independiente.",
+        "pl": "Klasyfikuj, łącz reprezentacje, rozwiązuj i sprawdzaj sensowność. To sprawdzenie opanowania algebry I — nadal z teach i guided przed ciężkim zestawem samodzielnym."
+      },
+      "bodyMath": [
+        "\\rightarrow\\ \\text{skill}",
+        "\\leftrightarrow",
+        "\\checkmark"
+      ],
+      "itemIds": [
+        "alg1-l30-t01",
+        "alg1-l30-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Mixed fluency with representation links and final mastery items.",
+        "es": "Fluidez mixta con vínculos de representación e ítems finales de dominio.",
+        "pl": "Mieszana biegłość z powiązaniami reprezentacji i końcowymi pozycjami mistrzowskimi."
+      },
+      "itemIds": [
+        "alg1-l30-g01",
+        "alg1-l30-g02",
+        "alg1-l30-g03",
+        "alg1-l30-g04",
+        "alg1-l30-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l30-i01",
+        "alg1-l30-i02",
+        "alg1-l30-i03",
+        "alg1-l30-i04",
+        "alg1-l30-i05",
+        "alg1-l30-i06",
+        "alg1-l30-i07",
+        "alg1-l30-i08",
+        "alg1-l30-i09",
+        "alg1-l30-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l30-t01",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Capstone tip: identify the skill family before computing.",
+        "es": "Consejo capstone: identifica la familia de habilidad antes de calcular.",
+        "pl": "Wskazówka capstone: rozpoznaj rodzinę umiejętności przed rachunkiem."
+      },
+      "feedbackCorrect": {
+        "en": "Naming the skill reduces wrong-method traps on mixed sets.",
+        "es": "Nombrar la habilidad reduce trampas de método incorrecto en conjuntos mixtos.",
+        "pl": "Nazwanie umiejętności zmniejsza pułapki złej metody w zestawach mieszanych."
+      },
+      "feedbackIncorrect": {
+        "en": "Jumping straight to arithmetic often picks the wrong tool.",
+        "es": "Saltar directo a la aritmética suele elegir la herramienta incorrecta.",
+        "pl": "Skok od razu do rachunku często wybiera złe narzędzie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\text{classify}\\rightarrow\\text{solve}",
+      "choices": {
+        "en": [
+          "$\\text{true}$",
+          "$\\text{false}$",
+          "$\\text{never helps}$",
+          "$\\text{only for graphs}$"
+        ],
+        "es": [
+          "$\\text{verdadero}$",
+          "$\\text{falso}$",
+          "$\\text{nunca ayuda}$",
+          "$\\text{solo gráficas}$"
+        ],
+        "pl": [
+          "$\\text{prawda}$",
+          "$\\text{fałsz}$",
+          "$\\text{nigdy nie pomaga}$",
+          "$\\text{tylko wykresy}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "rushed",
+        "wrong_family"
+      ]
+    },
+    {
+      "id": "alg1-l30-t02",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.connect"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A graph, equation, and table can represent the same relationship.",
+        "es": "Una gráfica, ecuación y tabla pueden representar la misma relación.",
+        "pl": "Wykres, równanie i tabela mogą reprezentować tę samą zależność."
+      },
+      "feedbackCorrect": {
+        "en": "Multiple representations are a core Algebra I habit.",
+        "es": "Múltiples representaciones son un hábito central de Álgebra I.",
+        "pl": "Wiele reprezentacji to kluczowy nawyk algebry I."
+      },
+      "feedbackIncorrect": {
+        "en": "Switching forms is allowed for any function type you study here.",
+        "es": "Cambiar de forma está permitido para cualquier tipo de función aquí.",
+        "pl": "Zmiana formy jest dozwolona dla każdego typu funkcji tu studiowanego."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)",
+            "A.3(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "\\text{eq}\\leftrightarrow\\text{graph}\\leftrightarrow\\text{table}",
+      "choices": {
+        "en": [
+          "$\\text{false}$",
+          "$\\text{true}$",
+          "$\\text{only linear}$",
+          "$\\text{only quadratic}$"
+        ],
+        "es": [
+          "$\\text{falso}$",
+          "$\\text{verdadero}$",
+          "$\\text{solo lineal}$",
+          "$\\text{solo cuadrática}$"
+        ],
+        "pl": [
+          "$\\text{fałsz}$",
+          "$\\text{prawda}$",
+          "$\\text{tylko liniowa}$",
+          "$\\text{tylko kwadratowa}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "rep_isolated",
+        "type_limit"
+      ]
+    },
+    {
+      "id": "alg1-l30-g01",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 4x − 7 = 9.",
+        "es": "Resuelve: 4x − 7 = 9.",
+        "pl": "Rozwiąż: 4x − 7 = 9."
+      },
+      "feedbackCorrect": {
+        "en": "4x = 16 → x = 4.",
+        "es": "Suma 7: 4x = 16, luego x = 4.",
+        "pl": "Dodaj 7: 4x = 16, potem x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Add 7, then divide by 4.",
+        "es": "Suma 7, luego divide entre 4.",
+        "pl": "Dodaj 7, potem podziel przez 4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4x-7=9",
+      "choices": {
+        "en": [
+          "$2$",
+          "$16/4$",
+          "$4$",
+          "$−4$"
+        ],
+        "es": [
+          "$2$",
+          "$16/4$",
+          "$4$",
+          "$−4$"
+        ],
+        "pl": [
+          "$2$",
+          "$16/4$",
+          "$4$",
+          "$−4$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "arith_error",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-g02",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.connect"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "f(x) = 2x − 5 for x < 1 and f(x) = x for x ≥ 1. Find f(1).",
+        "es": "f(x) = 2x − 5 si x < 1 y f(x) = x si x ≥ 1. Halla f(1).",
+        "pl": "f(x) = 2x − 5 gdy x < 1 i f(x) = x gdy x ≥ 1. Znajdź f(1)."
+      },
+      "feedbackCorrect": {
+        "en": "1 ≥ 1 → f(1) = 1.",
+        "es": "Como 1 ≥ 1, usa el segundo trozo: f(1) = 1.",
+        "pl": "Ponieważ 1 ≥ 1, użyj drugiej części: f(1) = 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Use the piece that includes the endpoint.",
+        "es": "Usa el trozo que incluye el extremo.",
+        "pl": "Użyj części obejmującej koniec."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)",
+            "A.3(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "f(1)",
+      "choices": {
+        "en": [
+          "$-3$",
+          "$2$",
+          "$0$",
+          "$1$"
+        ],
+        "es": [
+          "$-3$",
+          "$2$",
+          "$0$",
+          "$1$"
+        ],
+        "pl": [
+          "$-3$",
+          "$2$",
+          "$0$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 1,
+      "diagnosticTags": [
+        "wrong_piece",
+        "endpoint_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l30-g03",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor: x² − 9.",
+        "es": "Factoriza: x² − 9.",
+        "pl": "Rozłóż: x² − 9."
+      },
+      "feedbackCorrect": {
+        "en": "Difference of squares: (x − 3)(x + 3).",
+        "es": "Diferencia de cuadrados: (x − 3)(x + 3).",
+        "pl": "Różnica kwadratów: (x − 3)(x + 3)."
+      },
+      "feedbackIncorrect": {
+        "en": "a² − b² = (a − b)(a + b) with a = x, b = 3.",
+        "es": "a² − b² = (a − b)(a + b) con a = x, b = 3.",
+        "pl": "a² − b² = (a − b)(a + b) przy a = x, b = 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^2-9",
+      "choices": {
+        "en": [
+          "$(x-3)(x+3)$",
+          "$(x-9)(x+1)$",
+          "$(x-3)^2$",
+          "$x(x-9)$"
+        ],
+        "es": [
+          "$(x-3)(x+3)$",
+          "$(x-9)(x+1)$",
+          "$(x-3)^2$",
+          "$x(x-9)$"
+        ],
+        "pl": [
+          "$(x-3)(x+3)$",
+          "$(x-9)(x+1)$",
+          "$(x-3)^2$",
+          "$x(x-9)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "dos_miss",
+        "factor_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-g04",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.mastery"
+      ],
+      "difficulty": 0.52,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which model fits “cost is $3 per item plus $10 fee”?",
+        "es": "¿Qué modelo encaja con “costo es $3 por artículo más $10 de cargo”?",
+        "pl": "Który model pasuje do „koszt to 3$ za sztukę plus 10$ opłaty”?"
+      },
+      "feedbackCorrect": {
+        "en": "Fee is constant +10; per-item rate multiplies n.",
+        "es": "El cargo es constante +10; la tarifa por artículo multiplica n.",
+        "pl": "Opłata to stałe +10; stawka za sztukę mnoży n."
+      },
+      "feedbackIncorrect": {
+        "en": "Variable cost scales with n; fee is the intercept.",
+        "es": "El costo variable escala con n; el cargo es la intersección.",
+        "pl": "Koszt zmienny skaluje się z n; opłata to przecięcie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "C=3n+10",
+      "choices": {
+        "en": [
+          "$C=3n-10$",
+          "$C=3n+10$",
+          "$C=10n+3$",
+          "$C=n+13$"
+        ],
+        "es": [
+          "$C=3n-10$",
+          "$C=3n+10$",
+          "$C=10n+3$",
+          "$C=n+13$"
+        ],
+        "pl": [
+          "$C=3n-10$",
+          "$C=3n+10$",
+          "$C=10n+3$",
+          "$C=n+13$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "swapped_rate_fee",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-g05",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.connect"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If a scatter trend slopes down, correlation is typically…",
+        "es": "Si la tendencia de un diagrama baja, la correlación suele ser…",
+        "pl": "Jeśli trend na wykresie rozrzutu spada, korelacja zwykle jest…"
+      },
+      "feedbackCorrect": {
+        "en": "Downward association → negative correlation.",
+        "es": "Asociación descendente → correlación negativa.",
+        "pl": "Związek malejący → korelacja ujemna."
+      },
+      "feedbackIncorrect": {
+        "en": "Positive correlation rises together.",
+        "es": "La correlación positiva sube juntos.",
+        "pl": "Korelacja dodatnia rośnie razem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)",
+            "A.3(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "r<0\\ ?",
+      "choices": {
+        "en": [
+          "$\\text{positive}$",
+          "$\\text{zero always}$",
+          "$\\text{negative}$",
+          "$\\text{undefined}$"
+        ],
+        "es": [
+          "$\\text{positiva}$",
+          "$\\text{cero siempre}$",
+          "$\\text{negativa}$",
+          "$\\text{indefinida}$"
+        ],
+        "pl": [
+          "$\\text{dodatnia}$",
+          "$\\text{zawsze zero}$",
+          "$\\text{ujemna}$",
+          "$\\text{nieokreślona}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "corr_sign",
+        "causation_confuse"
+      ]
+    },
+    {
+      "id": "alg1-l30-i01",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.58,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2(x + 3) = x + 10.",
+        "es": "Resuelve: 2(x + 3) = x + 10.",
+        "pl": "Rozwiąż: 2(x + 3) = x + 10."
+      },
+      "feedbackCorrect": {
+        "en": "2x + 6 = x + 10 → x = 4.",
+        "es": "Distribuye y reúne: x = 4.",
+        "pl": "Rozdziel i zbierz: x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute, then collect like terms.",
+        "es": "Distribuye, luego reúne términos semejantes.",
+        "pl": "Rozdziel, potem zbierz podobne wyrazy."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "2(x+3)=x+10",
+      "choices": {
+        "en": [
+          "$3$",
+          "$7$",
+          "$1$",
+          "$4$"
+        ],
+        "es": [
+          "$3$",
+          "$7$",
+          "$1$",
+          "$4$"
+        ],
+        "pl": [
+          "$3$",
+          "$7$",
+          "$1$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "distribute_error",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-i02",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify: 4x² − 2x² + x.",
+        "es": "Simplifica: 4x² − 2x² + x.",
+        "pl": "Uprość: 4x² − 2x² + x."
+      },
+      "feedbackCorrect": {
+        "en": "Like squares combine: 2x² + x.",
+        "es": "Los cuadrados semejantes se combinan: 2x² + x.",
+        "pl": "Podobne kwadraty łączą się: 2x² + x."
+      },
+      "feedbackIncorrect": {
+        "en": "You cannot combine x² terms with the lone x.",
+        "es": "No puedes combinar términos x² con la x sola.",
+        "pl": "Nie łącz wyrazów x² z samotnym x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4x^2-2x^2+x",
+      "choices": {
+        "en": [
+          "$2x^2+x$",
+          "$2x^2$",
+          "$6x^2+x$",
+          "$2x^3+x$"
+        ],
+        "es": [
+          "$2x^2+x$",
+          "$2x^2$",
+          "$6x^2+x$",
+          "$2x^3+x$"
+        ],
+        "pl": [
+          "$2x^2+x$",
+          "$2x^2$",
+          "$6x^2+x$",
+          "$2x^3+x$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "unlike_terms",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-i03",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.connect"
+      ],
+      "difficulty": 0.62,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Slope between (1, 2) and (3, 8) is…",
+        "es": "La pendiente entre (1, 2) y (3, 8) es…",
+        "pl": "Nachylenie między (1, 2) a (3, 8) to…"
+      },
+      "feedbackCorrect": {
+        "en": "m = 6/2 = 3.",
+        "es": "Pendiente: (8−2)/(3−1) = 3.",
+        "pl": "Nachylenie: (8−2)/(3−1) = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Rise over run: Δy / Δx.",
+        "es": "Subida sobre avance: Δy / Δx.",
+        "pl": "Przyrost y przez przyrost x: Δy / Δx."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)",
+            "A.3(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "m=\\frac{8-2}{3-1}",
+      "choices": {
+        "en": [
+          "$2$",
+          "$3$",
+          "$6$",
+          "$4$"
+        ],
+        "es": [
+          "$2$",
+          "$3$",
+          "$6$",
+          "$4$"
+        ],
+        "pl": [
+          "$2$",
+          "$3$",
+          "$6$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "slope_flip",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-i04",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.mastery"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve by zero product: (x − 4)(x + 1) = 0.",
+        "es": "Resuelve por producto cero: (x − 4)(x + 1) = 0.",
+        "pl": "Rozwiąż przez zerowy iloczyn: (x − 4)(x + 1) = 0."
+      },
+      "feedbackCorrect": {
+        "en": "Each factor zero: x = 4 or x = −1.",
+        "es": "Cada factor cero: x = 4 o x = −1.",
+        "pl": "Każdy czynnik zero: x = 4 lub x = −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Set each factor equal to zero separately.",
+        "es": "Iguala cada factor a cero por separado.",
+        "pl": "Przyrównaj każdy czynnik osobno do zera."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "(x-4)(x+1)=0",
+      "choices": {
+        "en": [
+          "$x=-4\\vee x=1$",
+          "$x=4\\vee x=1$",
+          "$x=4\\vee x=-1$",
+          "$x=0\\vee x=4$"
+        ],
+        "es": [
+          "$x=-4\\vee x=1$",
+          "$x=4\\vee x=1$",
+          "$x=4\\vee x=-1$",
+          "$x=0\\vee x=4$"
+        ],
+        "pl": [
+          "$x=-4\\vee x=1$",
+          "$x=4\\vee x=1$",
+          "$x=4\\vee x=-1$",
+          "$x=0\\vee x=4$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "dropped_root",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-i05",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.68,
+      "irt": {
+        "a": 1.15,
+        "b": 0.6,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: y = x + 1 and y = −x + 5. Intersection x is…",
+        "es": "Sistema: y = x + 1 y y = −x + 5. La x de intersección es…",
+        "pl": "Układ: y = x + 1 i y = −x + 5. x przecięcia to…"
+      },
+      "feedbackCorrect": {
+        "en": "2x = 4 → x = 2 (then y = 3).",
+        "es": "2x = 4 → x = 2 (luego y = 3).",
+        "pl": "2x = 4 → x = 2 (potem y = 3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Set right-hand sides equal and solve for x.",
+        "es": "Iguala los lados derechos y resuelve x.",
+        "pl": "Przyrównaj prawe strony i rozwiąż x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x+1=-x+5",
+      "choices": {
+        "en": [
+          "$3$",
+          "$1$",
+          "$4$",
+          "$2$"
+        ],
+        "es": [
+          "$3$",
+          "$1$",
+          "$4$",
+          "$2$"
+        ],
+        "pl": [
+          "$3$",
+          "$1$",
+          "$4$",
+          "$2$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 2,
+      "diagnosticTags": [
+        "one_eq_only",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-i06",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.connect"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = −x² + 4, the parabola opens…",
+        "es": "Para y = −x² + 4, la parábola abre…",
+        "pl": "Dla y = −x² + 4 parabola otwiera się…"
+      },
+      "feedbackCorrect": {
+        "en": "a = −1 < 0 → opens downward.",
+        "es": "a = −1 < 0 → abre hacia abajo.",
+        "pl": "a = −1 < 0 → otwiera się w dół."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative leading coefficient flips the parabola down.",
+        "es": "Coeficiente principal negativo voltea la parábola hacia abajo.",
+        "pl": "Ujemny współczynnik wiodący odwraca parabolę w dół."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)",
+            "A.3(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.B.6"
+          ]
+        }
+      ],
+      "promptMath": "y=-x^2+4",
+      "choices": {
+        "en": [
+          "$\\text{down}$",
+          "$\\text{up}$",
+          "$\\text{left}$",
+          "$\\text{right}$"
+        ],
+        "es": [
+          "$\\text{abajo}$",
+          "$\\text{arriba}$",
+          "$\\text{izquierda}$",
+          "$\\text{derecha}$"
+        ],
+        "pl": [
+          "$\\text{w dół}$",
+          "$\\text{w górę}$",
+          "$\\text{w lewo}$",
+          "$\\text{w prawo}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "direction_wrong",
+        "a_misread"
+      ]
+    },
+    {
+      "id": "alg1-l30-i07",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.mastery"
+      ],
+      "difficulty": 0.72,
+      "irt": {
+        "a": 1.15,
+        "b": 0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Inequality: 3x + 1 ≤ 10. Solution is…",
+        "es": "Desigualdad: 3x + 1 ≤ 10. La solución es…",
+        "pl": "Nierówność: 3x + 1 ≤ 10. Rozwiązanie to…"
+      },
+      "feedbackCorrect": {
+        "en": "3x ≤ 9 → x ≤ 3.",
+        "es": "Resta 1 y divide: x ≤ 3.",
+        "pl": "Odejmij 1 i podziel: x ≤ 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Dividing by positive 3 keeps the inequality direction.",
+        "es": "Dividir entre 3 positivo mantiene la dirección.",
+        "pl": "Dzielenie przez dodatnie 3 zachowuje kierunek nierówności."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "3x+1\\le 10",
+      "choices": {
+        "en": [
+          "$x\\ge 3$",
+          "$x\\le 3$",
+          "$x<3$",
+          "$x>3$"
+        ],
+        "es": [
+          "$x\\ge 3$",
+          "$x\\le 3$",
+          "$x<3$",
+          "$x>3$"
+        ],
+        "pl": [
+          "$x\\ge 3$",
+          "$x\\le 3$",
+          "$x<3$",
+          "$x>3$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "flipped_inequality",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l30-i08",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "difficulty": 0.74,
+      "irt": {
+        "a": 1.15,
+        "b": 0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Evaluate: 2³ · 2².",
+        "es": "Evalúa: 2³ · 2².",
+        "pl": "Oblicz: 2³ · 2²."
+      },
+      "feedbackCorrect": {
+        "en": "Product rule: 2^{3+2} = 2^5.",
+        "es": "Regla del producto: 2^{3+2} = 2^5.",
+        "pl": "Reguła iloczynu: 2^{3+2} = 2^5."
+      },
+      "feedbackIncorrect": {
+        "en": "Same base: add exponents when multiplying.",
+        "es": "Misma base: suma exponentes al multiplicar.",
+        "pl": "Ta sama podstawa: dodaj wykładniki przy mnożeniu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "2^3\\cdot 2^2",
+      "choices": {
+        "en": [
+          "$2^6$",
+          "$4^5$",
+          "$2^5$",
+          "$2^1$"
+        ],
+        "es": [
+          "$2^6$",
+          "$4^5$",
+          "$2^5$",
+          "$2^1$"
+        ],
+        "pl": [
+          "$2^6$",
+          "$4^5$",
+          "$2^5$",
+          "$2^1$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "exp_multiply",
+        "multiplied_bases"
+      ]
+    },
+    {
+      "id": "alg1-l30-i09",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.mastery"
+      ],
+      "difficulty": 0.76,
+      "irt": {
+        "a": 1.15,
+        "b": 0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "After solving a word problem, you should…",
+        "es": "Tras resolver un problema verbal, debes…",
+        "pl": "Po rozwiązaniu zadania słownego powinieneś…"
+      },
+      "feedbackCorrect": {
+        "en": "Interpret the number in context before claiming mastery.",
+        "es": "Interpreta el número en contexto antes de reclamar dominio.",
+        "pl": "Zinterpretuj liczbę w kontekście przed uznaniem opanowania."
+      },
+      "feedbackIncorrect": {
+        "en": "A bare numeric answer without a check is incomplete.",
+        "es": "Una respuesta numérica sin verificación está incompleta.",
+        "pl": "Sam wynik liczbowy bez sprawdzenia jest niekompletny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "\\checkmark\\ \\text{units?}",
+      "choices": {
+        "en": [
+          "$\\text{skip context}$",
+          "$\\text{force unique r}$",
+          "$\\text{delete data}$",
+          "$\\text{check units/sense}$"
+        ],
+        "es": [
+          "$\\text{omitir contexto}$",
+          "$\\text{forzar r único}$",
+          "$\\text{borrar datos}$",
+          "$\\text{revisar unidades/sentido}$"
+        ],
+        "pl": [
+          "$\\text{pominąć kontekst}$",
+          "$\\text{wymuszać jedno r}$",
+          "$\\text{usunąć dane}$",
+          "$\\text{sprawdzić jedn./sens}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "skipped_check",
+        "rushed"
+      ]
+    },
+    {
+      "id": "alg1-l30-i10",
+      "knowledgePointIds": [
+        "kp.alg1.capstone.mastery"
+      ],
+      "difficulty": 0.8,
+      "irt": {
+        "a": 1.15,
+        "b": 1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Quadratic formula for x² − 5x + 4 = 0 gives…",
+        "es": "La fórmula cuadrática para x² − 5x + 4 = 0 da…",
+        "pl": "Wzór kwadratowy dla x² − 5x + 4 = 0 daje…"
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 9 → x = (5 ± 3)/2 → 4 or 1.",
+        "es": "Δ = 9 → x = (5 ± 3)/2 → 4 o 1.",
+        "pl": "Δ = 9 → x = (5 ± 3)/2 → 4 lub 1."
+      },
+      "feedbackIncorrect": {
+        "en": "Finish both ± branches after the square root.",
+        "es": "Termina ambas ramas ± después de la raíz.",
+        "pl": "Dokończ obie gałęzie ± po pierwiastku."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.4b"
+          ]
+        }
+      ],
+      "promptMath": "x=\\frac{5\\pm\\sqrt{25-16}}{2}",
+      "choices": {
+        "en": [
+          "$x=4\\vee x=1$",
+          "$x=5\\vee x=0$",
+          "$x=-4\\vee x=-1$",
+          "$x=2\\vee x=2$"
+        ],
+        "es": [
+          "$x=4\\vee x=1$",
+          "$x=5\\vee x=0$",
+          "$x=-4\\vee x=-1$",
+          "$x=2\\vee x=2$"
+        ],
+        "pl": [
+          "$x=4\\vee x=1$",
+          "$x=5\\vee x=0$",
+          "$x=-4\\vee x=-1$",
+          "$x=2\\vee x=2$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "formula_arith",
+        "dropped_root"
+      ]
+    }
+  ]
+}

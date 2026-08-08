@@ -4932,6 +4932,561 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.piecewise.meaning",
+      "title": {
+        "en": "Interpret piecewise function notation",
+        "es": "Interpretar notación de funciones por partes",
+        "pl": "Interpretować notację funkcji przedziałami"
+      },
+      "prerequisites": [
+        "kp.alg1.function.notation",
+        "kp.alg1.function.domain"
+      ],
+      "successCriteria": {
+        "en": "Student reads a piecewise rule and identifies which expression applies on each domain piece.",
+        "es": "El estudiante lee una regla por partes e identifica qué expresión aplica en cada trozo del dominio.",
+        "pl": "Uczeń odczytuje regułę przedziałową i wskazuje, które wyrażenie obowiązuje na każdym kawałku dziedziny."
+      },
+      "misconceptions": {
+        "en": [
+          "Treating every piece as active for every x",
+          "Ignoring open/closed endpoints when naming the active piece"
+        ],
+        "es": [
+          "Tratar cada trozo como activo para todo x",
+          "Ignorar extremos abiertos/cerrados al nombrar el trozo activo"
+        ],
+        "pl": [
+          "Traktowanie każdej części jako aktywnej dla każdego x",
+          "Ignorowanie otwartych/domkniętych końców przy wyborze aktywnej części"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.1",
+            "F-IF.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.piecewise.evaluate",
+      "title": {
+        "en": "Evaluate piecewise functions",
+        "es": "Evaluar funciones por partes",
+        "pl": "Obliczać wartości funkcji przedziałami"
+      },
+      "prerequisites": [
+        "kp.alg1.piecewise.meaning",
+        "kp.alg1.eval.substitute"
+      ],
+      "encompassing": [
+        "kp.alg1.piecewise.meaning"
+      ],
+      "successCriteria": {
+        "en": "Student selects the correct piece for a given input and substitutes to find f(x).",
+        "es": "El estudiante elige el trozo correcto para una entrada y sustituye para hallar f(x).",
+        "pl": "Uczeń wybiera właściwą część dla danego argumentu i podstawia, by znaleźć f(x)."
+      },
+      "misconceptions": {
+        "en": [
+          "Using the wrong piece for the input",
+          "Arithmetic errors after choosing the correct piece"
+        ],
+        "es": [
+          "Usar el trozo incorrecto para la entrada",
+          "Errores aritméticos tras elegir el trozo correcto"
+        ],
+        "pl": [
+          "Użycie złej części dla argumentu",
+          "Błędy rachunkowe po wyborze właściwej części"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.piecewise.graph",
+      "title": {
+        "en": "Connect piecewise rules to graphs and domains",
+        "es": "Conectar reglas por partes con gráficas y dominios",
+        "pl": "Łączyć reguły przedziałowe z wykresami i dziedzinami"
+      },
+      "prerequisites": [
+        "kp.alg1.piecewise.evaluate",
+        "kp.alg1.graph.slope.intercept"
+      ],
+      "encompassing": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "successCriteria": {
+        "en": "Student matches a piecewise definition to open/closed endpoints and describes which ray or segment appears on the graph.",
+        "es": "El estudiante relaciona la definición por partes con extremos abiertos/cerrados y describe qué rayo o segmento aparece en la gráfica.",
+        "pl": "Uczeń łączy definicję przedziałową z otwartymi/domkniętymi końcami i opisuje, który promień lub odcinek widać na wykresie."
+      },
+      "misconceptions": {
+        "en": [
+          "Drawing both pieces across the whole domain",
+          "Using filled dots for strict inequalities at junctions"
+        ],
+        "es": [
+          "Dibujar ambos trozos en todo el dominio",
+          "Usar puntos rellenos en extremos estrictos en las uniones"
+        ],
+        "pl": [
+          "Rysowanie obu części na całej dziedzinie",
+          "Wypełnione punkty przy ostrych nierównościach na łączeniach"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.3(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.7"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.review.expr.eq",
+      "title": {
+        "en": "Cumulative review: expressions and equations",
+        "es": "Repaso acumulativo: expresiones y ecuaciones",
+        "pl": "Powtórka łączna: wyrażenia i równania"
+      },
+      "prerequisites": [
+        "kp.alg1.solve.multi.step",
+        "kp.alg1.expression.translate"
+      ],
+      "successCriteria": {
+        "en": "Student simplifies expressions and solves linear equations fluently in a mixed set.",
+        "es": "El estudiante simplifica expresiones y resuelve ecuaciones lineales con fluidez en un conjunto mixto.",
+        "pl": "Uczeń sprawnie upraszcza wyrażenia i rozwiązuje równania liniowe w zestawie mieszanym."
+      },
+      "misconceptions": {
+        "en": [
+          "Combining unlike terms when simplifying",
+          "Sign errors when moving terms across an equation"
+        ],
+        "es": [
+          "Combinar términos no semejantes al simplificar",
+          "Errores de signo al mover términos en una ecuación"
+        ],
+        "pl": [
+          "Łączenie niepodobnych wyrazów przy upraszczaniu",
+          "Błędy znaku przy przenoszeniu wyrazów w równaniu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.review.linear.fn",
+      "title": {
+        "en": "Cumulative review: linear functions and systems",
+        "es": "Repaso acumulativo: funciones lineales y sistemas",
+        "pl": "Powtórka łączna: funkcje liniowe i układy"
+      },
+      "prerequisites": [
+        "kp.alg1.slope.intercept.form",
+        "kp.alg1.systems.substitution"
+      ],
+      "successCriteria": {
+        "en": "Student uses slope-intercept form, function notation, and simple systems in mixed review items.",
+        "es": "El estudiante usa forma pendiente-intersección, notación de función y sistemas simples en ítems mixtos.",
+        "pl": "Uczeń stosuje postać kierunkową, notację funkcyjną i proste układy w mieszanych zadaniach."
+      },
+      "misconceptions": {
+        "en": [
+          "Swapping slope and intercept roles",
+          "Solving only one equation in a system"
+        ],
+        "es": [
+          "Intercambiar roles de pendiente e intersección",
+          "Resolver solo una ecuación de un sistema"
+        ],
+        "pl": [
+          "Zamiana ról nachylenia i przecięcia",
+          "Rozwiązywanie tylko jednego równania układu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.6"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.review.quadratic",
+      "title": {
+        "en": "Cumulative review: quadratics",
+        "es": "Repaso acumulativo: cuadráticas",
+        "pl": "Powtórka łączna: kwadratowe"
+      },
+      "prerequisites": [
+        "kp.alg1.quadratic.formula.apply",
+        "kp.alg1.quadratic.graph.features"
+      ],
+      "successCriteria": {
+        "en": "Student factors or uses the formula, and reads vertex/direction cues on mixed quadratic items.",
+        "es": "El estudiante factoriza o usa la fórmula, y lee pistas de vértice/dirección en ítems cuadráticos mixtos.",
+        "pl": "Uczeń faktoryzuje lub stosuje wzór oraz odczytuje wierzchołek/kierunek w mieszanych zadaniach kwadratowych."
+      },
+      "misconceptions": {
+        "en": [
+          "Dropping a root when using zero-product",
+          "Misreading a as determining only width, not direction"
+        ],
+        "es": [
+          "Omitir una raíz al usar producto cero",
+          "Malinterpretar a como solo ancho, no dirección"
+        ],
+        "pl": [
+          "Pomijanie pierwiastka przy zerowym iloczynie",
+          "Błędne traktowanie a tylko jako szerokości, nie kierunku"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.7(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "F-IF.C.7a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.4"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.capstone.fluency",
+      "title": {
+        "en": "Capstone fluency across Algebra I skills",
+        "es": "Fluidez capstone en habilidades de Álgebra I",
+        "pl": "Biegłość capstone w umiejętnościach algebry I"
+      },
+      "prerequisites": [
+        "kp.alg1.review.expr.eq",
+        "kp.alg1.review.linear.fn",
+        "kp.alg1.review.quadratic"
+      ],
+      "successCriteria": {
+        "en": "Student answers mixed independent items spanning expressions, equations, functions, and quadratics with ≥80% accuracy.",
+        "es": "El estudiante responde ítems independientes mixtos de expresiones, ecuaciones, funciones y cuadráticas con ≥80% de acierto.",
+        "pl": "Uczeń rozwiązuje mieszane samodzielne zadania z wyrażeń, równań, funkcji i kwadratowych z ≥80% poprawności."
+      },
+      "misconceptions": {
+        "en": [
+          "Rushing without identifying the skill family first",
+          "Carrying forward arithmetic slips across multi-step items"
+        ],
+        "es": [
+          "Apurarse sin identificar primero la familia de habilidad",
+          "Arrastrar errores aritméticos en ítems de varios pasos"
+        ],
+        "pl": [
+          "Pośpiech bez najpierw rozpoznania rodziny umiejętności",
+          "Przenoszenie błędów rachunkowych w zadaniach wieloetapowych"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(B)",
+            "A.1(F)",
+            "A.5(A)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.3",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-REI.3"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.capstone.connect",
+      "title": {
+        "en": "Connect representations in capstone problems",
+        "es": "Conectar representaciones en problemas capstone",
+        "pl": "Łączyć reprezentacje w problemach capstone"
+      },
+      "prerequisites": [
+        "kp.alg1.capstone.fluency",
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "encompassing": [
+        "kp.alg1.capstone.fluency"
+      ],
+      "successCriteria": {
+        "en": "Student moves between symbolic, numeric, and verbal/graph cues on mixed capstone items.",
+        "es": "El estudiante pasa entre pistas simbólicas, numéricas y verbales/gráficas en ítems capstone mixtos.",
+        "pl": "Uczeń przechodzi między wskazówkami symbolicznymi, liczbowymi i słownymi/wykresowymi w mieszanych zadaniach capstone."
+      },
+      "misconceptions": {
+        "en": [
+          "Treating graph features as unrelated to the equation",
+          "Ignoring domain constraints when evaluating models"
+        ],
+        "es": [
+          "Tratar rasgos de la gráfica como ajenos a la ecuación",
+          "Ignorar restricciones de dominio al evaluar modelos"
+        ],
+        "pl": [
+          "Traktowanie cech wykresu jako oderwanych od równania",
+          "Ignorowanie ograniczeń dziedziny przy ocenie modeli"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(D)",
+            "A.1(F)",
+            "A.3(C)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.B.6"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "F-IF.7"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.F.1.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.capstone.mastery",
+      "title": {
+        "en": "Algebra I course mastery check",
+        "es": "Verificación de dominio del curso de Álgebra I",
+        "pl": "Sprawdzenie opanowania kursu algebry I"
+      },
+      "prerequisites": [
+        "kp.alg1.capstone.connect",
+        "kp.alg1.modeling.choose"
+      ],
+      "encompassing": [
+        "kp.alg1.capstone.connect"
+      ],
+      "successCriteria": {
+        "en": "Student demonstrates course-level readiness on a mixed mastery set with teach/guided warm-up still present.",
+        "es": "El estudiante demuestra preparación a nivel de curso en un conjunto mixto de dominio con calentamiento teach/guided.",
+        "pl": "Uczeń wykazuje gotowość na poziomie kursu w mieszanym zestawie mistrzowskim z rozgrzewką teach/guided."
+      },
+      "misconceptions": {
+        "en": [
+          "Skipping reasonableness checks on final answers",
+          "Defaulting to one method when another is clearly shorter"
+        ],
+        "es": [
+          "Omitir comprobaciones de razonabilidad en respuestas finales",
+          "Usar por defecto un método cuando otro es claramente más corto"
+        ],
+        "pl": [
+          "Pomijanie kontroli sensowności końcowych odpowiedzi",
+          "Domyślna jedna metoda, gdy inna jest wyraźnie krótsza"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.1(A)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-CED.A.1",
+            "A-REI.B.4b"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-CED.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.3.8"
+          ]
+        }
+      ]
     }
   ]
 }

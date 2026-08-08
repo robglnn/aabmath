@@ -195,8 +195,13 @@ export class GameApp {
         this.persistProgress()
         if (view.gatePassed) {
           const lesson = this.lessonRunner.getLesson()
-          for (const _siteId of this.pedagogy.unlockSiteIds(lesson)) {
-            this.hud.showUnlockToast(lesson.title.en)
+          for (const siteId of this.pedagogy.unlockSiteIds(lesson)) {
+            if (siteId === 'course_algebra1_complete') {
+              this.hud.showUnlockToast('ALGEBRA 1')
+              this.hud.updateStats({ rank: 'ALGEBRA 1', progressPercent: 100 })
+            } else {
+              this.hud.showUnlockToast(lesson.title.en)
+            }
           }
         }
       },

@@ -1,0 +1,1302 @@
+{
+  "id": "alg1-l29",
+  "courseId": "algebra1",
+  "order": 29,
+  "title": {
+    "en": "Cumulative Mixed Review",
+    "es": "Repaso acumulativo mixto",
+    "pl": "Powtórka łączna mieszana"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.review.expr.eq",
+    "kp.alg1.review.linear.fn",
+    "kp.alg1.review.quadratic"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_29",
+    "unlockOnMastery": [
+      "lesson_board_30"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will retrieve Algebra I skills across expressions, equations, functions, and quadratics.",
+        "es": "Recuperarás habilidades de Álgebra I en expresiones, ecuaciones, funciones y cuadráticas.",
+        "pl": "Będziesz odzyskiwać umiejętności algebry I w wyrażeniach, równaniach, funkcjach i kwadratowych."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: retrieve the toolkit",
+        "es": "Enseñar: recuperar la caja de herramientas",
+        "pl": "Nauczanie: odzyskaj zestaw narzędzi"
+      },
+      "body": {
+        "en": "This lesson mixes expressions, equations, linear functions/systems, and quadratics. Identify the skill family first, then apply the matching Algebra I tool.",
+        "es": "Esta lección mezcla expresiones, ecuaciones, funciones/sistemas lineales y cuadráticas. Identifica primero la familia de habilidad y aplica la herramienta correcta.",
+        "pl": "Ta lekcja miesza wyrażenia, równania, funkcje/układy liniowe i kwadratowe. Najpierw rozpoznaj rodzinę umiejętności, potem zastosuj właściwe narzędzie."
+      },
+      "bodyMath": [
+        "8x-2",
+        "y=mx+b",
+        "x^2-5x+6=0"
+      ],
+      "itemIds": [
+        "alg1-l29-t01",
+        "alg1-l29-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Warm up across expressions → equations → functions → quadratics.",
+        "es": "Calienta de expresiones → ecuaciones → funciones → cuadráticas.",
+        "pl": "Rozgrzej się: wyrażenia → równania → funkcje → kwadratowe."
+      },
+      "itemIds": [
+        "alg1-l29-g01",
+        "alg1-l29-g02",
+        "alg1-l29-g03",
+        "alg1-l29-g04",
+        "alg1-l29-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l29-i01",
+        "alg1-l29-i02",
+        "alg1-l29-i03",
+        "alg1-l29-i04",
+        "alg1-l29-i05",
+        "alg1-l29-i06",
+        "alg1-l29-i07",
+        "alg1-l29-i08",
+        "alg1-l29-i09",
+        "alg1-l29-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l29-t01",
+      "knowledgePointIds": [
+        "kp.alg1.review.expr.eq"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify: 3x + 5x − 2.",
+        "es": "Simplifica: 3x + 5x − 2.",
+        "pl": "Uprość: 3x + 5x − 2."
+      },
+      "feedbackCorrect": {
+        "en": "Combine like terms: 8x − 2.",
+        "es": "Combina términos semejantes: 8x − 2.",
+        "pl": "Połącz podobne wyrazy: 8x − 2."
+      },
+      "feedbackIncorrect": {
+        "en": "3x + 5x = 8x; the constant −2 stays.",
+        "es": "3x + 5x = 8x; la constante −2 permanece.",
+        "pl": "3x + 5x = 8x; stała −2 zostaje."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "3x+5x-2",
+      "choices": {
+        "en": [
+          "$8x-2$",
+          "$8x+2$",
+          "$15x-2$",
+          "$3x-2$"
+        ],
+        "es": [
+          "$8x-2$",
+          "$8x+2$",
+          "$15x-2$",
+          "$3x-2$"
+        ],
+        "pl": [
+          "$8x-2$",
+          "$8x+2$",
+          "$15x-2$",
+          "$3x-2$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "unlike_terms",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-t02",
+      "knowledgePointIds": [
+        "kp.alg1.review.linear.fn"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In y = −2x + 7, the slope is…",
+        "es": "En y = −2x + 7, la pendiente es…",
+        "pl": "W y = −2x + 7 nachylenie to…"
+      },
+      "feedbackCorrect": {
+        "en": "Slope-intercept form y = mx + b → m = −2.",
+        "es": "Forma y = mx + b → m = −2.",
+        "pl": "Postać y = mx + b → m = −2."
+      },
+      "feedbackIncorrect": {
+        "en": "m is the coefficient of x; b is the y-intercept.",
+        "es": "m es el coeficiente de x; b es la intersección con y.",
+        "pl": "m to współczynnik przy x; b to przecięcie z y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "y=-2x+7",
+      "choices": {
+        "en": [
+          "$7$",
+          "$-2$",
+          "$2$",
+          "$-7$"
+        ],
+        "es": [
+          "$7$",
+          "$-2$",
+          "$2$",
+          "$-7$"
+        ],
+        "pl": [
+          "$7$",
+          "$-2$",
+          "$2$",
+          "$-7$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "swapped_mb",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-g01",
+      "knowledgePointIds": [
+        "kp.alg1.review.expr.eq"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 2x + 5 = 17.",
+        "es": "Resuelve: 2x + 5 = 17.",
+        "pl": "Rozwiąż: 2x + 5 = 17."
+      },
+      "feedbackCorrect": {
+        "en": "2x = 12 → x = 6.",
+        "es": "Resta 5: 2x = 12, luego x = 6.",
+        "pl": "Odejmij 5: 2x = 12, potem x = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtract 5, then divide by 2.",
+        "es": "Resta 5, luego divide entre 2.",
+        "pl": "Odejmij 5, potem podziel przez 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "2x+5=17",
+      "choices": {
+        "en": [
+          "$11$",
+          "$5$",
+          "$6$",
+          "$12$"
+        ],
+        "es": [
+          "$11$",
+          "$5$",
+          "$6$",
+          "$12$"
+        ],
+        "pl": [
+          "$11$",
+          "$5$",
+          "$6$",
+          "$12$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "arith_error",
+        "forgot_divide"
+      ]
+    },
+    {
+      "id": "alg1-l29-g02",
+      "knowledgePointIds": [
+        "kp.alg1.review.linear.fn"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If f(x) = 3x − 1, find f(4).",
+        "es": "Si f(x) = 3x − 1, halla f(4).",
+        "pl": "Jeśli f(x) = 3x − 1, znajdź f(4)."
+      },
+      "feedbackCorrect": {
+        "en": "f(4) = 3·4 − 1 = 11.",
+        "es": "Sustituye: f(4) = 12 − 1 = 11.",
+        "pl": "Podstaw: f(4) = 12 − 1 = 11."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute carefully: multiply first, then subtract.",
+        "es": "Sustituye con cuidado: multiplica primero, luego resta.",
+        "pl": "Podstaw ostrożnie: najpierw mnożenie, potem odejmowanie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "f(4)",
+      "choices": {
+        "en": [
+          "$12$",
+          "$7$",
+          "$13$",
+          "$11$"
+        ],
+        "es": [
+          "$12$",
+          "$7$",
+          "$13$",
+          "$11$"
+        ],
+        "pl": [
+          "$12$",
+          "$7$",
+          "$13$",
+          "$11$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 11,
+      "diagnosticTags": [
+        "order_ops",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-g03",
+      "knowledgePointIds": [
+        "kp.alg1.review.quadratic"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For y = x² − 4, the parabola opens…",
+        "es": "Para y = x² − 4, la parábola abre…",
+        "pl": "Dla y = x² − 4 parabola otwiera się…"
+      },
+      "feedbackCorrect": {
+        "en": "Leading coefficient a = 1 > 0 → opens upward.",
+        "es": "Coeficiente a = 1 > 0 → abre hacia arriba.",
+        "pl": "Współczynnik a = 1 > 0 → otwiera się w górę."
+      },
+      "feedbackIncorrect": {
+        "en": "Sign of a controls up vs down.",
+        "es": "El signo de a controla arriba vs abajo.",
+        "pl": "Znak a steruje górą vs dołem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.7(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "y=x^2-4",
+      "choices": {
+        "en": [
+          "$\\text{up}$",
+          "$\\text{down}$",
+          "$\\text{left}$",
+          "$\\text{right}$"
+        ],
+        "es": [
+          "$\\text{arriba}$",
+          "$\\text{abajo}$",
+          "$\\text{izquierda}$",
+          "$\\text{derecha}$"
+        ],
+        "pl": [
+          "$\\text{w górę}$",
+          "$\\text{w dół}$",
+          "$\\text{w lewo}$",
+          "$\\text{w prawo}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "direction_wrong",
+        "a_misread"
+      ]
+    },
+    {
+      "id": "alg1-l29-g04",
+      "knowledgePointIds": [
+        "kp.alg1.review.expr.eq"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 3(x − 2) = 12.",
+        "es": "Resuelve: 3(x − 2) = 12.",
+        "pl": "Rozwiąż: 3(x − 2) = 12."
+      },
+      "feedbackCorrect": {
+        "en": "x − 2 = 4 → x = 6.",
+        "es": "Divide entre 3: x − 2 = 4, luego x = 6.",
+        "pl": "Podziel przez 3: x − 2 = 4, potem x = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide both sides by 3, then add 2.",
+        "es": "Divide ambos lados entre 3, luego suma 2.",
+        "pl": "Podziel obie strony przez 3, potem dodaj 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "3(x-2)=12",
+      "choices": {
+        "en": [
+          "$4$",
+          "$6$",
+          "$2$",
+          "$8$"
+        ],
+        "es": [
+          "$4$",
+          "$6$",
+          "$2$",
+          "$8$"
+        ],
+        "pl": [
+          "$4$",
+          "$6$",
+          "$2$",
+          "$8$"
+        ]
+      },
+      "correctIndex": 1,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "distribute_error",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-g05",
+      "knowledgePointIds": [
+        "kp.alg1.review.linear.fn"
+      ],
+      "difficulty": 0.52,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "System: x + y = 5 and x − y = 1. Find x.",
+        "es": "Sistema: x + y = 5 y x − y = 1. Halla x.",
+        "pl": "Układ: x + y = 5 i x − y = 1. Znajdź x."
+      },
+      "feedbackCorrect": {
+        "en": "Add: 2x = 6 → x = 3.",
+        "es": "Suma: 2x = 6 → x = 3.",
+        "pl": "Dodaj: 2x = 6 → x = 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Elimination: add to cancel y.",
+        "es": "Eliminación: suma para cancelar y.",
+        "pl": "Eliminacja: dodaj, by skasować y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "\\begin{cases} x+y=5 \\\\ x-y=1 \\end{cases}",
+      "choices": {
+        "en": [
+          "$2$",
+          "$4$",
+          "$3$",
+          "$1$"
+        ],
+        "es": [
+          "$2$",
+          "$4$",
+          "$3$",
+          "$1$"
+        ],
+        "pl": [
+          "$2$",
+          "$4$",
+          "$3$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "one_eq_only",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-i01",
+      "knowledgePointIds": [
+        "kp.alg1.review.expr.eq"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify: (2x² + 3x) − (x² − x).",
+        "es": "Simplifica: (2x² + 3x) − (x² − x).",
+        "pl": "Uprość: (2x² + 3x) − (x² − x)."
+      },
+      "feedbackCorrect": {
+        "en": "Distribute the minus: 2x² + 3x − x² + x = x² + 4x.",
+        "es": "Distribuye el menos: 2x² + 3x − x² + x = x² + 4x.",
+        "pl": "Rozdziel minus: 2x² + 3x − x² + x = x² + 4x."
+      },
+      "feedbackIncorrect": {
+        "en": "Subtracting −x adds x.",
+        "es": "Restar −x suma x.",
+        "pl": "Odejmowanie −x dodaje x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "(2x^2+3x)-(x^2-x)",
+      "choices": {
+        "en": [
+          "$x^2+2x$",
+          "$3x^2+4x$",
+          "$x^2+3x$",
+          "$x^2+4x$"
+        ],
+        "es": [
+          "$x^2+2x$",
+          "$3x^2+4x$",
+          "$x^2+3x$",
+          "$x^2+4x$"
+        ],
+        "pl": [
+          "$x^2+2x$",
+          "$3x^2+4x$",
+          "$x^2+3x$",
+          "$x^2+4x$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "distribute_minus",
+        "unlike_terms"
+      ]
+    },
+    {
+      "id": "alg1-l29-i02",
+      "knowledgePointIds": [
+        "kp.alg1.review.linear.fn"
+      ],
+      "difficulty": 0.58,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A line through (0, −3) with slope 4 has equation…",
+        "es": "Una recta por (0, −3) con pendiente 4 tiene ecuación…",
+        "pl": "Prosta przez (0, −3) o nachyleniu 4 ma równanie…"
+      },
+      "feedbackCorrect": {
+        "en": "y = mx + b → y = 4x − 3.",
+        "es": "Con m = 4 y b = −3 obtienes y = 4x − 3.",
+        "pl": "Przy m = 4 i b = −3 otrzymujesz y = 4x − 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Point (0, b) is the y-intercept.",
+        "es": "El punto (0, b) es la intersección con y.",
+        "pl": "Punkt (0, b) to przecięcie z y."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "m=4,\\ b=-3",
+      "choices": {
+        "en": [
+          "$y=4x-3$",
+          "$y=-3x+4$",
+          "$y=4x+3$",
+          "$y=x-3$"
+        ],
+        "es": [
+          "$y=4x-3$",
+          "$y=-3x+4$",
+          "$y=4x+3$",
+          "$y=x-3$"
+        ],
+        "pl": [
+          "$y=4x-3$",
+          "$y=-3x+4$",
+          "$y=4x+3$",
+          "$y=x-3$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "swapped_mb",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-i03",
+      "knowledgePointIds": [
+        "kp.alg1.review.quadratic"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve by factoring: x² − 5x + 6 = 0.",
+        "es": "Resuelve por factorización: x² − 5x + 6 = 0.",
+        "pl": "Rozwiąż przez faktoryzację: x² − 5x + 6 = 0."
+      },
+      "feedbackCorrect": {
+        "en": "(x − 2)(x − 3) = 0 → x = 2 or 3.",
+        "es": "(x − 2)(x − 3) = 0 → x = 2 o 3.",
+        "pl": "(x − 2)(x − 3) = 0 → x = 2 lub 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Find factors of 6 that add to −5: −2 and −3.",
+        "es": "Halla factores de 6 que sumen −5: −2 y −3.",
+        "pl": "Znajdź czynniki 6 o sumie −5: −2 i −3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.7(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "x^2-5x+6=0",
+      "choices": {
+        "en": [
+          "$x=1\\vee x=6$",
+          "$x=2\\vee x=3$",
+          "$x=-2\\vee x=-3$",
+          "$x=0\\vee x=5$"
+        ],
+        "es": [
+          "$x=1\\vee x=6$",
+          "$x=2\\vee x=3$",
+          "$x=-2\\vee x=-3$",
+          "$x=0\\vee x=5$"
+        ],
+        "pl": [
+          "$x=1\\vee x=6$",
+          "$x=2\\vee x=3$",
+          "$x=-2\\vee x=-3$",
+          "$x=0\\vee x=5$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "dropped_root",
+        "factor_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-i04",
+      "knowledgePointIds": [
+        "kp.alg1.review.expr.eq"
+      ],
+      "difficulty": 0.62,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Solve: 5x − 3 = 2x + 9.",
+        "es": "Resuelve: 5x − 3 = 2x + 9.",
+        "pl": "Rozwiąż: 5x − 3 = 2x + 9."
+      },
+      "feedbackCorrect": {
+        "en": "3x = 12 → x = 4.",
+        "es": "Reúne términos: 3x = 12 → x = 4.",
+        "pl": "Zbierz wyrazy: 3x = 12 → x = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Collect x-terms on one side and constants on the other.",
+        "es": "Reúne términos en x a un lado y constantes al otro.",
+        "pl": "Zbierz wyrazy z x po jednej stronie, stałe po drugiej."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "5x-3=2x+9",
+      "choices": {
+        "en": [
+          "$3$",
+          "$6$",
+          "$4$",
+          "$2$"
+        ],
+        "es": [
+          "$3$",
+          "$6$",
+          "$4$",
+          "$2$"
+        ],
+        "pl": [
+          "$3$",
+          "$6$",
+          "$4$",
+          "$2$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "sign_error",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-i05",
+      "knowledgePointIds": [
+        "kp.alg1.review.linear.fn"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Rate of change of y = −0.5x + 10 is…",
+        "es": "La tasa de cambio de y = −0.5x + 10 es…",
+        "pl": "Tempo zmiany y = −0.5x + 10 to…"
+      },
+      "feedbackCorrect": {
+        "en": "Constant rate of change equals slope m = −0.5.",
+        "es": "La tasa constante es la pendiente m = −0.5.",
+        "pl": "Stałe tempo zmiany to nachylenie m = −0.5."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not confuse slope with the intercept.",
+        "es": "No confundas la pendiente con la intersección.",
+        "pl": "Nie myl nachylenia z przecięciem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "y=-0.5x+10",
+      "choices": {
+        "en": [
+          "$10$",
+          "$0.5$",
+          "$-10$",
+          "$-0.5$"
+        ],
+        "es": [
+          "$10$",
+          "$0.5$",
+          "$-10$",
+          "$-0.5$"
+        ],
+        "pl": [
+          "$10$",
+          "$0.5$",
+          "$-10$",
+          "$-0.5$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "swapped_mb",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-i06",
+      "knowledgePointIds": [
+        "kp.alg1.review.quadratic"
+      ],
+      "difficulty": 0.68,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Discriminant of x² + 2x + 5 = 0 is…",
+        "es": "El discriminante de x² + 2x + 5 = 0 es…",
+        "pl": "Dyskryminanta x² + 2x + 5 = 0 to…"
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 4 − 20 = −16 → no real roots.",
+        "es": "Δ = 4 − 20 = −16 → sin raíces reales.",
+        "pl": "Δ = 4 − 20 = −16 → brak pierwiastków rzeczywistych."
+      },
+      "feedbackIncorrect": {
+        "en": "b² − 4ac = 2² − 4·1·5 = −16.",
+        "es": "Calcula Δ = 4 − 20 = −16.",
+        "pl": "Oblicz Δ = 4 − 20 = −16."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.7(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "\\Delta=b^2-4ac",
+      "choices": {
+        "en": [
+          "$-16$",
+          "$16$",
+          "$4$",
+          "$0$"
+        ],
+        "es": [
+          "$-16$",
+          "$16$",
+          "$4$",
+          "$0$"
+        ],
+        "pl": [
+          "$-16$",
+          "$16$",
+          "$4$",
+          "$0$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": -16,
+      "diagnosticTags": [
+        "disc_sign",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l29-i07",
+      "knowledgePointIds": [
+        "kp.alg1.review.expr.eq"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Translate: “5 less than twice a number n.”",
+        "es": "Traduce: “5 menos que el doble de un número n.”",
+        "pl": "Przetłumacz: „5 mniej niż podwojona liczba n.”"
+      },
+      "feedbackCorrect": {
+        "en": "Twice n is 2n; 5 less than that is 2n − 5.",
+        "es": "El doble de n es 2n; 5 menos que eso es 2n − 5.",
+        "pl": "Podwojone n to 2n; 5 mniej niż to 2n − 5."
+      },
+      "feedbackIncorrect": {
+        "en": "“Less than” subtracts from the doubled quantity.",
+        "es": "“Menos que” resta de la cantidad duplicada.",
+        "pl": "„Mniej niż” odejmuje od podwojonej wielkości."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.5(A)",
+            "A.10(A)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.1",
+            "A-REI.B.3"
+          ]
+        }
+      ],
+      "promptMath": "2n-5",
+      "choices": {
+        "en": [
+          "$5-2n$",
+          "$2n-5$",
+          "$2(n-5)$",
+          "$n/2-5$"
+        ],
+        "es": [
+          "$5-2n$",
+          "$2n-5$",
+          "$2(n-5)$",
+          "$n/2-5$"
+        ],
+        "pl": [
+          "$5-2n$",
+          "$2n-5$",
+          "$2(n-5)$",
+          "$n/2-5$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "reversed_subtraction",
+        "forgot_twice"
+      ]
+    },
+    {
+      "id": "alg1-l29-i08",
+      "knowledgePointIds": [
+        "kp.alg1.review.quadratic"
+      ],
+      "difficulty": 0.72,
+      "irt": {
+        "a": 1.15,
+        "b": 0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Vertex of y = (x − 3)² + 2 is…",
+        "es": "El vértice de y = (x − 3)² + 2 es…",
+        "pl": "Wierzchołek y = (x − 3)² + 2 to…"
+      },
+      "feedbackCorrect": {
+        "en": "Vertex form y = (x − h)² + k → (h, k) = (3, 2).",
+        "es": "Forma vértice y = (x − h)² + k → (h, k) = (3, 2).",
+        "pl": "Postać wierzchołkowa y = (x − h)² + k → (h, k) = (3, 2)."
+      },
+      "feedbackIncorrect": {
+        "en": "Watch the sign inside (x − h).",
+        "es": "Cuidado con el signo dentro de (x − h).",
+        "pl": "Uważaj na znak wewnątrz (x − h)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.7(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "y=(x-3)^2+2",
+      "choices": {
+        "en": [
+          "$(-3,2)$",
+          "$(3,-2)$",
+          "$(3,2)$",
+          "$(2,3)$"
+        ],
+        "es": [
+          "$(-3,2)$",
+          "$(3,-2)$",
+          "$(3,2)$",
+          "$(2,3)$"
+        ],
+        "pl": [
+          "$(-3,2)$",
+          "$(3,-2)$",
+          "$(3,2)$",
+          "$(2,3)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "vertex_sign",
+        "swapped_hk"
+      ]
+    },
+    {
+      "id": "alg1-l29-i09",
+      "knowledgePointIds": [
+        "kp.alg1.review.linear.fn"
+      ],
+      "difficulty": 0.74,
+      "irt": {
+        "a": 1.15,
+        "b": 0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Parallel to y = 2x − 1 through (0, 4) is…",
+        "es": "Paralela a y = 2x − 1 por (0, 4) es…",
+        "pl": "Równoległa do y = 2x − 1 przez (0, 4) to…"
+      },
+      "feedbackCorrect": {
+        "en": "Same slope 2, new intercept 4 → y = 2x + 4.",
+        "es": "Misma pendiente 2, nueva intersección 4 → y = 2x + 4.",
+        "pl": "To samo nachylenie 2, nowe przecięcie 4 → y = 2x + 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Parallel lines share slope, not intercept.",
+        "es": "Las paralelas comparten pendiente, no intersección.",
+        "pl": "Równoległe mają to samo nachylenie, nie przecięcie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.3(A)",
+            "A.2(C)",
+            "A.3(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.B.6",
+            "A-REI.C.6"
+          ]
+        }
+      ],
+      "promptMath": "m=2,\\ (0,4)",
+      "choices": {
+        "en": [
+          "$y=-\\frac{1}{2}x+4$",
+          "$y=2x-4$",
+          "$y=4x+2$",
+          "$y=2x+4$"
+        ],
+        "es": [
+          "$y=-\\frac{1}{2}x+4$",
+          "$y=2x-4$",
+          "$y=4x+2$",
+          "$y=2x+4$"
+        ],
+        "pl": [
+          "$y=-\\frac{1}{2}x+4$",
+          "$y=2x-4$",
+          "$y=4x+2$",
+          "$y=2x+4$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "perp_vs_parallel",
+        "swapped_mb"
+      ]
+    },
+    {
+      "id": "alg1-l29-i10",
+      "knowledgePointIds": [
+        "kp.alg1.review.quadratic"
+      ],
+      "difficulty": 0.78,
+      "irt": {
+        "a": 1.15,
+        "b": 0.95,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Using the quadratic formula, roots of x² − 2x − 3 = 0 are…",
+        "es": "Con la fórmula cuadrática, las raíces de x² − 2x − 3 = 0 son…",
+        "pl": "Ze wzoru kwadratowego pierwiastki x² − 2x − 3 = 0 to…"
+      },
+      "feedbackCorrect": {
+        "en": "Δ = 16 → x = (2 ± 4)/2 → 3 or −1.",
+        "es": "Δ = 16 → x = (2 ± 4)/2 → 3 o −1.",
+        "pl": "Δ = 16 → x = (2 ± 4)/2 → 3 lub −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Compute carefully: √16 = 4, then both ± cases.",
+        "es": "Calcula con cuidado: √16 = 4, luego ambos casos ±.",
+        "pl": "Liczyć ostrożnie: √16 = 4, potem obie wersje ±."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.8(A)",
+            "A.7(A)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-REI.B.4b",
+            "F-IF.C.7a"
+          ]
+        }
+      ],
+      "promptMath": "x=\\frac{2\\pm\\sqrt{4+12}}{2}",
+      "choices": {
+        "en": [
+          "$x=3\\vee x=-1$",
+          "$x=1\\vee x=-3$",
+          "$x=2\\vee x=-2$",
+          "$x=3\\vee x=1$"
+        ],
+        "es": [
+          "$x=3\\vee x=-1$",
+          "$x=1\\vee x=-3$",
+          "$x=2\\vee x=-2$",
+          "$x=3\\vee x=1$"
+        ],
+        "pl": [
+          "$x=3\\vee x=-1$",
+          "$x=1\\vee x=-3$",
+          "$x=2\\vee x=-2$",
+          "$x=3\\vee x=1$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "formula_arith",
+        "dropped_root"
+      ]
+    }
+  ]
+}

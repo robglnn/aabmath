@@ -1,0 +1,1308 @@
+{
+  "id": "alg1-l28",
+  "courseId": "algebra1",
+  "order": 28,
+  "title": {
+    "en": "Piecewise Functions",
+    "es": "Funciones por partes",
+    "pl": "Funkcje przedziałami"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.piecewise.meaning",
+    "kp.alg1.piecewise.evaluate",
+    "kp.alg1.piecewise.graph"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_28",
+    "unlockOnMastery": [
+      "lesson_board_29"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will read piecewise rules, evaluate at given inputs, and connect domains to graph endpoints.",
+        "es": "Leerás reglas por partes, evaluarás en entradas dadas y conectarás dominios con extremos gráficos.",
+        "pl": "Będziesz odczytywać reguły przedziałowe, obliczać wartości i łączyć dziedziny z końcami wykresu."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: pieces & domains",
+        "es": "Enseñar: trozos y dominios",
+        "pl": "Nauczanie: części i dziedziny"
+      },
+      "body": {
+        "en": "A piecewise function lists different rules on different domain pieces. Choose the piece that contains your input, then evaluate. Graphs use open/closed endpoints to match ≤/≥ vs </> .",
+        "es": "Una función por partes lista reglas distintas en trozos de dominio. Elige el trozo que contiene tu entrada y evalúa. Las gráficas usan extremos abiertos/cerrados según ≤/≥ vs </> .",
+        "pl": "Funkcja przedziałami podaje różne reguły na kawałkach dziedziny. Wybierz część zawierającą argument i oblicz. Wykresy używają otwartych/domkniętych końców zgodnie z ≤/≥ vs </> ."
+      },
+      "bodyMath": [
+        "f(x)=\\begin{cases} x+1 & x<0 \\\\ 2x & x\\ge 0 \\end{cases}",
+        "x\\in D_i",
+        "\\circ\\ /\\ \\bullet"
+      ],
+      "itemIds": [
+        "alg1-l28-t01",
+        "alg1-l28-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Select the correct piece, evaluate, and reason about endpoints on graphs.",
+        "es": "Selecciona el trozo correcto, evalúa y razona sobre extremos en gráficas.",
+        "pl": "Wybieraj właściwą część, obliczaj i rozumuj o końcach na wykresach."
+      },
+      "itemIds": [
+        "alg1-l28-g01",
+        "alg1-l28-g02",
+        "alg1-l28-g03",
+        "alg1-l28-g04",
+        "alg1-l28-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l28-i01",
+        "alg1-l28-i02",
+        "alg1-l28-i03",
+        "alg1-l28-i04",
+        "alg1-l28-i05",
+        "alg1-l28-i06",
+        "alg1-l28-i07",
+        "alg1-l28-i08",
+        "alg1-l28-i09",
+        "alg1-l28-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l28-t01",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.meaning"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "In a piecewise function, each rule applies only on its listed domain piece.",
+        "es": "En una función por partes, cada regla aplica solo en su trozo de dominio listado.",
+        "pl": "W funkcji przedziałami każda reguła obowiązuje tylko na wymienionym kawałku dziedziny."
+      },
+      "feedbackCorrect": {
+        "en": "Yes — pick the piece whose domain contains the input.",
+        "es": "Sí — elige el trozo cuyo dominio contiene la entrada.",
+        "pl": "Tak — wybierz część, której dziedzina zawiera argument."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not apply every piece to every x; domains restrict which rule is active.",
+        "es": "No apliques cada trozo a todo x; los dominios limitan qué regla está activa.",
+        "pl": "Nie stosuj każdej części do każdego x; dziedziny ograniczają aktywną regułę."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "f(x)=\\begin{cases} x+1 & x<0 \\\\ 2x & x\\ge 0 \\end{cases}",
+      "choices": {
+        "en": [
+          "$\\text{true}$",
+          "$\\text{false}$",
+          "$\\text{only if continuous}$",
+          "$\\text{never}$"
+        ],
+        "es": [
+          "$\\text{verdadero}$",
+          "$\\text{falso}$",
+          "$\\text{solo si continua}$",
+          "$\\text{nunca}$"
+        ],
+        "pl": [
+          "$\\text{prawda}$",
+          "$\\text{fałsz}$",
+          "$\\text{tylko jeśli ciągła}$",
+          "$\\text{nigdy}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "all_pieces_always",
+        "domain_ignored"
+      ]
+    },
+    {
+      "id": "alg1-l28-t02",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For f above, which expression do you use to find f(3)?",
+        "es": "Para f arriba, ¿qué expresión usas para hallar f(3)?",
+        "pl": "Dla f powyżej, którego wyrażenia użyjesz, by znaleźć f(3)?"
+      },
+      "feedbackCorrect": {
+        "en": "Since 3 ≥ 0, use the second piece: 2x.",
+        "es": "Como 3 ≥ 0, usa el segundo trozo: 2x.",
+        "pl": "Ponieważ 3 ≥ 0, użyj drugiej części: 2x."
+      },
+      "feedbackIncorrect": {
+        "en": "Check which inequality contains 3 before substituting.",
+        "es": "Verifica qué desigualdad contiene 3 antes de sustituir.",
+        "pl": "Sprawdź, która nierówność zawiera 3, zanim podstawisz."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "f(3)\\,?\\quad x\\ge 0\\Rightarrow 2x",
+      "choices": {
+        "en": [
+          "$x+1$",
+          "$2x$",
+          "$x-1$",
+          "$3x$"
+        ],
+        "es": [
+          "$x+1$",
+          "$2x$",
+          "$x-1$",
+          "$3x$"
+        ],
+        "pl": [
+          "$x+1$",
+          "$2x$",
+          "$x-1$",
+          "$3x$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_piece",
+        "ignored_domain"
+      ]
+    },
+    {
+      "id": "alg1-l28-g01",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Given f(x) = x + 1 for x < 0 and f(x) = 2x for x ≥ 0, find f(4).",
+        "es": "Dado f(x) = x + 1 si x < 0 y f(x) = 2x si x ≥ 0, halla f(4).",
+        "pl": "Dane f(x) = x + 1 dla x < 0 i f(x) = 2x dla x ≥ 0, znajdź f(4)."
+      },
+      "feedbackCorrect": {
+        "en": "4 ≥ 0 → f(4) = 2·4 = 8.",
+        "es": "Como 4 ≥ 0, usa 2x: f(4) = 8.",
+        "pl": "Ponieważ 4 ≥ 0, użyj 2x: f(4) = 8."
+      },
+      "feedbackIncorrect": {
+        "en": "Use 2x, not x + 1, when x ≥ 0.",
+        "es": "Usa 2x, no x + 1, cuando x ≥ 0.",
+        "pl": "Użyj 2x, nie x + 1, gdy x ≥ 0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "f(4)",
+      "choices": {
+        "en": [
+          "$5$",
+          "$4$",
+          "$8$",
+          "$3$"
+        ],
+        "es": [
+          "$5$",
+          "$4$",
+          "$8$",
+          "$3$"
+        ],
+        "pl": [
+          "$5$",
+          "$4$",
+          "$8$",
+          "$3$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": 8,
+      "diagnosticTags": [
+        "wrong_piece",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l28-g02",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same f: find f(−2).",
+        "es": "Misma f: halla f(−2).",
+        "pl": "Ta sama f: znajdź f(−2)."
+      },
+      "feedbackCorrect": {
+        "en": "−2 < 0 → f(−2) = −2 + 1 = −1.",
+        "es": "Como −2 < 0, usa x+1: f(−2) = −1.",
+        "pl": "Ponieważ −2 < 0, użyj x+1: f(−2) = −1."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative inputs use x + 1 here, not 2x.",
+        "es": "Las entradas negativas usan x + 1 aquí, no 2x.",
+        "pl": "Ujemne argumenty używają tu x + 1, nie 2x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "f(-2)",
+      "choices": {
+        "en": [
+          "$-4$",
+          "$2$",
+          "$0$",
+          "$-1$"
+        ],
+        "es": [
+          "$-4$",
+          "$2$",
+          "$0$",
+          "$-1$"
+        ],
+        "pl": [
+          "$-4$",
+          "$2$",
+          "$0$",
+          "$-1$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": -1,
+      "diagnosticTags": [
+        "wrong_piece",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l28-g03",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.meaning"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "At the junction x = 0 for this f, which piece applies?",
+        "es": "En la unión x = 0 de esta f, ¿qué trozo aplica?",
+        "pl": "Na łączeniu x = 0 tej f, która część obowiązuje?"
+      },
+      "feedbackCorrect": {
+        "en": "The second piece includes x ≥ 0, so x = 0 uses 2x.",
+        "es": "El segundo trozo incluye x ≥ 0, así que x = 0 usa 2x.",
+        "pl": "Druga część obejmuje x ≥ 0, więc x = 0 używa 2x."
+      },
+      "feedbackIncorrect": {
+        "en": "Read ≤/≥ carefully at shared endpoints.",
+        "es": "Lee ≤/≥ con cuidado en extremos compartidos.",
+        "pl": "Czytaj ≤/≥ ostrożnie na wspólnych końcach."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "x=0:\\ ?",
+      "choices": {
+        "en": [
+          "$2x\\ (\\ge)$",
+          "$x+1\\ (<)$",
+          "$\\text{neither}$",
+          "$\\text{both}$"
+        ],
+        "es": [
+          "$2x\\ (\\ge)$",
+          "$x+1\\ (<)$",
+          "$\\text{ninguno}$",
+          "$\\text{ambos}$"
+        ],
+        "pl": [
+          "$2x\\ (\\ge)$",
+          "$x+1\\ (<)$",
+          "$\\text{żadna}$",
+          "$\\text{obie}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "endpoint_wrong",
+        "both_pieces"
+      ]
+    },
+    {
+      "id": "alg1-l28-g04",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.graph"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "For x < 0 with a strict inequality, the graph at the left of 0 should show…",
+        "es": "Para x < 0 con desigualdad estricta, a la izquierda de 0 la gráfica debe mostrar…",
+        "pl": "Dla x < 0 z ostrą nierównością na lewo od 0 wykres powinien pokazywać…"
+      },
+      "feedbackCorrect": {
+        "en": "Strict < leaves an open circle if that endpoint is not covered by another piece.",
+        "es": "Un < estricto deja círculo abierto si otro trozo no cubre ese extremo.",
+        "pl": "Ostre < zostawia puste kółko, jeśli inna część nie obejmuje tego końca."
+      },
+      "feedbackIncorrect": {
+        "en": "Filled dots are for included endpoints (≤ or ≥).",
+        "es": "Los puntos rellenos son para extremos incluidos (≤ o ≥).",
+        "pl": "Wypełnione punkty są dla końców włączonych (≤ lub ≥)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.3(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x<0:\\ \\circ\\ ?",
+      "choices": {
+        "en": [
+          "$\\text{filled dot}$",
+          "$\\text{open circle at join}$",
+          "$\\text{vertical asymptote}$",
+          "$\\text{no graph}$"
+        ],
+        "es": [
+          "$\\text{punto relleno}$",
+          "$\\text{círculo abierto en unión}$",
+          "$\\text{asíntota vertical}$",
+          "$\\text{sin gráfica}$"
+        ],
+        "pl": [
+          "$\\text{wypełniony punkt}$",
+          "$\\text{puste kółko na łączeniu}$",
+          "$\\text{asymptota pionowa}$",
+          "$\\text{brak wykresu}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "open_vs_closed",
+        "drew_both"
+      ]
+    },
+    {
+      "id": "alg1-l28-g05",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "g(x) = −x if x ≤ 1 and g(x) = x − 2 if x > 1. Find g(1).",
+        "es": "g(x) = −x si x ≤ 1 y g(x) = x − 2 si x > 1. Halla g(1).",
+        "pl": "g(x) = −x gdy x ≤ 1 i g(x) = x − 2 gdy x > 1. Znajdź g(1)."
+      },
+      "feedbackCorrect": {
+        "en": "1 ≤ 1 → g(1) = −1.",
+        "es": "Como 1 ≤ 1, el primer trozo da g(1) = −1.",
+        "pl": "Ponieważ 1 ≤ 1, pierwsza część daje g(1) = −1."
+      },
+      "feedbackIncorrect": {
+        "en": "x = 1 belongs to the first piece (−x), not x − 2.",
+        "es": "x = 1 pertenece al primer trozo (−x), no a x − 2.",
+        "pl": "x = 1 należy do pierwszej części (−x), nie do x − 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "g(1)",
+      "choices": {
+        "en": [
+          "$0$",
+          "$3$",
+          "$-1$",
+          "$1$"
+        ],
+        "es": [
+          "$0$",
+          "$3$",
+          "$-1$",
+          "$1$"
+        ],
+        "pl": [
+          "$0$",
+          "$3$",
+          "$-1$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 2,
+      "acceptNumeric": -1,
+      "diagnosticTags": [
+        "wrong_piece",
+        "endpoint_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l28-i01",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "h(x) = 3 if x < 2 and h(x) = x if x ≥ 2. Find h(5).",
+        "es": "h(x) = 3 si x < 2 y h(x) = x si x ≥ 2. Halla h(5).",
+        "pl": "h(x) = 3 gdy x < 2 i h(x) = x gdy x ≥ 2. Znajdź h(5)."
+      },
+      "feedbackCorrect": {
+        "en": "5 ≥ 2 → h(5) = 5.",
+        "es": "Como 5 ≥ 2, h(5) = x = 5.",
+        "pl": "Ponieważ 5 ≥ 2, h(5) = x = 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Constant piece 3 only applies when x < 2.",
+        "es": "El trozo constante 3 solo aplica cuando x < 2.",
+        "pl": "Stała część 3 obowiązuje tylko gdy x < 2."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "h(5)",
+      "choices": {
+        "en": [
+          "$3$",
+          "$2$",
+          "$7$",
+          "$5$"
+        ],
+        "es": [
+          "$3$",
+          "$2$",
+          "$7$",
+          "$5$"
+        ],
+        "pl": [
+          "$3$",
+          "$2$",
+          "$7$",
+          "$5$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 5,
+      "diagnosticTags": [
+        "wrong_piece",
+        "used_constant"
+      ]
+    },
+    {
+      "id": "alg1-l28-i02",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same h: find h(0).",
+        "es": "Misma h: halla h(0).",
+        "pl": "Ta sama h: znajdź h(0)."
+      },
+      "feedbackCorrect": {
+        "en": "0 < 2 → h(0) = 3.",
+        "es": "Como 0 < 2, el trozo constante da 3.",
+        "pl": "Ponieważ 0 < 2, stała część daje 3."
+      },
+      "feedbackIncorrect": {
+        "en": "For x < 2 the output is the constant 3.",
+        "es": "Para x < 2 la salida es la constante 3.",
+        "pl": "Dla x < 2 wynik to stała 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "h(0)",
+      "choices": {
+        "en": [
+          "$3$",
+          "$0$",
+          "$2$",
+          "$1$"
+        ],
+        "es": [
+          "$3$",
+          "$0$",
+          "$2$",
+          "$1$"
+        ],
+        "pl": [
+          "$3$",
+          "$0$",
+          "$2$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 3,
+      "diagnosticTags": [
+        "wrong_piece",
+        "identity_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l28-i03",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.meaning"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which statement about piecewise functions is correct?",
+        "es": "¿Qué enunciado sobre funciones por partes es correcto?",
+        "pl": "Które stwierdzenie o funkcjach przedziałami jest poprawne?"
+      },
+      "feedbackCorrect": {
+        "en": "Each expression is paired with the inputs where it applies.",
+        "es": "Cada expresión se empareja con las entradas donde aplica.",
+        "pl": "Każde wyrażenie jest powiązane z argumentami, dla których obowiązuje."
+      },
+      "feedbackIncorrect": {
+        "en": "Domains decide which single rule is live for a given x.",
+        "es": "Los dominios deciden qué única regla está activa para un x dado.",
+        "pl": "Dziedziny decydują, która jedna reguła jest aktywna dla danego x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "\\text{piecewise}",
+      "choices": {
+        "en": [
+          "$\\text{all rules always}$",
+          "$\\text{one rule per domain piece}$",
+          "$\\text{no domains}$",
+          "$\\text{only constants}$"
+        ],
+        "es": [
+          "$\\text{todas siempre}$",
+          "$\\text{una regla por trozo}$",
+          "$\\text{sin dominios}$",
+          "$\\text{solo constantes}$"
+        ],
+        "pl": [
+          "$\\text{wszystkie zawsze}$",
+          "$\\text{jedna reguła na kawałek}$",
+          "$\\text{bez dziedzin}$",
+          "$\\text{tylko stałe}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "all_pieces_always",
+        "domain_ignored"
+      ]
+    },
+    {
+      "id": "alg1-l28-i04",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.graph"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.45,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "If a piece uses x ≥ a, the graph at x = a usually shows…",
+        "es": "Si un trozo usa x ≥ a, en x = a la gráfica suele mostrar…",
+        "pl": "Jeśli część ma x ≥ a, na wykresie przy x = a zwykle widać…"
+      },
+      "feedbackCorrect": {
+        "en": "≥ includes the endpoint, so mark it filled (unless another piece overrides continuity concerns).",
+        "es": "≥ incluye el extremo, así que márcalo relleno (salvo matices de continuidad).",
+        "pl": "≥ obejmuje koniec, więc zaznacz wypełniony (chyba że ciągłość mówi inaczej)."
+      },
+      "feedbackIncorrect": {
+        "en": "Open circles match strict < or >.",
+        "es": "Los círculos abiertos corresponden a < o > estrictos.",
+        "pl": "Puste kółka odpowiadają ostrym < lub >."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.3(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x\\ge a:\\ \\bullet",
+      "choices": {
+        "en": [
+          "$\\text{open endpoint}$",
+          "$\\text{hole always}$",
+          "$\\text{filled endpoint}$",
+          "$\\text{arrow only}$"
+        ],
+        "es": [
+          "$\\text{extremo abierto}$",
+          "$\\text{hueco siempre}$",
+          "$\\text{extremo relleno}$",
+          "$\\text{solo flecha}$"
+        ],
+        "pl": [
+          "$\\text{otwarty koniec}$",
+          "$\\text{zawsze dziura}$",
+          "$\\text{wypełniony koniec}$",
+          "$\\text{tylko strzałka}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "open_vs_closed",
+        "endpoint_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l28-i05",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.62,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "p(x) = x² if x < 0 and p(x) = x + 4 if x ≥ 0. Find p(−3).",
+        "es": "p(x) = x² si x < 0 y p(x) = x + 4 si x ≥ 0. Halla p(−3).",
+        "pl": "p(x) = x² gdy x < 0 i p(x) = x + 4 gdy x ≥ 0. Znajdź p(−3)."
+      },
+      "feedbackCorrect": {
+        "en": "−3 < 0 → p(−3) = (−3)² = 9.",
+        "es": "Como −3 < 0, usa x²: p(−3) = 9.",
+        "pl": "Ponieważ −3 < 0, użyj x²: p(−3) = 9."
+      },
+      "feedbackIncorrect": {
+        "en": "Use the quadratic piece for negative inputs.",
+        "es": "Usa el trozo cuadrático para entradas negativas.",
+        "pl": "Użyj części kwadratowej dla ujemnych argumentów."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "p(-3)",
+      "choices": {
+        "en": [
+          "$1$",
+          "$-3$",
+          "$4$",
+          "$9$"
+        ],
+        "es": [
+          "$1$",
+          "$-3$",
+          "$4$",
+          "$9$"
+        ],
+        "pl": [
+          "$1$",
+          "$-3$",
+          "$4$",
+          "$9$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 9,
+      "diagnosticTags": [
+        "wrong_piece",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l28-i06",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same p: find p(0).",
+        "es": "Misma p: halla p(0).",
+        "pl": "Ta sama p: znajdź p(0)."
+      },
+      "feedbackCorrect": {
+        "en": "0 ≥ 0 → p(0) = 0 + 4 = 4.",
+        "es": "Como 0 ≥ 0, usa x+4: p(0) = 4.",
+        "pl": "Ponieważ 0 ≥ 0, użyj x+4: p(0) = 4."
+      },
+      "feedbackIncorrect": {
+        "en": "The linear piece includes zero.",
+        "es": "El trozo lineal incluye el cero.",
+        "pl": "Część liniowa obejmuje zero."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "p(0)",
+      "choices": {
+        "en": [
+          "$4$",
+          "$0$",
+          "$9$",
+          "$1$"
+        ],
+        "es": [
+          "$4$",
+          "$0$",
+          "$9$",
+          "$1$"
+        ],
+        "pl": [
+          "$4$",
+          "$0$",
+          "$9$",
+          "$1$"
+        ]
+      },
+      "correctIndex": 0,
+      "acceptNumeric": 4,
+      "diagnosticTags": [
+        "wrong_piece",
+        "endpoint_wrong"
+      ]
+    },
+    {
+      "id": "alg1-l28-i07",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.graph"
+      ],
+      "difficulty": 0.68,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Two pieces should never both be drawn for the same x-value.",
+        "es": "Dos trozos nunca deben dibujarse ambos para el mismo valor de x.",
+        "pl": "Dwóch części nigdy nie rysuje się jednocześnie dla tej samej wartości x."
+      },
+      "feedbackCorrect": {
+        "en": "Domains partition inputs so exactly one rule applies (or none, if undefined).",
+        "es": "Los dominios particionan entradas para que aplique exactamente una regla (o ninguna).",
+        "pl": "Dziedziny dzielą argumenty tak, by obowiązywała dokładnie jedna reguła (lub żadna)."
+      },
+      "feedbackIncorrect": {
+        "en": "Overlapping active pieces would make a multi-valued relation, not a function.",
+        "es": "Trozo activos solapados harían una relación multivaluada, no una función.",
+        "pl": "Nakładające się aktywne części dałyby relację wielowartościową, nie funkcję."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.3(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "\\neg(f_1\\land f_2)\\ \\text{ for one }x",
+      "choices": {
+        "en": [
+          "$\\text{false}$",
+          "$\\text{true}$",
+          "$\\text{only if parallel}$",
+          "$\\text{only if linear}$"
+        ],
+        "es": [
+          "$\\text{falso}$",
+          "$\\text{verdadero}$",
+          "$\\text{solo si paralelos}$",
+          "$\\text{solo si lineales}$"
+        ],
+        "pl": [
+          "$\\text{fałsz}$",
+          "$\\text{prawda}$",
+          "$\\text{tylko jeśli równoległe}$",
+          "$\\text{tylko jeśli liniowe}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "drew_both",
+        "not_a_function"
+      ]
+    },
+    {
+      "id": "alg1-l28-i08",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.meaning"
+      ],
+      "difficulty": 0.7,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "q(x) = 5 − x for x ≤ −1 and q(x) = 2x for x > −1. Which piece for x = −1?",
+        "es": "q(x) = 5 − x si x ≤ −1 y q(x) = 2x si x > −1. ¿Qué trozo para x = −1?",
+        "pl": "q(x) = 5 − x gdy x ≤ −1 i q(x) = 2x gdy x > −1. Która część dla x = −1?"
+      },
+      "feedbackCorrect": {
+        "en": "x = −1 satisfies ≤ −1, so use 5 − x.",
+        "es": "x = −1 cumple ≤ −1, así que usa 5 − x.",
+        "pl": "x = −1 spełnia ≤ −1, więc użyj 5 − x."
+      },
+      "feedbackIncorrect": {
+        "en": "≤ includes the boundary; > does not.",
+        "es": "≤ incluye la frontera; > no.",
+        "pl": "≤ obejmuje granicę; > nie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.2(A)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.1",
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "q(-1):\\ ?",
+      "choices": {
+        "en": [
+          "$2x$",
+          "$x+5$",
+          "$5-x$",
+          "$x/2$"
+        ],
+        "es": [
+          "$2x$",
+          "$x+5$",
+          "$5-x$",
+          "$x/2$"
+        ],
+        "pl": [
+          "$2x$",
+          "$x+5$",
+          "$5-x$",
+          "$x/2$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "endpoint_wrong",
+        "wrong_piece"
+      ]
+    },
+    {
+      "id": "alg1-l28-i09",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.evaluate"
+      ],
+      "difficulty": 0.72,
+      "irt": {
+        "a": 1.15,
+        "b": 0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Same q: find q(−1).",
+        "es": "Misma q: halla q(−1).",
+        "pl": "Ta sama q: znajdź q(−1)."
+      },
+      "feedbackCorrect": {
+        "en": "q(−1) = 5 − (−1) = 6.",
+        "es": "Sustituye: q(−1) = 5 − (−1) = 6.",
+        "pl": "Podstaw: q(−1) = 5 − (−1) = 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Substitute into 5 − x: 5 − (−1) = 6.",
+        "es": "Sustituye en 5 − x: 5 − (−1) = 6.",
+        "pl": "Podstaw do 5 − x: 5 − (−1) = 6."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.12(B)",
+            "A.1(B)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.A.2",
+            "F-IF.C.7b"
+          ]
+        }
+      ],
+      "promptMath": "q(-1)",
+      "choices": {
+        "en": [
+          "$-2$",
+          "$2$",
+          "$4$",
+          "$6$"
+        ],
+        "es": [
+          "$-2$",
+          "$2$",
+          "$4$",
+          "$6$"
+        ],
+        "pl": [
+          "$-2$",
+          "$2$",
+          "$4$",
+          "$6$"
+        ]
+      },
+      "correctIndex": 3,
+      "acceptNumeric": 6,
+      "diagnosticTags": [
+        "sign_error",
+        "arith_error"
+      ]
+    },
+    {
+      "id": "alg1-l28-i10",
+      "knowledgePointIds": [
+        "kp.alg1.piecewise.graph"
+      ],
+      "difficulty": 0.75,
+      "irt": {
+        "a": 1.15,
+        "b": 0.9,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "A piecewise linear graph with a jump at x = 2 is still a function if…",
+        "es": "Una gráfica lineal por partes con un salto en x = 2 sigue siendo función si…",
+        "pl": "Wykres przedziałami liniowy ze skokiem w x = 2 nadal jest funkcją, jeśli…"
+      },
+      "feedbackCorrect": {
+        "en": "As long as each x maps to at most one y, a jump is allowed.",
+        "es": "Mientras cada x mapee a lo sumo a una y, un salto es permitido.",
+        "pl": "Dopóki każde x ma co najwyżej jedno y, skok jest dozwolony."
+      },
+      "feedbackIncorrect": {
+        "en": "Vertical-line test fails only if two outputs share one x.",
+        "es": "La prueba de la vertical falla solo si dos salidas comparten un x.",
+        "pl": "Test pionowej zawodzi tylko, gdy dwa wyniki dzielą to samo x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.2(A)",
+            "A.3(C)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "F-IF.C.7b",
+            "F-IF.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x=2:\\ \\text{jump}",
+      "choices": {
+        "en": [
+          "$\\text{one y per x}$",
+          "$\\text{two y at 2}$",
+          "$\\text{vertical line}$",
+          "$\\text{always not}$"
+        ],
+        "es": [
+          "$\\text{una y por x}$",
+          "$\\text{dos y en 2}$",
+          "$\\text{recta vertical}$",
+          "$\\text{nunca}$"
+        ],
+        "pl": [
+          "$\\text{jedno y na x}$",
+          "$\\text{dwa y w 2}$",
+          "$\\text{prosta pionowa}$",
+          "$\\text{nigdy}$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "not_a_function",
+        "drew_both"
+      ]
+    }
+  ]
+}
