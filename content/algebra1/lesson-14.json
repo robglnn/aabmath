@@ -1,0 +1,1308 @@
+{
+  "id": "alg1-l14",
+  "courseId": "algebra1",
+  "order": 14,
+  "title": {
+    "en": "Factor — GCF & Simple Trinomials",
+    "es": "Factorizar — MCD y trinomios simples",
+    "pl": "Rozkład — NWD i proste trójmiany"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.factor.gcf",
+    "kp.alg1.factor.trinomial.a1",
+    "kp.alg1.factor.verify"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_14",
+    "unlockOnMastery": [
+      "lesson_board_15"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will factor out GCFs and factor x² + bx + c (a=1), then verify by multiplying.",
+        "es": "Sacarás el MCD y factorizarás x² + bx + c (a=1), luego verificarás multiplicando.",
+        "pl": "Będziesz wyłączać NWD i rozkładać x² + bx + c (a=1), potem sprawdzać przez mnożenie."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: GCF & (x+p)(x+q)",
+        "es": "Enseñar: MCD y (x+p)(x+q)",
+        "pl": "Nauczanie: NWD i (x+p)(x+q)"
+      },
+      "body": {
+        "en": "Pull the greatest common factor first. For x² + bx + c, find integers p,q with p+q=b and p·q=c.",
+        "es": "Saca primero el máximo común divisor. Para x² + bx + c, halla enteros p,q con p+q=b y p·q=c.",
+        "pl": "Najpierw wyłącz największy wspólny dzielnik. Dla x² + bx + c znajdź całkowite p,q: p+q=b, p·q=c."
+      },
+      "bodyMath": [
+        "6x + 9 = 3(2x + 3)",
+        "x^{2} + 5x + 6 = (x + 2)(x + 3)",
+        "(x + 2)(x + 5) = x^{2} + 7x + 10"
+      ],
+      "itemIds": [
+        "alg1-l14-t01",
+        "alg1-l14-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Factor GCFs with variables, practice mixed-sign trinomials, and check by expanding.",
+        "es": "Factoriza MCD con variables, practica trinomios con signos mixtos y comprueba expandiendo.",
+        "pl": "Rozkładaj NWD ze zmiennymi, ćwicz trójmiany z mieszanymi znakami i sprawdzaj rozwijając."
+      },
+      "itemIds": [
+        "alg1-l14-g01",
+        "alg1-l14-g02",
+        "alg1-l14-g03",
+        "alg1-l14-g04",
+        "alg1-l14-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l14-i01",
+        "alg1-l14-i02",
+        "alg1-l14-i03",
+        "alg1-l14-i04",
+        "alg1-l14-i05",
+        "alg1-l14-i06",
+        "alg1-l14-i07",
+        "alg1-l14-i08",
+        "alg1-l14-i09",
+        "alg1-l14-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l14-t01",
+      "knowledgePointIds": [
+        "kp.alg1.factor.gcf"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor out the GCF: 6x + 9.",
+        "es": "Saca el MCD: 6x + 9.",
+        "pl": "Wyłącz NWD: 6x + 9."
+      },
+      "feedbackCorrect": {
+        "en": "GCF is 3: 3(2x+3).",
+        "es": "El MCD es 3: 3(2x+3).",
+        "pl": "NWD to 3: 3(2x+3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Divide each term by the greatest common numeric factor 3.",
+        "es": "Divide cada término entre el mayor factor numérico común 3.",
+        "pl": "Podziel każdy wyraz przez największy wspólny czynnik 3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "6x + 9",
+      "choices": {
+        "en": [
+          "$3(2x+3)$",
+          "$6(x+9)$",
+          "$3(2x+9)$",
+          "$2(3x+9)$"
+        ],
+        "es": [
+          "$3(2x+3)$",
+          "$6(x+9)$",
+          "$3(2x+9)$",
+          "$2(3x+9)$"
+        ],
+        "pl": [
+          "$3(2x+3)$",
+          "$6(x+9)$",
+          "$3(2x+9)$",
+          "$2(3x+9)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "partial_gcf",
+        "wrong_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l14-t02",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 5x + 6.",
+        "es": "Factoriza x^{2} + 5x + 6.",
+        "pl": "Rozłóż x^{2} + 5x + 6."
+      },
+      "feedbackCorrect": {
+        "en": "2+3=5 and 2·3=6.",
+        "es": "2+3=5 y 2·3=6.",
+        "pl": "2+3=5 i 2·3=6."
+      },
+      "feedbackIncorrect": {
+        "en": "Find two numbers that multiply to 6 and add to 5.",
+        "es": "Halla dos números que multipliquen a 6 y sumen 5.",
+        "pl": "Znajdź dwie liczby o iloczynie 6 i sumie 5."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 5x + 6",
+      "choices": {
+        "en": [
+          "$(x+1)(x+6)$",
+          "$(x+2)(x+3)$",
+          "$(x-2)(x-3)$",
+          "$(x+2)(x-3)$"
+        ],
+        "es": [
+          "$(x+1)(x+6)$",
+          "$(x+2)(x+3)$",
+          "$(x-2)(x-3)$",
+          "$(x+2)(x-3)$"
+        ],
+        "pl": [
+          "$(x+1)(x+6)$",
+          "$(x+2)(x+3)$",
+          "$(x-2)(x-3)$",
+          "$(x+2)(x-3)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l14-g01",
+      "knowledgePointIds": [
+        "kp.alg1.factor.gcf"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 4x^{2} − 10x.",
+        "es": "Factoriza 4x^{2} − 10x.",
+        "pl": "Rozłóż 4x^{2} − 10x."
+      },
+      "feedbackCorrect": {
+        "en": "GCF 2x: 2x(2x−5).",
+        "es": "MCD 2x: 2x(2x−5).",
+        "pl": "NWD 2x: 2x(2x−5)."
+      },
+      "feedbackIncorrect": {
+        "en": "Pull out both the numeric GCF and the lowest power of x.",
+        "es": "Saca el MCD numérico y la menor potencia de x.",
+        "pl": "Wyłącz liczbowy NWD i najniższą potęgę x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4x^{2} - 10x",
+      "choices": {
+        "en": [
+          "$2(2x^{2}-5x)$",
+          "$4x(x-10)$",
+          "$2x(2x-5)$",
+          "$2x(2x-10)$"
+        ],
+        "es": [
+          "$2(2x^{2}-5x)$",
+          "$4x(x-10)$",
+          "$2x(2x-5)$",
+          "$2x(2x-10)$"
+        ],
+        "pl": [
+          "$2(2x^{2}-5x)$",
+          "$4x(x-10)$",
+          "$2x(2x-5)$",
+          "$2x(2x-10)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "partial_gcf",
+        "wrong_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l14-g02",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 7x + 12.",
+        "es": "Factoriza x^{2} − 7x + 12.",
+        "pl": "Rozłóż x^{2} − 7x + 12."
+      },
+      "feedbackCorrect": {
+        "en": "−3 + −4 = −7 and (−3)(−4)=12.",
+        "es": "−3 + −4 = −7 y (−3)(−4)=12.",
+        "pl": "−3 + −4 = −7 i (−3)(−4)=12."
+      },
+      "feedbackIncorrect": {
+        "en": "When c>0 and b<0, both factors are negative.",
+        "es": "Cuando c>0 y b<0, ambos factores son negativos.",
+        "pl": "Gdy c>0 i b<0, oba czynniki są ujemne."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 7x + 12",
+      "choices": {
+        "en": [
+          "$(x+3)(x+4)$",
+          "$(x-2)(x-6)$",
+          "$(x-1)(x-12)$",
+          "$(x-3)(x-4)$"
+        ],
+        "es": [
+          "$(x+3)(x+4)$",
+          "$(x-2)(x-6)$",
+          "$(x-1)(x-12)$",
+          "$(x-3)(x-4)$"
+        ],
+        "pl": [
+          "$(x+3)(x+4)$",
+          "$(x-2)(x-6)$",
+          "$(x-1)(x-12)$",
+          "$(x-3)(x-4)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l14-g03",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + x − 12.",
+        "es": "Factoriza x^{2} + x − 12.",
+        "pl": "Rozłóż x^{2} + x − 12."
+      },
+      "feedbackCorrect": {
+        "en": "4 + (−3) = 1 and 4·(−3)=−12.",
+        "es": "4 + (−3) = 1 y 4·(−3)=−12.",
+        "pl": "4 + (−3) = 1 i 4·(−3)=−12."
+      },
+      "feedbackIncorrect": {
+        "en": "Opposite signs; the larger magnitude gets the sign of b.",
+        "es": "Signos opuestos; la mayor magnitud lleva el signo de b.",
+        "pl": "Przeciwne znaki; większa wartość bezwzględna ma znak b."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + x - 12",
+      "choices": {
+        "en": [
+          "$(x+4)(x-3)$",
+          "$(x+6)(x-2)$",
+          "$(x+3)(x-4)$",
+          "$(x-4)(x-3)$"
+        ],
+        "es": [
+          "$(x+4)(x-3)$",
+          "$(x+6)(x-2)$",
+          "$(x+3)(x-4)$",
+          "$(x-4)(x-3)$"
+        ],
+        "pl": [
+          "$(x+4)(x-3)$",
+          "$(x+6)(x-2)$",
+          "$(x+3)(x-4)$",
+          "$(x-4)(x-3)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_swap",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l14-g04",
+      "knowledgePointIds": [
+        "kp.alg1.factor.verify"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Does (x + 2)(x + 5) equal x^{2} + 7x + 10?",
+        "es": "¿(x + 2)(x + 5) es igual a x^{2} + 7x + 10?",
+        "pl": "Czy (x + 2)(x + 5) równa się x^{2} + 7x + 10?"
+      },
+      "feedbackCorrect": {
+        "en": "x² + 5x + 2x + 10 = x² + 7x + 10.",
+        "es": "x² + 5x + 2x + 10 = x² + 7x + 10.",
+        "pl": "x² + 5x + 2x + 10 = x² + 7x + 10."
+      },
+      "feedbackIncorrect": {
+        "en": "Expand to verify any proposed factorization.",
+        "es": "Expande para verificar cualquier factorización propuesta.",
+        "pl": "Rozwiń, by sprawdzić proponowany rozkład."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-APR.A.1",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "(x + 2)(x + 5) \\stackrel{?}{=} x^{2} + 7x + 10",
+      "choices": {
+        "en": [
+          "No — middle should be 10x",
+          "Yes — FOIL gives x² + 7x + 10",
+          "No — constant should be 7",
+          "Yes — but only if x=0"
+        ],
+        "es": [
+          "No — el medio debería ser 10x",
+          "Sí — FOIL da x² + 7x + 10",
+          "No — la constante debería ser 7",
+          "Sí — pero solo si x=0"
+        ],
+        "pl": [
+          "Nie — środek powinien być 10x",
+          "Tak — FOIL daje x² + 7x + 10",
+          "Nie — stała powinna być 7",
+          "Tak — ale tylko gdy x=0"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "no_verify"
+      ]
+    },
+    {
+      "id": "alg1-l14-g05",
+      "knowledgePointIds": [
+        "kp.alg1.factor.gcf"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 12x^{3} + 18x^{2}.",
+        "es": "Factoriza 12x^{3} + 18x^{2}.",
+        "pl": "Rozłóż 12x^{3} + 18x^{2}."
+      },
+      "feedbackCorrect": {
+        "en": "GCF 6x²: 6x²(2x+3).",
+        "es": "MCD 6x²: 6x²(2x+3).",
+        "pl": "NWD 6x²: 6x²(2x+3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Use the greatest common coefficient and the lowest power of x present in all terms.",
+        "es": "Usa el mayor coeficiente común y la menor potencia de x en todos los términos.",
+        "pl": "Użyj największego wspólnego współczynnika i najniższej potęgi x we wszystkich wyrazach."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "12x^{3} + 18x^{2}",
+      "choices": {
+        "en": [
+          "$6x(2x^{2}+3x)$",
+          "$12x^{2}(x+18)$",
+          "$6x^{2}(2x+3)$",
+          "$3x^{2}(4x+6)$"
+        ],
+        "es": [
+          "$6x(2x^{2}+3x)$",
+          "$12x^{2}(x+18)$",
+          "$6x^{2}(2x+3)$",
+          "$3x^{2}(4x+6)$"
+        ],
+        "pl": [
+          "$6x(2x^{2}+3x)$",
+          "$12x^{2}(x+18)$",
+          "$6x^{2}(2x+3)$",
+          "$3x^{2}(4x+6)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "partial_gcf",
+        "wrong_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l14-i01",
+      "knowledgePointIds": [
+        "kp.alg1.factor.gcf"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor −5x − 15.",
+        "es": "Factoriza −5x − 15.",
+        "pl": "Rozłóż −5x − 15."
+      },
+      "feedbackCorrect": {
+        "en": "Factor −5: −5(x+3).",
+        "es": "Factor −5: −5(x+3).",
+        "pl": "Czynnik −5: −5(x+3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Pulling a negative GCF flips signs inside the parentheses.",
+        "es": "Sacar un MCD negativo cambia signos dentro del paréntesis.",
+        "pl": "Ujemny NWD odwraca znaki w nawiasie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "-5x - 15",
+      "choices": {
+        "en": [
+          "$-5(x-3)$",
+          "$5(x+3)$",
+          "$-15(x+1)$",
+          "$-5(x+3)$"
+        ],
+        "es": [
+          "$-5(x-3)$",
+          "$5(x+3)$",
+          "$-15(x+1)$",
+          "$-5(x+3)$"
+        ],
+        "pl": [
+          "$-5(x-3)$",
+          "$5(x+3)$",
+          "$-15(x+1)$",
+          "$-5(x+3)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l14-i02",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 2x − 15.",
+        "es": "Factoriza x^{2} − 2x − 15.",
+        "pl": "Rozłóż x^{2} − 2x − 15."
+      },
+      "feedbackCorrect": {
+        "en": "−5 + 3 = −2 and (−5)(3)=−15.",
+        "es": "−5 + 3 = −2 y (−5)(3)=−15.",
+        "pl": "−5 + 3 = −2 i (−5)(3)=−15."
+      },
+      "feedbackIncorrect": {
+        "en": "Factors of −15 with sum −2: −5 and +3.",
+        "es": "Factores de −15 con suma −2: −5 y +3.",
+        "pl": "Czynniki −15 o sumie −2: −5 i +3."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 2x - 15",
+      "choices": {
+        "en": [
+          "$(x-5)(x+3)$",
+          "$(x+5)(x-3)$",
+          "$(x-15)(x+1)$",
+          "$(x-5)(x-3)$"
+        ],
+        "es": [
+          "$(x-5)(x+3)$",
+          "$(x+5)(x-3)$",
+          "$(x-15)(x+1)$",
+          "$(x-5)(x-3)$"
+        ],
+        "pl": [
+          "$(x-5)(x+3)$",
+          "$(x+5)(x-3)$",
+          "$(x-15)(x+1)$",
+          "$(x-5)(x-3)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_swap",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l14-i03",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 8x + 16.",
+        "es": "Factoriza x^{2} + 8x + 16.",
+        "pl": "Rozłóż x^{2} + 8x + 16."
+      },
+      "feedbackCorrect": {
+        "en": "4+4=8 and 4·4=16 → (x+4)².",
+        "es": "4+4=8 y 4·4=16 → (x+4)².",
+        "pl": "4+4=8 i 4·4=16 → (x+4)²."
+      },
+      "feedbackIncorrect": {
+        "en": "Same factor twice when the middle is twice one factor of c.",
+        "es": "El mismo factor dos veces cuando el medio es el doble de un factor de c.",
+        "pl": "Ten sam czynnik dwa razy, gdy środek to podwójny czynnik c."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 8x + 16",
+      "choices": {
+        "en": [
+          "$(x+2)(x+8)$",
+          "$(x+4)(x+4)$",
+          "$(x+4)(x-4)$",
+          "$(x+16)(x+1)$"
+        ],
+        "es": [
+          "$(x+2)(x+8)$",
+          "$(x+4)(x+4)$",
+          "$(x+4)(x-4)$",
+          "$(x+16)(x+1)$"
+        ],
+        "pl": [
+          "$(x+2)(x+8)$",
+          "$(x+4)(x+4)$",
+          "$(x+4)(x-4)$",
+          "$(x+16)(x+1)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l14-i04",
+      "knowledgePointIds": [
+        "kp.alg1.factor.verify"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which factorization of x^{2} − 9x + 18 is correct?",
+        "es": "¿Qué factorización de x^{2} − 9x + 18 es correcta?",
+        "pl": "Który rozkład x^{2} − 9x + 18 jest poprawny?"
+      },
+      "feedbackCorrect": {
+        "en": "Expand: x² − 6x − 3x + 18 = x² − 9x + 18.",
+        "es": "Expande: x² − 6x − 3x + 18 = x² − 9x + 18.",
+        "pl": "Rozwiń: x² − 6x − 3x + 18 = x² − 9x + 18."
+      },
+      "feedbackIncorrect": {
+        "en": "Check by multiplying; −3 and −6 sum to −9.",
+        "es": "Comprueba multiplicando; −3 y −6 suman −9.",
+        "pl": "Sprawdź mnożąc; −3 i −6 dają sumę −9."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-APR.A.1",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 9x + 18",
+      "choices": {
+        "en": [
+          "$(x+3)(x+6)$",
+          "$(x-2)(x-9)$",
+          "$(x-3)(x-6)$",
+          "$(x-3)(x+6)$"
+        ],
+        "es": [
+          "$(x+3)(x+6)$",
+          "$(x-2)(x-9)$",
+          "$(x-3)(x-6)$",
+          "$(x-3)(x+6)$"
+        ],
+        "pl": [
+          "$(x+3)(x+6)$",
+          "$(x-2)(x-9)$",
+          "$(x-3)(x-6)$",
+          "$(x-3)(x+6)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l14-i05",
+      "knowledgePointIds": [
+        "kp.alg1.factor.gcf"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "After factoring GCF from 8x^{2}y − 12xy, one correct form is…",
+        "es": "Tras sacar el MCD de 8x^{2}y − 12xy, una forma correcta es…",
+        "pl": "Po wyłączeniu NWD z 8x^{2}y − 12xy poprawna forma to…"
+      },
+      "feedbackCorrect": {
+        "en": "GCF 4xy leaves (2x−3).",
+        "es": "MCD 4xy deja (2x−3).",
+        "pl": "NWD 4xy zostawia (2x−3)."
+      },
+      "feedbackIncorrect": {
+        "en": "Include every common variable factor to the lowest power.",
+        "es": "Incluye cada factor variable común a la menor potencia.",
+        "pl": "Uwzględnij każdy wspólny czynnik zmiennej w najniższej potędze."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "8x^{2}y - 12xy",
+      "choices": {
+        "en": [
+          "$4x(2xy-3y)$",
+          "$8xy(x-12)$",
+          "$2xy(4x-6)$",
+          "$4xy(2x-3)$"
+        ],
+        "es": [
+          "$4x(2xy-3y)$",
+          "$8xy(x-12)$",
+          "$2xy(4x-6)$",
+          "$4xy(2x-3)$"
+        ],
+        "pl": [
+          "$4x(2xy-3y)$",
+          "$8xy(x-12)$",
+          "$2xy(4x-6)$",
+          "$4xy(2x-3)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "partial_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l14-i06",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 9x − 10.",
+        "es": "Factoriza x^{2} − 9x − 10.",
+        "pl": "Rozłóż x^{2} − 9x − 10."
+      },
+      "feedbackCorrect": {
+        "en": "−10 + 1 = −9 and (−10)(1)=−10.",
+        "es": "−10 + 1 = −9 y (−10)(1)=−10.",
+        "pl": "−10 + 1 = −9 i (−10)(1)=−10."
+      },
+      "feedbackIncorrect": {
+        "en": "Try factor pairs of −10; only −10 and +1 sum to −9.",
+        "es": "Prueba pares de −10; solo −10 y +1 suman −9.",
+        "pl": "Sprawdź pary −10; tylko −10 i +1 dają −9."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 9x - 10",
+      "choices": {
+        "en": [
+          "$(x-10)(x+1)$",
+          "$(x+10)(x-1)$",
+          "$(x-5)(x-2)$",
+          "$(x-10)(x-1)$"
+        ],
+        "es": [
+          "$(x-10)(x+1)$",
+          "$(x+10)(x-1)$",
+          "$(x-5)(x-2)$",
+          "$(x-10)(x-1)$"
+        ],
+        "pl": [
+          "$(x-10)(x+1)$",
+          "$(x+10)(x-1)$",
+          "$(x-5)(x-2)$",
+          "$(x-10)(x-1)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_swap"
+      ]
+    },
+    {
+      "id": "alg1-l14-i07",
+      "knowledgePointIds": [
+        "kp.alg1.factor.verify"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (x − 4)(x + 7). Result?",
+        "es": "Expande (x − 4)(x + 7). ¿Resultado?",
+        "pl": "Rozwiń (x − 4)(x + 7). Wynik?"
+      },
+      "feedbackCorrect": {
+        "en": "x² + 7x − 4x − 28 = x² + 3x − 28.",
+        "es": "x² + 7x − 4x − 28 = x² + 3x − 28.",
+        "pl": "x² + 7x − 4x − 28 = x² + 3x − 28."
+      },
+      "feedbackIncorrect": {
+        "en": "Outer and Inner: 7x − 4x = 3x.",
+        "es": "Externo e interno: 7x − 4x = 3x.",
+        "pl": "Zewnętrzne i wewnętrzne: 7x − 4x = 3x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-APR.A.1",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "(x - 4)(x + 7)",
+      "choices": {
+        "en": [
+          "$x^{2}-3x-28$",
+          "$x^{2}+3x-28$",
+          "$x^{2}+3x+28$",
+          "$x^{2}-11x-28$"
+        ],
+        "es": [
+          "$x^{2}-3x-28$",
+          "$x^{2}+3x-28$",
+          "$x^{2}+3x+28$",
+          "$x^{2}-11x-28$"
+        ],
+        "pl": [
+          "$x^{2}-3x-28$",
+          "$x^{2}+3x-28$",
+          "$x^{2}+3x+28$",
+          "$x^{2}-11x-28$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_error",
+        "like_term_error"
+      ]
+    },
+    {
+      "id": "alg1-l14-i08",
+      "knowledgePointIds": [
+        "kp.alg1.factor.gcf"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Best first step for 2x^{2} + 10x + 12?",
+        "es": "¿Mejor primer paso para 2x^{2} + 10x + 12?",
+        "pl": "Najlepszy pierwszy krok dla 2x^{2} + 10x + 12?"
+      },
+      "feedbackCorrect": {
+        "en": "Always pull GCF first: 2(x² + 5x + 6).",
+        "es": "Siempre saca el MCD primero: 2(x² + 5x + 6).",
+        "pl": "Zawsze najpierw NWD: 2(x² + 5x + 6)."
+      },
+      "feedbackIncorrect": {
+        "en": "GCF first makes the remaining trinomial easier.",
+        "es": "El MCD primero facilita el trinomio restante.",
+        "pl": "NWD najpierw ułatwia pozostały trójmian."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "2x^{2} + 10x + 12",
+      "choices": {
+        "en": [
+          "FOIL immediately without GCF",
+          "Subtract 12 from both sides",
+          "Factor out 2, then factor the trinomial",
+          "Divide only the first term by 2"
+        ],
+        "es": [
+          "FOIL de inmediato sin MCD",
+          "Restar 12 a ambos lados",
+          "Sacar 2 y luego factorizar el trinomio",
+          "Dividir solo el primer término entre 2"
+        ],
+        "pl": [
+          "Od razu FOIL bez NWD",
+          "Odjąć 12 od obu stron",
+          "Wyłączyć 2, potem rozłożyć trójmian",
+          "Podzielić tylko pierwszy wyraz przez 2"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "skipped_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l14-i09",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 0x − 16 (i.e. x^{2} − 16) as a trinomial case.",
+        "es": "Factoriza x^{2} + 0x − 16 (es decir x^{2} − 16) como caso de trinomio.",
+        "pl": "Rozłóż x^{2} + 0x − 16 (czyli x^{2} − 16) jak trójmian."
+      },
+      "feedbackCorrect": {
+        "en": "−4 + 4 = 0 and (−4)(4)=−16.",
+        "es": "−4 + 4 = 0 y (−4)(4)=−16.",
+        "pl": "−4 + 4 = 0 i (−4)(4)=−16."
+      },
+      "feedbackIncorrect": {
+        "en": "Numbers that multiply to −16 and add to 0 are opposites.",
+        "es": "Números que multiplican a −16 y suman 0 son opuestos.",
+        "pl": "Liczby o iloczynie −16 i sumie 0 są przeciwne."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 16",
+      "choices": {
+        "en": [
+          "$(x-8)(x+2)$",
+          "$(x-4)(x-4)$",
+          "$(x+4)(x+4)$",
+          "$(x-4)(x+4)$"
+        ],
+        "es": [
+          "$(x-8)(x+2)$",
+          "$(x-4)(x-4)$",
+          "$(x+4)(x+4)$",
+          "$(x-4)(x+4)$"
+        ],
+        "pl": [
+          "$(x-8)(x+2)$",
+          "$(x-4)(x-4)$",
+          "$(x+4)(x+4)$",
+          "$(x-4)(x+4)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "perfect_square_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l14-i10",
+      "knowledgePointIds": [
+        "kp.alg1.factor.verify"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Someone claims x^{2} + 5x − 6 = (x + 6)(x − 1). Check?",
+        "es": "Alguien afirma x^{2} + 5x − 6 = (x + 6)(x − 1). ¿Comprobar?",
+        "pl": "Ktoś twierdzi x^{2} + 5x − 6 = (x + 6)(x − 1). Sprawdzenie?"
+      },
+      "feedbackCorrect": {
+        "en": "6x − x = 5x; 6·(−1)=−6. Match.",
+        "es": "6x − x = 5x; 6·(−1)=−6. Coincide.",
+        "pl": "6x − x = 5x; 6·(−1)=−6. Zgodne."
+      },
+      "feedbackIncorrect": {
+        "en": "Always FOIL to confirm.",
+        "es": "Siempre FOIL para confirmar.",
+        "pl": "Zawsze FOIL, by potwierdzić."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-APR.A.1",
+            "A-SSE.A.2"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 5x - 6 \\stackrel{?}{=} (x + 6)(x - 1)",
+      "choices": {
+        "en": [
+          "Correct — expands to x² + 5x − 6",
+          "Wrong — expands to x² − 5x − 6",
+          "Wrong — expands to x² + 7x − 6",
+          "Correct — but constant should be +6"
+        ],
+        "es": [
+          "Correcto — expande a x² + 5x − 6",
+          "Incorrecto — expande a x² − 5x − 6",
+          "Incorrecto — expande a x² + 7x − 6",
+          "Correcto — pero la constante debería ser +6"
+        ],
+        "pl": [
+          "Poprawne — rozwija do x² + 5x − 6",
+          "Błędne — rozwija do x² − 5x − 6",
+          "Błędne — rozwija do x² + 7x − 6",
+          "Poprawne — ale stała powinna być +6"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "no_verify"
+      ]
+    }
+  ]
+}

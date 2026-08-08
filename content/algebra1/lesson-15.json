@@ -1,0 +1,1311 @@
+{
+  "id": "alg1-l15",
+  "courseId": "algebra1",
+  "order": 15,
+  "title": {
+    "en": "Factor — Difference of Squares & More",
+    "es": "Factorizar — diferencia de cuadrados y más",
+    "pl": "Rozkład — różnica kwadratów i więcej"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.factor.difference.squares",
+    "kp.alg1.factor.trinomial.more",
+    "kp.alg1.factor.perfect.square"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_15",
+    "unlockOnMastery": [
+      "lesson_board_16"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will factor differences of squares and perfect-square trinomials, and tackle harder a=1 trinomials.",
+        "es": "Factorizarás diferencias de cuadrados y trinomios cuadrados perfectos, y abordarás trinomios a=1 más difíciles.",
+        "pl": "Będziesz rozkładać różnice kwadratów i trójmiany kwadratów zupełnych oraz trudniejsze trójmiany a=1."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: special products reverse",
+        "es": "Enseñar: productos especiales al revés",
+        "pl": "Nauczanie: odwrotność iloczynów specjalnych"
+      },
+      "body": {
+        "en": "a² − b² = (a−b)(a+b). Perfect squares: a² ± 2ab + b² = (a ± b)². Keep practicing larger factor pairs.",
+        "es": "a² − b² = (a−b)(a+b). Cuadrados perfectos: a² ± 2ab + b² = (a ± b)². Sigue practicando pares de factores mayores.",
+        "pl": "a² − b² = (a−b)(a+b). Kwadraty zupełne: a² ± 2ab + b² = (a ± b)². Ćwicz większe pary czynników."
+      },
+      "bodyMath": [
+        "x^{2} - 25 = (x - 5)(x + 5)",
+        "x^{2} + 10x + 25 = (x + 5)^{2}",
+        "x^{2} - 11x + 24 = (x - 3)(x - 8)"
+      ],
+      "itemIds": [
+        "alg1-l15-t01",
+        "alg1-l15-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Factor scaled differences of squares and recognize perfect squares among harder trinomials.",
+        "es": "Factoriza diferencias de cuadrados escaladas y reconoce cuadrados perfectos entre trinomios más duros.",
+        "pl": "Rozkładaj przeskalowane różnice kwadratów i rozpoznawaj kwadraty zupełne wśród trudniejszych trójmianów."
+      },
+      "itemIds": [
+        "alg1-l15-g01",
+        "alg1-l15-g02",
+        "alg1-l15-g03",
+        "alg1-l15-g04",
+        "alg1-l15-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l15-i01",
+        "alg1-l15-i02",
+        "alg1-l15-i03",
+        "alg1-l15-i04",
+        "alg1-l15-i05",
+        "alg1-l15-i06",
+        "alg1-l15-i07",
+        "alg1-l15-i08",
+        "alg1-l15-i09",
+        "alg1-l15-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l15-t01",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 25.",
+        "es": "Factoriza x^{2} − 25.",
+        "pl": "Rozłóż x^{2} − 25."
+      },
+      "feedbackCorrect": {
+        "en": "a² − b² = (a−b)(a+b) with a=x, b=5.",
+        "es": "a² − b² = (a−b)(a+b) con a=x, b=5.",
+        "pl": "a² − b² = (a−b)(a+b) przy a=x, b=5."
+      },
+      "feedbackIncorrect": {
+        "en": "Difference of squares uses opposite signs, not a squared binomial.",
+        "es": "La diferencia de cuadrados usa signos opuestos, no un binomio al cuadrado.",
+        "pl": "Różnica kwadratów ma przeciwne znaki, nie kwadrat dwumianu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 25",
+      "choices": {
+        "en": [
+          "$(x-5)(x+5)$",
+          "$(x-5)(x-5)$",
+          "$(x+5)(x+5)$",
+          "$x(x-25)$"
+        ],
+        "es": [
+          "$(x-5)(x+5)$",
+          "$(x-5)(x-5)$",
+          "$(x+5)(x+5)$",
+          "$x(x-25)$"
+        ],
+        "pl": [
+          "$(x-5)(x+5)$",
+          "$(x-5)(x-5)$",
+          "$(x+5)(x+5)$",
+          "$x(x-25)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "perfect_square_confusion",
+        "sum_of_squares"
+      ]
+    },
+    {
+      "id": "alg1-l15-t02",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.more"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.8,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 11x + 24.",
+        "es": "Factoriza x^{2} − 11x + 24.",
+        "pl": "Rozłóż x^{2} − 11x + 24."
+      },
+      "feedbackCorrect": {
+        "en": "−3 + −8 = −11; (−3)(−8)=24.",
+        "es": "−3 + −8 = −11; (−3)(−8)=24.",
+        "pl": "−3 + −8 = −11; (−3)(−8)=24."
+      },
+      "feedbackIncorrect": {
+        "en": "Both factors negative when c>0 and b<0.",
+        "es": "Ambos factores negativos cuando c>0 y b<0.",
+        "pl": "Oba czynniki ujemne, gdy c>0 i b<0."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 11x + 24",
+      "choices": {
+        "en": [
+          "$(x-4)(x-6)$",
+          "$(x-3)(x-8)$",
+          "$(x+3)(x+8)$",
+          "$(x-2)(x-12)$"
+        ],
+        "es": [
+          "$(x-4)(x-6)$",
+          "$(x-3)(x-8)$",
+          "$(x+3)(x+8)$",
+          "$(x-2)(x-12)$"
+        ],
+        "pl": [
+          "$(x-4)(x-6)$",
+          "$(x-3)(x-8)$",
+          "$(x+3)(x+8)$",
+          "$(x-2)(x-12)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l15-g01",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 9x^{2} − 16.",
+        "es": "Factoriza 9x^{2} − 16.",
+        "pl": "Rozłóż 9x^{2} − 16."
+      },
+      "feedbackCorrect": {
+        "en": "(3x)² − 4² = (3x−4)(3x+4).",
+        "es": "(3x)² − 4² = (3x−4)(3x+4).",
+        "pl": "(3x)² − 4² = (3x−4)(3x+4)."
+      },
+      "feedbackIncorrect": {
+        "en": "Take square roots of both square terms.",
+        "es": "Toma raíces cuadradas de ambos términos cuadrados.",
+        "pl": "Weź pierwiastki obu wyrazów kwadratowych."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "9x^{2} - 16",
+      "choices": {
+        "en": [
+          "$(3x-4)(3x-4)$",
+          "$(9x-4)(x+4)$",
+          "$(3x-4)(3x+4)$",
+          "$(3x-16)(3x+1)$"
+        ],
+        "es": [
+          "$(3x-4)(3x-4)$",
+          "$(9x-4)(x+4)$",
+          "$(3x-4)(3x+4)$",
+          "$(3x-16)(3x+1)$"
+        ],
+        "pl": [
+          "$(3x-4)(3x-4)$",
+          "$(9x-4)(x+4)$",
+          "$(3x-4)(3x+4)$",
+          "$(3x-16)(3x+1)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "wrong_roots",
+        "perfect_square_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l15-g02",
+      "knowledgePointIds": [
+        "kp.alg1.factor.perfect.square"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 10x + 25.",
+        "es": "Factoriza x^{2} + 10x + 25.",
+        "pl": "Rozłóż x^{2} + 10x + 25."
+      },
+      "feedbackCorrect": {
+        "en": "a² + 2ab + b² = (a+b)² with a=x, b=5.",
+        "es": "a² + 2ab + b² = (a+b)² con a=x, b=5.",
+        "pl": "a² + 2ab + b² = (a+b)² przy a=x, b=5."
+      },
+      "feedbackIncorrect": {
+        "en": "Middle term 10x = 2·x·5 confirms a perfect square.",
+        "es": "El término medio 10x = 2·x·5 confirma cuadrado perfecto.",
+        "pl": "Środkowy 10x = 2·x·5 potwierdza kwadrat zupełny."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(F)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 10x + 25",
+      "choices": {
+        "en": [
+          "$(x-5)^{2}$",
+          "$(x+5)(x-5)$",
+          "$(x+10)(x+2.5)$",
+          "$(x+5)^{2}$"
+        ],
+        "es": [
+          "$(x-5)^{2}$",
+          "$(x+5)(x-5)$",
+          "$(x+10)(x+2.5)$",
+          "$(x+5)^{2}$"
+        ],
+        "pl": [
+          "$(x-5)^{2}$",
+          "$(x+5)(x-5)$",
+          "$(x+10)(x+2.5)$",
+          "$(x+5)^{2}$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "difference_confused",
+        "not_perfect"
+      ]
+    },
+    {
+      "id": "alg1-l15-g03",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.more"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 3x − 28.",
+        "es": "Factoriza x^{2} + 3x − 28.",
+        "pl": "Rozłóż x^{2} + 3x − 28."
+      },
+      "feedbackCorrect": {
+        "en": "7 + (−4) = 3; 7·(−4)=−28.",
+        "es": "7 + (−4) = 3; 7·(−4)=−28.",
+        "pl": "7 + (−4) = 3; 7·(−4)=−28."
+      },
+      "feedbackIncorrect": {
+        "en": "Larger magnitude gets the sign of b (+).",
+        "es": "La mayor magnitud lleva el signo de b (+).",
+        "pl": "Większa wartość bezwzględna ma znak b (+)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 3x - 28",
+      "choices": {
+        "en": [
+          "$(x+7)(x-4)$",
+          "$(x+4)(x-7)$",
+          "$(x+14)(x-2)$",
+          "$(x+28)(x-1)$"
+        ],
+        "es": [
+          "$(x+7)(x-4)$",
+          "$(x+4)(x-7)$",
+          "$(x+14)(x-2)$",
+          "$(x+28)(x-1)$"
+        ],
+        "pl": [
+          "$(x+7)(x-4)$",
+          "$(x+4)(x-7)$",
+          "$(x+14)(x-2)$",
+          "$(x+28)(x-1)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_swap",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l15-g04",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 4y^{2} − 49.",
+        "es": "Factoriza 4y^{2} − 49.",
+        "pl": "Rozłóż 4y^{2} − 49."
+      },
+      "feedbackCorrect": {
+        "en": "(2y)² − 7².",
+        "es": "(2y)² − 7².",
+        "pl": "(2y)² − 7²."
+      },
+      "feedbackIncorrect": {
+        "en": "√4y² = 2y and √49 = 7.",
+        "es": "√4y² = 2y y √49 = 7.",
+        "pl": "√4y² = 2y i √49 = 7."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4y^{2} - 49",
+      "choices": {
+        "en": [
+          "$(2y-7)^{2}$",
+          "$(2y-7)(2y+7)$",
+          "$(4y-7)(y+7)$",
+          "$(2y-49)(2y+1)$"
+        ],
+        "es": [
+          "$(2y-7)^{2}$",
+          "$(2y-7)(2y+7)$",
+          "$(4y-7)(y+7)$",
+          "$(2y-49)(2y+1)$"
+        ],
+        "pl": [
+          "$(2y-7)^{2}$",
+          "$(2y-7)(2y+7)$",
+          "$(4y-7)(y+7)$",
+          "$(2y-49)(2y+1)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "wrong_roots",
+        "perfect_square_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l15-g05",
+      "knowledgePointIds": [
+        "kp.alg1.factor.perfect.square"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 6x + 9.",
+        "es": "Factoriza x^{2} − 6x + 9.",
+        "pl": "Rozłóż x^{2} − 6x + 9."
+      },
+      "feedbackCorrect": {
+        "en": "a² − 2ab + b² = (a−b)².",
+        "es": "a² − 2ab + b² = (a−b)².",
+        "pl": "a² − 2ab + b² = (a−b)²."
+      },
+      "feedbackIncorrect": {
+        "en": "Minus in the middle → (x−3)², not (x+3)².",
+        "es": "Menos en el medio → (x−3)², no (x+3)².",
+        "pl": "Minus w środku → (x−3)², nie (x+3)²."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(F)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 6x + 9",
+      "choices": {
+        "en": [
+          "$(x+3)^{2}$",
+          "$(x-3)(x+3)$",
+          "$(x-3)^{2}$",
+          "$(x-9)(x-1)$"
+        ],
+        "es": [
+          "$(x+3)^{2}$",
+          "$(x-3)(x+3)$",
+          "$(x-3)^{2}$",
+          "$(x-9)(x-1)$"
+        ],
+        "pl": [
+          "$(x+3)^{2}$",
+          "$(x-3)(x+3)$",
+          "$(x-3)^{2}$",
+          "$(x-9)(x-1)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sign_error",
+        "difference_confused"
+      ]
+    },
+    {
+      "id": "alg1-l15-i01",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 25 − x^{2}.",
+        "es": "Factoriza 25 − x^{2}.",
+        "pl": "Rozłóż 25 − x^{2}."
+      },
+      "feedbackCorrect": {
+        "en": "5² − x² = (5−x)(5+x).",
+        "es": "5² − x² = (5−x)(5+x).",
+        "pl": "5² − x² = (5−x)(5+x)."
+      },
+      "feedbackIncorrect": {
+        "en": "Order follows a² − b² with a=5, b=x (equivalent forms OK if expanded match).",
+        "es": "El orden sigue a² − b² con a=5, b=x.",
+        "pl": "Kolejność według a² − b² przy a=5, b=x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "25 - x^{2}",
+      "choices": {
+        "en": [
+          "$(x-5)(x+5)$",
+          "$(5-x)^{2}$",
+          "$-(x-5)^{2}$",
+          "$(5-x)(5+x)$"
+        ],
+        "es": [
+          "$(x-5)(x+5)$",
+          "$(5-x)^{2}$",
+          "$-(x-5)^{2}$",
+          "$(5-x)(5+x)$"
+        ],
+        "pl": [
+          "$(x-5)(x+5)$",
+          "$(5-x)^{2}$",
+          "$-(x-5)^{2}$",
+          "$(5-x)(5+x)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "order_error",
+        "perfect_square_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l15-i02",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.more"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − 14x + 45.",
+        "es": "Factoriza x^{2} − 14x + 45.",
+        "pl": "Rozłóż x^{2} − 14x + 45."
+      },
+      "feedbackCorrect": {
+        "en": "−5 + −9 = −14; product 45.",
+        "es": "−5 + −9 = −14; producto 45.",
+        "pl": "−5 + −9 = −14; iloczyn 45."
+      },
+      "feedbackIncorrect": {
+        "en": "List factor pairs of 45; both negative.",
+        "es": "Lista pares de 45; ambos negativos.",
+        "pl": "Wypisz pary 45; obie ujemne."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 14x + 45",
+      "choices": {
+        "en": [
+          "$(x-5)(x-9)$",
+          "$(x-3)(x-15)$",
+          "$(x+5)(x+9)$",
+          "$(x-5)(x+9)$"
+        ],
+        "es": [
+          "$(x-5)(x-9)$",
+          "$(x-3)(x-15)$",
+          "$(x+5)(x+9)$",
+          "$(x-5)(x+9)$"
+        ],
+        "pl": [
+          "$(x-5)(x-9)$",
+          "$(x-3)(x-15)$",
+          "$(x+5)(x+9)$",
+          "$(x-5)(x+9)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l15-i03",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "First factor GCF, then difference of squares: 2x^{2} − 32.",
+        "es": "Primero MCD, luego diferencia de cuadrados: 2x^{2} − 32.",
+        "pl": "Najpierw NWD, potem różnica kwadratów: 2x^{2} − 32."
+      },
+      "feedbackCorrect": {
+        "en": "2(x²−16)=2(x−4)(x+4).",
+        "es": "2(x²−16)=2(x−4)(x+4).",
+        "pl": "2(x²−16)=2(x−4)(x+4)."
+      },
+      "feedbackIncorrect": {
+        "en": "After GCF 2, finish factoring x²−16.",
+        "es": "Tras el MCD 2, termina de factorizar x²−16.",
+        "pl": "Po NWD 2 dokończ rozkład x²−16."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "2x^{2} - 32",
+      "choices": {
+        "en": [
+          "$2(x-4)^{2}$",
+          "$2(x-4)(x+4)$",
+          "$(2x-8)(x+4)$",
+          "$2(x^{2}-16)$"
+        ],
+        "es": [
+          "$2(x-4)^{2}$",
+          "$2(x-4)(x+4)$",
+          "$(2x-8)(x+4)$",
+          "$2(x^{2}-16)$"
+        ],
+        "pl": [
+          "$2(x-4)^{2}$",
+          "$2(x-4)(x+4)$",
+          "$(2x-8)(x+4)$",
+          "$2(x^{2}-16)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "stopped_early",
+        "skipped_gcf"
+      ]
+    },
+    {
+      "id": "alg1-l15-i04",
+      "knowledgePointIds": [
+        "kp.alg1.factor.perfect.square"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Is x^{2} + 4x + 4 a perfect-square trinomial?",
+        "es": "¿Es x^{2} + 4x + 4 un trinomio cuadrado perfecto?",
+        "pl": "Czy x^{2} + 4x + 4 to trójmian kwadratu zupełnego?"
+      },
+      "feedbackCorrect": {
+        "en": "2·x·2 = 4x matches the middle term.",
+        "es": "2·x·2 = 4x coincide con el término medio.",
+        "pl": "2·x·2 = 4x zgadza się ze środkowym wyrazem."
+      },
+      "feedbackIncorrect": {
+        "en": "Check middle = 2√(first)·√(last).",
+        "es": "Comprueba medio = 2√(primero)·√(último).",
+        "pl": "Sprawdź środek = 2√(pierwszy)·√(ostatni)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(F)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 4x + 4",
+      "choices": {
+        "en": [
+          "No — middle should be 8x",
+          "Yes — (x−2)²",
+          "Yes — (x+2)²",
+          "No — it is a difference of squares"
+        ],
+        "es": [
+          "No — el medio debería ser 8x",
+          "Sí — (x−2)²",
+          "Sí — (x+2)²",
+          "No — es diferencia de cuadrados"
+        ],
+        "pl": [
+          "Nie — środek powinien być 8x",
+          "Tak — (x−2)²",
+          "Tak — (x+2)²",
+          "Nie — to różnica kwadratów"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "not_perfect"
+      ]
+    },
+    {
+      "id": "alg1-l15-i05",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.more"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 2x − 48.",
+        "es": "Factoriza x^{2} + 2x − 48.",
+        "pl": "Rozłóż x^{2} + 2x − 48."
+      },
+      "feedbackCorrect": {
+        "en": "8 + (−6) = 2; 8·(−6)=−48.",
+        "es": "8 + (−6) = 2; 8·(−6)=−48.",
+        "pl": "8 + (−6) = 2; 8·(−6)=−48."
+      },
+      "feedbackIncorrect": {
+        "en": "Need sum +2 with product −48.",
+        "es": "Necesitas suma +2 con producto −48.",
+        "pl": "Potrzebna suma +2 i iloczyn −48."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 2x - 48",
+      "choices": {
+        "en": [
+          "$(x+6)(x-8)$",
+          "$(x+12)(x-4)$",
+          "$(x+16)(x-3)$",
+          "$(x+8)(x-6)$"
+        ],
+        "es": [
+          "$(x+6)(x-8)$",
+          "$(x+12)(x-4)$",
+          "$(x+16)(x-3)$",
+          "$(x+8)(x-6)$"
+        ],
+        "pl": [
+          "$(x+6)(x-8)$",
+          "$(x+12)(x-4)$",
+          "$(x+16)(x-3)$",
+          "$(x+8)(x-6)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_swap",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l15-i06",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Can x^{2} + 36 be factored as a difference of squares over the reals?",
+        "es": "¿Se puede factorizar x^{2} + 36 como diferencia de cuadrados sobre los reales?",
+        "pl": "Czy x^{2} + 36 rozkłada się jak różnica kwadratów nad liczbami rzeczywistymi?"
+      },
+      "feedbackCorrect": {
+        "en": "a² + b² does not factor over the reals like a² − b².",
+        "es": "a² + b² no se factoriza sobre los reales como a² − b².",
+        "pl": "a² + b² nie rozkłada się nad ℝ jak a² − b²."
+      },
+      "feedbackIncorrect": {
+        "en": "Only a difference (minus) of squares uses (a−b)(a+b).",
+        "es": "Solo una diferencia (menos) de cuadrados usa (a−b)(a+b).",
+        "pl": "Tylko różnica (minus) kwadratów daje (a−b)(a+b)."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 36",
+      "choices": {
+        "en": [
+          "No — it is a sum of squares",
+          "Yes — (x−6)(x+6)",
+          "Yes — (x+6)²",
+          "Yes — (x−6)²"
+        ],
+        "es": [
+          "No — es una suma de cuadrados",
+          "Sí — (x−6)(x+6)",
+          "Sí — (x+6)²",
+          "Sí — (x−6)²"
+        ],
+        "pl": [
+          "Nie — to suma kwadratów",
+          "Tak — (x−6)(x+6)",
+          "Tak — (x+6)²",
+          "Tak — (x−6)²"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sum_of_squares"
+      ]
+    },
+    {
+      "id": "alg1-l15-i07",
+      "knowledgePointIds": [
+        "kp.alg1.factor.perfect.square"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 4x^{2} − 12x + 9.",
+        "es": "Factoriza 4x^{2} − 12x + 9.",
+        "pl": "Rozłóż 4x^{2} − 12x + 9."
+      },
+      "feedbackCorrect": {
+        "en": "(2x)² − 2·2x·3 + 3² = (2x−3)².",
+        "es": "(2x)² − 2·2x·3 + 3² = (2x−3)².",
+        "pl": "(2x)² − 2·2x·3 + 3² = (2x−3)²."
+      },
+      "feedbackIncorrect": {
+        "en": "Middle −12x = −2·(2x)·3 confirms the minus square.",
+        "es": "Medio −12x = −2·(2x)·3 confirma el cuadrado con menos.",
+        "pl": "Środek −12x = −2·(2x)·3 potwierdza kwadrat z minusem."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(F)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4x^{2} - 12x + 9",
+      "choices": {
+        "en": [
+          "$(2x+3)^{2}$",
+          "$(2x-3)^{2}$",
+          "$(2x-3)(2x+3)$",
+          "$(4x-3)(x-3)$"
+        ],
+        "es": [
+          "$(2x+3)^{2}$",
+          "$(2x-3)^{2}$",
+          "$(2x-3)(2x+3)$",
+          "$(4x-3)(x-3)$"
+        ],
+        "pl": [
+          "$(2x+3)^{2}$",
+          "$(2x-3)^{2}$",
+          "$(2x-3)(2x+3)$",
+          "$(4x-3)(x-3)$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "sign_error",
+        "difference_confused"
+      ]
+    },
+    {
+      "id": "alg1-l15-i08",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.more"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} − x − 72.",
+        "es": "Factoriza x^{2} − x − 72.",
+        "pl": "Rozłóż x^{2} − x − 72."
+      },
+      "feedbackCorrect": {
+        "en": "−9 + 8 = −1; (−9)(8)=−72.",
+        "es": "−9 + 8 = −1; (−9)(8)=−72.",
+        "pl": "−9 + 8 = −1; (−9)(8)=−72."
+      },
+      "feedbackIncorrect": {
+        "en": "Product −72, sum −1 → −9 and +8.",
+        "es": "Producto −72, suma −1 → −9 y +8.",
+        "pl": "Iloczyn −72, suma −1 → −9 i +8."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - x - 72",
+      "choices": {
+        "en": [
+          "$(x+9)(x-8)$",
+          "$(x-12)(x+6)$",
+          "$(x-9)(x+8)$",
+          "$(x-8)(x-9)$"
+        ],
+        "es": [
+          "$(x+9)(x-8)$",
+          "$(x-12)(x+6)$",
+          "$(x-9)(x+8)$",
+          "$(x-8)(x-9)$"
+        ],
+        "pl": [
+          "$(x+9)(x-8)$",
+          "$(x-12)(x+6)$",
+          "$(x-9)(x+8)$",
+          "$(x-8)(x-9)$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sign_swap",
+        "wrong_factor_pair"
+      ]
+    },
+    {
+      "id": "alg1-l15-i09",
+      "knowledgePointIds": [
+        "kp.alg1.factor.difference.squares"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor 81x^{2} − 1.",
+        "es": "Factoriza 81x^{2} − 1.",
+        "pl": "Rozłóż 81x^{2} − 1."
+      },
+      "feedbackCorrect": {
+        "en": "(9x)² − 1².",
+        "es": "(9x)² − 1².",
+        "pl": "(9x)² − 1²."
+      },
+      "feedbackIncorrect": {
+        "en": "√81x² = 9x; √1 = 1.",
+        "es": "√81x² = 9x; √1 = 1.",
+        "pl": "√81x² = 9x; √1 = 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "81x^{2} - 1",
+      "choices": {
+        "en": [
+          "$(9x-1)^{2}$",
+          "$(81x-1)(x+1)$",
+          "$(9x-1)(x+1)$",
+          "$(9x-1)(9x+1)$"
+        ],
+        "es": [
+          "$(9x-1)^{2}$",
+          "$(81x-1)(x+1)$",
+          "$(9x-1)(x+1)$",
+          "$(9x-1)(9x+1)$"
+        ],
+        "pl": [
+          "$(9x-1)^{2}$",
+          "$(81x-1)(x+1)$",
+          "$(9x-1)(x+1)$",
+          "$(9x-1)(9x+1)$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "wrong_roots",
+        "perfect_square_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l15-i10",
+      "knowledgePointIds": [
+        "kp.alg1.factor.trinomial.more"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Factor x^{2} + 15x + 54.",
+        "es": "Factoriza x^{2} + 15x + 54.",
+        "pl": "Rozłóż x^{2} + 15x + 54."
+      },
+      "feedbackCorrect": {
+        "en": "6+9=15 and 6·9=54.",
+        "es": "6+9=15 y 6·9=54.",
+        "pl": "6+9=15 i 6·9=54."
+      },
+      "feedbackIncorrect": {
+        "en": "Both positive when b and c are positive.",
+        "es": "Ambos positivos cuando b y c son positivos.",
+        "pl": "Oba dodatnie, gdy b i c są dodatnie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} + 15x + 54",
+      "choices": {
+        "en": [
+          "$(x+6)(x+9)$",
+          "$(x+3)(x+18)$",
+          "$(x+2)(x+27)$",
+          "$(x-6)(x-9)$"
+        ],
+        "es": [
+          "$(x+6)(x+9)$",
+          "$(x+3)(x+18)$",
+          "$(x+2)(x+27)$",
+          "$(x-6)(x-9)$"
+        ],
+        "pl": [
+          "$(x+6)(x+9)$",
+          "$(x+3)(x+18)$",
+          "$(x+2)(x+27)$",
+          "$(x-6)(x-9)$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "wrong_factor_pair",
+        "sign_error"
+      ]
+    }
+  ]
+}

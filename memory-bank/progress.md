@@ -31,9 +31,17 @@
 - Item counts: 17 / 17 / 17; promptMath 17/17; zero raw `\frac` in choices; `npm run build` green
 - **Critic wave4 PASS:** `docs/gauntlet/critic-content-wave4.md`
 
+## Wave 5 content (PASS)
+- Algebra I L13–L15 EN/ES/PL via `scripts/author-algebra1-l13-l15.mjs`
+- +9 KPs (distribute/FOIL/multiply; GCF/trinomial/verify; DOS/more/perfect-square)
+- Unlock: L12→board_13 → L13→14 → L14→15 → L15→board_16 teaser
+- World boards 13–15 in `WorldSites.ts` (spread); correctIndex hist `[5,4,4,4]`
+- Notes: `docs/gauntlet/wave5-content-notes.md`
+- Item counts: 17 / 17 / 17; promptMath 17/17; math choices `$...$` KaTeX; `npm run build` green
+- **Critic wave5 PASS:** `docs/gauntlet/critic-content-wave5.md` — largest gap: equation-cloned EN=ES=PL feedback (non-blocking)
+
 ## Next
-- Wave 3 exit gate
-- Wave 4 exit gate
+- Wave 5 exit gate
 - GitHub Pages deploy (if needed)
 - Algebra I course gate / human playtest
 - Harden spaced-review UX and IRT with real attempt data

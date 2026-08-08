@@ -49,7 +49,12 @@
           "kp.alg1.systems.elimination.scale",
           "kp.alg1.systems.verify",
           "kp.alg1.polynomial.add",
-          "kp.alg1.polynomial.subtract"
+          "kp.alg1.polynomial.subtract",
+          "kp.alg1.polynomial.distribute",
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.polynomial.multiply",
+          "kp.alg1.factor.gcf",
+          "kp.alg1.factor.verify"
         ]
       },
       "A.1(D)": {
@@ -78,7 +83,8 @@
           "kp.alg1.exponents.product",
           "kp.alg1.exponents.quotient",
           "kp.alg1.exponents.power",
-          "kp.alg1.polynomial.classify"
+          "kp.alg1.polynomial.classify",
+          "kp.alg1.factor.verify"
         ]
       },
       "A.1(F)": {
@@ -101,7 +107,16 @@
           "kp.alg1.exponents.power",
           "kp.alg1.polynomial.classify",
           "kp.alg1.polynomial.add",
-          "kp.alg1.polynomial.subtract"
+          "kp.alg1.polynomial.subtract",
+          "kp.alg1.polynomial.distribute",
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.polynomial.multiply",
+          "kp.alg1.factor.gcf",
+          "kp.alg1.factor.trinomial.a1",
+          "kp.alg1.factor.verify",
+          "kp.alg1.factor.difference.squares",
+          "kp.alg1.factor.trinomial.more",
+          "kp.alg1.factor.perfect.square"
         ]
       },
       "A.5(A)": {
@@ -296,6 +311,55 @@
           "kp.alg1.polynomial.add",
           "kp.alg1.polynomial.subtract"
         ]
+      },
+      "A.10(B)": {
+        "description": {
+          "en": "Multiply polynomials of degree one and degree two",
+          "es": "Multiplicar polinomios de grado uno y grado dos",
+          "pl": "Mnożyć wielomiany stopnia pierwszego i drugiego"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.polynomial.distribute",
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.polynomial.multiply"
+        ]
+      },
+      "A.10(D)": {
+        "description": {
+          "en": "Rewrite polynomial expressions of degree one and degree two in equivalent forms using the distributive property",
+          "es": "Reescribir expresiones polinomiales de grado uno y dos en formas equivalentes usando la propiedad distributiva",
+          "pl": "Przepisywać wyrażenia wielomianowe stopnia 1 i 2 w równoważne formy z użyciem rozdzielności"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.factor.gcf",
+          "kp.alg1.factor.trinomial.a1",
+          "kp.alg1.factor.difference.squares",
+          "kp.alg1.factor.trinomial.more"
+        ]
+      },
+      "A.10(E)": {
+        "description": {
+          "en": "Factor, if possible, trinomials with integer coefficients as products of linear factors",
+          "es": "Factorizar, si es posible, trinomios con coeficientes enteros como productos de factores lineales",
+          "pl": "Rozkładać, jeśli możliwe, trójmiany o współczynnikach całkowitych na iloczyny czynników liniowych"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.factor.trinomial.a1",
+          "kp.alg1.factor.verify",
+          "kp.alg1.factor.trinomial.more",
+          "kp.alg1.factor.perfect.square"
+        ]
+      },
+      "A.10(F)": {
+        "description": {
+          "en": "Decide if a binomial can be written as a difference of two squares and, if possible, factor it",
+          "es": "Decidir si un binomio se puede escribir como diferencia de cuadrados y, si es posible, factorizarlo",
+          "pl": "Rozstrzygać, czy dwumian jest różnicą kwadratów, i jeśli możliwe — rozłożyć go"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.factor.difference.squares",
+          "kp.alg1.factor.perfect.square"
+        ]
       }
     },
     "CCSS": {
@@ -317,7 +381,10 @@
           "kp.alg1.exponents.power",
           "kp.alg1.polynomial.classify",
           "kp.alg1.polynomial.add",
-          "kp.alg1.polynomial.subtract"
+          "kp.alg1.polynomial.subtract",
+          "kp.alg1.polynomial.distribute",
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.polynomial.multiply"
         ]
       },
       "A-SSE.A.1a": {
@@ -331,7 +398,9 @@
           "kp.alg1.expression.parts",
           "kp.alg1.polynomial.classify",
           "kp.alg1.polynomial.add",
-          "kp.alg1.polynomial.subtract"
+          "kp.alg1.polynomial.subtract",
+          "kp.alg1.polynomial.distribute",
+          "kp.alg1.polynomial.foil"
         ]
       },
       "A-REI.A.1": {
@@ -712,7 +781,48 @@
         "knowledgePointIds": [
           "kp.alg1.polynomial.classify",
           "kp.alg1.polynomial.add",
-          "kp.alg1.polynomial.subtract"
+          "kp.alg1.polynomial.subtract",
+          "kp.alg1.polynomial.distribute",
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.polynomial.multiply",
+          "kp.alg1.factor.gcf",
+          "kp.alg1.factor.trinomial.a1",
+          "kp.alg1.factor.verify",
+          "kp.alg1.factor.difference.squares",
+          "kp.alg1.factor.trinomial.more",
+          "kp.alg1.factor.perfect.square"
+        ]
+      },
+      "A-SSE.A.2": {
+        "description": {
+          "en": "Use the structure of an expression to identify ways to rewrite it",
+          "es": "Usar la estructura de una expresión para identificar formas de reescribirla",
+          "pl": "Używać struktury wyrażenia do znajdowania sposobów przepisania"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.polynomial.foil",
+          "kp.alg1.polynomial.multiply",
+          "kp.alg1.factor.gcf",
+          "kp.alg1.factor.trinomial.a1",
+          "kp.alg1.factor.verify",
+          "kp.alg1.factor.difference.squares",
+          "kp.alg1.factor.trinomial.more",
+          "kp.alg1.factor.perfect.square"
+        ]
+      },
+      "A-SSE.B.3a": {
+        "description": {
+          "en": "Factor a quadratic expression to reveal the zeros of the function it defines",
+          "es": "Factorizar una expresión cuadrática para revelar los ceros de la función que define",
+          "pl": "Rozkładać wyrażenie kwadratowe, by ujawnić zera funkcji, którą definiuje"
+        },
+        "knowledgePointIds": [
+          "kp.alg1.factor.gcf",
+          "kp.alg1.factor.trinomial.a1",
+          "kp.alg1.factor.verify",
+          "kp.alg1.factor.difference.squares",
+          "kp.alg1.factor.trinomial.more",
+          "kp.alg1.factor.perfect.square"
         ]
       }
     }
@@ -845,6 +955,35 @@
       "A-APR.A.1",
       "A-SSE.A.1",
       "A-SSE.A.1a"
+    ],
+    "alg1-l13": [
+      "A.10(B)",
+      "A.1(B)",
+      "A.1(F)",
+      "A-APR.A.1",
+      "A-SSE.A.1",
+      "A-SSE.A.1a",
+      "A-SSE.A.2"
+    ],
+    "alg1-l14": [
+      "A.10(D)",
+      "A.10(E)",
+      "A.10(B)",
+      "A.1(B)",
+      "A.1(D)",
+      "A.1(F)",
+      "A-SSE.A.2",
+      "A-SSE.B.3a",
+      "A-APR.A.1"
+    ],
+    "alg1-l15": [
+      "A.10(F)",
+      "A.10(E)",
+      "A.10(D)",
+      "A.1(F)",
+      "A-SSE.A.2",
+      "A-SSE.B.3a",
+      "A-APR.A.1"
     ]
   }
 }

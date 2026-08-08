@@ -1,0 +1,1311 @@
+{
+  "id": "alg1-l13",
+  "courseId": "algebra1",
+  "order": 13,
+  "title": {
+    "en": "Multiply Polynomials — Distribute & FOIL",
+    "es": "Multiplicar polinomios — distribuir y FOIL",
+    "pl": "Mnożenie wielomianów — rozdzielność i FOIL"
+  },
+  "knowledgePointIds": [
+    "kp.alg1.polynomial.distribute",
+    "kp.alg1.polynomial.foil",
+    "kp.alg1.polynomial.multiply"
+  ],
+  "masteryThreshold": 0.8,
+  "worldHook": {
+    "siteId": "lesson_board_13",
+    "unlockOnMastery": [
+      "lesson_board_14"
+    ]
+  },
+  "sections": [
+    {
+      "phase": "objective",
+      "title": {
+        "en": "Learning objective",
+        "es": "Objetivo de aprendizaje",
+        "pl": "Cel nauki"
+      },
+      "body": {
+        "en": "You will multiply polynomials by distributing a monomial and by FOIL (and beyond) for binomials, then combine like terms.",
+        "es": "Multiplicarás polinomios distribuyendo un monomio y con FOIL (y más) para binomios, luego combinarás términos semejantes.",
+        "pl": "Będziesz mnożyć wielomiany przez rozdzielanie jednomianu oraz FOIL (i dalej) dla dwumianów, potem łączyć wyrazy podobne."
+      }
+    },
+    {
+      "phase": "teach",
+      "title": {
+        "en": "Teach: distribute & FOIL",
+        "es": "Enseñar: distribuir y FOIL",
+        "pl": "Nauczanie: rozdzielność i FOIL"
+      },
+      "body": {
+        "en": "Distribute the outside factor to every inside term. For two binomials, form all four products (FOIL) and combine like terms.",
+        "es": "Distribuye el factor exterior a cada término interior. Para dos binomios, forma los cuatro productos (FOIL) y combina semejantes.",
+        "pl": "Rozdziel czynnik zewnętrzny na każdy wyraz wewnątrz. Dla dwóch dwumianów utwórz cztery iloczyny (FOIL) i połącz podobne."
+      },
+      "bodyMath": [
+        "3x(2x + 5) = 6x^{2} + 15x",
+        "(x + 2)(x + 3) = x^{2} + 5x + 6",
+        "(2x - 5)(2x + 5) = 4x^{2} - 25"
+      ],
+      "itemIds": [
+        "alg1-l13-t01",
+        "alg1-l13-t02"
+      ]
+    },
+    {
+      "phase": "guided",
+      "title": {
+        "en": "Guided practice",
+        "es": "Práctica guiada",
+        "pl": "Ćwiczenia z przewodnikiem"
+      },
+      "body": {
+        "en": "Practice signs while distributing and FOIL; begin binomial × trinomial products.",
+        "es": "Practica signos al distribuir y en FOIL; comienza productos binomio × trinomio.",
+        "pl": "Ćwicz znaki przy rozdzielaniu i FOIL; zacznij iloczyny dwumian × trójmian."
+      },
+      "itemIds": [
+        "alg1-l13-g01",
+        "alg1-l13-g02",
+        "alg1-l13-g03",
+        "alg1-l13-g04",
+        "alg1-l13-g05"
+      ]
+    },
+    {
+      "phase": "independent",
+      "title": {
+        "en": "Independent practice",
+        "es": "Práctica independiente",
+        "pl": "Ćwiczenia samodzielne"
+      },
+      "body": {
+        "en": "Mastery requires at least 80% correct on this set.",
+        "es": "El dominio requiere al menos 80% de aciertos en este conjunto.",
+        "pl": "Opanowanie wymaga co najmniej 80% poprawnych odpowiedzi w tym zestawie."
+      },
+      "itemIds": [
+        "alg1-l13-i01",
+        "alg1-l13-i02",
+        "alg1-l13-i03",
+        "alg1-l13-i04",
+        "alg1-l13-i05",
+        "alg1-l13-i06",
+        "alg1-l13-i07",
+        "alg1-l13-i08",
+        "alg1-l13-i09",
+        "alg1-l13-i10"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "alg1-l13-t01",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "difficulty": 0.25,
+      "irt": {
+        "a": 1.15,
+        "b": -1.05,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Distribute: 3x(2x + 5).",
+        "es": "Distribuye: 3x(2x + 5).",
+        "pl": "Rozdziel: 3x(2x + 5)."
+      },
+      "feedbackCorrect": {
+        "en": "3x·2x = 6x² and 3x·5 = 15x.",
+        "es": "3x·2x = 6x² y 3x·5 = 15x.",
+        "pl": "3x·2x = 6x² oraz 3x·5 = 15x."
+      },
+      "feedbackIncorrect": {
+        "en": "Multiply the monomial by every term; add exponents on x.",
+        "es": "Multiplica el monomio por cada término; suma exponentes de x.",
+        "pl": "Pomnóż jednomian przez każdy wyraz; dodaj wykładniki x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "3x(2x + 5)",
+      "choices": {
+        "en": [
+          "$6x^{2}+15x$",
+          "$6x+15x$",
+          "$5x^{2}+15$",
+          "$6x^{2}+5$"
+        ],
+        "es": [
+          "$6x^{2}+15x$",
+          "$6x+15x$",
+          "$5x^{2}+15$",
+          "$6x^{2}+5$"
+        ],
+        "pl": [
+          "$6x^{2}+15x$",
+          "$6x+15x$",
+          "$5x^{2}+15$",
+          "$6x^{2}+5$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "first_term_only",
+        "forgot_exponent_add"
+      ]
+    },
+    {
+      "id": "alg1-l13-t02",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.3,
+      "irt": {
+        "a": 1.15,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "FOIL: (x + 2)(x + 3).",
+        "es": "FOIL: (x + 2)(x + 3).",
+        "pl": "FOIL: (x + 2)(x + 3)."
+      },
+      "feedbackCorrect": {
+        "en": "x² + 3x + 2x + 6 = x² + 5x + 6.",
+        "es": "x² + 3x + 2x + 6 = x² + 5x + 6.",
+        "pl": "x² + 3x + 2x + 6 = x² + 5x + 6."
+      },
+      "feedbackIncorrect": {
+        "en": "Include Outer and Inner: 3x and 2x combine to 5x.",
+        "es": "Incluye externo e interno: 3x y 2x dan 5x.",
+        "pl": "Uwzględnij zewnętrzne i wewnętrzne: 3x i 2x dają 5x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "(x + 2)(x + 3)",
+      "choices": {
+        "en": [
+          "$x^{2}+6$",
+          "$x^{2}+5x+6$",
+          "$x^{2}+5x$",
+          "$x^{2}+6x+5$"
+        ],
+        "es": [
+          "$x^{2}+6$",
+          "$x^{2}+5x+6$",
+          "$x^{2}+5x$",
+          "$x^{2}+6x+5$"
+        ],
+        "pl": [
+          "$x^{2}+6$",
+          "$x^{2}+5x+6$",
+          "$x^{2}+5x$",
+          "$x^{2}+6x+5$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "skipped_outer_inner",
+        "wrong_constant"
+      ]
+    },
+    {
+      "id": "alg1-l13-g01",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "difficulty": 0.35,
+      "irt": {
+        "a": 1.15,
+        "b": -0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify −2x(4x − 3).",
+        "es": "Simplifica −2x(4x − 3).",
+        "pl": "Uprość −2x(4x − 3)."
+      },
+      "feedbackCorrect": {
+        "en": "−2x·4x = −8x²; −2x·(−3) = +6x.",
+        "es": "−2x·4x = −8x²; −2x·(−3) = +6x.",
+        "pl": "−2x·4x = −8x²; −2x·(−3) = +6x."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative times negative on the second term yields +6x.",
+        "es": "Negativo por negativo en el segundo término da +6x.",
+        "pl": "Ujemne razy ujemne w drugim wyrazie daje +6x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "-2x(4x - 3)",
+      "choices": {
+        "en": [
+          "$-8x^{2}-6x$",
+          "$8x^{2}+6x$",
+          "$-8x^{2}+6x$",
+          "$-8x^{2}+3$"
+        ],
+        "es": [
+          "$-8x^{2}-6x$",
+          "$8x^{2}+6x$",
+          "$-8x^{2}+6x$",
+          "$-8x^{2}+3$"
+        ],
+        "pl": [
+          "$-8x^{2}-6x$",
+          "$8x^{2}+6x$",
+          "$-8x^{2}+6x$",
+          "$-8x^{2}+3$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "sign_error",
+        "first_term_only"
+      ]
+    },
+    {
+      "id": "alg1-l13-g02",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (x − 4)(x + 1).",
+        "es": "Expande (x − 4)(x + 1).",
+        "pl": "Rozwiń (x − 4)(x + 1)."
+      },
+      "feedbackCorrect": {
+        "en": "x² + x − 4x − 4 = x² − 3x − 4.",
+        "es": "x² + x − 4x − 4 = x² − 3x − 4.",
+        "pl": "x² + x − 4x − 4 = x² − 3x − 4."
+      },
+      "feedbackIncorrect": {
+        "en": "Outer +1x and Inner −4x combine to −3x; Last is −4.",
+        "es": "Externo +1x e interno −4x dan −3x; último es −4.",
+        "pl": "Zewnętrzne +1x i wewnętrzne −4x dają −3x; ostatni to −4."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "(x - 4)(x + 1)",
+      "choices": {
+        "en": [
+          "$x^{2}+3x-4$",
+          "$x^{2}-5x-4$",
+          "$x^{2}-3x+4$",
+          "$x^{2}-3x-4$"
+        ],
+        "es": [
+          "$x^{2}+3x-4$",
+          "$x^{2}-5x-4$",
+          "$x^{2}-3x+4$",
+          "$x^{2}-3x-4$"
+        ],
+        "pl": [
+          "$x^{2}+3x-4$",
+          "$x^{2}-5x-4$",
+          "$x^{2}-3x+4$",
+          "$x^{2}-3x-4$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_error",
+        "skipped_outer_inner"
+      ]
+    },
+    {
+      "id": "alg1-l13-g03",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.4,
+      "irt": {
+        "a": 1.15,
+        "b": -0.25,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (2x + 1)(x + 5).",
+        "es": "Expande (2x + 1)(x + 5).",
+        "pl": "Rozwiń (2x + 1)(x + 5)."
+      },
+      "feedbackCorrect": {
+        "en": "2x² + 10x + x + 5 = 2x² + 11x + 5.",
+        "es": "2x² + 10x + x + 5 = 2x² + 11x + 5.",
+        "pl": "2x² + 10x + x + 5 = 2x² + 11x + 5."
+      },
+      "feedbackIncorrect": {
+        "en": "Do not drop the Inner product 1·x.",
+        "es": "No omitas el producto interno 1·x.",
+        "pl": "Nie pomijaj wewnętrznego iloczynu 1·x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "(2x + 1)(x + 5)",
+      "choices": {
+        "en": [
+          "$2x^{2}+11x+5$",
+          "$2x^{2}+5x+5$",
+          "$2x^{2}+10x+5$",
+          "$3x^{2}+11x+5$"
+        ],
+        "es": [
+          "$2x^{2}+11x+5$",
+          "$2x^{2}+5x+5$",
+          "$2x^{2}+10x+5$",
+          "$3x^{2}+11x+5$"
+        ],
+        "pl": [
+          "$2x^{2}+11x+5$",
+          "$2x^{2}+5x+5$",
+          "$2x^{2}+10x+5$",
+          "$3x^{2}+11x+5$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "skipped_outer_inner",
+        "coeff_error"
+      ]
+    },
+    {
+      "id": "alg1-l13-g04",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.multiply"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": -0.1,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Multiply (x + 2)(x^{2} + 3x + 1). First term of the product?",
+        "es": "Multiplica (x + 2)(x^{2} + 3x + 1). ¿Primer término del producto?",
+        "pl": "Pomnóż (x + 2)(x^{2} + 3x + 1). Pierwszy wyraz iloczynu?"
+      },
+      "feedbackCorrect": {
+        "en": "x · x² = x³ leads the expanded polynomial.",
+        "es": "x · x² = x³ encabeza el polinomio expandido.",
+        "pl": "x · x² = x³ prowadzi rozwinięty wielomian."
+      },
+      "feedbackIncorrect": {
+        "en": "Distribute x across the trinomial; highest power comes from x·x².",
+        "es": "Distribuye x en el trinomio; la mayor potencia viene de x·x².",
+        "pl": "Rozdziel x na trójmian; najwyższa potęga z x·x²."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(x + 2)(x^{2} + 3x + 1)",
+      "choices": {
+        "en": [
+          "$x^{2}$",
+          "$x^{3}$",
+          "$2x^{2}$",
+          "$3x^{2}$"
+        ],
+        "es": [
+          "$x^{2}$",
+          "$x^{3}$",
+          "$2x^{2}$",
+          "$3x^{2}$"
+        ],
+        "pl": [
+          "$x^{2}$",
+          "$x^{3}$",
+          "$2x^{2}$",
+          "$3x^{2}$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "degree_error",
+        "missed_row"
+      ]
+    },
+    {
+      "id": "alg1-l13-g05",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "difficulty": 0.45,
+      "irt": {
+        "a": 1.15,
+        "b": 0,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "5y^{2}(2y − 4) equals…",
+        "es": "5y^{2}(2y − 4) es igual a…",
+        "pl": "5y^{2}(2y − 4) równa się…"
+      },
+      "feedbackCorrect": {
+        "en": "5y²·2y = 10y³; 5y²·(−4) = −20y².",
+        "es": "5y²·2y = 10y³; 5y²·(−4) = −20y².",
+        "pl": "5y²·2y = 10y³; 5y²·(−4) = −20y²."
+      },
+      "feedbackIncorrect": {
+        "en": "Add exponents on y: 2+1=3 for the first product.",
+        "es": "Suma exponentes de y: 2+1=3 en el primer producto.",
+        "pl": "Dodaj wykładniki y: 2+1=3 w pierwszym iloczynie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "5y^{2}(2y - 4)",
+      "choices": {
+        "en": [
+          "$10y^{3}-4$",
+          "$7y^{3}-20y^{2}$",
+          "$10y^{3}-20y^{2}$",
+          "$10y^{2}-20y^{2}$"
+        ],
+        "es": [
+          "$10y^{3}-4$",
+          "$7y^{3}-20y^{2}$",
+          "$10y^{3}-20y^{2}$",
+          "$10y^{2}-20y^{2}$"
+        ],
+        "pl": [
+          "$10y^{3}-4$",
+          "$7y^{3}-20y^{2}$",
+          "$10y^{3}-20y^{2}$",
+          "$10y^{2}-20y^{2}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "forgot_exponent_add",
+        "first_term_only"
+      ]
+    },
+    {
+      "id": "alg1-l13-i01",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.15,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Simplify 4a(a^{2} − 2a + 3).",
+        "es": "Simplifica 4a(a^{2} − 2a + 3).",
+        "pl": "Uprość 4a(a^{2} − 2a + 3)."
+      },
+      "feedbackCorrect": {
+        "en": "4a·a²=4a³; 4a·(−2a)=−8a²; 4a·3=12a.",
+        "es": "4a·a²=4a³; 4a·(−2a)=−8a²; 4a·3=12a.",
+        "pl": "4a·a²=4a³; 4a·(−2a)=−8a²; 4a·3=12a."
+      },
+      "feedbackIncorrect": {
+        "en": "Hit every term of the trinomial with 4a.",
+        "es": "Aplica 4a a cada término del trinomio.",
+        "pl": "Pomnóż każdy wyraz trójmianu przez 4a."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "4a(a^{2} - 2a + 3)",
+      "choices": {
+        "en": [
+          "$4a^{3}-2a+3$",
+          "$4a^{3}-8a+12a$",
+          "$a^{3}-8a^{2}+12a$",
+          "$4a^{3}-8a^{2}+12a$"
+        ],
+        "es": [
+          "$4a^{3}-2a+3$",
+          "$4a^{3}-8a+12a$",
+          "$a^{3}-8a^{2}+12a$",
+          "$4a^{3}-8a^{2}+12a$"
+        ],
+        "pl": [
+          "$4a^{3}-2a+3$",
+          "$4a^{3}-8a+12a$",
+          "$a^{3}-8a^{2}+12a$",
+          "$4a^{3}-8a^{2}+12a$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "first_term_only",
+        "coeff_error"
+      ]
+    },
+    {
+      "id": "alg1-l13-i02",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.5,
+      "irt": {
+        "a": 1.15,
+        "b": 0.2,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (x − 3)(x − 5).",
+        "es": "Expande (x − 3)(x − 5).",
+        "pl": "Rozwiń (x − 3)(x − 5)."
+      },
+      "feedbackCorrect": {
+        "en": "x² − 5x − 3x + 15 = x² − 8x + 15.",
+        "es": "x² − 5x − 3x + 15 = x² − 8x + 15.",
+        "pl": "x² − 5x − 3x + 15 = x² − 8x + 15."
+      },
+      "feedbackIncorrect": {
+        "en": "Negative times negative Last term is +15; middle is −8x.",
+        "es": "Negativo por negativo en el último da +15; el medio es −8x.",
+        "pl": "Ujemne razy ujemne w ostatnim daje +15; środek to −8x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "(x - 3)(x - 5)",
+      "choices": {
+        "en": [
+          "$x^{2}-8x+15$",
+          "$x^{2}-8x-15$",
+          "$x^{2}+8x+15$",
+          "$x^{2}-2x+15$"
+        ],
+        "es": [
+          "$x^{2}-8x+15$",
+          "$x^{2}-8x-15$",
+          "$x^{2}+8x+15$",
+          "$x^{2}-2x+15$"
+        ],
+        "pl": [
+          "$x^{2}-8x+15$",
+          "$x^{2}-8x-15$",
+          "$x^{2}+8x+15$",
+          "$x^{2}-2x+15$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "sign_error",
+        "wrong_constant"
+      ]
+    },
+    {
+      "id": "alg1-l13-i03",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.3,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (3x − 2)(x + 4).",
+        "es": "Expande (3x − 2)(x + 4).",
+        "pl": "Rozwiń (3x − 2)(x + 4)."
+      },
+      "feedbackCorrect": {
+        "en": "3x² + 12x − 2x − 8 = 3x² + 10x − 8.",
+        "es": "3x² + 12x − 2x − 8 = 3x² + 10x − 8.",
+        "pl": "3x² + 12x − 2x − 8 = 3x² + 10x − 8."
+      },
+      "feedbackIncorrect": {
+        "en": "Outer 12x and Inner −2x combine to +10x.",
+        "es": "Externo 12x e interno −2x dan +10x.",
+        "pl": "Zewnętrzne 12x i wewnętrzne −2x dają +10x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "(3x - 2)(x + 4)",
+      "choices": {
+        "en": [
+          "$3x^{2}+12x-8$",
+          "$3x^{2}+10x-8$",
+          "$3x^{2}+10x+8$",
+          "$3x^{2}-10x-8$"
+        ],
+        "es": [
+          "$3x^{2}+12x-8$",
+          "$3x^{2}+10x-8$",
+          "$3x^{2}+10x+8$",
+          "$3x^{2}-10x-8$"
+        ],
+        "pl": [
+          "$3x^{2}+12x-8$",
+          "$3x^{2}+10x-8$",
+          "$3x^{2}+10x+8$",
+          "$3x^{2}-10x-8$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "skipped_outer_inner",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l13-i04",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.multiply"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.35,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (x + 1)(x^{2} − x + 2). What is the x term?",
+        "es": "Expande (x + 1)(x^{2} − x + 2). ¿Cuál es el término en x?",
+        "pl": "Rozwiń (x + 1)(x^{2} − x + 2). Jaki jest wyraz z x?"
+      },
+      "feedbackCorrect": {
+        "en": "From x·(−x)=−x² rows plus 1·…: constant×x and like-x combine → +x after full expand: x³ + x.",
+        "es": "Tras expandir completo: x³ + x (término lineal x).",
+        "pl": "Po pełnym rozwinięciu: x³ + x (wyraz liniowy x)."
+      },
+      "feedbackIncorrect": {
+        "en": "Collect all degree-1 contributions after distributing both x and 1.",
+        "es": "Reúne todas las contribuciones de grado 1 tras distribuir x y 1.",
+        "pl": "Zbierz wszystkie wkłady stopnia 1 po rozdzieleniu x i 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(x + 1)(x^{2} - x + 2)",
+      "choices": {
+        "en": [
+          "$2x$",
+          "$-x$",
+          "$x$",
+          "$3x$"
+        ],
+        "es": [
+          "$2x$",
+          "$-x$",
+          "$x$",
+          "$3x$"
+        ],
+        "pl": [
+          "$2x$",
+          "$-x$",
+          "$x$",
+          "$3x$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "missed_row",
+        "like_term_error"
+      ]
+    },
+    {
+      "id": "alg1-l13-i05",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "difficulty": 0.55,
+      "irt": {
+        "a": 1.15,
+        "b": 0.4,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "−3m(2m^{2} + m − 5) equals…",
+        "es": "−3m(2m^{2} + m − 5) es igual a…",
+        "pl": "−3m(2m^{2} + m − 5) równa się…"
+      },
+      "feedbackCorrect": {
+        "en": "−3m·2m²=−6m³; −3m·m=−3m²; −3m·(−5)=+15m.",
+        "es": "−3m·2m²=−6m³; −3m·m=−3m²; −3m·(−5)=+15m.",
+        "pl": "−3m·2m²=−6m³; −3m·m=−3m²; −3m·(−5)=+15m."
+      },
+      "feedbackIncorrect": {
+        "en": "Watch the last sign: negative times negative is positive.",
+        "es": "Cuidado con el último signo: negativo por negativo es positivo.",
+        "pl": "Uważaj na ostatni znak: ujemne razy ujemne jest dodatnie."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "-3m(2m^{2} + m - 5)",
+      "choices": {
+        "en": [
+          "$-6m^{3}-3m^{2}-15m$",
+          "$6m^{3}-3m^{2}+15m$",
+          "$-6m^{3}+3m^{2}+15m$",
+          "$-6m^{3}-3m^{2}+15m$"
+        ],
+        "es": [
+          "$-6m^{3}-3m^{2}-15m$",
+          "$6m^{3}-3m^{2}+15m$",
+          "$-6m^{3}+3m^{2}+15m$",
+          "$-6m^{3}-3m^{2}+15m$"
+        ],
+        "pl": [
+          "$-6m^{3}-3m^{2}-15m$",
+          "$6m^{3}-3m^{2}+15m$",
+          "$-6m^{3}+3m^{2}+15m$",
+          "$-6m^{3}-3m^{2}+15m$"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "sign_error",
+        "first_term_only"
+      ]
+    },
+    {
+      "id": "alg1-l13-i06",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.5,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (2x − 5)(2x + 5).",
+        "es": "Expande (2x − 5)(2x + 5).",
+        "pl": "Rozwiń (2x − 5)(2x + 5)."
+      },
+      "feedbackCorrect": {
+        "en": "Difference of squares: (2x)² − 5² = 4x² − 25.",
+        "es": "(Diferencia de cuadrados): (2x)² − 5² = 4x² − 25.",
+        "pl": "Różnica kwadratów: (2x)² − 5² = 4x² − 25."
+      },
+      "feedbackIncorrect": {
+        "en": "Outer and Inner cancel (±10x); Last is −25.",
+        "es": "Externo e interno se cancelan (±10x); último es −25.",
+        "pl": "Zewnętrzne i wewnętrzne kasują się (±10x); ostatni to −25."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "(2x - 5)(2x + 5)",
+      "choices": {
+        "en": [
+          "$4x^{2}-25$",
+          "$4x^{2}+25$",
+          "$4x^{2}-10x-25$",
+          "$4x^{2}+20x-25$"
+        ],
+        "es": [
+          "$4x^{2}-25$",
+          "$4x^{2}+25$",
+          "$4x^{2}-10x-25$",
+          "$4x^{2}+20x-25$"
+        ],
+        "pl": [
+          "$4x^{2}-25$",
+          "$4x^{2}+25$",
+          "$4x^{2}-10x-25$",
+          "$4x^{2}+20x-25$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "skipped_cancel",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l13-i07",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.multiply"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Expand (x − 2)(x^{2} + 2x + 4). Constant term?",
+        "es": "Expande (x − 2)(x^{2} + 2x + 4). ¿Término constante?",
+        "pl": "Rozwiń (x − 2)(x^{2} + 2x + 4). Wyraz wolny?"
+      },
+      "feedbackCorrect": {
+        "en": "Only −2 · 4 contributes to the constant: −8.",
+        "es": "Solo −2 · 4 aporta a la constante: −8.",
+        "pl": "Tylko −2 · 4 daje stałą: −8."
+      },
+      "feedbackIncorrect": {
+        "en": "The constant comes from (−2) times the trinomial’s constant.",
+        "es": "La constante viene de (−2) por la constante del trinomio.",
+        "pl": "Stała pochodzi z (−2) razy stała trójmianu."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(x - 2)(x^{2} + 2x + 4)",
+      "choices": {
+        "en": [
+          "$8$",
+          "$-8$",
+          "$-4$",
+          "$4$"
+        ],
+        "es": [
+          "$8$",
+          "$-8$",
+          "$-4$",
+          "$4$"
+        ],
+        "pl": [
+          "$8$",
+          "$-8$",
+          "$-4$",
+          "$4$"
+        ]
+      },
+      "correctIndex": 1,
+      "diagnosticTags": [
+        "missed_row",
+        "sign_error"
+      ]
+    },
+    {
+      "id": "alg1-l13-i08",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "difficulty": 0.6,
+      "irt": {
+        "a": 1.15,
+        "b": 0.55,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Which product equals x^{2} − 1?",
+        "es": "¿Qué producto es igual a x^{2} − 1?",
+        "pl": "Który iloczyn równa się x^{2} − 1?"
+      },
+      "feedbackCorrect": {
+        "en": "Difference of squares: (x−1)(x+1).",
+        "es": "Diferencia de cuadrados: (x−1)(x+1).",
+        "pl": "Różnica kwadratów: (x−1)(x+1)."
+      },
+      "feedbackIncorrect": {
+        "en": "(x−1)² expands to x² − 2x + 1, not x² − 1.",
+        "es": "(x−1)² da x² − 2x + 1, no x² − 1.",
+        "pl": "(x−1)² daje x² − 2x + 1, nie x² − 1."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        }
+      ],
+      "promptMath": "x^{2} - 1",
+      "choices": {
+        "en": [
+          "$(x-1)(x-1)$",
+          "$(x+1)(x+1)$",
+          "$(x-1)(x+1)$",
+          "$(x-1)^{2}$"
+        ],
+        "es": [
+          "$(x-1)(x-1)$",
+          "$(x+1)(x+1)$",
+          "$(x-1)(x+1)$",
+          "$(x-1)^{2}$"
+        ],
+        "pl": [
+          "$(x-1)(x-1)$",
+          "$(x+1)(x+1)$",
+          "$(x-1)(x+1)$",
+          "$(x-1)^{2}$"
+        ]
+      },
+      "correctIndex": 2,
+      "diagnosticTags": [
+        "perfect_square_confusion"
+      ]
+    },
+    {
+      "id": "alg1-l13-i09",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.65,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "True or false idea: distributing means multiply the outside only by the first inside term.",
+        "es": "Idea verdadera o falsa: distribuir significa multiplicar el exterior solo por el primer término interior.",
+        "pl": "Prawda czy fałsz: rozdzielność oznacza mnożenie zewnętrznego tylko przez pierwszy wyraz wewnątrz."
+      },
+      "feedbackCorrect": {
+        "en": "a(b+c)=ab+ac — every term.",
+        "es": "a(b+c)=ab+ac — cada término.",
+        "pl": "a(b+c)=ab+ac — każdy wyraz."
+      },
+      "feedbackIncorrect": {
+        "en": "Skipping terms is the classic distribute error.",
+        "es": "Omitir términos es el error clásico al distribuir.",
+        "pl": "Pomijanie wyrazów to klasyczny błąd rozdzielności."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "a(b + c)",
+      "choices": {
+        "en": [
+          "True — only the first term",
+          "True — only the last term",
+          "False — never multiply constants",
+          "False — multiply by every term inside"
+        ],
+        "es": [
+          "Verdadero — solo el primer término",
+          "Verdadero — solo el último término",
+          "Falso — nunca multipliques constantes",
+          "Falso — multiplica por cada término interior"
+        ],
+        "pl": [
+          "Prawda — tylko pierwszy wyraz",
+          "Prawda — tylko ostatni wyraz",
+          "Fałsz — nigdy nie mnoż stałych",
+          "Fałsz — mnoż przez każdy wyraz wewnątrz"
+        ]
+      },
+      "correctIndex": 3,
+      "diagnosticTags": [
+        "first_term_only"
+      ]
+    },
+    {
+      "id": "alg1-l13-i10",
+      "knowledgePointIds": [
+        "kp.alg1.polynomial.multiply"
+      ],
+      "difficulty": 0.65,
+      "irt": {
+        "a": 1.15,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "prompt": {
+        "en": "Fully expand (x + 3)(x^{2} − 2x + 1).",
+        "es": "Expande completamente (x + 3)(x^{2} − 2x + 1).",
+        "pl": "Całkowicie rozwiń (x + 3)(x^{2} − 2x + 1)."
+      },
+      "feedbackCorrect": {
+        "en": "x³ − 2x² + x + 3x² − 6x + 3 = x³ + x² − 5x + 3.",
+        "es": "x³ − 2x² + x + 3x² − 6x + 3 = x³ + x² − 5x + 3.",
+        "pl": "x³ − 2x² + x + 3x² − 6x + 3 = x³ + x² − 5x + 3."
+      },
+      "feedbackIncorrect": {
+        "en": "Combine −2x² + 3x² and x − 6x carefully.",
+        "es": "Combina −2x² + 3x² y x − 6x con cuidado.",
+        "pl": "Ostrożnie połącz −2x² + 3x² oraz x − 6x."
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1"
+          ]
+        }
+      ],
+      "promptMath": "(x + 3)(x^{2} - 2x + 1)",
+      "choices": {
+        "en": [
+          "$x^{3}+x^{2}-5x+3$",
+          "$x^{3}-2x^{2}+x+3$",
+          "$x^{3}+x^{2}-5x-3$",
+          "$x^{3}+3x^{2}-6x+3$"
+        ],
+        "es": [
+          "$x^{3}+x^{2}-5x+3$",
+          "$x^{3}-2x^{2}+x+3$",
+          "$x^{3}+x^{2}-5x-3$",
+          "$x^{3}+3x^{2}-6x+3$"
+        ],
+        "pl": [
+          "$x^{3}+x^{2}-5x+3$",
+          "$x^{3}-2x^{2}+x+3$",
+          "$x^{3}+x^{2}-5x-3$",
+          "$x^{3}+3x^{2}-6x+3$"
+        ]
+      },
+      "correctIndex": 0,
+      "diagnosticTags": [
+        "like_term_error",
+        "missed_row"
+      ]
+    }
+  ]
+}

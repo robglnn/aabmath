@@ -2192,6 +2192,546 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kp.alg1.polynomial.distribute",
+      "title": {
+        "en": "Multiply a monomial by a polynomial (distribute)",
+        "es": "Multiplicar un monomio por un polinomio (distribuir)",
+        "pl": "Mnożyć jednomian przez wielomian (rozdzielność)"
+      },
+      "prerequisites": [
+        "kp.alg1.polynomial.classify",
+        "kp.alg1.exponents.product"
+      ],
+      "successCriteria": {
+        "en": "Student distributes a monomial across every term of a polynomial, multiplying coefficients and adding exponents on like bases.",
+        "es": "El estudiante distribuye un monomio a cada término de un polinomio, multiplicando coeficientes y sumando exponentes de bases iguales.",
+        "pl": "Uczeń rozdziela jednomian na każdy wyraz wielomianu, mnożąc współczynniki i dodając wykładniki tych samych podstaw."
+      },
+      "misconceptions": {
+        "en": [
+          "Multiplying only the first term of the polynomial",
+          "Adding exponents when multiplying unlike bases, or multiplying exponents instead of adding"
+        ],
+        "es": [
+          "Multiplicar solo el primer término del polinomio",
+          "Sumar exponentes con bases distintas, o multiplicar exponentes en lugar de sumarlos"
+        ],
+        "pl": [
+          "Mnożenie tylko pierwszego wyrazu wielomianu",
+          "Dodawanie wykładników przy różnych podstawach lub mnożenie wykładników zamiast dodawania"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.1a",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.polynomial.foil",
+      "title": {
+        "en": "Multiply two binomials (FOIL / distribute)",
+        "es": "Multiplicar dos binomios (FOIL / distribuir)",
+        "pl": "Mnożyć dwa dwumiany (FOIL / rozdzielność)"
+      },
+      "prerequisites": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "encompassing": [
+        "kp.alg1.polynomial.distribute"
+      ],
+      "successCriteria": {
+        "en": "Student multiplies two binomials by finding all four products (First, Outer, Inner, Last) and combining like terms.",
+        "es": "El estudiante multiplica dos binomios hallando los cuatro productos (primero, externo, interno, último) y combinando términos semejantes.",
+        "pl": "Uczeń mnoży dwa dwumiany, znajdując cztery iloczyny (pierwszy, zewnętrzny, wewnętrzny, ostatni) i łącząc wyrazy podobne."
+      },
+      "misconceptions": {
+        "en": [
+          "Only multiplying first and last terms (skipping Outer/Inner)",
+          "Combining unlike terms or mishandling signs on negative terms"
+        ],
+        "es": [
+          "Multiplicar solo el primero y el último (omitir externo/interno)",
+          "Combinar términos no semejantes o manejar mal los signos negativos"
+        ],
+        "pl": [
+          "Mnożenie tylko pierwszego i ostatniego (pomijanie zewnętrznych/wewnętrznych)",
+          "Łączenie niepodobnych wyrazów lub błędy znaków przy ujemnych"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1a"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.1"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.polynomial.multiply",
+      "title": {
+        "en": "Multiply polynomials beyond FOIL",
+        "es": "Multiplicar polinomios más allá de FOIL",
+        "pl": "Mnożyć wielomiany poza FOIL"
+      },
+      "prerequisites": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "encompassing": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "successCriteria": {
+        "en": "Student multiplies a binomial by a trinomial (or similar) by distributing each term and combining like terms in standard form.",
+        "es": "El estudiante multiplica un binomio por un trinomio (o similar) distribuyendo cada término y combinando semejantes en forma estándar.",
+        "pl": "Uczeń mnoży dwumian przez trójmian (lub podobnie), rozdzielając każdy wyraz i łącząc podobne w postaci standardowej."
+      },
+      "misconceptions": {
+        "en": [
+          "Missing a whole row of products when distributing",
+          "Adding degrees incorrectly after expanding"
+        ],
+        "es": [
+          "Omitir toda una fila de productos al distribuir",
+          "Sumar grados incorrectamente después de expandir"
+        ],
+        "pl": [
+          "Pominięcie całego wiersza iloczynów przy rozdzielaniu",
+          "Błędne dodawanie stopni po rozwinięciu"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(B)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-APR.A.1",
+            "A-SSE.A.2",
+            "A-SSE.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-APR.1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.factor.gcf",
+      "title": {
+        "en": "Factor out the greatest common factor (GCF)",
+        "es": "Sacar el máximo común divisor (MCD / GCF)",
+        "pl": "Wyłączać największy wspólny dzielnik (NWD / GCF)"
+      },
+      "prerequisites": [
+        "kp.alg1.polynomial.distribute",
+        "kp.alg1.polynomial.classify"
+      ],
+      "successCriteria": {
+        "en": "Student finds the GCF of coefficients and variable powers, factors it out, and writes an equivalent product.",
+        "es": "El estudiante halla el MCD de coeficientes y potencias, lo saca como factor común y escribe un producto equivalente.",
+        "pl": "Uczeń znajduje NWD współczynników i potęg, wyłącza go przed nawias i zapisuje równoważny iloczyn."
+      },
+      "misconceptions": {
+        "en": [
+          "Factoring only the numeric GCF and leaving variable factors inside inconsistently",
+          "Dividing some terms by the GCF but not others"
+        ],
+        "es": [
+          "Sacar solo el MCD numérico y dejar factores de variable de forma inconsistente",
+          "Dividir algunos términos entre el MCD pero no otros"
+        ],
+        "pl": [
+          "Wyłączanie tylko liczbowego NWD i niespójne traktowanie zmiennych",
+          "Dzielenie tylko niektórych wyrazów przez NWD"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(D)",
+            "A.1(F)",
+            "A.1(B)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.factor.trinomial.a1",
+      "title": {
+        "en": "Factor simple trinomials x² + bx + c (a = 1)",
+        "es": "Factorizar trinomios simples x² + bx + c (a = 1)",
+        "pl": "Rozkładać proste trójmiany x² + bx + c (a = 1)"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.gcf",
+        "kp.alg1.polynomial.foil"
+      ],
+      "encompassing": [
+        "kp.alg1.factor.gcf"
+      ],
+      "successCriteria": {
+        "en": "Student factors x² + bx + c as (x + p)(x + q) where p + q = b and p·q = c (integers).",
+        "es": "El estudiante factoriza x² + bx + c como (x + p)(x + q) donde p + q = b y p·q = c (enteros).",
+        "pl": "Uczeń rozkłada x² + bx + c jako (x + p)(x + q), gdzie p + q = b i p·q = c (całkowite)."
+      },
+      "misconceptions": {
+        "en": [
+          "Choosing factors of c that do not sum to b",
+          "Putting the wrong signs on p and q when c is positive or negative"
+        ],
+        "es": [
+          "Elegir factores de c que no suman b",
+          "Poner signos incorrectos en p y q cuando c es positivo o negativo"
+        ],
+        "pl": [
+          "Wybór czynników c, które nie sumują się do b",
+          "Błędne znaki p i q, gdy c jest dodatnie lub ujemne"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.3a"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.factor.verify",
+      "title": {
+        "en": "Verify a factorization by multiplying",
+        "es": "Verificar una factorización multiplicando",
+        "pl": "Sprawdzać rozkład przez mnożenie"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.trinomial.a1",
+        "kp.alg1.polynomial.foil"
+      ],
+      "encompassing": [
+        "kp.alg1.polynomial.foil"
+      ],
+      "successCriteria": {
+        "en": "Student expands a proposed factorization and confirms it matches the original polynomial.",
+        "es": "El estudiante expande una factorización propuesta y confirma que coincide con el polinomio original.",
+        "pl": "Uczeń rozwija proponowany rozkład i potwierdza zgodność z oryginalnym wielomianem."
+      },
+      "misconceptions": {
+        "en": [
+          "Accepting a factorization without expanding to check",
+          "Expanding incorrectly and still claiming a match"
+        ],
+        "es": [
+          "Aceptar una factorización sin expandir para comprobar",
+          "Expandir incorrectamente y aun así afirmar coincidencia"
+        ],
+        "pl": [
+          "Akceptowanie rozkładu bez sprawdzenia przez rozwinięcie",
+          "Błędne rozwinięcie i twierdzenie o zgodności"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(B)",
+            "A.1(D)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-APR.A.1",
+            "A-SSE.A.2"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.3a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.factor.difference.squares",
+      "title": {
+        "en": "Factor a difference of squares",
+        "es": "Factorizar una diferencia de cuadrados",
+        "pl": "Rozkładać różnicę kwadratów"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.gcf",
+        "kp.alg1.polynomial.foil"
+      ],
+      "successCriteria": {
+        "en": "Student recognizes a² − b² and rewrites it as (a − b)(a + b), including after factoring a GCF when needed.",
+        "es": "El estudiante reconoce a² − b² y lo reescribe como (a − b)(a + b), incluso tras sacar un MCD si hace falta.",
+        "pl": "Uczeń rozpoznaje a² − b² i zapisuje (a − b)(a + b), także po wyłączeniu NWD gdy trzeba."
+      },
+      "misconceptions": {
+        "en": [
+          "Treating a² + b² as factorable over the reals the same way",
+          "Writing (a − b)² instead of (a − b)(a + b)"
+        ],
+        "es": [
+          "Tratar a² + b² como factorable sobre los reales de la misma forma",
+          "Escribir (a − b)² en lugar de (a − b)(a + b)"
+        ],
+        "pl": [
+          "Traktowanie a² + b² jak rozkładalne w ten sam sposób nad liczbami rzeczywistymi",
+          "Zapisywanie (a − b)² zamiast (a − b)(a + b)"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(F)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.2"
+          ]
+        },
+        {
+          "jurisdiction": "FL",
+          "codes": [
+            "MA.912.AR.1.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.factor.trinomial.more",
+      "title": {
+        "en": "Factor more trinomials (signs, larger constants)",
+        "es": "Factorizar más trinomios (signos, constantes mayores)",
+        "pl": "Rozkładać trudniejsze trójmiany (znaki, większe stałe)"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "encompassing": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "successCriteria": {
+        "en": "Student factors a=1 trinomials with mixed signs or larger |c|, choosing integer pairs that multiply to c and add to b.",
+        "es": "El estudiante factoriza trinomios a=1 con signos mixtos o |c| mayor, eligiendo pares enteros que multiplican a c y suman b.",
+        "pl": "Uczeń rozkłada trójmiany a=1 z mieszanymi znakami lub większym |c|, wybierając pary całkowite o iloczynie c i sumie b."
+      },
+      "misconceptions": {
+        "en": [
+          "Swapping which factor gets the larger magnitude when signs differ",
+          "Forgetting that both factors are negative when c > 0 and b < 0"
+        ],
+        "es": [
+          "Intercambiar qué factor tiene mayor magnitud cuando los signos difieren",
+          "Olvidar que ambos factores son negativos cuando c > 0 y b < 0"
+        ],
+        "pl": [
+          "Zamiana, który czynnik ma większą wartość bezwzględną przy różnych znakach",
+          "Zapominanie, że oba czynniki są ujemne, gdy c > 0 i b < 0"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(D)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.B.3a",
+            "A-SSE.A.2",
+            "A-APR.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.3a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kp.alg1.factor.perfect.square",
+      "title": {
+        "en": "Recognize and factor perfect-square trinomials",
+        "es": "Reconocer y factorizar trinomios cuadrados perfectos",
+        "pl": "Rozpoznawać i rozkładać trójmiany kwadratów zupełnych"
+      },
+      "prerequisites": [
+        "kp.alg1.factor.trinomial.a1",
+        "kp.alg1.factor.difference.squares"
+      ],
+      "encompassing": [
+        "kp.alg1.factor.trinomial.a1"
+      ],
+      "successCriteria": {
+        "en": "Student recognizes a² ± 2ab + b² and writes (a ± b)², distinguishing from a non-perfect trinomial.",
+        "es": "El estudiante reconoce a² ± 2ab + b² y escribe (a ± b)², distinguiendo de un trinomio no perfecto.",
+        "pl": "Uczeń rozpoznaje a² ± 2ab + b² i zapisuje (a ± b)², odróżniając od trójmianu niezupełnego."
+      },
+      "misconceptions": {
+        "en": [
+          "Writing (a + b)² for a² − 2ab + b²",
+          "Treating any trinomial with a square first term as a perfect square"
+        ],
+        "es": [
+          "Escribir (a + b)² para a² − 2ab + b²",
+          "Tratar cualquier trinomio con primer término cuadrado como cuadrado perfecto"
+        ],
+        "pl": [
+          "Zapisywanie (a + b)² dla a² − 2ab + b²",
+          "Traktowanie każdego trójmianu z kwadratem na początku jako kwadratu zupełnego"
+        ]
+      },
+      "standards": [
+        {
+          "jurisdiction": "TX",
+          "codes": [
+            "A.10(E)",
+            "A.10(F)",
+            "A.1(F)"
+          ]
+        },
+        {
+          "jurisdiction": "CCSS",
+          "codes": [
+            "A-SSE.A.2",
+            "A-SSE.B.3a",
+            "A-APR.A.1"
+          ]
+        },
+        {
+          "jurisdiction": "CA",
+          "codes": [
+            "A-SSE.2"
+          ]
+        }
+      ]
     }
   ]
 }
