@@ -1,12 +1,11 @@
 # Active Context
 
 ## Focus
-**Wave 5 content critic PASS** (L13–15). Awaiting exit gate. 15m loop armed.
+**Wave 5 exit PASS** (L1–15). Wave 6 (L16–18 quadratics) building. 15m loop armed.
 
-## Progress toward Algebra I course gate
-- Lessons live: **15** (waves 1–5 content)
-- Next: Wave 5 exit gate → continue until full course (~30+)
+## Course progress
+- Lessons in world: **15**
+- Target: full Algebra I course gate (~30+)
 
 ## Play
-- https://robglnn.github.io/aabmath/
-- Local: `npm run dev`
+https://robglnn.github.io/aabmath/
