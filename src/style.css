@@ -460,6 +460,10 @@ body,
 .hud-hologram {
   position: relative;
   padding: clamp(14px, 2.5vmin, 24px) clamp(16px, 3vmin, 28px);
+  max-height: min(72vh, 560px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: linear-gradient(
     165deg,
     rgba(20, 48, 72, 0.42) 0%,

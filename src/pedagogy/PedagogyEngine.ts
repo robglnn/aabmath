@@ -80,8 +80,19 @@ export class PedagogyEngine {
 
   /** Mark lesson complete and unlock world hooks when the independent set passes. */
   completeLessonIfPassed(lesson: LessonPack, independentResults: boolean[]): IndependentSetResult {
+    const expected = getIndependentItemIds(lesson)
     const scored = this.scoreIndependentSet(independentResults, lesson.masteryThreshold)
-    if (!this.lessonPassed(lesson, independentResults)) return scored
+    // Never treat a partial result vector as a pass (softlock / stray submit guard)
+    if (independentResults.length !== expected.length || expected.length === 0) {
+      return {
+        accuracy: 0,
+        correctCount: scored.correctCount,
+        total: expected.length,
+        passed: false,
+        threshold: lesson.masteryThreshold,
+      }
+    }
+    if (!scored.passed) return scored
 
     if (!this.progress.completedLessons.includes(lesson.id)) {
       this.progress.completedLessons.push(lesson.id)
@@ -123,13 +134,15 @@ export class PedagogyEngine {
   }
 
   /**
-   * First enqueue after lesson mastery — due in-session so closing the board or
-   * progress pedestal can open ReviewRunner in the same play session.
+   * First enqueue after lesson mastery. Due soon enough for same-session review
+   * at the pedestal / later dig exit, but not the instant the board closes —
+   * so retrieval is not identical to the independent set just graded.
    */
   enqueueReviewOnMastery(knowledgePointId: string, now = Date.now()): void {
+    const FIRST_INTERVAL_MS = 10 * 60 * 1000
     this.progress.spacedQueue.push({
       knowledgePointId,
-      dueAt: now,
+      dueAt: now + FIRST_INTERVAL_MS,
       ease: 2.3,
       intervalDays: 0,
     })

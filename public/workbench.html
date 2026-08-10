@@ -9,22 +9,24 @@
     h1 { color: #7dffb3; }
     .bar { background: #1a2438; height: 12px; border-radius: 6px; overflow: hidden; }
     .bar > span { display: block; height: 100%; width: 100%; background: #3dff9a; }
-    .pass { color: #3dff9a; } .wip { color: #ffd166; }
+    .pass { color: #3dff9a; } .wip { color: #ffd166; } .fail { color: #ff6b6b; }
     a { color: #8ecbff; }
   </style>
 </head>
 <body>
   <h1>Axiom Reach — Gauntlet Workbench</h1>
-  <p><strong class="pass">Algebra I course gate PASS.</strong> <a href="https://robglnn.github.io/aabmath/">Play</a> · <a href="/docs/gauntlet/exit-gate-algebra1.md">Exit gate</a></p>
+  <p>Course loop 2 <strong class="fail">FAIL</strong> → <strong class="wip">R1/R2/oracle remediation shipped</strong>; awaiting Claude Code Opus loop 3. World loop 2 PASS. <a href="https://robglnn.github.io/aabmath/">Play</a></p>
   <div class="bar"><span></span></div>
   <ul>
-    <li class="pass">[PASS] Waves 1–10 (L1–30)</li>
-    <li class="pass">[PASS] Algebra I course gate</li>
-    <li class="wip">[optional] Ask Harrison: Geometry / Alg II</li>
+    <li class="wip">[FAIL→REMEDIATED] Opus loop 2 — course/product — <a href="../docs/gauntlet/critic-opus-course-loop2.md">critic-opus-course-loop2.md</a> → <a href="../docs/gauntlet/remediation-opus-course-loop2.md">remediation-opus-course-loop2.md</a></li>
+    <li class="wip">[INVALIDATED→fixing] Algebra I course gate (L5 TeX grader + softlock)</li>
+    <li class="pass">[PASS] Opus loop 2 — world/visual critic — <a href="../docs/gauntlet/critic-opus-world-loop2.md">critic-opus-world-loop2.md</a></li>
+    <li class="fail">[FAIL→fixed] Opus loop 1 — world/visual — <a href="../docs/gauntlet/critic-opus-world-loop1.md">critic-opus-world-loop1.md</a></li>
+    <li class="fail">[FAIL] Opus loop 1 — course/product — <a href="../docs/gauntlet/critic-opus-course-loop1.md">critic-opus-course-loop1.md</a></li>
   </ul>
-  <pre>[critic] wave10: PASS — L28–30 capstone
-[orchestrator] exit-gate-algebra1: PASS
-[play] https://robglnn.github.io/aabmath/
-[note] 15m loop may continue for polish; course DoD met</pre>
+  <pre>[opus/course loop2] FAIL — elimination oracle + R1 L5 unpassable (TeX exact-match) + R2 softlock.
+[remediation loop2] canonicalizeMathAnswer; gate-fail locks answers; partial sets never pass;
+  independent withholds all per-item verdicts. See remediation-opus-course-loop2.md
+[next] Claude Code Opus course loop 3.</pre>
 </body>
 </html>

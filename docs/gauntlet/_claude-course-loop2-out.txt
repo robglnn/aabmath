@@ -1,0 +1,26 @@
+# FAIL
+
+Report written to `docs/gauntlet/critic-opus-course-loop2.md`; `public/workbench.html` updated to FAIL with a pointer.
+
+**All seven remediation bars pass. The claim they were meant to prove does not.**
+
+| Bar | Result |
+|---|---|
+| 1. `npm run build` green | PASS ΓÇö 66 modules, 1,673 kB / 408 kB gzip, only the chunk advisory |
+| 2. Preview + walk `lesson_board_1` + independent phase | PASS ΓÇö full loop live, one favicon 404 |
+| 3. `acceptNumeric`/`correctLatex` ΓåÆ TEXT input | PASS ΓÇö L1 i03/i04/i06, L5 8/10 |
+| 4. Wrong answers reveal nothing before scoring | PASS ΓÇö 19 wrong answers, all "Incorrect. Keep goingΓÇª" |
+| 5. RETRY reshuffles order | PASS ΓÇö nonce 0 vs 1 permutations verified in-play |
+| 6. No massed SR on close; `?sr=1` prefers other forms | PASS ΓÇö `dueAt = now + 591 s`; under `?sr=1` all 3 items were teach/guided |
+| 7. Report scrolls at ~600 px; ES/PL localized | PASS ΓÇö 96ΓåÆ542 in 620 px, scrollHeight 1489 > client 442; ES/PL topics real |
+
+**Largest remaining gap ΓÇö the retry loop is still an answer oracle.** Withholding the worked answer replaced one recall channel with another: per-item `Correct.`/`Incorrect.` over a fixed item set with unlimited free retries. I ran a zero-knowledge elimination bot that reads no lesson content, only the verdict string. It cleared **Lesson 11's 80% gate in 6 attempts** (20/20/60/70/50/**90 PASS**) and unlocked board 12. 188 of 298 independent items are still 4-option MC; on **12 of 30 lessons** pure elimination reaches PASS ΓÇö including L13ΓÇôL18 (six consecutive all-MC gates) and L29 "Cumulative Mixed Review."
+
+**Two new P0 regressions the remediation introduced, both worse than the gap it closed:**
+
+- **R1 ΓÇö Lesson 5 is unpassable and the course is uncompletable.** Five of ten independent answers are literal TeX (`x\le 12`, `x\ge 3`, ΓÇª) graded by exact string match. I played L5 answering every item correctly in standard notation: `x Γëñ 12`, `x ΓëÑ 3`, `x Γëñ -2`, `x ΓëÑ 5`, `x ΓëÑ 3` all marked Incorrect ΓÇö ceiling **50%** against an 80% threshold. Board 5 gates 6ΓÇô30, so `course_algebra1_complete` is unreachable by legitimate play. L5's own guided feedback teaches "x Γëñ ΓêÆ4", the notation the grader rejects. Same defect on `\frac` in L1/L6/L7/L8 (`m/3` ΓåÆ Incorrect).
+- **R2 ΓÇö softlock + false pass.** Fresh profile, L1, first attempt, 0/9: the choice buttons stay live on the gate-fail screen and bypass the retry guard. One correct click ΓåÆ **"Mastery gate passed!"**, exit permanently disabled, CONTINUE dead, lesson never credited ΓÇö reload required. `LessonScreen.ts:89-91`'s Enter handler has the same hole, so it's reachable on all 30 lessons. Shot: `shots/critic-opus-course-loop2-softlock.png`.
+
+**What works:** constructed response is genuinely wired end to end (not cosmetic); the independent answer key is gone; retry reshuffle is real; the SR fix demonstrably steered retrieval away from just-graded items; the report layout and localization fixes are correct on the open path; the content bank and world loop remain strong.
+
+R1 invalidates the `exit-gate-algebra1.md` PASS outright ΓÇö I've marked the course gate INVALIDATED on the workbench rather than just FAIL.

@@ -2,7 +2,7 @@ import type { LessonItem, LessonPack, Locale } from '../../content/types'
 import { flattenStandards, getSectionItemIds } from '../../content/loadContent'
 import type { LessonScreenData } from '../../ui/types'
 import type { PedagogyEngine } from '../../pedagogy/PedagogyEngine'
-import { gradeItem } from './gradeItem'
+import { gradeItem, prefersConstructedResponse } from './gradeItem'
 import { shuffleMcChoices, type McShuffleState } from './shuffleMcChoices'
 
 const PHASE_ORDER: Array<'objective' | 'teach' | 'guided' | 'independent'> = [
@@ -11,6 +11,17 @@ const PHASE_ORDER: Array<'objective' | 'teach' | 'guided' | 'independent'> = [
   'guided',
   'independent',
 ]
+
+function shuffleIds(ids: string[], nonce: number): string[] {
+  const out = [...ids]
+  let seed = (nonce + 1) * 2654435761
+  for (let i = out.length - 1; i > 0; i--) {
+    seed = (seed * 1664525 + 1013904223) >>> 0
+    const j = seed % (i + 1)
+    ;[out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
+}
 
 export class LessonRunner {
   private phaseIndex = 0
@@ -25,6 +36,8 @@ export class LessonRunner {
   private shuffleNonce = 0
   private shuffleKey: string | null = null
   private mcShuffle: McShuffleState | null = null
+  /** Independent item order — reshuffled on each gate retry. */
+  private independentOrder: string[] | null = null
 
   constructor(
     private readonly lesson: LessonPack,
@@ -34,6 +47,11 @@ export class LessonRunner {
 
   getLesson(): LessonPack {
     return this.lesson
+  }
+
+  /** Item ids from the last completed/failed independent set (for SR exclusion). */
+  getIndependentItemIdsUsed(): string[] {
+    return this.independentOrder ?? getSectionItemIds(this.lesson, 'independent')
   }
 
   setLocale(locale: Locale): void {
@@ -48,11 +66,13 @@ export class LessonRunner {
     const phase = this.currentPhase()
     const section = this.lesson.sections.find((s) => s.phase === phase)
     const item = this.currentItem()
-    const independentIds = getSectionItemIds(this.lesson, 'independent')
+    const independentIds = this.phaseItemIds('independent')
     const masteryPercent =
       independentIds.length > 0
         ? (this.independentResults.filter(Boolean).length / independentIds.length) * 100
         : 0
+
+    const useText = item ? prefersConstructedResponse(item) : false
 
     const base: LessonScreenData = {
       courseLabel: 'ALGEBRA 1',
@@ -68,13 +88,7 @@ export class LessonRunner {
       gateFailed: this.gateFailed,
       feedbackText: this.lastFeedback ?? this.lastGateMessage,
       closeDisabled: this.gateFailed,
-      inputMode: this.awaitingContinue
-        ? 'none'
-        : item
-          ? item.choices
-            ? 'choices'
-            : 'text'
-          : 'none',
+      inputMode: 'none',
       submitLabel: this.gateFailed ? 'retry' : this.awaitingContinue ? 'continue' : 'submit',
     }
 
@@ -86,6 +100,29 @@ export class LessonRunner {
         submitLabel: 'continue',
         showMasteryGate: true,
         gatePassed: true,
+        gateFailed: false,
+        closeDisabled: false,
+      }
+    }
+
+    // Gate-fail screen: no answer affordances — only RETRY
+    if (this.gateFailed) {
+      return {
+        ...base,
+        promptText:
+          this.locale === 'es'
+            ? 'Dominio insuficiente. Reintenta el conjunto independiente.'
+            : this.locale === 'pl'
+              ? 'Niewystarczające opanowanie. Ponów zestaw samodzielny.'
+              : 'Mastery not met. Retry the independent set.',
+        promptLatex: '',
+        inputMode: 'none',
+        submitLabel: 'retry',
+        showMasteryGate: true,
+        gateFailed: true,
+        gatePassed: false,
+        feedbackText: this.lastGateMessage,
+        closeDisabled: true,
       }
     }
 
@@ -100,6 +137,17 @@ export class LessonRunner {
       }
     }
 
+    if (this.awaitingContinue) {
+      return {
+        ...base,
+        promptLatex: item?.promptMath ?? '',
+        promptText: item?.prompt[this.locale] ?? section?.body[this.locale],
+        inputMode: 'none',
+        submitLabel: 'continue',
+        feedbackText: this.lastFeedback,
+      }
+    }
+
     if (!item) {
       return {
         ...base,
@@ -109,23 +157,35 @@ export class LessonRunner {
       }
     }
 
-    const mcShuffle = this.getMcShuffle(item)
+    const mcShuffle = useText ? null : this.getMcShuffle(item)
     return {
       ...base,
       promptLatex: item.promptMath ?? '',
       promptText: item.prompt[this.locale],
-      choices: mcShuffle?.choices[this.locale] ?? item.choices?.[this.locale],
+      choices: useText ? undefined : (mcShuffle?.choices[this.locale] ?? item.choices?.[this.locale]),
+      inputMode: useText ? 'text' : item.choices ? 'choices' : 'text',
+      // Independent: no running mastery % that leaks correctness (oracle)
+      masteryPercent: phase === 'independent' ? 0 : masteryPercent,
+      showMasteryGate: phase === 'independent',
     }
   }
 
   submitAnswer(answer: string): LessonScreenData {
-    this.lastFeedback = undefined
-    this.lastGateMessage = undefined
-
-    if (this.gateFailed && answer === '__retry__') {
-      this.resetIndependentPhase()
+    if (this.gateFailed) {
+      if (answer === '__retry__') {
+        this.resetIndependentPhase()
+        return this.getViewState()
+      }
+      // Ignore stray choice / Enter submits on the fail screen
       return this.getViewState()
     }
+
+    if (this.gatePassed) {
+      return this.getViewState()
+    }
+
+    this.lastFeedback = undefined
+    this.lastGateMessage = undefined
 
     if (this.awaitingContinue) {
       this.awaitingContinue = false
@@ -146,7 +206,13 @@ export class LessonRunner {
       return this.getViewState()
     }
 
-    const correct = gradeItem(item, answer, this.locale, this.getMcShuffle(item))
+    const useConstructed = prefersConstructedResponse(item)
+    const correct = gradeItem(
+      item,
+      answer,
+      this.locale,
+      useConstructed ? null : this.getMcShuffle(item),
+    )
     this.engine.recordAttempt(
       {
         itemId: item.id,
@@ -157,11 +223,9 @@ export class LessonRunner {
       item.knowledgePointIds,
     )
 
-    this.lastFeedback = correct
-      ? item.feedbackCorrect[this.locale]
-      : item.feedbackIncorrect[this.locale]
-
     if (phase === 'independent') {
+      // No per-item Correct/Incorrect — closes the elimination-oracle channel
+      this.lastFeedback = undefined
       this.independentResults.push(correct)
 
       if (this.isLastItemInPhase()) {
@@ -169,11 +233,17 @@ export class LessonRunner {
         this.gateScorePercent = scored.accuracy * 100
         if (!scored.passed) {
           this.gateFailed = true
-          this.lastGateMessage = `Independent set: ${Math.round(scored.accuracy * 100)}% (need ${Math.round(this.lesson.masteryThreshold * 100)}%). Retry required.`
+          this.gatePassed = false
+          this.lastGateMessage =
+            this.locale === 'es'
+              ? `Independiente: ${Math.round(scored.accuracy * 100)}% (necesitas ${Math.round(this.lesson.masteryThreshold * 100)}%). Reintento con nuevo orden.`
+              : this.locale === 'pl'
+                ? `Zestaw: ${Math.round(scored.accuracy * 100)}% (wymagane ${Math.round(this.lesson.masteryThreshold * 100)}%). Ponów — inna kolejność.`
+                : `Independent set: ${Math.round(scored.accuracy * 100)}% (need ${Math.round(this.lesson.masteryThreshold * 100)}%). Retry reshuffles the set.`
           this.independentResults = []
-          this.itemIndex = 0
         } else {
           this.gatePassed = true
+          this.gateFailed = false
           this.phaseIndex = PHASE_ORDER.length
         }
         return this.getViewState()
@@ -183,31 +253,47 @@ export class LessonRunner {
       return this.getViewState()
     }
 
+    // Teach/guided may reveal worked feedback
+    this.lastFeedback = correct
+      ? item.feedbackCorrect[this.locale]
+      : item.feedbackIncorrect[this.locale]
     this.awaitingContinue = true
-    if (this.isLastItemInPhase()) {
-      // After last teach/guided item, continue advances phase on next submit
-    }
     return this.getViewState()
   }
 
-  /** Signal retry after gate failure (maps to submit with retry token). */
   retryIndependent(): LessonScreenData {
     return this.submitAnswer('__retry__')
   }
 
   private resetIndependentPhase(): void {
     this.gateFailed = false
+    this.gatePassed = false
     this.independentResults = []
     this.itemIndex = 0
     this.awaitingContinue = false
+    this.lastFeedback = undefined
+    this.lastGateMessage = undefined
     this.phaseIndex = PHASE_ORDER.indexOf('independent')
     this.shuffleNonce += 1
     this.shuffleKey = null
     this.mcShuffle = null
+    this.independentOrder = shuffleIds(getSectionItemIds(this.lesson, 'independent'), this.shuffleNonce)
+  }
+
+  private phaseItemIds(phase: 'teach' | 'guided' | 'independent'): string[] {
+    const base = getSectionItemIds(this.lesson, phase)
+    if (phase === 'independent') {
+      if (!this.independentOrder || this.independentOrder.length !== base.length) {
+        this.independentOrder = shuffleIds(base, this.shuffleNonce)
+      }
+      return this.independentOrder
+    }
+    return base
   }
 
   private getMcShuffle(item: LessonItem): McShuffleState | null {
     if (!item.choices || item.correctIndex === undefined) return null
+    if (prefersConstructedResponse(item)) return null
     const phase = this.currentPhase()
     const key = `${phase}:${this.itemIndex}:${this.shuffleNonce}`
     if (this.shuffleKey !== key) {
@@ -224,7 +310,7 @@ export class LessonRunner {
   private currentItem(): LessonItem | undefined {
     const phase = this.currentPhase()
     if (phase === 'objective' || phase === 'complete') return undefined
-    const ids = getSectionItemIds(this.lesson, phase)
+    const ids = this.phaseItemIds(phase)
     const id = ids[this.itemIndex]
     return id ? this.lesson.items.find((i) => i.id === id) : undefined
   }
@@ -232,7 +318,7 @@ export class LessonRunner {
   private isLastItemInPhase(): boolean {
     const phase = this.currentPhase()
     if (phase === 'objective' || phase === 'complete') return false
-    const ids = getSectionItemIds(this.lesson, phase)
+    const ids = this.phaseItemIds(phase)
     return ids.length > 0 && this.itemIndex >= ids.length - 1
   }
 
@@ -241,7 +327,7 @@ export class LessonRunner {
     if (phase === 'complete') return
 
     if (phase !== 'objective') {
-      const ids = getSectionItemIds(this.lesson, phase)
+      const ids = this.phaseItemIds(phase)
       if (ids.length > 0 && this.itemIndex < ids.length - 1) {
         this.itemIndex += 1
         return
@@ -251,6 +337,12 @@ export class LessonRunner {
     this.itemIndex = 0
     if (this.phaseIndex < PHASE_ORDER.length - 1) {
       this.phaseIndex += 1
+      if (PHASE_ORDER[this.phaseIndex] === 'independent') {
+        this.independentOrder = shuffleIds(
+          getSectionItemIds(this.lesson, 'independent'),
+          this.shuffleNonce,
+        )
+      }
     }
   }
 }

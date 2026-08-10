@@ -100,11 +100,14 @@ export class GameApp {
       this.lastT = now
       this.elapsed += dt
 
-      this.input.beginFrame()
+      // Read input FIRST — beginFrame() zeroes lookDelta; doing it before getLook
+      // permanently freezes the camera (Opus world critic loop1).
       const look = this.input.getLook()
-      this.followCam.applyLook(look.dx, look.dy)
-
       const move = this.input.getMove()
+      const firing = this.input.isFireHeld()
+      this.input.beginFrame()
+
+      this.followCam.applyLook(look.dx, look.dy)
       this.player.update(dt, move.x, move.y, this.followCam.yaw)
 
       this.clockTarget.set(
@@ -114,7 +117,6 @@ export class GameApp {
       )
       this.followCam.follow(this.clockTarget, dt)
 
-      const firing = this.input.isFireHeld()
       const handL = this.player.getHandWorldPosition('left')
       const handR = this.player.getHandWorldPosition('right')
       const aimPoint = this.lasers.getAimPoint(handL, handR, this.player.yaw)
@@ -215,8 +217,9 @@ export class GameApp {
           return
         }
         if (this.lessonRunner && !this.lessonRunner.canClose()) return
+        const excludeItemIds = this.lessonRunner?.getIndependentItemIdsUsed() ?? []
         this.lessonRunner = null
-        this.maybeStartSpacedReview(() => this.enterDigMode())
+        this.maybeStartSpacedReview(() => this.enterDigMode(), excludeItemIds)
         this.persistProgress()
       },
       onLocaleChange: (locale) => {
@@ -253,7 +256,9 @@ export class GameApp {
         }
         if (siteId === 'progress_pedestal') {
           this.maybeStartSpacedReview(() => {
-            this.openProgressReport(buildProgressReportData(this.content, this.pedagogy))
+            this.openProgressReport(
+              buildProgressReportData(this.content, this.pedagogy, this.hud.getLocale()),
+            )
           })
           return
         }
@@ -278,13 +283,13 @@ export class GameApp {
     this.openLesson(this.lessonRunner.getViewState())
   }
 
-  private maybeStartSpacedReview(then: () => void): void {
+  private maybeStartSpacedReview(then: () => void, excludeItemIds: string[] = []): void {
     const due = this.pedagogy.dueReviews()
     if (due.length === 0) {
       then()
       return
     }
-    const items = pickReviewItems(this.content, due, 3)
+    const items = pickReviewItems(this.content, due, 3, { excludeItemIds })
     if (items.length === 0) {
       then()
       return

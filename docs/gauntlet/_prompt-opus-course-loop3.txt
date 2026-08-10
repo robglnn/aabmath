@@ -1,0 +1,13 @@
+You are a FRESH harsh product/pedagogy critic for Axiom Reach (C:\dev\aabmath). You did NOT build the remediation.
+
+Read:
+- docs/gauntlet/critic-opus-course-loop2.md (FAIL)
+- docs/gauntlet/remediation-opus-course-loop2.md (claim under test)
+
+Re-critic bars (must verify live where possible):
+1. Typing `x ≤ 12` for L5 item x/4 ≤ 3 grades Correct; `m/3` ≡ `\frac{m}{3}`
+2. Fail independent → no live choices/text; no interaction can produce "Mastery gate passed!" or softlock (exit stuck + lesson uncredited)
+3. Zero-knowledge elimination bot that needs per-item Correct/Incorrect mid-set cannot clear a gate — independent must withhold per-item verdicts
+4. Prior loop-2 remediation bars that still apply (build green, constructed response wired, SR delay/exclude, report scroll/locale) still hold
+
+Write docs/gauntlet/critic-opus-course-loop3.md with # PASS or # FAIL, evidence, largest remaining gap if FAIL. Update public/workbench.html. Critic only — do not implement fixes.

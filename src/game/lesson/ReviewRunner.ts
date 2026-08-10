@@ -2,7 +2,7 @@ import type { KnowledgePoint, LessonItem, Locale } from '../../content/types'
 import { flattenStandards } from '../../content/loadContent'
 import type { LessonScreenData } from '../../ui/types'
 import type { PedagogyEngine } from '../../pedagogy/PedagogyEngine'
-import { gradeItem } from './gradeItem'
+import { gradeItem, prefersConstructedResponse } from './gradeItem'
 import { shuffleMcChoices, type McShuffleState } from './shuffleMcChoices'
 
 const REVIEW_PHASE: Record<Locale, string> = {
@@ -86,7 +86,8 @@ export class ReviewRunner {
       }
     }
 
-    const mcShuffle = this.getMcShuffle(item)
+    const useText = prefersConstructedResponse(item)
+    const mcShuffle = useText ? null : this.getMcShuffle(item)
     return {
       courseLabel: 'ALGEBRA 1',
       lessonTitle: REVIEW_PHASE[this.locale],
@@ -95,9 +96,9 @@ export class ReviewRunner {
         : `${this.index + 1}/${this.items.length}`,
       promptLatex: item.promptMath ?? '',
       promptText: item.prompt[this.locale],
-      choices: mcShuffle?.choices[this.locale] ?? item.choices?.[this.locale],
+      choices: useText ? undefined : (mcShuffle?.choices[this.locale] ?? item.choices?.[this.locale]),
       standardsFooter: flattenStandards(item.standards).join(' · ') || 'SPACED RETRIEVAL',
-      inputMode: item.choices ? 'choices' : 'text',
+      inputMode: useText ? 'text' : item.choices ? 'choices' : 'text',
       submitLabel: 'submit',
       showMasteryGate: false,
     }
@@ -120,7 +121,13 @@ export class ReviewRunner {
     }
 
     const item = this.items[this.index]
-    const correct = gradeItem(item, answer, this.locale, this.getMcShuffle(item))
+    const useConstructed = prefersConstructedResponse(item)
+    const correct = gradeItem(
+      item,
+      answer,
+      this.locale,
+      useConstructed ? null : this.getMcShuffle(item),
+    )
     this.engine.recordAttempt(
       {
         itemId: item.id,
@@ -143,6 +150,7 @@ export class ReviewRunner {
 
   private getMcShuffle(item: LessonItem): McShuffleState | null {
     if (!item.choices || item.correctIndex === undefined) return null
+    if (prefersConstructedResponse(item)) return null
     const key = String(this.index)
     if (this.shuffleKey !== key) {
       this.shuffleKey = key

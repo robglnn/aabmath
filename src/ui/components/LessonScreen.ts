@@ -87,7 +87,12 @@ export class LessonScreen {
       this.onClose?.()
     })
     this.answerInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') this.onSubmit?.(this.answerInput.value.trim())
+      if (e.key !== 'Enter') return
+      if (this.submitBtn.dataset.action === 'retry') {
+        this.onSubmit?.('__retry__')
+        return
+      }
+      this.onSubmit?.(this.answerInput.value.trim())
     })
   }
 
@@ -143,11 +148,21 @@ export class LessonScreen {
     this.standardsEl.textContent = data.standardsFooter
     this.answerInput.value = ''
 
+    const submitKey =
+      data.submitLabel === 'continue'
+        ? 'lesson.continue'
+        : data.submitLabel === 'retry'
+          ? 'lesson.retry'
+          : 'lesson.submit'
+    this.submitBtn.textContent = `▶ ${t(submitKey, this.locale)}`
+    this.submitBtn.dataset.action = data.submitLabel === 'retry' ? 'retry' : 'submit'
+
     const inputMode = data.inputMode ?? 'text'
-    this.answerSlot.hidden = inputMode !== 'text'
-    this.choicesEl.hidden = inputMode !== 'choices'
+    const answersLocked = Boolean(data.gateFailed || data.gatePassed || inputMode === 'none')
+    this.answerSlot.hidden = inputMode !== 'text' || answersLocked
+    this.choicesEl.hidden = inputMode !== 'choices' || answersLocked
     this.choicesEl.innerHTML = ''
-    if (inputMode === 'choices' && data.choices) {
+    if (inputMode === 'choices' && data.choices && !answersLocked) {
       data.choices.forEach((label, idx) => {
         const btn = document.createElement('button')
         btn.type = 'button'
@@ -166,8 +181,8 @@ export class LessonScreen {
     }
 
     const pct = data.masteryPercent ?? 0
-    const passed = data.gatePassed ?? pct >= 80
-    const failed = data.gateFailed ?? false
+    const passed = data.gatePassed === true
+    const failed = data.gateFailed === true
     if (data.showMasteryGate) {
       this.gateEl.hidden = false
       if (passed) {
@@ -175,23 +190,18 @@ export class LessonScreen {
       } else if (failed) {
         this.gateEl.textContent = `${t('lesson.masteryGate', this.locale)} (${Math.round(pct)}%)`
       } else {
-        this.gateEl.textContent = `${t('lesson.masteryGate', this.locale)} (${Math.round(pct)}%)`
+        this.gateEl.textContent = t('lesson.masteryGate', this.locale)
       }
       this.gateEl.classList.toggle('hud-gate-pass', passed)
-      this.gateEl.classList.toggle('hud-gate-fail', failed || (!passed && pct > 0))
+      this.gateEl.classList.toggle('hud-gate-fail', failed)
     } else {
       this.gateEl.hidden = true
     }
 
-    const submitKey =
-      data.submitLabel === 'continue'
-        ? 'lesson.continue'
-        : data.submitLabel === 'retry'
-          ? 'lesson.retry'
-          : 'lesson.submit'
-    this.submitBtn.textContent = `▶ ${t(submitKey, this.locale)}`
-    this.submitBtn.dataset.action = data.submitLabel === 'retry' ? 'retry' : 'submit'
-    this.submitBtn.hidden = inputMode === 'choices' && data.submitLabel === 'submit'
+    this.submitBtn.hidden =
+      answersLocked && data.submitLabel === 'submit'
+        ? true
+        : inputMode === 'choices' && data.submitLabel === 'submit'
   }
 
   hide(): void {

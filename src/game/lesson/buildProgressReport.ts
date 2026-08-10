@@ -1,13 +1,16 @@
 import type { Algebra1Content } from '../../content/loadContent'
 import { flattenStandards } from '../../content/loadContent'
+import type { Locale } from '../../content/types'
 import type { PedagogyEngine } from '../../pedagogy/PedagogyEngine'
 import type { ProgressReportData } from '../../ui/types'
 
 export function buildProgressReportData(
   content: Algebra1Content,
   engine: PedagogyEngine,
+  locale?: Locale,
 ): ProgressReportData {
   const progress = engine.getProgress()
+  const loc: Locale = locale ?? progress.locale ?? 'en'
 
   const masteryLines = content.lessons.map((lesson) => {
     const kpIds = lesson.knowledgePointIds
@@ -19,7 +22,7 @@ export function buildProgressReportData(
           ? 100
           : 0
     return {
-      topic: lesson.title.en.toUpperCase(),
+      topic: lesson.title[loc].toUpperCase(),
       percent,
     }
   })

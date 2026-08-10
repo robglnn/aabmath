@@ -75,23 +75,53 @@ export function lessonByWorldSite(content: Algebra1Content, siteId: string): Les
   return content.lessons.find((l) => l.worldHook.siteId === siteId)
 }
 
-/** Pick up to `max` review items for due knowledge points (prefers independent items). */
-export function pickReviewItems(content: Algebra1Content, knowledgePointIds: string[], max = 3): LessonItem[] {
+export interface PickReviewOptions {
+  /** Skip items the student just saw (e.g. last independent set). */
+  excludeItemIds?: Iterable<string>
+}
+
+/**
+ * Pick up to `max` review items for due knowledge points.
+ * Prefers teach/guided (and constructed-response items) over the independent
+ * forms just used, so spaced retrieval is not massed repetition of the gate.
+ */
+export function pickReviewItems(
+  content: Algebra1Content,
+  knowledgePointIds: string[],
+  max = 3,
+  options: PickReviewOptions = {},
+): LessonItem[] {
   const picked: LessonItem[] = []
   const usedItemIds = new Set<string>()
+  const excluded = new Set(options.excludeItemIds ?? [])
+
+  const rank = (item: LessonItem, independentIds: Set<string>): number => {
+    let score = 0
+    if (excluded.has(item.id)) score -= 100
+    if (independentIds.has(item.id)) score -= 10
+    if (item.acceptNumeric !== undefined || item.correctLatex) score += 20
+    return score
+  }
 
   for (const kpId of knowledgePointIds) {
     if (picked.length >= max) break
 
     let best: LessonItem | undefined
+    let bestScore = -Infinity
     for (const lesson of content.lessons) {
       const independentIds = new Set(getSectionItemIds(lesson, 'independent'))
       const candidates = lesson.items.filter(
-        (item) => item.knowledgePointIds.includes(kpId) && !usedItemIds.has(item.id),
+        (item) =>
+          item.knowledgePointIds.includes(kpId) &&
+          !usedItemIds.has(item.id) &&
+          !excluded.has(item.id),
       )
-      const preferred = candidates.find((item) => independentIds.has(item.id)) ?? candidates[0]
-      if (preferred && (!best || independentIds.has(preferred.id))) {
-        best = preferred
+      for (const item of candidates) {
+        const score = rank(item, independentIds)
+        if (score > bestScore) {
+          bestScore = score
+          best = item
+        }
       }
     }
 
